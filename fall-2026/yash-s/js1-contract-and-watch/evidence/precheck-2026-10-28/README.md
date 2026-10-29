@@ -7,8 +7,10 @@ one of the two watch runs.** Claude wrote and ran `check_rule2.py`; the numbers 
 
 | File | What it is |
 |---|---|
-| `check_rule2.py` | The check script (Python 3, standard library only). Written by Claude. |
+| `check_rule2.py` | The check of CONTRACT.md v1's rules (Python 3, standard library only). Written by Claude. |
 | `output.txt` | Its output, with the fetch time and SHA-256 fingerprints of both inputs. |
+| `check_v2.py` | The same check for CONTRACT.md v2's three rules, on the same saved response. Written by Claude. |
+| `output-v2.txt` | Its output, run two ways: **A.** v2 as written (2 of 897 relevant); **B.** only Databricks and Unity Catalog excluded, MLflow and Delta Lake counted again (4 of 897 relevant). |
 
 **Inputs.**
 - The board response: one request to `https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true` at 2026-10-28T20:22:07Z. HTTP 200, 9,816,168 bytes. **Not kept in this folder** because of its size. Its SHA-256 is in `output.txt`. A new fetch returns a different board, so it would not reproduce these numbers exactly.
@@ -24,4 +26,6 @@ one of the two watch runs.** Claude wrote and ran `check_rule2.py`; the numbers 
 
 ```bash
 python3 check_rule2.py <saved board response.json> <resume.json>
+python3 check_v2.py    <saved board response.json> <resume.json>
+python3 check_v2.py    <saved board response.json> <resume.json> --exclude "Databricks,Unity Catalog"
 ```

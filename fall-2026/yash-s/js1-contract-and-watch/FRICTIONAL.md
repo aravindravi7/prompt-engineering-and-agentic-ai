@@ -102,3 +102,67 @@ Claude saved the test script and its results in `evidence/precheck-2026-10-28/`.
 The results are available in `evidence/precheck-2026-10-28/output.txt`.
 
 The test showed that all 897 job postings matched my original skill rule. After removing company product names, only 338 postings matched (37.7%).
+
+
+## 2026-10-28: Contract v2 Testing and My Decisions
+
+### What I did
+I updated my CONTRACT.md to version 2 with better job matching rules.
+
+Claude tested the new rules using the same 897 Databricks job postings.
+
+The results showed that only 2 out of 897 jobs were relevant with my v2 rules.
+
+Claude also tested another version where MLflow and Delta Lake were counted again. This time, 4 jobs were relevant.
+
+Evidence: `evidence/precheck-2026-10-28/output-v2.txt`
+
+### Decision 1: Keep MLflow and Delta Lake
+
+I originally removed MLflow and Delta Lake because I trusted Claude's first review. After checking the actual data, Claude found that its earlier claim was incorrect.
+
+In v2, I removed four product names from skill matching.
+
+Claude pointed out that Databricks and Unity Catalog were common in the general company description, but MLflow and Delta Lake were not.
+
+I decided to keep MLflow and Delta Lake because they are useful technical skills and removing them might cause my agent to miss relevant jobs.
+
+I will exclude only Databricks and Unity Catalog.
+
+### Decision 2: Keep the Two-Skill Rule
+Claude found that only 4 out of 23 jobs with matching titles passed all the rules after my chosen change.
+
+I decided to keep the two-skill rule for now because I want my agent to find jobs that match Priya's actual skills instead of only looking at job titles.
+
+I know this might cause some good jobs to be missed, but I want to compare my rule-based results with Claude's judgments later.
+
+### Decision 3: Improve Claude's Response Format
+Claude pointed out that checking a normal text explanation is difficult.
+
+I agreed to use structured fields like posting ID, matched skills, resume fields, and posting fields.
+
+I think this will make it easier to check Claude's answers and find mistakes.
+
+
+### My Prediction Before the Baseline
+I expect the first baseline run to save around 897 job posting IDs and report 0 new postings.
+
+I predict this because Claude's earlier check found 897 postings on the Databricks job board. The baseline should report 0 new postings because it is the first run.
+
+I expect around 5 new job postings by tomorrow's second run because companies regularly add new job openings. This is just my guess, and I want to compare it with the actual result.
+
+These are my predictions before running the watcher.
+
+### What I Learned
+I learned that making the rules too strict can cause my agent to miss some relevant jobs.
+
+I also learned that testing different versions of the rules helps me understand which changes are useful.
+
+Claude helped me find these problems, but I made the final decisions about which rules to keep.
+
+### What I Will Do Next
+I will commit CONTRACT.md v2 and the test evidence.
+
+After that, Claude will build only the watcher and its tests.
+
+I will run the baseline and then update my contract to version 3 before building the judges.
