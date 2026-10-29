@@ -44,3 +44,61 @@ If the results show that my rule matches too many unrelated jobs, I will update 
 
 ### Result
 Not tested yet. I wrote this prediction before checking the actual job data.
+
+## 2026-10-28: First Test Results
+
+### What I did
+After writing my first prediction, I asked Claude to fetch the Databricks job postings and check my rules.
+
+Claude fetched the data from the Greenhouse API and tested my matching rules.
+
+### My Prediction vs Actual Result
+I predicted that around 80% of job postings would contain at least two skills from Priya's resume.
+
+The actual result was 100%. All 897 job postings matched at least two skills.
+
+My prediction was lower than the actual result.
+
+### What went wrong
+Claude found that every job posting included a general "About Databricks" section.
+
+This section mentioned Databricks and Unity Catalog, which are both listed as skills in Priya's resume.
+
+Because of this, my rule counted these skills even when they were not part of the actual job requirements.
+
+Claude also found that removing Databricks product names reduced the matching rate to 37.7%.
+
+### Claude's Feedback
+Claude tested what happens if company product names are not counted. The result showed that only 37.7% of job postings matched.
+
+Claude also pointed out that my title rule matched some finance and marketing jobs that were not related to Priya's target roles.
+
+In its earlier review, Claude said that the company description contained Delta Lake and MLflow in most postings. After checking the data, Claude corrected this because those skills appeared in that section in only four postings.
+
+### My Decision
+I agree that my skill matching rule needs improvement because it is matching every job posting.
+
+I want to remove Databricks product names from the skill matching rule so it can better identify jobs that match Priya's technical skills.
+
+I also want to improve the title matching rule so unrelated finance and marketing jobs do not get marked as relevant.
+
+### What I learned
+I learned that a rule can look correct on paper but give unexpected results when tested with real data.
+
+I also learned that company descriptions can affect skill matching and make the results less useful.
+
+Testing my prediction helped me understand what needs to change before building the agent.
+
+### What I will do next
+I will update CONTRACT.md to version 2 with clearer matching rules.
+
+I will also decide how to handle duplicate job titles and improve the checks for job requirements.
+
+After updating the contract, I will commit the changes before building the agent.
+
+### Evidence
+Claude saved the test script and its results in `evidence/precheck-2026-10-28/`.
+
+The results are available in `evidence/precheck-2026-10-28/output.txt`.
+
+The test showed that all 897 job postings matched my original skill rule. After removing company product names, only 338 postings matched (37.7%).
