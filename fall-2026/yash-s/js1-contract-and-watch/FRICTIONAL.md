@@ -208,3 +208,15 @@ I will commit the baseline results and update CONTRACT.md to version 3 before bu
 
 I will keep my original prediction of 5 new postings for the second run and compare it with the actual results.
 
+
+### Date and Time Clarification
+
+I noticed that my baseline run files show October 29, 2026, even though I ran the watcher on October 28 at 8:56 PM Boston time.
+
+This happened because the watcher saves timestamps in UTC instead of my local time.
+
+For example, `2026-10-29T005656Z` in the filename is the same as October 28, 2026, at 8:56 PM Eastern Time.
+
+I decided to keep the original timestamps because they are correct. I will use Boston local dates when writing about my runs in FRICTIONAL.md.
+
+This will help avoid confusion when checking my first and second runs.
