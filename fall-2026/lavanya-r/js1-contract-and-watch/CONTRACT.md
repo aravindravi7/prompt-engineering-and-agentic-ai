@@ -12,11 +12,19 @@ board, and approved by Lavanya. See SOURCES.md.
 
 | Input | Value | Needed for |
 |---|---|---|
-| Board | Greenhouse board token `datadog` | building the one allowed URL |
+| Board | Greenhouse board token `databricks` (was `datadog`, see change below) | building the one allowed URL |
 | Résumé | a fictional persona résumé as JSON (`persona/priya-nair.resume.json`) | judging relevance |
-| State file | `state/seen_ids.json` (created on the first run) | remembering posting ids already seen |
+| State file | `state/<board>-seen_ids.json` (created on the first run) | remembering posting ids already seen |
 
 The agent needs network access to **one host only**: `boards-api.greenhouse.io`.
+
+> **Change, 2026-10-29 (after the commit that first recorded this contract):**
+> the board changed from `datadog` to `databricks`.
+>
+> - Datadog run 1 had **0 relevant of 397** under the rule below. Almost all of its US engineering titles were Senior or Staff, so every verdict would have been "not relevant".
+> - Lavanya chose to switch boards. **The rule was not changed.**
+> - Known effect: all 906 Databricks postings mention "Databricks", which is one of Priya's skills. On this board, check 4 therefore effectively needs only one more skill.
+> - The résumé also gained a `work_authorization.needs_sponsorship` field, copied from the persona's `profile.yml`, so that check 5 reads from the one résumé JSON.
 
 ## Out
 
@@ -81,7 +89,7 @@ A posting is **relevant** only if **all five** checks pass. Otherwise it is **no
    - "no sponsorship"
    - "sponsorship is not available"
 
-   The bare word "sponsor" does **not** count. On 2026-10-29, all 9 Datadog postings that mentioned "sponsor" were about events or executive sponsors, not visas.
+   The bare word "sponsor" does **not** count. On 2026-10-29, all 9 Datadog postings that mentioned "sponsor" were about events or executive sponsors, not visas. The same was true on Databricks, where the uses were things like "C-suite-sponsored" and "executive sponsors".
 
 **Justification.** The justification lists every check, whether it passed, and the exact field and matched words. For example: `title: "AI"`, `location.name: "New York, New York, USA"`, `content ∩ skills: Python, AWS`.
 
