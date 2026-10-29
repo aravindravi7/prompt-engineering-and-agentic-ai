@@ -166,3 +166,45 @@ I will commit CONTRACT.md v2 and the test evidence.
 After that, Claude will build only the watcher and its tests.
 
 I will run the baseline and then update my contract to version 3 before building the judges.
+
+
+## 2026-10-28: First Baseline Run
+
+### What I did
+I committed my CONTRACT.md v2 and the test evidence in commit `172fe24`.
+
+Claude then helped build the watcher and its tests. I ran all 19 tests, and they passed.
+
+I committed the watcher code in commit `ac93993` before running the baseline.
+
+After that, I ran the watcher using the live Databricks job board.
+
+### My Prediction vs Actual Result
+I predicted that the baseline would find around 897 job postings and report 0 new postings.
+
+The actual result was 901 postings and 0 new postings.
+
+My prediction was close, with only 4 more postings than expected.
+
+### What I noticed
+Claude's earlier check found 897 postings and 661 unique titles.
+
+My baseline found 901 postings and 651 unique titles.
+
+This showed me that the job board can change within a few hours.
+
+### What Claude checked
+After my baseline run, Claude checked the saved raw response, run record, and state file.
+
+Claude confirmed that the raw file's SHA-256 matched the run record and that the state file contained all 901 posting IDs.
+
+### What I learned
+I learned why the first run is called a baseline. It saves the existing jobs so the agent can find new jobs in later runs.
+
+I also learned that passing tests is important, but checking the actual saved files helps confirm that everything worked correctly.
+
+### What I will do next
+I will commit the baseline results and update CONTRACT.md to version 3 before building the two judges.
+
+I will keep my original prediction of 5 new postings for the second run and compare it with the actual results.
+
