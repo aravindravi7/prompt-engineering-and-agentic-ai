@@ -220,3 +220,53 @@ For example, `2026-10-29T005656Z` in the filename is the same as October 28, 202
 I decided to keep the original timestamps because they are correct. I will use Boston local dates when writing about my runs in FRICTIONAL.md.
 
 This will help avoid confusion when checking my first and second runs.
+
+
+## 2026-10-28: Judge Tests and Model Check
+
+### What I did
+Claude helped build the RECORD judge, JUDGMENT judge, and validator based on CONTRACT.md v3.
+
+I ran 63 automated tests to check the implementation.
+
+I also tested Claude Sonnet 5.5 from my Terminal to confirm that the model was working.
+
+### What I tested
+I first ran Claude from my course folder.
+
+The result showed 730 input tokens.
+
+Then I ran the same command from an empty temporary folder.
+
+The second result showed 176 input tokens.
+
+Both tests returned OK.
+
+### What Claude pointed out
+Claude explained that running the command from different folders can change how much extra context Claude Code includes.
+
+The difference was 554 tokens.
+
+Claude also pointed out that around 170 input tokens remained even when I used an empty folder.
+
+We could not confirm exactly what those extra tokens contained.
+
+### My Decision
+I decided to run the judge from an empty temporary folder with tools disabled.
+
+I made this decision because I want Claude to use as little extra context as possible when checking jobs.
+
+I will also record the model used for each judgment.
+
+### What I learned
+I learned that turning off tools does not necessarily remove all additional context from Claude Code.
+
+I also learned that checking token usage can help identify unexpected context.
+
+The empty-folder approach reduces this problem, even though it does not completely explain every input token.
+
+### What I will do next
+I will finalize my labeling rules and update the judgment prompt before running live job judgments.
+
+Evidence: `evidence/model-check-2026-10-28/`
+

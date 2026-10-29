@@ -124,7 +124,8 @@ The run record must clearly show which type was used.
 - Make up résumé skills, job requirements, or evidence.
 - Change the state file if a required part of the run fails.
 - Label saved-data runs as live API fetches.
-- Give Claude access to external tools, websites, or project files while making a JUDGMENT. Claude will receive only the provided job posting, fictional résumé, and judgment prompt. Each judgment will use a fresh session, and I will record the model used.
+- Give Claude access to external tools, websites, or project files while making a JUDGMENT. 
+Claude will receive the provided job posting, fictional résumé, and judgment prompt. Claude Code may also include some of its own internal context, as explained in the model check below. Each judgment will use a fresh session, and I will record the model used.
 
 
 
@@ -305,6 +306,24 @@ I also clarified what happens when Claude is unavailable or gives an invalid res
 These changes are being written before the judges are built.
 
 Evidence: `evidence/precheck-2026-10-28/output-v2.txt`, part B.
+
+### Additional Note: Claude Code Model Check
+
+On October 28, 2026, I tested Claude Sonnet 5.5 using the command line.
+
+I first ran it from my course folder. The result showed 730 input tokens.
+
+I then ran the same command from an empty temporary folder. This time, it showed 176 input tokens.
+
+Claude pointed out that the folder I run the command from can affect the input sent to the model.
+
+Even in an empty folder, the command used more tokens than my short prompt. Around 170 tokens may come from Claude Code's own instructions or setup, but I cannot see exactly what they contain.
+
+I learned that disabling tools and using an empty folder reduces extra context, but does not guarantee that Claude receives only my prompt.
+
+For my project, I will run judgments from an empty temporary folder with tools disabled and record the model used.
+
+Evidence: `evidence/model-check-2026-10-28/`
 
 ---
 
