@@ -1,0 +1,56 @@
+{
+  "_comment": "CONSTRUCTED test fixture for watch.py, shaped like a Greenhouse jobs response. Not real Databricks data.",
+  "jobs": [
+    {
+      "id": 1001,
+      "title": "Staff Machine Learning Engineer",
+      "absolute_url": "https://example.com/jobs/1001",
+      "location": {
+        "name": "Remote (fixture)"
+      },
+      "first_published": "2026-10-01T00:00:00-04:00",
+      "updated_at": "2026-10-01T00:00:00-04:00",
+      "requisition_id": "FX-1001",
+      "content": "&lt;p&gt;Constructed posting text for tests.&lt;/p&gt;"
+    },
+    {
+      "id": 1002,
+      "title": "Account Executive",
+      "absolute_url": "https://example.com/jobs/1002",
+      "location": {
+        "name": "Remote (fixture)"
+      },
+      "first_published": "2026-10-01T00:00:00-04:00",
+      "updated_at": "2026-10-01T00:00:00-04:00",
+      "requisition_id": "FX-1002",
+      "content": "&lt;p&gt;Constructed posting text for tests.&lt;/p&gt;"
+    },
+    {
+      "id": 1003,
+      "title": "Data Engineer",
+      "absolute_url": "https://example.com/jobs/1003",
+      "location": {
+        "name": "Remote (fixture)"
+      },
+      "first_published": "2026-10-01T00:00:00-04:00",
+      "updated_at": "2026-10-01T00:00:00-04:00",
+      "requisition_id": "FX-1003",
+      "content": "&lt;p&gt;Constructed posting text for tests.&lt;/p&gt;"
+    },
+    {
+      "id": 1004,
+      "title": "Senior Software Engineer - AI Runtime",
+      "absolute_url": "https://example.com/jobs/1004",
+      "location": {
+        "name": "Remote (fixture)"
+      },
+      "first_published": "2026-10-01T00:00:00-04:00",
+      "updated_at": "2026-10-01T00:00:00-04:00",
+      "requisition_id": "FX-1004",
+      "content": "&lt;p&gt;Constructed posting text for tests.&lt;/p&gt;"
+    }
+  ],
+  "meta": {
+    "total": 4
+  }
+}
