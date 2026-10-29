@@ -3,8 +3,8 @@
 run from the js1-contract-and-watch folder:
   python3 -m unittest discover -s tests -v
 
-Offline: every run uses a saved fixture (--from-file). Live fetching is replaced by a
-function that fails the test if anything tries to reach the network.
+Offline: every run uses a saved fixture (--from-file). Live fetching and the Claude CLI
+are replaced by a function that fails the test if anything tries to reach either.
 """
 import contextlib
 import io
@@ -19,6 +19,7 @@ from unittest import mock
 HERE = Path(__file__).resolve().parent
 FOLDER = HERE.parent
 sys.path.insert(0, str(FOLDER))
+import judge  # noqa: E402
 import watch  # noqa: E402
 
 REAL_FETCH = watch.fetch            # kept before setUp replaces watch.fetch with no_network
@@ -40,9 +41,10 @@ class WatchTest(unittest.TestCase):
         self.dir = Path(self.tmp.name)
         self.state = self.dir / "state" / "databricks.state.json"
         self.out = self.dir / "runs"
-        patcher = mock.patch.object(watch, "fetch", no_network)
-        patcher.start()
-        self.addCleanup(patcher.stop)
+        for target, name in ((watch, "fetch"), (judge, "call_claude")):
+            patcher = mock.patch.object(target, name, no_network)
+            patcher.start()
+            self.addCleanup(patcher.stop)
 
     def tearDown(self):
         self.tmp.cleanup()
@@ -82,7 +84,7 @@ class AllowList(WatchTest):
 
 
 class Persona(WatchTest):
-    """Section 1: the résumé must have an @example.com email and a 555 phone, or the agent stops."""
+    """Section 1 (v3): the résumé must have an @example.com email and a 555-01xx phone, or the agent stops."""
 
     def test_persona_copy_passes(self):
         watch.load_resume(PERSONA)
@@ -97,6 +99,11 @@ class Persona(WatchTest):
 
     def test_phone_without_555_refused(self):
         bad = self.fake_resume("someone@example.com", "(617) 123-4567")
+        with self.assertRaises(watch.InputError):
+            self.run_fixture(DAY1, T1, resume=bad)
+
+    def test_555_outside_the_01xx_range_refused(self):
+        bad = self.fake_resume("someone@example.com", "(617) 455-5512")       # contains 555, not 555-01xx
         with self.assertRaises(watch.InputError):
             self.run_fixture(DAY1, T1, resume=bad)
 

@@ -1,5 +1,5 @@
 {
-  "_comment": "CONSTRUCTED test fixture for watch.py, shaped like a Greenhouse jobs response. Not real Databricks data.",
+  "_comment": "CONSTRUCTED test fixture for watch.py and judge.py, shaped like a Greenhouse jobs response. Not real Databricks data.",
   "jobs": [
     {
       "id": 1001,
@@ -11,7 +11,7 @@
       "first_published": "2026-10-01T00:00:00-04:00",
       "updated_at": "2026-10-01T00:00:00-04:00",
       "requisition_id": "FX-1001",
-      "content": "&lt;p&gt;Constructed posting text for tests.&lt;/p&gt;"
+      "content": "&lt;p&gt;Build machine learning systems in Python and SQL.&lt;/p&gt;"
     },
     {
       "id": 1002,
@@ -23,7 +23,7 @@
       "first_published": "2026-10-01T00:00:00-04:00",
       "updated_at": "2026-10-01T00:00:00-04:00",
       "requisition_id": "FX-1002",
-      "content": "&lt;p&gt;Constructed posting text for tests.&lt;/p&gt;"
+      "content": "&lt;p&gt;Sell to enterprise customers. A quota-carrying sales role.&lt;/p&gt;"
     },
     {
       "id": 1003,
@@ -35,7 +35,7 @@
       "first_published": "2026-10-01T00:00:00-04:00",
       "updated_at": "2026-10-01T00:00:00-04:00",
       "requisition_id": "FX-1003",
-      "content": "&lt;p&gt;Constructed posting text for tests.&lt;/p&gt;"
+      "content": "&lt;p&gt;Build data pipelines with SQL and Delta Lake on AWS.&lt;/p&gt;"
     },
     {
       "id": 1004,
@@ -47,7 +47,7 @@
       "first_published": "2026-10-01T00:00:00-04:00",
       "updated_at": "2026-10-01T00:00:00-04:00",
       "requisition_id": "FX-1004",
-      "content": "&lt;p&gt;Constructed posting text for tests.&lt;/p&gt;"
+      "content": "&lt;p&gt;Use Go and Kubernetes for model serving.&lt;/p&gt;"
     }
   ],
   "meta": {
