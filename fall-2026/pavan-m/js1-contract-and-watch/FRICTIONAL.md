@@ -104,3 +104,7 @@ Honest limit: this line brings one factor from my own labeling rule into the pro
 
 ## Entry 19 — October 30, 2026: v2 on the dev set
 Ran prompts/judge_v2.txt on the same 10 dev postings, one fresh claude.ai incognito chat each (Opus 5.5). All 10 valid on attempt 1; 10/10 agreed with my hand labels, the same as v1. As expected, dev cannot separate v1 from v2; the held-out set is the real test.
+
+## Entry 20 — October 30, 2026: Held-out results
+Ran v1 and v2 on the 10 held-out postings (20 fresh claude.ai incognito chats, Opus 5.5). All 20 valid on attempt 1 (after redoing one copy-paste mistake on 4696752005 v1, same cause as Entry 17). v1: 10/10 agree; v2: 10/10 agree; always-not_relevant baseline: 7/10.
+Conclusion: my one change (experience-level line) produced no measurable difference. Both prompts hit the ceiling on all 20 cases, so this set cannot tell them apart. v1 already weighed required years on its own (e.g. 4696752005, 8+ years, judged not_relevant by both).
