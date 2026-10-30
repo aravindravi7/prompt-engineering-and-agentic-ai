@@ -32,3 +32,9 @@ For each posting I open `postings/<id>.txt` and check:
 4. **Location:** does the location have United States, USA or US?
 
 The label is Relevant only if all four are Y.
+
+### Change to my labelling rule on 2026-10-30, before any Claude answer
+
+While labelling, I decided that only plain Software Engineer roles count for Aarav. Roles that are senior-level or ML-related are Not Relevant, because they are not his background. In my words: "I would consider only the software engineer roles", and then "I would consider all the SE roles". My hand labels follow this, so they can differ from the written rule in `CONTRACT.md`, which the agent's rule judge still uses unchanged. Where they differ is part of the results.
+
+I decided the labels from the title and role type. Skills, years and location were mostly not checked by hand: `labels.csv` says "not checked" for each one I skipped. Result: 11 Relevant and 9 Not Relevant (dev 5 and 5, held-out 6 and 4).
