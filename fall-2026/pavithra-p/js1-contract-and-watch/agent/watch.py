@@ -84,7 +84,7 @@ def rel(path):
         return str(path)
 
 
-def format_report(result, source):
+def format_report(result, source, judgments=None):
     label = " (SEEDED)" if result.seeded else ""
     lines = [
         f"# Watch run {result.at}{label}",
@@ -103,4 +103,17 @@ def format_report(result, source):
         for job in result.new_jobs:
             location = (job.get("location") or {}).get("name", "")
             lines.append(f"| {job['id']} | {job.get('title', '')} | {job.get('company_name', '')} | {location} |")
+    for job in result.new_jobs if judgments else []:
+        entry = judgments[job["id"]]
+        lines += ["", f"### {job['id']}: {job.get('title', '')}", "",
+                  f"- **Rule (record, recomputable):** {entry['rule'].reason}"]
+        record = entry["claude"]
+        if record is None:
+            lines.append("- **Claude (judgment):** not run (`--no-claude`).")
+        elif record.get("valid"):
+            lines.append(f"- **Claude (judgment, not a fact):** {record['parsed']['verdict']}. {record['parsed']['reason']}"
+                         f" (reply saved: `{rel(entry['claude_file'])}`)")
+        else:
+            lines.append(f"- **Claude (judgment):** invalid reply, rejected by the validator: {record.get('error')}"
+                         f" (reply saved: `{rel(entry['claude_file'])}`)")
     return "\n".join(lines) + "\n"

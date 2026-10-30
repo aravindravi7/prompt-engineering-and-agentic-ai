@@ -1,4 +1,4 @@
-"""Command line: `python3 -m agent watch` (live) or `python3 -m agent watch --from-file PATH` (SEEDED)."""
+"""Command line. `python3 -m agent watch` (live), `watch --from-file PATH` (SEEDED), plus the experiment commands."""
 import argparse
 import sys
 from datetime import datetime, timezone
@@ -6,17 +6,24 @@ from pathlib import Path
 
 from . import config, fetch, resume, watch
 
+BASELINE_PROMPT = config.ROOT / "experiment" / "prompts" / "baseline.md"
+
 
 def main(argv=None):
     parser = argparse.ArgumentParser(prog="python3 -m agent")
     commands = parser.add_subparsers(dest="command", required=True)
-    w = commands.add_parser("watch", help="fetch the board, save the raw response, report new jobs")
+    w = commands.add_parser("watch", help="fetch the board, save the raw response, judge new jobs")
     w.add_argument("--resume", default=str(config.RESUME), help="fictional résumé JSON")
     w.add_argument("--from-file", help="use a saved earlier response instead of fetching; the run is labelled SEEDED")
+    w.add_argument("--no-claude", action="store_true", help="skip Claude's opinion (needs Claude Code); the rule still runs")
     s = commands.add_parser("snapshot", help="save one board's raw response for the experiment (no state, no verdicts)")
     s.add_argument("board", choices=config.EXPERIMENT_BOARDS)
     f = commands.add_parser("freeze", help="freeze the 20 postings and the dev/held-out split from saved responses")
     f.add_argument("raw", nargs="+", help="saved raw responses, the Pinterest baseline first")
+    commands.add_parser("sample", help="sampling report: 5 dev postings x 4 fresh Claude conversations")
+    e = commands.add_parser("experiment", help="ask Claude once per posting with one prompt, on one split")
+    e.add_argument("prompt", help="prompt file, e.g. experiment/prompts/baseline.md")
+    e.add_argument("--split", choices=("dev", "held-out"), required=True)
     args = parser.parse_args(argv)
 
     if args.command == "snapshot":
@@ -40,9 +47,25 @@ def main(argv=None):
               " -> experiment/postings.json, experiment/postings/, experiment/labels.csv")
         return 0
 
+    if args.command in ("sample", "experiment"):
+        from . import experiments
+        persona = resume.load(config.RESUME)
+        if args.command == "sample":
+            rows = experiments.sample(persona, BASELINE_PROMPT)
+            text, path = experiments.sampling_table(rows, BASELINE_PROMPT.name), config.CLAUDE_DIR / "sampling" / "table.md"
+        else:
+            prompt = Path(args.prompt).resolve()
+            rows = experiments.run_prompt(persona, prompt, args.split)
+            text = experiments.results_table(rows, prompt.name, args.split)
+            path = config.CLAUDE_DIR / "experiment" / f"{prompt.stem}-{args.split}" / "results.md"
+        path.write_text(text, encoding="utf-8")
+        print(text)
+        print(f"(saved to {watch.rel(path)})")
+        return 0
+
     now = datetime.now(timezone.utc).replace(microsecond=0)
     try:
-        resume.load(args.resume)  # refuse a non-fictional résumé before any network call
+        persona = resume.load(args.resume)  # refuse a non-fictional résumé before any network call
         if args.from_file:
             raw = Path(args.from_file).read_bytes()
             source = f"saved response `{watch.rel(Path(args.from_file))}` (SEEDED, no fetch)"
@@ -59,13 +82,32 @@ def main(argv=None):
         print(f"error: {e}; the state file was not changed", file=sys.stderr)
         return 1
 
-    report = watch.format_report(result, source)
+    suffix = "-SEEDED" if seeded else ""
+    judgments = judge_new_jobs(result.new_jobs, persona, args.no_claude, f"{watch.stamp(now)}{suffix}")
+    report = watch.format_report(result, source, judgments)
     config.RUNS_DIR.mkdir(parents=True, exist_ok=True)
-    report_path = config.RUNS_DIR / f"run-{watch.stamp(now)}{'-SEEDED' if seeded else ''}.md"
+    report_path = config.RUNS_DIR / f"run-{watch.stamp(now)}{suffix}.md"
     report_path.write_text(report, encoding="utf-8")
     print(report)
     print(f"(report saved to {watch.rel(report_path)})")
     return 0
+
+
+def judge_new_jobs(new_jobs, persona, no_claude, run_name):
+    """Both judges for each new job: the rule (a record) and Claude (a judgment, saved as it came back)."""
+    from . import claude_judge, rule
+    judgments = {}
+    for job in new_jobs:
+        entry = {"rule": rule.judge(job, persona), "claude": None, "claude_file": None}
+        if not no_claude:
+            try:
+                record = claude_judge.judge(job, persona, BASELINE_PROMPT)
+            except (OSError, ValueError) as e:  # e.g. Claude Code not installed
+                record = {"valid": False, "error": f"Claude not run: {e}", "parsed": None}
+            entry["claude"] = record
+            entry["claude_file"] = claude_judge.save(record, config.CLAUDE_DIR / "watch" / run_name, str(job["id"]))
+        judgments[job["id"]] = entry
+    return judgments
 
 
 if __name__ == "__main__":

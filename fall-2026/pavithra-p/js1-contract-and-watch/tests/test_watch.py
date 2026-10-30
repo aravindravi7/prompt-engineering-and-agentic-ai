@@ -82,7 +82,8 @@ class CommandLineTests(unittest.TestCase):
         self.tmp = Path(tempfile.mkdtemp())
         self.addCleanup(shutil.rmtree, self.tmp)
         self.paths = {"RAW_DIR": self.tmp / "raw", "RUNS_DIR": self.tmp / "runs",
-                      "STATE": self.tmp / "seen_ids.json", "SEEDED_STATE": self.tmp / "seen_ids-SEEDED.json"}
+                      "STATE": self.tmp / "seen_ids.json", "SEEDED_STATE": self.tmp / "seen_ids-SEEDED.json",
+                      "CLAUDE_DIR": self.tmp / "claude"}
         self.patches = [mock.patch.object(config, k, v) for k, v in self.paths.items()]
         for p in self.patches:
             p.start()
@@ -126,6 +127,31 @@ class CommandLineTests(unittest.TestCase):
         self.assertFalse(self.paths["STATE"].exists(), "a seeded run never touches the live state")
         self.assertTrue(all("SEEDED" in p.name for p in self.paths["RAW_DIR"].iterdir()))
         self.assertTrue(all("SEEDED" in p.name for p in self.paths["RUNS_DIR"].iterdir()))
+
+    def test_second_run_shows_both_judges_labelled(self):
+        with mock.patch("agent.fetch.fetch", return_value=board(10, 11)):
+            self.main()
+        constructed = {"kind": "judgment (Claude, prompt contract)", "valid": True, "error": None,
+                       "parsed": {"verdict": "Not Relevant", "reason": "constructed reply"}}
+        with mock.patch("agent.fetch.fetch", return_value=board(10, 11, 12)), \
+                mock.patch("agent.claude_judge.judge", return_value=constructed) as fake_judge:
+            code, out, _ = self.main()
+        self.assertEqual(code, 0)
+        fake_judge.assert_called_once()
+        self.assertIn("Rule (record, recomputable):", out)
+        self.assertIn("Claude (judgment, not a fact):", out)
+        self.assertTrue(list((self.paths["CLAUDE_DIR"] / "watch").rglob("12.json")), "Claude's reply is saved")
+
+    def test_no_claude_flag_still_runs_the_rule(self):
+        with mock.patch("agent.fetch.fetch", return_value=board(10)):
+            self.main()
+        with mock.patch("agent.fetch.fetch", return_value=board(10, 12)), \
+                mock.patch("agent.claude_judge.judge") as fake_judge:
+            code, out, _ = self.main("--no-claude")
+        self.assertEqual(code, 0)
+        fake_judge.assert_not_called()
+        self.assertIn("Rule (record, recomputable):", out)
+        self.assertIn("not run (`--no-claude`)", out)
 
     def test_live_baseline_through_the_command_line(self):
         with mock.patch("agent.fetch.fetch", return_value=board(10, 11)) as fake_fetch:

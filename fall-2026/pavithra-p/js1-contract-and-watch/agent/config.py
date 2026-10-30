@@ -17,5 +17,6 @@ ROOT = Path(__file__).resolve().parent.parent
 RESUME = ROOT / "data" / "aarav-patel.resume.json"
 RAW_DIR = ROOT / "evidence" / "raw"
 RUNS_DIR = ROOT / "evidence" / "runs"
+CLAUDE_DIR = ROOT / "evidence" / "claude"
 STATE = ROOT / "state" / "seen_ids.json"
 SEEDED_STATE = ROOT / "state" / "seen_ids-SEEDED.json"
