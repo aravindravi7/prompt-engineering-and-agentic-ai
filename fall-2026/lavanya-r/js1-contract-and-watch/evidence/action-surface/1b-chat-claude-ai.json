@@ -1,0 +1,24 @@
+{
+  "surface": "1b-chat (claude.ai)",
+  "how": "Lavanya opened a new chat on claude.ai, pasted evidence/action-surface/1b-chat-prompt.txt, sent it, and copied the reply back into the Claude Code session by hand on 2026-10-30.",
+  "asked_on": "2026-10-30",
+  "model": "not recorded",
+  "prompt_file": "1b-chat-prompt.txt",
+  "prompt_sha256": "0d076f08711ef03933e34a846eb5e0f356b5bb3305228e90265f988e7b309764",
+  "raw_reply_as_pasted": "{“posting_id”: 6865698002, “verdict”: “not_relevant”, “resume_fields”: [“education.0.end_date”, “education.0.status”], “posting_fields”: [“content”], “reason”: “The posting requires graduating in fall 2026 or spring 2027, but the job seeker completed her MS in December 2025, so she fails rule 6. The title, US locations, skills (Python, Databricks, Unity Catalog), and sponsorship rules all pass.”}",
+  "note_on_quotes": "The pasted reply uses curly quotes; whether the chat produced them or the copy/paste converted them is unknown.",
+  "validator_as_pasted": {
+    "verdict": "INVALID",
+    "errors": [
+      "not a single JSON object"
+    ]
+  },
+  "validator_with_straight_quotes": {
+    "verdict": "INVALID",
+    "errors": [
+      "resume_fields names fields that do not exist: ['education.0.end_date', 'education.0.status']"
+    ]
+  },
+  "verdict_inside_reply": "not_relevant",
+  "hand_label": "not_fit"
+}

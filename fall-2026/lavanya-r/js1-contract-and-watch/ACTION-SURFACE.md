@@ -12,7 +12,15 @@
 
 **Hand label:** not fit. Priya graduated in Dec 2025, and the posting wants fall 2026 or spring 2027.
 
-**Note on surface 1:** I ran the "paste into a chat" surface as a tool-free `claude -p` call with the posting pasted into the prompt. That is a stand-in for a chat window, not the claude.ai web app.
+**Note on surface 1:** I ran the "paste into a chat" surface twice:
+
+- **1, scripted:** a tool-free `claude -p` call with the posting pasted into the prompt.
+- **1b, a real chat (2026-10-30):** I opened a new chat on claude.ai, pasted the same prompt (`evidence/action-surface/1b-chat-prompt.txt`) and copied the reply back by hand. Saved verbatim in `1b-chat-claude-ai.json`.
+  - **Model:** not recorded.
+  - **Reply:** `not_relevant`, because "the posting requires graduating in fall 2026 or spring 2027, but the job seeker completed her MS in December 2025". That matches my hand label.
+  - **As pasted,** the reply used curly quotes (“ ”), so it is not valid JSON and the validator rejected it. I don't know whether the chat or my copy/paste produced them.
+  - **With straight quotes,** it would still be rejected by the same `education.0.end_date` quirk as surface 1.
+  - **What this shows:** in a chat, a person is the transport. The reply passes through my clipboard, and the format can change on the way. A script that reads the CLI's output directly avoids that.
 
 ## What each surface could do, and what happened
 

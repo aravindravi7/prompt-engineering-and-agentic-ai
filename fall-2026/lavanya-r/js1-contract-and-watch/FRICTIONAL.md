@@ -93,3 +93,6 @@ Dated log of what I tried, what broke, and what I did instead.
   - it missed that the agent surface also used `claude-haiku-5-5`;
   - the "can read" claim for surface 2 was untested;
   - the validator is stricter than CONTRACT.md says.
+- The action-surface "paste into a chat" step had only been run as a `claude -p` stand-in. So I pasted the same prompt into a new claude.ai chat myself (`evidence/action-surface/1b-chat-claude-ai.json`).
+  - The verdict was right: `not_relevant`, citing the 2026–27 graduation window.
+  - But the reply I copied back had curly quotes and failed the validator as "not a single JSON object". I don't know whether the chat or my copy/paste changed the quotes.
