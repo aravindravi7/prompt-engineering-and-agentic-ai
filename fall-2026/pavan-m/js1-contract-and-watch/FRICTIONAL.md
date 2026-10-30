@@ -116,3 +116,8 @@ Conclusion: my one change (experience-level line) produced no measurable differe
 ## Entry 22 — October 30, 2026: Sampling report
 Ran 15 more fresh incognito chats (r2–r4) on the 5 sampling postings with v1; reused each posting's v1 prompt-experiment chat as r1. All 5 postings gave the same verdict 4/4 times, matching my hand labels. One retry on 4605446005 r3, caused by my copy error (the a1 reply file holds text from my help chat); attempt 2 in a new chat was valid.
 Wrote reports/SAMPLING_REPORT.md and reports/PROMPT_EXPERIMENT.md; Claude drafted both from my results, and I checked the numbers (40 reply files in runs/prompt_exp/, scores from `manual_judge score`).
+
+## Entry 23 — October 30, 2026: Run 2, live
+Ran the agent live at 4:29 PM ET (first real Greenhouse request through the allow-listed client): mode live, baseline false, new_ids [], invalid_postings []. Evidence: evidence/2026-10-30T162946_live_gleanwork.json.
+Compared with Run 1's input: morning 130 postings, now 129; 0 added, 1 removed (4725753005). The board changed between runs, but only by a removal, so 0 new is the correct answer. State still holds 130 ids, because removed ids are kept, as the contract says. Saved state/seen_ids_after_run2.json.
+Limitation: no real new posting appeared, so the "both judges on each new posting" path did not run on a real new posting in Run 2.
