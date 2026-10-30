@@ -65,3 +65,18 @@ Resolved from Entry 4: anthropic 2.3.0 accepts only an `httpx2.Client`. Claude C
 Updated CONTRACT.md in a separate commit to say httpx2 for the SDK (dated revision note).
 Accepted Claude Code's choices: id not citable; retry resends the same prompt without the error; plain-text placeholder filling; optional --model flag; tags replaced with a space so words don't merge.
 Not yet checked: `agent.run` end to end, since it would call the real API (no API key yet; asked TA).
+
+## Entry 12 — October 30, 2026: Labeling rule written before labeling
+Wrote labels/LABELING_RULE.md at 1:10 PM ET, before reading any posting closely. It is my own judgment of relevance for Alex, deliberately different from the contract rule in three ways: it accepts platform/infrastructure/data engineering roles, excludes Staff/Principal, and accepts any workable US location. These differences are expected to explain some disagreements between the rule's record verdicts and my hand labels.
+After review with Claude, added a section listing those differences, a note that my labels are one person's judgment rather than ground truth, and the selection method (14 technical + 6 non-technical, by title only; random split with seed 7375).
+
+## Entry 13 — October 30, 2026: Picking the 20 postings
+First pick had duplicate titles (3 × "Software Engineer", 2 × "Customer Advocacy Manager"), which broke my own selection method ("avoiding duplicate titles"). Replaced 4746919005 and 4746918005 (Software Engineer) with 4614706005 (Software Engineer, Developer Productivity) and 4746685005 (Software Engineer, Native Mobile), and 4743028005 (Customer Advocacy Manager) with 4746354005 (Office Manager).
+No Staff or Principal engineering posting is in the set, so my labeling rule's Staff/Principal exclusion is not tested by these 20.
+Noticed: three postings use "San Francisco Bay Area", which the contract's location check will reject but my labeling rule may accept.
+
+## Entry 14 — October 30, 2026: Hand-labeled 20 postings before any Claude run
+Labeled all 20 using only labels/LABELING_RULE.md. Result: 6 relevant, 14 not_relevant (dev 3/10 relevant, held-out 3/10 relevant).
+Noticed while labeling: required years of experience became a deciding factor for 5 postings (e.g. APIs & Context Platform: strong fit but 8+ years). My rule only implies this through "reasonably fits his experience"; I did not edit the rule after labeling.
+Implication: a prompt that always answers not_relevant would score 70% on each split; pass rates must be compared against that.
+Picked 5 for sampling: 2 clear relevant, 1 clear not_relevant, 2 borderline (APIs & Context Platform; AI & Security).

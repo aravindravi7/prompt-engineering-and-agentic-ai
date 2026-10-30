@@ -1,0 +1,21 @@
+posting_id,title,location,split,my_label,reason,sampling,sampling_note
+4742953005,"Software Engineer, Agentic Runtime","Mountain View, CA",dev,relevant,"Distributed runtime services, Java, Kafka, Kubernetes, and cloud; 3+ years accepted",yes,"Clear match for distributed systems, Java, Kubernetes, and production services"
+4744818005,"Machine Learning Engineer, Enterprise Brain","Mountain View, CA",dev,not_relevant,"Primarily ML engineering; requires 6+ years and specialized model experience",yes,"Clear exclusion: specialized ML engineering and 6+ years of experience"
+4746908005,"AI Engineer - Data and Evals","San Francisco Bay Area",dev,not_relevant,"Requires 5+ years plus specialized LLM evaluation and benchmark experience",,
+4006733005,"Software Engineer, Frontend","Mountain View, CA",dev,not_relevant,"Primarily React and TypeScript frontend development",,
+4428090005,"Software Engineer, Product Backend","Mountain View, CA",dev,relevant,"Scalable backend systems, REST APIs, Java, Go, and distributed data stores",yes,"Clear backend fit with APIs, Java, and scalable systems"
+4501783005,"Software Engineer, AI/ML Infrastructure","Mountain View, CA",dev,relevant,"AI infrastructure, serving pipelines, cloud systems, and Java/Python; 2-6 years accepted",,
+4711484005,"Machine Learning Engineer, Assistant Quality","San Francisco, CA",dev,not_relevant,"Primarily applied ML, retrieval, and assistant quality rather than backend engineering",,
+4488628005,"Customer Advocacy Manager","San Francisco, CA",dev,not_relevant,"Customer marketing, storytelling, and event coordination",,
+4745578005,"Director, Digital Marketing","Mountain View, CA; San Francisco, CA",dev,not_relevant,"Digital marketing leadership; requires 10+ years of experience",,
+4607608005,"Recruiting Coordinator (Contract)","San Francisco, CA",dev,not_relevant,"Recruiting operations and interview coordination",,
+4696752005,"Software Engineer, APIs & Context Platform","Mountain View, CA",held,not_relevant,"Strong API and platform fit, but requires 8+ years of experience",yes,"Borderline: strong API and platform alignment, but the 8+ year requirement exceeds Alex's experience"
+4746685005,"Software Engineer, Native Mobile","San Francisco Bay Area",held,not_relevant,"Specialized native iOS/Android development; requires 6+ years and mobile expertise",,
+4614706005,"Software Engineer, Developer Productivity","Mountain View, CA",held,relevant,"Build systems, CI/CD, developer tooling, and cloud infrastructure; 2+ years accepted",,
+4605446005,"Software Engineer, AI & Security","Mountain View, CA",held,not_relevant,"Requires 5+ years and specialized enterprise AI security product experience",yes,"Borderline: relevant backend and distributed-systems work, but requires more experience and specialized AI security experience"
+4746915005,"AI Engineer - Quality and Post-Training","San Francisco Bay Area",held,not_relevant,"Specialized LLM post-training and evaluation; requires 5+ years of AI/ML experience",,
+4006734005,"Software Engineer, Fullstack","Mountain View, CA",held,relevant,"Full-stack product engineering with substantial backend development",,
+4746910005,"Software Engineer","Mountain View, CA",held,relevant,"Distributed systems, enterprise search, data ingestion pipelines, and Java/Python/Go; 2+ years accepted",,
+4746354005,"Office Manager","Mountain View, CA",held,not_relevant,"Office operations, facilities, and vendor coordination",,
+4720549005,"VP, Growth Marketing","Mountain View, CA",held,not_relevant,"Executive marketing leadership; requires 12+ years of experience",,
+4739201005,"Accountant","Bangalore, India",held,not_relevant,"Accounting and financial reporting; based in Bangalore, India",,
