@@ -1,0 +1,208 @@
+{
+  "frozen_at": "2026-10-30T12:21:15Z",
+  "source": "evidence/raw/pinterest-20261030T121808Z.json",
+  "source_sha256": "d27092535e2e47d95478abc30a3bd4ffd944c9b3ae8c7a760ea87e6fbfcc4554",
+  "selection": "Freeze the 20 postings and the 10/10 split for the prompt experiment, before Claude sees any of them.\n\nSelection (decided 2026-10-29, written down before this ran):\n  1. From the baseline raw response, keep jobs whose title has \"Engineer\" plus a role word (rule 1)\n     and whose location has United States, USA or US (rule 4).\n  2. Group A: those whose title has no experience word (rule 3). Group B: the rest. Each sorted by job ID.\n  3. Take all of group A, then group B, until there are 20. If fewer than 20, add other jobs by job ID.\n  4. Walk that list in order and alternate dev, held-out, dev, held-out.\nNo verdict is computed or saved here: the hand labels come first.",
+  "postings": [
+    {
+      "id": 7697137,
+      "split": "dev",
+      "group": "A",
+      "title": "Machine Learning Engineer II, Visual AI",
+      "location": "San Francisco, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7697137",
+      "first_published": "2026-03-10T19:56:48-04:00",
+      "description_sha256": "cfd32fc8993f7ed1126484b76fcbdad9cf84b61f0b6d0b49ffe102b49d7ec624"
+    },
+    {
+      "id": 7838591,
+      "split": "held-out",
+      "group": "A",
+      "title": "University Grad Software Engineer 2027 (USA)",
+      "location": "San Francisco, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7838591",
+      "first_published": "2026-10-01T13:03:43-04:00",
+      "description_sha256": "9b8d2539329a4df510e38537768e3d0219549caeb25cac3b704718b17d2b88db"
+    },
+    {
+      "id": 8015547,
+      "split": "dev",
+      "group": "A",
+      "title": "Security Software Engineer II, Detection and Response",
+      "location": "San Francisco, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8015547",
+      "first_published": "2026-10-05T16:37:04-04:00",
+      "description_sha256": "7c15373cf067d83deee280478d8ec362b30b0b0f2d617a44ade3745f52dbca68"
+    },
+    {
+      "id": 8162046,
+      "split": "held-out",
+      "group": "A",
+      "title": "Machine Learning Engineer II, Responsible AI",
+      "location": "San Francisco, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8162046",
+      "first_published": "2026-08-27T12:29:11-04:00",
+      "description_sha256": "0962820d10cc7a504dfb059fe8ddbff36456dd77d3aa8cf8300fba28af93cc97"
+    },
+    {
+      "id": 8213988,
+      "split": "dev",
+      "group": "A",
+      "title": "Software Engineer II, Data Analytics & Engineering",
+      "location": "San Francisco, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8213988",
+      "first_published": "2026-09-18T20:32:32-04:00",
+      "description_sha256": "d45e24eca402973971ed26b3c0654fcc2c2cfd6cf62436f8f1f77e5120c3d5cd"
+    },
+    {
+      "id": 8227344,
+      "split": "held-out",
+      "group": "A",
+      "title": "Software Engineer II, EPD Ads",
+      "location": "San Francisco, CA; Palo Alto, CA; Seattle, WA; New York, NY; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8227344",
+      "first_published": "2026-10-05T16:42:04-04:00",
+      "description_sha256": "6670e8783edcc69bce8f657fe4e892ef4a2191c87512c12b224f695f0d3e1019"
+    },
+    {
+      "id": 7437356,
+      "split": "dev",
+      "group": "B",
+      "title": "Staff Software Engineer, Big Data Storage",
+      "location": "Palo Alto, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7437356",
+      "first_published": "2025-12-17T12:01:51-05:00",
+      "description_sha256": "e6d679992cbbc7154733ef02d926ddc8701465662a858abc6f7346a7b28fbf70"
+    },
+    {
+      "id": 7494668,
+      "split": "held-out",
+      "group": "B",
+      "title": "Staff Software Engineer, Capacity Engineering",
+      "location": "San Francisco, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7494668",
+      "first_published": "2026-07-16T12:47:45-04:00",
+      "description_sha256": "b32ef9f9eba05cb73a50424edb9791d44c76eaf9275fab09f417d1d8ee54feae"
+    },
+    {
+      "id": 7577227,
+      "split": "dev",
+      "group": "B",
+      "title": "Sr. Staff Software Engineer, AI Platform",
+      "location": "Palo Alto, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7577227",
+      "first_published": "2026-10-06T18:32:59-04:00",
+      "description_sha256": "c936d76779af4e77d1cfdbebd9c6719918a20c063ad7cec19710b11b7b2c698f"
+    },
+    {
+      "id": 7683977,
+      "split": "held-out",
+      "group": "B",
+      "title": "Principal Engineer, AI Platform",
+      "location": "San Francisco, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7683977",
+      "first_published": "2026-09-22T14:14:17-04:00",
+      "description_sha256": "a9856d262ae5f67e615bfce128e4a9bb5c32da197836ffb165a97989a09aca2b"
+    },
+    {
+      "id": 7685466,
+      "split": "dev",
+      "group": "B",
+      "title": "Principal Software Engineer, ML & Media Infra",
+      "location": "Palo Alto, CA; US;  San Francisco, CA, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7685466",
+      "first_published": "2026-10-29T12:50:31-04:00",
+      "description_sha256": "99a9840f53aef49c468087e54786fbc152a9da2632d3612a2bee61d54d5faef3"
+    },
+    {
+      "id": 7746946,
+      "split": "held-out",
+      "group": "B",
+      "title": "Sr. Staff Software Engineer, Data Product Platform",
+      "location": "San Francisco, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7746946",
+      "first_published": "2026-04-09T13:57:14-04:00",
+      "description_sha256": "ae3308b12e856779372220c2227ff9fde809713a0388178deb51dfed3101a2f9"
+    },
+    {
+      "id": 7770946,
+      "split": "dev",
+      "group": "B",
+      "title": "Sr. Staff Software Engineer, Notifications & Growth Platform ",
+      "location": "San Francisco, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7770946",
+      "first_published": "2026-10-05T12:19:30-04:00",
+      "description_sha256": "7ecc4e756fddc2bb4ac16824fa8f3a6b780480471c7901e88ba3eb48e20d6fa3"
+    },
+    {
+      "id": 7838577,
+      "split": "held-out",
+      "group": "B",
+      "title": "Software Engineer Intern 2027 (USA)",
+      "location": "San Francisco, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7838577",
+      "first_published": "2026-10-01T13:03:52-04:00",
+      "description_sha256": "775a496634ffb14a0c7a1229bf2917f83be2113e5fee10253b8d4e04ccd54084"
+    },
+    {
+      "id": 7990090,
+      "split": "dev",
+      "group": "B",
+      "title": "Staff Software Engineer, Edge",
+      "location": "Palo Alto, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7990090",
+      "first_published": "2026-06-30T16:25:36-04:00",
+      "description_sha256": "c5fae2d064dd6872f140ce30d1a7d3a9d9bf4ba67e7ace9a4a8f422d032b1659"
+    },
+    {
+      "id": 8046838,
+      "split": "held-out",
+      "group": "B",
+      "title": "Staff Software Engineer, Service Configuration Deployments",
+      "location": "San Francisco, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8046838",
+      "first_published": "2026-10-29T12:34:57-04:00",
+      "description_sha256": "3f266c356140e9fd055c50ee42ebe363a279569716444b0c3b573f775154c57e"
+    },
+    {
+      "id": 8046860,
+      "split": "dev",
+      "group": "B",
+      "title": "Sr. Staff Software Engineer, Product ML Infrastructure",
+      "location": "Palo Alto, CA, US; San Francisco, CA, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8046860",
+      "first_published": "2026-09-30T15:41:55-04:00",
+      "description_sha256": "a68861731943a6bfdcdd0324a9f8552f9f68941a3b9b08eb839f837b57091bc3"
+    },
+    {
+      "id": 8055266,
+      "split": "held-out",
+      "group": "B",
+      "title": "Staff Software Engineer, Ads & Core Serving Platform",
+      "location": "Palo Alto, CA, US; San Francisco, CA, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8055266",
+      "first_published": "2026-09-09T16:59:25-04:00",
+      "description_sha256": "3947a9654e7f7aefa42eba935705a34c562b1090a376814404f79751b1be34ed"
+    },
+    {
+      "id": 8075888,
+      "split": "dev",
+      "group": "B",
+      "title": "Staff Software Engineer, Web Product Enablement ",
+      "location": "San Francisco, CA, US; Remote, CA, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8075888",
+      "first_published": "2026-08-10T12:26:10-04:00",
+      "description_sha256": "23c1812ac3c1060b60dfe31e5d99c29a7d1ba753a183d90c30abcbaf21270954"
+    },
+    {
+      "id": 8088867,
+      "split": "held-out",
+      "group": "B",
+      "title": "Sr. Staff Software Engineer, Pinterest Assistant",
+      "location": "San Francisco, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8088867",
+      "first_published": "2026-08-10T12:17:06-04:00",
+      "description_sha256": "be6e51aaa50dd4fbd6f6c9379003f3d543e24722248c076832a62cf879836192"
+    }
+  ]
+}

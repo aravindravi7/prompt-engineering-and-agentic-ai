@@ -13,7 +13,18 @@ def main(argv=None):
     w = commands.add_parser("watch", help="fetch the board, save the raw response, report new jobs")
     w.add_argument("--resume", default=str(config.RESUME), help="fictional résumé JSON")
     w.add_argument("--from-file", help="use a saved earlier response instead of fetching; the run is labelled SEEDED")
+    f = commands.add_parser("freeze", help="freeze the 20 postings and the dev/held-out split from a saved response")
+    f.add_argument("raw", help="saved raw response, e.g. evidence/raw/pinterest-<time>.json")
     args = parser.parse_args(argv)
+
+    if args.command == "freeze":
+        from . import freeze
+        frozen = freeze.freeze(Path(args.raw).resolve())
+        for p in frozen["postings"]:
+            print(f"{p['split']:9} {p['group']:5} {p['id']}  {p['title']}")
+        print(f"\nfroze {len(frozen['postings'])} postings from {frozen['source']} at {frozen['frozen_at']}"
+              " -> experiment/postings.json, experiment/postings/, experiment/labels.csv")
+        return 0
 
     now = datetime.now(timezone.utc).replace(microsecond=0)
     try:
