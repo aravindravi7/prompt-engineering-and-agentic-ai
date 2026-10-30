@@ -27,3 +27,9 @@ Committed alone, before any code: `5c579720e624de0fe41e21301a636814583f0973` (Oc
 ## Entry 4 — October 29, 2026: Environment setup
 Created a venv inside the project folder (instead of conda base) so the TA can reproduce it. Python 3.14.6; installed httpx 0.28.1, anthropic 2.3.0, pytest 9.2.0; saved `requirements.txt` with `pip freeze`.
 Noticed: anthropic 2.3.0 pulled in a dependency called `httpx2`, not `httpx`. My contract says the Anthropic call must go through a custom `httpx` client for the host allow-list. Unresolved: whether the SDK accepts a plain `httpx` client, or whether the allow-list for the Claude call must use `httpx2`. To check when building the judge step.
+
+## Entry 5 — October 29, 2026: First test written before implementation
+Wrote `test_first_run_baseline_reports_zero_new_postings` in `tests/test_watch.py` before any code in `agent/watch.py` existed.
+Noticed: the bare `pytest` command ran conda's pytest 9.0.3 from /opt/anaconda3 instead of the venv's pytest 9.2.0, because conda base was also active. Changed to `python -m pytest` so tests run in the venv; README uses that command.
+First failing run: `ModuleNotFoundError: No module named 'agent.watch'` (expected; no implementation yet).
+
