@@ -45,6 +45,12 @@ For each posting that is **new since the last run**, the agent returns:
    - A validator rejects anything else: wrong id, extra keys, empty field lists, or a verdict outside the two values.
    - A rejected answer is shown as `INVALID`, never as a verdict.
 
+   > **Implementation note, 2026-10-30:** the validator in `agent/claude_judge.py` is **stricter** than the list above. It also rejects:
+   > - résumé field names that do not exist in the résumé JSON;
+   > - posting fields other than `title`, `location.name` and `content`.
+   >
+   > It accepts `education[0].end_date` but rejects `education.0.end_date`. This inconsistency was found after the experiments and left unchanged; see PROMPT-EXPERIMENT.md.
+
 The first run is a **baseline**: it saves the ids and reports **zero** postings as new.
 
 ## Refuses

@@ -8,7 +8,20 @@
 - **Raw replies:** `evidence/claude/experiment/<prompt>-<split>/`.
 - **Scores:** `experiments/results/`.
 
-## Order of work (each step committed before the next)
+## Order of work
+
+**How the order is proved:**
+- Steps 1–3 were each committed before the next step started.
+- Steps 4–6 landed together in one commit, `ab2a6b9`. Their order is shown by each reply's `asked_at` time (UTC) in `experiments/results/`:
+
+| Run | Time (UTC, 2026-10-30) |
+|---|---|
+| baseline on dev | 21:23:11–21:23:25 |
+| revision on dev | 21:26:04–21:26:23 |
+| baseline on held-out | 21:26:39–21:26:52 |
+| revision on held-out | 21:26:58–21:27:09 |
+
+**The steps:**
 
 1. **Labeling rule** (`labels/LABELING-RULE.md`), written first: "Fit = a recent MS grad with an AI co-op could realistically get this job, and it would use her AI/data skills."
 2. **20 real postings** chosen reproducibly (`experiments/select_labeling_set.py`, seed 7375).
@@ -45,6 +58,10 @@ A pass means the validator accepted the reply **and** its verdict matched the ha
   - Under a validator that allowed empty `resume_fields`, the baseline would have scored 7/10 on each split. The gap to the revision would then be 7 → 9 and 7 → 10, not 4 → 9 and 4 → 10.
 - **The revision's single INVALID** (#12, dev): Claude cited `education.0.end_date`. My validator accepts `education[0].end_date` but not the `.0` form, so it rejected the reply. The verdict inside, `not_relevant`, matched the hand label.
   - This is an inconsistency in my validator. I found it after seeing results and **did not change it**, so the score stays 9/10.
+  - CONTRACT.md's list of rejections does not mention field names that don't exist; the validator added that check. Under the contract as written, this reply would have been valid, and the revision would have scored 10/10 on dev.
+- **The rule and Claude are held to different standards on citing résumé fields.**
+  - The rule's justification always lists résumé fields, because check 4 always reports which skill fields it compared, even when the title alone decided.
+  - Claude was marked INVALID for leaving `resume_fields` empty on exactly that kind of title-only rejection.
 - **A side effect I did not target:** the revision also removed the empty-`resume_fields` replies (6 → 0). Once experience was a check, Claude cited `education` / `experience` fields.
 
 ## Honest limits

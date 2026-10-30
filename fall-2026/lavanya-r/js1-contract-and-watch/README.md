@@ -23,18 +23,35 @@ The agent never applies, emails, messages or logs in anywhere. No real résumé 
 
 ## Commands
 
-Run everything from this folder:
+### From a fresh clone
 
 ```bash
-cd fall-2026/lavanya-r/js1-contract-and-watch
+git clone https://github.com/nikbearbrown/info-7375-prompt-engineering-for-generative-ai.git
+cd info-7375-prompt-engineering-for-generative-ai/fall-2026/lavanya-r/js1-contract-and-watch
 ```
 
+### Safe checks: offline, no Claude, and nothing in this folder changes
+
 ```bash
-# 1. Tests: offline, no network, no Claude. 43 tests.
+# Tests: 43, offline
 python3 -m unittest discover -s tests -t . -v
 
-# 2. The watch: one live fetch. The first run on a board is the baseline.
-python3 -m agent.watch --board databricks
+# Replay run 1 then run 2 from the saved responses, into /tmp.
+# Expect "0 — baseline run", then "New since last run: 10".
+rm -rf /tmp/js1-check
+python3 -m agent.watch --from-file evidence/raw/databricks-2026-10-29T213155Z.json.gz --seeded --state /tmp/js1-check/state.json --raw-dir /tmp/js1-check/raw --report-dir /tmp/js1-check/reports
+python3 -m agent.watch --from-file evidence/raw/databricks-2026-10-30T204649Z.json.gz --seeded --state /tmp/js1-check/state.json --raw-dir /tmp/js1-check/raw --report-dir /tmp/js1-check/reports
+```
+
+These replays are labeled `seeded` in their output, as required. They report rule-v2 verdicts, so "Sr. Counsel" fails only on its title. The committed run 2 report was made under rule v1.
+
+### Live commands
+
+These change files in this folder. On a clone, a live watch would be **run 3** against the committed state, so point it at `/tmp` unless you mean to add a run:
+
+```bash
+# The watch: one live fetch
+python3 -m agent.watch --board databricks --state /tmp/js1-live/state.json --raw-dir /tmp/js1-live/raw --report-dir /tmp/js1-live/reports
 
 # 3. Two judges on a run's new postings (re-reads saved evidence; calls Claude once per posting)
 python3 -m agent.judge reports/run-databricks-2026-10-30T204649Z.json
@@ -47,10 +64,9 @@ python3 -m experiments.prompt_experiment prompts/revision.md dev
 python3 -m experiments.prompt_experiment prompts/baseline.md held_out
 python3 -m experiments.prompt_experiment prompts/revision.md held_out
 python3 -m experiments.action_surface
-
-# A run from a saved response must be labeled seeded (refused otherwise):
-python3 -m agent.watch --from-file evidence/raw/<file>.json.gz --seeded --state /tmp/s.json
 ```
+
+`--from-file` without `--seeded` is refused, so a run from a saved response can't pass as live.
 
 Raw responses are saved gzipped and byte-for-byte. To read one:
 
@@ -119,9 +135,10 @@ No run was seeded. Both watch runs on Databricks were live, a calendar day apart
 **How:**
 - **By a test I wrote before reading Claude's code:** none. I specified the rules and the 3 wrong versions in CONTRACT.md before any code (`891aec3`), and Claude wrote the tests against that contract.
 - **By hand:**
-  - I ran the full test suite myself on 2026-10-29 (34 tests, OK). It now has 43.
-  - I hand-labeled 20 real postings.
-  - I read FRICTIONAL.md and confirmed it matches what happened.
+  - I ran the full test suite myself on 2026-10-29 (34 tests, OK). It now has 43. RERUN-PENDING
+  - I hand-labeled 20 real postings with my labeling rule (`labels/hand_labels.json`).
+  - **I tested my failure sentence.** I applied CONTRACT.md's 5 checks by hand to run 2's 10 new postings: 10/10 matched rule v1 and v2 (`labels/contract_hand_check.json`). All 10 failed on title or location, so checks 4–5 were not exercised by hand.
+  - I read FRICTIONAL.md and confirmed it matches what happened. REREAD-PENDING
 - **By recomputation:**
   - The rule verdicts in every report are recomputed from the saved raw response.
   - The selection of the 20 postings is reproducible: same seed, same output, checked by Claude with `cmp`.
@@ -155,3 +172,15 @@ No run was seeded. Both watch runs on Databricks were live, a calendar day apart
 | The one prompt change | ran the baseline, explained the two candidate changes in simple terms | chose B, the experience/graduation line | which failure matters more is my call | `prompts/revision.md` (one added line); FRICTIONAL 2026-10-30 |
 | Code, tests, runs, drafts | wrote all of it and ran it | ran the tests myself; read the logs and reports | I am responsible for what I submit, and I have to be able to explain it | FRICTIONAL "I ran the tests myself"; SOURCES.md |
 | Sign-off | drafted the text | decide whether to sign or withhold | only I can vouch for it | the line above |
+
+**Transcript lines.** These are quoted verbatim from my Claude Code session. The transcript itself stays on my machine, as the brief requires.
+
+| Date | I wrote / chose | What it decided |
+|---|---|---|
+| 2026-10-29 | "give me an alternate without paying any money" | rejected the paid API-key route, so the Claude judge uses `claude -p` on my NEU login |
+| 2026-10-29 | "option A" | chose to write the contract by answering multiple-choice questions |
+| 2026-10-29 | card: "Disagrees with my hand check" | the failure sentence |
+| 2026-10-29 | card: "Switch to Databricks (Recommended)" | the board change after Datadog's 0/397 |
+| 2026-10-30 | card: "Fix the rule, dated (Recommended)" | rule v2 |
+| 2026-10-30 | card: "My own judgment" | the labeling rule |
+| 2026-10-30 | "B" | the one prompt change (the experience/graduation line) |

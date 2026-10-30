@@ -4,7 +4,7 @@
 
 - **Greenhouse Job Board API.** A public, unauthenticated endpoint: `https://boards-api.greenhouse.io/v1/boards/<board>/jobs?content=true`. I used the boards `datadog` (2026-10-29) and `databricks` (2026-10-29 and 2026-10-30).
   - Claude also counted relevant postings on 8 other boards on 2026-10-29 (toast, stripe, robinhood, duolingo, airbnb, scaleai, anthropic, figma) to help choose one. Those responses were not saved.
-- **Persona résumé:** Priya Nair, fictional. Copied from the Reallocation Engine's `search/examples/priya-nair/resume.example.json` (my local fork, read only).
+- **Persona résumé:** Priya Nair, fictional. Copied from the Reallocation Engine (https://github.com/nikbearbrown/the-reallocation-engine), file `search/examples/priya-nair/resume.example.json`, through my local fork, read only.
   - I added `work_authorization` from that persona's `profile.yml`, with a `_source` note.
 - **Python 3.11 standard library.** No third-party packages.
 - **Claude Code CLI** 2.1.312 (`claude -p`, model `claude-opus-5-5`), through my NEU Claude account. Used for every Claude verdict.

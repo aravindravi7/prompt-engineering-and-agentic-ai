@@ -35,7 +35,7 @@ Dated log of what I tried, what broke, and what I did instead.
   - 5 were outside the US.
   - 1 failed the skills check.
 - With every verdict "not relevant", the sampling and prompt experiments could not show anything.
-- Claude checked my rule against 10 Greenhouse boards. Databricks had 7 relevant and 74 that missed by one check. I chose **Databricks** and did run 1 again there (906 postings, 0 new).
+- Claude checked my rule against 10 Greenhouse boards. Under rule v1 on 2026-10-29, Databricks had 7 relevant and 74 that missed by one check. (These are v1 numbers. Rule v2 on run 2 gives 17 and 230.) I chose **Databricks** and did run 1 again there (906 postings, 0 new).
 - I kept the Datadog run as evidence: `evidence/raw/datadog-…`, `state/datadog-seen_ids.json`, `reports/run-datadog-…`.
 - The rule was not changed. CONTRACT.md has a dated note about the board change.
 - **Known effect:** every Databricks posting mentions "Databricks", which is one of Priya's skills. On this board the 2-skill check is easier to pass than I intended.
@@ -80,3 +80,16 @@ Dated log of what I tried, what broke, and what I did instead.
 - **Caveat I have to own:** with every label "not fit", a prompt that always says no would also score 10/10.
 - **Validator inconsistency found after seeing results, left unchanged:** it accepts `education[0].end_date` but rejects `education.0.end_date`, which cost the revision one dev point.
 - I got lost partway through. I asked Claude to explain in simple terms before picking the prompt change.
+
+## 2026-10-30: A fresh review, and testing my own failure sentence
+- Before submitting, Claude ran an independent read-only review of this folder against the assignment, in a separate Claude agent that had not seen our session.
+- It found I had **never tested my own failure sentence**. My labels used `labels/LABELING-RULE.md`, not CONTRACT.md.
+- So I applied CONTRACT.md's 5 checks by hand to run 2's 10 new postings (`labels/contract_hand_check.json`).
+  - I said `not_relevant` for all 10. That matched rule v1 and rule v2 on all 10, so the failure did not happen on these postings.
+  - **Unresolved:** all 10 failed on title or location, so my hand check never exercised the skills or sponsorship checks.
+- The review also found loosely worded claims, which I fixed:
+  - "each step committed before the next" in PROMPT-EXPERIMENT.md was not true for steps 4–6;
+  - ACTION-SURFACE.md had no date;
+  - it missed that the agent surface also used `claude-haiku-5-5`;
+  - the "can read" claim for surface 2 was untested;
+  - the validator is stricter than CONTRACT.md says.
