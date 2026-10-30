@@ -135,10 +135,10 @@ No run was seeded. Both watch runs on Databricks were live, a calendar day apart
 **How:**
 - **By a test I wrote before reading Claude's code:** none. I specified the rules and the 3 wrong versions in CONTRACT.md before any code (`891aec3`), and Claude wrote the tests against that contract.
 - **By hand:**
-  - I ran the full test suite myself on 2026-10-29 (34 tests, OK). It now has 43. RERUN-PENDING
+  - I ran the full test suite myself: on 2026-10-29 (34 tests, OK), and again on 2026-10-30 after the newer tests were added (`python3 -B -m unittest discover -s tests -t . -v`: 43 tests, OK).
   - I hand-labeled 20 real postings with my labeling rule (`labels/hand_labels.json`).
   - **I tested my failure sentence.** I applied CONTRACT.md's 5 checks by hand to run 2's 10 new postings: 10/10 matched rule v1 and v2 (`labels/contract_hand_check.json`). All 10 failed on title or location, so checks 4–5 were not exercised by hand.
-  - I read FRICTIONAL.md and confirmed it matches what happened. REREAD-PENDING
+  - I re-read FRICTIONAL.md on 2026-10-30, including the 10-30 entries, and confirmed it matches what happened.
 - **By recomputation:**
   - The rule verdicts in every report are recomputed from the saved raw response.
   - The selection of the 20 postings is reproducible: same seed, same output, checked by Claude with `cmp`.

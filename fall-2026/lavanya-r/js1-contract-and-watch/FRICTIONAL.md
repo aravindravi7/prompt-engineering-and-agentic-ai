@@ -96,3 +96,7 @@ Dated log of what I tried, what broke, and what I did instead.
 - The action-surface "paste into a chat" step had only been run as a `claude -p` stand-in. So I pasted the same prompt into a new claude.ai chat myself (`evidence/action-surface/1b-chat-claude-ai.json`).
   - The verdict was right: `not_relevant`, citing the 2026–27 graduation window.
   - But the reply I copied back had curly quotes and failed the validator as "not a single JSON object". I don't know whether the chat or my copy/paste changed the quotes.
+
+## 2026-10-30: Final checks before signing
+- I re-ran all 43 tests myself (`python3 -B -m unittest discover -s tests -t . -v`). All passed (`OK`).
+- I re-read this whole log, including today's entries, and left it as written.
