@@ -1,0 +1,1441 @@
+{
+  "run_id": "run-2026-10-28T145919",
+  "run_date": "2026-10-28",
+  "mode": "seeded",
+  "baseline": false,
+  "postings_fetched": 719,
+  "new_count": 16,
+  "raw_path": "raw/greenhouse-stripe-2026-10-28T141616.json",
+  "state_path": "state/seen_ids-run2-seeded.json",
+  "claude": "on, model claude-sonnet-5-5",
+  "labels": {
+    "rule_verdict": "record",
+    "claude_verdict": "model judgment"
+  },
+  "records": [
+    {
+      "posting_id": 8280266,
+      "title": "Account Executive, Startups (Grower)",
+      "url": "https://stripe.com/jobs/search?gh_jid=8280266",
+      "location": "San Francisco",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T01:39:30-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Account Executive, Startups (Grower)'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T01:39:30-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'San Francisco'; US match: San Francisco",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [8]; largest 8",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "skills found: SQL",
+          "result": "pass"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Account Executive, Startups (Grower)\" contains none of Software Engineer, AI Engineer, Backend Engineer (R1 fail)"
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "evidence": "\"8+ years of experience in a client-facing sales role\" gives minimum 8, which is more than 3 (R4 fail)"
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "\"San Francisco\" is a listed US city (R3 pass)"
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "\"Experience with Excel and SQL\" matches skill SQL (R6 pass)"
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/8280266.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8284978,
+      "title": "Account Executive - Travel, Ticketing & Hospitality (Hunter) ",
+      "url": "https://stripe.com/jobs/search?gh_jid=8284978",
+      "location": "London",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T12:45:25-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Account Executive - Travel, Ticketing & Hospitality (Hunter)'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T12:45:25-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'London'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [8]; largest 8",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Account Executive - Travel, Ticketing & Hospitality (Hunter)\" contains none of Software Engineer, AI Engineer, Backend Engineer"
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "Location \"London\" does not show a US location"
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "evidence": "\"8+ years of sales experience\" gives a minimum of 8, which is more than 3"
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, AWS appears as a whole word in the content"
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/8284978.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8275558,
+      "title": "Customer Support Specialist, Clerky",
+      "url": "https://stripe.com/jobs/search?gh_jid=8275558",
+      "location": "Canada",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T10:28:34-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Customer Support Specialist, Clerky'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T10:28:34-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Canada'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "no 'N+ years' or 'N–M years' found",
+          "result": "unknown"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Customer Support Specialist, Clerky\" contains none of Software Engineer, AI Engineer, or Backend Engineer (R1 fail)."
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "Location is \"Canada\", which does not show the US (R3 fail)."
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "Content mentions none of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, or AWS (R6 fail)."
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "evidence": "No \"N+ years\" or \"N-M years\" patterns found (R4 unknown)."
+        },
+        {
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "evidence": "No anti-sponsorship phrases found (R5 pass)."
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/8275558.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8314318,
+      "title": "Federal Government Relations Director ",
+      "url": "https://stripe.com/jobs/search?gh_jid=8314318",
+      "location": "Washington DC metro area",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T09:06:11-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Federal Government Relations Director'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T09:06:11-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Washington DC metro area'; US match: DC, Washington",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [12]; largest 12",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Federal Government Relations Director\" contains none of Software Engineer, AI Engineer, Backend Engineer"
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "evidence": "\"At least 12+ years of experience in a policymaking, government, or senior advocacy role\" - minimum 12 exceeds 3"
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, AWS appear as whole words in the content"
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "\"Washington DC metro area\" - DC is a recognized US short form (passes)"
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/8314318.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8168550,
+      "title": "Fraud Operations Analyst (CDMX)",
+      "url": "https://stripe.com/jobs/search?gh_jid=8168550",
+      "location": "Mexico City",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-27T22:30:21-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Fraud Operations Analyst (CDMX)'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-27T22:30:21-04:00 → 2026-10-27 (New York); 1 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Mexico City'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "no 'N+ years' or 'N–M years' found",
+          "result": "unknown"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Fraud Operations Analyst (CDMX)\" contains none of Software Engineer, AI Engineer, Backend Engineer"
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "Location \"Mexico City\" does not show a US location"
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, AWS appear as whole words in the content"
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "evidence": "No \"N+ years\" or \"N-M years\" patterns found, so unknown"
+        },
+        {
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "evidence": "No phrases such as \"unable to sponsor\" or \"no sponsorship\" found, so pass"
+        },
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "first_published",
+          "evidence": "Published 2026-10-27, 1 day before run date 2026-10-28, so freshness passes"
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/8168550.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8267847,
+      "title": "Head of AMER Startups (AI Sales)",
+      "url": "https://stripe.com/jobs/search?gh_jid=8267847",
+      "location": "San Francisco",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T01:41:29-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Head of AMER Startups (AI Sales)'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T01:41:29-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'San Francisco'; US match: San Francisco",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [10, 3]; largest 10",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Head of AMER Startups (AI Sales)\" contains none of Software Engineer, AI Engineer, Backend Engineer"
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "evidence": "\"10+ years of experience leading high-growth technology sales\" gives a minimum of 10, above the new-grad limit of 3"
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "\"San Francisco\" is a listed US city, so the location check passes"
+        },
+        {
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "evidence": "No phrases such as \"unable to sponsor\" or \"no sponsorship\" appear, so the sponsorship check passes"
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "None of the seeker's skills (Python, Java, SQL, AWS, etc.) appear as whole words in the content, so the skills check fails"
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/8267847.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 7337544,
+      "title": "Manager, Sales Development",
+      "url": "https://stripe.com/jobs/search?gh_jid=7337544",
+      "location": "Dublin ",
+      "date_used": {
+        "field": "first_published",
+        "value": "2025-10-28T04:53:42-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Manager, Sales Development'; excluded word(s): Manager",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2025-10-28T04:53:42-04:00 → 2025-10-28 (New York); 365 day(s) before run date 2026-10-28",
+          "result": "fail"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Dublin'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [2]; largest 2",
+          "result": "pass"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Manager, Sales Development\" contains \"Manager\", which forces a fail, and contains none of Software Engineer, AI Engineer, or Backend Engineer."
+        },
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "first_published",
+          "evidence": "first_published 2025-10-28 (America/New_York) is 365 days before the run date 2026-10-28, which is more than 21 days."
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "Location \"Dublin\" does not show a US location."
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, or AWS appears as a whole word in the content."
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "evidence": "\"2+ years of people management experience\" gives a maximum minimum of 2, which is 3 or less, so this passes."
+        },
+        {
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "evidence": "No phrases such as \"unable to sponsor\" or \"no sponsorship\" appear in the content, so this passes."
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/7337544.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8175637,
+      "title": "Manager, Solutions Architecture Transformation",
+      "url": "https://stripe.com/jobs/search?gh_jid=8175637",
+      "location": "USA",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-27T22:33:02-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Manager, Solutions Architecture Transformation'; excluded word(s): Manager",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-27T22:33:02-04:00 → 2026-10-27 (New York); 1 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'USA'; US match: USA",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [10, 3]; largest 10",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Manager, Solutions Architecture Transformation\" contains \"Manager\" (which overrides) and none of Software Engineer, AI Engineer, Backend Engineer -> R1 fail"
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "evidence": "\"10+ years of experience in go-to-market program management\" -> largest minimum 10 > 3 -> R4 fail"
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "Location \"USA\" shows the US -> R3 pass"
+        },
+        {
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "evidence": "No phrases such as \"unable to sponsor\" or \"no sponsorship\" found -> R5 pass"
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, AWS appear as whole words in the content -> R6 fail"
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/8175637.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8329719,
+      "title": "Marketing Strategy & Operations Business Partner",
+      "url": "https://stripe.com/jobs/search?gh_jid=8329719",
+      "location": "San Francisco, New York, Seattle, Chicago, Atlanta, Remote in the US ",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T09:00:35-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Marketing Strategy & Operations Business Partner'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T09:00:35-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'San Francisco, New York, Seattle, Chicago, Atlanta, Remote in the US'; US match: US, San Francisco, New York, Seattle, Chicago, Atlanta, New York",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "no 'N+ years' or 'N–M years' found",
+          "result": "unknown"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "skills found: SQL",
+          "result": "pass"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title 'Marketing Strategy & Operations Business Partner' contains none of Software Engineer, AI Engineer, or Backend Engineer, so R1 fails."
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "Location 'San Francisco, New York, Seattle, Chicago, Atlanta, Remote in the US' shows US cities, so R3 passes."
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "Content mentions 'SQL' in the preferred qualifications, so R6 passes."
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/8329719.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8331124,
+      "title": "Product Marketing Manager, Subscriptions",
+      "url": "https://stripe.com/jobs/search?gh_jid=8331124",
+      "location": "New York, San Francisco, Seattle, Remote",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T11:28:30-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Product Marketing Manager, Subscriptions'; excluded word(s): Manager",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T11:28:30-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'New York, San Francisco, Seattle, Remote'; US match: San Francisco, New York, Seattle, New York",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [7]; largest 7",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Product Marketing Manager, Subscriptions\" contains none of Software Engineer, AI Engineer, Backend Engineer, and contains the excluded word \"Manager\" (R1 fail)"
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "evidence": "\"7+ years of product marketing or growth marketing experience\" gives a minimum of 7, which is more than 3 (R4 fail)"
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, AWS appear as whole words in the content (R6 fail)"
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "\"New York, San Francisco, Seattle, Remote\" shows US cities (R3 pass)"
+        },
+        {
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "evidence": "No phrases such as \"unable to sponsor\" or \"no sponsorship\" found (R5 pass)"
+        },
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "first_published",
+          "evidence": "Published 2026-10-28, same as run date 2026-10-28, so within 21 days (R2 pass)"
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/8331124.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8311067,
+      "title": "Program Manager, Go-to-Market Experience and Productivity",
+      "url": "https://stripe.com/jobs/search?gh_jid=8311067",
+      "location": "Dublin ",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T13:53:45-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Program Manager, Go-to-Market Experience and Productivity'; excluded word(s): Manager",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T13:53:45-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Dublin'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [3, 2]; largest 3",
+          "result": "pass"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "skills found: SQL",
+          "result": "pass"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Program Manager, Go-to-Market Experience and Productivity\" contains none of Software Engineer, AI Engineer, Backend Engineer, and contains \"Manager\", which is an excluded word."
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "Location \"Dublin \" does not show a US location."
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "evidence": "\"3-5+ years of experience in program management...\" gives a minimum of 3 and \"2+ years\" gives 2; the largest minimum is 3, which passes for a new grad."
+        },
+        {
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "evidence": "No phrases such as \"unable to sponsor\" or \"no sponsorship\" appear in the content."
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "\"SQL\" appears in the preferred qualifications: \"Experience with experimentation, funnel analysis, SQL or business-intelligence tools.\""
+        },
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "first_published",
+          "evidence": "Published 2026-10-28, the same as the run date, so freshness passes."
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/8311067.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8048266,
+      "title": "Sales Development Associate  ",
+      "url": "https://stripe.com/jobs/search?gh_jid=8048266",
+      "location": "Dublin",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-07-08T05:08:02-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Sales Development Associate'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-07-08T05:08:02-04:00 → 2026-07-08 (New York); 112 day(s) before run date 2026-10-28",
+          "result": "fail"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Dublin'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "no 'N+ years' or 'N–M years' found",
+          "result": "unknown"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Sales Development Associate\" contains none of Software Engineer, AI Engineer, Backend Engineer"
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "Location \"Dublin\" does not show a US location"
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "Content mentions none of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, AWS as whole words"
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "evidence": "No \"N+ years\" or \"N-M years\" patterns found, so unknown"
+        },
+        {
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "evidence": "No no-sponsorship phrases found, so pass"
+        },
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "first_published",
+          "evidence": "first_published 2026-07-08 is over 21 days before run date 2026-10-28, but updated_at 2026-10-28 is used only if first_published is missing; first_published is present, so freshness fails"
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/8048266.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8130876,
+      "title": "Software Engineer, New Grad",
+      "url": "https://stripe.com/jobs/search?gh_jid=8130876",
+      "location": "Bangalore",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T05:19:59-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Software Engineer, New Grad'; target title(s): Software Engineer",
+          "result": "pass"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T05:19:59-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Bangalore'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "no 'N+ years' or 'N–M years' found",
+          "result": "unknown"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "skills found: Java",
+          "result": "pass"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Software Engineer, New Grad\" contains target title \"Software Engineer\" and none of the excluded words (R1 pass)."
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "Location is \"Bangalore\", which shows no US indicator, so R3 fails."
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "evidence": "No \"N+ years\" or \"N-M years\" patterns found; only \"18 months\" is mentioned, so R4 is unknown."
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "Content says \"We work mostly in Java, Ruby, JavaScript, Scala, and Go\", so Java matches as a whole word (R6 pass)."
+        },
+        {
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "evidence": "No phrases such as \"unable to sponsor\" or \"no sponsorship\" appear, so R5 passes."
+        },
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "first_published",
+          "evidence": "Published 2026-10-28, the same day as the run date, so R2 passes."
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/8130876.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8040052,
+      "title": "Staff Product Manager, Risk",
+      "url": "https://stripe.com/jobs/search?gh_jid=8040052",
+      "location": "Toronto, Canada",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-07-02T12:08:46-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Staff Product Manager, Risk'; excluded word(s): Staff, Manager",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-07-02T12:08:46-04:00 → 2026-07-02 (New York); 118 day(s) before run date 2026-10-28",
+          "result": "fail"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Toronto, Canada'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "no 'N+ years' or 'N–M years' found",
+          "result": "unknown"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Staff Product Manager, Risk\" contains none of the target titles and includes the excluded words \"Staff\" and \"Manager\"."
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "Location is \"Toronto, Canada\", which shows no US location."
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker or AWS appears as a whole word in the content."
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "first_published",
+          "evidence": "first_published is 2026-07-02, which is more than 21 days before the run date of 2026-10-28, so the freshness check fails."
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/8040052.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8329718,
+      "title": "Staff Software Engineer, Dashboard Product",
+      "url": "https://stripe.com/jobs/search?gh_jid=8329718",
+      "location": "Seattle",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-27T21:21:27-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Staff Software Engineer, Dashboard Product'; excluded word(s): Staff",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-27T21:21:27-04:00 → 2026-10-27 (New York); 1 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Seattle'; US match: Seattle",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [10]; largest 10",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "skills found: React",
+          "result": "pass"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Staff Software Engineer, Dashboard Product\" contains \"Software Engineer\" but also \"Staff\", which overrides target titles, so R1 fails."
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "evidence": "\"10+ years of experience\" gives a minimum of 10, which is more than 3, so R4 fails."
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "Location \"Seattle\" is a listed US city, so R3 passes."
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "Content mentions \"React\" (\"Advanced proficiency with React\"), so R6 passes."
+        },
+        {
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "evidence": "No phrases such as \"unable to sponsor\" or \"no sponsorship\" appear, so R5 passes."
+        },
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "first_published",
+          "evidence": "First published 2026-10-27 (America/New_York), 1 day before run date 2026-10-28, so R2 passes."
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/8329718.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 7746721,
+      "title": "Staff Software Engineer, Stripe Dashboard",
+      "url": "https://stripe.com/jobs/search?gh_jid=7746721",
+      "location": "Seattle",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-03-24T18:48:01-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Staff Software Engineer, Stripe Dashboard'; excluded word(s): Staff",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-03-24T18:48:01-04:00 → 2026-03-24 (New York); 218 day(s) before run date 2026-10-28",
+          "result": "fail"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Seattle'; US match: Seattle",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [10]; largest 10",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "skills found: React",
+          "result": "pass"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": "not_relevant",
+      "claude_justification": [
+        {
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "evidence": "Title \"Staff Software Engineer, Stripe Dashboard\" contains \"Software Engineer\" but also the excluded word \"Staff\", which overrides target titles (R1 fail)."
+        },
+        {
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "evidence": "Content says \"typically means 10+ years of experience\", so the largest minimum is 10, which is more than 3 (R4 fail)."
+        },
+        {
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "evidence": "Location \"Seattle\" is a listed US city (R3 pass)."
+        },
+        {
+          "resume_field": "skills",
+          "posting_field": "content",
+          "evidence": "Content mentions \"React\", which matches a skill (R6 pass)."
+        }
+      ],
+      "claude_valid": true,
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T145919/7746721.json",
+      "claude_label": "model judgment"
+    }
+  ]
+}

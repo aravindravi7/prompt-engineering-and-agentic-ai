@@ -1,0 +1,202 @@
+{
+  "6348471_r1": {
+    "file": "6348471_r1.txt",
+    "posting_id": "6348471",
+    "collected": "2026-10-29T20:53:31-04:00 (UTC 2026-10-30T00:53:31Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 1
+  },
+  "6348471_r2": {
+    "file": "6348471_r2.txt",
+    "posting_id": "6348471",
+    "collected": "2026-10-29T20:57:06-04:00 (UTC 2026-10-30T00:57:06Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 2
+  },
+  "6348471_r3": {
+    "file": "6348471_r3.txt",
+    "posting_id": "6348471",
+    "collected": "2026-10-29T20:57:52-04:00 (UTC 2026-10-30T00:57:52Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 3
+  },
+  "6348471_r4": {
+    "file": "6348471_r4.txt",
+    "posting_id": "6348471",
+    "collected": "2026-10-29T20:58:30-04:00 (UTC 2026-10-30T00:58:30Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 4
+  },
+  "7202630_r1": {
+    "file": "7202630_r1.txt",
+    "posting_id": "7202630",
+    "collected": "2026-10-29T21:01:28-04:00 (UTC 2026-10-30T01:01:28Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 1
+  },
+  "7202630_r2": {
+    "file": "7202630_r2.txt",
+    "posting_id": "7202630",
+    "collected": "2026-10-29T21:02:05-04:00 (UTC 2026-10-30T01:02:05Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 2
+  },
+  "7202630_r3": {
+    "file": "7202630_r3.txt",
+    "posting_id": "7202630",
+    "collected": "2026-10-29T21:02:43-04:00 (UTC 2026-10-30T01:02:43Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 3
+  },
+  "7202630_r4": {
+    "file": "7202630_r4.txt",
+    "posting_id": "7202630",
+    "collected": "2026-10-29T21:03:34-04:00 (UTC 2026-10-30T01:03:34Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 4
+  },
+  "7369543_r1": {
+    "file": "7369543_r1.txt",
+    "posting_id": "7369543",
+    "collected": "2026-10-29T21:04:56-04:00 (UTC 2026-10-30T01:04:56Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 1
+  },
+  "7369543_r2": {
+    "file": "7369543_r2.txt",
+    "posting_id": "7369543",
+    "collected": "2026-10-29T21:05:53-04:00 (UTC 2026-10-30T01:05:53Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 2
+  },
+  "7369543_r3": {
+    "file": "7369543_r3.txt",
+    "posting_id": "7369543",
+    "collected": "2026-10-29T21:07:25-04:00 (UTC 2026-10-30T01:07:25Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 3
+  },
+  "7369543_r4": {
+    "file": "7369543_r4.txt",
+    "posting_id": "7369543",
+    "collected": "2026-10-29T21:07:50-04:00 (UTC 2026-10-30T01:07:50Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 4
+  },
+  "7392697_r1": {
+    "file": "7392697_r1.txt",
+    "posting_id": "7392697",
+    "collected": "2026-10-29T21:08:54-04:00 (UTC 2026-10-30T01:08:54Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 1
+  },
+  "7392697_r2": {
+    "file": "7392697_r2.txt",
+    "posting_id": "7392697",
+    "collected": "2026-10-29T21:09:27-04:00 (UTC 2026-10-30T01:09:27Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 2
+  },
+  "7392697_r3": {
+    "file": "7392697_r3.txt",
+    "posting_id": "7392697",
+    "collected": "2026-10-29T21:10:17-04:00 (UTC 2026-10-30T01:10:17Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 3
+  },
+  "7392697_r4": {
+    "file": "7392697_r4.txt",
+    "posting_id": "7392697",
+    "collected": "2026-10-29T21:10:44-04:00 (UTC 2026-10-30T01:10:44Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 4
+  },
+  "7456716_r1": {
+    "file": "7456716_r1.txt",
+    "posting_id": "7456716",
+    "collected": "2026-10-29T21:12:32-04:00 (UTC 2026-10-30T01:12:32Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 1
+  },
+  "7456716_r2": {
+    "file": "7456716_r2.txt",
+    "posting_id": "7456716",
+    "collected": "2026-10-29T21:13:15-04:00 (UTC 2026-10-30T01:13:15Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 2
+  },
+  "7456716_r3": {
+    "file": "7456716_r3.txt",
+    "posting_id": "7456716",
+    "collected": "2026-10-29T21:13:42-04:00 (UTC 2026-10-30T01:13:42Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 3
+  },
+  "7456716_r4": {
+    "file": "7456716_r4.txt",
+    "posting_id": "7456716",
+    "collected": "2026-10-29T21:15:05-04:00 (UTC 2026-10-30T01:15:05Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "sampling",
+    "repeat": 4
+  }
+}

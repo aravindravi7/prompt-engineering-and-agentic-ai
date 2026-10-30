@@ -1,0 +1,15 @@
+VERDICT: not_relevant
+RESUME_FIELD: target_titles=Associate Product Manager
+RESUME_FIELD: target_titles=Product Manager
+RESUME_FIELD: target_titles=Product Analyst
+RESUME_FIELD: locations=New York
+RESUME_FIELD: locations=NYC
+RESUME_FIELD: locations=Remote
+RESUME_FIELD: skills=Python
+RESUME_FIELD: skills=SQL
+RESUME_FIELD: skills=A/B testing
+RESUME_FIELD: skills=roadmapping
+RESUME_FIELD: skills=user research
+POSTING_FIELD: title=Backend/API Engineer, Money as a Service (Product)
+POSTING_FIELD: location.name=United Kingdom
+REASON: C1 fails because the title contains none of the target titles, C2 fails because the location "United Kingdom" contains none of the candidate locations, and C3 fails because the content contains none of the candidate skills.

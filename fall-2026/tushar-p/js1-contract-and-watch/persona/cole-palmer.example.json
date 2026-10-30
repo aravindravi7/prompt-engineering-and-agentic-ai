@@ -1,0 +1,37 @@
+{
+  "_comment": "FICTIONAL PERSONA - safe to commit. Invented for Job-Search Agent 1. 555 phone, @example.com email. Not a real person's resume.",
+  "personal": {
+    "name": "Cole Palmer",
+    "location": "Boston, MA",
+    "phone": "(617) 555-0147",
+    "email": "cole.palmer@example.com"
+  },
+  "education": [
+    {
+      "institution": "Northeastern University",
+      "degree": "MS, Computer Science",
+      "start_date": "2024-09",
+      "end_date": "2026-12",
+      "status": "expected"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Example Logistics Inc.",
+      "title": "Software Engineer Co-op",
+      "start_date": "2025-07",
+      "end_date": "2025-12",
+      "bullets": [
+        "Built REST endpoints in Java and Spring Boot for an internal shipment-tracking service.",
+        "Wrote PostgreSQL migrations and Python scripts for nightly data checks."
+      ]
+    }
+  ],
+  "skills": ["Python", "Java", "TypeScript", "SQL", "PostgreSQL", "Spring Boot", "React", "Docker", "AWS"],
+  "job_search": {
+    "target_titles": ["Software Engineer", "AI Engineer", "Backend Engineer"],
+    "years_experience": 0,
+    "needs_sponsorship": true,
+    "work_country": "US"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "prompt_file": "prompts/revised.txt",
+  "prompt_sha256": "57a45a61215283556329b7e15000f1be5fc59bd9600c6be96ea91151790e6509",
+  "split": "held-out",
+  "final": true,
+  "run_date": "2026-10-27",
+  "timestamp": "2026-10-29T19:20:30-04:00",
+  "model_requested": "claude-sonnet-5-5",
+  "models_in_responses": [
+    "claude-sonnet-5-5"
+  ],
+  "temperature": "not set in the request (API default)",
+  "raw_source": "raw/greenhouse-stripe-2026-10-27T203128.json",
+  "labels_source": "experiments/labels.csv",
+  "scoring": "pass = Claude's verdict exactly equals my label; an invalid reply is a miss",
+  "claude_label": "model judgment",
+  "passes": 10,
+  "total": 10,
+  "invalid_count": 0,
+  "rows": [
+    {
+      "posting_id": 7982720,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/revised-held-out-2026-10-29T192030/7982720.json"
+    },
+    {
+      "posting_id": 6717520,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/revised-held-out-2026-10-29T192030/6717520.json"
+    },
+    {
+      "posting_id": 8260980,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/revised-held-out-2026-10-29T192030/8260980.json"
+    },
+    {
+      "posting_id": 8161567,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/revised-held-out-2026-10-29T192030/8161567.json"
+    },
+    {
+      "posting_id": 7208537,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/revised-held-out-2026-10-29T192030/7208537.json"
+    },
+    {
+      "posting_id": 7819426,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/revised-held-out-2026-10-29T192030/7819426.json"
+    },
+    {
+      "posting_id": 8206731,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/revised-held-out-2026-10-29T192030/8206731.json"
+    },
+    {
+      "posting_id": 8203975,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/revised-held-out-2026-10-29T192030/8203975.json"
+    },
+    {
+      "posting_id": 7983456,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/revised-held-out-2026-10-29T192030/7983456.json"
+    },
+    {
+      "posting_id": 8197891,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/revised-held-out-2026-10-29T192030/8197891.json"
+    }
+  ]
+}

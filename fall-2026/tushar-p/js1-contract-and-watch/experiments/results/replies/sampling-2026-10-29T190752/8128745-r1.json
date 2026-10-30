@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXNSBDWaZ4XdJJ5sXHuH",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQSyAcKEAgTGAI4AUIIdGhpbmtpbmcSDHU2um81e3rRMCvagxoM56OhAQx8xHBUOnR8IjBsnmsrJZbih7rEwlOKH2rbr3hJZ7HwhvLPUNYGiqubhBhtuTJKkQ03yI4kpWY1Tekq5QbabQdHSRVXwGaBlB4Dg97WFQHDIQZL1OmF2yDEgch8QBcEpj/06eB8PkCWAc1f28x6garcAv3FfHluf4GXrUKoTadEVv07yUUgUXuxiHEbFyd75albuuM9WrUxriENoRr/H9wxlFgObrZ3ZMjJEr6q2YWfTd7r9Gn++jAVgqfapA7QdnNvJUh5E7rjXUiJSL6dBmX09VoOk+0R03VAgxK1D2zbHA2XNRjzeoAMCuTI2Q7z4CJfCICqW6OlXyMBGuCx+Mn1IRZkzBCxkVR2XjtyO5POyjpHs3Tj7LEDujoblKH1H1akwlIINr+B+9xIeHyY98comO4v5DQW0A2SCS9A2qwttSUlW6j8+vU5CXLuMur0ys/KOPGXhKaImfFcNk3rR1KDy9UG/dHLb4aVCBaNqKfMlHc4T3lKXgIRGjFekBjMboeb9OSOdrN+iP8ZMRiS2OvT4NaTZHdWL7SX7542aal9cF95CFY4m7VTmMetzCPHa8t/qyo20bDGKnWSRB13tpO8J3GnamK4GdIRTbkNnCBHofjt7l5bGPtegf82weHQCmDD19dr1+8dvOdotvRbLFt6PdfxFaes8LtevCKQpg1pFmUguEfAuMzXoJf5UdepD1cSI+uI3D+QY4MMQksEBEu3wh+bb2HQxC51SyocGTGCU9Y0eGsEJH+P0uouj3l60JA4Alie7i2g3/Olou28T65ZcdCl2KpcBNPs/VWV8gHMZiKewwk06TSdnNTn6N8ri21UryWK9dEMnjxRnQlFYX0p6ArrdfQF4M61M1n5GaAoRNup7RViwC5teSg0iZC2nsdKNbPQB3nhk8M7oQPFgwk+ZLAOzAvV7EReT+86hTe0ouzJLIJb7CKmu8EyACtJ6Me835Naty2C4lwkr8w9+gLiBFslEU3z/lej+nShVX2Sn4hP6lEQLjMAG8tQHvE26FoX8OFM6Ar1XeYZg2lE2oOr7Gs4g1D+/kKCYzRGAuFFuTreROSCkGjEH6jf0T7PhL76TQgLrRN/vqW6cWPEDNYNMsezRlNbXbacFFgRn4GZF3sJl10NR3l/KA7sgdhjxTKXROY9hlsbvGgLQt9i72EROn3wkumE/QWQc7JQto3j0//uAoLFjukxmPmJMwPjv6zWwgDqDAQa7BW8MhYUBfvGmRgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8128745\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Software Engineer, Intern (Summer or Winter)\\\" contains \\\"Software Engineer\\\", but also contains the excluded word \\\"Intern\\\", which overrides target titles, so R1 fails.\"},{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"first_published\",\"evidence\":\"first_published 2026-08-31 is 57 days before the run date 2026-10-27, more than 21 days, so R2 fails.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"\\\"San Francisco, Seattle, New York City\\\" lists US cities, so R3 passes.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"Content says \\\"We work mostly in Ruby, Java, Javascript, Go, and Scala\\\", and Java is in the skills list, so R6 passes.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3657,
+    "output_tokens": 505,
+    "output_tokens_details": {
+      "thinking_tokens": 162
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

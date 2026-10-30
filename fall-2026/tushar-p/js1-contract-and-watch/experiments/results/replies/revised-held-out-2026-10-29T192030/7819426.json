@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXPMdEAUVj3SM7geso2n",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQSqQkKEAgTGAI4AUIIdGhpbmtpbmcSDC0/6BKjELB1XvlGaRoMJ5RAR6l8bggrqZn5IjC4O2BrMfFQjiY92LtA8wlw4Q8v3xnahGTZp2gjayKG6AAWRB2F16UWP2/e/MylIl8qxgiSQWwskey0Do8zmDZzVsZtP05CABpQ0LRmwFZYKn0evQmXF+GP2hT5ObLYI2Z/b1zDQS5cm2CborCQDn/2PQa0UovxR68wLY4TKO3KBKHDXyOJyfKiSTNFUZmUCfhqin1bWoUEDzqNiY3QsorqhM5a4F65nXjxoL+DU0O7PhulEkgmxTL4zEhnT/jiwvltUrWg813qanYoHne4SD4yI2u7M08sDgNlWb/PDsLc0ohiIoiNUhoOSR/I/pjF8Ilz3zQSOgaHvPO0EmjOZxx2WJ/bhQQr4ArhFEJ5mUknU0Wa5shY1BaSa43xNJZnfBD70zBP5z9MOFBumZjWMCxCNTbZoInawyQpGYe8nKoeLTG9MgDkpXCu9k6gSp4zmbbeq0a/1GZX6TKfYnl/n1Pp7Pt6Po7pQgl+nxaMoKPW0un7iGQ/rYiOaNrmCcbrcrTISNZhQyfIy5yuLaT5UWRLcGyM3dyp8jLK8DAAS7kqv2zm6Hh5n8dwow8a6IYHyVxvv8gYIWJ2lKxbVaWm53FJOVbc7j0KpERjpAsOkg0FMZNFYOtPm0nKRh7BpAVji7/vq8yOIER8egComQRM75AdsBpq4WlrSUQK2v2VpRE21Rg6YxZ5EJuPhfbeK9vCFZaos0ZT7UPExqhz82KG/IjZFANWzK2FzC2/BxcJ7b3m+Ii7kuVxESjizc8RERnU8ib3Ua43e/Ny8UsF8Qe5vsT6+Q2K37IqebtS9PdHP83EDwQaAySqn+BgSZld7YHZAJQVtskV5NJiBtj0jVK7Lqjk9L8jCjt0xZYYtXgQOzZZ2qOHHqtgeBLcay5HSdVkT3w2Q0CwodoAB0HZ8XUWcQPRFUZUC9bsbSmslTiFjUvQIrHGVg+M8fM7UOWY8znoVZ2BgPafySN9QRPTTn/qvZ4SSrszDbhpvXJDBB9/UoC63ABzkuy5iUq5w7j9BHF3giE+yqkgvN0pUmknNCEZ2vx5HY3Ws1VBLhGBmiOHadGupP2X5HtIXt4uQJHcU99Rq/WOSYQLAvDZjVip2Tw3IXECcxY8GzmmSEywowlPM3pPsVlBW/KajhzBB2KWAZsBeSBLAqabgXiwdBPqKlKfz5xy9JyFCFo/eAcXRVxFXQjra/UU+dsELSM8pQnxdfTiow2xpEi9N12y5gkymVxXhAobsJD0Pf9BZIfBST1DSvhzBWEwGdadb4wVA9OIP7SyQnTY6zfIaSSuJ7PoyK92sBZIQKNu5KTeCvul5KRhlW4as7j4OAW0fgyojh1tn6amTGy0FXU3mt8ENUKZ3fsCOkjcjij500sBYcUaCqqVKGRs/rOnrWifNvEjVAXVNPT4B46HSTRs3SqhqpBT+jxU9C+4e6pXivoTnb/O6SSPHeg2vTX12j7fO/9c7PHKweJST4dkx1HFn6kuWs5pPXtiLTVPLPHVeSp8VezE2H5282ZmnCmXpRJQFsnYshgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"7819426\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Integration Engineer (Chicago)\\\" contains none of Software Engineer, AI Engineer, or Backend Engineer, so R1 fails.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"first_published\",\"evidence\":\"first_published 2026-04-29 is about 181 days before the run date 2026-10-27, well over 21 days, so R2 fails.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"\\\"Chicago, US-Remote\\\" shows Chicago and US, so R3 passes.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"\\\"4 years + experience in a Software Engineering / Integration Engineering role\\\" gives a minimum of 4, above the new-grad limit of 3, so R4 fails.\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"No phrases such as \\\"unable to sponsor\\\" or \\\"no sponsorship\\\" appear, so R5 passes.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, or AWS appears as a whole word in the content, so R6 fails.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2822,
+    "output_tokens": 761,
+    "output_tokens_details": {
+      "thinking_tokens": 262
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgV9cWSAMieRyYzgY2Src",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQSrAcKEAgTGAI4AUIIdGhpbmtpbmcSDF8SyHDJkMds816KghoMFM9pcB4ZIkg/1kztIjAZmHkIqDw+7wNgyl+ywHpIhbgnEYWzUzBU4K82XTywKv0j2P/Kq8EyxqGmva2IBcQqyQYNH4K2e6z06+aTIlGwdekULPLUMJH+rEiT8+I8a9+ORnNmKHVRNPCPOAjN2eFIrhjlPWzNb8OepFD6g3eDKqJn076r+00mcXKBMuRoJEk+Ree5X4Em+ufCNm5UTTja+1Zuok/IiosGAJCx9e08ZgiVdx0ARCqd4y2Xj8twLPXYGzxePrsoEJZiLYQrevrVd4vryqneSUCj6Mxzb+6QFUYukhIQjVpPYCghmF5TOg5HkTSpizE2diCILhUOT5r+xJ8Atm1IYCKNaC95Zt+fEbqORcURb02TqL+7+ckt3gJeNqWAi/x20EeMDat0NDSYd9FCWN7PQQIf5ViSzztVgFLDlMd3zFsZObz8ACrd5JxO5dfbeSBAKI/hjt2H2GN5mnJsbSaeLz9l77bP9e3Hf0DFcTGIw4/hUUGER651OeKZ7yh8LNl5GQVXwBQtNgiz+CP+UHladFSpXPwHFOUTOemnLDMhmlAarAEF60KGVUTq6cxisl90F0kgS7NQBZQhWuL1i79NnnKVYrf45SrLhQZlghY9yQtHVKtcMEdZ8gOvvBmICWXgIFvZKqlFyWPg4/DHrtenGGLDijZYakIC/XKTnd70ilLV9vx5X4dMEiK/SyBYsgCl5PGXWBsYZ7SukJJr+fuXsQ5VCcebm9g2YUorQ3moL02El9Vxb+U4o4azG3jigKQvO0V2rUnLjX7clhPIWqoNgX6nO2DteB3zRnZoCADh1MJkEQsGvb28MyW8sR6beoGCxAym7gJt8GS3HMmbsYOHgZRe76YNRs4DLHEckKf0f6YO26KQWLVfyLqZl9JJhNHRCLDPKhh0gEyKOdIV03Z3Bk31OEq40r0KWzR5hFrcxETOfUHcg4ZqvDNyuPS5tgg5LNuNmokG4z/IDpwTAk5Do5yFcacFRqdVDlzj1xbJJICt91es+Lm2DPUvGJWKlljzMahX7klrR6SpWoAs0yt/nQFoSKqG1tl5z81DG7+HcrTtIgtVtjX9NvcjXMkUkFXcvVW2v7iP/LY8hneXXqSEJVm9lBA2gdhTTfFXh4LcSmZVQpIcxwqZl7oyZMU/Ddh7ztbUzcKI5gsViuOfWfzdj3reFY055Sw7z4U6FYWuWim0BAQPGAE=",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8275558\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Customer Support Specialist, Clerky\\\" contains none of Software Engineer, AI Engineer, or Backend Engineer (R1 fail).\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location is \\\"Canada\\\", which does not show the US (R3 fail).\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"Content mentions none of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, or AWS (R6 fail).\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"No \\\"N+ years\\\" or \\\"N-M years\\\" patterns found (R4 unknown).\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"No anti-sponsorship phrases found (R5 pass).\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3110,
+    "output_tokens": 524,
+    "output_tokens_details": {
+      "thinking_tokens": 153
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

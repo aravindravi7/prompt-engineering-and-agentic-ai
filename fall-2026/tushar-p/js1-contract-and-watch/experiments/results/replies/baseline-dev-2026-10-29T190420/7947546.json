@@ -1,0 +1,35 @@
+{
+  "id": "msg_011CgXN7ENjEJsTYX7HAdd15",
+  "container": null,
+  "content": [
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"7947546\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Engineering Manager, Forward Deployed (Privy)\\\" contains \\\"Manager\\\", which excludes it, and contains none of the target titles (Software Engineer, AI Engineer, Backend Engineer).\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"\\\"NYC-Privy\\\" contains the whole word \\\"NYC\\\", which shows a US location (pass).\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"No \\\"N+ years\\\" or \\\"N-M years\\\" patterns in the content (unknown).\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"No exclusion phrases such as \\\"unable to sponsor\\\" or \\\"no sponsorship\\\" appear (pass).\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"Content mentions \\\"React\\\" and \\\"AWS\\\" (pass).\"},{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"updated_at\",\"evidence\":\"first_published is 2026-05-20, which is over 21 days before run date 2026-10-27, so freshness fails.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3016,
+    "output_tokens": 457,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

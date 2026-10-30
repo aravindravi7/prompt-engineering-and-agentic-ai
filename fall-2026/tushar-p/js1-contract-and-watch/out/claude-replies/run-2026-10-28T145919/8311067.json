@@ -1,0 +1,35 @@
+{
+  "id": "msg_011CgV9egYgxF7xS6XpQMdPk",
+  "container": null,
+  "content": [
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8311067\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Program Manager, Go-to-Market Experience and Productivity\\\" contains none of Software Engineer, AI Engineer, Backend Engineer, and contains \\\"Manager\\\", which is an excluded word.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location \\\"Dublin \\\" does not show a US location.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"\\\"3-5+ years of experience in program management...\\\" gives a minimum of 3 and \\\"2+ years\\\" gives 2; the largest minimum is 3, which passes for a new grad.\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"No phrases such as \\\"unable to sponsor\\\" or \\\"no sponsorship\\\" appear in the content.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"\\\"SQL\\\" appears in the preferred qualifications: \\\"Experience with experimentation, funnel analysis, SQL or business-intelligence tools.\\\"\"},{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"first_published\",\"evidence\":\"Published 2026-10-28, the same as the run date, so freshness passes.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 4109,
+    "output_tokens": 476,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

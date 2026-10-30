@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXPLL8EyqQBsVEn7qWUQ",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQSjQsKEAgTGAI4AUIIdGhpbmtpbmcSDNxd9rb/f9fRqKz2HBoMI164RtcVgIBuBFfrIjBR71v6drYYeA5aZNZ/s+j9HH0BZekm6c0Terl4elDozdGJ7qs6XBwTIjVqc5568wwqqgplqmZGGZbL5mhlOf6Vtgmc9rmqpl2rnSMqBtXSy37bJdpdAXp8T0CVMPrX385uh2vJf/pseQ3OrrQofgQ3WX6QyUvR8c7ReibZ+yhyjj/RKuympI5FApy2T34ESDAFlmjug1Ad3KZ0ozmMnT9+VboRcGcJ5Y5RP3Wuv0o1w98ubQEZK6Cyx8pkXPJNysOk1Ku/QBScW+s8KkiRgJliC43B0WjwEFHAcAwkraW+k4IZp7q1RNmHlchUgIMYXY4juK9XEjH2JSf2LLWcDswW6xgtigwmkGe1VX7du2988SM7Cnu7UGaTEGS9A1XSda8ghg3jt+AnqWNyn4iXyOYOO2pOonOZvLpLPgZhwouYgPiBgANMkfqxyAq3Ya0N3j85548i5qX6fAPqQkoDxdAqenUcKXkozREVs6TnNIGkhkO0N+pNPNkyrhc9aVzR8a98Rv0cdjeD8tWPc4U36RdykkM+8hnJzmjL+d4dVLeViyTPt26xp0lxYCRQ0qergh8Hr1ryvlF0EdywA/c5HyJHAHJaWzA5hCTODXIeTEYBNYvQ2rORaun4fyXEYEXNDT8gmBj28JyCQcbAmRk3pvqI24LFp44hpGcHTaIR0YVj1H1IBn8zJh/JYTlw1GAfCAKYdo5F6SKqcNW/AsoiYuK+FcvWSYS60rCHoJP7N/7sRCtgMB7O84rrBZh28r4mboGTVkTper6jEQeKjomp2biTd/z6BBQDnvFV7LaC1lytgY3MWSDPnO9l4/x/OH+t7LlPV4MfO2l+Ejqjp5Ps2YN89tLilcdzvfReYQFNqnvODhjpcgMAD5gcJ1H2d12UXkWda+Q9UkLhQFkTzlhLI4H04EhNH/o8+srw80o1GpFE3acGjno1f7fZ6SOp9obyL7V8VF9HvDT3b12iDj6rzSaGJIFwdVqwW6X9kdABdd6gyS7GmRJZcTyC14tbbwon50AYneZpoOngpd02LyfnRrb0X6dvlJV2mHn8xlSjPt3ksrJEuh6nBPaXtXlYWFvwdneJH/YJD6awwy2hiDM9S/39krifdz7ZS1UZgXcasRta0yTGtkmp3fzio44EAwuiLu8GMlSJ+4ms7mMoXuHU7a7bAm8IzYjCKKABuddvgIevT8d0Z8it02o0YgUY/twHtnKhK/AuGCV1Z3YQy1j1x+7cGoxsWKETDyX5Nz75h8cPD+AXifW6DW2YAN2Uxi4KJ7L4u4X5tjYAeCW6EqCQtK6D8jcWq8nx+F747gPdmHJoNn6ggdju/prth7TBnzb4pjwbwUgtTdMEpIe33zCx0GfwV3VKfpEwl/Nje5GyWrQnbn35uYsn4KdRkbAjb5z+wwfHyr2f2Hrh0+aYlSGBKju3E1jbGdx5jP0gtjSpJvnIWzlYSfbiDwwc9j3oHTiwebBmQnoyewmrgntAciDTbgqIl2LhyMRxqZR7xHYmosU5rXhBE+b6+kzQZBlImJc8k3IXodToovhXUYcxJjLmpPtXjvssfB2IWSgOpi1jVor0GLkFxaCxGy6MKHIIqmxFHmCEqsNQdwC/mXa+aiP8FzGi9JBciLaEOIM9jMZxiMwP1qd+FkAcdE87zRP9/6hAeZHYVnEZITLr11S4je8c8AMW84BEbAdlu96uxSYUEuMkoFOkMG9wDfQx1Ylj4gDJcP7JZgeG/Xk85H/qkbUvZ+eMUKRItvMtDXoOGYMOdEX/zYLwS14iuGDbreXkNUfjaWf6rmjoM2TH113jZhR5dX8N2cG8YQK4/O5EEVLOQRgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"6717520\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Software Engineer, Payments and Risk\\\" contains target title \\\"Software Engineer\\\" and none of the excluded words (R1 pass).\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"first_published\",\"evidence\":\"first_published is 2025-04-24, far more than 21 days before the run date 2026-10-27 (R2 fail). updated_at is only used when first_published is missing.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location \\\"Dublin, Ireland\\\" does not show the US (R3 fail).\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"\\\"2–12+ years of industry software engineering experience\\\" includes \\\"12+ years\\\", so the largest minimum is 12, which is above 3 (R4 fail).\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"No phrases such as \\\"unable to sponsor\\\" or \\\"no sponsorship\\\" appear (R5 pass).\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker or AWS appears as a whole word in the content (R6 fail).\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3205,
+    "output_tokens": 872,
+    "output_tokens_details": {
+      "thinking_tokens": 372
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

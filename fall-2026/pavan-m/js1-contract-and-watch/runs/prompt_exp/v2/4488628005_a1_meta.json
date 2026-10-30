@@ -1,0 +1,9 @@
+{
+  "posting_id": "4488628005",
+  "version": "v2",
+  "attempt": 1,
+  "template": "prompts/judge_v2.txt",
+  "evidence": "evidence/2026-10-30_manual-capture_gleanwork.json",
+  "resume": "data/persona_alex.json",
+  "prompt_sha256": "e5b029d825a9c4f65ee4ae659fde9c0961c2f46b4bbbc132fbeb5c384f0f8fb6"
+}

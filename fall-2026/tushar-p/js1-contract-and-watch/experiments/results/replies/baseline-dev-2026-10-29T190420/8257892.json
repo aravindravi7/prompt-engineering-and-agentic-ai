@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXN6b3RTrXw3DQ7PX22e",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS2wcKEAgTGAI4AUIIdGhpbmtpbmcSDN1KXO2ly+kmll+f9BoMS7PWDrrPJc2VC52aIjCB0Ag8Vu7jRRcm6w3DHEGo2t7yhH0O1yBRzQJ0EQZp/LPU+fkpYBzAV0HVAIthOgUq+AbQYFD0qaEcyKPdCmkbEoWO8froG105GU+XSJ2SANPgt/3prTlUc3Riqj6YDC7HZfmRRIJ5hAvi8si1dJPEl7o93HsGgNlMGtRrQLmdYxQ0U5Inp9tmFOoJQ0P/N/tlxHYnaaiyPrwNEXZXOk/Z1zeviJtSYA2ZFmhgZvLZ7XoVEz33f4OnqqLzZ+CC8/7Sc2eet1siTYPrxTGJJ33S4Ica15FJwFiSoIuWc+oOUULXTOAdbBPjWCm7RU1jJJf3I5mtvmLmhjdbISc5AXrpyCZ3vzo7LEql8YO8gAYpACT9tVGrAj+izJMBlfR2YowHc53+hWVwDPNouInq7LOGoOCQ43jgxszCl8VHc+c+n6XRL2045+gLOQKS0qnnc09+Pe9M8aLRWanBQ6vOQmSaWFMGwtNvDGdR/S0iVp6dz8MoerzEbF8Gp1Asqey5s7B+lrqPeLz2zV6x5YOrwNx9xNE6TkvSDHJJUzKrxZuHmvCJ8jcdTKcm6zKKhV2TIl0YAHHURse3FWq/Ii6S+Dw26m1Hk3OAl6bdsuhbPpVpxcDuRdGQfBb4hOJRvgRLRy5Sq5nNMdCmg+8DYwHhvQBT3/G56Y8dwwnsgFuubE/tvcVpXM8dP2ls85urELM8JbC7TIAfoQrjMEDdoGXUb5869nINBlfhmOEd6dSoPXC62E7cFmRy/8fEezDdsf8t/kU8Zp4XRRjiME/XlA0MD/lA4Xbo8RG/LArRsPEcGu3mZSvuLBARZ2s5RCXKE51O9PTYVjb3E/bR+y8mwjHI0SMYaSSuVzN15CKgn1iJxT5H5DzerToi7JvHOHbLQyrzMH1mEEFmrp2GXbzJ+33UpzZG5DFM9HsuA+2Aby4jtmtysAu5ifSv4XleRYYTch5rx77IZxcYZM1S5gtEvCG1RQQNgy6AxLSGOJPN4d2iV6QKWqdZByvkOZDxQSuscWCeJUx+Njp6Uq9kMmtogGznG7isztAg4kAfhYn7emfjfeswN83E5qt02aYc3rhVB+R7snoEZpapugaXPYRP42DrgEPo85WYxKYjJF3oyI1tpJbzJZu7fnzQCo97QAno4Y4r4HHiiLgreMtmLt8gEvTmLYVjbbbvdbw79DGntAKnXyL9UzB+HOEAuxIh0tBg/LEwRc/LVPWlT+I1pvOd2qXws2KyQOub+fLMZdYcKCIYAQ==",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8257892\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Security Engineer, New Grad\\\" contains none of Software Engineer, AI Engineer, or Backend Engineer (R1 fails).\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location \\\"Dublin\\\" does not show a US location (R3 fails).\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"Content mentions Java, Python, SQL, and AWS as whole words (R6 passes).\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"No phrase such as \\\"unable to sponsor\\\" or \\\"no sponsorship\\\" appears (R5 passes).\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"No \\\"N+ years\\\" or \\\"N-M years\\\" pattern appears (R4 unknown).\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"first_published\",\"evidence\":\"Published 2026-10-07, 20 days before run date 2026-10-27 (R2 passes).\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3428,
+    "output_tokens": 609,
+    "output_tokens_details": {
+      "thinking_tokens": 182
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}
