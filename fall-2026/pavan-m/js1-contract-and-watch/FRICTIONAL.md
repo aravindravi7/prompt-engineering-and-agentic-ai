@@ -47,3 +47,14 @@ Verified myself: `python -m pytest -v` → 5 passed in my venv; `git diff tests/
 Choices Claude Code made that my spec didn't cover, all accepted: usable id = integer; duplicate ids in one response counted once; seen_ids written sorted; evidence filenames in local time with `_1` suffix on same-second collisions (noted in README).
 Noticed: Claude Code ran a CLI check writing scratchpad files outside this folder, although my prompt said not to touch anything outside it. Harmless, but the agent acted slightly beyond its instructions; noted for the action-surface comparison.
 Not yet checked: Claude Code never ran live mode; the real Greenhouse fetch is untested.
+
+## Entry 9 — October 30, 2026: Run 1, seeded baseline
+Ran the agent on evidence/2026-10-30_manual-capture_gleanwork.json with no state file:
+mode seeded, baseline true, new_ids [], invalid_postings []. Evidence saved as evidence/2026-10-30T113323_seeded_gleanwork.json.
+Checked myself: state contains 130 ids (matches meta.total 130); `cmp` confirmed the evidence copy is identical to the capture.
+Kept a copy as state/seen_ids_after_run1.json so both runs' state can be submitted.
+
+## Entry 10 — October 30, 2026: Rule and judge tests written before implementation
+Wrote asserts for tests covering wrong versions #1 (shifted labels: same verdicts when input order is reversed), #2 (evidence on every verdict, including negative), #5 (JavaScript≠Java, repeats count once, decode-then-strip order, case-insensitive), #6 (retry once, then invalid).
+My own addition: Case C also asserts exactly 2 calls, so the code must retry rather than give up after one bad reply.
+The judge test uses a fake model function, so no real API calls and no cost.
