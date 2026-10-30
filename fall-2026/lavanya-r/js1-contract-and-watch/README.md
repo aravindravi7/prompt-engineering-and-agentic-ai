@@ -159,7 +159,7 @@ No run was seeded. Both watch runs on Databricks were live, a calendar day apart
 - That 4 identical replies mean a posting's verdict never varies.
 - That it works on Lever, Ashby or SmartRecruiters. Only Greenhouse is implemented.
 
-**Signed or withheld:** ____________ (name, date)
+**Signed:** Lavanya R, 2026-10-30
 
 ## Driver's seat
 
