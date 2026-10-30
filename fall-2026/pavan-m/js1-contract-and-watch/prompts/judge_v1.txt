@@ -10,10 +10,10 @@ verdict, justification, resume_fields, posting_fields
 verdict must be exactly "relevant" or "not_relevant".
 resume_fields may contain only target_titles, skills, locations, experience, education.
 posting_fields may contain only title, content, location.name.
-Do not wrap the JSON in markdown code fences, and do not add any text before or after it.   ← NEW
+Do not wrap the JSON in markdown code fences, and do not add any text before or after it.
 
-Candidate resume:  
+Candidate résumé:
 {resume}
 
-Job posting:  
+Job posting:
 {posting}

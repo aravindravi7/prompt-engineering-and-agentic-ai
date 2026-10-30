@@ -80,3 +80,14 @@ Labeled all 20 using only labels/LABELING_RULE.md. Result: 6 relevant, 14 not_re
 Noticed while labeling: required years of experience became a deciding factor for 5 postings (e.g. APIs & Context Platform: strong fit but 8+ years). My rule only implies this through "reasonably fits his experience"; I did not edit the rule after labeling.
 Implication: a prompt that always answers not_relevant would score 70% on each split; pass rates must be compared against that.
 Picked 5 for sampling: 2 clear relevant, 1 clear not_relevant, 2 borderline (APIs & Context Platform; AI & Security).
+
+## Entry 15 — October 30, 2026: Baseline prompt and switch to manual Claude chats
+TA confirmed we should use the Claude and Claude Code access Northeastern provides, not a paid API key. Plan: the code builds each prompt, I paste it into a fresh claude.ai chat, save the reply to a file, and the same validator checks it.
+Wrote prompts/judge_v1.txt myself. Before any run, added (after review with Claude) a line forbidding markdown fences and labels for the résumé/posting blocks, since claude.ai often fences JSON and my validator rejects fences.
+Order decided: sampling runs last, because 2 of the 5 sampling postings are in the held-out set.
+
+## Entry 16 — October 30, 2026: Copy-paste helper; fixed stray markers in v1
+Claude Code built agent/manual_judge.py (prompt / check / score), reusing build_prompt and validate_reply from agent/judge.py; it renamed two private helpers in judge.py so they could be imported. Verified myself: 9 tests pass, `git diff tests/` empty.
+Claude Code added unrequested safeguards, which I accepted: a meta file that fingerprints the prompt inputs, refusing attempt 2 unless attempt 1 was invalid, and refusing to re-check an already-recorded attempt.
+Claude Code flagged that my committed prompts/judge_v1.txt still contained "← NEW" markers from review notes, which would have been sent to Claude. Removed them before any Claude run; v1 is now the version in the commit below.
+Also added a second dated contract revision: the judgment goes through claude.ai chats instead of the API, per TA.

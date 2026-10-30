@@ -15,12 +15,12 @@ REPLY_KEYS = {"verdict", "justification", "resume_fields", "posting_fields"}
 MAX_ATTEMPTS = 2
 
 
-def _resume_payload(resume: dict) -> dict:
+def build_resume_payload(resume: dict) -> dict:
     # Never send name, email or phone: Claude may only see what it is allowed to cite.
     return {field: resume[field] for field in PERMITTED_RESUME_FIELDS if field in resume}
 
 
-def _posting_payload(posting: dict) -> dict:
+def build_posting_payload(posting: dict) -> dict:
     location = posting.get("location")
     return {
         "id": posting.get("id"),
@@ -43,8 +43,8 @@ def _nonempty(value) -> bool:
 def build_prompt(posting: dict, resume: dict, prompt_template=None) -> str:
     template = Path(prompt_template or DEFAULT_TEMPLATE).read_text(encoding="utf-8")
     # str.replace, not str.format: the template may contain literal JSON braces.
-    return template.replace("{resume}", json.dumps(_resume_payload(resume), indent=2, ensure_ascii=False)).replace(
-        "{posting}", json.dumps(_posting_payload(posting), indent=2, ensure_ascii=False)
+    return template.replace("{resume}", json.dumps(build_resume_payload(resume), indent=2, ensure_ascii=False)).replace(
+        "{posting}", json.dumps(build_posting_payload(posting), indent=2, ensure_ascii=False)
     )
 
 
@@ -100,8 +100,8 @@ def validate_reply(reply, resume_payload: dict, posting_payload: dict) -> dict:
 
 def judge_claude(posting: dict, resume: dict, call_model, prompt_template=None) -> dict:
     prompt = build_prompt(posting, resume, prompt_template)
-    resume_payload = _resume_payload(resume)
-    posting_payload = _posting_payload(posting)
+    resume_payload = build_resume_payload(resume)
+    posting_payload = build_posting_payload(posting)
 
     errors = []
     for attempt in range(1, MAX_ATTEMPTS + 1):

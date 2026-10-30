@@ -155,3 +155,5 @@ October 29, 2026: The agent has failed if it reports an already-seen posting as 
 
 ## Revisions after the first commit
 - October 30, 2026: The Anthropic SDK (anthropic 2.3.0) requires an `httpx2.Client`, not `httpx`. The allow-list for the Claude call is enforced with the same host-check hook on an `httpx2` client. Behavior is unchanged; only the library name was corrected.
+
+- October 30, 2026: Per TA instruction, the Claude judgment uses the Northeastern-provided claude.ai chat, not the API. `agent/manual_judge.py` builds each prompt with the same builder as `judge_claude`; I paste it into a fresh claude.ai chat, save the reply to a file, and the same `validate_reply` from `agent/judge.py` accepts or rejects it, with one retry. No API key is used, and the code makes no request to `api.anthropic.com`; the résumé fields sent to Claude are typed into claude.ai by me instead.
