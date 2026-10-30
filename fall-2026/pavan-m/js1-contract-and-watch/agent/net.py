@@ -19,3 +19,10 @@ def _check_host(request: httpx.Request) -> None:
 
 def make_client(transport=None) -> httpx.Client:
     return httpx.Client(transport=transport, event_hooks={"request": [_check_host]})
+
+
+def make_anthropic_http_client(transport=None):
+    """httpx2 client for the Anthropic SDK, which rejects httpx objects. Same host check on every hop."""
+    import httpx2
+
+    return httpx2.Client(transport=transport, event_hooks={"request": [_check_host]})

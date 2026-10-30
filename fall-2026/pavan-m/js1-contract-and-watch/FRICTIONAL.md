@@ -58,3 +58,10 @@ Kept a copy as state/seen_ids_after_run1.json so both runs' state can be submitt
 Wrote asserts for tests covering wrong versions #1 (shifted labels: same verdicts when input order is reversed), #2 (evidence on every verdict, including negative), #5 (JavaScript≠Java, repeats count once, decode-then-strip order, case-insensitive), #6 (retry once, then invalid).
 My own addition: Case C also asserts exactly 2 calls, so the code must retry rather than give up after one bad reply.
 The judge test uses a fake model function, so no real API calls and no cost.
+
+## Entry 11 — October 30, 2026: Claude Code implemented the rule and judge
+Verified myself: `python -m pytest -v` → 9 passed; `git diff tests/` empty.
+Resolved from Entry 4: anthropic 2.3.0 accepts only an `httpx2.Client`. Claude Code checked offline with a mock transport that the host-check hook runs on SDK requests and blocks a redirect hop to an unapproved host, then added `make_anthropic_http_client()`. It also set `max_retries=0` so the SDK doesn't retry on its own, keeping the judge's single retry the only one.
+Updated CONTRACT.md in a separate commit to say httpx2 for the SDK (dated revision note).
+Accepted Claude Code's choices: id not citable; retry resends the same prompt without the error; plain-text placeholder filling; optional --model flag; tags replaced with a space so words don't merge.
+Not yet checked: `agent.run` end to end, since it would call the real API (no API key yet; asked TA).
