@@ -4,18 +4,20 @@ Pavithra Prasad · INFO 7375 · JS1 · 2026-10-29
 
 ## In
 
-The agent takes a Greenhouse job board name and a fictional résumé in JSON format. It uses the résumé's skills, experience, and preferred jobs to check job openings.
+The agent takes a Greenhouse job board name (`pinterest`, at `boards-api.greenhouse.io`) and a fictional résumé in JSON format (Aarav Patel, copied from the Reallocation Engine examples). It uses the résumé's skills and experience to check job openings.
+
+It needs network access to `boards-api.greenhouse.io` only, a folder to save each raw response, and a file of the job IDs it has already seen.
 
 ## Out
 
 For every new job, the agent shows:
 
 * Job ID, title, company, and location.
-* Whether the job is Relevant or Not Relevant.
-* A short reason comparing the job requirements with the résumé's skills and experience.
-* Claude's separate opinion, clearly marked as an AI judgment.
+* Whether the job is Relevant or Not Relevant, by the rule below.
+* A short reason that names the posting fields (title, location, description) and the résumé fields (skills, experience) behind the verdict, including the matched skills.
+* Claude's separate opinion, clearly marked as an AI judgment. Claude must reply in a fixed format (verdict, the posting fields and résumé fields it used, a one-line reason). A validator rejects any other reply; a rejected reply is saved and shown as invalid, never fixed.
 
-The first run saves existing jobs and shows zero new jobs. Later runs show only newly found jobs.
+The first run saves existing jobs and shows zero new jobs. Later runs show only newly found jobs, meaning job IDs not seen in an earlier run. Every run saves the board's raw response first; if the fetch fails, nothing else changes. A run against a saved earlier response is labelled SEEDED.
 
 ## Refuses
 
@@ -26,25 +28,28 @@ The agent will not:
 3. Apply for jobs, send messages, or log in.
 4. Treat Claude's opinion as a confirmed fact.
 5. Make up jobs or missing details.
+6. Run on a résumé that is not clearly fictional (email not at `example.com`, or phone not a 555 number).
 
-## The Rule
+## The rule
 
-A job is Relevant if:
+A job is Relevant if all four are true:
 
-1. It is a software, backend, full-stack, cloud, or AI engineering role.
-2. At least two required skills match the résumé.
-3. It asks for 0–2 years of experience, is entry-level, or does not mention experience.
-4. It is in the US or allows remote work from the US.
+1. **Role:** the title contains the word "Engineer" and one of: Software, Backend, Back-end, Full-stack, Full Stack, Fullstack, Cloud, AI.
+2. **Skills:** at least two of the résumé's skills appear in the job description (the skills listed under languages, backend_automation, database_cloud and devops_cicd).
+3. **Experience:** the title does not contain Senior, Sr, Staff, Principal, Lead, Manager, Director, Head, Distinguished or Intern, and the description does not ask for 3 or more years (as in "3+ years" or "5 years").
+4. **Location:** the location field contains "United States", "USA" or "US". State codes don't count, because Pinterest writes "CA" for both California and Canada.
 
-If any condition is not met, the job is Not Relevant.
+Words are matched as whole words, ignoring case, so "Java" does not match "JavaScript".
 
-## Wrong Versions
+If any condition is not met, the job is Not Relevant. I use this same rule to hand-label the 20 postings for the prompt experiment.
+
+## Wrong versions
 
 The tests should catch:
 
-1. Wrong job: A result is matched with the wrong job ID.
-2. Missing reason: The agent gives a verdict without mentioning which job requirements and résumé details support it.
+1. **Wrong job:** a result is matched with the wrong job ID. A test shuffles the results and checks that each verdict still matches the rule applied to its own job.
+2. **Missing reason:** the agent gives a verdict without mentioning which job requirements and résumé details support it. A test rejects any reason that does not name at least one posting field, one résumé field and the matched skills.
 
-## What a Failure Looks Like
+## What a failure looks like
 
 2026-10-29: The agent fails if it shows old jobs as new, gives wrong results based on my rule, or gives reasons without evidence from the job posting and résumé.
