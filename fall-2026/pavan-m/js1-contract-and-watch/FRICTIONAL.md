@@ -101,3 +101,6 @@ v1 scored 10/10 on dev, so a revision cannot show improvement on dev; the held-o
 Chose one change: added "Treat a posting as not relevant if the years of experience it requires clearly exceed the candidate's experience." Reason: required years decided 5 of my hand labels, and 4 held-out postings require 5+ years, but v1 never mentions experience level.
 Honest limit: this line brings one factor from my own labeling rule into the prompt, so better agreement would partly mean Claude is closer to my judgment, not that it is more correct.
 `diff prompts/judge_v1.txt prompts/judge_v2.txt` shows exactly one added line.
+
+## Entry 19 — October 30, 2026: v2 on the dev set
+Ran prompts/judge_v2.txt on the same 10 dev postings, one fresh claude.ai incognito chat each (Opus 5.5). All 10 valid on attempt 1; 10/10 agreed with my hand labels, the same as v1. As expected, dev cannot separate v1 from v2; the held-out set is the real test.
