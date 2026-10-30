@@ -34,7 +34,15 @@ def requirement_lines(posting, limit=6):
     sents = re.split(r"(?<=[.!?])\s+|\s+(?=[•\-–] )", text)
     pat = re.compile(r"\b(\d+\+? years?|years of|experience|degree|BS|MS|"
                      r"PhD|Bachelor|Master|new grad|graduate)\b", re.I)
-    return [s.strip()[:220] for s in sents if pat.search(s)][:limit]
+    return [s.strip()[:220] for s in sents
+            if pat.search(s) and "compensation" not in s.lower()][:limit]
+
+
+def years_asked(posting):
+    """Every 'N+ years' phrase in the description, e.g. ['5+ years']."""
+    found = re.findall(r"\b\d+\+?\s*(?:-\s*\d+\s*)?years?\b",
+                       rule.description_text(posting), re.I)
+    return list(dict.fromkeys(" ".join(f.split()) for f in found))
 
 
 def main():
@@ -79,6 +87,8 @@ def main():
                 f"- **Location:** {it['location']}",
                 f"- **Posting:** {it['url']}",
                 f"- **id:** {it['posting_id']}",
+                f"- **Years mentioned:** "
+                f"{', '.join(years_asked(p)) or 'none'}",
                 "- **What it asks for (excerpt):**"]
         out += [f"  - {s}" for s in requirement_lines(p)] or ["  - (none found)"]
         out.append("")
