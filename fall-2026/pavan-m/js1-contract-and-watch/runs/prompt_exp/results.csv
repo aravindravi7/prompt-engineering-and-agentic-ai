@@ -1,0 +1,11 @@
+timestamp,posting_id,version,attempt,model_label,valid,verdict,error
+2026-10-30T14:57:28,4742953005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,relevant,
+2026-10-30T14:59:14,4744818005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,not_relevant,
+2026-10-30T15:02:31,4746908005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,not_relevant,
+2026-10-30T15:03:25,4006733005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,not_relevant,
+2026-10-30T15:04:05,4428090005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,relevant,
+2026-10-30T15:08:20,4501783005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,relevant,
+2026-10-30T15:08:55,4711484005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,not_relevant,
+2026-10-30T15:09:28,4488628005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,not_relevant,
+2026-10-30T15:09:58,4745578005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,not_relevant,
+2026-10-30T15:10:33,4607608005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,not_relevant,

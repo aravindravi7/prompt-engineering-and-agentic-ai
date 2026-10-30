@@ -91,3 +91,7 @@ Claude Code built agent/manual_judge.py (prompt / check / score), reusing build_
 Claude Code added unrequested safeguards, which I accepted: a meta file that fingerprints the prompt inputs, refusing attempt 2 unless attempt 1 was invalid, and refusing to re-check an already-recorded attempt.
 Claude Code flagged that my committed prompts/judge_v1.txt still contained "← NEW" markers from review notes, which would have been sent to Claude. Removed them before any Claude run; v1 is now the version in the commit below.
 Also added a second dated contract revision: the judgment goes through claude.ai chats instead of the API, per TA.
+
+## Entry 17 — October 30, 2026: v1 on the dev set
+Ran prompts/judge_v1.txt on the 10 dev postings, one fresh claude.ai incognito chat each (Opus 5.5). All 10 replies passed the validator on attempt 1 (after fixing my copy-paste mistake on 4746908005, Entry 17). v1 agreed with my hand labels on 10/10 dev postings; a prompt that always answers not_relevant would score 7/10.
+Implication: v1 is already at 100% on dev, so a revision cannot show improvement on this set; it can only stay the same or get worse. Ten cases are too few to conclude v1 is generally reliable.
