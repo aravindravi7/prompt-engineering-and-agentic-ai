@@ -171,7 +171,7 @@ No run was seeded. Both watch runs on Databricks were live, a calendar day apart
 | Ground truth | picked 20 postings by a fixed seed, summarized the requirements | wrote/chose the labeling rule; labeled all 20 | the labels are the answer key; if Claude wrote them, the experiment would score Claude against Claude | `323ee74` (rule and set) then `8f752da` (labels), before any Claude call on them |
 | The one prompt change | ran the baseline, explained the two candidate changes in simple terms | chose B, the experience/graduation line | which failure matters more is my call | `prompts/revision.md` (one added line); FRICTIONAL 2026-10-30 |
 | Code, tests, runs, drafts | wrote all of it and ran it | ran the tests myself; read the logs and reports | I am responsible for what I submit, and I have to be able to explain it | FRICTIONAL "I ran the tests myself"; SOURCES.md |
-| Sign-off | drafted the text | decide whether to sign or withhold | only I can vouch for it | the line above |
+| Sign-off | drafted the text | decided to sign; edited the line myself in TextEdit and committed it myself | only I can vouch for it | my commit "docs(js1): sign the JS1 sign-off" (2026-10-30). It is the only commit in this folder without a Claude co-author line |
 
 **Transcript lines.** These are quoted verbatim from my Claude Code session. The transcript itself stays on my machine, as the brief requires.
 
