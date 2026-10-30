@@ -95,3 +95,9 @@ Also added a second dated contract revision: the judgment goes through claude.ai
 ## Entry 17 — October 30, 2026: v1 on the dev set
 Ran prompts/judge_v1.txt on the 10 dev postings, one fresh claude.ai incognito chat each (Opus 5.5). All 10 replies passed the validator on attempt 1 (after fixing my copy-paste mistake on 4746908005, Entry 17). v1 agreed with my hand labels on 10/10 dev postings; a prompt that always answers not_relevant would score 7/10.
 Implication: v1 is already at 100% on dev, so a revision cannot show improvement on this set; it can only stay the same or get worse. Ten cases are too few to conclude v1 is generally reliable.
+
+## Entry 18 — October 30, 2026: v2 = v1 plus one line about experience level
+v1 scored 10/10 on dev, so a revision cannot show improvement on dev; the held-out set is where the change is actually tested.
+Chose one change: added "Treat a posting as not relevant if the years of experience it requires clearly exceed the candidate's experience." Reason: required years decided 5 of my hand labels, and 4 held-out postings require 5+ years, but v1 never mentions experience level.
+Honest limit: this line brings one factor from my own labeling rule into the prompt, so better agreement would partly mean Claude is closer to my judgment, not that it is more correct.
+`diff prompts/judge_v1.txt prompts/judge_v2.txt` shows exactly one added line.
