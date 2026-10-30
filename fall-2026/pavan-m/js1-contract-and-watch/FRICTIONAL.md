@@ -121,3 +121,6 @@ Wrote reports/SAMPLING_REPORT.md and reports/PROMPT_EXPERIMENT.md; Claude drafte
 Ran the agent live at 4:29 PM ET (first real Greenhouse request through the allow-listed client): mode live, baseline false, new_ids [], invalid_postings []. Evidence: evidence/2026-10-30T162946_live_gleanwork.json.
 Compared with Run 1's input: morning 130 postings, now 129; 0 added, 1 removed (4725753005). The board changed between runs, but only by a removal, so 0 new is the correct answer. State still holds 130 ids, because removed ids are kept, as the contract says. Saved state/seen_ids_after_run2.json.
 Limitation: no real new posting appeared, so the "both judges on each new posting" path did not run on a real new posting in Run 2.
+
+## Entry 24 — October 30, 2026: CONSTRUCTED demo of both judges
+Because Run 2 had 0 new postings, built a clearly labeled CONSTRUCTED demo: copied Run 1's state minus 3 ids and ran seeded on Run 2's real response. The agent reported exactly those 3 as new. Rule and Claude (3 fresh incognito chats, all valid) agreed on 2 and disagreed on 4696752005: the rule said relevant (3 skills matched) but cannot see the 8+ years requirement; Claude and my hand label said not_relevant. Wrote reports/CONSTRUCTED_DEMO.md. Real state files were not modified.
