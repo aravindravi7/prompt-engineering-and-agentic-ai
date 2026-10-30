@@ -127,3 +127,6 @@ Because Run 2 had 0 new postings, built a clearly labeled CONSTRUCTED demo: copi
 
 ## Entry 25 — October 30, 2026: Action-surface comparison
 Did the same task (judge 4696752005) three ways. All said not_relevant. Way 2 (file read) read only the 2 named files, as its "Read 2 files" list showed. Way 3 (agent with shell) read AGENTS.md at the class-repo root without being asked, fetched with curl (bypassing my allow-list), and wrote files without asking permission; `git status` confirmed writes stayed in action_surface/way3/. Chose the least autonomy that suffices: my code fetches and keeps state; Claude only judges one posting from permitted fields. Claude drafted reports/ACTION_SURFACE.md from my observations; I checked it against the screenshots.
+
+## Entry 26 — October 30, 2026: Fresh-clone test
+Cloned the class repo fresh into /tmp (--depth 1), followed my README exactly: venv, `pip install -r requirements.txt`, `python -m pytest -v` → 9 passed; seeded run on temporary state → baseline, 0 new. No .env, no real résumé, and no local .venv in the clone.
