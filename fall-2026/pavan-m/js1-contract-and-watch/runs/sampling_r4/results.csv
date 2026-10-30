@@ -1,0 +1,6 @@
+timestamp,posting_id,version,attempt,model_label,valid,verdict,error
+2026-10-30T16:14:31,4742953005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,relevant,
+2026-10-30T16:14:59,4428090005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,relevant,
+2026-10-30T16:15:24,4744818005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,not_relevant,
+2026-10-30T16:15:46,4696752005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,not_relevant,
+2026-10-30T16:16:06,4605446005,v1,1,"Opus 5.5, claude.ai incognito, 2026-10-30",true,not_relevant,

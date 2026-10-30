@@ -108,3 +108,11 @@ Ran prompts/judge_v2.txt on the same 10 dev postings, one fresh claude.ai incogn
 ## Entry 20 — October 30, 2026: Held-out results
 Ran v1 and v2 on the 10 held-out postings (20 fresh claude.ai incognito chats, Opus 5.5). All 20 valid on attempt 1 (after redoing one copy-paste mistake on 4696752005 v1, same cause as Entry 17). v1: 10/10 agree; v2: 10/10 agree; always-not_relevant baseline: 7/10.
 Conclusion: my one change (experience-level line) produced no measurable difference. Both prompts hit the ceiling on all 20 cases, so this set cannot tell them apart. v1 already weighed required years on its own (e.g. 4696752005, 8+ years, judged not_relevant by both).
+
+## Entry 21 — October 30, 2026: Held-out results
+Ran v1 and v2 on the 10 held-out postings (20 fresh claude.ai incognito chats, Opus 5.5). All 20 valid on attempt 1 (after redoing one copy-paste mistake on 4696752005 v1, same cause as Entry 17). v1: 10/10 agree; v2: 10/10 agree; always-not_relevant baseline: 7/10.
+Conclusion: my one change (experience-level line) produced no measurable difference. Both prompts hit the ceiling on all 20 cases, so this set cannot tell them apart. v1 already weighed required years on its own (e.g. 4696752005, 8+ years, judged not_relevant by both).
+
+## Entry 22 — October 30, 2026: Sampling report
+Ran 15 more fresh incognito chats (r2–r4) on the 5 sampling postings with v1; reused each posting's v1 prompt-experiment chat as r1. All 5 postings gave the same verdict 4/4 times, matching my hand labels. One retry on 4605446005 r3, caused by my copy error (the a1 reply file holds text from my help chat); attempt 2 in a new chat was valid.
+Wrote reports/SAMPLING_REPORT.md and reports/PROMPT_EXPERIMENT.md; Claude drafted both from my results, and I checked the numbers (40 reply files in runs/prompt_exp/, scores from `manual_judge score`).
