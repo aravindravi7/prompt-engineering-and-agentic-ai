@@ -29,7 +29,7 @@
 **Surface 1, pasted text with no tools, for the Claude step. Everything else stays in my own code.**
 
 - **The judging task doesn't need more.** Claude only needs the posting text and the résumé facts to judge. My code already fetches the board, and it does that safely:
-  - the allow-list is checked before any request, and redirects are refused;
+  - the allow-list is checked before any request, and redirects that leave it are refused;
   - the exact response bytes are saved with a sha256 hash.
 - **The agent surface failed at something code did correctly.** Its fetch lost part of the posting, and it kept no evidence. That is exactly what the watch must not do, because "new since last run" and every justification depend on the saved raw response.
 - **Letting Claude write `state.json` gives a judgment authority over a record.** The state file decides what counts as new. It should be written only by code that tests can check (`tests/test_watch.py`, `tests/test_wrong_versions.py`).
