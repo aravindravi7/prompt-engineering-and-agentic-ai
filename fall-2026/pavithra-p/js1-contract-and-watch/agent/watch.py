@@ -37,9 +37,9 @@ def stamp(now):
     return now.strftime("%Y%m%dT%H%M%SZ")
 
 
-def save_raw(raw, raw_dir, now, seeded):
+def save_raw(raw, raw_dir, now, seeded, board=BOARD):
     raw_dir.mkdir(parents=True, exist_ok=True)
-    path = raw_dir / f"{BOARD}-{stamp(now)}{'-SEEDED' if seeded else ''}.json"
+    path = raw_dir / f"{board}-{stamp(now)}{'-SEEDED' if seeded else ''}.json"
     path.write_bytes(raw)
     return path
 

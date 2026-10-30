@@ -3,7 +3,15 @@ from pathlib import Path
 
 BOARD = "pinterest"
 ALLOWED_HOSTS = frozenset({"boards-api.greenhouse.io"})
-BOARD_URL = f"https://boards-api.greenhouse.io/v1/boards/{BOARD}/jobs?content=true"
+# The prompt experiment also draws postings from two more boards on the same host (experiment/README.md).
+EXPERIMENT_BOARDS = ("pinterest", "figma", "twilio")
+
+
+def board_url(board):
+    return f"https://boards-api.greenhouse.io/v1/boards/{board}/jobs?content=true"
+
+
+BOARD_URL = board_url(BOARD)
 
 ROOT = Path(__file__).resolve().parent.parent
 RESUME = ROOT / "data" / "aarav-patel.resume.json"
