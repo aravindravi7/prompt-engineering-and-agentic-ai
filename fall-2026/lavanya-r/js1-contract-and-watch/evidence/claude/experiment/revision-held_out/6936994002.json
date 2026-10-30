@@ -1,0 +1,29 @@
+{
+  "posting_id": 6936994002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 6936994002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education"
+    ],
+    "posting_fields": [
+      "title",
+      "content"
+    ],
+    "reason": "The title contains the excluded word 'Senior'. The posting also requires 5+ years of production experience in Java, Scala or C++, while the job seeker has about 8 months of co-op experience and none in those languages."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 6936994002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The title contains the excluded word 'Senior'. The posting also requires 5+ years of production experience in Java, Scala or C++, while the job seeker has about 8 months of co-op experience and none in those languages.\"}",
+  "asked_at": "2026-10-30T21:27:04+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "e6e56c84-b5d9-4d4e-a7a0-1e4e048ef1da",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "b43a7be51653087a5a6ce405b3ee8359ce5aa6352600056b2f2969689fe46b9a"
+}

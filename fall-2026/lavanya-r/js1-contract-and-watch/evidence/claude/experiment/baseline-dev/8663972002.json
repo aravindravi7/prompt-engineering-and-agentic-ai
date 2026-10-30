@@ -1,0 +1,19 @@
+{
+  "posting_id": 8663972002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "INVALID",
+  "parsed": null,
+  "errors": [
+    "resume_fields must be a non-empty list of strings"
+  ],
+  "raw_reply": "{\"posting_id\": 8663972002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\"], \"reason\": \"The title 'Staff Software Engineer - Streaming' contains the excluded seniority term 'Staff', which fails rule 2 regardless of the other criteria.\"}",
+  "asked_at": "2026-10-30T21:23:11+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "4e76b5fb-8101-497a-bfff-4f58228aa71b",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "faac19c80cdf7908280ecee3da4ab2e9280817336164785552a2570f7385fbff"
+}

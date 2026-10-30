@@ -1,0 +1,28 @@
+{
+  "posting_id": 8560779002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8560779002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education"
+    ],
+    "posting_fields": [
+      "content"
+    ],
+    "reason": "The posting requires 4+ years of software engineering experience shipping production web systems. The job seeker has only an 8-month AI Engineer co-op and recently finished an MS, so rule 6 fails even though the title, location, and sponsorship rules pass."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8560779002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\"], \"posting_fields\": [\"content\"], \"reason\": \"The posting requires 4+ years of software engineering experience shipping production web systems. The job seeker has only an 8-month AI Engineer co-op and recently finished an MS, so rule 6 fails even though the title, location, and sponsorship rules pass.\"}",
+  "asked_at": "2026-10-30T21:26:04+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "ca322c6f-3a6f-4893-b7eb-9a17da870aea",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "21541354e0f4088ea81485e0f03ef4521c7ccd9e37dddef8ca7645d08cbab512"
+}

@@ -1,0 +1,29 @@
+{
+  "posting_id": 8663972002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8663972002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education"
+    ],
+    "posting_fields": [
+      "title",
+      "content"
+    ],
+    "reason": "The title contains the excluded word 'Staff', and the posting requires 8+ years of experience, far beyond the job seeker's single 8-month co-op and recent MS."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8663972002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The title contains the excluded word 'Staff', and the posting requires 8+ years of experience, far beyond the job seeker's single 8-month co-op and recent MS.\"}",
+  "asked_at": "2026-10-30T21:26:04+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "6b291265-5ba4-440d-9bce-2453a6c8e3fb",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "5a6d5c1a41adda2dc67a6d1c2a047da7eca40696bd971c78e17dfd896c267c0c"
+}

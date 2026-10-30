@@ -1,0 +1,30 @@
+{
+  "posting_id": 8560779002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "relevant",
+  "parsed": {
+    "posting_id": 8560779002,
+    "verdict": "relevant",
+    "resume_fields": [
+      "skills.data_bi",
+      "work_authorization.needs_sponsorship"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The posting meets every rule as written: the title has 'Software Engineer' with no excluded terms, the location is Mountain View, CA, the content names Databricks and Unity Catalog, and nothing says the employer won't sponsor visas (the export-control clause is not a sponsorship refusal). The fit is weak, though: both skills appear only as company and product names in boilerplate, and the role is front-end web work asking for 4+ years of experience."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8560779002, \"verdict\": \"relevant\", \"resume_fields\": [\"skills.data_bi\", \"work_authorization.needs_sponsorship\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The posting meets every rule as written: the title has 'Software Engineer' with no excluded terms, the location is Mountain View, CA, the content names Databricks and Unity Catalog, and nothing says the employer won't sponsor visas (the export-control clause is not a sponsorship refusal). The fit is weak, though: both skills appear only as company and product names in boilerplate, and the role is front-end web work asking for 4+ years of experience.\"}",
+  "asked_at": "2026-10-30T21:22:12+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "c9ef445a-8b33-46bb-866f-8efaeff88755",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "90e4924adbd3265f164acb3de252d57ba71746ac55a44326ee82ac19fa60523d"
+}

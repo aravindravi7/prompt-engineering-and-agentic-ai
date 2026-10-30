@@ -1,0 +1,29 @@
+{
+  "posting_id": 7803651002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 7803651002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education"
+    ],
+    "posting_fields": [
+      "title",
+      "content"
+    ],
+    "reason": "The posting requires at least 15 years of digital/AI transformation experience and 5+ years working directly with enterprise C-suites, far beyond the job seeker's single 8-month co-op and recent MS. The title 'AI Transformation Leader' also contains 'Lead', an excluded term."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 7803651002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The posting requires at least 15 years of digital/AI transformation experience and 5+ years working directly with enterprise C-suites, far beyond the job seeker's single 8-month co-op and recent MS. The title 'AI Transformation Leader' also contains 'Lead', an excluded term.\"}",
+  "asked_at": "2026-10-30T21:26:21+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "3159057a-5bf8-4454-bbfc-c0e2425ec105",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "c36beb549d8d4fc1fdd4f549bf6791b5afd0c410306898c4dd26870a5a1815b3"
+}

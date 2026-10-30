@@ -1,0 +1,31 @@
+{
+  "posting_id": 8487768002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8487768002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education",
+      "skills.languages",
+      "skills.data_bi"
+    ],
+    "posting_fields": [
+      "title",
+      "content"
+    ],
+    "reason": "The title 'Solutions Architect - Communications, Media, Entertainment and Games' has none of the required keywords; 'ai' appears only inside 'Entertainment', not as a word. The posting also requires 6+ years in solutions architecture or a senior technical role, far beyond the job seeker's one co-op, even though Python, SQL, Databricks and AWS all match."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8487768002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\", \"skills.languages\", \"skills.data_bi\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The title 'Solutions Architect - Communications, Media, Entertainment and Games' has none of the required keywords; 'ai' appears only inside 'Entertainment', not as a word. The posting also requires 6+ years in solutions architecture or a senior technical role, far beyond the job seeker's one co-op, even though Python, SQL, Databricks and AWS all match.\"}",
+  "asked_at": "2026-10-30T21:26:14+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "dc25c3b8-8907-491f-aa7d-fd985691dfca",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "bc9e1e63acd602f1b7ce7e0d496443b66b087c94e93020744d919fb185f90972"
+}

@@ -1,0 +1,29 @@
+{
+  "posting_id": 8491126002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8491126002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "skills.data_bi"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title has none of the required keywords and includes the excluded word 'Manager', and the role is based in Paris, France rather than the United States. The description does mention Databricks and Unity Catalog, but the role fails rules 1, 2 and 3 regardless."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8491126002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"skills.data_bi\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title has none of the required keywords and includes the excluded word 'Manager', and the role is based in Paris, France rather than the United States. The description does mention Databricks and Unity Catalog, but the role fails rules 1, 2 and 3 regardless.\"}",
+  "asked_at": "2026-10-30T21:26:50+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "57a5c9f0-7bd0-4369-8a27-f319e5037158",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "686397f8efd797283398edfc4ca4893770ad6545ccf1cff8bfb0a3f07eeac9a3"
+}

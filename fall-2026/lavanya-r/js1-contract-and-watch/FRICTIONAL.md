@@ -66,3 +66,17 @@ Dated log of what I tried, what broke, and what I did instead.
   - Example (8860646002, 21:15:48 UTC): Claude said the title "contains none of the required keywords... and it contains the excluded word 'Manager'". No résumé field was needed for that.
   - My contract requires every justification to name résumé **and** posting fields, so the validator rejected those answers exactly as written.
 - I kept the validator strict. **Unresolved:** is the contract too strict for title-only rejections, or is the prompt not saying clearly enough that a résumé field is always required? The prompt experiment is where I'll test that.
+
+## 2026-10-30: Hand labels, sampling, and the prompt experiment
+- I wrote my labeling rule first ("a recent MS grad with an AI co-op could realistically get this job, and it would use her AI/data skills"). I chose it over "apply my contract by hand". Committed as `323ee74`.
+- I labeled all 20 jobs on multiple-choice cards. **All 20 were "not fit".** Most asked for 4–15 years. #11 says it is "not intended for internship, new graduate, or entry-level applicants". #12 "New Grad" requires graduating in fall 2026 or spring 2027, and Priya finished in Dec 2025.
+- My own rule agreed with my labels on only **12/20**. All 8 rule-"relevant" jobs I called not fit. The rule never checks experience level. I did **not** change the rule after seeing my labels.
+- **Sampling (20 calls):**
+  - Claude gave the same outcome 4/4 times on every posting, but matched my label 0/20 times.
+  - Repeating the same answer did not make it right.
+- **Prompt experiment:**
+  - Baseline: 4/10 dev and 4/10 held-out.
+  - I chose the revision: one added line for experience and graduation date. It scored 9/10 dev and 10/10 held-out.
+- **Caveat I have to own:** with every label "not fit", a prompt that always says no would also score 10/10.
+- **Validator inconsistency found after seeing results, left unchanged:** it accepts `education[0].end_date` but rejects `education.0.end_date`, which cost the revision one dev point.
+- I got lost partway through. I asked Claude to explain in simple terms before picking the prompt change.

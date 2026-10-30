@@ -1,0 +1,19 @@
+{
+  "posting_id": 6544443002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "INVALID",
+  "parsed": null,
+  "errors": [
+    "resume_fields must be a non-empty list of strings"
+  ],
+  "raw_reply": "{\"posting_id\": 6544443002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\"], \"reason\": \"The title 'Staff Software Engineer - Backend' contains the excluded term 'Staff', failing rule 2. The other rules are met: the location is in the US, the description mentions several résumé skills (SQL, MLflow, AWS, Unity Catalog), and it does not refuse sponsorship.\"}",
+  "asked_at": "2026-10-30T21:22:01+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "879f6611-6c24-408b-ab29-c69cbeb8e2db",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "abecdb18b5b3234c2709bb1345e10d736342abebbe6be7bf5580f505399f9bb0"
+}

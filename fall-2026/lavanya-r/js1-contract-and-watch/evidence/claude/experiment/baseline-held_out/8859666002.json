@@ -1,0 +1,30 @@
+{
+  "posting_id": 8859666002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "relevant",
+  "parsed": {
+    "posting_id": 8859666002,
+    "verdict": "relevant",
+    "resume_fields": [
+      "skills.data_bi",
+      "work_authorization.needs_sponsorship"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title contains \"AI\" with no excluded terms, the location is the United States, the description mentions Databricks and Unity Catalog (both in skills.data_bi), and it never says the employer cannot sponsor visas (the export-control clause is not a sponsorship ban). Under the rule this counts as relevant, though the 8+ years of transformation-leadership experience it asks for is a poor fit for this early-career résumé."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8859666002, \"verdict\": \"relevant\", \"resume_fields\": [\"skills.data_bi\", \"work_authorization.needs_sponsorship\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title contains \\\"AI\\\" with no excluded terms, the location is the United States, the description mentions Databricks and Unity Catalog (both in skills.data_bi), and it never says the employer cannot sponsor visas (the export-control clause is not a sponsorship ban). Under the rule this counts as relevant, though the 8+ years of transformation-leadership experience it asks for is a poor fit for this early-career résumé.\"}",
+  "asked_at": "2026-10-30T21:26:39+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "224499c6-453e-46cd-afba-a10a14632acc",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "8476ff891849bdbfa9aa1466447e36139a1f3c6acbb1ef9c1043fb099a0475b5"
+}

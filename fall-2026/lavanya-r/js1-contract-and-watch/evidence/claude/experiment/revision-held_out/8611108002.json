@@ -1,0 +1,30 @@
+{
+  "posting_id": 8611108002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8611108002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "work_authorization.needs_sponsorship",
+      "work_authorization.current_status",
+      "experience"
+    ],
+    "posting_fields": [
+      "title",
+      "content"
+    ],
+    "reason": "The title contains none of the required keywords, and the role requires U.S. citizenship and 5+ years of experience, which this F-1 OPT job seeker with about 8 months of co-op experience does not meet. The description also says 'Sr. Forward Deployed Engineer'."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8611108002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"work_authorization.needs_sponsorship\", \"work_authorization.current_status\", \"experience\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The title contains none of the required keywords, and the role requires U.S. citizenship and 5+ years of experience, which this F-1 OPT job seeker with about 8 months of co-op experience does not meet. The description also says 'Sr. Forward Deployed Engineer'.\"}",
+  "asked_at": "2026-10-30T21:26:58+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "3ec67318-5034-4de6-a3ef-0ea8767c3b26",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "aa0ad0e3e4b532bf017fc04d304f3de74262023bfa45390f1af762652b3fb826"
+}

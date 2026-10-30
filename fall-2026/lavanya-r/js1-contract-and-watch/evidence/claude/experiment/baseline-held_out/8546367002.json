@@ -1,0 +1,31 @@
+{
+  "posting_id": 8546367002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "relevant",
+  "parsed": {
+    "posting_id": 8546367002,
+    "verdict": "relevant",
+    "resume_fields": [
+      "skills.data_bi",
+      "skills.database_cloud",
+      "work_authorization.needs_sponsorship"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title contains 'AI' and none of the excluded words, the location is the United States, the description names Databricks, Unity Catalog, and AWS, and it never says the employer cannot sponsor visas (the export-control clause is not a sponsorship ban). It meets all five rules, but the posting says it is for experienced engineers and not for new-grad or entry-level applicants, so it may be a stretch for this candidate."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8546367002, \"verdict\": \"relevant\", \"resume_fields\": [\"skills.data_bi\", \"skills.database_cloud\", \"work_authorization.needs_sponsorship\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title contains 'AI' and none of the excluded words, the location is the United States, the description names Databricks, Unity Catalog, and AWS, and it never says the employer cannot sponsor visas (the export-control clause is not a sponsorship ban). It meets all five rules, but the posting says it is for experienced engineers and not for new-grad or entry-level applicants, so it may be a stretch for this candidate.\"}",
+  "asked_at": "2026-10-30T21:26:44+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "9da93894-d9fb-43f5-8184-88b1ce7e897d",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "98e984a9fb204b40067da2107a652501e6b3b0ad23b19d3c7ba4f89b34541e2a"
+}
