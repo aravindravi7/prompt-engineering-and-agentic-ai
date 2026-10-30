@@ -40,3 +40,7 @@ Dated log of what I tried, what broke, and what I did instead.
 - The rule was not changed. CONTRACT.md has a dated note about the board change.
 - **Known effect:** every Databricks posting mentions "Databricks", which is one of Priya's skills. On this board the 2-skill check is easier to pass than I intended.
 - A Datadog snapshot Claude saved with `curl` at 17:13 had 396 postings. Run 1 at 17:29 had 397, so the board changed within 16 minutes. That snapshot was a scratch file and is not in this folder.
+
+## 2026-10-29: I ran the tests myself
+- I read this log and it matches what happened.
+- I ran the tests myself with `python3 -m unittest discover -s tests -t . -v`. All 34 passed (`OK`).
