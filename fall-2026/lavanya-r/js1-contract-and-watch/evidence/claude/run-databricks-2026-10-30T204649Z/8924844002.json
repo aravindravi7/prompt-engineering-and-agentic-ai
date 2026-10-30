@@ -1,0 +1,19 @@
+{
+  "posting_id": 8924844002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "INVALID",
+  "parsed": null,
+  "errors": [
+    "resume_fields must be a non-empty list of strings"
+  ],
+  "raw_reply": "{\"posting_id\": 8924844002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"location.name\"], \"reason\": \"The title has none of the required keywords and contains the excluded word \\\"Sales\\\". The location is China, not the United States.\"}",
+  "asked_at": "2026-10-30T21:16:16+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "711031e2-a102-4c54-ab4b-89286d75c676",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "eb02a3f8585a15e83e4dc1a801efe500689211d77a5e310791dcf7d3e0794663"
+}

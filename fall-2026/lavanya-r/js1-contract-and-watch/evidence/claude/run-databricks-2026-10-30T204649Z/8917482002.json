@@ -1,0 +1,19 @@
+{
+  "posting_id": 8917482002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "INVALID",
+  "parsed": null,
+  "errors": [
+    "resume_fields must be a non-empty list of strings"
+  ],
+  "raw_reply": "{\"posting_id\": 8917482002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"location.name\"], \"reason\": \"The title \\\"Business Development Representative (UKI)\\\" contains none of the required keywords (AI, ML, Software Engineer, Intern, New Grad, Early Career), and the location is London, United Kingdom, not the United States.\"}",
+  "asked_at": "2026-10-30T21:15:54+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "954b6156-de56-4d07-aa31-82378c4eb0fb",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "24ee791414700c196c21cbd00a2f8d5d0c3934a6a9856d29a47a736c0f1b9a16"
+}

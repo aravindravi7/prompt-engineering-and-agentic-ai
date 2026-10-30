@@ -1,0 +1,19 @@
+{
+  "posting_id": 8922730002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "INVALID",
+  "parsed": null,
+  "errors": [
+    "resume_fields must be a non-empty list of strings"
+  ],
+  "raw_reply": "{\"posting_id\": 8922730002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"location.name\"], \"reason\": \"The title 'Sr. Collections Analyst' contains none of the required keywords and includes the excluded term 'Sr'. The location, Bengaluru, India, is also outside the United States.\"}",
+  "asked_at": "2026-10-30T21:16:05+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "d73a8984-7ffd-47e5-8d03-43664b69930a",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "b386bb2d70b196eb5b88a833990f87e468b659f1b2ea7a12b26fca581d098b06"
+}

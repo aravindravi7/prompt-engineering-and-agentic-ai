@@ -53,3 +53,16 @@ Dated log of what I tried, what broke, and what I did instead.
 - I chose to fix the rule (**v2**): a US state name or "D.C." now also counts. This went into CONTRACT.md as a dated change, before any hand labeling or Claude runs, so the fix could not be tuned to agree with Claude.
 - Under v2, 495 of 903 postings pass the location check, and **17 are relevant**.
 - The run 1 and run 2 reports stay as v1 produced them.
+
+## 2026-10-30: The Claude judge's first real answers were mostly rejected
+- Built the Claude judge: a fresh `claude -p` call per posting, with no tools, no saved session, an empty working folder, and the model pinned to `claude-opus-5-5`.
+  - Its prompt contract is `prompts/baseline.md`.
+  - A validator rejects anything that is not exactly the contract's JSON object.
+  - The résumé is sent without the `personal` block, so Claude never sees a name, email or phone.
+- Ran both judges on run 2's 10 new postings (`reports/judged-run-databricks-2026-10-30T204649Z.md`).
+  - Rule v2: all 10 `not_relevant`.
+  - Claude: 2 valid answers, both `not_relevant`, so both agree with the rule. **8 were rejected as INVALID.**
+- All 8 rejections had the same cause: Claude returned `"resume_fields": []`.
+  - Example (8860646002, 21:15:48 UTC): Claude said the title "contains none of the required keywords... and it contains the excluded word 'Manager'". No résumé field was needed for that.
+  - My contract requires every justification to name résumé **and** posting fields, so the validator rejected those answers exactly as written.
+- I kept the validator strict. **Unresolved:** is the contract too strict for title-only rejections, or is the prompt not saying clearly enough that a résumé field is always required? The prompt experiment is where I'll test that.
