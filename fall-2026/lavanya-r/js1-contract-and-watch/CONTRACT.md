@@ -69,7 +69,13 @@ A posting is **relevant** only if **all five** checks pass. Otherwise it is **no
 3. **US location.**
    - Split `location.name` on `;`.
    - At least one part must contain `USA` or `United States`.
+     *Rule v2, 2026-10-30:* a US state name (all 50, e.g. `California`, `New York`, `Washington`) or `D.C.` also counts.
    - Any US city counts, and so does US remote.
+
+   > **Change, 2026-10-30 (rule v2), chosen by Lavanya before any hand labeling or Claude runs:**
+   > - In run 2, Databricks wrote US locations as "San Francisco, California" or "Seattle, Washington", with no "USA". Only 111 of 903 postings passed v1's location check, so most US jobs failed it.
+   > - The run 1 and run 2 reports (commit `47662ea`) were judged by v1 and are left as they are. Everything after that uses v2.
+   > - Known limit: "Georgia" the country would be read as the US state. No such posting was seen.
 4. **At least 2 skills.** The description mentions at least **2 different** skills from these résumé fields:
    - `skills.languages`
    - `skills.data_bi`

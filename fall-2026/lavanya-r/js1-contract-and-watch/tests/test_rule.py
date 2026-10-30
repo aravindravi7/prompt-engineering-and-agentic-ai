@@ -77,6 +77,22 @@ class TestRule(unittest.TestCase):
         self.assertEqual(failed(self.judge(variant(location="Paris, France"))),
                          ["us_location"])
 
+    def test_rule_v2_state_names_count_as_us(self):
+        # Databricks' real formats from the 2026-10-30 run 2 response.
+        for loc in ["San Francisco, California", "New York City, New York",
+                    "Bellevue, Washington; Seattle, Washington",
+                    "Washington, D.C.", "Remote - California"]:
+            with self.subTest(loc=loc):
+                self.assertEqual(self.judge(variant(location=loc))["verdict"],
+                                 "relevant")
+
+    def test_rule_v2_non_us_still_fails(self):
+        for loc in ["Bengaluru, India", "Toronto, Canada", "London, United "
+                    "Kingdom", "Mexico City, Mexico", "Singapore"]:
+            with self.subTest(loc=loc):
+                self.assertEqual(failed(self.judge(variant(location=loc))),
+                                 ["us_location"])
+
     # 4. at least 2 skills, whole words
     def test_one_skill_is_not_enough(self):
         self.assertEqual(failed(self.judge(variant(body="<p>Python only</p>"))),

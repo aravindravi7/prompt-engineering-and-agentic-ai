@@ -13,7 +13,19 @@ GOOD_TITLE_WORDS = ["AI", "Machine Learning", "ML", "Software Engineer",
 BAD_TITLE_WORDS = ["Senior", "Sr", "Staff", "Principal", "Distinguished",
                    "Manager", "Director", "Lead", "Sales", "PhD",
                    "Research Scientist"]
-US_MARKERS = ["USA", "United States"]
+US_STATES = [
+    "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado",
+    "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho",
+    "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine",
+    "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi",
+    "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+    "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio",
+    "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina",
+    "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
+    "Washington", "West Virginia", "Wisconsin", "Wyoming"]
+# Rule v2 (2026-10-30): Databricks writes "San Francisco, California" with no
+# "USA", so a US state name or D.C. also marks a location part as US.
+US_MARKERS = ["USA", "United States", "D.C."] + US_STATES
 SKILL_FIELDS = ["skills.languages", "skills.data_bi",
                 "skills.backend_automation", "skills.database_cloud"]
 MIN_SKILLS = 2

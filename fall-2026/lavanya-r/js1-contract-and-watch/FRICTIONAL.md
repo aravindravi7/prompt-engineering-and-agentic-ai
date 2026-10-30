@@ -44,3 +44,12 @@ Dated log of what I tried, what broke, and what I did instead.
 ## 2026-10-29: I ran the tests myself
 - I read this log and it matches what happened.
 - I ran the tests myself with `python3 -m unittest discover -s tests -t . -v`. All 34 passed (`OK`).
+
+## 2026-10-30: Run 2, and the location check was wrong for Databricks
+- Run 2 (live, the second calendar day) found **10 new postings** out of 903. All 10 were `not_relevant` under rule v1. Committed as `47662ea` before changing anything.
+- In the run 2 table, "Seattle, Washington" failed the US-location check. My v1 rule only looked for "USA" or "United States", the way Datadog writes locations. Databricks writes "San Francisco, California".
+  - Only **111 of 903** postings passed the v1 location check.
+  - Mostly-US places like San Francisco (66), Mountain View (46), Seattle (21) and New York City (18) all failed it.
+- I chose to fix the rule (**v2**): a US state name or "D.C." now also counts. This went into CONTRACT.md as a dated change, before any hand labeling or Claude runs, so the fix could not be tuned to agree with Claude.
+- Under v2, 495 of 903 postings pass the location check, and **17 are relevant**.
+- The run 1 and run 2 reports stay as v1 produced them.
