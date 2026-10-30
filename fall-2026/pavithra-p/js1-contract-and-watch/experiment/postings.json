@@ -1,13 +1,25 @@
 {
-  "frozen_at": "2026-10-30T12:21:15Z",
-  "source": "evidence/raw/pinterest-20261030T121808Z.json",
-  "source_sha256": "d27092535e2e47d95478abc30a3bd4ffd944c9b3ae8c7a760ea87e6fbfcc4554",
-  "selection": "Freeze the 20 postings and the 10/10 split for the prompt experiment, before Claude sees any of them.\n\nSelection (decided 2026-10-29, written down before this ran):\n  1. From the baseline raw response, keep jobs whose title has \"Engineer\" plus a role word (rule 1)\n     and whose location has United States, USA or US (rule 4).\n  2. Group A: those whose title has no experience word (rule 3). Group B: the rest. Each sorted by job ID.\n  3. Take all of group A, then group B, until there are 20. If fewer than 20, add other jobs by job ID.\n  4. Walk that list in order and alternate dev, held-out, dev, held-out.\nNo verdict is computed or saved here: the hand labels come first.",
+  "frozen_at": "2026-10-30T13:21:08Z",
+  "sources": [
+    {
+      "file": "evidence/raw/pinterest-20261030T121808Z.json",
+      "sha256": "d27092535e2e47d95478abc30a3bd4ffd944c9b3ae8c7a760ea87e6fbfcc4554"
+    },
+    {
+      "file": "evidence/raw/figma-20261030T132100Z.json",
+      "sha256": "7882f69694d8d2f2ac4938c8ef12a4942dae51fe1b3ebbfeab48f69197b4440a"
+    },
+    {
+      "file": "evidence/raw/twilio-20261030T132100Z.json",
+      "sha256": "8dfe0e45c3c37dcea175e0b0118c33d9a170da88d45606ac25642e377cd6534d"
+    }
+  ],
+  "selection": "Freeze the 20 postings and the 10/10 split for the prompt experiment, before any label or Claude answer.\n\nSelection (changed 2026-10-30, before any label or Claude answer existed; the first freeze was commit 5b130b8):\n  1. From each saved raw response (the Pinterest baseline first, then Figma and Twilio), keep jobs whose\n     title has \"Engineer\" plus a role word (rule 1), whose location has United States, USA or US (rule 4),\n     and whose title has no experience word (rule 3). These are the jobs a reader could not settle from the\n     title alone.\n  2. Take every Pinterest job that qualifies, sorted by job ID, then the Figma and Twilio jobs together,\n     sorted by job ID, until there are 20.\n  3. Walk that list in order and alternate dev, held-out, dev, held-out.\nNo verdict is computed or saved here: the hand labels come first.",
   "postings": [
     {
       "id": 7697137,
       "split": "dev",
-      "group": "A",
+      "company": "Pinterest",
       "title": "Machine Learning Engineer II, Visual AI",
       "location": "San Francisco, CA, US; Remote, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7697137",
@@ -17,7 +29,7 @@
     {
       "id": 7838591,
       "split": "held-out",
-      "group": "A",
+      "company": "Pinterest",
       "title": "University Grad Software Engineer 2027 (USA)",
       "location": "San Francisco, CA, US; Remote, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7838591",
@@ -27,7 +39,7 @@
     {
       "id": 8015547,
       "split": "dev",
-      "group": "A",
+      "company": "Pinterest",
       "title": "Security Software Engineer II, Detection and Response",
       "location": "San Francisco, CA, US; Remote, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8015547",
@@ -37,7 +49,7 @@
     {
       "id": 8162046,
       "split": "held-out",
-      "group": "A",
+      "company": "Pinterest",
       "title": "Machine Learning Engineer II, Responsible AI",
       "location": "San Francisco, CA, US; Remote, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8162046",
@@ -47,7 +59,7 @@
     {
       "id": 8213988,
       "split": "dev",
-      "group": "A",
+      "company": "Pinterest",
       "title": "Software Engineer II, Data Analytics & Engineering",
       "location": "San Francisco, CA, US; Remote, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8213988",
@@ -57,7 +69,7 @@
     {
       "id": 8227344,
       "split": "held-out",
-      "group": "A",
+      "company": "Pinterest",
       "title": "Software Engineer II, EPD Ads",
       "location": "San Francisco, CA; Palo Alto, CA; Seattle, WA; New York, NY; Remote, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8227344",
@@ -65,144 +77,144 @@
       "description_sha256": "6670e8783edcc69bce8f657fe4e892ef4a2191c87512c12b224f695f0d3e1019"
     },
     {
-      "id": 7437356,
+      "id": 7661919,
       "split": "dev",
-      "group": "B",
-      "title": "Staff Software Engineer, Big Data Storage",
-      "location": "Palo Alto, CA, US; Remote, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7437356",
-      "first_published": "2025-12-17T12:01:51-05:00",
-      "description_sha256": "e6d679992cbbc7154733ef02d926ddc8701465662a858abc6f7346a7b28fbf70"
+      "company": "Twilio",
+      "title": "Software Engineer - Video",
+      "location": "Remote - US",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7661919",
+      "first_published": "2026-02-27T11:24:08-05:00",
+      "description_sha256": "2bb5eedf11a4cc6ad3a8c79d01f44d277cf3b8b67a01398c9d428f9b83ad3049"
     },
     {
-      "id": 7494668,
+      "id": 7816159,
       "split": "held-out",
-      "group": "B",
-      "title": "Staff Software Engineer, Capacity Engineering",
-      "location": "San Francisco, CA, US; Remote, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7494668",
-      "first_published": "2026-07-16T12:47:45-04:00",
-      "description_sha256": "b32ef9f9eba05cb73a50424edb9791d44c76eaf9275fab09f417d1d8ee54feae"
+      "company": "Twilio",
+      "title": "Software Engineer L2-Messaging API",
+      "location": "Remote - US",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7816159",
+      "first_published": "2026-08-21T15:58:26-04:00",
+      "description_sha256": "91fe9cf0b24a52e910100e42109f48586f90251442d54cb4efab6ba986159c00"
     },
     {
-      "id": 7577227,
+      "id": 8009057,
       "split": "dev",
-      "group": "B",
-      "title": "Sr. Staff Software Engineer, AI Platform",
-      "location": "Palo Alto, CA, US; Remote, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7577227",
-      "first_published": "2026-10-06T18:32:59-04:00",
-      "description_sha256": "c936d76779af4e77d1cfdbebd9c6719918a20c063ad7cec19710b11b7b2c698f"
+      "company": "Twilio",
+      "title": "Software Engineer L3",
+      "location": "Remote - US",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/8009057",
+      "first_published": "2026-06-22T10:46:51-04:00",
+      "description_sha256": "d61e7513776cc10594d268bb17657553a1c6f1d3dd2ca504671754e64e7e5e41"
     },
     {
-      "id": 7683977,
+      "id": 8026207,
       "split": "held-out",
-      "group": "B",
-      "title": "Principal Engineer, AI Platform",
-      "location": "San Francisco, CA, US; Remote, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7683977",
-      "first_published": "2026-09-22T14:14:17-04:00",
-      "description_sha256": "a9856d262ae5f67e615bfce128e4a9bb5c32da197836ffb165a97989a09aca2b"
+      "company": "Twilio",
+      "title": "Software Engineer, Platform Engineering (L2)",
+      "location": "Remote - US",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/8026207",
+      "first_published": "2026-08-04T16:00:02-04:00",
+      "description_sha256": "8a49d8bcebdc17a6989a1edcfc2274c058c6d6c677caf546175d82734e4dd93a"
     },
     {
-      "id": 7685466,
+      "id": 8026211,
       "split": "dev",
-      "group": "B",
-      "title": "Principal Software Engineer, ML & Media Infra",
-      "location": "Palo Alto, CA; US;  San Francisco, CA, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7685466",
-      "first_published": "2026-10-29T12:50:31-04:00",
-      "description_sha256": "99a9840f53aef49c468087e54786fbc152a9da2632d3612a2bee61d54d5faef3"
+      "company": "Twilio",
+      "title": "Software Engineer, Platform Access (L2)",
+      "location": "Remote - US",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/8026211",
+      "first_published": "2026-10-06T12:34:32-04:00",
+      "description_sha256": "b8c6c5f289b557232b32d3505328a8af525332544d50d5f085de83512f6597ec"
     },
     {
-      "id": 7746946,
+      "id": 8100236,
       "split": "held-out",
-      "group": "B",
-      "title": "Sr. Staff Software Engineer, Data Product Platform",
-      "location": "San Francisco, CA, US; Remote, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7746946",
-      "first_published": "2026-04-09T13:57:14-04:00",
-      "description_sha256": "ae3308b12e856779372220c2227ff9fde809713a0388178deb51dfed3101a2f9"
+      "company": "Twilio",
+      "title": "Software Engineer (L2)",
+      "location": "Remote - US",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/8100236",
+      "first_published": "2026-07-31T16:58:59-04:00",
+      "description_sha256": "5ad65890b2792dca164718245cdf6a85085bdc680189a4ba6b928b1726a86553"
     },
     {
-      "id": 7770946,
+      "id": 5551532004,
       "split": "dev",
-      "group": "B",
-      "title": "Sr. Staff Software Engineer, Notifications & Growth Platform ",
-      "location": "San Francisco, CA, US; Remote, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7770946",
-      "first_published": "2026-10-05T12:19:30-04:00",
-      "description_sha256": "7ecc4e756fddc2bb4ac16824fa8f3a6b780480471c7901e88ba3eb48e20d6fa3"
+      "company": "Figma",
+      "title": "Software Engineer - Machine Learning",
+      "location": "San Francisco, CA • New York, NY • United States",
+      "url": "https://boards.greenhouse.io/figma/jobs/5551532004?gh_jid=5551532004",
+      "first_published": "2025-06-02T06:24:11-04:00",
+      "description_sha256": "3e27f52c8bc97fafa4daaca866dfaba50c2ea8d1abdf70597c104797b22e041f"
     },
     {
-      "id": 7838577,
+      "id": 5551686004,
       "split": "held-out",
-      "group": "B",
-      "title": "Software Engineer Intern 2027 (USA)",
-      "location": "San Francisco, CA, US; Remote, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7838577",
-      "first_published": "2026-10-01T13:03:52-04:00",
-      "description_sha256": "775a496634ffb14a0c7a1229bf2917f83be2113e5fee10253b8d4e04ccd54084"
+      "company": "Figma",
+      "title": "Software Engineer - Data Infrastructure",
+      "location": "San Francisco, CA • New York, NY • United States",
+      "url": "https://boards.greenhouse.io/figma/jobs/5551686004?gh_jid=5551686004",
+      "first_published": "2025-06-02T06:16:21-04:00",
+      "description_sha256": "d5929dba2f0d43ab046ddb260e112f0f8aa77864c1069f9666c462e0c87625fc"
     },
     {
-      "id": 7990090,
+      "id": 5551730004,
       "split": "dev",
-      "group": "B",
-      "title": "Staff Software Engineer, Edge",
-      "location": "Palo Alto, CA, US; Remote, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7990090",
-      "first_published": "2026-06-30T16:25:36-04:00",
-      "description_sha256": "c5fae2d064dd6872f140ce30d1a7d3a9d9bf4ba67e7ace9a4a8f422d032b1659"
+      "company": "Figma",
+      "title": "Software Engineer - AI Product",
+      "location": "San Francisco, CA • New York, NY • United States",
+      "url": "https://boards.greenhouse.io/figma/jobs/5551730004?gh_jid=5551730004",
+      "first_published": "2025-06-02T05:59:53-04:00",
+      "description_sha256": "3091397f58ab1e0e6a9415a29165205219b7ca88c1cf1802e3a736a85b9c80f7"
     },
     {
-      "id": 8046838,
+      "id": 5552530004,
       "split": "held-out",
-      "group": "B",
-      "title": "Staff Software Engineer, Service Configuration Deployments",
-      "location": "San Francisco, CA, US; Remote, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8046838",
-      "first_published": "2026-10-29T12:34:57-04:00",
-      "description_sha256": "3f266c356140e9fd055c50ee42ebe363a279569716444b0c3b573f775154c57e"
+      "company": "Figma",
+      "title": "Software Engineer - C++",
+      "location": "San Francisco, CA • New York, NY • United States",
+      "url": "https://boards.greenhouse.io/figma/jobs/5552530004?gh_jid=5552530004",
+      "first_published": "2025-06-02T06:02:45-04:00",
+      "description_sha256": "b7d079b4e8e33ba9ed83def71a718fb776aa298e34af2876464ca406304b40f8"
     },
     {
-      "id": 8046860,
+      "id": 5552549004,
       "split": "dev",
-      "group": "B",
-      "title": "Sr. Staff Software Engineer, Product ML Infrastructure",
-      "location": "Palo Alto, CA, US; San Francisco, CA, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8046860",
-      "first_published": "2026-09-30T15:41:55-04:00",
-      "description_sha256": "a68861731943a6bfdcdd0324a9f8552f9f68941a3b9b08eb839f837b57091bc3"
+      "company": "Figma",
+      "title": "Software Engineer - Distributed Systems",
+      "location": "San Francisco, CA • New York, NY • United States",
+      "url": "https://boards.greenhouse.io/figma/jobs/5552549004?gh_jid=5552549004",
+      "first_published": "2025-06-02T06:14:45-04:00",
+      "description_sha256": "55c2356cee60de9ebb1b4d4a26fdce0a3650a9dc0bb7e86f993813e5c31dac0a"
     },
     {
-      "id": 8055266,
+      "id": 5552560004,
       "split": "held-out",
-      "group": "B",
-      "title": "Staff Software Engineer, Ads & Core Serving Platform",
-      "location": "Palo Alto, CA, US; San Francisco, CA, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8055266",
-      "first_published": "2026-09-09T16:59:25-04:00",
-      "description_sha256": "3947a9654e7f7aefa42eba935705a34c562b1090a376814404f79751b1be34ed"
+      "company": "Figma",
+      "title": "Software Engineer - Growth & Monetization",
+      "location": "San Francisco, CA • New York, NY • United States",
+      "url": "https://boards.greenhouse.io/figma/jobs/5552560004?gh_jid=5552560004",
+      "first_published": "2025-06-02T06:07:15-04:00",
+      "description_sha256": "0f0d591b9479218b4f4b915b37be68ded012bfbcd83b466d713d98c6fe1f03e2"
     },
     {
-      "id": 8075888,
+      "id": 5691886004,
       "split": "dev",
-      "group": "B",
-      "title": "Staff Software Engineer, Web Product Enablement ",
-      "location": "San Francisco, CA, US; Remote, CA, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8075888",
-      "first_published": "2026-08-10T12:26:10-04:00",
-      "description_sha256": "23c1812ac3c1060b60dfe31e5d99c29a7d1ba753a183d90c30abcbaf21270954"
+      "company": "Figma",
+      "title": "Software Engineer - AI Platforms",
+      "location": "San Francisco, CA • New York, NY • United States",
+      "url": "https://boards.greenhouse.io/figma/jobs/5691886004?gh_jid=5691886004",
+      "first_published": "2025-11-01T15:10:47-04:00",
+      "description_sha256": "bfb732994f3881f1d440f3c805bde7dc5d761ac1ec91629af282bd71c5f45450"
     },
     {
-      "id": 8088867,
+      "id": 5691911004,
       "split": "held-out",
-      "group": "B",
-      "title": "Sr. Staff Software Engineer, Pinterest Assistant",
-      "location": "San Francisco, CA, US; Remote, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8088867",
-      "first_published": "2026-08-10T12:17:06-04:00",
-      "description_sha256": "be6e51aaa50dd4fbd6f6c9379003f3d543e24722248c076832a62cf879836192"
+      "company": "Figma",
+      "title": "Software Engineer - Full Stack",
+      "location": "San Francisco, CA • New York, NY • United States",
+      "url": "https://boards.greenhouse.io/figma/jobs/5691911004?gh_jid=5691911004",
+      "first_published": "2025-11-01T15:16:06-04:00",
+      "description_sha256": "24f1c2662fe30d6e5d91967e501cec8982e1649826b7efe22ea499b51f08fe08"
     }
   ]
 }

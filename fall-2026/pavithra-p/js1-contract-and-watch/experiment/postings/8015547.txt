@@ -1,5 +1,6 @@
 Job ID: 8015547
 Split: dev
+Company: Pinterest
 Title: Security Software Engineer II, Detection and Response
 Location: San Francisco, CA, US; Remote, US
 URL: https://www.pinterestcareers.com/jobs/?gh_jid=8015547
