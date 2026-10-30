@@ -40,3 +40,10 @@ Push was rejected because classmates had pushed to the shared repo; ran `git pul
 Wrote the asserts for tests 2–5 before any code in agent/ existed.
 Mistake caught in review with Claude: tests 3, 4 and 5 were indented inside test 2, so pytest would never have collected them; the suite would have reported 2 passing tests while host blocking, résumé validation and state preservation were untested. Also missing the write_resume helper. Fixed the indentation and added the helper; asserts unchanged.
 Lesson: run `python -m pytest -v` and count the test names, not just "passed".
+
+## Entry 8 — October 30, 2026: Claude Code implemented the watch
+Gave Claude Code (desktop app, Code tab) the watch prompt after confirming with `pwd`/`ls` that it was in js1-contract-and-watch. It created agent/net.py, agent/resume.py, agent/watch.py.
+Verified myself: `python -m pytest -v` → 5 passed in my venv; `git diff tests/` empty (tests untouched).
+Choices Claude Code made that my spec didn't cover, all accepted: usable id = integer; duplicate ids in one response counted once; seen_ids written sorted; evidence filenames in local time with `_1` suffix on same-second collisions (noted in README).
+Noticed: Claude Code ran a CLI check writing scratchpad files outside this folder, although my prompt said not to touch anything outside it. Harmless, but the agent acted slightly beyond its instructions; noted for the action-surface comparison.
+Not yet checked: Claude Code never ran live mode; the real Greenhouse fetch is untested.
