@@ -124,3 +124,6 @@ Limitation: no real new posting appeared, so the "both judges on each new postin
 
 ## Entry 24 — October 30, 2026: CONSTRUCTED demo of both judges
 Because Run 2 had 0 new postings, built a clearly labeled CONSTRUCTED demo: copied Run 1's state minus 3 ids and ran seeded on Run 2's real response. The agent reported exactly those 3 as new. Rule and Claude (3 fresh incognito chats, all valid) agreed on 2 and disagreed on 4696752005: the rule said relevant (3 skills matched) but cannot see the 8+ years requirement; Claude and my hand label said not_relevant. Wrote reports/CONSTRUCTED_DEMO.md. Real state files were not modified.
+
+## Entry 25 — October 30, 2026: Action-surface comparison
+Did the same task (judge 4696752005) three ways. All said not_relevant. Way 2 (file read) read only the 2 named files, as its "Read 2 files" list showed. Way 3 (agent with shell) read AGENTS.md at the class-repo root without being asked, fetched with curl (bypassing my allow-list), and wrote files without asking permission; `git status` confirmed writes stayed in action_surface/way3/. Chose the least autonomy that suffices: my code fetches and keeps state; Claude only judges one posting from permitted fields. Claude drafted reports/ACTION_SURFACE.md from my observations; I checked it against the screenshots.
