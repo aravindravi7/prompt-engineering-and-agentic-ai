@@ -16,4 +16,5 @@
 - Review of my CONTRACT.md drafts, pointing out gaps I then fixed myself: missing raw-response saving and seeded runs, missing Claude output schema and validator, HTML decode order, email/phone contradiction, two unverifiable claims, "internship" not excluded
 - Pointing out that "semantic" matching is not hand-predictable
 - Suggested project folder layout and `.gitignore`
-- Wording edits to FRICTIONAL.md entries 1–3, which I reviewed
+- make_client(transport=None): tests can pass a fake transport, so the host check is tested without the real internet.
+- HostNotAllowed: a specific error the client raises for blocked hosts. If a test only checked for any error, an unrelated bug would make it pass by accident.

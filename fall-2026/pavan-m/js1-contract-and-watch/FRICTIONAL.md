@@ -33,3 +33,10 @@ Wrote `test_first_run_baseline_reports_zero_new_postings` in `tests/test_watch.p
 Noticed: the bare `pytest` command ran conda's pytest 9.0.3 from /opt/anaconda3 instead of the venv's pytest 9.2.0, because conda base was also active. Changed to `python -m pytest` so tests run in the venv; README uses that command.
 First failing run: `ModuleNotFoundError: No module named 'agent.watch'` (expected; no implementation yet).
 
+## Entry 6 — October 30, 2026: First test written before implementation
+Push was rejected because classmates had pushed to the shared repo; ran `git pull --rebase --autostash`, which changed the commit hash to `47fef3fb16b721ed04fc763a93840f12b6531023`.
+
+## Entry 7 — October 30, 2026: Watch tests 2–5 written before implementation
+Wrote the asserts for tests 2–5 before any code in agent/ existed.
+Mistake caught in review with Claude: tests 3, 4 and 5 were indented inside test 2, so pytest would never have collected them; the suite would have reported 2 passing tests while host blocking, résumé validation and state preservation were untested. Also missing the write_resume helper. Fixed the indentation and added the helper; asserts unchanged.
+Lesson: run `python -m pytest -v` and count the test names, not just "passed".
