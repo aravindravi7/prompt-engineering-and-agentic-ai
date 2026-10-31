@@ -32,3 +32,12 @@ I mark a posting `relevant` if I, as this persona (MSIS student, entry-level BI/
 
 ## What a failure looks like (written before running anything)
 > 2026-10-31: A failure is a posting reported as new that was already seen, a posting that is new but not reported, or a Claude verdict shown without its JUDGMENT label or accepted without passing the validator.
+
+## Appendix: worked examples (added 2026-10-31, ~6:35 pm, AFTER the runs; the rule above is unchanged)
+These show how to apply the rule by hand. The first three are real Klaviyo postings from run 1; the fourth is the constructed posting used in `tests/test_agent.py`.
+| posting | (1) title | (2) skills.core named | (3) max years | verdict |
+|---|---|---|---|---|
+| 7989990003 Senior CS Compensation Analyst (real) | analyst ✔ | 6: SQL, Python, Tableau, Excel, Looker, ETL ✔ | 5 ("3-5 years") > 3 ✘ | not_relevant |
+| 7986841003 Lead Treasury Analyst (real) | analyst ✔ | 1: Excel ✘ | 8 > 3 ✘ | not_relevant |
+| 8013125003 Account Executive, Large Enterprise (real) | ✘ | 0 ✘ | 10 > 3 ✘ | not_relevant |
+| "Data Analyst" (CONSTRUCTED test posting: "You will use SQL and Tableau daily. 1-2 years of experience.") | analyst ✔ | 2: SQL, Tableau ✔ | 2 ≤ 3 ✔ | relevant |
