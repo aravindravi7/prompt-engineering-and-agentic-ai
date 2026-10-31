@@ -128,7 +128,7 @@ A practice call made while building the agent is not evidence and is not in this
 **How.**
 
 - **By hand:** the Data Engineer Rule 4 recomputation, my 20 hand labels, and running the test suite myself (73/73 OK).
-- **By tests written before the code:** Claude Code wrote the tests from my contract. They were committed (`7681e8e`) before any implementation existed (`9397fac`). I did not write them.
+- **By tests written before the code:** Claude Code wrote the tests from my contract. They were committed (`0edb036`) before any implementation existed (`84fc8cb`). I did not write them.
 - **With Claude's help:** the SHA-256 comparisons between runs, checking my 11 years notes against the postings' must-have sections, and the agent's rule on the whole board agreeing with an independent count (1 match of 675).
 
 **Not checked.**
@@ -156,8 +156,8 @@ A practice call made while building the agent is not evidence and is not in this
 | Task | What Claude did | What I did | Why that part stays mine | Where it shows |
 |---|---|---|---|---|
 | The contract | Drafted a version I discarded; reviewed mine three times; wrote the dated Rules 1–3 addition at my request | Wrote `CONTRACT.md` in my own words; committed it before any code | I have to predict and defend every verdict when a TA asks | `93afbb8`; `SOURCES.md` contract rows |
-| Code and tests | Wrote all of them | Ran the tests myself and the live baseline (run 1) | Running is my check that the code does what the contract says | `9397fac` ("I ran the tests: 72/72 pass"); `e976c58` |
-| Labeling | Drafted the labeling rule; fixed CSV quoting | **Labeled all 20 postings** | The labels are the human answer Claude is scored against. Claude labeling them would score Claude against Claude. | `808270d` (rule) before `3ff2be4` (my labels) |
-| The revision | Suggested three single changes; ran every call | Chose "must-haves only"; made the prediction before it ran | Which change to test, and the prediction, are my reasoning | `31f068e`, frozen at 08:28:34, before the revision's first call at 08:28:59 |
+| Code and tests | Wrote all of them | Ran the tests myself and the live baseline (run 1) | Running is my check that the code does what the contract says | `84fc8cb` ("I ran the tests: 72/72 pass"); `34b2328` |
+| Labeling | Drafted the labeling rule; fixed CSV quoting | **Labeled all 20 postings** | The labels are the human answer Claude is scored against. Claude labeling them would score Claude against Claude. | `549f65e` (rule) before `80b79de` (my labels) |
+| The revision | Suggested three single changes; ran every call | Chose "must-haves only"; made the prediction before it ran | Which change to test, and the prediction, are my reasoning | `24debba`, frozen at 08:28:34, before the revision's first call at 08:28:59 |
 | Verification | Comparisons and the full-board check | Recomputed Data Engineer's Rule 4 on the live page | One verdict I checked with my own eyes | `SOURCES.md`, "Recomputation by hand" |
 | The sign-off | Drafted the lines above | Decide whether to sign, and change anything untrue | My name is the one on it | the line above |

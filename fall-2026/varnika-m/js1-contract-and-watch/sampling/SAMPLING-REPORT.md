@@ -5,7 +5,7 @@
 ## What ran
 
 - **Postings:** 5 real postings from run 1's saved response. They were chosen by the method fixed in `tools/select_experiment.py` before any labeling: the first 3 development postings from stratum A (listed engineering title, not senior, US) and the first 2 from stratum B.
-- **Hand labels:** mine, from `experiment/labels.csv`, committed (`3ff2be4`) before any of these calls.
+- **Hand labels:** mine, from `experiment/labels.csv`, committed (`80b79de`) before any of these calls.
 - **Prompt:** `prompts/baseline-v1.txt`, with the contract's JSON reply format.
 - **Calls:** 4 per posting, each a fresh conversation: `claude -p --tools "" --no-session-persistence --setting-sources ""`, run in an empty folder, so no tools, files or memory could be used.
   - Model: `claude-opus-5-5`. A background `claude-haiku-4-5` call also appears in the CLI's usage report.

@@ -31,7 +31,7 @@ My log of what I tried, what happened, what I checked or changed, and what I acc
   - They went into a dated **Changes** section added after the first commit, so the original text stayed as committed.
   - **What I learned:** Writing tests before code showed me that my contract said every rule names a résumé field but never said which one, so a rule I thought was finished wasn't testable.
 - **From Claude, accepted / changed / rejected:** Accepted the fields Claude Code proposed. It wrote the addition at my request.
-- **Trace:** `7681e8e`; `CONTRACT.md` "Changes".
+- **Trace:** `0edb036`; `CONTRACT.md` "Changes".
 
 ### 2026-10-31 — Due today, and the board did not change
 - **What I tried:** I needed run 2 to show a real change, but the assignment was due the same day.
@@ -43,7 +43,7 @@ My log of what I tried, what happened, what I checked or changed, and what I acc
   - **What I learned:** A seeded run lets me exercise the "new posting" path, but it can't show that the path works on live data, so I have to label it as seeded and constructed.
   - **Still unresolved:** Run A cannot contain postings that closed before run 1. I never saw the "new posting" path on live data.
 - **From Claude, accepted / changed / rejected:** Accepted Claude Code's proposal of the seeded pair and its labeling. Claude Code built and ran it.
-- **Trace:** `64ca94c`; `seeded/`; README "What ran".
+- **Trace:** `e7e90ae`; `seeded/`; README "What ran".
 
 ### 2026-10-31 — My labels came out 19 NOT_MATCH, 1 MATCH
 - **What I tried:** I hand-labeled the 20 postings using the labeling rule. Claude Code drafted the rule at my request, and it was committed before I saw the postings.
@@ -56,7 +56,7 @@ My log of what I tried, what happened, what I checked or changed, and what I acc
   - **What I learned:** With almost no MATCH labels, a high score can come from a prompt that always says NOT_MATCH, so 10/10 on held-out tells me little.
   - **Still unresolved:** With no `MATCH` in held-out, a prompt that always says `NOT_MATCH` would also score 10/10.
 - **From Claude, accepted / changed / rejected:** Accepted the labeling rule draft and the CSV quoting fix. The labels themselves are mine.
-- **Trace:** `808270d` (rule), `1b50ba1` (the 20 postings), `3ff2be4` (my labels).
+- **Trace:** `549f65e` (rule), `9f29a31` (the 20 postings), `80b79de` (my labels).
 
 ### 2026-10-31 — Recomputing one verdict by hand
 - **What I tried:** I checked the Rule 4 verdict on "Data Engineer" (5464234008) in seeded run B: "FAIL, highest years phrase is 5 (limit 3)".
@@ -78,4 +78,4 @@ My log of what I tried, what happened, what I checked or changed, and what I acc
   - **What I learned:** My prediction came true, but the prompt change only shifted how Claude worded its replies, not its verdicts, and ten cases can't tell the two prompts apart.
   - **Still unresolved:** Whether row 4 should be `MATCH`. Claude's reading is defensible, and the ten-case sets cannot tell the two prompts apart.
 - **From Claude, accepted / changed / rejected:** Accepted the change I picked and the shared prediction. Claude Code ran all the calls.
-- **Trace:** `31f068e` (revision and prediction frozen at 08:28:34 UTC, before the first call at 08:28:59); `experiment/PROMPT-EXPERIMENT.md`.
+- **Trace:** `24debba` (revision and prediction frozen at 08:28:34 UTC, before the first call at 08:28:59); `experiment/PROMPT-EXPERIMENT.md`.
