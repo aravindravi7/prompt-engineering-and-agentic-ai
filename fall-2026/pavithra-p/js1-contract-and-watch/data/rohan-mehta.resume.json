@@ -1,15 +1,15 @@
 {
-  "_comment": "FICTIONAL EXAMPLE PERSONA - safe to commit. Pairs with resumes/aarav-patel-cv.md.",
+  "_comment": "FICTIONAL EXAMPLE PERSONA - safe to commit. Adapted from the Reallocation Engine example search/examples/aarav-patel/ (commit d08afdd): only the name, email, LinkedIn and GitHub were changed, on 2026-10-30.",
   "attested": true,
   "attested_date": "2026-08-17",
-  "attestation_note": "Example data: every bullet below is fictional and internally consistent with resumes/aarav-patel-cv.md.",
+  "attestation_note": "Example data: every bullet below is fictional.",
   "personal": {
-    "name": "Aarav Patel",
+    "name": "Rohan Mehta",
     "location": "Boston, MA",
     "phone": "(617) 555-0148",
-    "email": "aarav.patel@example.com",
-    "linkedin": "linkedin.com/in/aaravpatel-example",
-    "github": "github.com/aaravpatel-example"
+    "email": "rohan.mehta@example.com",
+    "linkedin": "linkedin.com/in/rohanmehta-example",
+    "github": "github.com/rohanmehta-example"
   },
   "education": [
     {

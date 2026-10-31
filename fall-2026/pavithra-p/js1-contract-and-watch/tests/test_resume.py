@@ -14,11 +14,11 @@ def persona():
 class ResumeTests(unittest.TestCase):
     def test_persona_file_passes(self):
         data = resume.load(config.RESUME)
-        self.assertEqual(data["personal"]["name"], "Aarav Patel")
+        self.assertEqual(data["personal"]["name"], "Rohan Mehta")
 
     def test_refuses_resume_without_example_email(self):
         data = copy.deepcopy(persona())
-        data["personal"]["email"] = "aarav.patel@gmail.com"
+        data["personal"]["email"] = "rohan.mehta@gmail.com"
         with self.assertRaisesRegex(resume.ResumeRefused, "example.com"):
             resume.validate(data)
 

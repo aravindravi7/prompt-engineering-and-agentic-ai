@@ -14,7 +14,7 @@ def board_url(board):
 BOARD_URL = board_url(BOARD)
 
 ROOT = Path(__file__).resolve().parent.parent
-RESUME = ROOT / "data" / "aarav-patel.resume.json"
+RESUME = ROOT / "data" / "rohan-mehta.resume.json"
 RAW_DIR = ROOT / "evidence" / "raw"
 RUNS_DIR = ROOT / "evidence" / "runs"
 CLAUDE_DIR = ROOT / "evidence" / "claude"

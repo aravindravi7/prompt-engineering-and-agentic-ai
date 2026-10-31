@@ -4,7 +4,7 @@ Pavithra Prasad · INFO 7375 · JS1 · 2026-10-29
 
 ## In
 
-The agent takes a Greenhouse job board name (`pinterest`, at `boards-api.greenhouse.io`) and a fictional résumé in JSON format (Aarav Patel, copied from the Reallocation Engine examples). It uses the résumé's skills and experience to check job openings.
+The agent takes a Greenhouse job board name (`pinterest`, at `boards-api.greenhouse.io`) and a fictional résumé in JSON format (Rohan Mehta, adapted from an example persona in the Reallocation Engine, with only the name and contact details changed). It uses the résumé's skills and experience to check job openings.
 
 It needs network access to `boards-api.greenhouse.io` only, a folder to save each raw response, and a file of the job IDs it has already seen.
 
