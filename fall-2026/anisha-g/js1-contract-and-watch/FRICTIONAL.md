@@ -6,7 +6,7 @@
 
 **2026-10-31, ~5:12 pm** — Claude's tests passed in its workspace (9 tests) and a fake-board / fake-Claude smoke test ran every command. Not yet run on real data.
 
-**2026-10-31, ~5:37 pm** — Asked Claude to write the failure sentence; it drafted one, I read it and committed the contract as `9af05ef` before running anything.
+**2026-10-31, ~5:37 pm** — Asked Claude to write the failure sentence; it drafted one, I read it and committed the contract as `509e6ca` before running anything.
 
 **2026-10-31, ~5:38 pm** — Tests: 9 passed on my Mac. Run 1 (live, baseline): 156 postings, 0 new — correct for a baseline.
 

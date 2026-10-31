@@ -54,4 +54,4 @@ What it shows: most of the baseline's failures were **format**, not judgment —
 | Code and tests | Wrote `agent.py` and tests against the contract | Ran tests and both runs myself | I sign what ran, not what was written |
 | Hand labels | Nothing | Labelled all 20 by reading | Labels are the ground truth; Claude can't grade itself |
 | Verdict on a posting | Gives a JUDGMENT | Decides whether to apply | My time, my name |
-Evidence of the split: commit `9af05ef` (contract committed before any run); `labels/labels.csv` filled by me one posting at a time with `label.py` (my reasons are in the `my_reason` column, e.g. "strong skill match but lead, 5-8 yrs"); my Claude Code spend-limit error and the decision to run the judge calls in Claude's workspace are logged in FRICTIONAL.md.
+Evidence of the split: commit `509e6ca` (contract committed before any run); `labels/labels.csv` filled by me one posting at a time with `label.py` (my reasons are in the `my_reason` column, e.g. "strong skill match but lead, 5-8 yrs"); my Claude Code spend-limit error and the decision to run the judge calls in Claude's workspace are logged in FRICTIONAL.md.
