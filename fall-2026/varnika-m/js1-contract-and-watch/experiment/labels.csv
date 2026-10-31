@@ -1,0 +1,21 @@
+n,job_id,split,title,label,note
+1,4981828008,development,"Software Engineer, Research Tools",NOT_MATCH,5+ years required; Aarav has about 2.4 years
+2,5110511008,development,"Staff+ Software Engineer, Developer Productivity",NOT_MATCH,Staff-level role
+3,5161402008,development,"Data Scientist, Growth",NOT_MATCH,"Data science role, not software engineering; 7+ years"
+4,5364804008,development,"Machine Learning Infrastructure Engineer, Safeguards Research",MATCH,Infrastructure engineering; Python required; no experience-year minimum; US locations
+5,5400153008,development,"Software Engineer, Business Technology",NOT_MATCH,6+ years required
+6,5418610008,development,"Data Engineer, GTM",NOT_MATCH,5+ years required
+7,5424111008,development,Recruiting Analytics Data Engineer,NOT_MATCH,"Requires BigQuery, dbt, and Fivetran skills not listed for Aarav"
+8,5432583008,development,"[London] Applied AI Architect, Partnerships",NOT_MATCH,Pre-sales solutions architect; 5+ years; London location
+9,5441867008,development,"Director, Infrastructure Lease Accounting",NOT_MATCH,"Director role; accounting, not software engineering"
+10,5464894008,development,"Manager, Enterprise Sales - Asset & Wealth Management",NOT_MATCH,Manager role in enterprise sales
+11,5098025008,held-out,"Model Performance Software Engineer, Claude Code",NOT_MATCH,Staff-level role; 10+ years required
+12,5311234008,held-out,"Safeguards Enforcement Analyst, Age-Appropriate Design",NOT_MATCH,"Policy and enforcement analyst, not software engineering"
+13,5383710008,held-out,AV Operations Specialist,NOT_MATCH,AV operations role; 8+ years required
+14,5386182008,held-out,"Product Manager, New Markets and Monetization",NOT_MATCH,"Product management role, not software engineering"
+15,5391356008,held-out,"Manager, Account Executive",NOT_MATCH,Manager role in sales
+16,5396384008,held-out,"IT Systems Engineer, Mobile Client Platform Engineer",NOT_MATCH,8+ years of mobile fleet experience required; missing MDM and mobile platform skills
+17,5421263008,held-out,"Software Engineer, Tokens and Prompt Structures",NOT_MATCH,5+ years required
+18,5439830008,held-out,"Applied AI Architect, International Policy",NOT_MATCH,Applied AI policy advisory role; 4+ years required
+19,5445625008,held-out,"IT Systems Engineer, Client Platform Engineer, macOS",NOT_MATCH,8+ years required; macOS fleet and endpoint management skills not demonstrated
+20,5462966008,held-out,Security Data Engineer,NOT_MATCH,Requires hands-on physical asset or security-control data experience not demonstrated in Aarav's résumé

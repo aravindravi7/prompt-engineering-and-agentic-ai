@@ -20,6 +20,7 @@ description) and no rule verdicts, so the hand labels are not anchored on the ru
 
 import csv
 import gzip
+import html
 import json
 import random
 import re
@@ -36,9 +37,19 @@ SEED = 7375
 EXCLUDED = {5440427008}
 
 
+def readable(content):
+    """The description with its paragraphs and bullet lists kept, for a person to read."""
+    markup = html.unescape(content or "")
+    markup = re.sub(r"(?i)<li[^>]*>", "\n- ", markup)
+    markup = re.sub(r"(?i)</(p|li|ul|ol|div|h\d)>|<br\s*/?>", "\n", markup)
+    lines = [re.sub(r"[ \t\xa0]+", " ", html.unescape(line)).strip() for line in re.sub(r"<[^>]+>", " ", markup).split("\n")]
+    text = "\n".join(line for line in lines if line and line != "-")
+    return re.sub(r"(?m)^(You may be a good fit if you.*|Strong candidates may also.*|About the role.*)$", r"\n**\1**\n", text)
+
+
 def role_section(content):
-    text = description_text(content)
-    start = text.find("About the role")
+    text = readable(content)
+    start = text.find("**About the role")
     end = min([i for i in (text.find("The annual compensation"), text.find("Logistics")) if i > 0] or [len(text)])
     return text[start if start >= 0 else 0:end].strip()
 
@@ -67,11 +78,12 @@ def main():
          "stratum_sizes": {"A": len(a), "B": len(b)},
          "postings": [{k: v for k, v in c.items() if k != "job"} for c in chosen]}, indent=2) + "\n")
 
-    with open(OUT / "labels.csv", "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(["n", "job_id", "split", "title", "label", "note"])
-        for n, c in enumerate(chosen, 1):
-            writer.writerow([n, c["job_id"], c["split"], c["title"], "", ""])
+    if not (OUT / "labels.csv").exists():  # never overwrite labels someone has started
+        with open(OUT / "labels.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["n", "job_id", "split", "title", "label", "note"])
+            for n, c in enumerate(chosen, 1):
+                writer.writerow([n, c["job_id"], c["split"], c["title"], "", ""])
 
     lines = ["# Labeling sheet: 20 real postings from run 1 (2026-10-31 07:40 UTC)", "",
              "Selected by `tools/select_experiment.py` (seed %d). Label each one in `labels.csv` with `MATCH` "
