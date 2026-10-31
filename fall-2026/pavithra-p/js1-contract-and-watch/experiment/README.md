@@ -26,10 +26,10 @@ The labelling rule is the rule in `CONTRACT.md`, written on 2026-10-29. I label 
 
 For each posting I open `postings/<id>.txt` and check:
 
-1. **Role:** does the title have "Engineer" and one of Software, Backend, Back-end, Full-stack, Full Stack, Fullstack, Cloud, AI?
-2. **Skills:** which of these appear in the description as whole words? TypeScript, Python, Java, SQL, Node.js, Kafka, Redis, MSSQL, PostgreSQL, AWS, Kubernetes, Docker, Helm, Fluent Bit, Jenkins. Two or more is a Y.
-3. **Experience:** does the title have none of Senior, Sr, Staff, Principal, Lead, Manager, Director, Head, Distinguished, Intern, and does the description ask for no 3+ years?
-4. **Location:** does the location have United States, USA or US?
+1. Role: does the title have "Engineer" and one of Software, Backend, Back-end, Full-stack, Full Stack, Fullstack, Cloud, AI?
+2. Skills: which of these appear in the description as whole words? TypeScript, Python, Java, SQL, Node.js, Kafka, Redis, MSSQL, PostgreSQL, AWS, Kubernetes, Docker, Helm, Fluent Bit, Jenkins. Two or more is a Y.
+3. Experience: does the title have none of Senior, Sr, Staff, Principal, Lead, Manager, Director, Head, Distinguished, Intern, and does the description ask for no 3+ years?
+4. Location: does the location have United States, USA or US?
 
 The label is Relevant only if all four are Y.
 

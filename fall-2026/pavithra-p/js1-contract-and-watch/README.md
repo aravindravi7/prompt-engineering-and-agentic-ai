@@ -2,7 +2,7 @@
 
 INFO 7375 Prompt Engineering for Generative AI, Fall 2026 · Pavithra Prasad (`pavithra-p`) · Assignment JS1
 
-A small agent that watches one public job board (Pinterest, on Greenhouse), keeps only the postings that are new since its last run, and judges each new posting for a **fictional** candidate, Rohan Mehta. Every new posting gets two verdicts. One comes from the written rule in `CONTRACT.md`, a **record** that anyone can recompute. The other comes from Claude, a **judgment** that is labelled as one and checked by a validator. The agent never applies, emails, messages anyone or logs in.
+A small agent that watches one public job board (Pinterest, on Greenhouse), keeps only the postings that are new since its last run, and judges each new posting for a fictional candidate, Rohan Mehta. Every new posting gets two verdicts. One comes from the written rule in `CONTRACT.md`, a record that anyone can recompute. The other comes from Claude, a judgment that is labelled as one and checked by a validator. The agent never applies, emails, messages anyone or logs in.
 
 ## Contents
 
@@ -45,7 +45,7 @@ python3 -m agent watch
 | Command | What it does |
 |---|---|
 | `python3 -m agent watch --no-claude` | same, with the rule judge only |
-| `python3 -m agent watch --from-file PATH` | uses a saved response instead of fetching. The run is labelled **SEEDED** and uses its own state file |
+| `python3 -m agent watch --from-file PATH` | uses a saved response instead of fetching. The run is labelled SEEDED and uses its own state file |
 | `python3 -m agent snapshot figma` / `twilio` | saves one experiment board's raw response (no state, no verdicts) |
 | `python3 -m agent freeze RAW...` | freezes the 20 postings and the dev/held-out split |
 | `python3 -m agent sample` | sampling report: 5 dev postings × 4 fresh Claude conversations |
@@ -61,12 +61,12 @@ All times are UTC. Each line points to the saved output.
 
 | When | What | Result | Evidence |
 |---|---|---|---|
-| 2026-10-30 12:18:08 | **Run 1 (baseline)**, in my own terminal | 165 jobs, 0 new | `evidence/runs/run-20261030T121808Z.md`, commit `d6a3a4b` |
+| 2026-10-30 12:18:08 | Run 1 (baseline), in my own terminal | 165 jobs, 0 new | `evidence/runs/run-20261030T121808Z.md`, commit `d6a3a4b` |
 | 2026-10-30 13:21 | Figma and Twilio snapshots, then the freeze (20 postings, 10 dev / 10 held-out) | before any label or Claude answer | `experiment/postings.json`, `c16b311` |
 | 2026-10-30 | My 20 hand labels | 11 Relevant, 9 Not Relevant | `experiment/labels.csv`, `7327ccd` |
 | 2026-10-30 14:05–14:07 | Sampling | 20/20 valid, the same verdict 4/4 on every posting | `SAMPLING-REPORT.md`, `evidence/claude/sampling/` |
 | 2026-10-31 00:27–16:38 | Prompt experiment, 4 runs | against my labels: dev 3/10 → 7/10, held-out 4/10 → 8/10; 0 invalid | `PROMPT-EXPERIMENT.md`, `evidence/claude/experiment/` |
-| 2026-10-31 17:39:02 | **Run 2 (a real second day)**, in my own terminal | 170 jobs, **8 new**. The rule: 8 Not Relevant. Claude: 6 Not Relevant, 2 invalid (empty `resume_fields`), saved and not repaired | `evidence/runs/run-20261031T173902Z.md`, `evidence/claude/watch/`, `15e9d2a` |
+| 2026-10-31 17:39:02 | Run 2 (a real second day), in my own terminal | 170 jobs, 8 new. The rule: 8 Not Relevant. Claude: 6 Not Relevant, 2 invalid (empty `resume_fields`), saved and not repaired | `evidence/runs/run-20261031T173902Z.md`, `evidence/claude/watch/`, `15e9d2a` |
 | 2026-10-31 17:39:16 | Run 3, the same command again 14 seconds later | 170 jobs, 0 new (nothing is reported twice) | `evidence/runs/run-20261031T173916Z.md` |
 | 2026-10-31 17:42–17:45 | Action surfaces on job 7832348 | chat, file and agent all Not Relevant | `ACTION-SURFACES.md`, `5a9bd79` |
 | 2026-10-31 21:44:48 | Label audit, in my own terminal | my labels agree with the written rule on 7/20. Against the rule: baseline 10/10 on both sets, revision 6/10 on both | `experiment/label-audit.md`, `PROMPT-EXPERIMENT.md` |
@@ -82,7 +82,7 @@ No seeded run was needed, because run 2 found real new jobs.
 * `test_fetch.py` (4): refuses other hosts and plain http, sends only GET, refuses a redirect to another host.
 * `test_resume.py` (4): the persona passes; refuses a résumé without an `@example.com` email, without a 555 phone, or missing a skill list.
 * `test_watch.py` (11): first run reports 0 new; the second run reports only unseen IDs; duplicates reported once; the raw response is saved before the state changes; the report lists only IDs from the raw response; a failed fetch leaves the state unchanged; a refused résumé stops before any fetch; a seeded run is labelled; both judges are shown and labelled; `--no-claude`; the live baseline through the command line.
-* `test_rule.py` (13): each of the four rule parts, including the "CA" (Canada) location trap and decimal years like "1.5+ years"; all four are needed; the verdict is labelled a record; **wrong version 1** (verdicts paired with the wrong job ID) and **wrong version 2** (a reason that cites nothing) are both caught.
+* `test_rule.py` (13): each of the four rule parts, including the "CA" (Canada) location trap and decimal years like "1.5+ years"; all four are needed; the verdict is labelled a record; wrong version 1 (verdicts paired with the wrong job ID) and wrong version 2 (a reason that cites nothing) are both caught.
 * `test_claude_judge.py` (7): the validator accepts only the exact format; Claude's opinion is labelled a judgment; invalid replies are saved and never repaired; each call is fresh, with no tools and no project folder; the prompt carries no email or phone; a command-line failure is recorded as invalid.
 * `test_freeze.py` (4): keeps only non-senior US engineering roles; the order and the alternating split; 10/10; experiment 2's selection.
 * `test_audit.py` (1): each prompt is scored against my labels and against the written rule, and the labels are never changed.
@@ -144,7 +144,7 @@ Signed or withheld: Signed, Pavithra Prasad, 2026-10-31
 |---|---|---|---|---|
 | The contract | Claude Code sharpened my draft: exact rule words, the "CA" trap, the refuses list | I wrote the draft, kept the rule and cut the long version back to six sections | The rule decides which jobs reach me | `586c296` (my draft) → `9aed486` |
 | The 20 postings | Claude Code wrote the selection and froze the first 20 | I rejected the first freeze (mostly senior roles) and asked for non-senior roles | The test set has to look like the jobs I would actually see | `5b130b8` → `c16b311` |
-| Hand labels | nothing | I labelled all 20 before any Claude answer and decided my labelling rule | The labels are the yardstick; Claude cannot grade itself | `7327ccd`, `experiment/README.md` |
+| Hand labels | nothing | I labelled all 20 before any Claude answer and decided my labelling rule | Claude is scored against the labels, so it cannot write them | `7327ccd`, `experiment/README.md` |
 | Sampling conclusion | Claude Code ran the 20 conversations and made the table | I wrote the conclusion | What the numbers mean is my call | `SAMPLING-REPORT.md` "My conclusion", `aa3e1ab` |
 | The one prompt change | Claude Code showed two options with predictions | I chose "drop the years check", from the dev results only | Choosing the change is the experiment | `287eefe` → `30e32c3` |
 | The two real runs | Claude Code wrote the watcher | I ran run 1 and run 2 in my own terminal | A real second run has to be a real day, not a replay | `d6a3a4b`, `15e9d2a` |

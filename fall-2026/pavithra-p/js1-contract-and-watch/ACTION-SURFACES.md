@@ -1,14 +1,14 @@
 # Action-surface comparison (Chapter 3)
 
-**The task:** judge one posting for Rohan Mehta (fictional) with my contract's rule. The posting is Pinterest **7832348**, "Staff Software Engineer, Batch Processing Platform". It was one of the 8 new jobs in run 2 (2026-10-31). The same rule text (`experiment/prompts/baseline.md`) was used all three ways.
+The task: judge one posting for Rohan Mehta (fictional) with my contract's rule. The posting is Pinterest 7832348, "Staff Software Engineer, Batch Processing Platform". It was one of the 8 new jobs in run 2 (2026-10-31). The same rule text (`experiment/prompts/baseline.md`) was used all three ways.
 
 | Way | How it ran | Saved |
 |---|---|---|
 | 1. Chat | I pasted `action-surfaces/1-chat/paste-into-claude-ai-7832348.txt` into a new claude.ai chat on 2026-10-31 (model shown: Opus 5.5, high) and pasted the reply back | `action-surfaces/1-chat/reply-7832348.json` |
-| 2. File | `python3 -m agent surfaces 7832348`: Claude Code (`claude -p`, model `claude-sonnet-5-5`) with **only the Read tool**, in a temporary folder holding `posting.txt` and `resume.json`, 2026-10-31T17:42:48Z | `action-surfaces/2-file/` (the files it was given, the prompt, the reply) |
-| 3. Agent | `python3 -m agent watch` (run 2, 2026-10-31T17:39:02Z): fetched the board, saved the raw response, wrote `state/seen_ids.json`, and asked Claude (`claude -p`, **no tools**) about each new job | `evidence/runs/run-20261031T173902Z.md`, `evidence/claude/watch/20261031T173902Z/7832348.json` |
+| 2. File | `python3 -m agent surfaces 7832348`: Claude Code (`claude -p`, model `claude-sonnet-5-5`) with only the Read tool, in a temporary folder holding `posting.txt` and `resume.json`, 2026-10-31T17:42:48Z | `action-surfaces/2-file/` (the files it was given, the prompt, the reply) |
+| 3. Agent | `python3 -m agent watch` (run 2, 2026-10-31T17:39:02Z): fetched the board, saved the raw response, wrote `state/seen_ids.json`, and asked Claude (`claude -p`, no tools) about each new job | `evidence/runs/run-20261031T173902Z.md`, `evidence/claude/watch/20261031T173902Z/7832348.json` |
 
-**All three said Not Relevant for the same reason:** the title has "Staff", and the description asks for "Minimum 6 years of experience" (line 23 of `action-surfaces/2-file/given/posting.txt`). All three replies passed the validator. The written rule (the record) says Not Relevant too.
+All three said Not Relevant for the same reason: the title has "Staff", and the description asks for "Minimum 6 years of experience" (line 23 of `action-surfaces/2-file/given/posting.txt`). All three replies passed the validator. The written rule (the record) says Not Relevant too.
 
 ## What each way can read, write and send
 
@@ -23,12 +23,12 @@
 
 ## The least autonomy that suffices
 
-The job is: **every day, show me only the new postings, each with a justified verdict.** The chat and the file ways cannot fetch the board or remember what was already seen, so I would have to do both by hand every day. They do not suffice.
+The job is: every day, show me only the new postings, each with a justified verdict. The chat and the file ways cannot fetch the board or remember what was already seen, so I would have to do both by hand every day. They do not suffice.
 
 So the watch needs the agent, but the autonomy is split:
 
-* **The fixed Python code** does the actions: one GET to one allowed host, and writes only inside its own folder. It never applies, emails, messages or logs in.
-* **Claude gets no tools at all** (`--tools ""`). It only sees the text the code gives it, the same as in the chat, and it cannot fetch, read files or write the state. Its reply is a judgment that the validator checks, not an action.
+* The fixed Python code does the actions: one GET to one allowed host, and writes only inside its own folder. It never applies, emails, messages or logs in.
+* Claude gets no tools at all (`--tools ""`). It only sees the text the code gives it, the same as in the chat, and it cannot fetch, read files or write the state. Its reply is a judgment that the validator checks, not an action.
 
 This gives Claude less autonomy than way 2, where it could read files. The extra power the agent has (fetching and writing state) sits in code that the tests check.
 

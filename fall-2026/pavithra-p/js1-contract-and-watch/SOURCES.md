@@ -1,4 +1,4 @@
-# SOURCES — Job-Search Agent 1
+# SOURCES: Job-Search Agent 1
 
 ## What I used
 
@@ -37,5 +37,5 @@
 
 ## Constructed or real
 
-- **Real:** every raw response in `evidence/raw/`, every run report, every Claude reply in `evidence/claude/` and `action-surfaces/`, with its date.
-- **Constructed, and labelled CONSTRUCTED:** every test fixture in `tests/`. No seeded run was needed.
+- Real: every raw response in `evidence/raw/`, every run report, every Claude reply in `evidence/claude/` and `action-surfaces/`, with its date.
+- Constructed, and labelled CONSTRUCTED: every test fixture in `tests/`. No seeded run was needed.
