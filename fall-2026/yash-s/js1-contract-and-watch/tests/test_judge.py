@@ -31,10 +31,10 @@ T1 = datetime(2026, 10, 28, 12, 0, 0, tzinfo=timezone.utc)
 T2 = datetime(2026, 10, 29, 12, 0, 0, tzinfo=timezone.utc)
 
 
-def posting(i, title, text):
+def posting(i, title, text, location="Remote - Massachusetts"):
     """A constructed posting, entity-escaped the way Greenhouse sends content."""
     return {"id": i, "title": title, "content": html.escape(f"<p>{text}</p>"),
-            "absolute_url": f"https://example.com/jobs/{i}"}
+            "location": {"name": location}, "absolute_url": f"https://example.com/jobs/{i}"}
 
 
 def blocked(*a, **k):
@@ -209,8 +209,21 @@ class Validator(Offline):
         self.assertInvalid(self.with_(resume_fields=["skills"]))
         self.assertInvalid(self.with_(resume_fields=["skills.familiar_with_not_shipped"]))
 
-    def test_only_title_and_content(self):
-        self.assertInvalid(self.with_(posting_fields=["location"]))
+    def test_only_title_content_and_location(self):
+        self.assertInvalid(self.with_(posting_fields=["departments"]))
+
+    def test_location_may_be_cited(self):
+        a = self.with_(verdict="not relevant", resume_fields=[], posting_fields=["location"], matched_terms=[],
+                       reason="The job is outside the United States.")
+        self.assertEqual(self.check(a)[1], [])
+
+    def test_term_in_location_must_also_be_in_the_resume(self):
+        p = posting(42, "ML Engineer", "Python.", location="Framingham, Massachusetts")
+        view = judge.claude_view(p, RESUME)
+        ok = self.with_(resume_fields=["experience"], posting_fields=["location"], matched_terms=["Framingham"])
+        self.assertEqual(judge.validate(json.dumps(ok), p, view)[1], [])          # Priya's co-op was in Framingham
+        bad = self.with_(resume_fields=["experience"], posting_fields=["location"], matched_terms=["Massachusetts"])
+        self.assertTrue(judge.validate(json.dumps(bad), p, view)[1])              # her résumé says "MA", not Massachusetts
 
     def test_term_must_be_in_the_named_resume_field(self):
         self.assertInvalid(self.with_(resume_fields=["skills.data_bi"]))          # Python is in skills.languages
@@ -284,6 +297,11 @@ class ClaudeCall(unittest.TestCase):
         with mock.patch.object(judge.subprocess, "run", missing):
             with self.assertRaises(judge.ClaudeUnavailable):
                 REAL_CALL_CLAUDE("PROMPT", "MESSAGE", "m")
+
+    def test_claude_sees_the_location(self):
+        view = judge.claude_view(posting(1, "ML Engineer", "Python", location="London, United Kingdom"), RESUME)
+        self.assertEqual(view["job_posting"]["location"], "London, United Kingdom")
+        self.assertEqual(sorted(view["job_posting"]), ["content", "location", "posting_id", "title"])
 
     def test_claude_sees_no_contact_details(self):
         view = judge.claude_view(posting(1, "ML Engineer", "Python"), RESUME)

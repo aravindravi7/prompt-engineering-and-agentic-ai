@@ -32,10 +32,10 @@ EXCLUDED_SKILLS = ("Databricks", "Unity Catalog")       # the company's own prod
 MIN_SKILLS = 2
 BLOCKER = "security clearance"
 
-# JUDGMENT contract, CONTRACT.md v3 section 2
+# JUDGMENT contract, CONTRACT.md v3 section 2 (location added by the v3 note of 2026-10-31)
 RESUME_FIELDS = ("skills.languages", "skills.data_bi", "skills.backend_automation",
                  "skills.database_cloud", "experience", "projects")
-POSTING_FIELDS = ("title", "content")
+POSTING_FIELDS = ("title", "content", "location")
 ANSWER_KEYS = ("posting_id", "verdict", "resume_fields", "posting_fields", "matched_terms", "reason")
 VERDICTS = ("relevant", "not relevant")
 DEFAULT_MODEL = "claude-sonnet-5-5"
@@ -114,11 +114,15 @@ def record_verdict(posting, resume):
     }
 
 
+def location_name(posting):
+    return ((posting.get("location") or {}).get("name") or "").strip()
+
+
 def claude_view(posting, resume):
     """Everything Claude is shown: one posting and the six allowed résumé fields. No contact details."""
     return {
         "job_posting": {"posting_id": posting["id"], "title": (posting.get("title") or "").strip(),
-                        "content": clean_text(posting.get("content"))},
+                        "location": location_name(posting), "content": clean_text(posting.get("content"))},
         "resume": {
             "skills": {g: resume["skills"].get(g, []) for g in SKILL_GROUPS},
             "experience": resume.get("experience", []),
