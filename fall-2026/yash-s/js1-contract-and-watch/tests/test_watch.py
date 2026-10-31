@@ -123,6 +123,17 @@ class Baseline(WatchTest):
         self.assertEqual(raw_path.read_bytes(), DAY1.read_bytes())
         self.assertEqual(record["raw_sha256"], watch.sha256(DAY1.read_bytes()))
 
+    def test_same_second_runs_keep_both_raw_responses(self):
+        """Found 2026-10-31 in a replay: two runs in the same second overwrote each other's files."""
+        _, raw1, run1 = self.run_fixture(DAY1, T1)
+        _, raw2, run2 = self.run_fixture(DAY2, T1)                          # same timestamp
+        self.assertNotEqual(raw1, raw2)
+        self.assertNotEqual(run1, run2)
+        self.assertEqual(raw1.read_bytes(), DAY1.read_bytes())               # the first run's evidence survives
+        self.assertEqual(raw2.read_bytes(), DAY2.read_bytes())
+        self.assertEqual(len(list(self.out.glob("report-*.md"))), 2)
+        self.assertTrue(raw2.name.endswith("-2.json"))
+
     def test_seeded_run_is_labeled(self):
         record, _, _ = self.run_fixture(DAY1, T1)
         self.assertTrue(record["source"].startswith("SEEDED"))

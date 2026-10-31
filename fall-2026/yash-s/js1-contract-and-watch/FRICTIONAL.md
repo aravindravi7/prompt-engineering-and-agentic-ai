@@ -520,3 +520,38 @@ This keeps the important data and state updates outside Claude's control.
 - `action-surface/c-agent.json`
 - `action-surface/c-agent-state.json`
 
+## 2026-10-31: Found and Fixed a File Overwrite Bug
+
+### What happened
+
+While replaying my saved watch runs, I found that two runs started within the same second could use the same filenames.
+
+This caused the second run to overwrite evidence files from the first run.
+
+The problem did not affect my original committed watch runs because they had different timestamps.
+
+### What I changed
+
+I asked Claude to fix the overwrite problem in `watch.py` and add a regression test.
+
+The updated watcher now adds a suffix such as `-2` when a filename is already taken. It also writes the raw response in a mode that refuses to overwrite an existing file.
+
+### What I checked
+
+I ran all 77 offline tests myself, and they passed.
+
+Claude also tested the old behavior in a scratch copy. The new regression test failed on the old code and passed on the fixed code.
+
+An end-to-end replay confirmed that both runs' evidence files were preserved.
+
+### What I learned
+
+I learned that even when the watcher correctly identifies new postings, its evidence-saving behavior can still have a separate bug.
+
+This reminded me that I need to test not only the relevance results but also whether the agent preserves its records correctly.
+
+### Evidence
+
+- `watch.py`
+- `tests/test_watch.py`
+- `README.md`

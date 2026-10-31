@@ -341,6 +341,18 @@ Because of this, RECORD and JUDGMENT might disagree on some senior-level or non-
 
 I will record these disagreements and compare them with my manual labels.
 
+### Additional Note: Refusal Boundaries (2026-10-31)
+
+During my final review, I found two limitations in how my contract is enforced.
+
+First, my contract says the agent must refuse to read my real resume. However, the code must read the provided JSON file before it can validate whether the resume belongs to the fictional persona. It rejects resumes that fail the persona validation, but it cannot guarantee that it never reads a real resume. I am responsible for keeping my real resume outside the project.
+
+Second, my contract says the agent must not make up evidence. The RECORD verdict uses deterministic rules, and the validator checks evidence in Claude's structured fields. However, the validator does not check every statement in Claude's free-text reason.
+
+I saw this limitation in my prompt experiment, where Claude mentioned MLflow in its explanation even though that term was not present in the posting.
+
+I am keeping the original contract and recording these limitations instead of claiming that the code enforces something it does not.
+
 ---
 
 Yash Saraf, 28 October 2026

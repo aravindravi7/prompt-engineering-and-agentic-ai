@@ -140,6 +140,18 @@ def iso(t):
     return t.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+def free_stem(out, board, stamp):
+    """A file-name stem no earlier run in `out` has used. Two runs in the same second get
+    `<stamp>` and `<stamp>-2`, so one run's evidence is never overwritten by the next."""
+    n = 1
+    while True:
+        stem = f"{board}-{stamp}" if n == 1 else f"{board}-{stamp}-{n}"
+        if not any((out / f"{kind}-{stem}{ext}").exists()
+                   for kind, ext in (("raw", ".json"), ("run", ".json"), ("report", ".md"))):
+            return stem
+        n += 1
+
+
 def write_json_atomic(path, obj):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -179,8 +191,10 @@ def run(board, resume_path, state_path, out_dir, from_file=None, now=None,
 
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
-    raw_path = out / f"raw-{board}-{stamp}.json"
-    raw_path.write_bytes(raw)                       # raw first, byte for byte, before anything parses it
+    stem = free_stem(out, board, stamp)
+    raw_path = out / f"raw-{stem}.json"
+    with open(raw_path, "xb") as f:                 # raw first, byte for byte, before anything parses it;
+        f.write(raw)                                # "x" refuses to overwrite an earlier run's evidence
 
     jobs, repeated = parse_jobs(raw)
     baseline = state is None
@@ -236,9 +250,9 @@ def run(board, resume_path, state_path, out_dir, from_file=None, now=None,
         "new_postings": new_postings,
         "no_longer_listed_ids": gone_ids,
     }
-    run_path = out / f"run-{board}-{stamp}.json"
+    run_path = out / f"run-{stem}.json"
     write_json_atomic(run_path, record)
-    report_path = out / f"report-{board}-{stamp}.md"
+    report_path = out / f"report-{stem}.md"
     report_path.write_text(report(record), encoding="utf-8")
     write_json_atomic(state_path, {                 # state last: only a run that got this far changes it
         "board": board,
