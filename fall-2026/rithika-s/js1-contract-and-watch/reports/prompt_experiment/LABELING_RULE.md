@@ -17,3 +17,10 @@ A posting is **relevant** only if ALL of these hold:
    does not say Senior, Staff, Principal, Lead, Manager, or Director.
 
 Otherwise it is **not relevant**. Each label records which condition failed.
+
+## Amendment (2026-10-31, before any labels were saved)
+
+5. **US location.** The role is located in the United States, or is remote
+   within the US. (Added because the persona is on F-1 OPT and can only work
+   in the US; the first posting shown during labeling was London-based.)
+   Condition 5 is checked first, because location is visible in the header.
