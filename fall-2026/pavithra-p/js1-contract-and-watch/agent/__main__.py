@@ -24,7 +24,17 @@ def main(argv=None):
     e = commands.add_parser("experiment", help="ask Claude once per posting with one prompt, on one split")
     e.add_argument("prompt", help="prompt file, e.g. experiment/prompts/baseline.md")
     e.add_argument("--split", choices=("dev", "held-out"), required=True)
+    a = commands.add_parser("surfaces", help="action surfaces: write the chat text, then let Claude Code read the files")
+    a.add_argument("job_id", type=int, help="a job id from a saved Pinterest response")
     args = parser.parse_args(argv)
+
+    if args.command == "surfaces":
+        from . import surfaces
+        job, raw_path = surfaces.find_job(args.job_id)
+        print(f"job {job['id']} ({job['title']}) from {watch.rel(raw_path)}")
+        print(f"way 1 (chat): paste {watch.rel(surfaces.chat_way(job, resume.load(config.RESUME)))} into claude.ai")
+        print(f"way 2 (file): reply saved to {watch.rel(surfaces.file_way(job, config.RESUME))}")
+        return 0
 
     if args.command == "snapshot":
         now = datetime.now(timezone.utc).replace(microsecond=0)
