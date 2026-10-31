@@ -225,3 +225,13 @@ If I search for `Java` without checking word boundaries, I could accidentally ma
 ## 6. Failure
 
 **2026-10-31:** My agent has failed if it reports an already-seen job as new, misses a genuinely new posting, or produces a verdict that cannot be checked against the résumé and posting fields it lists.
+
+## Changes
+
+**2026-10-31, added after the first commit (`93afbb8`), before any code.** Section 2 requires every rule to name a résumé field, but Rules 1–3 did not say which one. Writing the tests found the gap. These are the résumé fields each rule cites:
+
+- **Rule 1:** `experience[].title` ("Software Engineer (Co-op)", "Software Engineer"). The title list is the kind of role the candidate has held.
+- **Rule 2:** `experience[].start_date` and `experience[].end_date` (29 months in total). With under three years, the candidate is early-career.
+- **Rule 3:** `personal.location` ("Boston, MA"). The candidate is in the United States.
+
+The rules' pass and fail conditions did not change.
