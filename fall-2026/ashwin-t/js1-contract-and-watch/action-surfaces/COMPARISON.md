@@ -30,5 +30,6 @@ the validator was run on it afterwards), `2-file-read/` (prompt, inputs, reply, 
 
 ## Decision: the least autonomy that suffices
 
-[Ashwin writes this: which surface is enough for this job, and why the others are too little
-or too much.]
+Written by Ashwin Thankachan, 2026-10-31:
+
+I would choose the watch because it can automatically check for new jobs, remember which ones it has already seen, and save the results. Chat paste works for checking one job, but I would have to do everything manually. File read lets Claude access the files, but it still cannot automatically monitor new postings or remember previous results. The watch gives enough automation for this task without giving Claude unnecessary tools or control, since Python handles the workflow and Claude only makes the relevance decision.
