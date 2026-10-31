@@ -1,0 +1,6 @@
+{
+  "host": "boards-api.greenhouse.io",
+  "board_token": "reddit",
+  "path_template": "/v1/boards/{board_token}/jobs",
+  "note": "Public job-board listing endpoint. No authentication, no credentials, GET only. See CONTRACT.md R1."
+}

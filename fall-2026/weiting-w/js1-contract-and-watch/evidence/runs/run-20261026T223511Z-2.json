@@ -1,0 +1,381 @@
+{
+  "report_version": 1,
+  "generated_at": "2026-10-26T22:35:11Z",
+  "board": {
+    "host": "boards-api.greenhouse.io",
+    "board_token": "reddit",
+    "path_template": "/v1/boards/{board_token}/jobs",
+    "note": "Public job-board listing endpoint. No authentication, no credentials, GET only. See CONTRACT.md R1."
+  },
+  "url": "https://boards-api.greenhouse.io/v1/boards/reddit/jobs",
+  "http_status": null,
+  "raw_response": {
+    "path": "evidence/raw/20261026-reddit-browser-save.json",
+    "bytes": 287309,
+    "sha256": "01220c22df3c14863ea3033f2ad1a8e8224076f81191e809fb8e516ecbdcc865",
+    "source": "replay",
+    "source_label": "REAL: browser save of the live response, 2026-10-26"
+  },
+  "resume": {
+    "schema_version": "1.0",
+    "persona": true,
+    "title_block_count": 18,
+    "target_title_phrases_count": 10,
+    "target_job_families_count": 3,
+    "locations_ok_count": 9,
+    "remote_ok": true
+  },
+  "rule_version": "R-v2",
+  "is_baseline": false,
+  "counts": {
+    "postings_in_response": 161,
+    "already_seen": 145,
+    "new": 16
+  },
+  "state": {
+    "path": "evidence/state/seen.json",
+    "sha256_before": "96dd08e5a568b421e461fc0a2c9b202fac4cc492da08a52f178b12c32fca4874",
+    "sha256_after": "9758e50d62196854fff957a43bf613ad9076b6156c4a2b94a1b5ff8d01a34c4c"
+  },
+  "entries": [
+    {
+      "posting_id": 8303790,
+      "title": "Client Account Manager, Mid-Market Sales (Goods)",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8303790",
+      "updated_at": "2026-10-26T08:20:03-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[8]",
+            "resume_value": "manager",
+            "posting_field": "title",
+            "evidence": "manager"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8191664,
+      "title": "Creative Strategist (M&E/Retail)",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8191664",
+      "updated_at": "2026-10-26T08:20:00-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G2_discipline",
+        "justification": [
+          {
+            "resume_field": "target_title_phrases",
+            "resume_value": "no target phrase occurs in this title",
+            "posting_field": "title",
+            "evidence": "creative strategist (m&e/retail)"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8263435,
+      "title": "Lead Product Adoption Strategist, SMB",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8263435",
+      "updated_at": "2026-10-26T08:20:03-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[4]",
+            "resume_value": "lead",
+            "posting_field": "title",
+            "evidence": "lead"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8318010,
+      "title": "Manager, EMEA Community (Contract)",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8318010",
+      "updated_at": "2026-10-23T12:46:41-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[8]",
+            "resume_value": "manager",
+            "posting_field": "title",
+            "evidence": "manager"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8289345,
+      "title": "Principal Data Scientist, User Ecosystem",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8289345",
+      "updated_at": "2026-10-26T08:20:04-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[3]",
+            "resume_value": "principal",
+            "posting_field": "title",
+            "evidence": "principal"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8289304,
+      "title": "Revenue Strategy & Operations Partner",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8289304",
+      "updated_at": "2026-10-26T16:15:03-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G2_discipline",
+        "justification": [
+          {
+            "resume_field": "target_title_phrases",
+            "resume_value": "no target phrase occurs in this title",
+            "posting_field": "title",
+            "evidence": "revenue strategy & operations partner"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8110339,
+      "title": "Senior Data Scientist, Safety Enforcement",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8110339",
+      "updated_at": "2026-10-23T10:06:06-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[0]",
+            "resume_value": "senior",
+            "posting_field": "title",
+            "evidence": "senior"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8303511,
+      "title": "Senior Director of Design, Search & Feeds",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8303511",
+      "updated_at": "2026-10-26T12:09:06-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[0]",
+            "resume_value": "senior",
+            "posting_field": "title",
+            "evidence": "senior"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8304463,
+      "title": "Senior Machine Learning Engineer, Ads ML Efficiency",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8304463",
+      "updated_at": "2026-10-23T10:06:06-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[0]",
+            "resume_value": "senior",
+            "posting_field": "title",
+            "evidence": "senior"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8282305,
+      "title": "Senior Product Business Development Manager",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8282305",
+      "updated_at": "2026-10-23T13:59:05-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[0]",
+            "resume_value": "senior",
+            "posting_field": "title",
+            "evidence": "senior"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8303798,
+      "title": "Senior Software Engineer, Web Platform",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8303798",
+      "updated_at": "2026-10-23T10:06:06-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[0]",
+            "resume_value": "senior",
+            "posting_field": "title",
+            "evidence": "senior"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8319655,
+      "title": "Software Engineer, Ad Signals",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8319655",
+      "updated_at": "2026-10-26T08:20:04-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "relevant",
+        "gate_failed": null,
+        "justification": [
+          {
+            "resume_field": "title_block",
+            "resume_value": "no blocked token matched",
+            "posting_field": "title",
+            "evidence": "software engineer, ad signals"
+          },
+          {
+            "resume_field": "target_title_phrases[0]",
+            "resume_value": "software engineer",
+            "posting_field": "title",
+            "evidence": "software engineer"
+          },
+          {
+            "resume_field": "target_job_families[0]",
+            "resume_value": "software engineering",
+            "posting_field": "metadata[6].value",
+            "evidence": "software engineering"
+          },
+          {
+            "resume_field": "locations_ok[8]",
+            "resume_value": "united states",
+            "posting_field": "location.name",
+            "evidence": "united states"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8204924,
+      "title": "Staff Backend Engineer, User Safety",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8204924",
+      "updated_at": "2026-10-26T12:51:51-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[2]",
+            "resume_value": "staff",
+            "posting_field": "title",
+            "evidence": "staff"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8316086,
+      "title": "Staff Machine Learning Engineer, Retrieval & Targeting",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8316086",
+      "updated_at": "2026-10-26T08:20:05-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[2]",
+            "resume_value": "staff",
+            "posting_field": "title",
+            "evidence": "staff"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8238227,
+      "title": "Staff Product Manager, Youth",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8238227",
+      "updated_at": "2026-10-23T10:06:06-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[2]",
+            "resume_value": "staff",
+            "posting_field": "title",
+            "evidence": "staff"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8311209,
+      "title": "Staff Software Engineer, iOS Platform",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8311209",
+      "updated_at": "2026-10-26T10:39:19-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[2]",
+            "resume_value": "staff",
+            "posting_field": "title",
+            "evidence": "staff"
+          }
+        ]
+      }
+    }
+  ],
+  "run_report_path": "evidence/runs/run-20261026T223511Z-2.json"
+}
