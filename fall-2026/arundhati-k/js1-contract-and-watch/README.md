@@ -1,9 +1,14 @@
 # Job-Search Agent 1 — The Contract and the Watch
 
-Arundhati K · INFO 7375 · Fall 2026 · contract: [CONTRACT.md](CONTRACT.md) (committed first, `e6008c3`, before any code)
+Arundhati K · INFO 7375 · Fall 2026 · contract: [CONTRACT.md](CONTRACT.md) (committed first, `122d4f1`, before any code)
 
 One board (Stripe on Greenhouse), one fictional résumé (Rohan Desai), new postings only, every verdict justified,
 two judges kept apart: a **record** from the written rule and a **model judgment** from Claude.
+
+Commit hashes in these docs are the ones on GitHub. Before pushing, my commits were rebased onto classmates' newer
+commits, which changed the hashes (author dates unchanged): contract e6008c3→`122d4f1`, code 0c55047→`bb8984b`,
+labeling rule 41a33a4→`a496500`, dev results 55376c3→`dd89511`, held-out 684dad2→`9bf8c91`. Commit messages may
+still quote the old hashes.
 
 ## Language and toolchain
 
@@ -103,6 +108,6 @@ Last run: `Ran 45 tests … OK` (2026-10-31).
 | Helped identify issues in the classification process. | Made the final decisions and documented the results. |
 
 _Added by Claude for the record (from the git history and SOURCES.md):_ Claude Code wrote all of the code and tests
-(`jsagent/`, `run.py`, `seed.py`, `make_labeling_set.py`, `experiments.py`, `tests/`) in commit `0c55047`, after the
-contract was committed in `e6008c3`. The labeling rule (`41a33a4`) was committed before any label; held-out labels and
-scores are in `684dad2`.
+(`jsagent/`, `run.py`, `seed.py`, `make_labeling_set.py`, `experiments.py`, `tests/`) in commit `bb8984b`, after the
+contract was committed in `122d4f1`. The labeling rule (`a496500`) was committed before any label; held-out labels and
+scores are in `9bf8c91`.

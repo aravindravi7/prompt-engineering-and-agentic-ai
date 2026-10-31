@@ -2,7 +2,7 @@
 
 **Labels.** 20 real Stripe postings from the live response `evidence/raw/20261031T061636Z-live.json.gz`, picked by
 [`make_labeling_set.py`](make_labeling_set.py) (fixed seed, three strata — why: see its docstring) and split 10 dev /
-10 held-out. I wrote [`labeling/LABELING-RULE.md`](labeling/LABELING-RULE.md) and committed it (`41a33a4`) before
+10 held-out. I wrote [`labeling/LABELING-RULE.md`](labeling/LABELING-RULE.md) and committed it (`a496500`) before
 labeling. My labels and notes: [`labeling/labels.csv`](labeling/labels.csv).
 
 **Prompts.** [`prompts/baseline.txt`](prompts/baseline.txt) and [`prompts/revision.txt`](prompts/revision.txt). The
@@ -12,8 +12,8 @@ revision adds one sentence and changes nothing else (`diff prompts/baseline.txt 
 > approved-skill threshold. Exclude specialized roles such as Machine Learning Engineer, Data Scientist, and Research
 > Scientist when their primary responsibilities focus on specialized domain work rather than general software engineering.
 
-**Order (commits show it).** dev labels → baseline on dev → revision written and run on dev (committed `55376c3`) →
-both prompts run once on held-out with `--final` before held-out labels existed → held-out labels → score (`684dad2`).
+**Order (commits show it).** dev labels → baseline on dev → revision written and run on dev (committed `dd89511`) →
+both prompts run once on held-out with `--final` before held-out labels existed → held-out labels → score (`9bf8c91`).
 
 **Pass** = the reply passed the validator AND its verdict equals my hand label. One call per posting per prompt.
 

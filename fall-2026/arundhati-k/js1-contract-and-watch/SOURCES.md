@@ -36,7 +36,7 @@ I reviewed the suggestions and made decisions about which corrections to accept 
 
 ## Claude (Claude Code, this session) contributed
 - All code in `jsagent/`, `run.py`, `seed.py`, `make_labeling_set.py`, `experiments.py`, and all tests, written
-  against my committed contract (`e6008c3` → `0c55047`).
+  against my committed contract (`122d4f1` → `bb8984b`).
 - Ran the seeded baseline, both live runs, sampling, both prompts on dev and held-out, and surfaces 2 and 3.
 - Pointed out: Maya is a PM persona with no Java/Spring; the "Go" verb false match; label-vs-rule inconsistencies (rows 13–16).
 - Drafted the factual parts of README, SAMPLING-REPORT, PROMPT-EXPERIMENT, ACTION-SURFACES (tables, what ran, quotes).
