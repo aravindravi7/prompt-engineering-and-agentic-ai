@@ -17,8 +17,8 @@ The labeling rule is "The rule" in `CONTRACT.md`. It was committed as `b88cdbb` 
 **How the labels were made. Read this before trusting the numbers.**
 
 - **Dev set:** Hemanth labeled all 10 by hand from the job pages.
-  - On #1 and #2, his first labels were "not relevant", with the reasons "very senior position" and "it's a recruiter position". Neither reason is in the rule, so he relabeled both by the rule. Both first labels are kept in the `first_instinct_label` column.
-  - On #2 he first reported finding Python and AWS. A script check showed "AWS" occurs only inside "Scaling **Laws**". He then labeled #2 not relevant from the skill-evidence sheet.
+  - On #1 and #2, Hemanth's first labels were "not relevant", with the reasons "very senior position" and "it's a recruiter position". Neither reason is in the rule, so Hemanth relabeled both by the rule. Both first labels are kept in the `first_instinct_label` column.
+  - On #2 Hemanth first reported finding Python and AWS. A script check showed "AWS" occurs only inside "Scaling **Laws**". Hemanth then labeled #2 not relevant from the skill-evidence sheet.
 - **Held-out set:** Hemanth labeled all 10 from `experiment/skill_evidence_sheet.md`. That sheet was made by `scripts/skill_evidence.py`, which shows where each skill occurs in a description but never a verdict. So **for the held-out set, the skills test in the hand labels used the same matcher as the code.** "Rule code vs hand label" there isn't an independent check of the code. Claude versus the hand labels still is.
 
 ## One change
@@ -51,7 +51,7 @@ Per-posting tables: run `python scripts/analyze.py experiment dev` (or `heldout`
 ## What this shows, and how little
 
 - **v1 never said "relevant".** On all 20 postings it answered "not relevant". Its 5/10 on each set is exactly the share of not-relevant postings in each set. Saying "not relevant" every time would have scored the same. So v1's pass rate measures the label mix, not skill.
-- **v1 is judging something else.** Its justifications cite seniority and domain, for example a co-op versus Staff, or GTM data. That's close to Hemanth's first instinct on #1 and #2, before he relabeled them by the rule.
+- **v1 is judging something else.** Its justifications cite seniority and domain, for example a co-op versus Staff, or GTM data. That's close to Hemanth's first instinct on #1 and #2, before relabeling them by the rule.
 - **v2 matched every label on both sets.** With the rule in the prompt, Claude applied it correctly 20 times out of 20. That shows Claude can follow a written rule on these postings. It doesn't show that the rule picks good jobs: the labels were made with the same rule.
 - **Ten cases are very few.**
   - Even with 10/10 on held-out, the true error rate could plausibly be 20–30%. A rough 95% upper bound for 0 errors in 10 is about 26%.

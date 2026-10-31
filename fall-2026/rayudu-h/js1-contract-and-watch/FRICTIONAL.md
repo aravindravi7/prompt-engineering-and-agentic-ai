@@ -1,6 +1,6 @@
 # FRICTIONAL.md — Job-Search Agent 1
 
-> **How this was written.** Claude Code organized these entries from the working session on Oct 31, 2026. Every fact here comes from that session, a file, or a command output. Lines marked **[Hemanth]** need Hemanth's own words; Claude can't supply what Hemanth experienced. Times are ET.
+> **How this was written.** Claude Code organized these entries from the working session on Oct 31, 2026. Every fact here comes from that session, a file, or a command output. Quotations marked as Hemanth's words are Hemanth's own; where Hemanth gave no words, there is no entry. Times are ET.
 
 ## Oct 31, about 3:30–4:00 AM: starting late, and the gate
 
@@ -16,14 +16,13 @@
   - location had nothing to compare against.
 
   I then answered sub-questions:
-  - Title: contains "AI" or "Engineer" from her experience title.
+  - Title: contains "AI" or "Engineer" from Priya's experience title.
   - Skills: searched in the description; Ray and Kubeflow don't count.
   - Location: doesn't decide.
   - Matching: whole words, "Engineering" counts.
   - Seniority: didn't matter (at first).
   - A missing field gives "cannot judge".
 - **Friction:** on the hand-worked example ("Engineering Manager, Claude Platform") I said "not relevant because it's an Engineering Manager position". Claude pointed out that my own rule said seniority doesn't matter, so my reason didn't follow from my rule. The verdict was the same either way, because no skill appears. I changed the rule (test 3: Manager, Director or Head means not relevant) rather than the reason.
-- **What I understand now:** [Hemanth: e.g. what it felt like to find your intuitive reason wasn't in your written rule]
 - **Evidence:** CONTRACT.md, "The rule" and the worked example, which records the change.
 
 ## Oct 31, 2:38–2:45 PM: build, tests, baseline
@@ -48,14 +47,13 @@
 
 ## Oct 31, about 2:50 PM: I almost switched boards
 
-- **I tried / expected:** I thought most Anthropic postings don't contain Priya's skills, and wanted to watch "all companies on Greenhouse" instead. [Hemanth: what made you think so]
+- **I tried / expected:** I thought most Anthropic postings don't contain Priya's skills, and wanted to watch "all companies on Greenhouse" instead. (Hemanth, later: "I didn't find skills in Anthropic posting titles.")
 - **What happened:** Claude showed:
   - JS1 asks for one board, and multi-board watching is JS2's task.
   - Greenhouse has no public list of all companies.
   - On Anthropic, 173 of the 251 postings passing title and management do name a skill. My impression came from the titles, not the descriptions.
   - On Databricks, every engineering posting would pass, because "Databricks" is both a skill and the company name.
 - **What I did:** kept Anthropic.
-- **What I understand now:** [Hemanth]
 
 ## Oct 31, 2:47–2:51 PM: same posting, three surfaces
 
@@ -76,7 +74,6 @@
   - For #2 I first wrote "same" (Python, AWS). Claude's check showed no skill in that description; "AWS" occurs only inside "Scaling Laws". I labeled it not relevant.
   - On #8 I had listed Azure, Go, Rust and Kubernetes. Claude pointed out that only Python is on Priya's list; the verdict stayed relevant.
   - My first-instinct labels are kept in `experiment/labels.csv`.
-- **What I understand now:** [Hemanth]
 
 ## Oct 31, before 5:28 PM: labeling the held-out set with a helper
 
@@ -89,9 +86,17 @@
 - **Prompt v1** (no rule) said "not relevant" on all 20 postings: 5/10 on dev and 5/10 on held-out, which is exactly the share of not-relevant postings.
 - **Prompt v2** (the rule added, the one change) matched every label: 10/10 and 10/10.
 - **Sampling:** 5 postings × 4 fresh calls gave 20 identical verdicts, and 4 of the 5 postings were wrong against my labels, every time.
-- **What surprised me:** [Hemanth]
+- **What surprised me (Hemanth's words):** "it surprised me that it picked up irrelevant postings with finance."
 
-## Still to fill in
+## Oct 31, 6:24 PM: the second live run
 
-- **[Hemanth]** What you accepted, changed or rejected from Claude, in your words.
-- **[Hemanth]** Which prompt the agent should ship with (v1 or v2), and why.
+- **What happened:** 0 new postings, but the raw response changed (sha256 `2cc748f7…` vs `1e5b62fe…`). Comparing the two showed one posting edited at 15:08 (location narrowed); the 675 ids were the same.
+- **What I learned:** the agent only notices new ids. An edited posting, for example one that moves to Boston or changes its description, is never reported. That's what my contract says, but it's a real gap for JS2.
+- **Evidence:** `runs/2026-10-31T182441/`.
+
+## Oct 31, about 5:50 PM: decisions after the results
+
+- **Prompt:** I chose **v2** for the agent (commit `dcf2b7c`).
+- **Scope, second time:** I asked again to watch every board and change the contract. Claude repeated that JS1 asks for one board and multi-board watching is JS2's task. I kept one board and put multi-board in the README as the next step.
+- **What I accepted, changed or rejected (Hemanth's words):** "I told what are relevant and rejected irrelevant postings."
+- **Sign-off:** I accepted Claude's drafted "Not checked" list. The signature line is mine to fill in.

@@ -39,4 +39,4 @@ On the same posting, with the same prompt and minutes apart, Claude said **relev
   - Its blast radius is a string in a report.
   - Everything that touches the network or the disk is code that the contract describes and the tests check.
 
-Confirmed by Hemanth: [yes / changed to: ...]
+Confirmed by Hemanth, Oct 31, 2026: yes (asked whether Hemanth disagreed with this choice, the answer was "no").

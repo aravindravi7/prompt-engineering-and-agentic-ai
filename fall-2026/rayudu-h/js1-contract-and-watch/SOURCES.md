@@ -13,7 +13,7 @@
 - **The decisions in `CONTRACT.md`:** the board, persona, rule, edge cases, extra refusals, the choice of wrong versions and the failure sentence. I gave them as answers to Claude's questions, and Claude wrote them in. The authorship note at the top of the contract says so.
 - **The hand-worked example** in the contract, which led me to add the management test.
 - **All 20 hand labels** in `experiment/labels.csv`. For the 10 held-out labels I used the skill-evidence sheet that Claude's script produced.
-- **The decision** to stay with one board, and the least-autonomy choice in `ACTION-SURFACE.md`. [Hemanth: confirm]
+- **The decision** to stay with one board, and the least-autonomy choice in `ACTION-SURFACE.md`. Hemanth confirmed both.
 
 ## What Claude contributed (Claude Code, Opus 5.5, Oct 31, 2026)
 
