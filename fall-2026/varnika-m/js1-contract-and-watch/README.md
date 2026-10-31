@@ -63,4 +63,8 @@ The first run is the baseline: it records every posting id and reports none as n
 
 ## What ran
 
-*No runs yet. Run 1 (the live baseline) and run 2 (a second calendar day) will be logged here, with their dates and files.*
+| Run | When (UTC) | Source | Postings | New | Raw response | Report |
+|---|---|---|---:|---:|---|---|
+| 1 (baseline) | 2026-10-31 07:40:11 | live | 675 | 0 (baseline) | [`evidence/raw/anthropic-2026-10-31T074011Z.json.gz`](evidence/raw/anthropic-2026-10-31T074011Z.json.gz) (9,855,369 bytes, SHA-256 `1e5b62fe…7a7e88`) | [`runs/anthropic-2026-10-31T074011Z.md`](runs/anthropic-2026-10-31T074011Z.md) |
+
+Run 1 was run by me with `python3 -m agent.watch`, after `python3 -m unittest discover -s tests -t . -v` gave 72/72 OK. Run 2 comes on a second calendar day.
