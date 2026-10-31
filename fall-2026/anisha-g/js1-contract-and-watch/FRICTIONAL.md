@@ -39,6 +39,4 @@ Fixes: Claude ran ways 1 and 2 for real with `claude -p` (`reports/action-surfac
 
 **2026-10-31, ~6:35 pm** — After a second grader-style review by Claude, I corrected the sign-off, SOURCES and this log wherever they said I did something Claude did. I added worked examples to the contract as a dated appendix (the rule is unchanged), and added a labelled reproduction of run 1's empty report from its saved raw response.
 
-**2026-10-31, ~6:35 pm** — After a second grader-style review by Claude, I corrected the sign-off, SOURCES and this log wherever they said I did something Claude did. I added worked examples to the contract as a dated appendix (the rule is unchanged), and added a labelled reproduction of run 1's empty report from its saved raw response.
-
-**What I accepted / changed / rejected from Claude:** accepted the code, tests, prompts and doc drafts; changed the label sampling (6 → 20 postings) and the labeller after it failed; rejected letting Claude write the hand labels — those are mine. Claude also drafted most of this log from what happened in our session; I read it and corrected it. Claude also drafted most of this log from what happened in our session; I read it and corrected it.
+**What I accepted / changed / rejected from Claude:** accepted the code, tests, prompts and doc drafts; changed the label sampling (6 → 20 postings) and the labeller after it failed; rejected letting Claude write the hand labels — those are mine. Claude also drafted most of this log from what happened in our session; I read it and corrected it.
