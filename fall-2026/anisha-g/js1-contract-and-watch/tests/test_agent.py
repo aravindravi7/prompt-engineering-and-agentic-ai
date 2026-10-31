@@ -17,6 +17,11 @@ class Refuses(unittest.TestCase):
     def test_bad_slug_refused_before_network(self):
         for s in ["../etc", "UPPER", "", "a/b"]:
             with self.assertRaises(ValueError): agent.fetch(s)
+    def test_real_looking_resume_refused(self):
+        import tempfile, copy
+        bad = copy.deepcopy(R); bad["personal"]["email"] = "someone@gmail.com"
+        f = tempfile.NamedTemporaryFile("w", suffix=".json", delete=False); json.dump(bad, f); f.close()
+        with self.assertRaises(PermissionError): agent.load_resume(f.name)
     def test_persona_is_fictional(self):
         self.assertTrue(R["personal"]["email"].endswith("@example.com")); self.assertIn("555", R["personal"]["phone"])
 

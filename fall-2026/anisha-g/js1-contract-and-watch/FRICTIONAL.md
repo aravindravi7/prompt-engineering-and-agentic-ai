@@ -6,7 +6,7 @@
 
 **2026-10-31, ~5:12 pm** — Claude's tests passed in its workspace (9 tests) and a fake-board / fake-Claude smoke test ran every command. Not yet run on real data.
 
-**2026-10-31, ~5:37 pm** — Asked Claude to write the failure sentence; it drafted one, I read it and committed the contract as `509e6ca` before running anything.
+**2026-10-31, ~5:37 pm** — Asked Claude to write the failure sentence; it drafted one, I read it and committed the contract as `9af05ef` before running anything.
 
 **2026-10-31, ~5:38 pm** — Tests: 9 passed on my Mac. Run 1 (live, baseline): 156 postings, 0 new — correct for a baseline.
 
@@ -23,5 +23,12 @@
 **2026-10-31, ~6:05 pm** — Looked into that disagreement: the posting says "3–5 years"; my rule takes the top of the range (5 > 3). I read it as reachable at 3. Not changed tonight — logged as "not checked" in the sign-off.
 
 **2026-10-31, ~6:05 pm** — Run 2: the board wasn't going to change within the evening, so I did the seeded run the assignment allows (run 1's real response minus its 3 newest ids, then the real response): 0 new, then exactly those 3 new, judged by both rule and Claude (all `not_relevant`, all valid).
+
+**2026-10-31, ~6:12 pm** — Before submitting, I asked Claude to check my folder against the assignment. It found 3 gaps:
+1. I had only written the action-surface table; I had not actually done ways 1 and 2.
+2. The persona was checked only by a test, not by the agent itself.
+3. My driver's seat said Claude did "nothing" with my labels, but it had copied them into its workspace run.
+
+Fixes: Claude ran ways 1 and 2 for real with `claude -p` (`reports/action-surfaces/`). `load_resume` now refuses a non-fictional résumé, with a new test (10 tests pass). The driver's seat row now says what Claude did.
 
 **What I accepted / changed / rejected from Claude:** accepted the code, tests, prompts and doc drafts; changed the label sampling (6 → 20 postings) and the labeller after it failed; rejected letting Claude write the hand labels — those are mine.

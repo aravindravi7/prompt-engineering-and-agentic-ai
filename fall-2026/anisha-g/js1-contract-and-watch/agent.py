@@ -102,7 +102,16 @@ def claude_judge(template: str, resume: dict, p: dict) -> dict:
     except ValueError as e: return {"kind": "JUDGMENT (Claude)", "verdict": "INVALID", "error": str(e), "raw": raw}
 
 # ---------- commands ----------
-def load_resume(): return json.loads((ROOT / "persona/resume.json").read_text())
+def load_resume(path=None):
+    """Contract 'Refuses': only a fictional persona is ever loaded."""
+    r = json.loads(Path(path or ROOT / "persona/resume.json").read_text())
+    for k in ("personal", "target_titles", "max_years_experience", "skills"):
+        if k not in r: raise ValueError(f"resume missing '{k}'")
+    if not r["skills"].get("core"): raise ValueError("resume skills.core is empty")
+    em, ph = r["personal"].get("email", ""), r["personal"].get("phone", "")
+    if not em.endswith("@example.com") or "555" not in ph:
+        raise PermissionError("refusing a resume that is not a fictional persona (@example.com email and 555 phone required)")
+    return r
 def stamp(): return dt.datetime.now().strftime("%Y-%m-%dT%H%M%S")
 def all_postings(raw_path): return [posting(j) for j in json.loads(Path(raw_path).read_text()).get("jobs", [])]
 
