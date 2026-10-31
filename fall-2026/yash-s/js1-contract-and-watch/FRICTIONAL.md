@@ -398,3 +398,125 @@ I also expect little or no difference on the held-out postings because the sampl
 
 I am writing this prediction before running prompt v2.
 
+## 2026-10-31: Prompt Experiment Final Results
+
+### What I did
+
+I ran prompt v2 on the 10 development postings.
+
+After that, I ran both prompt v1 and prompt v2 on the 10 held-out postings.
+
+I used the same labels and pass definition for both prompts.
+
+### Results
+
+| Prompt | Development | Held-out |
+|---|---|---|
+| v1 (baseline) | 10/10 | 10/10 |
+| v2 (revision) | 10/10 | 9/10 |
+
+My prediction was that v2 would still score 10/10 on development and show little or no difference on held-out.
+
+The development result matched my prediction. On held-out, v2 had one invalid answer.
+
+### What went wrong
+
+The invalid answer was for the Specialist Solutions Architect - AI/ML posting.
+
+Claude included MLflow in the matched_terms field, but MLflow was not present in the job posting.
+
+My validator caught this and marked the response invalid.
+
+I also noticed that v1 mentioned MLflow in its written explanation for the same posting, even though it did not include MLflow in matched_terms.
+
+The validator accepted v1 because it checks the structured evidence fields, not every claim in the written explanation.
+
+### What I learned
+
+My v2 change was intended to stop Claude from adding text after the JSON object.
+
+However, neither prompt produced that type of error in this experiment.
+
+The one invalid response came from an unsupported matched term instead.
+
+I learned that a valid JSON response does not always mean the explanation is completely correct.
+
+I also learned that a small experiment can show different results even when the prompt changes very little.
+
+Since all 20 selected experiment postings were labeled not relevant, I cannot use these results to judge how well Claude identifies relevant jobs.
+
+### My Decision
+
+I will keep both prompt versions and their original results.
+
+I will not change the labels, rerun the held-out experiment, or adjust the results to improve the score.
+
+I will explain this limitation in my final report.
+
+### Evidence
+
+- `prompts/judgment-v1.md`
+- `prompts/judgment-v2.md`
+- `experiment/results/RESULTS.md`
+
+## 2026-10-31: Action-Surface Comparison
+
+### What I did
+
+I tested three ways of judging the same Databricks job posting (8546367002) for Priya.
+
+1. I manually pasted the posting and resume into Claude.ai.
+2. I used Claude Code to read the posting and resume from local files.
+3. I gave Claude Code permission to fetch the job board and write its own state file.
+
+I used the same prompt v1 and compared all three answers using my validator.
+
+### My prediction
+
+I expected the file-reading approach to be more controlled than the agent approach because it did not need network or write permissions. I wanted to see whether giving Claude more tools actually improved the result.
+
+This was my expectation, not a prediction recorded before the runs.
+
+### What happened
+
+| Approach | Result |
+|---|---|
+| Manual Claude chat | Pass |
+| Claude reads local files | Pass |
+| Agent fetches and writes | Fail |
+
+All three returned the verdict "not relevant", which matched my label.
+
+However, the agent returned the posting ID as a string instead of an integer, so my validator rejected it.
+
+The agent also saved only 117 posting IDs, compared with 901 in my watcher's earlier response. All 117 were present in the earlier response, but 784 IDs were missing from the agent's file.
+
+Since the two responses were collected at different times, I cannot say exactly why the counts were different.
+
+### What surprised me
+
+The approach with the most permissions was the only one that failed validation.
+
+The file-reading approach completed the task without needing network access or write permissions.
+
+I also noticed that the agent could write a state file without verifying that it contained the complete job board.
+
+### What I learned
+
+More autonomy does not always give better results.
+
+For checking one posting, the file-reading approach was enough.
+
+For my complete job-search system, I prefer letting Python fetch postings and manage state while Claude only makes relevance judgments.
+
+This keeps the important data and state updates outside Claude's control.
+
+### Evidence
+
+- `action-surface/ACTION-SURFACE.md`
+- `action-surface/CHECK.md`
+- `action-surface/a-chat-reply.txt`
+- `action-surface/b-file-read.json`
+- `action-surface/c-agent.json`
+- `action-surface/c-agent-state.json`
+
