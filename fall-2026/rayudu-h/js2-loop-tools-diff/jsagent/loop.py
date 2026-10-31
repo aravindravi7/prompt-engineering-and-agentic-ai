@@ -175,6 +175,14 @@ def run(boards: list, resume: dict, policy: Policy, state_path: Path, run_dir: P
         if dupes:
             trace.log("duplicate-ids", board=label, count=dupes)
         board_state = state["boards"].get(label)
+        last_good = (board_state or {}).get("last_good_count")
+        if not postings and last_good:
+            # GATE.md error policy: a board that suddenly returns nothing is more likely a broken
+            # fetch than an empty board. No "0 new", no state update; the run is incomplete.
+            res.update(status="unverified",
+                       reason=f"empty response; the last good run had {last_good} postings (raw saved, state kept)")
+            trace.log("board-unverified", board=label, postings=0, last_good_count=last_good)
+            continue
         if board_state is None:
             new = []                                       # baseline: none reported as new
         else:
