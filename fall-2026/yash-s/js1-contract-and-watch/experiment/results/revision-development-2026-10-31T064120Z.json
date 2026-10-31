@@ -1,0 +1,448 @@
+{
+  "kind": "prompt experiment run",
+  "name": "revision",
+  "set": "development",
+  "started_at": "2026-10-31T06:41:20Z",
+  "finished_at": "2026-10-31T06:41:56Z",
+  "model_requested": "claude-sonnet-5-5",
+  "prompt_file": "prompts/judgment-v2.md",
+  "prompt_sha256": "291bd93ff8f9343d8bf1387f214a0ebda593f95db8042ecb46b8fe11c33ef4d8",
+  "models_reported": [
+    "claude-haiku-4-5-20251001",
+    "claude-sonnet-5-5"
+  ],
+  "pass_definition": "pass = the answer passes the validator AND its verdict matches my label; invalid, unavailable or disagreeing answers fail (FRICTIONAL.md, 'My Pass Definition')",
+  "labels_sha256": "aaf13b1f8f51561dbd50f80e1ad7b188a21cda9f811e80117f2ddbe8f47b2698",
+  "selection_sha256": "9bf3a3d3c7b785d16d3fb5e7ed06ad33a32a8b5bcde4d9784851612a00dee63d",
+  "summary": {
+    "postings": 10,
+    "passes": 10,
+    "labels": {
+      "not relevant": 10
+    },
+    "outcomes": {
+      "relevant": 0,
+      "not relevant": 10,
+      "invalid": 0,
+      "unavailable": 0
+    },
+    "claude_relevant_where_i_said_not": 0,
+    "claude_not_relevant_where_i_said_relevant": 0
+  },
+  "rows": [
+    {
+      "posting_id": 8692962002,
+      "title": "Specialist Solutions Architect - Data Engineering & Warehousing (Financial Services)",
+      "label": "not relevant",
+      "outcome": "not relevant",
+      "pass": true,
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8692962002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8692962002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.languages",
+            "skills.data_bi",
+            "experience"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [
+            "python",
+            "sql",
+            "databricks"
+          ],
+          "reason": "The role is a technical Solutions Architect position in data engineering in the US, which fits the domain and Priya's Python, SQL, and Databricks skills. However, the posting requires 6+ years of experience in solutions architecture, pre-sales, or senior technical roles, far above the 2-year limit. It also involves leading architecture strategy for senior customer stakeholders, which does not suit an early-career candidate with one co-op."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8692962002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"experience\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [\"python\", \"sql\", \"databricks\"], \"reason\": \"The role is a technical Solutions Architect position in data engineering in the US, which fits the domain and Priya's Python, SQL, and Databricks skills. However, the posting requires 6+ years of experience in solutions architecture, pre-sales, or senior technical roles, far above the 2-year limit. It also involves leading architecture strategy for senior customer stakeholders, which does not suit an early-career candidate with one co-op.\"}",
+        "prompt_file": "judgment-v2.md",
+        "prompt_sha256": "291bd93ff8f9343d8bf1387f214a0ebda593f95db8042ecb46b8fe11c33ef4d8",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:41:20Z",
+        "seconds": 4.0
+      }
+    },
+    {
+      "posting_id": 7011263002,
+      "title": "PhD GenAI Research Scientist Intern",
+      "label": "not relevant",
+      "outcome": "not relevant",
+      "pass": true,
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 7011263002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 7011263002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.data_bi",
+            "experience"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The job is an internship (title: 'PhD GenAI Research Scientist Intern') and requires current enrollment in a PhD program with deep learning research experience. Priya graduated in December 2025 and is seeking full-time early-career roles. Although the role is in San Francisco, US-based, and the work is AI-related, internships are not relevant."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 7011263002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.data_bi\", \"experience\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The job is an internship (title: 'PhD GenAI Research Scientist Intern') and requires current enrollment in a PhD program with deep learning research experience. Priya graduated in December 2025 and is seeking full-time early-career roles. Although the role is in San Francisco, US-based, and the work is AI-related, internships are not relevant.\"}",
+        "prompt_file": "judgment-v2.md",
+        "prompt_sha256": "291bd93ff8f9343d8bf1387f214a0ebda593f95db8042ecb46b8fe11c33ef4d8",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:41:24Z",
+        "seconds": 3.4
+      }
+    },
+    {
+      "posting_id": 7803651002,
+      "title": "AI Transformation Leader",
+      "label": "not relevant",
+      "outcome": "not relevant",
+      "pass": true,
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 7803651002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 7803651002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.data_bi",
+            "experience"
+          ],
+          "posting_fields": [
+            "content"
+          ],
+          "matched_terms": [],
+          "reason": "The main work is executive-level sales and advisory: building C-suite relationships, running co-sell motions with SIs, and leading an advisory council. It is not hands-on AI, ML, or data engineering. The role requires at least 15 years of transformation experience and 5 years working with the C-suite, far above the 2-year limit for Priya, who has one co-op. The location (United States) is acceptable, but the experience and seniority requirements and the non-technical focus make it unsuitable."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 7803651002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.data_bi\", \"experience\"], \"posting_fields\": [\"content\"], \"matched_terms\": [], \"reason\": \"The main work is executive-level sales and advisory: building C-suite relationships, running co-sell motions with SIs, and leading an advisory council. It is not hands-on AI, ML, or data engineering. The role requires at least 15 years of transformation experience and 5 years working with the C-suite, far above the 2-year limit for Priya, who has one co-op. The location (United States) is acceptable, but the experience and seniority requirements and the non-technical focus make it unsuitable.\"}",
+        "prompt_file": "judgment-v2.md",
+        "prompt_sha256": "291bd93ff8f9343d8bf1387f214a0ebda593f95db8042ecb46b8fe11c33ef4d8",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:41:28Z",
+        "seconds": 3.3
+      }
+    },
+    {
+      "posting_id": 8739506002,
+      "title": "Specialist Solutions Architect - AWS Infrastructure & AI Platform",
+      "label": "not relevant",
+      "outcome": "not relevant",
+      "pass": true,
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8739506002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8739506002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.languages",
+            "skills.data_bi",
+            "skills.database_cloud",
+            "experience"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [
+            "python",
+            "sql",
+            "databricks",
+            "aws"
+          ],
+          "reason": "The posting is a US-based, remote-eligible Solutions Architect role with technical AI/data content, and Priya's resume matches on Python, SQL, Databricks, and AWS. However, the role requires 6+ years of experience in solutions architecture, technical pre-sales, or a senior hands-on technical role, far above the 2-year limit. It also requires advanced AWS infrastructure, security, networking, and IaC expertise that Priya's resume does not show, so the seniority and qualifications do not fit."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8739506002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"skills.database_cloud\", \"experience\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [\"python\", \"sql\", \"databricks\", \"aws\"], \"reason\": \"The posting is a US-based, remote-eligible Solutions Architect role with technical AI/data content, and Priya's resume matches on Python, SQL, Databricks, and AWS. However, the role requires 6+ years of experience in solutions architecture, technical pre-sales, or a senior hands-on technical role, far above the 2-year limit. It also requires advanced AWS infrastructure, security, networking, and IaC expertise that Priya's resume does not show, so the seniority and qualifications do not fit.\"}",
+        "prompt_file": "judgment-v2.md",
+        "prompt_sha256": "291bd93ff8f9343d8bf1387f214a0ebda593f95db8042ecb46b8fe11c33ef4d8",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:41:31Z",
+        "seconds": 3.4
+      }
+    },
+    {
+      "posting_id": 8546367002,
+      "title": "AI Engineer – Forward Deployed Engineering (AI FDE)",
+      "label": "not relevant",
+      "outcome": "not relevant",
+      "pass": true,
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8546367002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8546367002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.data_bi",
+            "skills.database_cloud",
+            "experience"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [
+            "databricks",
+            "aws",
+            "unity catalog"
+          ],
+          "reason": "The work is AI/GenAI engineering in a customer-facing forward deployed role, and the location is in the United States. Although the title says 'ALL LEVELS', the posting says the role is for experienced engineers and is not for internship, new graduate, or entry-level applicants. It also asks for 'extensive years of hands-on industry data science experience' and demonstrated experience deploying production GenAI at scale. Priya's only professional experience is an AI Engineer co-op from January to August 2025, about 8 months, so she does not meet the experience requirement of at most 2 years, even though her Databricks, AWS, and MLflow skills overlap."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8546367002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.data_bi\", \"skills.database_cloud\", \"experience\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [\"databricks\", \"aws\", \"unity catalog\"], \"reason\": \"The work is AI/GenAI engineering in a customer-facing forward deployed role, and the location is in the United States. Although the title says 'ALL LEVELS', the posting says the role is for experienced engineers and is not for internship, new graduate, or entry-level applicants. It also asks for 'extensive years of hands-on industry data science experience' and demonstrated experience deploying production GenAI at scale. Priya's only professional experience is an AI Engineer co-op from January to August 2025, about 8 months, so she does not meet the experience requirement of at most 2 years, even though her Databricks, AWS, and MLflow skills overlap.\"}",
+        "prompt_file": "judgment-v2.md",
+        "prompt_sha256": "291bd93ff8f9343d8bf1387f214a0ebda593f95db8042ecb46b8fe11c33ef4d8",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:41:34Z",
+        "seconds": 5.9
+      }
+    },
+    {
+      "posting_id": 8756140002,
+      "title": "Senior Payroll Analyst",
+      "label": "not relevant",
+      "outcome": "not relevant",
+      "pass": true,
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8756140002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8756140002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "title",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The main work is payroll processing, which is not AI, machine learning, or data engineering. The title contains 'Senior', the role requires 5-7 years of payroll experience (well above the 2-year limit), and the location is Singapore, outside the United States. Priya's resume has no payroll experience. Databricks appears only as the employer's company description, not as a job requirement."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8756140002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"location\"], \"matched_terms\": [], \"reason\": \"The main work is payroll processing, which is not AI, machine learning, or data engineering. The title contains 'Senior', the role requires 5-7 years of payroll experience (well above the 2-year limit), and the location is Singapore, outside the United States. Priya's resume has no payroll experience. Databricks appears only as the employer's company description, not as a job requirement.\"}",
+        "prompt_file": "judgment-v2.md",
+        "prompt_sha256": "291bd93ff8f9343d8bf1387f214a0ebda593f95db8042ecb46b8fe11c33ef4d8",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:41:40Z",
+        "seconds": 2.8
+      }
+    },
+    {
+      "posting_id": 8301830002,
+      "title": "Senior Manager, Identity & Access Management (IAM)",
+      "label": "not relevant",
+      "outcome": "not relevant",
+      "pass": true,
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8301830002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8301830002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The main work is people leadership and strategy for Identity & Access Management, which is a security discipline rather than AI/ML or data engineering. The title includes 'Senior Manager', and the posting requires 8-12+ years of experience, far above the 2-year limit for Priya. Location (Mountain View, California) is in the US, but the seniority, experience, and domain mismatch make it unsuitable."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8301830002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The main work is people leadership and strategy for Identity & Access Management, which is a security discipline rather than AI/ML or data engineering. The title includes 'Senior Manager', and the posting requires 8-12+ years of experience, far above the 2-year limit for Priya. Location (Mountain View, California) is in the US, but the seniority, experience, and domain mismatch make it unsuitable.\"}",
+        "prompt_file": "judgment-v2.md",
+        "prompt_sha256": "291bd93ff8f9343d8bf1387f214a0ebda593f95db8042ecb46b8fe11c33ef4d8",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:41:43Z",
+        "seconds": 3.3
+      }
+    },
+    {
+      "posting_id": 8815669002,
+      "title": "Sr. Software Engineer - Ingestion Core team",
+      "label": "not relevant",
+      "outcome": "not relevant",
+      "pass": true,
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8815669002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8815669002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.languages",
+            "skills.data_bi",
+            "skills.database_cloud",
+            "experience"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [
+            "python",
+            "databricks",
+            "delta lake"
+          ],
+          "reason": "The job title contains 'Sr.' and the posting requires 5+ years of professional production coding experience, which exceeds the 2-year limit for Priya. The work is data engineering and the location (San Francisco, California) is in the US, and Priya has related skills in Python, Databricks, and Delta Lake, but the seniority and experience requirements rule it out."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8815669002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"skills.database_cloud\", \"experience\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [\"python\", \"databricks\", \"delta lake\"], \"reason\": \"The job title contains 'Sr.' and the posting requires 5+ years of professional production coding experience, which exceeds the 2-year limit for Priya. The work is data engineering and the location (San Francisco, California) is in the US, and Priya has related skills in Python, Databricks, and Delta Lake, but the seniority and experience requirements rule it out.\"}",
+        "prompt_file": "judgment-v2.md",
+        "prompt_sha256": "291bd93ff8f9343d8bf1387f214a0ebda593f95db8042ecb46b8fe11c33ef4d8",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:41:46Z",
+        "seconds": 2.9
+      }
+    },
+    {
+      "posting_id": 8823193002,
+      "title": "Product Finance Director, R&D Capital Allocation & Engineering Operations",
+      "label": "not relevant",
+      "outcome": "not relevant",
+      "pass": true,
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8823193002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8823193002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.languages",
+            "skills.data_bi"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The main work is product finance and R&D capital allocation, not AI, machine learning, or data engineering. The title includes 'Director' and the role requires 10+ years of experience, far above Priya's 2-year limit. Python, SQL, and Databricks appear only as preferred skills for finance reporting automation. The locations are in the US, but the seniority, experience, and domain do not fit."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8823193002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The main work is product finance and R&D capital allocation, not AI, machine learning, or data engineering. The title includes 'Director' and the role requires 10+ years of experience, far above Priya's 2-year limit. Python, SQL, and Databricks appear only as preferred skills for finance reporting automation. The locations are in the US, but the seniority, experience, and domain do not fit.\"}",
+        "prompt_file": "judgment-v2.md",
+        "prompt_sha256": "291bd93ff8f9343d8bf1387f214a0ebda593f95db8042ecb46b8fe11c33ef4d8",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:41:49Z",
+        "seconds": 3.2
+      }
+    },
+    {
+      "posting_id": 8903089002,
+      "title": "Strategic Core Account Executive - Automotive",
+      "label": "not relevant",
+      "outcome": "not relevant",
+      "pass": true,
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8903089002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8903089002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.data_bi",
+            "experience"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The job is a Strategic Account Executive (enterprise sales) role, not AI, ML, or data engineering work. It is located in Baden-Württemberg, Germany, outside the United States. It also requires a proven record of exceeding revenue targets in complex enterprise sales, German fluency, and automotive domain expertise, none of which are in Priya's resume. Although Databricks appears in both the resume and posting, the overlap is only in the company and product name, not in the job's work."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8903089002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.data_bi\", \"experience\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The job is a Strategic Account Executive (enterprise sales) role, not AI, ML, or data engineering work. It is located in Baden-Württemberg, Germany, outside the United States. It also requires a proven record of exceeding revenue targets in complex enterprise sales, German fluency, and automotive domain expertise, none of which are in Priya's resume. Although Databricks appears in both the resume and posting, the overlap is only in the company and product name, not in the job's work.\"}",
+        "prompt_file": "judgment-v2.md",
+        "prompt_sha256": "291bd93ff8f9343d8bf1387f214a0ebda593f95db8042ecb46b8fe11c33ef4d8",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:41:53Z",
+        "seconds": 3.2
+      }
+    }
+  ]
+}
