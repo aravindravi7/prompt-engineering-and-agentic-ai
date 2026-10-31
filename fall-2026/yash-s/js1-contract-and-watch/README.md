@@ -4,7 +4,7 @@
 
 - **Board:** Databricks on Greenhouse (`boards-api.greenhouse.io`, the only allowed host)
 - **Résumé:** Priya Nair, a **fictional** persona from The Reallocation Engine (`@example.com`, 555-01xx phone). My real résumé is not used anywhere.
-- **Language:** Python 3, standard library only. Tested with Python 3.13.5 on macOS.
+- **Language:** Python 3.9 or newer, standard library only. Tested with Python 3.13.5 on macOS.
 - **Claude:** the Claude Code CLI (`claude -p`, tested with 2.1.166), model `claude-sonnet-5-5`, with all tools off for every judgment
 
 The agent watches one job board and reports only the postings that are new since its last run. Each new posting gets two verdicts. The **RECORD** comes from my written rule, so anyone can recompute it. The **JUDGMENT** is Claude's opinion under a prompt contract, checked by a validator that rejects anything else. The agent never applies, emails, messages or logs in anywhere. The last step is always me.
@@ -20,7 +20,7 @@ The agent watches one job board and reports only the postings that are new since
 | [`prompts/`](prompts/) | `judgment-v1.md` (baseline prompt contract) and `judgment-v2.md` (one change) |
 | [`persona/`](persona/) | `priya-nair.resume.example.json`, copied unchanged (sha256 `a4fdbc96…`) |
 | [`runs/`](runs/) | Both watch runs: raw responses, run records (JSON) and reports (Markdown) |
-| [`state/databricks.state.json`](state/databricks.state.json) | The state file after the second run: 924 seen ids |
+| [`state/databricks.state.json`](state/databricks.state.json) | The state file after the second run: 924 seen ids. The baseline's state (901 ids) is kept in commit `c962a33`; see "What ran". |
 | [`tests/`](tests/) | 77 offline tests and two constructed fixture boards |
 | [`experiment/`](experiment/) | Labeling rule, selection, my labels, the **sampling report** and the **prompt experiment**, with their runners and results |
 | [`action-surface/`](action-surface/) | The **action-surface comparison**: inputs, the three outputs, the checker and the write-up |
@@ -29,7 +29,7 @@ The agent watches one job board and reports only the postings that are new since
 
 ## How to run it
 
-From a fresh clone, go into this folder first: `cd fall-2026/yash-s/js1-contract-and-watch`. Nothing needs installing. The **offline** commands need only Python 3. The **live** commands also need the Claude Code CLI, logged in.
+From a fresh clone, go into this folder first: `cd fall-2026/yash-s/js1-contract-and-watch`. Nothing needs installing. The **offline** commands need only Python 3.9 or newer. The **live** commands also need the Claude Code CLI, logged in.
 
 **Tests (offline).** Claude and the network are blocked inside the tests.
 
@@ -83,6 +83,14 @@ All times are as recorded. Files use UTC; Eastern Time is given for my calendar.
 | Sat Oct 31, 2:34–2:43 am | 2026-10-31T06:34:30–06:43:13Z | Prompt experiment: 4 runs of 10 | me | `experiment/results/` |
 | Sat Oct 31, ~3:20–3:27 am | ~2026-10-31T07:20–07:27Z | Action surfaces (a), (b) and (c) | me | `action-surface/` |
 
+**Baseline state:** The state file after the first run contained 901 seen posting IDs. It is preserved in Git commit `c962a33` and can be viewed with:
+
+```bash
+git show c962a33:fall-2026/yash-s/js1-contract-and-watch/state/databricks.state.json
+```
+
+The current `state/databricks.state.json` contains 924 seen IDs after the second run.
+
 **Date and time.** The watcher names its files in UTC, so a file's date can differ from my local date. The baseline ran on **October 28 at 8:56 pm ET**, but its files say `2026-10-29T005656Z`; both describe the same run. I use Eastern dates when I describe which day something ran, and I keep the UTC times in the files unchanged. The second run was three calendar days after the baseline.
 
 ## Results
@@ -125,13 +133,32 @@ Those outputs are not saved in this folder, and the check was not rerun after th
 - The validator checks the structured fields, not the prose reason.
 - RECORD does not use location or seniority. My labels and the JUDGMENT prompt do.
 
+## Driver's seat
+
+| Part of the task | What Claude did | What I did | Why that part stays mine | Evidence |
+|---|---|---|---|---|
+| The contract | Reviewed each version against the brief and the data, and suggested gaps | Wrote v1, v2 and v3 and every rule in them | I am responsible for deciding what the agent is allowed to do and what it must never do. | `16ecbcd` (v1, before any code), `172fe24` (v2), `2cadf12` (v3), all before the code they govern |
+| Changing the rule after real data | Ran the pre-checks (897/897, then 2 and 4 of 897); was wrong once, about MLflow and Delta Lake | Decided what to keep and drop | I need to review the evidence and decide whether changing a rule makes sense. | `evidence/precheck-2026-10-28/`, FRICTIONAL entries of 2026-10-28 |
+| What "relevant" means | Pointed out ambiguities (experience cutoff, location, roles) and showed how few postings could pass | Wrote the labeling rule and its eight decisions | Relevance depends on my chosen persona and job requirements, not just Claude's opinion. | `f67a170`, `experiment/LABELING-RULE.md` |
+| The labels | Built the selection script and the sheet | Labeled all 25 postings | The labels define what I compare Claude's answers against, so I am responsible for reviewing them. | `d93ab09` |
+| What counts as a pass | Suggested wording | Wrote and committed the pass definition before any run | I must decide how success is measured before seeing the results. | `ee7f57e` |
+| The prompt and the one change | Checked the prompt against the contract | Wrote v1, chose the one change for v2, and predicted the result before running it | I choose what to test and make the final decision about which prompt to use. | `13b75f0`, committed 12 s before the first v2 run |
+| The code and tests | Wrote `watch.py`, `judge.py`, the runners, the checkers and the tests | Ran every test and every live command | I am responsible for running tests, checking failures, and deciding whether the code is acceptable. | `ac93993`, `76a86db`, `0a9b18b`, `188db22` |
+| Git and anything live | Gave exact commands; never ran git or a live judgment itself | Ran every commit, the watch runs, the pings, the sampling, the experiment and the action surfaces | I control when commands run, what gets committed, and whether anything is submitted. | the commits above, and the run records' timestamps |
+| Checking Claude | Flagged its own wrong MLflow/Delta Lake claim, and one of its overclaims in the comparison | Rewrote passages Claude had drafted | I need to verify Claude's claims instead of assuming its explanations are correct. | FRICTIONAL.md; `action-surface/ACTION-SURFACE.md` "What happened" |
+
 ## Sign-off — Job-Search Agent 1
 
 Checked:
-- All 77 offline tests passed, including the new test for preventing evidence files from being overwritten.
-- The baseline recorded 901 postings and 0 new jobs.
-- The second watch run found 23 new postings.
-- The offline replay reproduced the same 23 new IDs and RECORD verdicts.
+- All 77 offline tests passed, including the new evidence overwrite regression test.
+- New postings are identified by ID, not title (`test_watch.NewSinceLast`).
+- Failed runs do not change the saved state (`test_watch.FailedRunLeavesState`).
+- The fictional resume is validated (`test_watch.Persona`).
+- Verdicts remain attached to the correct posting (`test_judge.WrongVersion1VerdictOnTheWrongId`).
+- Unsupported structured evidence and invalid JSON responses are rejected (`test_judge.Validator`).
+- The second wrong-version test checks explanations without supported evidence (`test_judge.WrongVersion2ReasonWithoutEvidence`).
+- Two runs within the same second preserve separate evidence files (`test_watch.Baseline.test_same_second_runs_keep_both_raw_responses`).
+- The baseline recorded 901 postings, and the second watch run found 23 new postings.
 - The action-surface checker reported two passes and one failure.
 
 How:
@@ -153,17 +180,3 @@ Not claiming:
 - That the system has been tested on multiple job boards.
 
 Signed: Yash Saraf, October 31, 2026
-
-## Driver's seat
-
-| Part of the task | What Claude did | What I did | Why that part stays mine | Evidence |
-|---|---|---|---|---|
-| The contract | Reviewed each version against the brief and the data, and suggested gaps | Wrote v1, v2 and v3 and every rule in them | I am responsible for deciding what the agent is allowed to do and what it must never do. | `16ecbcd` (v1, before any code), `172fe24` (v2), `2cadf12` (v3), all before the code they govern |
-| Changing the rule after real data | Ran the pre-checks (897/897, then 2 and 4 of 897); was wrong once, about MLflow and Delta Lake | Decided what to keep and drop | I need to review the evidence and decide whether changing a rule makes sense. | `evidence/precheck-2026-10-28/`, FRICTIONAL entries of 2026-10-28 |
-| What "relevant" means | Pointed out ambiguities (experience cutoff, location, roles) and showed how few postings could pass | Wrote the labeling rule and its eight decisions | Relevance depends on my chosen persona and job requirements, not just Claude's opinion. | `f67a170`, `experiment/LABELING-RULE.md` |
-| The labels | Built the selection script and the sheet | Labeled all 25 postings | The labels define what I compare Claude's answers against, so I am responsible for reviewing them. | `d93ab09` |
-| What counts as a pass | Suggested wording | Wrote and committed the pass definition before any run | I must decide how success is measured before seeing the results. | `ee7f57e` |
-| The prompt and the one change | Checked the prompt against the contract | Wrote v1, chose the one change for v2, and predicted the result before running it | I choose what to test and make the final decision about which prompt to use. | `13b75f0`, committed 12 s before the first v2 run |
-| The code and tests | Wrote `watch.py`, `judge.py`, the runners, the checkers and the tests | Ran every test and every live command | I am responsible for running tests, checking failures, and deciding whether the code is acceptable. | `ac93993`, `76a86db`, `0a9b18b`, `188db22` |
-| Git and anything live | Gave exact commands; never ran git or a live judgment itself | Ran every commit, the watch runs, the pings, the sampling, the experiment and the action surfaces | I control when commands run, what gets committed, and whether anything is submitted. | the commits above, and the run records' timestamps |
-| Checking Claude | Flagged its own wrong MLflow/Delta Lake claim, and one of its overclaims in the comparison | Rewrote passages Claude had drafted | I need to verify Claude's claims instead of assuming its explanations are correct. | FRICTIONAL.md; `action-surface/ACTION-SURFACE.md` "What happened" |
