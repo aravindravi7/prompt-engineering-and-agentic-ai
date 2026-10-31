@@ -4,7 +4,7 @@
     python3 -m tools.action_surface file      # way 2: Claude may only Read two files in an empty folder
     python3 -m tools.action_surface agent     # way 3: Claude may fetch from one host and Write its own state file
 
-Ways 2 and 3 save the full stream-json transcript, so what Claude read, fetched and wrote is on record.
+Ways 2 and 3 save the full stream-json transcript (kept on my machine by action-surface/.gitignore) and a summary.json of what Claude read, fetched and wrote.
 """
 
 import gzip

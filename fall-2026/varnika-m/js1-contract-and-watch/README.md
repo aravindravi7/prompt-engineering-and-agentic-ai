@@ -94,14 +94,14 @@ The second command should report the same 9 new ids, with the same rule verdicts
 
 ### Claude replies on record
 
-There are 75 replies in total. Every one is a fresh conversation with model `claude-opus-5-5`, and every one passed the validator.
+There are 76 replies in total, and every one passed the validator. 75 are fresh Claude Code conversations with model `claude-opus-5-5`. One (way 1) is my own claude.ai chat, which used Sonnet 5.5 on the Free plan.
 
 | Group | Replies | Where |
 |---|---:|---|
 | Seeded run B | 9 | `seeded/runs/anthropic-2026-10-31T074535Z.json` |
 | Sampling | 20, plus 4 added after the results | `sampling/` |
 | Prompt experiment | 40 | `experiment/replies/` |
-| Action surface, ways 2 and 3 | 2 | `action-surface/` |
+| Action surface, ways 1–3 | 3 (way 1 is my claude.ai chat) | `action-surface/` |
 
 A practice call made while building the agent is not evidence and is not in this folder (see `SOURCES.md`).
 
@@ -156,7 +156,7 @@ A practice call made while building the agent is not evidence and is not in this
 |---|---|---|---|---|
 | The contract | Drafted a version I discarded; reviewed mine three times; wrote the dated Rules 1–3 addition at my request | Wrote `CONTRACT.md` in my own words; committed it before any code | I have to predict and defend every verdict when a TA asks | `93afbb8`; `SOURCES.md` contract rows |
 | Code and tests | Wrote all of them | Ran the tests myself and the live baseline (run 1) | Running is my check that the code does what the contract says | `9397fac` ("I ran the tests: 72/72 pass"); `e976c58` |
-| Labeling | Drafted the labeling rule; fixed CSV quoting | **Labeled all 20 postings** | The labels are the human answer Claude is scored against. Claude labeling them would score Claude against Claude. | `8e17d73` (rule) before `7720143` (my labels) |
-| The revision | Suggested three single changes; ran every call | Chose "must-haves only"; made the prediction before it ran | Which change to test, and the prediction, are my reasoning | `f72da52`, frozen at 08:28:34, before the revision's first call at 08:28:59 |
+| Labeling | Drafted the labeling rule; fixed CSV quoting | **Labeled all 20 postings** | The labels are the human answer Claude is scored against. Claude labeling them would score Claude against Claude. | `808270d` (rule) before `3ff2be4` (my labels) |
+| The revision | Suggested three single changes; ran every call | Chose "must-haves only"; made the prediction before it ran | Which change to test, and the prediction, are my reasoning | `31f068e`, frozen at 08:28:34, before the revision's first call at 08:28:59 |
 | Verification | Comparisons and the full-board check | Recomputed Data Engineer's Rule 4 on the live page | One verdict I checked with my own eyes | `SOURCES.md`, "Recomputation by hand" |
 | The sign-off | Drafted the lines above | Decide whether to sign, and change anything untrue | My name is the one on it | the line above |

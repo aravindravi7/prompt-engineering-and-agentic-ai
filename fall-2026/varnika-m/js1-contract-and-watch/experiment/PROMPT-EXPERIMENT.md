@@ -6,11 +6,11 @@
 
 | When | What | Where |
 |---|---|---|
-| 08:01 | Labeling rule committed, before the 20 postings were seen. Claude Code drafted it at my request. | `LABELING-RULE.md`, `8e17d73` |
-| 08:02 | The 20 postings committed. They were picked mechanically from run 1's saved response: seed 7375, 10 from postings that pass Rules 1–3 and 10 from the rest, 5 + 5 of each into development and held-out. | `postings.json`, `tools/select_experiment.py`, `b96300e` |
-| 08:20:15 | **My 20 hand labels committed**: 19 `NOT_MATCH`, 1 `MATCH`. | `labels.csv`, `7720143` |
+| 08:01 | Labeling rule committed, before the 20 postings were seen. Claude Code drafted it at my request. | `LABELING-RULE.md`, `808270d` |
+| 08:02 | The 20 postings committed. They were picked mechanically from run 1's saved response: seed 7375, 10 from postings that pass Rules 1–3 and 10 from the rest, 5 + 5 of each into development and held-out. | `postings.json`, `tools/select_experiment.py`, `1b50ba1` |
+| 08:20:15 | **My 20 hand labels committed**: 19 `NOT_MATCH`, 1 `MATCH`. | `labels.csv`, `3ff2be4` |
 | 08:20:32 | baseline-v1 on the 10 development postings | `replies/baseline-v1/` |
-| 08:28:34 | **revision-v1 frozen** with my prediction, before it ran | `REVISION-DECISION.md`, `f72da52` |
+| 08:28:34 | **revision-v1 frozen** with my prediction, before it ran | `REVISION-DECISION.md`, `31f068e` |
 | 08:28:59 | revision-v1 on the 10 development postings | `replies/revision-v1/` |
 | 08:29 | Both prompts on the 10 held-out postings, last | `replies/*/` |
 
@@ -52,7 +52,7 @@
 | Security Data Engineer (5462966008) | NOT_MATCH | NOT_MATCH ✓ | N ✓ | N ✓ |
 | **Pass rate** | | **10/10** | **10/10** | **10/10** |
 
-**My prediction:** 9/10 for revision-v1 on development, frozen in `f72da52`. **Observed:** 9/10. The prediction held.
+**My prediction:** 9/10 for revision-v1 on development, frozen in `31f068e`. **Observed:** 9/10. The prediction held.
 
 ## What the one change did
 

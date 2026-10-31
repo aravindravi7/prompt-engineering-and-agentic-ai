@@ -64,5 +64,10 @@
   ],
   "total_cost_usd": 0.05938979999999999,
   "exit_code": 0,
-  "stderr": ""
+  "stderr": "",
+  "transcript": {
+    "sha256": "3d4a7119572a9cca2d0d8dda2c27a25579d4c7e35dceee4216733fdf9eedf307",
+    "committed": false,
+    "note": "The full stream-json transcript is kept on my machine only (the assignment: conversation transcripts stay on your machine). It holds machine details (my macOS username in paths, the installed Claude Code skills, session ids). This summary was written from it by tools/action_surface.py."
+  }
 }
