@@ -137,7 +137,7 @@ What each flag does, per `claude --help`:
 
 Known limits:
 - **Personal settings can still load.** `--bare` is not used, because it accepts only `ANTHROPIC_API_KEY` auth, not a normal login. So user-level settings such as `~/.claude/CLAUDE.md` can still load.
-- **Not yet tried for real.** This flag combination has not been run against a real Claude call; the smoke test is the first one.
+- **Tried for real since.** This flag combination has run against real Claude calls: the smoke tests (`bb1f877`, which failed with "Not logged in", then `c047608`, valid) and the dev experiment (`d7411f4`, 23 calls). The live watch run (`0dd01ab`) ran only the rule judge and made no Claude call.
 
 ### The prompts
 

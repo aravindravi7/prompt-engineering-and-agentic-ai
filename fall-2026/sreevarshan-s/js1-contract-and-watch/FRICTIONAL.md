@@ -18,6 +18,7 @@
   - Dev split done, `d7411f4`: baseline 10/10, revised 9/10, rule 9/10.
   - Held-out split: the CLI attempt was unusable because of the usage limit (`4a46925`). Rerun in the Claude app, `f5c008d`: baseline 10/10, revised 10/10, rule 9/10.
 - **Action-surface comparison:** done on 8546367002, `3484999`.
+- **Claude judgments for the 10 new watch postings:** not run before submission. The prompts are built (`experiments/watch_app/prompts/`); no replies exist. Rule records exist for all 10.
 
 ## Log
 

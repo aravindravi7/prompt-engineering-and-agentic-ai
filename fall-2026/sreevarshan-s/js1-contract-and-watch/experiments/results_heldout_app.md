@@ -1,5 +1,6 @@
 # Prompt experiment results: held-out split, run by hand in the Claude app
 
+- **Run:** 2026-10-31, run by me in the Claude app (incognito, Sonnet 4.6, web search off), one reply per prompt per posting, no retry.
 - **Why the app:** the CLI held-out run hit the usage limit (commit `4a46925`).
 - **Prompts:** `experiments/heldout_app/prompts/`, built with `js1.claude_judge.build_prompt`, byte for byte what the judge would send.
 - **Replies:** `experiments/heldout_app/replies/`, one reply per posting per prompt, saved by hand. There is no automatic retry in the app.

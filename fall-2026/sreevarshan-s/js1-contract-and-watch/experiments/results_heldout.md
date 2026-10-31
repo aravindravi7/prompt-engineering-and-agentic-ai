@@ -1,5 +1,7 @@
 # Prompt experiment results: held-out split
 
+> **Superseded.** This CLI run hit the usage limit: 38 of its 39 Claude calls failed, so its Claude scores reflect the limit, not the prompts. The held-out results are in `experiments/results_heldout_app.md` (rerun in the Claude app). This file is kept as evidence of the failed run.
+
 - **Run:** 2026-10-31T01-26-20Z (UTC)
 - **Model:** claude-sonnet-4-6, one call per posting per prompt (plus at most one retry on an invalid reply)
 - **Postings:** real postings from `evidence/raw/2026-10-30T23-59-22Z.json`, split frozen in `LABEL_SET.md`

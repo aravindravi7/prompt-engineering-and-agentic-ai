@@ -4,6 +4,7 @@ Evidence: `experiments/sampling/` (prompts, replies, spoiled runs, PLAN.md) and 
 
 ## 1. Method
 
+- **Run:** 2026-10-31, run by me in the Claude app (incognito, Sonnet 4.6, web search off), one reply per chat, no retry.
 - **Postings:** 5 development-split postings: 8546367002, 8921476002, 8401114002, 8648494002, 8847738002.
 - **Runs:** 4 fresh incognito chats per posting in the Claude app, Sonnet 4.6, web search off. That makes 20 replies.
 - **Prompt:** the baseline prompt (`prompts/baseline.txt`), built for each posting with the judge's own prompt-building code (`python3 -m experiments.sampling build`). The text was pasted into each chat unchanged.
@@ -35,6 +36,7 @@ Computed from the reply files by `python3 -m experiments.sampling_report`. Each 
 Counted by Claude Code reading each reply. The coding rule is stated with each count, and every reply is listed so the counts can be checked. Counts are over the 19 valid replies unless stated otherwise.
 
 **Location given as a reason for the verdict: 11 of 19.**
+The contract says location is reported, not used to reject (CONTRACT.md, Final § The rule, item 7: "I want location to be reported rather than used to reject a job." (D0§4)); 11 of the 19 valid replies used it as a reason anyway.
 - **Counted:** the explanation treats the posting's location as a barrier or a disqualifier.
   - 8648494002 runs 1–4
   - 8847738002 runs 1–4

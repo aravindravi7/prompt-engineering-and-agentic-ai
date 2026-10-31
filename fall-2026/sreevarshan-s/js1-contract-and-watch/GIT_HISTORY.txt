@@ -36,3 +36,5 @@ a0a0c545d8e57c12e80198cbd00e3a5b53186c1c | 2026-10-31T12:23:59-04:00 | Sreevarsh
 71e8f56751f78ecbc996be71ddbd612eab7f5e0e | 2026-10-31T14:30:15-04:00 | Sreevarshan Sathiyamurthy | yes | Held-out prompts for manual app run, CLI usage-limited (2026-10-31)
 f5c008d8a52cb8279f7e2d399d0a1d9051664866 | 2026-10-31T14:47:29-04:00 | Sreevarshan Sathiyamurthy | no | Held-out run in Claude app (incognito, Sonnet 4.6, web search off), run by me: baseline 10/10, revised 10/10, rule 9/10. 3 spoiled saves (wrong posting, chat text, a command) kept in spoiled/ and redone (2026-10-31)
 0fc8e26b6bf49284d9c3982ef39bb3b54401c1de | 2026-10-31T14:48:40-04:00 | Sreevarshan Sathiyamurthy | yes | Held-out results, always-not-relevant baseline, sign-off signed (2026-10-31)
+11a5dd834f8e53ef924397d29a97f1631ec3401d | 2026-10-31T14:59:19-04:00 | Sreevarshan Sathiyamurthy | yes | Watch-judgment prompts; audit fixes: Checked properties, test counts, stale notes, run dates, location note (2026-10-31)
+cbce903210d73736961121a162beb51cef4e7ff4 | 2026-10-31T15:01:53-04:00 | Sreevarshan Sathiyamurthy | yes | Final: watch judgments not run, stated (2026-10-31)
