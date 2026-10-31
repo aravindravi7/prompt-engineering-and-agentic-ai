@@ -1,6 +1,6 @@
 # Action-surface comparison (Chapter 3)
 
-*Drafted by Claude Code on 2026-10-31 from the saved transcripts of ways 2 and 3 (summaries in this folder; the full transcripts stay on my machine). Way 1 is my own chat. Varnika reviewed the draft and the choice: [ ]*
+*Drafted by Claude Code on 2026-10-31 from the saved transcripts of ways 2 and 3 (summaries in this folder; the full transcripts stay on my machine). Way 1 is my own chat. Varnika reviewed the conclusions on 2026-10-31, from Claude Code's summary of them in chat, and agreed; she did not re-derive the numbers herself.*
 
 **The task.** Decide whether posting 5440427008, "Software Engineer, Sandboxing", is a `MATCH` for the Aarav Patel persona, and reply in the contract's JSON format. I did the same task three ways on 2026-10-31, all with the same instructions.
 

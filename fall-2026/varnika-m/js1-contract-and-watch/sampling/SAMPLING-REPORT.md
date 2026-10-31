@@ -1,6 +1,6 @@
 # Sampling report (Chapter 1)
 
-*The tables were drafted by Claude Code on 2026-10-31 from the saved replies in `sampling/`, and recomputed with `python3 -m tools.score sampling`. The conclusions were drafted by Claude Code; Varnika reviewed them: [ ]*
+*The tables were drafted by Claude Code on 2026-10-31 from the saved replies in `sampling/`, and recomputed with `python3 -m tools.score sampling`. The conclusions were drafted by Claude Code; Varnika reviewed the conclusions on 2026-10-31, from Claude Code's summary of them in chat, and agreed; she did not re-derive the numbers herself.*
 
 ## What ran
 

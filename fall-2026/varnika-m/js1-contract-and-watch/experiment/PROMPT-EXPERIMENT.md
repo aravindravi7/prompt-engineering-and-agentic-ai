@@ -1,6 +1,6 @@
 # Prompt experiment (Chapter 2)
 
-*The tables were drafted by Claude Code on 2026-10-31 from the saved replies in `experiment/replies/`, and recomputed with `python3 -m tools.score experiment`. The conclusions were drafted by Claude Code; Varnika reviewed them: [ ]*
+*The tables were drafted by Claude Code on 2026-10-31 from the saved replies in `experiment/replies/`, and recomputed with `python3 -m tools.score experiment`. The conclusions were drafted by Claude Code; Varnika reviewed the conclusions on 2026-10-31, from Claude Code's summary of them in chat, and agreed; she did not re-derive the numbers herself.*
 
 ## Setup, in the order it happened (UTC, 2026-10-31)
 

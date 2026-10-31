@@ -139,6 +139,7 @@ A practice call made while building the agent is not evidence and is not in this
 4. I recomputed only one of the rule's verdicts by hand, not all 675.
 5. Claude's ability to recognize a `MATCH` is barely tested: 1 of my 20 labels is `MATCH`, and the held-out set has none.
 6. I did not read Greenhouse's or Anthropic's terms of use for the board API. I relied on it being a public endpoint, and made 4 requests to it in total: the board check, live runs 1 and 2, and way 3's single-posting fetch.
+7. I did not re-derive the numbers in the three reports myself. Claude Code drafted them from the saved replies, and I reviewed their conclusions from its summary. Anyone can recompute them with `python3 -m tools.score sampling` and `python3 -m tools.score experiment`.
 
 **Not claiming.**
 
