@@ -94,6 +94,9 @@ Last run: `Ran 45 tests … OK` (2026-10-31).
   - I have not independently verified every classification against a human-reviewed answer.
   - I have not tested the workflow on a large dataset.
   - I have not established that the classifier works consistently across different job platforms.
+  - I haven't tested the validator against an actual invalid Claude response. All 62 real responses passed, so the rejection behavior was only tested using sample inputs.
+  - I haven't tested the workflow across two actual calendar days. The second run used an earlier seeded board to check whether previously processed postings were handled correctly.
+  - Each held-out posting received only one Claude call per prompt, so the results may change if the same postings are tested again.
 - **Not claiming:** I am not claiming that the classifier is completely accurate or production-ready based on the limited testing completed so far.
 - **Signed or withheld:** Arundhati Kandelkar, October 31, 2026
 

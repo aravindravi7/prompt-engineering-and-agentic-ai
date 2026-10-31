@@ -23,3 +23,7 @@ One confusing part was the sentence "We work mostly in Java..." I wasn't sure wh
 ### 6. Using and reviewing AI suggestions — October 31, 2026
 
 I used both Claude and ChatGPT during the project. Claude reviewed some of the ChatGPT-generated drafts and pointed out that they contained factual mistakes and did not fully reflect my own work. For example, it corrected the description of `run.py` and clarified that the allow-list was based on the host, not the company. I reviewed these corrections and used them to improve my documentation.
+
+### Traceability
+
+I kept notes and supporting evidence for these issues in the project files. For row 13, see the note in `labeling/labels.csv`. For the missed US-location requirement in postings 14–16, see the Honest Limits section in `PROMPT-EXPERIMENT.md`. The Rohan persona change is also reflected in contract commit `122d4f1`.
