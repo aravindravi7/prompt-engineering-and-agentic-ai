@@ -113,7 +113,7 @@ def call_claude(prompt: str, model: str = MODEL, timeout: float = 180.0) -> dict
     }
 
 
-def judge(posting: dict, resume: dict, version: str = "v1", model: str = MODEL, caller=call_claude) -> dict:
+def judge(posting: dict, resume: dict, version: str = "v2", model: str = MODEL, caller=call_claude) -> dict:
     prompt = build_prompt(version, posting, resume)
     call = caller(prompt, model)
     parsed, errors = validate(call["result"]) if not call["is_error"] else (None, ["claude call failed"])

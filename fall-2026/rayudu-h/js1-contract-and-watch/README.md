@@ -8,7 +8,7 @@
 The agent fetches the board from one allow-listed host and saves the raw response as evidence. It remembers posting ids and reports only postings new since the last run. Each new posting gets two verdicts, side by side:
 
 - a **record** from my written rule (anyone can recompute it);
-- a **judgment** from Claude under a prompt contract, with a validator that rejects any other format.
+- a **judgment** from Claude under a prompt contract, with a validator that rejects any other format. The agent uses prompt **v2** (`prompts/judge_v2.md`, which includes the written rule), my choice after the prompt experiment. The seeded runs above used v1, the default at the time.
 
 It never applies, emails, messages or logs in.
 

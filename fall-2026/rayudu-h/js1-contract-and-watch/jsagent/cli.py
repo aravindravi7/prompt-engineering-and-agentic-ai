@@ -190,7 +190,7 @@ def main(argv=None) -> int:
     r.add_argument("--runs-dir", default=str(ROOT / "runs"))
     r.add_argument("--from-raw", help="judge a saved earlier response instead of fetching (a seeded run)")
     r.add_argument("--label", help="label for the run id and report, e.g. seeded")
-    r.add_argument("--prompt", default="v1", help="Claude judge prompt version (prompts/judge_<v>.md)")
+    r.add_argument("--prompt", default="v2", help="Claude judge prompt version (prompts/judge_<v>.md); v2 chosen by Hemanth after the prompt experiment")
     r.add_argument("--no-claude", action="store_true", help="rule judge only")
     r.add_argument("--max-claude", type=int, default=25, help="at most this many Claude calls per run")
     args = p.parse_args(argv)
