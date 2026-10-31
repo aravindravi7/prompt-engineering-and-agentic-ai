@@ -58,3 +58,5 @@ What it shows: most of the baseline's failures were **format**, not judgment —
 | Hand labels | Copied my labels, unchanged, into its workspace run (my Claude Code hit its spend limit) | Labelled all 20 by reading | Labels are the ground truth; Claude can't grade itself |
 | Verdict on a posting | Gives a JUDGMENT | Decides whether to apply | My time, my name |
 Evidence of the split: commit `509e6ca` (contract committed before any run); `labels/labels.csv` filled by me one posting at a time with `label.py` (my reasons are in the `my_reason` column, e.g. "director, 10 yrs PM"); my Claude Code spend-limit error and the decision to run the judge calls in Claude's workspace are logged in FRICTIONAL.md.
+
+- **Run 2c (live, ~7:09 pm, rule only):** `2026-10-31T190953-live: 156 on board, baseline=False, new=0`. The board still had not changed.
