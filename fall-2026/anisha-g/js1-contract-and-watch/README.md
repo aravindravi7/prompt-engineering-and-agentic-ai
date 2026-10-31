@@ -46,7 +46,7 @@ What it shows: most of the baseline's failures were **format**, not judgment —
 - **How:** tests drafted with Claude's help from my contract, then I ran them myself; rule verdicts rechecked by hand against my labels on all 20 labelled postings (19 agree; the one disagreement is explained in the sampling conclusion) and on run 2's 3 new postings.
 - **Not checked:** (1) whether the years regex reads every way a posting states experience (e.g. "three years", ranges in prose); (2) whether Claude's quotes *support* its verdict (the validator only checks they exist); (3) any board other than Klaviyo, or Greenhouse API changes; (4) whether the rule should read the bottom or the top of a years range ("3–5 years") — my label and the rule disagree on exactly this; (5) a real second calendar-day run: run 2 is seeded.
 - **Not claiming:** that the agent finds good jobs; that 20 hand labels make a valid benchmark; that Claude's verdicts are correct.
-- **Signed or withheld:Signed — Anisha Gaikar, 2026-10-31
+- **Signed or withheld:** Signed — Anisha Gaikar, 2026-10-31
 ## Driver's seat
 | Part | Claude | Me | Why it stays mine |
 |---|---|---|---|
@@ -54,4 +54,4 @@ What it shows: most of the baseline's failures were **format**, not judgment —
 | Code and tests | Wrote `agent.py` and tests against the contract | Ran tests and both runs myself | I sign what ran, not what was written |
 | Hand labels | Nothing | Labelled all 20 by reading | Labels are the ground truth; Claude can't grade itself |
 | Verdict on a posting | Gives a JUDGMENT | Decides whether to apply | My time, my name |
-Evidence of the split: commit `509e6ca` (contract committed before any run); `labels/labels.csv` filled by me one posting at a time with `label.py` (my reasons are in the `my_reason` column, e.g. "strong skill match but lead, 5-8 yrs"); my Claude Code spend-limit error and the decision to run the judge calls in Claude's workspace are logged in FRICTIONAL.md.
+Evidence of the split: commit `509e6ca` (contract committed before any run); `labels/labels.csv` filled by me one posting at a time with `label.py` (my reasons are in the `my_reason` column, e.g. "director, 10 yrs PM"); my Claude Code spend-limit error and the decision to run the judge calls in Claude's workspace are logged in FRICTIONAL.md.
