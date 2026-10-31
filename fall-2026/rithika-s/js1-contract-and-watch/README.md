@@ -103,7 +103,7 @@ calls to `claude -p` (raw replies with timestamps in the `.jsonl` files).
   `tests/test_mutants.py` shows the checker passes on the real code and fails on each mutant.
 - The raw response was not modified: I recomputed its SHA-256 with `shasum -a 256`, and it
   matches the hash in every report that used it.
-- Claude replies are validated: 0 of 67 rejected. Three claims in Claude's reasons
+- Claude replies are validated: 0 of 68 rejected (7 seeded-run, 20 sampling, 40 experiment, 1 action-surface agent call). Three claims in Claude's reasons
   (graduation window, "4+ years required", "Ideal: 3+ years") I checked myself against
   the raw text: `reports/prompt_experiment/label_audit_evidence.txt`.
 

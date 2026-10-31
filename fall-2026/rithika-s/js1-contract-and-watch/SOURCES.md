@@ -30,8 +30,8 @@
   posting I had labeled relevant). Proposed the three post-hoc audit readings.
 - Drafted `SAMPLING_REPORT.md`, `PROMPT_EXPERIMENT.md`, `ACTION_SURFACE.md`,
   `README.md`, and this file from my real runs and commits.
-- Drafted my 2026-10-30 FRICTIONAL entry from that day's actual events; I edited it
-  and filled in my own reasons.
+- Drafted my FRICTIONAL entries for 2026-10-30 and 2026-10-31 from each day's actual
+  events, plus example reflections for 2026-10-31. I edited them and filled in my own reasons.
 
 **Claude Code (v2.1.316, Opus 5.5)**
 - Wrote all of `agent/` and `tests/` (42 tests, including `tests/mutants.py` for the
@@ -57,4 +57,5 @@
 - **Ran everything:** all 42 tests, every live and seeded agent run, all Claude trials,
   the three action-surface runs, and the SHA-256 recomputation. Reviewed every file
   before committing it.
-- **Signed** the sign-off and wrote my FRICTIONAL reflections.
+- **Signed** the sign-off, and reviewed and edited the drafted FRICTIONAL reflections
+  so they match my own thoughts.
