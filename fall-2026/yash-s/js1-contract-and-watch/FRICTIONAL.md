@@ -270,3 +270,72 @@ I will finalize my labeling rules and update the judgment prompt before running 
 
 Evidence: `evidence/model-check-2026-10-28/`
 
+
+## 2026-10-31: Labeling Rules and Posting Selection
+
+### What I did
+
+I finalized my labeling rules for Priya Nair before running any live judgments.
+
+I decided to consider only US-based jobs with no more than 2 years of required experience. I also excluded senior-level jobs, internships, and 2027 New Grad programs.
+
+Claude pointed out that the judgment prompt did not include job location, even though my labeling rule depends on it.
+
+I agreed to include location in Claude's JUDGMENT. I updated CONTRACT.md and the prompt before Claude changed the code.
+
+The RECORD rules stayed unchanged.
+
+### What I tested
+
+Claude updated the judge code and added three new tests for location.
+
+I ran all 66 automated tests, and they passed.
+
+Claude also created a script to select 25 postings from my saved Databricks baseline.
+
+I ran the script again with random seed 7375.
+
+The selected posting IDs and SHA-256 fingerprints matched the earlier results.
+
+### My Decision
+
+I decided to use 10 technical hard cases and 10 other postings for the prompt experiment, plus 5 separate postings for the sampling report.
+
+I chose this method because a completely random selection might contain very few jobs that are suitable for Priya.
+
+I understand that my selection does not represent the entire Databricks job board.
+
+### Labeling the Postings
+
+I completed the labeling for all 25 selected job postings using my labeling rules.
+
+I marked all 25 postings as "not relevant" because they did not meet the requirements for experience, location, seniority, or job type.
+
+I wrote a short explanation for each posting to show why I made that decision.
+
+I noticed that even jobs related to AI or data engineering were not always suitable for Priya because they required more experience than she had.
+
+### What I learned
+
+I learned that a job can match Priya's technical interests but still require too much experience.
+
+I also learned that strict labeling rules can result in a dataset with no relevant jobs.
+
+If all 25 final labels remain "not relevant," even a model that always predicts "not relevant" could achieve 100% accuracy. This is a limitation of my experiment.
+
+### What I will do next
+
+I will commit my completed labeling sheet and write the pass definition for my experiment.
+
+After that, I will run the second live watch and compare the number of new postings with my earlier prediction of 5.
+
+Then I will run the sampling report and prompt experiment to compare Claude's judgments with my labels and see how consistent the results are.
+
+### Evidence
+
+- `experiment/LABELING-RULE.md`
+- `experiment/select_postings.py`
+- `experiment/selection.json`
+- `experiment/LABELING-SHEET.md`
+
+

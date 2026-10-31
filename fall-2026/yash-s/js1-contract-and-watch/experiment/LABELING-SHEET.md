@@ -38,8 +38,8 @@ Label each posting by `experiment/LABELING-RULE.md`, before looking at the RECOR
 - Location: United States (US)
 - Title words: topic ['data'], seniority none
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8692962002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** The posting requires 6+ years in solutions architecture or technical pre-sales, above the 2-year limit.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -53,8 +53,8 @@ FEQ327R691 As a Data Engineering and Warehousing Specialist Solutions Architect 
 - Location: San Francisco, California (US)
 - Title words: topic ['GenAI'], seniority none
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** This is a PhD research internship, and the labeling rule excludes internships.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -68,8 +68,8 @@ Company Description: At Databricks, we are obsessed with enabling data teams to 
 - Location: United States (US)
 - Title words: topic ['AI'], seniority none
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=7803651002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** The role requires at least 15 years in AI transformation, above the 2-year limit.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -83,8 +83,8 @@ With the most complete data & AI stack on the market, Databricks is well suited 
 - Location: United States (US)
 - Title words: topic ['AI'], seniority none
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8739506002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** The AWS solutions architect role requires 6+ years in architecture or pre-sales, above the 2-year limit.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -98,8 +98,8 @@ FEQ427R143 As an Infrastructure & AI Platform Specialist Solutions Architect (SS
 - Location: United States (US)
 - Title words: topic ['AI'], seniority none
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8546367002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** The posting explicitly says it is not for entry-level or new-graduate applicants.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -113,8 +113,8 @@ AI Engineer – Forward Deployed Engineering (AI FDE) (ALL LEVELS) CSQ327R177 Mi
 - Location: Singapore (not US)
 - Title words: topic none, seniority ['Senior']
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8756140002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** This is a senior payroll job in Singapore, outside the US and outside the target engineering work.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -128,8 +128,8 @@ GAQ327R247 As part of the Databricks Payroll team, you will join a dynamic globa
 - Location: Mountain View, California (US)
 - Title words: topic none, seniority ['Senior', 'Manager']
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8301830002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** This is a Senior Manager role requiring 8–12+ years of experience.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -143,8 +143,8 @@ P-1494 Databricks is the Lakehouse company. More than 7,000 organizations worldw
 - Location: San Francisco, California (US)
 - Title words: topic none, seniority ['Sr.', 'Sr']
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8815669002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** The title says Sr., and the role requires 5+ years of production engineering experience.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -158,8 +158,8 @@ Deeply understanding what’s in the enterprise data has been a challenge that D
 - Location: Mountain View, California; San Francisco, California; Seattle, Washington (US)
 - Title words: topic none, seniority ['Director']
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8823193002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** This is a Director-level finance role requiring 10+ years of experience.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -173,8 +173,8 @@ Deeply understanding what’s in the enterprise data has been a challenge that D
 - Location: Baden-Württemberg, Germany (not US)
 - Title words: topic none, seniority none
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8903089002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** This is a sales job in Germany, outside the US and outside the target engineering work.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -188,8 +188,8 @@ SLSQ128R96 Databricks operates at the leading edge of the unified data, analytic
 - Location: Mountain View, California; San Francisco, California (US)
 - Title words: topic ['data'], seniority none
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** This is a 2027 internship, and the rule excludes internships and 2027 new-graduate programs.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -203,8 +203,8 @@ SLSQ128R96 Databricks operates at the leading edge of the unified data, analytic
 - Location: United States (US)
 - Title words: topic ['AI', 'ML'], seniority none
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8697991002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** This AI/ML solutions architect role requires 6+ years of experience, above the 2-year limit.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -218,8 +218,8 @@ FEQ427R382 As an AI/ML Specialist Solutions Architect (SSA), you will lead the a
 - Location: United States (US)
 - Title words: topic ['AI'], seniority none
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8739507002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** This Azure solutions architect role requires 6+ years of experience, above the 2-year limit.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -233,8 +233,8 @@ FEQ427R143 As an Infrastructure & AI Platform Specialist Solutions Architect (SS
 - Location: Maryland; Virginia; Washington, D.C. (US)
 - Title words: topic ['AI'], seniority none
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8760167002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** This federal-focused AI engineering role has clearance and experience requirements unsuitable for Priya.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -248,8 +248,8 @@ PLEASE NOTE : Due to federal contract requirements and client site access obliga
 - Location: United States (US)
 - Title words: topic ['AI', 'data'], seniority none
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8859666002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** This role focuses on workforce transformation instead of hands-on AI engineering and requires extensive experience.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -263,8 +263,8 @@ CSQ327R12 Enterprise customers are investing in AI, but most are stuck between a
 - Location: Vancouver, Canada (not US)
 - Title words: topic none, seniority ['Staff']
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8099343002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** The title says Staff and the role is in Canada, failing both seniority and location rules.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -278,8 +278,8 @@ P-1444 Databricks is on a mission to simplify and democratize data and AI — fr
 - Location: Mountain View, California (US)
 - Title words: topic none, seniority ['Manager']
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8472398002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** The title says Engineering Manager, which the early-career labeling rule excludes.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -293,8 +293,8 @@ RDQ326R233 At Databricks, we are passionate about enabling data teams to solve t
 - Location: Paris, France (not US)
 - Title words: topic none, seniority none
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8628029002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** This is an enterprise sales position in France, outside the US and target engineering roles.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -308,8 +308,8 @@ SLSQ427R336 Want to help solve the world's toughest problems with data and AI? T
 - Location: United States (US)
 - Title words: topic none, seniority none
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=6328388002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** This solutions architect role requires 5+ years of technical or pre-sales experience, above the 2-year limit.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -323,8 +323,8 @@ P-345 At Databricks, our customers challenge us with solving some of the world's
 - Location: New York City, New York (US)
 - Title words: topic none, seniority ['Staff']
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8384595002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** The title says Staff, which the labeling rule excludes.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -338,8 +338,8 @@ P-1980 At Databricks, we are passionate about enabling data teams to solve the w
 - Location: Bengaluru, India (not US)
 - Title words: topic ['AI', 'data'], seniority ['Senior']
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8604579002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** The title says Senior, the job is in India, and the work is finance rather than AI/ML engineering.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -353,8 +353,8 @@ About the Role As a Finance Data and AI Specialist, you will be a hands-on contr
 - Location: Mountain View, California; San Francisco, California (US)
 - Title words: topic ['data'], seniority ['Manager']
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8688861002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** The title says Manager and the work centers on accounting rather than AI/ML engineering.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -368,8 +368,8 @@ GAQ327R291 Accounting Data & Technology Manager About the Role We are building a
 - Location: Seoul, South Korea (not US)
 - Title words: topic ['AI'], seniority none
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8574655002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** This AI engineering job is based in South Korea, so it fails the US-only location rule.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -383,8 +383,8 @@ CSQ427R171 Mission The AI Forward Deployed Engineering (AI FDE) team is a highly
 - Location: Mountain View, California; San Francisco, California (US)
 - Title words: topic ['data'], seniority ['Senior']
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=5634684002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** The title says Senior, which the early-career labeling rule excludes.
 
 <details><summary>Posting text (HTML removed)</summary>
 
@@ -398,8 +398,8 @@ P-191 At Databricks, we are obsessed with enabling data teams to solve the world
 - Location: Bellevue, Washington (US)
 - Title words: topic ['data'], seniority ['Manager']
 - Posting: https://databricks.com/company/careers/open-positions/job?gh_jid=8578093002
-- **My label (relevant / not relevant):** 
-- **My note:** 
+- **My label (relevant / not relevant):** not relevant
+- **My note:** The title says Engineering Manager, which the early-career labeling rule excludes.
 
 <details><summary>Posting text (HTML removed)</summary>
 
