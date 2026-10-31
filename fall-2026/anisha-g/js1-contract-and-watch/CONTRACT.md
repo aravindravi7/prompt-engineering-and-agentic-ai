@@ -1,6 +1,6 @@
 # CONTRACT — Job-Search Agent 1 (Anisha Gaikar)
 
-Written before any code. Claude drafted the wording from my decisions; I reviewed and own every line. Date: 2026-10-31.
+Committed (`509e6ca`) before any run, test or label, but drafted together with the code, not before it (see FRICTIONAL.md). Claude drafted the wording from my decisions; I reviewed and own every line. Date: 2026-10-31.
 
 ## In
 - A board name: one Greenhouse board slug (default `klaviyo`), fetched from `boards-api.greenhouse.io` only.

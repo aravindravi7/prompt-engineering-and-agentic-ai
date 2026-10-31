@@ -6,7 +6,9 @@
 
 **2026-10-31, ~5:12 pm** — Claude's tests passed in its workspace (9 tests) and a fake-board / fake-Claude smoke test ran every command. Not yet run on real data.
 
-**2026-10-31, ~5:37 pm** — Asked Claude to write the failure sentence; it drafted one, I read it and committed the contract as `9af05ef` before running anything.
+**Honest note on order:** the assignment says to write CONTRACT.md before asking Claude to write anything. I did not: Claude drafted the contract and the code together at ~5:10 pm, and I committed the contract at ~5:37 pm, before any run, test or label. So the contract came before every run and result, but not before the code.
+
+**2026-10-31, ~5:37 pm** — Asked Claude to write the failure sentence; it drafted one, I read it and committed the contract as `9af05ef` before running anything (after `git pull --rebase` the same commit is `509e6ca`).
 
 **2026-10-31, ~5:38 pm** — Tests: 9 passed on my Mac. Run 1 (live, baseline): 156 postings, 0 new — correct for a baseline.
 
