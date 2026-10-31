@@ -65,7 +65,7 @@ The fields must follow these rules:
 1. `posting_id` must match the exact job ID being checked.
 2. `verdict` must be `relevant` or `not relevant`.
 3. `resume_fields` must be a list of valid résumé field paths. Claude can use the four allowed skill groups, `experience`, and `projects`.
-4. `posting_fields` must be a list containing only `title` and `content`. No other posting fields are allowed.
+4. `posting_fields` must be a list containing only `title`, `content`, and `location`. No other posting fields are allowed.
 5. `matched_terms` must be a list of strings. Every term must appear in at least one résumé field and one posting field named in the response. Matching ignores capital letters and uses whole words or phrases on the cleaned text, just like Rule 2.
 6. `reason` must be a non-empty string explaining Claude's decision.
 
@@ -324,6 +324,22 @@ I learned that disabling tools and using an empty folder reduces extra context, 
 For my project, I will run judgments from an empty temporary folder with tools disabled and record the model used.
 
 Evidence: `evidence/model-check-2026-10-28/`
+
+### Additional Note: Location in Claude's Judgment (2026-10-31)
+
+Before running any live judgments, I decided to include the job location in the information given to Claude.
+
+My labeling rule only considers jobs located in the United States, so Claude needs to see the location to make a fair judgment.
+
+Claude can now use `title`, `content`, and `location` as posting fields.
+
+This updates the allowed posting fields in Section 2 of my contract.
+
+The RECORD rules will stay the same. They do not check location or seniority.
+
+Because of this, RECORD and JUDGMENT might disagree on some senior-level or non-US jobs.
+
+I will record these disagreements and compare them with my manual labels.
 
 ---
 
