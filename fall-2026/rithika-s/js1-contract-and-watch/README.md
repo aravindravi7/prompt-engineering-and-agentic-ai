@@ -135,7 +135,7 @@ calls to `claude -p` (raw replies with timestamps in the `.jsonl` files).
   relevant postings cannot show that.
 - That anything here generalizes beyond one board, one fictional persona, and one day.
 
-**Signed or withheld:** TYPE YOUR NAME AND DATE HERE
+**Signed or withheld:** Rithika Sankar Rajeswari, 2026-10-31
 
 ## Driver's seat
 | Part of the task | Claude did | I did | Why it stays mine | Where the split shows |
