@@ -58,11 +58,15 @@ def title_terms(resume: dict) -> list:
 
 
 def judge(posting: dict, resume: dict) -> dict:
-    """Return {id, title, location, verdict, justification, tests} for one posting."""
+    """Return {key, id, title, location, verdict, justification, tests} for one normalized posting.
+
+    JS2: postings come from providers.py as {key, system, board, id, title, location, text, url};
+    `text` is the plain-text description (Greenhouse `content` / Ashby `descriptionPlain`).
+    """
     title = (posting.get("title") or "").strip()
-    location = ((posting.get("location") or {}).get("name") or "").strip()
-    content = plain_text(posting.get("content") or "")
-    out = {"id": posting.get("id"), "title": title, "location": location}
+    location = (posting.get("location") or "").strip()
+    content = (posting.get("text") or "").strip()
+    out = {"key": posting.get("key"), "id": posting.get("id"), "title": title, "location": location}
 
     missing = [f for f, v in (("title", title), ("content", content)) if not v]
     if missing:

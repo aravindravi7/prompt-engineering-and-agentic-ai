@@ -16,7 +16,7 @@ import tempfile
 from pathlib import Path
 
 from . import resume as resume_mod
-from .rule import VERDICTS, plain_text
+from .rule import VERDICTS
 
 PROMPTS_DIR = Path(__file__).resolve().parent.parent / "prompts"
 MODEL = "sonnet"
@@ -34,11 +34,11 @@ def load_prompt(version: str) -> str:
 
 
 def posting_view(posting: dict) -> dict:
-    content = plain_text(posting.get("content") or "")
+    """The posting fields Claude sees (normalized posting from providers.py)."""
     return {
         "title": (posting.get("title") or "").strip(),
-        "location.name": ((posting.get("location") or {}).get("name") or "").strip(),
-        "content": content[:MAX_CONTENT_CHARS],
+        "location.name": (posting.get("location") or "").strip(),
+        "content": (posting.get("text") or "").strip()[:MAX_CONTENT_CHARS],
     }
 
 
@@ -82,7 +82,7 @@ def ungrounded_quotes(justification: str, posting: dict, resume: dict, prompt: s
     quotes words that are not in the posting".
     """
     view = posting_view(posting)
-    haystack = " ".join([view["title"], view["location.name"], plain_text(posting.get("content") or ""),
+    haystack = " ".join([view["title"], view["location.name"], posting.get("text") or "",
                          json.dumps(resume_mod.judge_view(resume), ensure_ascii=False), prompt]).lower()
     haystack = re.sub(r"\s+", " ", haystack)
     quotes = re.findall(r'"([^"]{2,200})"', justification or "")
