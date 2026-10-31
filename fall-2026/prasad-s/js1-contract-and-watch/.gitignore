@@ -1,3 +1,4 @@
 __pycache__/
 *.pyc
 rerun_run2/
+experiments/action_surface/way3_agent/raw.json
