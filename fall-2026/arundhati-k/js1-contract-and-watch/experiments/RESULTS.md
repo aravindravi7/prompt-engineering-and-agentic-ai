@@ -17,9 +17,9 @@ Calls: 20 · first 2026-10-31T06:32:24+00:00 · last 2026-10-31T06:34:50+00:00 �
 | prompt | set | passed | invalid replies | n |
 |---|---|---|---|---|
 | baseline | dev | 9/10 | 0 | 10 |
-| baseline | heldout | not scored: hand labels missing for rows 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 | | |
+| baseline | heldout | 7/10 | 0 | 10 |
 | revision | dev | 10/10 | 0 | 10 |
-| revision | heldout | not scored: hand labels missing for rows 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 | | |
+| revision | heldout | 6/10 | 0 | 10 |
 
 | prompt | set | n | posting | title | my label | Claude (model judgment) | match |
 |---|---|---|---|---|---|---|---|
@@ -33,6 +33,16 @@ Calls: 20 · first 2026-10-31T06:32:24+00:00 · last 2026-10-31T06:34:50+00:00 �
 | baseline | dev | 8 | 8257935 | Staff Software Engineer, Alloy Integrations | NOT RELEVANT | NOT RELEVANT | ✓ |
 | baseline | dev | 9 | 8260982 | Software Engineer, Payments | NOT RELEVANT | NOT RELEVANT | ✓ |
 | baseline | dev | 10 | 8232358 | Software Engineer, Stripe Tax | NOT RELEVANT | NOT RELEVANT | ✓ |
+| baseline | heldout | 11 | 8212508 | Software Engineer, Early Career — Immediate Start | RELEVANT | RELEVANT | ✓ |
+| baseline | heldout | 12 | 8128745 | Software Engineer, Intern (Summer or Winter) | RELEVANT | RELEVANT | ✓ |
+| baseline | heldout | 13 | 8328662 | PhD Machine Learning Engineer, Intern | NOT RELEVANT | NOT RELEVANT | ✓ |
+| baseline | heldout | 14 | 8130876 | Software Engineer, New Grad | RELEVANT | NOT RELEVANT | ✗ |
+| baseline | heldout | 15 | 8130883 | Software Engineer, Intern | RELEVANT | NOT RELEVANT | ✗ |
+| baseline | heldout | 16 | 8157838 | Software Engineer, New Grad | RELEVANT | NOT RELEVANT | ✗ |
+| baseline | heldout | 17 | 8175656 | Software Engineer, Security Business Enablement | NOT RELEVANT | NOT RELEVANT | ✓ |
+| baseline | heldout | 18 | 8120494 | Staff Software Engineer, Risk Engineering | NOT RELEVANT | NOT RELEVANT | ✓ |
+| baseline | heldout | 19 | 8127182 | Software Engineer, Revenue and Financial Automation | NOT RELEVANT | NOT RELEVANT | ✓ |
+| baseline | heldout | 20 | 7543868 | Software Engineer, Financial Business Insights | NOT RELEVANT | NOT RELEVANT | ✓ |
 | revision | dev | 1 | 8241260 | High School Internship, Software Engineering (Summer 2027) | NOT RELEVANT | NOT RELEVANT | ✓ |
 | revision | dev | 2 | 8128744 | Software Engineer, New Grad | RELEVANT | RELEVANT | ✓ |
 | revision | dev | 3 | 8333074 | Master's Machine Learning Engineer, Intern | NOT RELEVANT | NOT RELEVANT | ✓ |
@@ -43,3 +53,13 @@ Calls: 20 · first 2026-10-31T06:32:24+00:00 · last 2026-10-31T06:34:50+00:00 �
 | revision | dev | 8 | 8257935 | Staff Software Engineer, Alloy Integrations | NOT RELEVANT | NOT RELEVANT | ✓ |
 | revision | dev | 9 | 8260982 | Software Engineer, Payments | NOT RELEVANT | NOT RELEVANT | ✓ |
 | revision | dev | 10 | 8232358 | Software Engineer, Stripe Tax | NOT RELEVANT | NOT RELEVANT | ✓ |
+| revision | heldout | 11 | 8212508 | Software Engineer, Early Career — Immediate Start | RELEVANT | NOT RELEVANT | ✗ |
+| revision | heldout | 12 | 8128745 | Software Engineer, Intern (Summer or Winter) | RELEVANT | RELEVANT | ✓ |
+| revision | heldout | 13 | 8328662 | PhD Machine Learning Engineer, Intern | NOT RELEVANT | NOT RELEVANT | ✓ |
+| revision | heldout | 14 | 8130876 | Software Engineer, New Grad | RELEVANT | NOT RELEVANT | ✗ |
+| revision | heldout | 15 | 8130883 | Software Engineer, Intern | RELEVANT | NOT RELEVANT | ✗ |
+| revision | heldout | 16 | 8157838 | Software Engineer, New Grad | RELEVANT | NOT RELEVANT | ✗ |
+| revision | heldout | 17 | 8175656 | Software Engineer, Security Business Enablement | NOT RELEVANT | NOT RELEVANT | ✓ |
+| revision | heldout | 18 | 8120494 | Staff Software Engineer, Risk Engineering | NOT RELEVANT | NOT RELEVANT | ✓ |
+| revision | heldout | 19 | 8127182 | Software Engineer, Revenue and Financial Automation | NOT RELEVANT | NOT RELEVANT | ✓ |
+| revision | heldout | 20 | 7543868 | Software Engineer, Financial Business Insights | NOT RELEVANT | NOT RELEVANT | ✓ |
