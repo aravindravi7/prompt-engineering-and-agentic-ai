@@ -346,3 +346,55 @@ I will count a Claude judgment as a pass only if its JSON response passes my val
 If the response is invalid, unavailable, or disagrees with my label, I will count it as a failure.
 
 I will use this same definition for both the sampling report and the prompt experiment.
+
+
+## 2026-10-31: Second Watch Run and First Experiment Results
+
+### Second Watch Run
+
+I ran the watcher again using the live Databricks job board.
+
+I originally predicted around 5 new postings, but the actual result was 23 new postings. There were also 23 postings that were no longer listed.
+
+The RECORD judge marked all 23 new postings as not relevant.
+
+Claude returned 22 valid judgments and 1 invalid judgment. There were no unavailable judgments.
+
+For the Solutions Architect Israel posting, Claude returned a JSON object but added extra explanation after it. My validator rejected the response instead of trying to fix it.
+
+This showed me why strict response validation is important, even when Claude's reasoning appears correct.
+
+### Sampling Report
+
+I ran the sampling test on 5 postings, with 4 fresh Claude calls for each posting.
+
+All 20 responses were valid and matched my labels.
+
+The verdict was not relevant in every run. The explanations had different wording, but the main reasons stayed consistent.
+
+I learned that Claude was consistent on these five postings, but they were mostly easy cases because of location or seniority restrictions.
+
+### Baseline Prompt Experiment
+
+I ran judgment prompt v1 on the 10 development postings.
+
+All 10 answers passed my validator and matched my labels.
+
+However, all 10 postings were labeled not relevant. This means the baseline already has a 100% pass rate, so a revised prompt cannot improve the score on this development set.
+
+I also noticed that Claude sometimes mentioned matching skills in its explanation without listing those same skills in the structured matched_terms field.
+
+### My Prompt Revision Decision and Prediction
+
+I decided to make one small change in judgment prompt v2.
+
+I will add a clearer instruction telling Claude to stop immediately after the closing brace of its JSON response, without adding corrections or explanations afterward.
+
+I chose this change because the second watch run showed a real invalid response caused by extra text after the JSON.
+
+I predict that v2 will still pass 10 out of 10 development postings because v1 already passed all of them.
+
+I also expect little or no difference on the held-out postings because the sample is small and the extra-text problem was uncommon.
+
+I am writing this prediction before running prompt v2.
+
