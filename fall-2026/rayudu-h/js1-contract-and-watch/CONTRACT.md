@@ -2,7 +2,7 @@
 
 > **Authorship.** Claude Code (Opus 5.5) generated the headings as boilerplate on Oct 31, 2026, at Hemanth's request. It then asked Hemanth one question at a time and wrote each answer in. Every decision here (board, persona, the rule, the edge cases, the refusals, the wrong versions, the failure sentence) is Hemanth's answer; the wording is mostly Claude's. The worked example was done by hand by Hemanth. No agent code existed while this was written.
 >
-> Contract written: Oct 31, 2026, between about 4 AM and 2:12 PM ET. The failure sentence is dated 4:52 AM; the management-title test was added at about 2:12 PM. · Commit: [hash of the commit that adds this file, recorded before any code commit]
+> Contract written: Oct 31, 2026, between about 4 AM and 2:12 PM ET. The failure sentence is dated 4:52 AM; the management-title test was added at about 2:12 PM. · Commit: `b88cdbb` (pushed Oct 31, 2026, 14:38 ET, before any code existed). Later edits to this file are only this hash and one corrected timestamp; see `git log -p CONTRACT.md`.
 
 ## In
 
@@ -96,7 +96,7 @@ Two plausible-but-wrong implementations the tests must catch.
 ### Wrong version 1: "new" keyed on the wrong id
 
 - **What it does:** it remembers `requisition_id`, or `internal_job_id`, instead of the posting `id`.
-- **Why it looks right:** both are numbers on every posting, and most of the time they're unique. On the Anthropic board fetched 2026-10-31 03:39 ET, 675 postings had 675 distinct `id`s but only 621 distinct `requisition_id`s. So the wrong version works on most postings and silently drops the rest.
+- **Why it looks right:** both are numbers on every posting, and most of the time they're unique. On the Anthropic board fetched 2026-10-31 03:36 ET (corrected after commit b88cdbb, which said 03:39; the file timestamp is 03:36:51), 675 postings had 675 distinct `id`s but only 621 distinct `requisition_id`s. So the wrong version works on most postings and silently drops the rest.
 - **The test that catches it:** `test_new_is_keyed_on_posting_id`. The input is a constructed, labeled fixture with two runs:
   - Run 1, the baseline: posting `id` 1 with `requisition_id` R.
   - Run 2: adds posting `id` 2 with the **same** `requisition_id` R.
