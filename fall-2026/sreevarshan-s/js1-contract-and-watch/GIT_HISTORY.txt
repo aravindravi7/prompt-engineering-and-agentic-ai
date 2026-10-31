@@ -33,3 +33,6 @@ f3399e8d7b22f02cc7bbcc3b94a0782cc93f59d9 | 2026-10-31T11:50:26-04:00 | Sreevarsh
 c3ef8c442a2ae98da5397ff60cc51da83579cc42 | 2026-10-31T12:06:29-04:00 | Sreevarshan Sathiyamurthy | yes | Prompt experiment report, dev complete, held-out pending rerun (2026-10-31)
 27c3833c5da2221710cb9c0c20b24e3ce706d699 | 2026-10-31T12:08:28-04:00 | Sreevarshan Sathiyamurthy | yes | Packaging script, dry run only (2026-10-31)
 a0a0c545d8e57c12e80198cbd00e3a5b53186c1c | 2026-10-31T12:23:59-04:00 | Sreevarshan Sathiyamurthy | yes | Packaging script: fixture allow-list, redaction in copy, self-skip (2026-10-31)
+71e8f56751f78ecbc996be71ddbd612eab7f5e0e | 2026-10-31T14:30:15-04:00 | Sreevarshan Sathiyamurthy | yes | Held-out prompts for manual app run, CLI usage-limited (2026-10-31)
+f5c008d8a52cb8279f7e2d399d0a1d9051664866 | 2026-10-31T14:47:29-04:00 | Sreevarshan Sathiyamurthy | no | Held-out run in Claude app (incognito, Sonnet 4.6, web search off), run by me: baseline 10/10, revised 10/10, rule 9/10. 3 spoiled saves (wrong posting, chat text, a command) kept in spoiled/ and redone (2026-10-31)
+0fc8e26b6bf49284d9c3982ef39bb3b54401c1de | 2026-10-31T14:48:40-04:00 | Sreevarshan Sathiyamurthy | yes | Held-out results, always-not-relevant baseline, sign-off signed (2026-10-31)

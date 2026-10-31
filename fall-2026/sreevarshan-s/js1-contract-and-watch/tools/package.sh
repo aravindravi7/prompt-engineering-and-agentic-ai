@@ -18,8 +18,8 @@
 # (so the copied files match HEAD and the bundle). PACKAGE_ALLOW_DIRTY=1 skips that check, only
 # for dry runs of an uncommitted version of this script; such a package does not match HEAD.
 #
-# Redaction: in the copy only, the home-folder path in experiments/sampling/spoiled/ and in
-# tests/test_persona.py is replaced with "~". Those files then differ from HEAD and the bundle;
+# Redaction: in the copy only, the home-folder path in experiments/sampling/spoiled/,
+# experiments/heldout_app/spoiled/ and tests/test_persona.py is replaced with "~". Those files then differ from HEAD and the bundle;
 # TARGET_DIR/REDACTED.txt lists them.
 
 set -euo pipefail
@@ -67,7 +67,7 @@ git bundle create "$TARGET/history.bundle" --all
 # 3. Tracked files.
 git ls-files -z | tar --null -T - -cf - | tar -xf - -C "$TARGET"
 
-# 3b. Redact the home-folder path in the copies of the spoiled sampling files (pasted shell text)
+# 3b. Redact the home-folder path in the copies of the spoiled sampling and held-out files (pasted shell text)
 #     and of tests/test_persona.py (source-résumé path; that test skips when the path is missing).
 python3 - "$TARGET" "$HOME" <<'PY'
 import sys
@@ -75,7 +75,9 @@ from pathlib import Path
 
 target, home = Path(sys.argv[1]), sys.argv[2]
 changed = []
-paths = sorted((target / "experiments" / "sampling" / "spoiled").glob("*")) + [target / "tests" / "test_persona.py"]
+paths = (sorted((target / "experiments" / "sampling" / "spoiled").glob("*"))
+         + sorted((target / "experiments" / "heldout_app" / "spoiled").glob("*"))
+         + [target / "tests" / "test_persona.py"])
 for path in paths:
     text = path.read_text(encoding="utf-8")
     if home in text:
@@ -100,8 +102,10 @@ target = Path(sys.argv[1])
 EMAIL = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 PHONE = re.compile(r"(?<![\w.])(?:\+?1[\s.-]?)?\(?(\d{3})\)?[\s.-](\d{3})[\s.-](\d{4})(?![\w.])")
 NAME = re.compile(r"sreevarshan|sathiyamurthy", re.I)
-# Author/credit lines: markdown headings naming the author, and the author column of GIT_HISTORY.txt.
+# Author/credit lines: markdown headings naming the author, the README sign-off signature line,
+# and the author column of GIT_HISTORY.txt.
 CREDIT_HEADING = re.compile(r"^#+ .*Sreevarshan Sathiyamurthy")
+SIGNATURE = re.compile(r"^Signed: Sreevarshan Sathiyamurthy, \d{4}-\d{2}-\d{2}$")
 # Deliberate refusal fixtures: values the tests feed in to prove they are refused. Exact values only.
 FIXTURES = {
     ("tests/test_persona.py", "email", "someone@gmail.com"),
@@ -133,7 +137,8 @@ for path in sorted(p for p in target.rglob("*") if p.is_file()):
             if m.group(2) != "555":
                 hits.append((rel, n, "phone", m.group(0)))
         if NAME.search(line):
-            credit = CREDIT_HEADING.search(line) or str(rel) == "GIT_HISTORY.txt"
+            credit = (CREDIT_HEADING.search(line) or str(rel) == "GIT_HISTORY.txt"
+                      or (str(rel) == "README.md" and SIGNATURE.match(line)))
             if not credit:
                 m = NAME.search(line)
                 hits.append((rel, n, "name", line[max(0, m.start() - 40):m.end() + 40].strip()))

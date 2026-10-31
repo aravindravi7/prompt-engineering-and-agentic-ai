@@ -29,6 +29,8 @@ Run from the repository root.
 | `python3 -m experiments.run_experiment --split heldout` | Same, on the held-out split. Refused (exit 7) until `experiments/results_dev.md` exists. |
 | `python3 -m experiments.sampling build` | Writes the full baseline prompt for each of the 5 sampling postings to `experiments/sampling/prompts/`. Uses the judge's own prompt-building code. No Claude call. |
 | `python3 -m experiments.sampling check experiments/sampling/replies/*.txt` | Checks saved reply files with the judge's JSON validator. Prints valid plus the verdict, or invalid plus the reason. Exits 4 if any reply is invalid. |
+| `python3 -m experiments.heldout_app build` | Writes the baseline and revised prompt for each of the 10 held-out postings to `experiments/heldout_app/prompts/`, byte for byte what the judge would send. No Claude call. |
+| `python3 -m experiments.heldout_app score` | Checks the saved held-out replies in `experiments/heldout_app/replies/` with the judge's validator, scores them against `labels/HAND_LABELS.md` with the dev pass rule, runs the rule judge, and writes `experiments/results_heldout_app.md`. |
 | `python3 -m experiments.sampling_report` | Prints the sampling results table used in `experiments/SAMPLING_REPORT.md`, computed from the reply files. |
 
 **Choices Claude Code made where the contract left room:** see [IMPLEMENTATION_CHOICES.md](IMPLEMENTATION_CHOICES.md).
@@ -37,7 +39,7 @@ Run from the repository root.
 
 ### Checked
 
-**Automated tests.** The last full run, on 2026-10-31 before this commit, ran 76 tests and all passed:
+**Automated tests.** The last full run, on 2026-10-31 before this commit, ran 78 tests and all passed:
 
 | test file | tests |
 |---|---|
@@ -46,6 +48,7 @@ Run from the repository root.
 | `tests/test_claude_judge.py` | 15 |
 | `tests/test_experiment.py` | 7 |
 | `tests/test_fetch.py` | 2 |
+| `tests/test_heldout_app.py` | 2 |
 | `tests/test_persona.py` | 8 |
 | `tests/test_rule_judge.py` | 22 |
 | `tests/test_sampling.py` | 2 |
@@ -60,7 +63,8 @@ Run from the repository root.
 | `0dd01ab` | Second live watch run, 2026-10-30T23:59:22Z | 901 fetched, 10 new, 14 removed; rule records saved |
 | `bb1f877`, `c047608` | Claude judge smoke test on CONSTRUCTED posting 8000002 | First run: "Not logged in" twice. Then valid. Then valid with the pinned model recorded |
 | `d7411f4` | Prompt experiment, dev split | Baseline 10/10, revised 9/10, rule 9/10 |
-| `4a46925` | Prompt experiment, held-out split | Rule 9/10. 38 of the 39 Claude calls made failed on the usage limit, so the Claude results are not usable |
+| `4a46925` | Prompt experiment, held-out split, CLI | Rule 9/10. 38 of the 39 Claude calls made failed on the usage limit, so the Claude results are not usable |
+| `f5c008d` | Prompt experiment, held-out split, rerun in the Claude app with the prompts from `71e8f56` | Baseline 10/10, revised 10/10, rule 9/10. One reply per prompt, no retry |
 | `6064e8e` | Sampling in the Claude app, 5 dev postings × 4 chats | 19/20 valid, all "not relevant" |
 | `3484999` | Action-surface comparison on 8546367002 | Included one live GET of that posting from Greenhouse. Also the two usage-limit smoke-test failures from 2026-10-31 |
 
@@ -68,7 +72,7 @@ Run from the repository root.
 
 **My words (verbatim):**
 
-**Q24.** I'll manually verify selected posting verdicts and inspect the saved response and state files. I'll use automated tests to check the contract's rules and compare their outputs with my own expectations. I'll distinguish tests based on my contract decisions from tests Claude Code wrote. [correction: all 76 tests in `tests/` were written by Claude Code; some encode my contract decisions, but the repo does not yet mark which ones.]
+**Q24.** I'll manually verify selected posting verdicts and inspect the saved response and state files. I'll use automated tests to check the contract's rules and compare their outputs with my own expectations. I'll distinguish tests based on my contract decisions from tests Claude Code wrote. [correction: all 78 tests in `tests/` were written by Claude Code; some encode my contract decisions, but the repo does not yet mark which ones.]
 
 **What I ran myself, by commit:**
 - **In Terminal:**
@@ -80,6 +84,7 @@ Run from the repository root.
   - `3484999`: the smoke test at 2026-10-31T01-36-35Z, which hit the usage limit.
 - **In the Claude app:**
   - `6064e8e`: the 20 sampling chats, with the replies saved by hand. I also made this commit.
+  - `f5c008d`: the 20 held-out chats, with the replies saved by hand. I also made this commit.
 
 ### Not checked
 
@@ -95,14 +100,16 @@ Run from the repository root.
 - **8760167002:** the rule judge passed it as "relevant" despite its Secret-clearance-eligibility requirement (`results_heldout.md`).
 - **Unity Catalog:** it appears in the Databricks boilerplate of every posting (905 of 905 in the baseline, 901 of 901 in the second run), so it matches every posting.
 - **Sponsorship:** no posting among the 905 mentions visa sponsorship. The word "visa" appears in none, and every "sponsor" match is business usage. So check 6 returned "unknown" for every live posting and never decided a verdict.
-- **Hand labels:** all 20 are "not relevant", so no relevant posting has been tested against a hand label.
-- **Held-out Claude results:** still pending a rerun after the usage limit.
+- **Hand labels:** all 20 are "not relevant", so no relevant posting has been tested against a hand label. A prompt that always answered "not relevant" would score 10/10 on both splits.
+- **Held-out Claude results:** complete (`f5c008d`), but run in the Claude app with one reply per prompt and no retry, not through the CLI judge used for dev.
 
 ### Not claiming
 
 **My words (verbatim):**
 
 **Q26.** I'm not claiming that this agent can guarantee job eligibility, predict whether a company will hire someone, or submit applications. It only identifies potentially relevant new postings based on the supplied persona and documented rules.
+
+Signed: Sreevarshan Sathiyamurthy, 2026-10-31
 
 ## Driver's seat
 
@@ -120,11 +127,12 @@ Run from the repository root.
 |---|---|---|---|
 | `8cfa417`, `d6c24ff`, `2860740`, `67d61b8`, `9b34061`, `c8c2772`, `4da69e5`, `dfb37a7`, `b8a5b81` | Contract Drafts 0–8 | My text, appended verbatim by Claude Code. In Drafts 6, 7 and 8 the same commit also folds my sentences into the Final section | none |
 | `31d20fa`, `e7f7362` | Contract Final section (restructure, then the Draft 5 fold) | My sentences verbatim, arranged and source-tagged by Claude Code; I approved before commit | none |
-| `ee73eca`, `04ef802`, `1110661`, `a4021ff`, `bb1f877`, `c047608`, `388e788`, `9b2ef89`, `f3399e8`, `3484999` | Code, tests, prompts, smoke-test evidence, sampling prompts and report, action-surface comparison | Claude Code | Claude Code |
+| `ee73eca`, `04ef802`, `1110661`, `a4021ff`, `bb1f877`, `c047608`, `388e788`, `9b2ef89`, `f3399e8`, `3484999`, `71e8f56` | Code, tests, prompts, smoke-test evidence, sampling prompts and report, action-surface comparison, held-out app prompts and scorer | Claude Code | Claude Code |
 | `24ffb13` | `LABELING_RULE.md` | My text | none |
 | `f18cbae` | Label set: label sheets and the method paragraph in `LABEL_SET.md` | Written by Claude Code, committed with no co-author line (the exception) | none |
 | `f55b88d` | `labels/HAND_LABELS.md` | My labels and reasons; ChatGPT formatted my notes into the table | none |
 | `6beef48`, `0dd01ab`, `d7411f4`, `4a46925` | Live run evidence | Run by me in Terminal. I committed `0dd01ab`, `d7411f4` and `4a46925` myself | none |
 | `6064e8e` | Sampling replies | Run by me in the Claude app and committed by me | none |
+| `f5c008d` | Held-out replies and results | Run by me in the Claude app and committed by me | none |
 
 The Final-section commits (`31d20fa`, `e7f7362`) and the fold parts of `4da69e5`, `dfb37a7` and `b8a5b81` also contain Claude Code's arrangement of my sentences without a co-author line. The words are mine; the ordering and source tags are Claude Code's.

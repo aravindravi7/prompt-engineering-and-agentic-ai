@@ -76,10 +76,40 @@ There were 4 rejections, all for the same reason: `resume_field 'resume_experien
 - **First held-out run:** 2026-10-31T01-26-20Z (UTC), run by me in Terminal, commit `4a46925`. Evidence is in `evidence/experiment/heldout/2026-10-31T01-26-20Z/`, with the results table in `experiments/results_heldout.md`.
 - **Claude calls failed:** 38 of the 39 calls made failed with exit code 1 and "You've hit your limit · resets 8pm (America/New_York)". The only valid result was the baseline on 7958982002. The Claude scores for this run (baseline 1/10, revised 0/10) reflect the usage limit, not the prompts.
 - **Rule judge:** 9/10. It passed 8760167002 ("AI Engineer – Forward Deployed Engineering (AI FDE), U.S. Public Sector (Federal Focus)") as "relevant" despite that posting's Secret-clearance-eligibility requirement.
-- **Rerun:** the Claude held-out run is to be rerun after the limit resets, with the same prompts and the same validator (commit `4a46925`: "to be rerun after reset with the same prompts"). I will update this section after the rerun.
+- **Rerun in the Claude app:** run by me in the Claude app (incognito, Sonnet 4.6, web search off), commit `f5c008d`. Results table in `experiments/results_heldout_app.md`, produced by `python3 -m experiments.heldout_app score`.
+  - **Prompts:** `experiments/heldout_app/prompts/`, byte-identical to what `js1.claude_judge` would send (commit `71e8f56`).
+  - **Surface differs from dev:** one reply per prompt per posting, saved by hand, with no retry. The dev run used the CLI with one retry on an invalid reply.
+  - **Validator:** the same `js1.claude_judge.validate` as in the dev run. It rejected no held-out reply.
+  - **Spoiled saves:** 3 saves were spoiled and redone; they are kept in `experiments/heldout_app/spoiled/`. One was the reply for 8574655002 saved as 8560779002-revised. One was chat text instead of a reply (8870159002-baseline). One was a shell command instead of a reply (8923831002-baseline).
+
+| posting_id | title | my hand label | rule verdict | baseline verdict | revised verdict | baseline | revised |
+|---|---|---|---|---|---|---|---|
+| 7958982002 | Staff Software Engineer - Machine Learning (Search) | not relevant | not relevant | not relevant | not relevant | pass | pass |
+| 8091041002 | Applied AI Engineer | not relevant | not relevant | not relevant | not relevant | pass | pass |
+| 8540267002 | Senior Staff Applied AI Engineer - Context Retrieval | not relevant | not relevant | not relevant | not relevant | pass | pass |
+| 8560779002 | Software Engineer, Web Products | not relevant | not relevant | not relevant | not relevant | pass | pass |
+| 8574655002 | AI Engineer - FDE (Forward Deployed Engineer) | not relevant | not relevant | not relevant | not relevant | pass | pass |
+| 8656900002 | Senior Applied ML Engineer - ML4Sys | not relevant | not relevant | not relevant | not relevant | pass | pass |
+| 8760167002 | AI Engineer – Forward Deployed Engineering (AI FDE), U.S. Public Sector (Federal Focus) | not relevant | relevant | not relevant | not relevant | pass | pass |
+| 8829033002 | AI Automation Engineer | not relevant | not relevant | not relevant | not relevant | pass | pass |
+| 8870159002 | Specialist Solutions Architect - Data Engineering | not relevant | not relevant | not relevant | not relevant | pass | pass |
+| 8923831002 | Staff Machine Learning Engineer, CustomerLake (ML/LLM) | not relevant | not relevant | not relevant | not relevant | pass | pass |
+
+- **Baseline:** 10/10
+- **Revised:** 10/10
+- **Rule:** 9/10. It missed 8760167002, as in the CLI attempt.
+
+**What these scores can show.** All 20 hand labels are "not relevant". A prompt that always answered "not relevant" would score 10/10 on dev and 10/10 on held-out. So neither prompt's score shows that it can find relevant postings. The revision stays dropped under my rule (Q11), because it did not improve the dev pass rate.
+
+### Observations from the 20 held-out replies
+
+All 20 replies gave the verdict that matches my hand label, but some of the reasons they gave do not follow the contract:
+- **Upper end of a year range treated as the cap: 2 of 20.** Both replies on 8091041002 (baseline and revised) read "2-8 years" as 8 years, over the cap. CONTRACT.md D2§3 says a range uses its lower end as the minimum. Both replies also failed the posting on location.
+- **Preferred-only requirement treated as required: 2 of 20.** On 8656900002, "4+ years of machine learning engineering experience" is listed under "Preferred Skills". Both replies failed the posting on it. The baseline called it "a preferred/industry qualification" and failed it anyway; the revised reply said the description "explicitly requires" it. My hand label rejects this posting on its Senior title.
+- **Location given as a reason: 10 of 20.** Both replies on each of 7958982002 (Bengaluru), 8091041002 (Belgrade), 8574655002 (Seoul), 8829033002 (Costa Rica) and 8870159002 (Amsterdam) failed the posting because a non-US location does not resolve `needs_sponsorship`. On 8829033002 location was the only failing reason given.
 
 ## 5. Limits
 
 - **No relevant postings:** all 20 hand labels are "not relevant". Neither split can show whether a prompt finds relevant postings; it can only show whether it avoids wrong "relevant" verdicts.
-- **Validator bug left in place:** both splits use the same validator. Its `resume_experience_tools` bug was deliberately not fixed between splits, so the held-out run is judged by the same rules as the dev run. In the first held-out run it rejected no replies, because only 1 call returned a reply.
+- **Validator bug left in place:** both splits use the same validator. Its `resume_experience_tools` bug was deliberately not fixed between splits, so the held-out run is judged by the same rules as the dev run. In the first held-out run it rejected no replies, because only 1 call returned a reply. In the app rerun it rejected none of the 20 replies.
 - **Small sample:** 10 postings per split, one run each. The separate sampling check (`experiments/SAMPLING_REPORT.md`) found the same verdict in every valid repeat of the baseline prompt, but different skills cited from run to run.

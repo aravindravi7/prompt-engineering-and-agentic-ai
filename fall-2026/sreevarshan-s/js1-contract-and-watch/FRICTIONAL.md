@@ -16,7 +16,7 @@
 - **Repeated Claude sampling:** done in the Claude app, `6064e8e`, with the report in `f3399e8`. 19/20 valid, all "not relevant".
 - **Prompt experiment:**
   - Dev split done, `d7411f4`: baseline 10/10, revised 9/10, rule 9/10.
-  - Held-out split: the rule results are done (9/10), but the Claude results are unusable because of the usage limit (`4a46925`). A rerun is pending.
+  - Held-out split: the CLI attempt was unusable because of the usage limit (`4a46925`). Rerun in the Claude app, `f5c008d`: baseline 10/10, revised 10/10, rule 9/10.
 - **Action-surface comparison:** done on 8546367002, `3484999`.
 
 ## Log
@@ -46,3 +46,7 @@ All entries come from the commits and notes in this repo or from the Claude Code
 **2026-10-30: usage limit during held-out.** In the held-out run (2026-10-31T01-26-20Z), 38 of the 39 Claude calls made failed with "You've hit your limit · resets 8pm (America/New_York)" (`4a46925`). Two later smoke tests hit the same limit (`3484999`).
 
 **2026-10-31: spoiled sampling runs.** 5 sampling runs were spoiled by my clipboard mistakes and redone. Shell text was saved instead of a reply three times (8546367002 runs 1–3), and the prompt was saved instead of a reply twice (8648494002 runs 3–4). The spoiled files are kept in `experiments/sampling/spoiled/` (`6064e8e`).
+
+**2026-10-31: held-out rerun in the Claude app.** The CLI was still usage-limited, so I ran the held-out split by hand in the Claude app (incognito, Sonnet 4.6, web search off). I used prompts that are byte-identical to the judge's (`71e8f56`), one reply per prompt and no retry (`f5c008d`).
+- **3 spoiled saves, redone:** the reply for 8574655002 was saved as 8560779002-revised; chat text was saved instead of a reply for 8870159002-baseline; a shell command was saved instead of a reply for 8923831002-baseline.
+- **Kept:** the spoiled files are in `experiments/heldout_app/spoiled/`.
