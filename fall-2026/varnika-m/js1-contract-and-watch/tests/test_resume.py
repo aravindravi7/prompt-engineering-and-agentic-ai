@@ -29,7 +29,7 @@ class FictionalCheck(unittest.TestCase):
 
     def test_email_outside_example_com_is_refused(self):
         with self.assertRaises(ResumeRefused):
-            load_resume(self.changed(email="aarav.patel@gmail.com"))
+            load_resume(self.changed(email="aarav.patel@realmail.invalid"))
 
     def test_lookalike_domain_is_refused(self):
         with self.assertRaises(ResumeRefused):

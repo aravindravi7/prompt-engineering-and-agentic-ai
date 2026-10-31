@@ -149,7 +149,7 @@ A practice call made while building the agent is not evidence and is not in this
 - That revision-v1 is better than baseline-v1.
 - That any result holds for another board, persona, model or day.
 
-**Signed or withheld:** ____________ (name, date)
+**Signed or withheld:** Varnika M, 2026-10-31
 
 ## Driver's seat
 

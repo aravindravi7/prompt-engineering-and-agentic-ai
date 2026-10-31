@@ -123,7 +123,7 @@ class Evidence(WatchTest):
     def test_non_fictional_resume_is_refused_before_any_fetch(self):
         real = self.dir / "real.json"
         resume = json.loads(PERSONA.read_text())
-        resume["personal"]["email"] = "someone@gmail.com"
+        resume["personal"]["email"] = "someone@realmail.invalid"
         real.write_text(json.dumps(resume))
 
         def fetcher(url):
