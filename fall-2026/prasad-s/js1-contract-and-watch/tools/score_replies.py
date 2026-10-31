@@ -9,9 +9,11 @@ accepts it AND its verdict equals the hand label; a rejected reply is a FAIL.
 Then totals. For sampling keys (<posting_id>_r<N>) it also prints, per
 posting, the verdicts of the repeats, how many were accepted, and whether
 the RESUME_FIELD and POSTING_FIELD lines were identical across the repeats.
+With --split, only the replies whose metadata "split" equals that value are
+scored (sampling replies have no split, so --split is refused for them).
 
 Usage:
-    python3.13 tools/score_replies.py FOLDER [--labels FILE]
+    python3.13 tools/score_replies.py FOLDER [--labels FILE] [--split development|held_out]
 """
 
 import argparse
@@ -33,6 +35,7 @@ SELECTED_IDS = JS1 / "experiments" / "selected_ids.json"
 PERSONA = JS1 / "resume_persona.json"
 SAMPLING_KEY = re.compile(r"(\d+)_r(\d+)")
 FIELD_LINES = ("RESUME_FIELD: ", "POSTING_FIELD: ")
+SPLITS = ("development", "held_out")
 
 
 class ScoreError(Exception):
@@ -77,6 +80,16 @@ def check_entry(key, entry, folder):
         return path.read_bytes().decode("utf-8"), []
     except (OSError, UnicodeDecodeError) as exc:
         return None, [f"{expected} cannot be read as UTF-8: {exc}"]
+
+
+def select_split(metadata, split):
+    """The metadata entries whose "split" equals split. Every entry must have a split."""
+    for key, entry in sorted(metadata.items()):
+        if not isinstance(entry, dict) or "split" not in entry:
+            sampling = isinstance(entry, dict) and entry.get("set") == "sampling"
+            raise ScoreError(f"--split needs a 'split' in every metadata entry; {key} has none"
+                             + (" (sampling replies have no split)" if sampling else ""))
+    return {key: entry for key, entry in metadata.items() if entry["split"] == split}
 
 
 def field_lines(text, prefix):
@@ -157,6 +170,7 @@ def main(argv=None):
                                      description="Score saved Claude replies against experiments/scoring.md.")
     parser.add_argument("folder", help="folder with the reply .txt files and their metadata.json")
     parser.add_argument("--labels", metavar="FILE", help="hand-labels file (for PASS/FAIL)")
+    parser.add_argument("--split", choices=SPLITS, help="score only the replies with this metadata split")
     args = parser.parse_args(argv)
     try:
         metadata, error = load_metadata(args.folder)
@@ -166,7 +180,13 @@ def main(argv=None):
         check_persona(persona)  # the same résumé check the agent runs before judging
         source, postings = load_postings(SELECTED_IDS)
         labels = load_labels(args.labels, source) if args.labels else None
+        header = []
+        if args.split:
+            selected = select_split(metadata, args.split)
+            header = [f"split: {args.split} ({len(selected)} of {len(metadata)} replies in metadata.json)"]
+            metadata = selected
         lines, _ = score(args.folder, metadata, persona, postings, labels)
+        lines = header + lines
     except (OSError, ValueError, KeyError, TypeError, RunError, Refusal, ScoreError) as exc:
         print(f"error: cannot score {args.folder}: {exc}", file=sys.stderr)
         return 1

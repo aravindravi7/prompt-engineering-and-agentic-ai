@@ -123,6 +123,36 @@ class ScoreReplies(unittest.TestCase):
             "replies: 2  accepted: 0  rejected: 2  PASS: 0  pass rate: 0/2 = 0%",
         ])
 
+    def test_split_scores_only_that_split(self):
+        metadata = {"71": dict(entry("71"), split="development"), "72": dict(entry("72"), split="held_out")}
+        folder = self.write_folder("baseline", {"71": RELEVANT_SQL, "72": NOT_RELEVANT}, metadata)
+        heldout_labels = self.write_json("heldout.json", dict(LABELS, labels=LABELS["labels"][1:]))
+        code, out, err = run_tool(str(folder), "--split", "held_out", "--labels", str(heldout_labels))
+        self.assertEqual((code, err), (0, ""))
+        self.assertEqual(out.splitlines(), [
+            "split: held_out (1 of 2 replies in metadata.json)",
+            "72.txt  accepted  judgment (Claude): not_relevant  hand: relevant  FAIL",
+            "replies: 1  accepted: 1  rejected: 0  PASS: 0  pass rate: 0/1 = 0%",
+        ])
+        code, out, _ = run_tool(str(folder), "--split", "development", "--labels", str(self.labels))
+        self.assertEqual(out.splitlines(), [
+            "split: development (1 of 2 replies in metadata.json)",
+            "71.txt  accepted  judgment (Claude): relevant  hand: relevant  PASS",
+            "replies: 1  accepted: 1  rejected: 0  PASS: 1  pass rate: 1/1 = 100%",
+        ])
+        code, out, _ = run_tool(str(folder), "--labels", str(self.labels))  # no --split: as before
+        self.assertEqual(out.splitlines()[-1], "replies: 2  accepted: 2  rejected: 0  PASS: 1  pass rate: 1/2 = 50%")
+
+    def test_split_is_refused_for_sampling(self):
+        sampling_metadata = {key: dict(entry(key, key.split("_")[0]), set="sampling") for key in SAMPLING}
+        folder = self.write_folder("sampling_set", SAMPLING, sampling_metadata)
+        for split in ("development", "held_out"):
+            with self.subTest(split):
+                code, out, err = run_tool(str(folder), "--split", split, "--labels", str(self.labels))
+                self.assertNotEqual(code, 0)
+                self.assertEqual(out, "")
+                self.assertIn("sampling replies have no split", err)
+
     def test_unscoreable_input_is_an_error_with_no_output(self):
         other_source = self.write_json("other.json", dict(LABELS, source="evidence/other.json"))
         one_label = self.write_json("one.json", dict(LABELS, labels=LABELS["labels"][:1]))

@@ -7,6 +7,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 from support import JS1, persona
 
@@ -79,6 +80,16 @@ class CompareHandLabels(unittest.TestCase):
         code, out, err = run_tool(str(self.labels))
         self.assertEqual((code, err), (0, ""))
         self.assertEqual(out.splitlines(), EXPECTED)
+
+    def test_labels_file_argument_and_default(self):
+        heldout = self.write_labels(LABELS[:1], "hand_labels_heldout.json")
+        code, out, _ = run_tool(str(heldout))
+        self.assertEqual(code, 0)
+        self.assertEqual(out.splitlines(), [EXPECTED[0], "labels: 1  agree: 1  disagree: 0  C1 differs: 0  "
+                                                         "C2 differs: 0  C3 differs: 0  verdict differs: 0"])
+        with mock.patch.object(compare_hand_labels, "DEFAULT_LABELS", self.labels):
+            code, out, _ = run_tool()  # no argument: the default labels file
+        self.assertEqual((code, out.splitlines()), (0, EXPECTED))
 
     def test_totals(self):
         doc = {"source": "board.json", "labels": LABELS}

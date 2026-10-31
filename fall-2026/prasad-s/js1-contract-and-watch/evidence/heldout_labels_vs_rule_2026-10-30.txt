@@ -1,0 +1,11 @@
+7774312  hand: C1=false  C2=true  C3=false  not_relevant  rule: C1=false  C2=true  C3=false  not_relevant  agree
+7812856  hand: C1=true  C2=true  C3=false  not_relevant  rule: C1=true  C2=true  C3=false  not_relevant  agree
+7832098  hand: C1=false  C2=false  C3=false  not_relevant  rule: C1=false  C2=false  C3=false  not_relevant  agree
+7861422  hand: C1=false  C2=false  C3=false  not_relevant  rule: C1=false  C2=false  C3=false  not_relevant  agree
+7913698  hand: C1=true  C2=true  C3=false  not_relevant  rule: C1=true  C2=true  C3=false  not_relevant  agree
+7913702  hand: C1=true  C2=true  C3=false  not_relevant  rule: C1=true  C2=true  C3=false  not_relevant  agree
+7954207  hand: C1=false  C2=false  C3=false  not_relevant  rule: C1=false  C2=false  C3=false  not_relevant  agree
+7961101  hand: C1=false  C2=true  C3=false  not_relevant  rule: C1=false  C2=true  C3=false  not_relevant  agree
+7975698  hand: C1=false  C2=false  C3=false  not_relevant  rule: C1=false  C2=false  C3=false  not_relevant  agree
+7980578  hand: C1=false  C2=false  C3=false  not_relevant  rule: C1=false  C2=false  C3=false  not_relevant  agree
+labels: 10  agree: 10  disagree: 0  C1 differs: 0  C2 differs: 0  C3 differs: 0  verdict differs: 0
