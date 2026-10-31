@@ -90,6 +90,9 @@ calls to `claude -p` (raw replies with timestamps in the `.jsonl` files).
 ## Sign-off — Job-Search Agent 1
 
 **Checked**
+- A fresh copy of only the committed files (`git archive` of this folder into `/tmp`)
+  ran the README commands: 42 tests OK; the seeded runs reproduced 0 new, then
+  7 new / 2 relevant by rule, with the same SHA-256 hashes.
 - Allow-list refuses other hosts, `http://`, and off-host redirects before any network
   call: `tests/test_fetch.py`. Persona validation rejects non-`@example.com` emails and
   non-555 phones without echoing them: `tests/test_resume.py`.
