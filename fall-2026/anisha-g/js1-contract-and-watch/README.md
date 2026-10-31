@@ -11,7 +11,7 @@ python3 agent.py run --board klaviyo                     # run 1: baseline (repo
 python3 agent.py run --board klaviyo                     # run 2: later / next day: reports new postings only
 # if the board has not changed, a SEEDED second run (clearly labelled):
 python3 agent.py seed runs/<run1>-raw.json --drop 3 --out runs/seeded-earlier.json
-rm state/seen.json && python3 agent.py run --from-file runs/seeded-earlier.json && python3 agent.py run --from-file runs/<run1>-raw.json
+cp state/seen.json /tmp/seen-live.json && rm state/seen.json && python3 agent.py run --from-file runs/seeded-earlier.json && python3 agent.py run --from-file runs/<run1>-raw.json && mv state/seen.json state/seen-seeded.json && cp /tmp/seen-live.json state/seen.json   # keeps the live state
 python3 agent.py labels runs/<run1>-raw.json --analytics-only   # 20 postings for hand labels -> labels/labels.csv
 python3 agent.py experiment runs/<run1>-raw.json --split dev     # baseline vs revised prompt on 10 dev postings
 python3 agent.py experiment runs/<run1>-raw.json --split heldout # only at the end
@@ -23,6 +23,8 @@ All on 2026-10-31.
 - **Tests:** `python3 -m unittest discover -s tests -v` → `Ran 9 tests … OK` (my Mac). After I added the runtime persona check (`load_resume` refuses a résumé without an @example.com email and a 555 phone): `Ran 10 tests … OK`.
 - **Run 1 (live, baseline):** `runs/2026-10-31T173836-live-raw.json` — 156 postings on Klaviyo's board, 0 reported as new (baseline), ids saved in `state/seen.json` (my Mac).
 - **Run 2 (SEEDED, clearly constructed):** the board did not change within the evening, so I used the assignment's "saved earlier response" option. `runs/seeded-earlier.json` = run 1's real response minus its 3 highest ids. Baseline on it: `2026-10-31T175858-SEEDED` → 153 postings, 0 new. Replay of the real response: `2026-10-31T175859-from-saved` → **3 new** (Associate Growth Specialist German-Speaker; Lead Product Data Scientist, Agents; Lead Product Data Scientist, Forecasting). Rule and Claude both said `not_relevant` for all three; all three Claude replies passed the validator. State: `state/seen-seeded.json`.
+- **Run 2b (live, second real run, ~6:26 PM):** `2026-10-31T182630-live: 156 on board, baseline=False, new=0 -> runs/2026-10-31T182630-live-report.json`. Result: no postings were new since run 1. Judged by the written rule only (`--no-claude`), because my Claude Code was still at its spend limit.
+- **Note:** `runs/2026-10-31T173836-live-report.json` is empty (0 bytes) and I don't know why. The evidence for run 1 is its raw response (`runs/2026-10-31T173836-live-raw.json`, 156 postings) and `state/seen.json`, which recorded 156 ids with `last_run` `2026-10-31T173836-live` before run 2b.
 - **Claude calls:** my own Claude Code hit its spend limit (`You've hit your individual spend limit`, exit 1) at ~5:56 pm, so my first experiment run produced 60 empty replies, all correctly rejected as `INVALID`. The real runs (dev, held-out, sampling, and run 2's three judgments) were made with `claude -p` in Claude's workspace at ~6:00 pm on the same code, raw response and labels. At ~6:17 pm, dev, held-out and sampling were rerun so that every raw reply is saved with its time (`raw_reply`, `at` in `reports/*.json`); the 6:00 pm verdict-only files are in `reports/first-run-1800-verdicts-only/`. Nothing in the prompts changed between the dev and held-out runs. See FRICTIONAL.md.
 
 ## Files
