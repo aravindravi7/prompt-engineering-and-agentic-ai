@@ -91,7 +91,7 @@
 ## Oct 31, 6:24 PM: the second live run
 
 - **What happened:** 0 new postings, but the raw response changed (sha256 `2cc748f7…` vs `1e5b62fe…`). Comparing the two showed one posting edited at 15:08 (location narrowed); the 675 ids were the same.
-- **What I learned:** the agent only notices new ids. An edited posting, for example one that moves to Boston or changes its description, is never reported. That's what my contract says, but it's a real gap for JS2.
+- **What it shows (Claude's observation, not Hemanth's words):** the agent only notices new ids. An edited posting, for example one that moves to Boston or changes its description, is never reported. That's what the contract says, but it's a gap worth fixing in JS2.
 - **Evidence:** `runs/2026-10-31T182441/`.
 
 ## Oct 31, about 5:50 PM: decisions after the results
