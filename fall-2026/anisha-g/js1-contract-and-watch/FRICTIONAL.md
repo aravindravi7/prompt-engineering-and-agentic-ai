@@ -46,5 +46,3 @@ Fixes: Claude ran ways 1 and 2 for real with `claude -p` (`reports/action-surfac
 
 
 **2026-10-31, ~6:55 pm (my own words)** — I pasted way1-prompt.txt into a new claude.ai chat myself; the screenshot is reports/action-surfaces/way1-ANISHA-screenshot.png. Claude said "Mostly not relevant", a weak match: the skills overlap, but it's a senior compensation-operations role asking for 3–5 years. What surprised me: ____. Next time I would ____. What I still don't fully understand: ____.
-
-**2026-10-31, ~6:55 pm (my own words)** — I pasted way1-prompt.txt into a new claude.ai chat myself; the screenshot is reports/action-surfaces/way1-ANISHA-screenshot.png. Claude said "Mostly not relevant", a weak match: the skills overlap, but it is a senior compensation-operations role asking for 3–5 years. What surprised me: almost none of the postings were analyst jobs; they were all different kinds of roles. Next time I would pick a board with more analyst jobs, and write the contract myself before asking Claude for code. What I still do not fully understand: how the validator works, and why the baseline prompt failed.

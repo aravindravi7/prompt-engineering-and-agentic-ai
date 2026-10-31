@@ -19,3 +19,5 @@ Same posting each time: *Senior CS Compensation Analyst* (id 7989990003). Same q
 What the comparison showed: ways 1 and 2 gave a reasonable answer about **one** posting, but a hedged one ("partly relevant"). That answer can't be validated and isn't the yes/no my contract asks for. Neither way can do "new since last run". Only way 3 can, and it needs the most authority.
 
 **My choice: 3, but fenced.** The assignment's job is "new postings since last run", which needs state and a fetch, so 1 and 2 cannot do it. I give the agent the least autonomy that still does that: one allow-listed host, GET only, writes only inside `runs/` and `state/`, a fictional persona only, and Claude itself has no tools — it only receives text and returns JSON that my validator checks. The agent never applies, messages, or logs in.
+
+**Way 1 again, by me (2026-10-31, ~6:55 pm):** I pasted `way1-prompt.txt` into a new claude.ai chat myself. Claude said "Mostly not relevant", a weak match, with the same reasons (3–5 years, comp operations). Screenshot: `reports/action-surfaces/way1-ANISHA-screenshot.png`. It was again prose and a hedged verdict, with nothing to validate and no state.
