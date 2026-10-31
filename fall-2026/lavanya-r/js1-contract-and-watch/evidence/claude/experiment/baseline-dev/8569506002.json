@@ -1,0 +1,19 @@
+{
+  "posting_id": 8569506002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "INVALID",
+  "parsed": null,
+  "errors": [
+    "resume_fields must be a non-empty list of strings"
+  ],
+  "raw_reply": "{\"posting_id\": 8569506002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\"], \"reason\": \"The title contains none of the required terms (AI, Machine Learning, ML, Software Engineer, Intern, New Grad, Early Career), and it contains the excluded term \\\"Director\\\". It is also an enterprise sales role that asks for 7+ years of quota-carrying experience.\"}",
+  "asked_at": "2026-10-30T21:23:11+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "bdc2562c-be8c-473a-bde8-b24e3fbe0481",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "3de7196dd0cb1cf9e8d59d97369e2542422bd494b6dffd7fb9af81f3060d44d6"
+}

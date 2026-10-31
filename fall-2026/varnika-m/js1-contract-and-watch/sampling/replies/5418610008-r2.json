@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:45+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "0aa3e7b3a2533feed9ea1a6892c446e3652ba89bdfc3fbab4defa4cf1d5dbe00",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting asks for 5+ years as a Data/Analytics Engineer with hands-on Salesforce and quote-to-cash (CPQ/billing/ERP) data modeling, dbt, Airflow and Hex dashboarding, but the résumé shows about 2.5 years of software engineering (Java services at Infosys, a TypeScript feature-flag platform at Dassault) with no data-engineering role, no Salesforce/CPQ experience and none of those data tools listed.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting asks for 5+ years as a Data/Analytics Engineer with hands-on Salesforce and quote-to-cash (CPQ/billing/ERP) data modeling, dbt, Airflow and Hex dashboarding, but the résumé shows about 2.5 years of software engineering (Java services at Infosys, a TypeScript feature-flag platform at Dassault) with no data-engineering role, no Salesforce/CPQ experience and none of those data tools listed.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "2bbb7368-eaf5-4c8d-a080-b949399060af",
+  "total_cost_usd": 0.0108336,
+  "job_id": 5418610008,
+  "split": "development",
+  "repeat": 2
+}

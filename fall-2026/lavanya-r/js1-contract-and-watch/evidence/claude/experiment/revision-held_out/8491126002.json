@@ -1,0 +1,31 @@
+{
+  "posting_id": 8491126002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8491126002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "skills.data_bi",
+      "work_authorization.needs_sponsorship"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title 'Manager, Field Engineering France' contains none of the required keywords and includes the excluded word 'Manager', and the role is in Paris, France, not the United States. It also requires proven experience managing technical teams, which the job seeker's single co-op does not meet."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8491126002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"skills.data_bi\", \"work_authorization.needs_sponsorship\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title 'Manager, Field Engineering France' contains none of the required keywords and includes the excluded word 'Manager', and the role is in Paris, France, not the United States. It also requires proven experience managing technical teams, which the job seeker's single co-op does not meet.\"}",
+  "asked_at": "2026-10-30T21:27:09+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "aa8db3b6-7f72-484e-835a-6dce344b4c32",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "55e341479f4d15d6279a555779555b0a4f78ee866c17b59ec52e4b22767bb6ce"
+}

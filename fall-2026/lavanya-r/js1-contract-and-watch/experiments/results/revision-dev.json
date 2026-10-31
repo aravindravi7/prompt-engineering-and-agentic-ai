@@ -1,0 +1,151 @@
+{
+  "prompt": "prompts/revision.md",
+  "split": "dev",
+  "n": 10,
+  "passed": 9,
+  "invalid": 1,
+  "rows": [
+    {
+      "n": 1,
+      "posting_id": 6544443002,
+      "title": "Staff Software Engineer - Backend",
+      "hand_label": "not_fit",
+      "rule_verdict": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:26:04+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 3,
+      "posting_id": 8663972002,
+      "title": "Staff Software Engineer - Streaming",
+      "hand_label": "not_fit",
+      "rule_verdict": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:26:04+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 5,
+      "posting_id": 8569506002,
+      "title": " Lakebase Associate Director Specialist-MFG",
+      "hand_label": "not_fit",
+      "rule_verdict": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:26:04+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 6,
+      "posting_id": 8560779002,
+      "title": "Software Engineer, Web Products",
+      "hand_label": "not_fit",
+      "rule_verdict": "relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:26:04+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 9,
+      "posting_id": 8567993002,
+      "title": "Solutions Architect - Lakebase",
+      "hand_label": "not_fit",
+      "rule_verdict": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:26:13+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 10,
+      "posting_id": 8739507002,
+      "title": "Specialist Solutions Architect - Azure Infrastructure & AI Platform",
+      "hand_label": "not_fit",
+      "rule_verdict": "relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:26:13+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 12,
+      "posting_id": 6865698002,
+      "title": "Software Engineer - New Grad (2027 Start)",
+      "hand_label": "not_fit",
+      "rule_verdict": "relevant",
+      "claude_verdict": "INVALID",
+      "pass": false,
+      "errors": [
+        "resume_fields names fields that do not exist: ['education.0.end_date', 'education.0.status']"
+      ],
+      "asked_at": "2026-10-30T21:26:14+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 14,
+      "posting_id": 8487768002,
+      "title": "Solutions Architect - Communications, Media, Entertainment and Games",
+      "hand_label": "not_fit",
+      "rule_verdict": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:26:14+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 15,
+      "posting_id": 7803651002,
+      "title": "AI Transformation Leader",
+      "hand_label": "not_fit",
+      "rule_verdict": "relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:26:21+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 19,
+      "posting_id": 8736473002,
+      "title": "Delivery Solutions Architect - Digital Native Business",
+      "hand_label": "not_fit",
+      "rule_verdict": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:26:23+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    }
+  ]
+}

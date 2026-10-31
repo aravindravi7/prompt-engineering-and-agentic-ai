@@ -1,0 +1,187 @@
+{
+ "labeling_rule": "experiments/labeling-rule.md (L-v1)",
+ "labelled_on": "2026-10-26",
+ "provenance": {
+  "author_first": "4 rows Weiting decided herself on 2026-10-26, before any derived label existed: 8299781, 6512458, 7131934, 8282760 - the rows L-v1 does not settle mechanically.",
+  "derived_then_confirmed": "The other 21 rows were first derived by Claude applying L-v1's L1 and L2 wording mechanically to the title (seniority token present -> no; not an IC software/ML role -> no; otherwise yes). On 2026-10-30 Weiting checked all of them row by row, reported that they matched what she would have filled in herself, and changed none. They are her labels as of that date; they are not labels she wrote from a blank sheet.",
+  "blindness": "NOT BLIND, and in two different ways. (1) Before Weiting decided the four author_first rows, Claude had already told her what R-v2 returns for each of them, and for 6512458 also what the model returned; she disagreed with the agent on all four, which is the opposite of what anchoring would produce, but the labels were made with the agent's verdict known. (2) The 21 derived_then_confirmed rows were confirmed on 2026-10-30, after she had seen the aggregate results of all 60 judgments. Neither set is a blind label and no number computed against them is presented as an independent comparison."
+ },
+ "labels": {
+  "8299781": {
+   "row": 1,
+   "label": "yes",
+   "source": "author",
+   "note": "L-v1 does not read Job Family; an ML engineer role, Remote US. Labelled after Claude had already said the agent fails it at G3 - not a blind label.",
+   "decided": "author_first"
+  },
+  "6469397": {
+   "row": 2,
+   "label": "yes",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "6512458": {
+   "row": 3,
+   "label": "no",
+   "source": "author",
+   "note": "Remote - Ontario, Canada, so L3 says no. Labelled after Claude had already said both the rule and the model call it relevant - not a blind label.",
+   "decided": "author_first"
+  },
+  "8153017": {
+   "row": 4,
+   "label": "no",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "6909091": {
+   "row": 5,
+   "label": "no",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "6909093": {
+   "row": 6,
+   "label": "no",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "6960833": {
+   "row": 7,
+   "label": "no",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "7131932": {
+   "row": 8,
+   "label": "yes",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "7445240": {
+   "row": 9,
+   "label": "no",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "7701558": {
+   "row": 10,
+   "label": "no",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "8139781": {
+   "row": 11,
+   "label": "yes",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "8172457": {
+   "row": 12,
+   "label": "yes",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "8191664": {
+   "row": 13,
+   "label": "no",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "8198102": {
+   "row": 14,
+   "label": "yes",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "8234154": {
+   "row": 15,
+   "label": "no",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "6960831": {
+   "row": 16,
+   "label": "no",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "7131934": {
+   "row": 17,
+   "label": "no",
+   "source": "author",
+   "note": "Remote - Ontario, Canada, same as row 3. Labelled after Claude had already said the rule calls it relevant - not a blind label.",
+   "decided": "author_first"
+  },
+  "7330347": {
+   "row": 18,
+   "label": "no",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "7511679": {
+   "row": 19,
+   "label": "no",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "7721787": {
+   "row": 20,
+   "label": "no",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "8147559": {
+   "row": 21,
+   "label": "yes",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "8192369": {
+   "row": 22,
+   "label": "no",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "8194576": {
+   "row": 23,
+   "label": "yes",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "8214910": {
+   "row": 24,
+   "label": "yes",
+   "source": "author",
+   "note": "",
+   "decided": "derived_then_confirmed"
+  },
+  "8282760": {
+   "row": 25,
+   "label": "yes",
+   "source": "author",
+   "note": "Analytics Engineer counts as an IC engineering role under L1. Labelled after Claude had already said the agent fails it at G2 - not a blind label.",
+   "decided": "author_first"
+  }
+ },
+ "confirmed_on": "2026-10-30"
+}

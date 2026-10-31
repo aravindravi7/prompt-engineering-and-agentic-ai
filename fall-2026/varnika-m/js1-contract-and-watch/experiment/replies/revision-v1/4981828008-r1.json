@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:28:59+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "afc552f70dbb8a7f6c24145948fdca122e2b20463d129c17c1142bf8c19e159f",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires 5+ years of software engineering with a strong full-stack focus and proficiency in web technologies like React, but the résumé shows only about 2.5 years (Infosys Java backend work from 2021-06 to 2023-07 plus a 5-month Dassault co-op) and lists no React or front-end/full-stack application experience.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 5+ years of software engineering with a strong full-stack focus and proficiency in web technologies like React, but the résumé shows only about 2.5 years (Infosys Java backend work from 2021-06 to 2023-07 plus a 5-month Dassault co-op) and lists no React or front-end/full-stack application experience.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "c34ef836-3589-43aa-993b-ffe20bbdce0b",
+  "total_cost_usd": 0.041968,
+  "job_id": 4981828008,
+  "split": "development",
+  "repeat": 1
+}

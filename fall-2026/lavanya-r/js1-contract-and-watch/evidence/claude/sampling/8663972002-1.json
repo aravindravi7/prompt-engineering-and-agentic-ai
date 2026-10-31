@@ -1,0 +1,19 @@
+{
+  "posting_id": 8663972002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "INVALID",
+  "parsed": null,
+  "errors": [
+    "resume_fields must be a non-empty list of strings"
+  ],
+  "raw_reply": "{\"posting_id\": 8663972002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\"], \"reason\": \"The title \\\"Staff Software Engineer - Streaming\\\" contains \\\"Software Engineer\\\" but also the excluded word \\\"Staff\\\", so it fails rule 2.\"}",
+  "asked_at": "2026-10-30T21:22:07+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "a0f9aa75-bdc5-4f3b-ab6d-531940646b05",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "faac19c80cdf7908280ecee3da4ab2e9280817336164785552a2570f7385fbff"
+}

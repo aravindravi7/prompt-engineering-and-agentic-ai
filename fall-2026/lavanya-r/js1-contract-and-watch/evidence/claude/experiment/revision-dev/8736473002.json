@@ -1,0 +1,29 @@
+{
+  "posting_id": 8736473002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8736473002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education"
+    ],
+    "posting_fields": [
+      "title",
+      "content"
+    ],
+    "reason": "The title 'Delivery Solutions Architect - Digital Native Business' contains none of the required keywords (AI, Machine Learning, ML, Software Engineer, Intern, New Grad, Early Career). The posting also requires 5+ years in solutions architecture or a related technical role, far beyond the job seeker's single 8-month co-op."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8736473002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The title 'Delivery Solutions Architect - Digital Native Business' contains none of the required keywords (AI, Machine Learning, ML, Software Engineer, Intern, New Grad, Early Career). The posting also requires 5+ years in solutions architecture or a related technical role, far beyond the job seeker's single 8-month co-op.\"}",
+  "asked_at": "2026-10-30T21:26:23+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "29424e98-a755-403a-b7fc-8785801cf337",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "0b417c05d52853fa283ad727d3105bffa68fc33e31b6e202de8903dcbf8051d1"
+}

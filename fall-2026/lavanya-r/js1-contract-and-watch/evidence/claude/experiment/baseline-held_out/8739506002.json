@@ -1,0 +1,32 @@
+{
+  "posting_id": 8739506002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "relevant",
+  "parsed": {
+    "posting_id": 8739506002,
+    "verdict": "relevant",
+    "resume_fields": [
+      "skills.languages",
+      "skills.data_bi",
+      "skills.database_cloud",
+      "work_authorization.needs_sponsorship"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title contains 'AI' and none of the excluded terms, the location is the United States, and the description mentions Python, SQL, Databricks, Unity Catalog, and AWS without saying the employer cannot sponsor visas (the export-control clause is not a sponsorship ban). It passes all five rules, though the posting asks for 6+ years of experience, which is well above this candidate's level."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8739506002, \"verdict\": \"relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"skills.database_cloud\", \"work_authorization.needs_sponsorship\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title contains 'AI' and none of the excluded terms, the location is the United States, and the description mentions Python, SQL, Databricks, Unity Catalog, and AWS without saying the employer cannot sponsor visas (the export-control clause is not a sponsorship ban). It passes all five rules, though the posting asks for 6+ years of experience, which is well above this candidate's level.\"}",
+  "asked_at": "2026-10-30T21:26:44+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "d38d10ab-fba4-4da9-b490-4a1711fe1c29",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "8254232e401f6b32785f09d2ef07d6e7cd442629c45a2e7da4134f9d3f706ccf"
+}

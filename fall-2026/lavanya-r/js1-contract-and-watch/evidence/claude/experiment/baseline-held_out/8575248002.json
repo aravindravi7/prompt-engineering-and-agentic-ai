@@ -1,0 +1,30 @@
+{
+  "posting_id": 8575248002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8575248002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "skills.languages",
+      "skills.data_bi"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title contains the excluded terms \"Sr\" and \"Staff\", so rule 2 fails even though it has \"Software Engineer\", is US-based, and mentions SQL and Unity Catalog. The 12+ years requirement also puts it far beyond this early-career profile."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8575248002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title contains the excluded terms \\\"Sr\\\" and \\\"Staff\\\", so rule 2 fails even though it has \\\"Software Engineer\\\", is US-based, and mentions SQL and Unity Catalog. The 12+ years requirement also puts it far beyond this early-career profile.\"}",
+  "asked_at": "2026-10-30T21:26:52+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "b943c267-eb5b-48e6-952b-966f9902fad1",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "6c29849c7e2c630a3ca1743f72671d8553f8d7052e134063e96f57636161f849"
+}

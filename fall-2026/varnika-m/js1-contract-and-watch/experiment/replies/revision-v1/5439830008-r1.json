@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:22+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "f3dcb468219d1176601bf33cc3d37bf9c88dd947a165bdab343819ca7c426f5f",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires 4+ years as a Customer, Forward Deployed, Sales, Solutions or Cybersecurity Engineer working with governments or the public sector, plus experience in technology policy, AI safety, cybersecurity or international affairs, but the résumé shows about 2.5 years of software engineering (Infosys retail-banking Java services and a Dassault Systemes co-op) with no public-sector, policy or customer-facing advisory work.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 4+ years as a Customer, Forward Deployed, Sales, Solutions or Cybersecurity Engineer working with governments or the public sector, plus experience in technology policy, AI safety, cybersecurity or international affairs, but the résumé shows about 2.5 years of software engineering (Infosys retail-banking Java services and a Dassault Systemes co-op) with no public-sector, policy or customer-facing advisory work.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "b8a96c85-d4e3-45fe-a243-b0da18df2ae0",
+  "total_cost_usd": 0.039285,
+  "job_id": 5439830008,
+  "split": "held-out",
+  "repeat": 1
+}

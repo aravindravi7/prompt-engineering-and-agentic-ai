@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:25+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "200c144693c8d075753beefd05a195cffc569c4376434f5b609ca65e2c89471e",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires 8+ years building secure IT systems, managing thousands of macOS devices through an MDM, and deep macOS internals knowledge (launchd, TCC, system extensions), but the résumé shows only about 2.5 years of software engineering at Infosys and Dassault Systemes and no MDM, endpoint-fleet or macOS administration experience.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 8+ years building secure IT systems, managing thousands of macOS devices through an MDM, and deep macOS internals knowledge (launchd, TCC, system extensions), but the résumé shows only about 2.5 years of software engineering at Infosys and Dassault Systemes and no MDM, endpoint-fleet or macOS administration experience.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "54947fa4-597d-405a-a1d0-ee6110b6a361",
+  "total_cost_usd": 0.039265999999999995,
+  "job_id": 5445625008,
+  "split": "held-out",
+  "repeat": 1
+}

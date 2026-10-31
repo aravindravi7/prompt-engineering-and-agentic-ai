@@ -1,0 +1,75 @@
+# Pre-build check of CONTRACT.md v2, run 2026-10-29T00:25:46Z
+# board response: databricks-2026-10-28.json, fetched 2026-10-28T20:22:07Z, sha256: 887b53bf1e92dae891151aee8132980f9c55ca971df582b5d0fc8fd8815b5fe1
+# resume: Priya Nair (fictional), sha256: a4fdbc960457ba911b9d3b8593400d17ea77f35a33ce2a508128c1694c4493c1
+
+## A. v2 as written
+# command: python3 check_v2.py databricks-2026-10-28.json priya-nair.resume.example.json
+excluded product names: ['databricks', 'delta lake', 'mlflow', 'unity catalog']
+counted skills: ['Python', 'SQL', 'Power BI', 'LangGraph', 'Mem0', 'AWS']
+skill -> postings containing it: {'Python': 365, 'SQL': 264, 'AWS': 371, 'LangGraph': 6}
+rule 1 (title): 23/897 | rule 2 (2+ skills): 336/897 = 37.5% | rule 3 blocker found: 15/897 | RELEVANT (all three): 2/897
+
+RELEVANT:
+  7897431002  Senior Software Engineer - Data + AI Observability  ['Python', 'AWS']
+  8401114002  Staff Machine Learning Engineer  ['Python', 'SQL']
+
+pass rule 1, fail rule 2:
+  8574655002  AI Engineer - FDE (Forward Deployed Engineer)  ['AWS']
+  8546367002  AI Engineer – Forward Deployed Engineering (AI FDE)  ['AWS']
+  8760167002  AI Engineer – Forward Deployed Engineering (AI FDE), U.S. Public Sector (Federal Focus)  ['AWS']
+  8091041002  Applied AI Engineer  []
+  8569392002  Senior AI Engineer - FDE (Forward Deployed Engineer)  ['AWS']
+  8656900002  Senior Applied ML Engineer - ML4Sys  ['Python']
+  8635216002  Senior Software Engineer, AI Native Web Platform  []
+  8582276002  Senior Software Engineer, AI Runtime  []
+  8233899002  Senior Software Engineer (Backend) - AI/ML Environments  ['Python']
+  8540267002  Senior Staff Applied AI Engineer - Context Retrieval  ['SQL']
+  8909305002  Senior Staff Software Engineer, AI Runtime  []
+  8784103002  Sr. Specialist Solutions Architect -AI&ML Engineer  ['AWS']
+  8560783002  Sr. Staff Software Engineer, AI Native Web Platform  []
+  8367019002  Staff Backend Software Engineer- (Databricks AI)  ['Python']
+  8635188002  Staff Software Engineer, AI Native Web Platform  []
+  8552484002  Staff Software Engineer - AI Research Infrastructure  []
+  8582271002  Staff Software Engineer, AI Runtime  []
+  8578177002  Staff Software Engineer, AI Search  []
+  8509534002  Staff Software Engineer, Fullstack - AI Product (NYC)  ['Python']
+  8202698002  Staff Software Engineer - GenAI inference  []
+  7958982002  Staff Software Engineer - Machine Learning (Search)  ['SQL']
+
+pass rule 1, blocked by rule 3: []
+
+## B. v2 with only Databricks and Unity Catalog excluded (MLflow and Delta Lake counted again)
+# command: python3 check_v2.py databricks-2026-10-28.json priya-nair.resume.example.json --exclude "Databricks,Unity Catalog"
+excluded product names: ['databricks', 'unity catalog']
+counted skills: ['Python', 'SQL', 'Power BI', 'LangGraph', 'MLflow', 'Mem0', 'Delta Lake', 'AWS']
+skill -> postings containing it: {'Python': 365, 'SQL': 264, 'AWS': 371, 'LangGraph': 6, 'MLflow': 57, 'Delta Lake': 78}
+rule 1 (title): 23/897 | rule 2 (2+ skills): 353/897 = 39.4% | rule 3 blocker found: 15/897 | RELEVANT (all three): 4/897
+
+RELEVANT:
+  7897431002  Senior Software Engineer - Data + AI Observability  ['Python', 'AWS']
+  8540267002  Senior Staff Applied AI Engineer - Context Retrieval  ['SQL', 'MLflow', 'Delta Lake']
+  8367019002  Staff Backend Software Engineer- (Databricks AI)  ['Python', 'MLflow']
+  8401114002  Staff Machine Learning Engineer  ['Python', 'SQL']
+
+pass rule 1, fail rule 2:
+  8574655002  AI Engineer - FDE (Forward Deployed Engineer)  ['AWS']
+  8546367002  AI Engineer – Forward Deployed Engineering (AI FDE)  ['AWS']
+  8760167002  AI Engineer – Forward Deployed Engineering (AI FDE), U.S. Public Sector (Federal Focus)  ['AWS']
+  8091041002  Applied AI Engineer  []
+  8569392002  Senior AI Engineer - FDE (Forward Deployed Engineer)  ['AWS']
+  8656900002  Senior Applied ML Engineer - ML4Sys  ['Python']
+  8635216002  Senior Software Engineer, AI Native Web Platform  []
+  8582276002  Senior Software Engineer, AI Runtime  []
+  8233899002  Senior Software Engineer (Backend) - AI/ML Environments  ['Python']
+  8909305002  Senior Staff Software Engineer, AI Runtime  []
+  8784103002  Sr. Specialist Solutions Architect -AI&ML Engineer  ['AWS']
+  8560783002  Sr. Staff Software Engineer, AI Native Web Platform  []
+  8635188002  Staff Software Engineer, AI Native Web Platform  []
+  8552484002  Staff Software Engineer - AI Research Infrastructure  []
+  8582271002  Staff Software Engineer, AI Runtime  []
+  8578177002  Staff Software Engineer, AI Search  []
+  8509534002  Staff Software Engineer, Fullstack - AI Product (NYC)  ['Python']
+  8202698002  Staff Software Engineer - GenAI inference  []
+  7958982002  Staff Software Engineer - Machine Learning (Search)  ['SQL']
+
+pass rule 1, blocked by rule 3: []

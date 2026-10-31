@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:41+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "f7ee6c6bf75113e487be6a0383bd6ffe2924a1827b22052ba888c46646c3e8ab",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The résumé shows roughly 2.5 years of individual-contributor software engineering (TypeScript feature flags, Java banking services, Kubernetes tooling) with no sales, people-management, quota, or asset-and-wealth-management client-relationship experience, while the posting requires leading enterprise sales teams, a track record winning C-suite AWM customers, and go-to-market coverage design.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The résumé shows roughly 2.5 years of individual-contributor software engineering (TypeScript feature flags, Java banking services, Kubernetes tooling) with no sales, people-management, quota, or asset-and-wealth-management client-relationship experience, while the posting requires leading enterprise sales teams, a track record winning C-suite AWM customers, and go-to-market coverage design.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "d9889464-06c4-4cfa-ba36-0a1c6ab05f8c",
+  "total_cost_usd": 0.04539100000000001,
+  "job_id": 5464894008,
+  "split": "development",
+  "repeat": 1
+}

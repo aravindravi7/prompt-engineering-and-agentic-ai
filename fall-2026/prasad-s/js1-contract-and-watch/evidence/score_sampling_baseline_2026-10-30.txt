@@ -1,0 +1,37 @@
+6348471_r1.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+6348471_r2.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+6348471_r3.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+6348471_r4.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7202630_r1.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7202630_r2.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7202630_r3.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7202630_r4.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7369543_r1.txt  rejected  judgment (Claude): rejected  hand: not_relevant  FAIL
+    - RESUME_FIELD target_titles='Associate Product Manager | Product Manager | Product Analyst' is not a résumé target_titles value
+    - RESUME_FIELD locations='New York | NYC | Remote' is not a résumé locations value
+    - RESUME_FIELD skills='Python | SQL | A/B testing | roadmapping | user research' is not a résumé skills value
+7369543_r2.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7369543_r3.txt  rejected  judgment (Claude): rejected  hand: not_relevant  FAIL
+    - RESUME_FIELD target_titles='Associate Product Manager | Product Manager | Product Analyst' is not a résumé target_titles value
+    - RESUME_FIELD locations='New York | NYC | Remote' is not a résumé locations value
+    - RESUME_FIELD skills='Python | SQL | A/B testing | roadmapping | user research' is not a résumé skills value
+7369543_r4.txt  rejected  judgment (Claude): rejected  hand: not_relevant  FAIL
+    - RESUME_FIELD target_titles='Associate Product Manager | Product Manager | Product Analyst' is not a résumé target_titles value
+    - RESUME_FIELD locations='New York | NYC | Remote' is not a résumé locations value
+    - RESUME_FIELD skills='Python | SQL | A/B testing | roadmapping | user research' is not a résumé skills value
+7392697_r1.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7392697_r2.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7392697_r3.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7392697_r4.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7456716_r1.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7456716_r2.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7456716_r3.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7456716_r4.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+replies: 20  accepted: 17  rejected: 3  PASS: 17  pass rate: 17/20 = 85%
+
+per posting (sampling repeats):
+6348471  verdicts: not_relevant, not_relevant, not_relevant, not_relevant  accepted: 4/4  RESUME_FIELD lines identical: no  POSTING_FIELD lines identical: no
+7202630  verdicts: not_relevant, not_relevant, not_relevant, not_relevant  accepted: 4/4  RESUME_FIELD lines identical: no  POSTING_FIELD lines identical: no
+7369543  verdicts: rejected, not_relevant, rejected, rejected  accepted: 1/4  RESUME_FIELD lines identical: no  POSTING_FIELD lines identical: yes
+7392697  verdicts: not_relevant, not_relevant, not_relevant, not_relevant  accepted: 4/4  RESUME_FIELD lines identical: yes  POSTING_FIELD lines identical: no
+7456716  verdicts: not_relevant, not_relevant, not_relevant, not_relevant  accepted: 4/4  RESUME_FIELD lines identical: no  POSTING_FIELD lines identical: no

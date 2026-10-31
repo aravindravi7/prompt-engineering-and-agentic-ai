@@ -1,0 +1,344 @@
+{
+  "source": "raw-databricks-2026-10-29T005656Z.json",
+  "source_sha256": "43b17b07604aaa83fb5ad64c826eeee80fbe112e2a2d07f9bafb70da54bea74e",
+  "seed": 7375,
+  "topic_words": [
+    "AI",
+    "ML",
+    "GenAI",
+    "machine learning",
+    "data"
+  ],
+  "seniority_words": [
+    "Senior",
+    "Sr.",
+    "Sr",
+    "Staff",
+    "Principal",
+    "Lead",
+    "Manager",
+    "Director"
+  ],
+  "unclear_locations": [
+    "USCA"
+  ],
+  "development": [
+    {
+      "id": 8692962002,
+      "title": "Specialist Solutions Architect - Data Engineering & Warehousing (Financial Services)",
+      "location": "United States",
+      "location_class": "US",
+      "topic_words": [
+        "data"
+      ],
+      "seniority_words": [],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8692962002",
+      "picked_as": "hard case: topic word, US location, no seniority word"
+    },
+    {
+      "id": 7011263002,
+      "title": "PhD GenAI Research Scientist Intern",
+      "location": "San Francisco, California",
+      "location_class": "US",
+      "topic_words": [
+        "GenAI"
+      ],
+      "seniority_words": [],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002",
+      "picked_as": "hard case: topic word, US location, no seniority word"
+    },
+    {
+      "id": 7803651002,
+      "title": "AI Transformation Leader",
+      "location": "United States",
+      "location_class": "US",
+      "topic_words": [
+        "AI"
+      ],
+      "seniority_words": [],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7803651002",
+      "picked_as": "hard case: topic word, US location, no seniority word"
+    },
+    {
+      "id": 8739506002,
+      "title": "Specialist Solutions Architect - AWS Infrastructure & AI Platform",
+      "location": "United States",
+      "location_class": "US",
+      "topic_words": [
+        "AI"
+      ],
+      "seniority_words": [],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739506002",
+      "picked_as": "hard case: topic word, US location, no seniority word"
+    },
+    {
+      "id": 8546367002,
+      "title": "AI Engineer – Forward Deployed Engineering (AI FDE)",
+      "location": "United States",
+      "location_class": "US",
+      "topic_words": [
+        "AI"
+      ],
+      "seniority_words": [],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8546367002",
+      "picked_as": "hard case: topic word, US location, no seniority word"
+    },
+    {
+      "id": 8756140002,
+      "title": "Senior Payroll Analyst",
+      "location": "Singapore",
+      "location_class": "not US",
+      "topic_words": [],
+      "seniority_words": [
+        "Senior"
+      ],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8756140002",
+      "picked_as": "random: no topic word in the title"
+    },
+    {
+      "id": 8301830002,
+      "title": "Senior Manager, Identity & Access Management (IAM)",
+      "location": "Mountain View, California",
+      "location_class": "US",
+      "topic_words": [],
+      "seniority_words": [
+        "Senior",
+        "Manager"
+      ],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8301830002",
+      "picked_as": "random: no topic word in the title"
+    },
+    {
+      "id": 8815669002,
+      "title": "Sr. Software Engineer - Ingestion Core team",
+      "location": "San Francisco, California",
+      "location_class": "US",
+      "topic_words": [],
+      "seniority_words": [
+        "Sr.",
+        "Sr"
+      ],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8815669002",
+      "picked_as": "random: no topic word in the title"
+    },
+    {
+      "id": 8823193002,
+      "title": "Product Finance Director, R&D Capital Allocation & Engineering Operations",
+      "location": "Mountain View, California; San Francisco, California; Seattle, Washington",
+      "location_class": "US",
+      "topic_words": [],
+      "seniority_words": [
+        "Director"
+      ],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8823193002",
+      "picked_as": "random: no topic word in the title"
+    },
+    {
+      "id": 8903089002,
+      "title": "Strategic Core Account Executive - Automotive",
+      "location": "Baden-Württemberg, Germany",
+      "location_class": "not US",
+      "topic_words": [],
+      "seniority_words": [],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8903089002",
+      "picked_as": "random: no topic word in the title"
+    }
+  ],
+  "held_out": [
+    {
+      "id": 6866538002,
+      "title": "Data Science Intern (2027 Start)",
+      "location": "Mountain View, California; San Francisco, California",
+      "location_class": "US",
+      "topic_words": [
+        "data"
+      ],
+      "seniority_words": [],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002",
+      "picked_as": "hard case: topic word, US location, no seniority word"
+    },
+    {
+      "id": 8697991002,
+      "title": "Specialist Solutions Architect - AI/ML",
+      "location": "United States",
+      "location_class": "US",
+      "topic_words": [
+        "AI",
+        "ML"
+      ],
+      "seniority_words": [],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8697991002",
+      "picked_as": "hard case: topic word, US location, no seniority word"
+    },
+    {
+      "id": 8739507002,
+      "title": "Specialist Solutions Architect - Azure Infrastructure & AI Platform",
+      "location": "United States",
+      "location_class": "US",
+      "topic_words": [
+        "AI"
+      ],
+      "seniority_words": [],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739507002",
+      "picked_as": "hard case: topic word, US location, no seniority word"
+    },
+    {
+      "id": 8760167002,
+      "title": "AI Engineer – Forward Deployed Engineering (AI FDE), U.S. Public Sector (Federal Focus)",
+      "location": "Maryland; Virginia; Washington, D.C.",
+      "location_class": "US",
+      "topic_words": [
+        "AI"
+      ],
+      "seniority_words": [],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8760167002",
+      "picked_as": "hard case: topic word, US location, no seniority word"
+    },
+    {
+      "id": 8859666002,
+      "title": "Data+AI Workforce Transformation Practitioner — Customer Delivery",
+      "location": "United States",
+      "location_class": "US",
+      "topic_words": [
+        "AI",
+        "data"
+      ],
+      "seniority_words": [],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8859666002",
+      "picked_as": "hard case: topic word, US location, no seniority word"
+    },
+    {
+      "id": 8099343002,
+      "title": "Staff Software Engineer - Fullstack",
+      "location": "Vancouver, Canada",
+      "location_class": "not US",
+      "topic_words": [],
+      "seniority_words": [
+        "Staff"
+      ],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8099343002",
+      "picked_as": "random: no topic word in the title"
+    },
+    {
+      "id": 8472398002,
+      "title": "Engineering Manager - Databricks SQL Control Plane",
+      "location": "Mountain View, California",
+      "location_class": "US",
+      "topic_words": [],
+      "seniority_words": [
+        "Manager"
+      ],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8472398002",
+      "picked_as": "random: no topic word in the title"
+    },
+    {
+      "id": 8628029002,
+      "title": "Strategic Core Account Executive",
+      "location": "Paris, France",
+      "location_class": "not US",
+      "topic_words": [],
+      "seniority_words": [],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8628029002",
+      "picked_as": "random: no topic word in the title"
+    },
+    {
+      "id": 6328388002,
+      "title": "Solutions Architect - Emerging Enterprise (Startups)",
+      "location": "United States",
+      "location_class": "US",
+      "topic_words": [],
+      "seniority_words": [],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6328388002",
+      "picked_as": "random: no topic word in the title"
+    },
+    {
+      "id": 8384595002,
+      "title": "Staff Software Engineer - Frontend (NYC)",
+      "location": "New York City, New York",
+      "location_class": "US",
+      "topic_words": [],
+      "seniority_words": [
+        "Staff"
+      ],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8384595002",
+      "picked_as": "random: no topic word in the title"
+    }
+  ],
+  "sampling": [
+    {
+      "id": 8604579002,
+      "title": "Senior Finance Specialist (Data & AI)",
+      "location": "Bengaluru, India",
+      "location_class": "not US",
+      "topic_words": [
+        "AI",
+        "data"
+      ],
+      "seniority_words": [
+        "Senior"
+      ],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8604579002",
+      "picked_as": "random: topic word in the title, not in the 20"
+    },
+    {
+      "id": 8688861002,
+      "title": "Accounting Data & Technology Manager",
+      "location": "Mountain View, California; San Francisco, California",
+      "location_class": "US",
+      "topic_words": [
+        "data"
+      ],
+      "seniority_words": [
+        "Manager"
+      ],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8688861002",
+      "picked_as": "random: topic word in the title, not in the 20"
+    },
+    {
+      "id": 8574655002,
+      "title": "AI Engineer - FDE (Forward Deployed Engineer)",
+      "location": "Seoul, South Korea",
+      "location_class": "not US",
+      "topic_words": [
+        "AI"
+      ],
+      "seniority_words": [],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8574655002",
+      "picked_as": "random: topic word in the title, not in the 20"
+    },
+    {
+      "id": 5634684002,
+      "title": "Senior Data Scientist",
+      "location": "Mountain View, California; San Francisco, California",
+      "location_class": "US",
+      "topic_words": [
+        "data"
+      ],
+      "seniority_words": [
+        "Senior"
+      ],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=5634684002",
+      "picked_as": "random: topic word in the title, not in the 20"
+    },
+    {
+      "id": 8578093002,
+      "title": "Engineering Manager - Data Visualization Platform",
+      "location": "Bellevue, Washington",
+      "location_class": "US",
+      "topic_words": [
+        "data"
+      ],
+      "seniority_words": [
+        "Manager"
+      ],
+      "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8578093002",
+      "picked_as": "random: topic word in the title, not in the 20"
+    }
+  ],
+  "pool_sizes": {
+    "unique_ids": 901,
+    "hard_cases": 11,
+    "no_topic_word_titles": 560,
+    "sampling_pool_titles": 81
+  }
+}

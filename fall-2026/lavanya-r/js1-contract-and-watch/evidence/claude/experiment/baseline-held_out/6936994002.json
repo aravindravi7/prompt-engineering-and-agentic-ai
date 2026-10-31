@@ -1,0 +1,19 @@
+{
+  "posting_id": 6936994002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "INVALID",
+  "parsed": null,
+  "errors": [
+    "resume_fields must be a non-empty list of strings"
+  ],
+  "raw_reply": "{\"posting_id\": 6936994002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\"], \"reason\": \"The title contains 'Senior', which is an excluded term under rule 2, so the posting fails regardless of the US location and skill overlap (SQL, Databricks, Unity Catalog, Delta Lake, AWS).\"}",
+  "asked_at": "2026-10-30T21:26:45+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "33b5a9e5-cf26-4a8a-9a03-b4f99a2468dc",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "1bae19f2a04991f8e6a3607c897d48d5af05dca8e26f32a97b2f18e84247cb86"
+}

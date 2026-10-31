@@ -1,0 +1,30 @@
+{
+  "posting_id": 8611108002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8611108002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "work_authorization.needs_sponsorship",
+      "skills.languages",
+      "skills.database_cloud"
+    ],
+    "posting_fields": [
+      "title",
+      "content"
+    ],
+    "reason": "The title 'Forward Deployed Engineer (FDE) - Public Sector' contains none of the required keywords (AI, Machine Learning, ML, Software Engineer, Intern, New Grad, Early Career). The description also requires U.S. citizenship and clearance eligibility, which rules out this F-1 OPT candidate who needs sponsorship, even though it mentions Python and AWS."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8611108002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"work_authorization.needs_sponsorship\", \"skills.languages\", \"skills.database_cloud\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The title 'Forward Deployed Engineer (FDE) - Public Sector' contains none of the required keywords (AI, Machine Learning, ML, Software Engineer, Intern, New Grad, Early Career). The description also requires U.S. citizenship and clearance eligibility, which rules out this F-1 OPT candidate who needs sponsorship, even though it mentions Python and AWS.\"}",
+  "asked_at": "2026-10-30T21:26:39+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "2d111e52-454b-405b-84f1-6c1e0ff06087",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "a337af89aab8b1485d125d09d4224e39c0a20b7bdded7249dbb743c15513355a"
+}

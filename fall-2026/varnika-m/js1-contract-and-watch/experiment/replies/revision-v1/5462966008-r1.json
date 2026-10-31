@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:25+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "51dd3eae6e58d3931b21a6658e5605a3fba1d8fe63b5b75e6a18d076a830380d",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires hands-on work with physical-asset or security-control data (hardware fleet, data center or supply chain inventory, asset custody, or compliance evidence) and having designed and run production data systems with CDC, reconciliation and alerting on silent feeds, but the résumé shows only a feature-flag platform, a crash-log AI workflow, Java banking services and a Helm linter CLI, with no asset or compliance data and no data-pipeline ownership at that level.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires hands-on work with physical-asset or security-control data (hardware fleet, data center or supply chain inventory, asset custody, or compliance evidence) and having designed and run production data systems with CDC, reconciliation and alerting on silent feeds, but the résumé shows only a feature-flag platform, a crash-log AI workflow, Java banking services and a Helm linter CLI, with no asset or compliance data and no data-pipeline ownership at that level.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "48222efe-34ee-4d3c-b288-876a74dbba6b",
+  "total_cost_usd": 0.042891000000000006,
+  "job_id": 5462966008,
+  "split": "held-out",
+  "repeat": 1
+}

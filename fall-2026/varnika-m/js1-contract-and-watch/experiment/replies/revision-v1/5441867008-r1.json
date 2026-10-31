@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:06+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "0a81fb77de68e0dfce5f19614e7681ac9e63a4be63a75e7da6dfecc07cfb9383",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires 12+ years of progressive accounting experience, a Bachelor's in Accounting or Finance, a CPA, and hands-on ASC 842/810/815 technical memo work, while the résumé shows an MS in Information Systems and about 2.5 years of software engineering at Infosys and Dassault Systemes, with no accounting background or credentials.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 12+ years of progressive accounting experience, a Bachelor's in Accounting or Finance, a CPA, and hands-on ASC 842/810/815 technical memo work, while the résumé shows an MS in Information Systems and about 2.5 years of software engineering at Infosys and Dassault Systemes, with no accounting background or credentials.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "6b5f262f-9a86-4bd2-bbe8-ff92e12c7aaf",
+  "total_cost_usd": 0.04134299999999999,
+  "job_id": 5441867008,
+  "split": "development",
+  "repeat": 1
+}

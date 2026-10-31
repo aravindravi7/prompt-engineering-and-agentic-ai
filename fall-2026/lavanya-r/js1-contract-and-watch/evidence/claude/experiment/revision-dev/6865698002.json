@@ -1,0 +1,19 @@
+{
+  "posting_id": 6865698002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "INVALID",
+  "parsed": null,
+  "errors": [
+    "resume_fields names fields that do not exist: ['education.0.end_date', 'education.0.status']"
+  ],
+  "raw_reply": "{\"posting_id\": 6865698002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"education.0.end_date\", \"education.0.status\", \"skills.languages\", \"skills.data_bi\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title, US locations, skills overlap (Python, Databricks, Unity Catalog) and sponsorship all pass, but the posting requires graduating in fall 2026 or spring 2027. The job seeker completed their MS in December 2025, so they do not meet the graduation window.\"}",
+  "asked_at": "2026-10-30T21:26:14+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "8d7f526a-5a71-4374-8f3b-dc195e945b5d",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "0d076f08711ef03933e34a846eb5e0f356b5bb3305228e90265f988e7b309764"
+}

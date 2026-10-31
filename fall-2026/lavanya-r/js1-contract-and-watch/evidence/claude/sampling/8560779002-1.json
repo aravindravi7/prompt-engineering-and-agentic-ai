@@ -1,0 +1,30 @@
+{
+  "posting_id": 8560779002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "relevant",
+  "parsed": {
+    "posting_id": 8560779002,
+    "verdict": "relevant",
+    "resume_fields": [
+      "skills.data_bi",
+      "work_authorization.needs_sponsorship"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title contains 'Software Engineer' with no excluded terms, Mountain View is in the US, the content names two résumé skills (Databricks and Unity Catalog), and it does not say Databricks cannot sponsor visas; the export-control clause is not a sponsorship refusal. This is a weak, literal pass: both skills appear only in company boilerplate rather than the requirements, and the role asks for 4+ years of web/CMS engineering, which fits this candidate poorly."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8560779002, \"verdict\": \"relevant\", \"resume_fields\": [\"skills.data_bi\", \"work_authorization.needs_sponsorship\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title contains 'Software Engineer' with no excluded terms, Mountain View is in the US, the content names two résumé skills (Databricks and Unity Catalog), and it does not say Databricks cannot sponsor visas; the export-control clause is not a sponsorship refusal. This is a weak, literal pass: both skills appear only in company boilerplate rather than the requirements, and the role asks for 4+ years of web/CMS engineering, which fits this candidate poorly.\"}",
+  "asked_at": "2026-10-30T21:22:12+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "1736417d-d05a-42c8-a518-4d9696ce4b6d",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "90e4924adbd3265f164acb3de252d57ba71746ac55a44326ee82ac19fa60523d"
+}

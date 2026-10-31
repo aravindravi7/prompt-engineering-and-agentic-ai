@@ -1,0 +1,2019 @@
+{
+  "agent": "watch.py",
+  "contract": "CONTRACT.md v3",
+  "board": "databricks",
+  "url": "https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true",
+  "mode": "WATCH",
+  "source": "live fetch",
+  "run_at": "2026-10-31T06:18:34Z",
+  "fetched_at": "2026-10-31T06:18:34Z",
+  "raw_file": "raw-databricks-2026-10-31T061834Z.json",
+  "raw_bytes": 9891455,
+  "raw_sha256": "5e2c64ecdcb5bef7d714207d25ed522f3d54046f7fa297c321f2490f9ce41080",
+  "counts": {
+    "postings_in_response": 901,
+    "unique_ids": 901,
+    "ids_repeated_in_response": 0,
+    "unique_titles": 654,
+    "seen_before": 901,
+    "new": 23,
+    "no_longer_listed": 23,
+    "seen_after": 924
+  },
+  "judges": {
+    "RECORD": "my written rule, CONTRACT.md v3 section 4; anyone can recompute it",
+    "JUDGMENT": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+    "prompt_file": "judgment-v1.md",
+    "model_requested": "claude-sonnet-5-5"
+  },
+  "verdict_counts": {
+    "record_relevant": 0,
+    "judgment_relevant": 0,
+    "judgment_status": {
+      "valid": 22,
+      "invalid": 1,
+      "unavailable": 0
+    }
+  },
+  "new_postings": [
+    {
+      "id": 8459031002,
+      "original": {
+        "id": 8459031002,
+        "title": "Sr. Counsel, Regulatory",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8459031002",
+        "location": {
+          "name": "Bellevue, Washington; Seattle, Washington; Washington, D.C."
+        },
+        "first_published": "2026-03-13T19:55:12-04:00",
+        "updated_at": "2026-10-30T10:34:59-04:00",
+        "requisition_id": "GAQ227R179"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8459031002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": false,
+            "needed": 2,
+            "matched": [],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Sr. Counsel, Regulatory' contains none of the rule 1 phrases (rule 1 failed); content contains 0 of 8 counted résumé skills from skills.languages, skills.data_bi, skills.backend_automation, skills.database_cloud (rule 2 failed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8459031002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8459031002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "This is a legal role (Senior Counsel, Regulatory), not an AI, ML, or data engineering job. The title contains 'Sr.', and the posting requires 8+ years of legal experience, a J.D., and state bar membership, none of which Priya has. The location (Washington state and Washington, D.C.) is in the US, but the work, seniority, and qualifications do not fit her background."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8459031002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"This is a legal role (Senior Counsel, Regulatory), not an AI, ML, or data engineering job. The title contains 'Sr.', and the posting requires 8+ years of legal experience, a J.D., and state bar membership, none of which Priya has. The location (Washington state and Washington, D.C.) is in the US, but the work, seniority, and qualifications do not fit her background.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:18:35Z",
+        "seconds": 4.4
+      }
+    },
+    {
+      "id": 8569528002,
+      "original": {
+        "id": 8569528002,
+        "title": "Lakebase Sales Specialist, Benelux",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8569528002",
+        "location": {
+          "name": "Amsterdam, Netherlands"
+        },
+        "first_published": "2026-10-30T13:58:53-04:00",
+        "updated_at": "2026-10-30T13:58:53-04:00",
+        "requisition_id": "SLSQ327R350"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8569528002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": false,
+            "needed": 2,
+            "matched": [
+              {
+                "skill": "AWS",
+                "resume_field": "skills.database_cloud"
+              }
+            ],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Lakebase Sales Specialist, Benelux' contains none of the rule 1 phrases (rule 1 failed); content contains 1 of 8 counted résumé skills: AWS (skills.database_cloud) (rule 2 failed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8569528002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8569528002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "title",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The main work is enterprise sales (driving revenue, running sales cycles, negotiating deals, meeting quota), not AI/ML or data engineering. The job is located in Amsterdam, Netherlands, outside the United States. It also requires relevant enterprise sales experience with a record of exceeding quota, which Priya's resume does not show."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8569528002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"location\"], \"matched_terms\": [], \"reason\": \"The main work is enterprise sales (driving revenue, running sales cycles, negotiating deals, meeting quota), not AI/ML or data engineering. The job is located in Amsterdam, Netherlands, outside the United States. It also requires relevant enterprise sales experience with a record of exceeding quota, which Priya's resume does not show.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:18:40Z",
+        "seconds": 3.7
+      }
+    },
+    {
+      "id": 8569578002,
+      "original": {
+        "id": 8569578002,
+        "title": "Lakebase Sales Specialist (Greater China Region)",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8569578002",
+        "location": {
+          "name": "Singapore"
+        },
+        "first_published": "2026-10-30T02:51:57-04:00",
+        "updated_at": "2026-10-30T02:58:08-04:00",
+        "requisition_id": "SLSQ327R376"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8569578002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": false,
+            "needed": 2,
+            "matched": [
+              {
+                "skill": "AWS",
+                "resume_field": "skills.database_cloud"
+              }
+            ],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Lakebase Sales Specialist (Greater China Region)' contains none of the rule 1 phrases (rule 1 failed); content contains 1 of 8 counted résumé skills: AWS (skills.database_cloud) (rule 2 failed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8569578002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8569578002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "title",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The main work is enterprise sales (Lakebase Sales Specialist / Account Executive), not AI, ML, or data engineering. The role requires 7+ years of enterprise SaaS sales experience, far above the 2-year limit, and Priya has no sales background. The location is Singapore (Greater China Region territory, Mandarin proficiency required), which is outside the United States."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8569578002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"location\"], \"matched_terms\": [], \"reason\": \"The main work is enterprise sales (Lakebase Sales Specialist / Account Executive), not AI, ML, or data engineering. The role requires 7+ years of enterprise SaaS sales experience, far above the 2-year limit, and Priya has no sales background. The location is Singapore (Greater China Region territory, Mandarin proficiency required), which is outside the United States.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:18:43Z",
+        "seconds": 2.8
+      }
+    },
+    {
+      "id": 8824171002,
+      "original": {
+        "id": 8824171002,
+        "title": "AI Sales Director",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8824171002",
+        "location": {
+          "name": "San Francisco, California; United States; West Coast - United States"
+        },
+        "first_published": "2026-10-30T13:57:31-04:00",
+        "updated_at": "2026-10-30T13:57:31-04:00",
+        "requisition_id": "SLSQ427R457"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8824171002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": false,
+            "needed": 2,
+            "matched": [],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'AI Sales Director' contains none of the rule 1 phrases (rule 1 failed); content contains 0 of 8 counted résumé skills from skills.languages, skills.data_bi, skills.backend_automation, skills.database_cloud (rule 2 failed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8824171002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8824171002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The job is a Director-level enterprise AI sales role (quota, bookings, go-to-market strategy, field enablement), not an AI, ML, or data engineering role. The title contains 'Director', which is an excluded seniority level, and the posting expects extensive enterprise sales or consulting experience and a track record of delivering growth, well beyond Priya's 2-year limit. The location is in the United States, but this does not offset the seniority and role-type mismatch. Priya's Databricks, MLflow, and AI engineering background does not fit a sales leadership position."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8824171002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The job is a Director-level enterprise AI sales role (quota, bookings, go-to-market strategy, field enablement), not an AI, ML, or data engineering role. The title contains 'Director', which is an excluded seniority level, and the posting expects extensive enterprise sales or consulting experience and a track record of delivering growth, well beyond Priya's 2-year limit. The location is in the United States, but this does not offset the seniority and role-type mismatch. Priya's Databricks, MLflow, and AI engineering background does not fit a sales leadership position.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:18:46Z",
+        "seconds": 3.6
+      }
+    },
+    {
+      "id": 8859518002,
+      "original": {
+        "id": 8859518002,
+        "title": "Solutions Architect - Games",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8859518002",
+        "location": {
+          "name": "West Coast - United States"
+        },
+        "first_published": "2026-10-29T08:54:47-04:00",
+        "updated_at": "2026-10-29T13:37:15-04:00",
+        "requisition_id": "FEQ427R695"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8859518002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": true,
+            "needed": 2,
+            "matched": [
+              {
+                "skill": "Python",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "SQL",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "AWS",
+                "resume_field": "skills.database_cloud"
+              }
+            ],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Solutions Architect - Games' contains none of the rule 1 phrases (rule 1 failed); content contains 3 of 8 counted résumé skills: Python (skills.languages), SQL (skills.languages), AWS (skills.database_cloud) (rule 2 passed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8859518002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8859518002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "content"
+          ],
+          "matched_terms": [],
+          "reason": "The role is a technical Solutions Architect position with Databricks, Python, SQL and data/AI work that overlaps with Priya's skills, but it requires 6+ years of experience in solutions architecture, data engineering, pre-sales, or a senior technical role, far above the 2-year limit. It also involves leading customer architecture strategy at a senior level. The remote role is restricted to candidates residing in CA, AZ, OR, or WA, and the resume gives no residence information (her co-op was in Framingham, MA), so eligibility can't be confirmed. The experience requirement alone makes the job not relevant."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8859518002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"content\"], \"matched_terms\": [], \"reason\": \"The role is a technical Solutions Architect position with Databricks, Python, SQL and data/AI work that overlaps with Priya's skills, but it requires 6+ years of experience in solutions architecture, data engineering, pre-sales, or a senior technical role, far above the 2-year limit. It also involves leading customer architecture strategy at a senior level. The remote role is restricted to candidates residing in CA, AZ, OR, or WA, and the resume gives no residence information (her co-op was in Framingham, MA), so eligibility can't be confirmed. The experience requirement alone makes the job not relevant.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:18:50Z",
+        "seconds": 3.7
+      }
+    },
+    {
+      "id": 8860646002,
+      "original": {
+        "id": 8860646002,
+        "title": "Analyst Relations Manager",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8860646002",
+        "location": {
+          "name": "United States"
+        },
+        "first_published": "2026-10-30T13:53:07-04:00",
+        "updated_at": "2026-10-30T13:53:07-04:00",
+        "requisition_id": "MKTQ327R47"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8860646002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": false,
+            "needed": 2,
+            "matched": [],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Analyst Relations Manager' contains none of the rule 1 phrases (rule 1 failed); content contains 0 of 8 counted résumé skills from skills.languages, skills.data_bi, skills.backend_automation, skills.database_cloud (rule 2 failed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8860646002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8860646002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The main work is analyst relations and marketing (Gartner/Forrester evaluations, RFIs, narratives, positioning), not AI, machine learning, or data engineering. The posting requires 4-7 years of experience, well above the 2-year limit for Priya, and the title includes Manager. The location (United States) is acceptable, but the role does not fit her seniority or work focus."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8860646002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The main work is analyst relations and marketing (Gartner/Forrester evaluations, RFIs, narratives, positioning), not AI, machine learning, or data engineering. The posting requires 4-7 years of experience, well above the 2-year limit for Priya, and the title includes Manager. The location (United States) is acceptable, but the role does not fit her seniority or work focus.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:18:53Z",
+        "seconds": 3.0
+      }
+    },
+    {
+      "id": 8886517002,
+      "original": {
+        "id": 8886517002,
+        "title": "Sr. Solutions Architect - Travel and Hospitality",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8886517002",
+        "location": {
+          "name": "Chicago, Illinois; Dallas, Texas"
+        },
+        "first_published": "2026-10-29T14:34:52-04:00",
+        "updated_at": "2026-10-29T14:34:52-04:00",
+        "requisition_id": "FEQ128R17"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8886517002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": true,
+            "needed": 2,
+            "matched": [
+              {
+                "skill": "Python",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "SQL",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "AWS",
+                "resume_field": "skills.database_cloud"
+              }
+            ],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Sr. Solutions Architect - Travel and Hospitality' contains none of the rule 1 phrases (rule 1 failed); content contains 3 of 8 counted résumé skills: Python (skills.languages), SQL (skills.languages), AWS (skills.database_cloud) (rule 2 passed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8886517002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8886517002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.languages",
+            "skills.data_bi",
+            "experience"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The title contains 'Sr.', and the posting requires 8+ years of experience in solutions architecture or senior customer-facing technical roles, far above Priya's 2-year limit. The role is also an expert-level leadership position involving executive relationships, mentoring L3-L5 SAs, and driving consumption and revenue. Although the locations (Chicago, IL; Dallas, TX) are in the US and Priya has Python, SQL, Databricks, and Unity Catalog skills, the seniority and experience requirements disqualify the role."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8886517002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"experience\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The title contains 'Sr.', and the posting requires 8+ years of experience in solutions architecture or senior customer-facing technical roles, far above Priya's 2-year limit. The role is also an expert-level leadership position involving executive relationships, mentoring L3-L5 SAs, and driving consumption and revenue. Although the locations (Chicago, IL; Dallas, TX) are in the US and Priya has Python, SQL, Databricks, and Unity Catalog skills, the seniority and experience requirements disqualify the role.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:18:56Z",
+        "seconds": 3.1
+      }
+    },
+    {
+      "id": 8893728002,
+      "original": {
+        "id": 8893728002,
+        "title": "Solutions Architect - Retail",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8893728002",
+        "location": {
+          "name": "Chicago, Illinois; Florida; Northeast - United States; Remote - Georgia; Remote - Massachusetts; Remote - New York; Southeast - United States; Tennessee"
+        },
+        "first_published": "2026-10-29T15:42:42-04:00",
+        "updated_at": "2026-10-29T15:42:42-04:00",
+        "requisition_id": "FEQ128R146"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8893728002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": true,
+            "needed": 2,
+            "matched": [
+              {
+                "skill": "Python",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "SQL",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "AWS",
+                "resume_field": "skills.database_cloud"
+              }
+            ],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Solutions Architect - Retail' contains none of the rule 1 phrases (rule 1 failed); content contains 3 of 8 counted résumé skills: Python (skills.languages), SQL (skills.languages), AWS (skills.database_cloud) (rule 2 passed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8893728002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8893728002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.languages",
+            "skills.data_bi",
+            "skills.backend_automation",
+            "skills.database_cloud",
+            "experience",
+            "projects"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The posting is a technical Solutions Architect (L5) role in a location that includes US options, and it overlaps with Priya's Python, SQL, Databricks, and MLflow background. However, it requires 6+ years in solutions architecture, data engineering, technical pre-sales, or a senior hands-on technical role, which is well above the 2-year limit. The role also centers on leading customer technical strategy and architecture with senior stakeholders, which is beyond Priya's early-career experience (one 8-month co-op and one course project)."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8893728002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"skills.backend_automation\", \"skills.database_cloud\", \"experience\", \"projects\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The posting is a technical Solutions Architect (L5) role in a location that includes US options, and it overlaps with Priya's Python, SQL, Databricks, and MLflow background. However, it requires 6+ years in solutions architecture, data engineering, technical pre-sales, or a senior hands-on technical role, which is well above the 2-year limit. The role also centers on leading customer technical strategy and architecture with senior stakeholders, which is beyond Priya's early-career experience (one 8-month co-op and one course project).\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:00Z",
+        "seconds": 3.4
+      }
+    },
+    {
+      "id": 8899597002,
+      "original": {
+        "id": 8899597002,
+        "title": "Sr. Solutions Engineer (Greater China)",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8899597002",
+        "location": {
+          "name": "Singapore"
+        },
+        "first_published": "2026-10-28T22:25:50-04:00",
+        "updated_at": "2026-10-28T22:25:50-04:00",
+        "requisition_id": "FEQ128R112"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8899597002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": true,
+            "needed": 2,
+            "matched": [
+              {
+                "skill": "Python",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "SQL",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "MLflow",
+                "resume_field": "skills.backend_automation"
+              },
+              {
+                "skill": "Delta Lake",
+                "resume_field": "skills.database_cloud"
+              },
+              {
+                "skill": "AWS",
+                "resume_field": "skills.database_cloud"
+              }
+            ],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Sr. Solutions Engineer (Greater China)' contains none of the rule 1 phrases (rule 1 failed); content contains 5 of 8 counted résumé skills: Python (skills.languages), SQL (skills.languages), MLflow (skills.backend_automation), Delta Lake (skills.database_cloud), AWS (skills.database_cloud) (rule 2 passed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8899597002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8899597002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.languages",
+            "skills.data_bi",
+            "skills.backend_automation",
+            "skills.database_cloud",
+            "experience"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The job is not relevant. The title contains 'Sr.', the role requires 4+ years of experience (above the 2-year limit), and it is located in Singapore, outside the United States. It also requires business proficiency in Mandarin and Greater China Region experience, which the resume does not show. Although the technical work (Python, SQL, Databricks, Delta Lake, MLflow) overlaps with Priya's skills, the seniority, experience, and location rules disqualify it."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8899597002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"skills.backend_automation\", \"skills.database_cloud\", \"experience\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The job is not relevant. The title contains 'Sr.', the role requires 4+ years of experience (above the 2-year limit), and it is located in Singapore, outside the United States. It also requires business proficiency in Mandarin and Greater China Region experience, which the resume does not show. Although the technical work (Python, SQL, Databricks, Delta Lake, MLflow) overlaps with Priya's skills, the seniority, experience, and location rules disqualify it.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:03Z",
+        "seconds": 3.0
+      }
+    },
+    {
+      "id": 8917482002,
+      "original": {
+        "id": 8917482002,
+        "title": "Business Development Representative (UKI)",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8917482002",
+        "location": {
+          "name": "London, United Kingdom"
+        },
+        "first_published": "2026-10-30T04:34:33-04:00",
+        "updated_at": "2026-10-30T04:34:33-04:00",
+        "requisition_id": "SLSQ327R850"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8917482002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": false,
+            "needed": 2,
+            "matched": [],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Business Development Representative (UKI)' contains none of the rule 1 phrases (rule 1 failed); content contains 0 of 8 counted résumé skills from skills.languages, skills.data_bi, skills.backend_automation, skills.database_cloud (rule 2 failed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8917482002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8917482002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "title",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The job is a Business Development Representative role, which is mainly sales work (prospecting, cold calling, pipeline building) and not AI, machine learning, or data engineering work. It is also located in London, United Kingdom, which is outside the United States. Priya's Databricks, Python, and MLflow experience does not make a sales role relevant."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8917482002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"location\"], \"matched_terms\": [], \"reason\": \"The job is a Business Development Representative role, which is mainly sales work (prospecting, cold calling, pipeline building) and not AI, machine learning, or data engineering work. It is also located in London, United Kingdom, which is outside the United States. Priya's Databricks, Python, and MLflow experience does not make a sales role relevant.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:06Z",
+        "seconds": 2.9
+      }
+    },
+    {
+      "id": 8917711002,
+      "original": {
+        "id": 8917711002,
+        "title": "Solutions Architect - Digital Natives and Startups",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8917711002",
+        "location": {
+          "name": "Berlin, Germany; Munich, Germany"
+        },
+        "first_published": "2026-10-29T12:59:55-04:00",
+        "updated_at": "2026-10-29T12:59:55-04:00",
+        "requisition_id": "FEQ128R103"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8917711002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": true,
+            "needed": 2,
+            "matched": [
+              {
+                "skill": "Python",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "SQL",
+                "resume_field": "skills.languages"
+              }
+            ],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Solutions Architect - Digital Natives and Startups' contains none of the rule 1 phrases (rule 1 failed); content contains 2 of 8 counted résumé skills: Python (skills.languages), SQL (skills.languages) (rule 2 passed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8917711002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8917711002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.languages",
+            "skills.data_bi",
+            "experience"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "Although this Solutions Architect role involves Databricks, Python, and SQL, which match Priya's skills, it is not a fit. The job is located in Berlin and Munich, Germany, outside the United States. It also requires a minimum of 7 years of pre-sales or customer-facing technical experience, far beyond Priya's early-career level, and mandates German fluency and pre-sales experience, which her resume does not show."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8917711002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"experience\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"Although this Solutions Architect role involves Databricks, Python, and SQL, which match Priya's skills, it is not a fit. The job is located in Berlin and Munich, Germany, outside the United States. It also requires a minimum of 7 years of pre-sales or customer-facing technical experience, far beyond Priya's early-career level, and mandates German fluency and pre-sales experience, which her resume does not show.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:09Z",
+        "seconds": 2.9
+      }
+    },
+    {
+      "id": 8920805002,
+      "original": {
+        "id": 8920805002,
+        "title": "Solutions Architect - Retail",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8920805002",
+        "location": {
+          "name": "Arkansas; Remote - Illinois; Remote - Ohio"
+        },
+        "first_published": "2026-10-29T14:49:46-04:00",
+        "updated_at": "2026-10-29T14:49:46-04:00",
+        "requisition_id": "FEQ128R82"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8920805002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": true,
+            "needed": 2,
+            "matched": [
+              {
+                "skill": "Python",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "SQL",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "AWS",
+                "resume_field": "skills.database_cloud"
+              }
+            ],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Solutions Architect - Retail' contains none of the rule 1 phrases (rule 1 failed); content contains 3 of 8 counted résumé skills: Python (skills.languages), SQL (skills.languages), AWS (skills.database_cloud) (rule 2 passed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8920805002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8920805002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.languages",
+            "skills.data_bi",
+            "experience"
+          ],
+          "posting_fields": [
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The posting is a technical Solutions Architect role (data engineering, ML/AI) that overlaps with Priya's Python, SQL, and Databricks skills. However, it requires 6+ years of experience in solutions architecture, data engineering, pre-sales, or a senior technical role, which far exceeds the 2-year limit. It is also an L5 role that leads technical strategy and owns accounts, which is beyond early-career seniority. Priya has about 8 months of co-op experience. The locations (Arkansas, Remote - Illinois, Remote - Ohio) are in the US, so location is not the issue. The experience and seniority mismatch makes it not relevant."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8920805002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"experience\"], \"posting_fields\": [\"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The posting is a technical Solutions Architect role (data engineering, ML/AI) that overlaps with Priya's Python, SQL, and Databricks skills. However, it requires 6+ years of experience in solutions architecture, data engineering, pre-sales, or a senior technical role, which far exceeds the 2-year limit. It is also an L5 role that leads technical strategy and owns accounts, which is beyond early-career seniority. Priya has about 8 months of co-op experience. The locations (Arkansas, Remote - Illinois, Remote - Ohio) are in the US, so location is not the issue. The experience and seniority mismatch makes it not relevant.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:12Z",
+        "seconds": 3.6
+      }
+    },
+    {
+      "id": 8921583002,
+      "original": {
+        "id": 8921583002,
+        "title": "Solutions Architect Digital Natives & Scaleups Italy",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8921583002",
+        "location": {
+          "name": "Milan, Italy"
+        },
+        "first_published": "2026-10-29T15:09:54-04:00",
+        "updated_at": "2026-10-29T15:17:50-04:00",
+        "requisition_id": "FEQ128R102"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8921583002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": true,
+            "needed": 2,
+            "matched": [
+              {
+                "skill": "Python",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "SQL",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "AWS",
+                "resume_field": "skills.database_cloud"
+              }
+            ],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Solutions Architect Digital Natives & Scaleups Italy' contains none of the rule 1 phrases (rule 1 failed); content contains 3 of 8 counted résumé skills: Python (skills.languages), SQL (skills.languages), AWS (skills.database_cloud) (rule 2 passed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8921583002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8921583002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.languages",
+            "skills.data_bi",
+            "experience"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The job is located in Milan, Italy, which is outside the United States, and requires 6+ years of experience and fluency in Italian, far beyond Priya's early-career level. Although the role involves data engineering and AI/ML work and Priya has matching skills (Python, SQL, Databricks), the location and experience requirements make it not suitable."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8921583002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"experience\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The job is located in Milan, Italy, which is outside the United States, and requires 6+ years of experience and fluency in Italian, far beyond Priya's early-career level. Although the role involves data engineering and AI/ML work and Priya has matching skills (Python, SQL, Databricks), the location and experience requirements make it not suitable.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:15Z",
+        "seconds": 2.9
+      }
+    },
+    {
+      "id": 8921585002,
+      "original": {
+        "id": 8921585002,
+        "title": "Solutions Architect Israel",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8921585002",
+        "location": {
+          "name": "Israel"
+        },
+        "first_published": "2026-10-29T07:30:42-04:00",
+        "updated_at": "2026-10-29T07:30:42-04:00",
+        "requisition_id": "FEQ128R104"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8921585002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": true,
+            "needed": 2,
+            "matched": [
+              {
+                "skill": "Python",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "SQL",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "AWS",
+                "resume_field": "skills.database_cloud"
+              }
+            ],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Solutions Architect Israel' contains none of the rule 1 phrases (rule 1 failed); content contains 3 of 8 counted résumé skills: Python (skills.languages), SQL (skills.languages), AWS (skills.database_cloud) (rule 2 passed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8921585002,
+        "status": "invalid",
+        "verdict": null,
+        "answer": null,
+        "errors": [
+          "not a single JSON object (extra text, code fences, or broken JSON)"
+        ],
+        "raw_answer": "{\"posting_id\": 8921585002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"skills.database_cloud\", \"experience\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [\"python\", \"sql\", \"databricks\", \"unity catalog\", \"aws\"], \"reason\": \"The role is a technical Solutions Architect position in data and AI, and Priya's Python, SQL, Databricks, and AWS skills overlap with it. However, it is located in Israel (Tel Aviv region), not the United States. It also requires 6+ years of experience, far above the 2-year limit, and fluency in Hebrew, which her resume does not show. It is not suitable on location, seniority, or language.\"}\n\nWait, I need to correct the matched terms: \"unity catalog\" appears in the resume (skills.data_bi) and in the posting content (\"Unity Catalog\" in the About Databricks section), so it is valid. \"aws\" appears in both the resume (skills.database_cloud) and the posting content (\"AWS, Azure, or GCP\"), so it is valid as well. The JSON above stands as my answer.",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:18Z",
+        "seconds": 4.3
+      }
+    },
+    {
+      "id": 8921587002,
+      "original": {
+        "id": 8921587002,
+        "title": "Solutions Architect Spain",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8921587002",
+        "location": {
+          "name": "Madrid"
+        },
+        "first_published": "2026-10-29T07:46:30-04:00",
+        "updated_at": "2026-10-29T07:46:30-04:00",
+        "requisition_id": "FEQ128R105"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8921587002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": true,
+            "needed": 2,
+            "matched": [
+              {
+                "skill": "Python",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "SQL",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "AWS",
+                "resume_field": "skills.database_cloud"
+              }
+            ],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Solutions Architect Spain' contains none of the rule 1 phrases (rule 1 failed); content contains 3 of 8 counted résumé skills: Python (skills.languages), SQL (skills.languages), AWS (skills.database_cloud) (rule 2 passed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8921587002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8921587002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.languages",
+            "skills.data_bi",
+            "experience"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The role is a Solutions Architect position located in Madrid, Spain, which is outside the United States. It also requires 6+ years of experience and fluency in Spanish, which exceeds Priya's early-career profile (under 2 years of professional experience). Although the technical work (Python, SQL, Databricks, data engineering, ML/AI) overlaps with her skills, the location and experience requirements make it not suitable."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8921587002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"experience\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The role is a Solutions Architect position located in Madrid, Spain, which is outside the United States. It also requires 6+ years of experience and fluency in Spanish, which exceeds Priya's early-career profile (under 2 years of professional experience). Although the technical work (Python, SQL, Databricks, data engineering, ML/AI) overlaps with her skills, the location and experience requirements make it not suitable.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:22Z",
+        "seconds": 3.4
+      }
+    },
+    {
+      "id": 8922115002,
+      "original": {
+        "id": 8922115002,
+        "title": "Lead Counsel,  Strategic Alliances ",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8922115002",
+        "location": {
+          "name": "Bellevue, Washington; Mountain View, California; San Francisco, California; Seattle, Washington"
+        },
+        "first_published": "2026-10-29T10:30:21-04:00",
+        "updated_at": "2026-10-29T10:30:21-04:00",
+        "requisition_id": "GAQ128R4"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8922115002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": false,
+            "needed": 2,
+            "matched": [],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Lead Counsel,  Strategic Alliances' contains none of the rule 1 phrases (rule 1 failed); content contains 0 of 8 counted résumé skills from skills.languages, skills.data_bi, skills.backend_automation, skills.database_cloud (rule 2 failed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8922115002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8922115002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The main work is legal (strategic alliance technology transactions and contract negotiation), not AI, machine learning, or data engineering. The title includes 'Lead Counsel', and the posting requires at least 10 years of legal experience and a J.D. with state bar membership, far above the 2-year limit and outside Priya's background. The location is in the United States, but this does not offset the unrelated work, seniority, and qualification mismatch. Databricks and AI platform terms appear only as company context, not as job duties Priya's skills would fulfill."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8922115002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The main work is legal (strategic alliance technology transactions and contract negotiation), not AI, machine learning, or data engineering. The title includes 'Lead Counsel', and the posting requires at least 10 years of legal experience and a J.D. with state bar membership, far above the 2-year limit and outside Priya's background. The location is in the United States, but this does not offset the unrelated work, seniority, and qualification mismatch. Databricks and AI platform terms appear only as company context, not as job duties Priya's skills would fulfill.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:26Z",
+        "seconds": 3.4
+      }
+    },
+    {
+      "id": 8922120002,
+      "original": {
+        "id": 8922120002,
+        "title": "Sr. Counsel, Employment",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8922120002",
+        "location": {
+          "name": "Bellevue, Washington; Seattle, Washington; Washington, D.C."
+        },
+        "first_published": "2026-10-30T10:56:37-04:00",
+        "updated_at": "2026-10-30T12:08:58-04:00",
+        "requisition_id": "GAQ427R247"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8922120002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": false,
+            "needed": 2,
+            "matched": [],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Sr. Counsel, Employment' contains none of the rule 1 phrases (rule 1 failed); content contains 0 of 8 counted résumé skills from skills.languages, skills.data_bi, skills.backend_automation, skills.database_cloud (rule 2 failed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8922120002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8922120002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The main work is employment law (compensation, benefits, pay equity, immigration, M&A, disputes), not AI, machine learning, or data engineering. The title contains 'Sr.' and the posting requires a JD, bar membership, and 10+ years of employment-law experience, far above the 2-year limit. Priya's resume shows no legal qualifications. The location (Washington state and Washington, D.C.) is in the US, but that does not offset the other disqualifying factors."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8922120002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The main work is employment law (compensation, benefits, pay equity, immigration, M&A, disputes), not AI, machine learning, or data engineering. The title contains 'Sr.' and the posting requires a JD, bar membership, and 10+ years of employment-law experience, far above the 2-year limit. Priya's resume shows no legal qualifications. The location (Washington state and Washington, D.C.) is in the US, but that does not offset the other disqualifying factors.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:29Z",
+        "seconds": 3.1
+      }
+    },
+    {
+      "id": 8922722002,
+      "original": {
+        "id": 8922722002,
+        "title": "Sr. Sales Compensation Analyst",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8922722002",
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "first_published": "2026-10-28T22:43:54-04:00",
+        "updated_at": "2026-10-29T16:07:35-04:00",
+        "requisition_id": "GAQ128R88"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8922722002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": false,
+            "needed": 2,
+            "matched": [],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Sr. Sales Compensation Analyst' contains none of the rule 1 phrases (rule 1 failed); content contains 0 of 8 counted résumé skills from skills.languages, skills.data_bi, skills.backend_automation, skills.database_cloud (rule 2 failed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8922722002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8922722002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The main work is sales compensation administration (commissions, payroll, SOX audit controls, Xactly), not AI, machine learning, or data engineering. The title contains 'Sr.', the posting requires 5+ years of experience (over the 2-year limit), and the location is Bengaluru, India, outside the United States. Priya's resume has no sales compensation experience. The mention of Databricks is only company description and not a match for the job's work."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8922722002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The main work is sales compensation administration (commissions, payroll, SOX audit controls, Xactly), not AI, machine learning, or data engineering. The title contains 'Sr.', the posting requires 5+ years of experience (over the 2-year limit), and the location is Bengaluru, India, outside the United States. Priya's resume has no sales compensation experience. The mention of Databricks is only company description and not a match for the job's work.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:32Z",
+        "seconds": 3.2
+      }
+    },
+    {
+      "id": 8922730002,
+      "original": {
+        "id": 8922730002,
+        "title": "Sr. Collections Analyst",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8922730002",
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "first_published": "2026-10-29T22:35:31-04:00",
+        "updated_at": "2026-10-30T04:06:16-04:00",
+        "requisition_id": "GAQ128R85"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8922730002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": false,
+            "needed": 2,
+            "matched": [],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Sr. Collections Analyst' contains none of the rule 1 phrases (rule 1 failed); content contains 0 of 8 counted résumé skills from skills.languages, skills.data_bi, skills.backend_automation, skills.database_cloud (rule 2 failed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8922730002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8922730002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The main work is accounts receivable collections and credit risk in finance, not AI, machine learning, or data engineering. The title includes 'Sr.', the posting requires 10+ years of collections experience and a Finance or Accounting degree, and the location is Bengaluru, India, outside the United States. Priya's resume shows AI/ML and data skills, but these do not match the role's requirements."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8922730002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The main work is accounts receivable collections and credit risk in finance, not AI, machine learning, or data engineering. The title includes 'Sr.', the posting requires 10+ years of collections experience and a Finance or Accounting degree, and the location is Bengaluru, India, outside the United States. Priya's resume shows AI/ML and data skills, but these do not match the role's requirements.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:36Z",
+        "seconds": 2.8
+      }
+    },
+    {
+      "id": 8923269002,
+      "original": {
+        "id": 8923269002,
+        "title": "Solutions Architect - Games",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8923269002",
+        "location": {
+          "name": "California"
+        },
+        "first_published": "2026-10-29T08:54:45-04:00",
+        "updated_at": "2026-10-29T14:54:05-04:00",
+        "requisition_id": "FEQ427R695"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8923269002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": true,
+            "needed": 2,
+            "matched": [
+              {
+                "skill": "Python",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "SQL",
+                "resume_field": "skills.languages"
+              },
+              {
+                "skill": "AWS",
+                "resume_field": "skills.database_cloud"
+              }
+            ],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Solutions Architect - Games' contains none of the rule 1 phrases (rule 1 failed); content contains 3 of 8 counted résumé skills: Python (skills.languages), SQL (skills.languages), AWS (skills.database_cloud) (rule 2 passed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8923269002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8923269002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.languages",
+            "skills.data_bi",
+            "experience"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The role is a technical Solutions Architect position tied to data engineering and AI, and Priya's Python, SQL, Databricks and MLflow experience overlaps with it. However, the posting requires 6+ years of experience, well above the 2-year limit for Priya as an early-career candidate. It is also restricted to remote candidates who currently reside in California, and the resume shows Priya's experience based in Framingham, MA, with no indication she lives in California. Because of the experience requirement and residency restriction, the job is not suitable."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8923269002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"experience\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The role is a technical Solutions Architect position tied to data engineering and AI, and Priya's Python, SQL, Databricks and MLflow experience overlaps with it. However, the posting requires 6+ years of experience, well above the 2-year limit for Priya as an early-career candidate. It is also restricted to remote candidates who currently reside in California, and the resume shows Priya's experience based in Framingham, MA, with no indication she lives in California. Because of the experience requirement and residency restriction, the job is not suitable.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:38Z",
+        "seconds": 3.5
+      }
+    },
+    {
+      "id": 8923831002,
+      "original": {
+        "id": 8923831002,
+        "title": "Staff Machine Learning Engineer, CustomerLake (ML/LLM)",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8923831002",
+        "location": {
+          "name": "New York City, New York"
+        },
+        "first_published": "2026-10-29T12:26:03-04:00",
+        "updated_at": "2026-10-29T12:26:03-04:00",
+        "requisition_id": "P-1607"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8923831002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": true,
+            "matched_phrases": [
+              "Machine Learning Engineer"
+            ],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": false,
+            "needed": 2,
+            "matched": [
+              {
+                "skill": "Python",
+                "resume_field": "skills.languages"
+              }
+            ],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Staff Machine Learning Engineer, CustomerLake (ML/LLM)' contains 'Machine Learning Engineer' (rule 1 passed); content contains 1 of 8 counted résumé skills: Python (skills.languages) (rule 2 failed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8923831002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8923831002,
+          "verdict": "not relevant",
+          "resume_fields": [
+            "skills.languages",
+            "skills.data_bi",
+            "skills.backend_automation",
+            "experience",
+            "projects"
+          ],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The work is ML/LLM engineering in New York City, so the domain and US location fit. However, the title contains 'Staff' and the posting requires 10+ years of engineering experience, far above the 2-year limit for Priya, an early-career candidate. Both are explicit exclusion criteria, so the role is not relevant despite overlapping skills such as Python, Databricks, and LLM evaluation."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8923831002, \"verdict\": \"not relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"skills.backend_automation\", \"experience\", \"projects\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The work is ML/LLM engineering in New York City, so the domain and US location fit. However, the title contains 'Staff' and the posting requires 10+ years of engineering experience, far above the 2-year limit for Priya, an early-career candidate. Both are explicit exclusion criteria, so the role is not relevant despite overlapping skills such as Python, Databricks, and LLM evaluation.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:42Z",
+        "seconds": 3.3
+      }
+    },
+    {
+      "id": 8924302002,
+      "original": {
+        "id": 8924302002,
+        "title": "Business Development Representative (German-speaking, DACH)",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8924302002",
+        "location": {
+          "name": "Munich, Germany"
+        },
+        "first_published": "2026-10-30T04:29:02-04:00",
+        "updated_at": "2026-10-30T04:34:59-04:00",
+        "requisition_id": "SLSQ427R1138"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8924302002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": false,
+            "needed": 2,
+            "matched": [],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Business Development Representative (German-speaking, DACH)' contains none of the rule 1 phrases (rule 1 failed); content contains 0 of 8 counted résumé skills from skills.languages, skills.data_bi, skills.backend_automation, skills.database_cloud (rule 2 failed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8924302002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8924302002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "title",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The role is a Business Development Representative, which is a sales job and not AI, machine learning, or data engineering work. It is located in Munich, Germany, outside the United States, and it requires fluency in German (C1 or higher), which the resume does not show. Although the posting mentions Databricks and AI, and Priya has Databricks experience, the main work is outbound prospecting and sales."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8924302002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"location\"], \"matched_terms\": [], \"reason\": \"The role is a Business Development Representative, which is a sales job and not AI, machine learning, or data engineering work. It is located in Munich, Germany, outside the United States, and it requires fluency in German (C1 or higher), which the resume does not show. Although the posting mentions Databricks and AI, and Priya has Databricks experience, the main work is outbound prospecting and sales.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:45Z",
+        "seconds": 3.0
+      }
+    },
+    {
+      "id": 8924844002,
+      "original": {
+        "id": 8924844002,
+        "title": "Lakebase Sales Specialist (Greater China Region)",
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8924844002",
+        "location": {
+          "name": "China"
+        },
+        "first_published": "2026-10-30T02:51:59-04:00",
+        "updated_at": "2026-10-30T02:58:27-04:00",
+        "requisition_id": "SLSQ327R376"
+      },
+      "record": {
+        "judge": "RECORD",
+        "posting_id": 8924844002,
+        "verdict": "not relevant",
+        "checks": {
+          "rule1_title": {
+            "posting_field": "title",
+            "passed": false,
+            "matched_phrases": [],
+            "software_engineer_with": []
+          },
+          "rule2_skills": {
+            "posting_field": "content",
+            "passed": false,
+            "needed": 2,
+            "matched": [
+              {
+                "skill": "AWS",
+                "resume_field": "skills.database_cloud"
+              }
+            ],
+            "excluded": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          "rule3_blocker": {
+            "posting_fields": [
+              "title",
+              "content"
+            ],
+            "passed": true,
+            "phrase": "security clearance",
+            "found_in": []
+          }
+        },
+        "reason": "title 'Lakebase Sales Specialist (Greater China Region)' contains none of the rule 1 phrases (rule 1 failed); content contains 1 of 8 counted résumé skills: AWS (skills.database_cloud) (rule 2 failed, needs 2); 'security clearance' not found in title or content (rule 3 passed)"
+      },
+      "judgment": {
+        "judge": "JUDGMENT",
+        "label": "JUDGMENT: Claude's opinion under the prompt contract, not a fact",
+        "posting_id": 8924844002,
+        "status": "valid",
+        "verdict": "not relevant",
+        "answer": {
+          "posting_id": 8924844002,
+          "verdict": "not relevant",
+          "resume_fields": [],
+          "posting_fields": [
+            "title",
+            "content",
+            "location"
+          ],
+          "matched_terms": [],
+          "reason": "The main work is enterprise sales (Lakebase Sales Specialist / Account Executive motion), not AI, ML, or data engineering. The role requires 7+ years of enterprise SaaS sales experience, far above the 2-year limit, and Priya has no sales experience. The job is located in China (Greater China Region) and requires business proficiency in Mandarin, which is not in her resume. The location is outside the United States, so it fails the location rule."
+        },
+        "errors": [],
+        "raw_answer": "{\"posting_id\": 8924844002, \"verdict\": \"not relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"content\", \"location\"], \"matched_terms\": [], \"reason\": \"The main work is enterprise sales (Lakebase Sales Specialist / Account Executive motion), not AI, ML, or data engineering. The role requires 7+ years of enterprise SaaS sales experience, far above the 2-year limit, and Priya has no sales experience. The job is located in China (Greater China Region) and requires business proficiency in Mandarin, which is not in her resume. The location is outside the United States, so it fails the location rule.\"}",
+        "prompt_file": "judgment-v1.md",
+        "prompt_sha256": "401f0f1f656e1856d865853e2f07d471ac7a5bbed2a8b238013e35875e2c34a3",
+        "model_requested": "claude-sonnet-5-5",
+        "models_reported": [
+          "claude-haiku-4-5-20251001",
+          "claude-sonnet-5-5"
+        ],
+        "asked_at": "2026-10-31T06:19:48Z",
+        "seconds": 3.0
+      }
+    }
+  ],
+  "no_longer_listed_ids": [
+    8073294002,
+    8301830002,
+    8437076002,
+    8438767002,
+    8567849002,
+    8569524002,
+    8629997002,
+    8641466002,
+    8642499002,
+    8645052002,
+    8654148002,
+    8687202002,
+    8688840002,
+    8717004002,
+    8746185002,
+    8747434002,
+    8755666002,
+    8778009002,
+    8779031002,
+    8826872002,
+    8873053002,
+    8899659002,
+    8908544002
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:35+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "9151c90ed63d129e63f0e127a0298526aa5f6db2ce8cc78de1dae825305bca31",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The résumé shows about 2.5 years of backend and DevOps work (TypeScript feature-flag platform, Java banking services, a Helm CLI) with Python listed but not shown in any bullet and no ML training, evaluation or research-pipeline experience, while this senior-compensated ($350K–$500K) ML infrastructure role requires proven Python proficiency, production data-intensive systems and comfort across the research-to-deployment ML pipeline.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The résumé shows about 2.5 years of backend and DevOps work (TypeScript feature-flag platform, Java banking services, a Helm CLI) with Python listed but not shown in any bullet and no ML training, evaluation or research-pipeline experience, while this senior-compensated ($350K–$500K) ML infrastructure role requires proven Python proficiency, production data-intensive systems and comfort across the research-to-deployment ML pipeline.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "736ece5b-c5c8-4b98-b612-5131e3be732e",
+  "total_cost_usd": 0.041475,
+  "job_id": 5364804008,
+  "split": "development",
+  "repeat": 1
+}

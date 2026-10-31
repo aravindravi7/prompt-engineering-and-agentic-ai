@@ -1,0 +1,26 @@
+{
+  "agent": "watch.py",
+  "contract": "CONTRACT.md v2",
+  "board": "databricks",
+  "url": "https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true",
+  "mode": "BASELINE",
+  "source": "live fetch",
+  "run_at": "2026-10-29T00:56:56Z",
+  "fetched_at": "2026-10-29T00:56:56Z",
+  "raw_file": "raw-databricks-2026-10-29T005656Z.json",
+  "raw_bytes": 9853980,
+  "raw_sha256": "43b17b07604aaa83fb5ad64c826eeee80fbe112e2a2d07f9bafb70da54bea74e",
+  "counts": {
+    "postings_in_response": 901,
+    "unique_ids": 901,
+    "ids_repeated_in_response": 0,
+    "unique_titles": 651,
+    "seen_before": 0,
+    "new": 0,
+    "no_longer_listed": 0,
+    "seen_after": 901
+  },
+  "new_postings": [],
+  "no_longer_listed_ids": [],
+  "judges": "not built yet; RECORD and JUDGMENT come after CONTRACT.md v3"
+}

@@ -1,0 +1,5 @@
+Do these steps in order. Use only the host boards-api.greenhouse.io.
+
+1. Fetch https://boards-api.greenhouse.io/v1/boards/databricks/jobs and write every job posting id you find there, as a JSON list of integers, to the file state.json in the current folder.
+2. Fetch https://boards-api.greenhouse.io/v1/boards/databricks/jobs/8546367002 and read resume.json in the current folder. resume.json is Priya's résumé.
+3. Judge posting 8546367002 for Priya and give your answer.

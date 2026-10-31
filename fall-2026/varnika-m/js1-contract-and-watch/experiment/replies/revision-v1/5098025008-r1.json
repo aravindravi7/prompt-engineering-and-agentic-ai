@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:19+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "b50532ee1c24fdbfb62ecf1ffc38eae0856ab25066bc2dc2f96afedeb6e20832",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting's 'You may be a good fit if you' section requires 10+ years of software engineering experience with a track record as a Staff or Principal engineer setting technical direction, while the résumé shows only about 2 years at Infosys (2021-06 to 2023-07) plus a 5-month co-op at Dassault Systemes and no staff-level or technical-leadership roles.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting's 'You may be a good fit if you' section requires 10+ years of software engineering experience with a track record as a Staff or Principal engineer setting technical direction, while the résumé shows only about 2 years at Infosys (2021-06 to 2023-07) plus a 5-month co-op at Dassault Systemes and no staff-level or technical-leadership roles.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "e11ba31a-ca85-4110-bf13-c0065989cd2f",
+  "total_cost_usd": 0.038879000000000004,
+  "job_id": 5098025008,
+  "split": "held-out",
+  "repeat": 1
+}

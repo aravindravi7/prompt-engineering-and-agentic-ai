@@ -1,0 +1,105 @@
+{
+  "note": "Hand labels for the held-out set, by Prasad on 2026-10-30, applying CONTRACT.md §4 by hand, opened only after the revised prompt was frozen (CP11a), before any held-out Claude reply and without looking at the rule code's output.",
+  "source": "evidence/stripe_jobs_content_true_2026-10-27T223947Z.json",
+  "labels": [
+        {
+        "id": "7774312",
+        "C1": false,
+        "C2": true,
+        "C3": false,
+        "skills_found": ["SQL"],
+        "verdict": "not_relevant",
+        "reason": "C1 false because the title contains no target title; C2 true because the location contains 'New York'; C3 false because only one distinct skill appears in the content (SQL), fewer than the 2 required"
+        },
+        {
+        "id": "7812856",
+        "C1": true,
+        "C2": true,
+        "C3": false,
+        "skills_found": [],
+        "verdict": "not_relevant",
+        "reason": "C1 true because the title contains 'Product Manager'; C2 true because the location contains 'New York' and 'Remote'; C3 false because no skill appears in the content"
+        },
+
+        {
+        "id": "7832098",
+        "C1": false,
+        "C2": false,
+        "C3": false,
+        "skills_found": [],
+        "verdict": "not_relevant",
+        "reason": "C1 false because the title contains no target title; C2 false because the location contains no persona location; C3 false because no skill appears in the content"
+        },
+
+        {
+        "id": "7861422",
+        "C1": false,
+        "C2": false,
+        "C3": false,
+        "skills_found": [],
+        "verdict": "not_relevant",
+        "reason": "C1 false because the title contains no target title; C2 false because the location contains no persona location; C3 false because no skill appears in the content"
+        },
+
+        {
+        "id": "7913698",
+        "C1": true,
+        "C2": true,
+        "C3": false,
+        "skills_found": [],
+        "verdict": "not_relevant",
+        "reason": "C1 true because the title contains 'Product Manager'; C2 true because the location contains 'New York' and 'Remote'; C3 false because no skill appears in the content"
+        },
+
+        {
+        "id": "7913702",
+        "C1": true,
+        "C2": true,
+        "C3": false,
+        "skills_found": [],
+        "verdict": "not_relevant",
+        "reason": "C1 true because the title contains 'Product Manager'; C2 true because the location contains 'New York' and 'Remote'; C3 false because no skill appears in the content"
+        },
+
+        {
+        "id": "7954207",
+        "C1": false,
+        "C2": false,
+        "C3": false,
+        "skills_found": [],
+        "verdict": "not_relevant",
+        "reason": "C1 false because the title contains no target title; C2 false because the location contains no persona location; C3 false because no skill appears in the content"
+        },
+
+        {
+        "id": "7961101",
+        "C1": false,
+        "C2": true,
+        "C3": false,
+        "skills_found": [],
+        "verdict": "not_relevant",
+        "reason": "C1 false because the title has 'Marketing' between 'Product' and 'Manager'; C2 true because the location contains 'NYC' and 'Remote'; C3 false because no skill appears in the content"
+        },
+
+        {
+        "id": "7975698",
+        "C1": false,
+        "C2": false,
+        "C3": false,
+        "skills_found": [],
+        "verdict": "not_relevant",
+        "reason": "C1 false because the title contains no target title; C2 false because the location contains no persona location; C3 false because no skill appears in the content"
+        },
+
+        {
+      "id": "7980578",
+      "C1": false,
+      "C2": false,
+      "C3": false,
+      "skills_found": [],
+      "verdict": "not_relevant",
+      "reason": "C1 false because the title contains no target title; C2 false because the location contains no persona location; C3 false because no skill appears in the content"
+    }
+  ]
+}
+

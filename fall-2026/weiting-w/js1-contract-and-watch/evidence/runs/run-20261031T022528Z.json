@@ -1,0 +1,263 @@
+{
+  "report_version": 1,
+  "generated_at": "2026-10-31T02:25:28Z",
+  "board": {
+    "host": "boards-api.greenhouse.io",
+    "board_token": "reddit",
+    "path_template": "/v1/boards/{board_token}/jobs",
+    "note": "Public job-board listing endpoint. No authentication, no credentials, GET only. See CONTRACT.md R1."
+  },
+  "url": "https://boards-api.greenhouse.io/v1/boards/reddit/jobs",
+  "http_status": 200,
+  "raw_response": {
+    "path": "evidence/raw/20261031T022528Z-reddit.json",
+    "bytes": 290888,
+    "sha256": "8871e1bb5de49c071f3b661a7d59e5fc879b29c187dd0a90409521aa479b86d5",
+    "source": "live",
+    "source_label": "live fetch"
+  },
+  "resume": {
+    "schema_version": "1.0",
+    "persona": true,
+    "title_block_count": 18,
+    "target_title_phrases_count": 10,
+    "target_job_families_count": 3,
+    "locations_ok_count": 9,
+    "remote_ok": true
+  },
+  "rule_version": "R-v2",
+  "is_baseline": false,
+  "counts": {
+    "postings_in_response": 163,
+    "already_seen": 152,
+    "new": 11
+  },
+  "state": {
+    "path": "evidence/state/seen.json",
+    "sha256_before": "9758e50d62196854fff957a43bf613ad9076b6156c4a2b94a1b5ff8d01a34c4c",
+    "sha256_after": "8acdbd5e9417f90450b3cd74f53ede04bb8f10ecccd8dcb8735da02a1bcec26d"
+  },
+  "entries": [
+    {
+      "posting_id": 8148089,
+      "title": "Associate General Counsel, Ads Product",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8148089",
+      "updated_at": "2026-10-30T20:07:28-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G2_discipline",
+        "justification": [
+          {
+            "resume_field": "target_title_phrases",
+            "resume_value": "no target phrase occurs in this title",
+            "posting_field": "title",
+            "evidence": "associate general counsel, ads product"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8329278,
+      "title": "Client Partner, Mid-Market Sales (B2B Services - Acquisitions)",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8329278",
+      "updated_at": "2026-10-30T20:07:28-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G2_discipline",
+        "justification": [
+          {
+            "resume_field": "target_title_phrases",
+            "resume_value": "no target phrase occurs in this title",
+            "posting_field": "title",
+            "evidence": "client partner, mid-market sales (b2b services - acquisitions)"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8330450,
+      "title": "Engineering Manager, Product Catalogs",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8330450",
+      "updated_at": "2026-10-28T06:20:38-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[8]",
+            "resume_value": "manager",
+            "posting_field": "title",
+            "evidence": "manager"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8330469,
+      "title": "Engineering Manager, Product Catalogs",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8330469",
+      "updated_at": "2026-10-28T06:20:40-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[8]",
+            "resume_value": "manager",
+            "posting_field": "title",
+            "evidence": "manager"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8319536,
+      "title": "Machine Learning Engineering Manager -  Core Ads Ranking",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8319536",
+      "updated_at": "2026-10-30T20:07:28-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[8]",
+            "resume_value": "manager",
+            "posting_field": "title",
+            "evidence": "manager"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8126946,
+      "title": "Senior Data Scientist - Consumer",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8126946",
+      "updated_at": "2026-10-30T20:07:24-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[0]",
+            "resume_value": "senior",
+            "posting_field": "title",
+            "evidence": "senior"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8287466,
+      "title": "Senior Frontend Engineer, Ads Formats",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8287466",
+      "updated_at": "2026-10-30T20:07:27-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[0]",
+            "resume_value": "senior",
+            "posting_field": "title",
+            "evidence": "senior"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8029120,
+      "title": "Senior Machine Learning Engineer, Ads Forecasting & Scenarios",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8029120",
+      "updated_at": "2026-10-30T20:07:26-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[0]",
+            "resume_value": "senior",
+            "posting_field": "title",
+            "evidence": "senior"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8331341,
+      "title": "Senior Software Engineer, Infrastructure Engineering",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8331341",
+      "updated_at": "2026-10-30T17:07:33-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[0]",
+            "resume_value": "senior",
+            "posting_field": "title",
+            "evidence": "senior"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8334138,
+      "title": "Staff Machine Learning Engineer, Ads Forecasting & Scenarios",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8334138",
+      "updated_at": "2026-10-30T20:07:27-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[2]",
+            "resume_value": "staff",
+            "posting_field": "title",
+            "evidence": "staff"
+          }
+        ]
+      }
+    },
+    {
+      "posting_id": 8319764,
+      "title": "Staff Program Manager, Human & LLM Data Annotation Operations",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8319764",
+      "updated_at": "2026-10-30T18:54:09-04:00",
+      "rule_verdict": {
+        "kind": "record",
+        "rule_version": "R-v2",
+        "verdict": "not_relevant",
+        "gate_failed": "G1_title_block",
+        "justification": [
+          {
+            "resume_field": "title_block[2]",
+            "resume_value": "staff",
+            "posting_field": "title",
+            "evidence": "staff"
+          }
+        ]
+      }
+    }
+  ],
+  "run_report_path": "evidence/runs/run-20261031T022528Z.json"
+}

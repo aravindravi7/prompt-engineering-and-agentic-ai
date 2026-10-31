@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:19+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "24459409befe81e0b664914d86020eb5fe60e3fb0d3469ddc6f3a68b115d54f5",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires 8+ years of hands-on AV operations, workplace technology, or technical event support experience with fluency across room systems, event audio, video, camera and streaming, but the résumé shows about 2.5 years of software engineering at Infosys and Dassault Systemes (TypeScript, Java, Kubernetes) with no AV or event-production experience.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 8+ years of hands-on AV operations, workplace technology, or technical event support experience with fluency across room systems, event audio, video, camera and streaming, but the résumé shows about 2.5 years of software engineering at Infosys and Dassault Systemes (TypeScript, Java, Kubernetes) with no AV or event-production experience.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "01a1c137-f560-442b-b8f2-4315c3417582",
+  "total_cost_usd": 0.044399999999999995,
+  "job_id": 5383710008,
+  "split": "held-out",
+  "repeat": 1
+}

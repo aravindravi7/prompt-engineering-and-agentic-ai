@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:03+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "15cb688aefbd08c6607f759481d92d8db5f20b84c4d06b2a121553b4e92652db",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires 6+ years of production software experience, but the résumé shows only about 2.5 years (Infosys Software Engineer 2021-06 to 2023-07 plus a 5-month Dassault Systemes co-op), despite relevant TypeScript/Python skills.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 6+ years of production software experience, but the résumé shows only about 2.5 years (Infosys Software Engineer 2021-06 to 2023-07 plus a 5-month Dassault Systemes co-op), despite relevant TypeScript/Python skills.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "ccba314c-13cc-4a6f-9aa8-50b4f46e92c0",
+  "total_cost_usd": 0.035421999999999995,
+  "job_id": 5400153008,
+  "split": "development",
+  "repeat": 1
+}

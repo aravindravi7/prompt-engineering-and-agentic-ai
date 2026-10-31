@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:39+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "830d64cd3cfeda2606be6add1e7fa805a1bb267d9e882353bc2087fd69aaeb39",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires BigQuery expertise, dimensional modeling with slowly changing dimensions, dbt/Fivetran proficiency, and implemented warehouse security controls, none of which appear on the résumé, whose experience is software engineering (TypeScript feature-flag platform, Java services, Kubernetes/Helm tooling) totaling roughly 2.5 years rather than data engineering.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires BigQuery expertise, dimensional modeling with slowly changing dimensions, dbt/Fivetran proficiency, and implemented warehouse security controls, none of which appear on the résumé, whose experience is software engineering (TypeScript feature-flag platform, Java services, Kubernetes/Helm tooling) totaling roughly 2.5 years rather than data engineering.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "adee42d0-923e-481c-9560-66d74e1320cf",
+  "total_cost_usd": 0.037096,
+  "job_id": 5424111008,
+  "split": "development",
+  "repeat": 1
+}

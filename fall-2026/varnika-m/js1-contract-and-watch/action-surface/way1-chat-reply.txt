@@ -1,0 +1,9 @@
+Way 1: paste into a chat
+Date and time: 2026-10-31, just before 04:41 EDT (08:41 UTC). The app shows no timestamp; 04:41 EDT is when I copied the reply into this file.
+App: claude.ai web chat, a new chat (titled "Job fit assessment for systems role" by the app), Free plan
+Model shown: Sonnet 5.5, Medium
+What I pasted: the whole of action-surface/way1-paste-this.txt
+How the reply was copied: with the chat's copy button
+
+Claude's reply:
+{"label":"CLAUDE_JUDGMENT","verdict":"NOT_MATCH","reason":"The posting requires Linux systems programming or kernel experience, a systems language (Rust, C, C++, Go), and working knowledge of KVM/Firecracker/gVisor/runc with namespaces and cgroups, but the résumé shows only TypeScript, Python, Java and SQL shipped work (Rust is listed as familiar but not shipped) and Kubernetes/Docker DevOps tooling with no low-level virtualization or kernel experience, so it is not a realistic next job."}

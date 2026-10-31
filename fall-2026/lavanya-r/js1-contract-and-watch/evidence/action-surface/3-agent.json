@@ -1,0 +1,33 @@
+{
+  "surface": "3-agent",
+  "command": [
+    "claude",
+    "--output-format",
+    "json",
+    "--no-session-persistence",
+    "--model",
+    "claude-opus-5-5",
+    "--tools",
+    "WebFetch,Read,Write",
+    "--allowedTools",
+    "WebFetch(domain:boards-api.greenhouse.io)",
+    "Read",
+    "Write"
+  ],
+  "files_before": [
+    "resume.json"
+  ],
+  "files_after": {
+    "state.json": "{\"seen_ids\": [6865698002]}\n",
+    "resume.json": "{\n  \"education\": [\n    {\n      \"institution\": \"Northeastern University\",\n      \"location\": \"Boston, MA\",\n      \"degree\": \"MS, Information Systems\",\n      \"gpa\": \"3.9/4.0\",\n      \"start_date\": \"2023-08\",\n      \"end_date\": \"2025-12\",\n      \"status\": \"completed\",\n      \"coursework\": [\n        \"Machine Learning\",\n        \"Data Management\",\n        \"LLM Systems\"\n      ]\n    }\n  ],\n  \"experience\": [\n    {\n      \"company\": \"Staples\",\n      \"location\": \"Framingham, MA\",\n      \"title\": \"AI Engineer Co-op\",\n      \"start_date\": \"2025-01\",\n      \"end_date\": \"2025-08\",\n      \"bullets\": [\n        \"Built a Genie Router Agent (Databricks Genie API + LangGraph) used by 120+ analysts, cutting SQL query time ~30%.\",\n        \"Designed an inference pipeline with MLflow 3.0 tracing, drift monitoring, and performance dashboards.\",\n        \"Built an A/B framework for LLM evaluation with significance testing across 5+ production experiments.\"\n      ],\n      \"attestation_correction\": \"\"\n    }\n  ],\n  \"projects\": [\n    {\n      \"name\": \"eval-guardrails\",\n      \"start_date\": \"2025-09\",\n      \"end_date\": \"2025-11\",\n      \"type\": \"coursework, published\",\n      \"team_size\": \"2\",\n      \"bullets\": [\n        \"Custom MLflow scorers for missing-response detection and routing accuracy; used in two course sections.\"\n      ],\n      \"agent_note\": \"Team of two - bullets describe only this persona's share.\"\n    }\n  ],\n  \"skills\": {\n    \"languages\": [\n      \"Python\",\n      \"SQL\"\n    ],\n    \"data_bi\": [\n      \"Databricks\",\n      \"Unity Catalog\",\n      \"Power BI\"\n    ],\n    \"backend_automation\": [\n      \"LangGraph\",\n      \"MLflow\",\n      \"Mem0\"\n    ],\n    \"database_cloud\": [\n      \"Delta Lake\",\n      \"AWS\"\n    ],\n    \"familiar_with_not_shipped\": [\n      \"Ray\",\n      \"Kubeflow\"\n    ],\n    \"agent_note\": \"No certification claims - none exist for this persona.\"\n  },\n  \"work_authorization\": {\n    \"needs_sponsorship\": true,\n    \"current_status\": \"F-1 OPT (post-completion, year 1)\",\n    \"_source\": \"Copied 2026-10-29 from the-reallocation-engine search/examples/priya-nair/profile.yml (needs_sponsorship, visa.current_status); the upstream resume.example.json has no work-authorization field.\"\n  }\n}"
+  },
+  "num_turns": 4,
+  "permission_denials": [],
+  "models_used": [
+    "claude-haiku-5-5",
+    "claude-opus-5-5"
+  ],
+  "raw_reply": "{\"posting_id\": 6865698002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"education\", \"skills.languages\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The posting requires a graduation date in fall 2026 or spring 2027, but the job seeker finished her MS in December 2025, so rule 6 fails. The description also names only one of her listed skills (Python), so rule 4 fails as well.\"}",
+  "verdict": "not_relevant",
+  "errors": []
+}

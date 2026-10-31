@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:28:59+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "6378a1323cea6e85c927ed1629f4ac2bb04bfde60e4e57ba8ae5c64a9a5ceaa5",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires 7+ years of data science experience with deep expertise in experimental design, causal inference and growth-funnel analysis, but the résumé shows about 2.5 years of software engineering (Infosys Java services, a Dassault co-op building a feature-flag platform) and no data science, causal inference or growth analytics roles.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 7+ years of data science experience with deep expertise in experimental design, causal inference and growth-funnel analysis, but the résumé shows about 2.5 years of software engineering (Infosys Java services, a Dassault co-op building a feature-flag platform) and no data science, causal inference or growth analytics roles.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "16f15f2f-aba2-4879-a41d-45cdfc922733",
+  "total_cost_usd": 0.039453,
+  "job_id": 5161402008,
+  "split": "development",
+  "repeat": 1
+}

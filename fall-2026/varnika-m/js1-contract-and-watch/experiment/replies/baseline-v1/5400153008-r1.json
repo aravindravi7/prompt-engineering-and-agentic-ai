@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:36+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "61e6bb1bcef745cf6f3aa32fc4dd6ad4df42e951b9824be4b2a1c174ed53823a",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting asks for 6+ years of production full-stack experience with React and a track record of shipping products independently, but the résumé shows about 2.5 years total (Infosys 2021-06 to 2023-07 plus a 5-month Dassault co-op), no React or frontend work, and no independent product ownership, so this senior role is not a realistic next step despite the TypeScript, Python and internal-platform overlap.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting asks for 6+ years of production full-stack experience with React and a track record of shipping products independently, but the résumé shows about 2.5 years total (Infosys 2021-06 to 2023-07 plus a 5-month Dassault co-op), no React or frontend work, and no independent product ownership, so this senior role is not a realistic next step despite the TypeScript, Python and internal-platform overlap.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "4e0b6f7b-3b3b-4ac8-9521-692015407074",
+  "total_cost_usd": 0.0341,
+  "job_id": 5400153008,
+  "split": "development",
+  "repeat": 1
+}

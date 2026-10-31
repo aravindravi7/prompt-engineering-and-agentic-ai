@@ -1,0 +1,28 @@
+{
+  "posting_id": 8546367002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8546367002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education"
+    ],
+    "posting_fields": [
+      "content"
+    ],
+    "reason": "The posting says it is for experienced engineers and is not intended for internship, new graduate, or entry-level applicants, and it asks for extensive years of industry data science experience. The résumé shows one 8-month co-op and a 2025 master's degree, so rule 6 fails even though the title, location, and skills (Python, Databricks, Unity Catalog, AWS) pass."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8546367002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\"], \"posting_fields\": [\"content\"], \"reason\": \"The posting says it is for experienced engineers and is not intended for internship, new graduate, or entry-level applicants, and it asks for extensive years of industry data science experience. The résumé shows one 8-month co-op and a 2025 master's degree, so rule 6 fails even though the title, location, and skills (Python, Databricks, Unity Catalog, AWS) pass.\"}",
+  "asked_at": "2026-10-30T21:27:03+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "cd06eea6-d21c-4911-b7f0-16d6791dfd55",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "03594c43541c7b6c3e05bb4843aa6b73849f5692eec093ce021cbebb12320938"
+}

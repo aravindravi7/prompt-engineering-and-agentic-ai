@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:03+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "05dbdd831a4ccbae96082fb1f6962c11ea9ace0a4170409f1be531bf5d66f0e8",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting's 'You might be a good fit if you have' list asks for 5+ years as a Data Engineer or Analytics Engineer, hands-on modeling of Salesforce and quote-to-cash data (CPQ, billing, ERP), and dbt, Airflow and Hex experience, but the résumé shows about 2.5 years of software engineering (Infosys 2021-06 to 2023-07 plus a Dassault Systemes co-op 2026-01 to 2026-05) and lists none of Salesforce, CPQ, dbt, Airflow or Hex.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting's 'You might be a good fit if you have' list asks for 5+ years as a Data Engineer or Analytics Engineer, hands-on modeling of Salesforce and quote-to-cash data (CPQ, billing, ERP), and dbt, Airflow and Hex experience, but the résumé shows about 2.5 years of software engineering (Infosys 2021-06 to 2023-07 plus a Dassault Systemes co-op 2026-01 to 2026-05) and lists none of Salesforce, CPQ, dbt, Airflow or Hex.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "6b2a9b31-d698-435e-aa96-930bdf1dc984",
+  "total_cost_usd": 0.038418999999999995,
+  "job_id": 5418610008,
+  "split": "development",
+  "repeat": 1
+}

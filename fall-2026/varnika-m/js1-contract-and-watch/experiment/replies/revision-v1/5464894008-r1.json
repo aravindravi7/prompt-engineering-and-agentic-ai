@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:06+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "d5c2ff1094180cf06c1f94b44476a20ff3196ea92125c126046be117f27ae4da",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The résumé shows only software engineering roles (Infosys Java services, Dassault Systemes co-op) with no sales leadership, no enterprise sales team management, and no asset and wealth management C-suite relationships, all of which the posting lists as minimum qualifications for this Enterprise Sales Manager role.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The résumé shows only software engineering roles (Infosys Java services, Dassault Systemes co-op) with no sales leadership, no enterprise sales team management, and no asset and wealth management C-suite relationships, all of which the posting lists as minimum qualifications for this Enterprise Sales Manager role.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "2a2a8957-4d88-4e72-8442-e020b8476c69",
+  "total_cost_usd": 0.045665000000000004,
+  "job_id": 5464894008,
+  "split": "development",
+  "repeat": 1
+}

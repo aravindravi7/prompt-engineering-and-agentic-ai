@@ -1,0 +1,172 @@
+{
+  "prompt": "prompts/baseline.md",
+  "repeats": 4,
+  "rows": [
+    {
+      "n": 1,
+      "posting_id": 6544443002,
+      "title": "Staff Software Engineer - Backend",
+      "hand_label": "not_fit",
+      "rule_verdict": "not_relevant",
+      "claude_verdicts": [
+        "INVALID",
+        "INVALID",
+        "INVALID",
+        "INVALID"
+      ],
+      "counts": {
+        "INVALID": 4
+      },
+      "unanimous": true,
+      "matches_hand_label": 0,
+      "asked_at": [
+        "2026-10-30T21:22:01+00:00",
+        "2026-10-30T21:22:01+00:00",
+        "2026-10-30T21:22:01+00:00",
+        "2026-10-30T21:22:01+00:00"
+      ],
+      "models_used": [
+        "claude-opus-5-5"
+      ],
+      "errors": [
+        [
+          "resume_fields must be a non-empty list of strings"
+        ],
+        [
+          "resume_fields must be a non-empty list of strings"
+        ],
+        [
+          "resume_fields must be a non-empty list of strings"
+        ],
+        [
+          "resume_fields must be a non-empty list of strings"
+        ]
+      ]
+    },
+    {
+      "n": 3,
+      "posting_id": 8663972002,
+      "title": "Staff Software Engineer - Streaming",
+      "hand_label": "not_fit",
+      "rule_verdict": "not_relevant",
+      "claude_verdicts": [
+        "INVALID",
+        "INVALID",
+        "INVALID",
+        "INVALID"
+      ],
+      "counts": {
+        "INVALID": 4
+      },
+      "unanimous": true,
+      "matches_hand_label": 0,
+      "asked_at": [
+        "2026-10-30T21:22:07+00:00",
+        "2026-10-30T21:22:07+00:00",
+        "2026-10-30T21:22:07+00:00",
+        "2026-10-30T21:22:07+00:00"
+      ],
+      "models_used": [
+        "claude-opus-5-5"
+      ],
+      "errors": [
+        [
+          "resume_fields must be a non-empty list of strings"
+        ],
+        [
+          "resume_fields must be a non-empty list of strings"
+        ],
+        [
+          "resume_fields must be a non-empty list of strings"
+        ],
+        [
+          "resume_fields must be a non-empty list of strings"
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "posting_id": 8560779002,
+      "title": "Software Engineer, Web Products",
+      "hand_label": "not_fit",
+      "rule_verdict": "relevant",
+      "claude_verdicts": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant"
+      ],
+      "counts": {
+        "relevant": 4
+      },
+      "unanimous": true,
+      "matches_hand_label": 0,
+      "asked_at": [
+        "2026-10-30T21:22:12+00:00",
+        "2026-10-30T21:22:12+00:00",
+        "2026-10-30T21:22:12+00:00",
+        "2026-10-30T21:22:12+00:00"
+      ],
+      "models_used": [
+        "claude-opus-5-5"
+      ],
+      "errors": []
+    },
+    {
+      "n": 10,
+      "posting_id": 8739507002,
+      "title": "Specialist Solutions Architect - Azure Infrastructure & AI Platform",
+      "hand_label": "not_fit",
+      "rule_verdict": "relevant",
+      "claude_verdicts": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant"
+      ],
+      "counts": {
+        "relevant": 4
+      },
+      "unanimous": true,
+      "matches_hand_label": 0,
+      "asked_at": [
+        "2026-10-30T21:22:19+00:00",
+        "2026-10-30T21:22:21+00:00",
+        "2026-10-30T21:22:21+00:00",
+        "2026-10-30T21:22:22+00:00"
+      ],
+      "models_used": [
+        "claude-opus-5-5"
+      ],
+      "errors": []
+    },
+    {
+      "n": 12,
+      "posting_id": 6865698002,
+      "title": "Software Engineer - New Grad (2027 Start)",
+      "hand_label": "not_fit",
+      "rule_verdict": "relevant",
+      "claude_verdicts": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant"
+      ],
+      "counts": {
+        "relevant": 4
+      },
+      "unanimous": true,
+      "matches_hand_label": 0,
+      "asked_at": [
+        "2026-10-30T21:22:26+00:00",
+        "2026-10-30T21:22:28+00:00",
+        "2026-10-30T21:22:29+00:00",
+        "2026-10-30T21:22:29+00:00"
+      ],
+      "models_used": [
+        "claude-opus-5-5"
+      ],
+      "errors": []
+    }
+  ]
+}

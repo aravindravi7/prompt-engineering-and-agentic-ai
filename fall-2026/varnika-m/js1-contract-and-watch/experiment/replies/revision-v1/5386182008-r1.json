@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:19+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "26b280b507c844ec3ad9337d907633497949fb7a3437cc670fd954c2733f8cb7",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires having owned a developer platform, API, billing or growth product end to end and being accountable for its revenue or activation number, plus negotiating pricing or revenue share with Finance, Legal or BD, but the résumé shows only software engineering roles (Dassault Systemes co-op, Infosys) with no product management, revenue ownership or commercial negotiation experience.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires having owned a developer platform, API, billing or growth product end to end and being accountable for its revenue or activation number, plus negotiating pricing or revenue share with Finance, Legal or BD, but the résumé shows only software engineering roles (Dassault Systemes co-op, Infosys) with no product management, revenue ownership or commercial negotiation experience.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "7fe67960-353a-4f17-b9f1-a447f0b83a4a",
+  "total_cost_usd": 0.041291,
+  "job_id": 5386182008,
+  "split": "held-out",
+  "repeat": 1
+}
