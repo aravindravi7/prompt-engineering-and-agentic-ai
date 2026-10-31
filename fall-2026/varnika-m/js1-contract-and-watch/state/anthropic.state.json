@@ -686,6 +686,14 @@
       "run_file": "runs/anthropic-2026-10-31T074011Z.json",
       "raw_file": "evidence/raw/anthropic-2026-10-31T074011Z.json.gz",
       "new": 0
+    },
+    {
+      "run_number": 2,
+      "started_at": "2026-10-31T08:29:09+00:00",
+      "source": "live",
+      "run_file": "runs/anthropic-2026-10-31T082909Z.json",
+      "raw_file": "evidence/raw/anthropic-2026-10-31T082909Z.json.gz",
+      "new": 0
     }
   ]
 }

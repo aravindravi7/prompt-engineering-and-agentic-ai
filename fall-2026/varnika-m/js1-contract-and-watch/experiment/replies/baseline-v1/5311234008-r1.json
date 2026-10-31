@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:09+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "2fe0e5b1551ee32b2343412c5694d42ce451a567b345d16c02802f01b35a68f5",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires trust and safety, age assurance or child online safety expertise and familiarity with regulations like COPPA, UK AADC and the DSA, but the résumé shows only software engineering work (TypeScript feature flags, Java banking services, Kubernetes tooling) with no policy, enforcement or regulatory experience beyond SQL skills.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires trust and safety, age assurance or child online safety expertise and familiarity with regulations like COPPA, UK AADC and the DSA, but the résumé shows only software engineering work (TypeScript feature flags, Java banking services, Kubernetes tooling) with no policy, enforcement or regulatory experience beyond SQL skills.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "0ac1839f-01dc-422c-99dc-1d6332fef4f2",
+  "total_cost_usd": 0.039443,
+  "job_id": 5311234008,
+  "split": "held-out",
+  "repeat": 1
+}

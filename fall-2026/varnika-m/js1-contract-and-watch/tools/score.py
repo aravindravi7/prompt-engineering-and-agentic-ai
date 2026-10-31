@@ -61,7 +61,7 @@ def experiment(postings, labels, rule, prompts):
         rows = [p for p in postings if p["split"] == split]
         print("\n### %s (%d postings)\n" % (split.capitalize(), len(rows)))
         print("| Posting | Hand label | Rule (record) | %s |" % " | ".join(prompts))
-        print("|---|---|---|%s" % "---|" * len(prompts))
+        print("|---|---|---|" + "---|" * len(prompts))
         totals = {name: 0 for name in prompts}
         asked = {name: 0 for name in prompts}
         for p in rows:

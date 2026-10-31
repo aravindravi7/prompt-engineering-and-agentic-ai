@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:13+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "6ab2c7da7ac20f2d77faf76a906d7b412e07d66c920861cbbbc0788f8f3b9e7c",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting asks for 4+ years as a customer, forward-deployed, sales, solutions or cybersecurity engineer working with governments or the public sector, plus experience in tech policy, AI safety or international affairs, but the résumé shows about 2 years of general software engineering at Infosys for a retail-banking client and a 5-month co-op, with no government, policy, AI-safety evaluation or client-advisory experience.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting asks for 4+ years as a customer, forward-deployed, sales, solutions or cybersecurity engineer working with governments or the public sector, plus experience in tech policy, AI safety or international affairs, but the résumé shows about 2 years of general software engineering at Infosys for a retail-banking client and a 5-month co-op, with no government, policy, AI-safety evaluation or client-advisory experience.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "07c2316a-f3b2-4497-b22c-599bf2d8d110",
+  "total_cost_usd": 0.03817299999999999,
+  "job_id": 5439830008,
+  "split": "held-out",
+  "repeat": 1
+}

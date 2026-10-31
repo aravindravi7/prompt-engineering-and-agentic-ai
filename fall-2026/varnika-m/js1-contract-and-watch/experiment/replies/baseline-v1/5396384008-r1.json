@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:12+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "4747dda66077b37807e485e83a148a1dc84e4d52c9dd0fbcccaacc2d8510dca4",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting asks for 8+ years running multi-region corporate mobile fleets with deep iOS MDM expertise (Apple Business Manager/ADE, Jamf/Intune, APNs), but the résumé shows about 2.5 years of backend Java/TypeScript engineering plus a co-op, with no mobile device management or endpoint experience and Terraform listed only as familiar-but-not-shipped.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting asks for 8+ years running multi-region corporate mobile fleets with deep iOS MDM expertise (Apple Business Manager/ADE, Jamf/Intune, APNs), but the résumé shows about 2.5 years of backend Java/TypeScript engineering plus a co-op, with no mobile device management or endpoint experience and Terraform listed only as familiar-but-not-shipped.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "0c30faf9-2192-4b3b-bda6-372ea6f822f1",
+  "total_cost_usd": 0.040076999999999995,
+  "job_id": 5396384008,
+  "split": "held-out",
+  "repeat": 1
+}
