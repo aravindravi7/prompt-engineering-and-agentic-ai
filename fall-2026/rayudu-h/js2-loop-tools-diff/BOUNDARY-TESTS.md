@@ -1,6 +1,6 @@
 # Boundary tests: predictions written before running
 
-> **Predictions written Oct 31, 2026, about 7:10 PM ET, before the permission-policy code existed.** Claude Code derived each prediction from the permission policy in `GATE.md`, which Hemanth accepted at 7:07 PM (commit `92b5c77`). This table was committed on its own before any policy code. The "Observed" column was filled in after the tests ran on Oct 31, 2026, about 7:30 PM ET (49 passed). A mismatch would stay in the table; there were none.
+> **Predictions written Oct 31, 2026, about 7:10 PM ET, before the permission-policy code existed.** Claude Code derived each prediction from the permission policy in `GATE.md`, which Hemanth accepted at 7:07 PM (commit `92b5c77`). This table was committed on its own before any policy code. The "Observed" column was filled in after the tests ran on Oct 31, 2026, about 7:12 PM ET (49 passed). A mismatch stays in the table; see #19.
 
 All paths are relative to this folder (`js2-loop-tools-diff/`). "Refused" means the policy raises `Refused` **before** any request is sent or any byte is written, and the refusal is logged in the trace.
 
@@ -24,5 +24,5 @@ All paths are relative to this folder (`js2-loop-tools-diff/`). "Refused" means 
 | 16 | Write `persona/priya-nair.resume.json` | read-only file, write request | **refused** (a read permission is not a write permission) | as predicted (`tests/test_boundary.py::test_16_…`) |
 | 17 | Read `../js1-contract-and-watch/CONTRACT.md` | read outside this folder | **refused** | as predicted (`tests/test_boundary.py::test_17_…`) |
 | 18 | Reset (delete) a state file **without** `--approve reset-state` | needs approval | **refused** | as predicted (`tests/test_boundary.py::test_18_…`) |
-| 19 | Reset a state file **with** `--approve reset-state` | needs approval, given | **allowed**, and the approval is logged | as predicted (`tests/test_boundary.py::test_19_…`) |
+| 19 | Reset a state file **with** `--approve reset-state` | needs approval, given | **allowed**, and the approval is logged | **partly.** Allowed, as predicted (`test_19_…`). But the approval is only printed by the `reset-state` command; it isn't written to a trace, and no test checks it |
 | 20 | The same GET twice in one run | repeat rule | the second is **refused and not sent** | as predicted (`tests/test_boundary.py::test_20_…`) |
