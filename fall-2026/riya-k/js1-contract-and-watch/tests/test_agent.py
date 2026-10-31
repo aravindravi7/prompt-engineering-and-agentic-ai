@@ -46,6 +46,9 @@ class TestRule(unittest.TestCase):
     def test_databricks_is_not_a_free_skill(self):
         p = posting(6, "Data Engineer", "Databricks and Python")
         self.assertEqual(rules.judge(p, RESUME)["verdict"], "not_relevant")
+        # Amendment 1: Unity Catalog is in Databricks' boilerplate, so it is not counted either.
+        p = posting(8, "Data Engineer", "Python. Databricks offers ... Lakehouse, and Unity Catalog.")
+        self.assertEqual(rules.judge(p, RESUME)["verdict"], "not_relevant")
 
     def test_location(self):
         self.assertTrue(rules.is_us_location("Remote - California"))

@@ -67,3 +67,11 @@ matched inside another word ("SQL" inside "NoSQL", "AI" inside "maintain").
 
 2026-10-31: A failure is the agent reporting a posting as new that was already seen, or calling a
 posting relevant without naming the résumé and posting fields behind it.
+
+## Amendments (dated; the original text above is unchanged)
+
+- **2026-10-31, amendment 1 (rule 2, skills):** "Unity Catalog" is also **not** counted. Found while preparing
+  the hand-labeling sheet: it appears in 901 of 901 Databricks postings because Databricks' standard
+  "About Databricks" paragraph names it, so it was a free match on every posting, the same trap as
+  "Databricks". Decided by Riya in the chat. Runs before this amendment (the live baseline and the seeded
+  two-day run) used the original rule; none of their 24 new postings changes verdict under the amendment.

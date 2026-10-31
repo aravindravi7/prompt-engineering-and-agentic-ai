@@ -6,8 +6,8 @@ import re
 TITLE_WORDS = ["AI", "LLM", "GenAI", "Generative AI", "ML", "Machine Learning", "Data Engineer",
                "Data Platform", "Data Scientist", "Data Science", "Analytics"]
 SENIORITY_WORDS = ["Senior", "Sr", "Staff", "Principal", "Director", "VP", "Vice President", "Head", "Manager"]
-# Skills that never count (CONTRACT.md, rule 2).
-NOT_COUNTED = {"databricks"}
+# Skills that never count (CONTRACT.md, rule 2 and amendment 1).
+NOT_COUNTED = {"databricks", "unity catalog"}  # amendment 1: Unity Catalog is boilerplate
 SKIP_GROUPS = {"familiar_with_not_shipped", "agent_note"}
 MIN_SKILLS = 2
 
