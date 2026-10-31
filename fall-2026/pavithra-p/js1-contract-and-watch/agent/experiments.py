@@ -16,9 +16,9 @@ from .config import ROOT
 EXPERIMENT = ROOT / "experiment"
 
 
-def frozen_jobs():
+def frozen_jobs(folder=EXPERIMENT):
     """The 20 frozen postings, with their full job objects read back from the saved raw responses."""
-    frozen = json.loads((EXPERIMENT / "postings.json").read_text(encoding="utf-8"))
+    frozen = json.loads((folder / "postings.json").read_text(encoding="utf-8"))
     by_id = {}
     for source in frozen["sources"]:
         for job in json.loads((ROOT / source["file"]).read_text(encoding="utf-8"))["jobs"]:
@@ -26,8 +26,8 @@ def frozen_jobs():
     return [(p, by_id[p["id"]]) for p in frozen["postings"]]
 
 
-def hand_labels():
-    with open(EXPERIMENT / "labels.csv", encoding="utf-8") as f:
+def hand_labels(folder=EXPERIMENT):
+    with open(folder / "labels.csv", encoding="utf-8") as f:
         return {int(r["id"]): r["label (Relevant / Not Relevant)"] for r in csv.DictReader(f)}
 
 
@@ -66,12 +66,13 @@ def sampling_table(rows, prompt_name):
     return "\n".join(lines) + "\n"
 
 
-def run_prompt(resume, prompt_path, split, run=None, out=None):
-    out = out or config.CLAUDE_DIR / "experiment"
-    labels = hand_labels()
+def run_prompt(resume, prompt_path, split, run=None, out=None, experiment=EXPERIMENT):
+    """experiment is the folder of one frozen set: experiment/ (set 1) or experiment-2/ (set 2)."""
+    out = out or config.CLAUDE_DIR / experiment.name
+    labels = hand_labels(experiment)
     folder = out / f"{prompt_path.stem}-{split}"
     rows = []
-    for posting, job in frozen_jobs():
+    for posting, job in frozen_jobs(experiment):
         if posting["split"] != split:
             continue
         record = claude_judge.judge(job, resume, prompt_path, **({"run": run} if run else {}))
@@ -101,4 +102,59 @@ def results_table(rows, prompt_name, split):
         reason = r["reason"].replace("|", "/")
         lines.append(f"| {p['id']} | {p['company']} | {p['title']} | {r['claude']} | {r['hand']} | "
                      f"{'yes' if r['claude'] == r['hand'] else 'no'} | {r['rule']} | {reason} |")
+    return "\n".join(lines) + "\n"
+
+
+PROMPTS = ("baseline", "revision-no-years")
+
+
+def saved_verdict(prompt, split, job_id):
+    record = json.loads((config.CLAUDE_DIR / "experiment" / f"{prompt}-{split}" / f"{job_id}.json").read_text(encoding="utf-8"))
+    return verdict_of(record)
+
+
+def audit(resume, jobs=None, labels=None, read=saved_verdict):
+    """Label audit, added 2026-10-31 after the experiment. No Claude call: only the saved replies.
+
+    Scores each prompt twice, against my hand labels and against the written rule (the record).
+    The hand labels are read as they are and never changed.
+    """
+    labels = labels if labels is not None else hand_labels()
+    rows = []
+    for posting, job in jobs if jobs is not None else frozen_jobs():
+        ruled = rule.judge(job, resume)
+        rows.append({"posting": posting, "hand": labels[job["id"]], "rule": ruled.verdict,
+                     "not_met": [part for part, ok in ruled.checks.items() if not ok],
+                     **{p: read(p, posting["split"], job["id"]) for p in PROMPTS}})
+    return rows
+
+
+def agreement(rows, split, verdict_key, against):
+    sub = [r for r in rows if r["posting"]["split"] == split]
+    return sum(r[verdict_key] == r[against] for r in sub), len(sub)
+
+
+def audit_table(rows):
+    def score(split, key, against):
+        agreed, n = agreement(rows, split, key, against)
+        return f"{agreed}/{n}"
+
+    at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    lines = [f"# Label audit ({at}, after the experiment)", "",
+             "Made by `python3 -m agent audit` from the saved replies in `evidence/claude/experiment/`. No Claude call. "
+             "My hand labels (`experiment/labels.csv`, commit `7327ccd`) are read as they are and not changed.", "",
+             "| Compared with | Baseline, dev | Revision, dev | Baseline, held-out | Revision, held-out |",
+             "|---|---|---|---|---|",
+             f"| My hand labels | {score('dev', 'baseline', 'hand')} | {score('dev', 'revision-no-years', 'hand')} | "
+             f"{score('held-out', 'baseline', 'hand')} | {score('held-out', 'revision-no-years', 'hand')} |",
+             f"| The written rule (record) | {score('dev', 'baseline', 'rule')} | {score('dev', 'revision-no-years', 'rule')} | "
+             f"{score('held-out', 'baseline', 'rule')} | {score('held-out', 'revision-no-years', 'rule')} |", "",
+             f"My hand labels agree with the written rule on {score('dev', 'hand', 'rule')} dev and "
+             f"{score('held-out', 'hand', 'rule')} held-out postings.", "",
+             "| Split | Job ID | Company | Title | My label | Rule (record) | Rule parts not met | Baseline | Revision |",
+             "|---|---|---|---|---|---|---|---|---|"]
+    for r in rows:
+        p = r["posting"]
+        lines.append(f"| {p['split']} | {p['id']} | {p['company']} | {p['title']} | {r['hand']} | {r['rule']} | "
+                     f"{', '.join(r['not_met']) or 'none'} | {r['baseline']} | {r['revision-no-years']} |")
     return "\n".join(lines) + "\n"

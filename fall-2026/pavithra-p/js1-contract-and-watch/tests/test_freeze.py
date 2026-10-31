@@ -21,6 +21,13 @@ class FreezeTests(unittest.TestCase):
         self.assertEqual([j["id"] for j, _ in picked], [10, 30, 1, 5])
         self.assertEqual([s for _, s in picked], ["dev", "held-out", "dev", "held-out"])
 
+    def test_set_2_drops_set_1_and_repeats_and_takes_up_to_4_per_board_biggest_first(self):
+        small = [job(i, f"Software Engineer {i}") for i in (3, 1, 2)] + [job(4, "Software Engineer 1")]
+        big = [job(i, f"Backend Engineer {i}") for i in range(10, 16)]
+        picked = freeze.select_set2([small, big], exclude={10}, per_board=4, n=6)
+        self.assertEqual([j["id"] for j, _ in picked], [11, 12, 13, 14, 1, 2], "same title kept once (4 dropped)")
+        self.assertEqual([s for _, s in picked], ["dev", "held-out"] * 3)
+
     def test_twenty_split_ten_ten(self):
         jobs = [job(i, "Software Engineer") for i in range(1, 30)]
         picked = freeze.select([jobs])

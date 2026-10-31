@@ -53,3 +53,7 @@ The tests should catch:
 ## What a failure looks like
 
 2026-10-29: The agent fails if it shows old jobs as new, gives wrong results based on my rule, or gives reasons without evidence from the job posting and résumé.
+
+## Note added 2026-10-31, after the experiment
+
+My 20 hand labels in experiment 1 did not follow this rule: they agree with it on 7 of 20 (`experiment/label-audit.md`). In experiment 2 my labels agree with it on 16 of 20 (`PROMPT-EXPERIMENT.md`). The rule above is unchanged, and the agent's rule judge still applies it as written.

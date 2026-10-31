@@ -62,6 +62,13 @@ class RuleTests(unittest.TestCase):
         self.assertTrue(rule.judge(job(1, "Software Engineer", content="<p>2+ years</p>"), PERSONA)
                         .checks["experience"])
 
+    def test_experience_reads_decimal_years_whole(self):
+        """Experiment 2 found the record reading "1.5+ years" as 5 (Affirm 8003020003)."""
+        self.assertTrue(rule.judge(job(1, "Software Engineer", content="<p>1.5+ years of experience</p>"), PERSONA)
+                        .checks["experience"])
+        self.assertFalse(rule.judge(job(1, "Software Engineer", content="<p>3.5 years of experience</p>"), PERSONA)
+                         .checks["experience"])
+
     def test_location_accepts_us_usa_united_states(self):
         for where in ("San Francisco, CA, US", "New York, NY, USA; Hybrid", "Remote, United States"):
             self.assertTrue(rule.judge(job(1, "Software Engineer", where), PERSONA).checks["location"], where)

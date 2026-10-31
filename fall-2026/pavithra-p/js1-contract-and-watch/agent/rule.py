@@ -10,7 +10,8 @@ EXPERIENCE_WORDS = ("Senior", "Sr", "Staff", "Principal", "Lead", "Manager", "Di
                     "Distinguished", "Intern")
 US_WORDS = ("United States", "USA", "US")
 MAX_YEARS = 3  # a description asking for 3 or more years fails rule 3
-YEARS = re.compile(r"(?<!\d)(\d{1,2})\s*\+?\s*years\b", re.IGNORECASE)
+# Decimals are read whole: "1.5+ years" is 1.5, not 5 (fixed 2026-10-31 after experiment 2).
+YEARS = re.compile(r"(?<![\d.])(\d{1,2}(?:\.\d+)?)\s*\+?\s*years\b", re.IGNORECASE)
 
 
 def find_words(text, words):
@@ -59,7 +60,7 @@ def judge(job, resume):
     skills_ok = len(matched) >= 2
 
     title_words = find_words(title, EXPERIENCE_WORDS)
-    years = [int(n) for n in YEARS.findall(description)]
+    years = [float(n) for n in YEARS.findall(description)]
     too_many_years = [n for n in years if n >= MAX_YEARS]
     experience_ok = not title_words and not too_many_years
 
@@ -76,7 +77,7 @@ def judge(job, resume):
         + (f" ({', '.join(f'{s} from {src}' for s, src in matched)})" if matched else ""),
         f"experience {'met' if experience_ok else 'not met'} (the 0–2 year limit set for the résumé's experience): "
         + (f"title has {', '.join(title_words)}" if title_words else "title has no seniority word")
-        + (f"; description asks for {', '.join(map(str, too_many_years))} years" if too_many_years else ""),
+        + (f"; description asks for {', '.join(f'{n:g}' for n in too_many_years)} years" if too_many_years else ""),
         f"location {'met' if location_ok else 'not met'}: location \"{location}\""
         + (f" has {', '.join(us_words)}" if location_ok else " has no United States, USA or US"),
     ]

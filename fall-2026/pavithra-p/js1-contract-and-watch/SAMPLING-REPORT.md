@@ -26,7 +26,7 @@ Not at all. Each posting got the same verdict in all four conversations, so the 
 
 * **Repeatability is not correctness.** Four identical answers show Claude is consistent, not that it is right. On 3 of 5 postings it consistently disagreed with my label.
 * Five postings and one model are far too few to estimate how often Claude is wrong in general.
-* Claude's quotes were checked against the saved postings by Claude Code, not yet by me: `8009057.txt` line 35 "4+ years of professional software engineering experience"; `7661919.txt` line 33 "Minimum 2-3+ years of hands-on experience"; `8213988.txt` line 28 "Minimum of 2 years of experience", plus the words SQL and Python.
+* Claude Code checked Claude's quotes against the saved postings. On 2026-10-31 I checked all three myself and found the same lines (7661919 with `sed -n '33p'`). `8009057.txt` line 35 "4+ years of professional software engineering experience"; `7661919.txt` line 33 "Minimum 2-3+ years of hands-on experience"; `8213988.txt` line 28 "Minimum of 2 years of experience", plus the words SQL and Python.
 * My labels stay as written. Changing them after seeing Claude's answers would make the prompt experiment meaningless.
 
 ## My conclusion

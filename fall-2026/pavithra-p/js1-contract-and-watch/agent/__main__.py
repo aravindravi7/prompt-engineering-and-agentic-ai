@@ -1,5 +1,6 @@
 """Command line. `python3 -m agent watch` (live), `watch --from-file PATH` (SEEDED), plus the experiment commands."""
 import argparse
+import json
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -20,10 +21,13 @@ def main(argv=None):
     s.add_argument("board", choices=config.EXPERIMENT_BOARDS)
     f = commands.add_parser("freeze", help="freeze the 20 postings and the dev/held-out split from saved responses")
     f.add_argument("raw", nargs="+", help="saved raw responses, the Pinterest baseline first")
+    f.add_argument("--set", choices=("1", "2"), default="1", help="2 = experiment 2 in experiment-2/")
     commands.add_parser("sample", help="sampling report: 5 dev postings x 4 fresh Claude conversations")
     e = commands.add_parser("experiment", help="ask Claude once per posting with one prompt, on one split")
     e.add_argument("prompt", help="prompt file, e.g. experiment/prompts/baseline.md")
     e.add_argument("--split", choices=("dev", "held-out"), required=True)
+    e.add_argument("--set", choices=("1", "2"), default="1", help="1 = experiment/, 2 = experiment-2/")
+    commands.add_parser("audit", help="label audit: my labels vs the written rule vs both prompts, from saved replies only")
     a = commands.add_parser("surfaces", help="action surfaces: write the chat text, then let Claude Code read the files")
     a.add_argument("job_id", type=int, help="a job id from a saved Pinterest response")
     args = parser.parse_args(argv)
@@ -34,6 +38,15 @@ def main(argv=None):
         print(f"job {job['id']} ({job['title']}) from {watch.rel(raw_path)}")
         print(f"way 1 (chat): paste {watch.rel(surfaces.chat_way(job, resume.load(config.RESUME)))} into claude.ai")
         print(f"way 2 (file): reply saved to {watch.rel(surfaces.file_way(job, config.RESUME))}")
+        return 0
+
+    if args.command == "audit":
+        from . import experiments
+        text = experiments.audit_table(experiments.audit(resume.load(config.RESUME)))
+        path = experiments.EXPERIMENT / "label-audit.md"
+        path.write_text(text, encoding="utf-8")
+        print(text)
+        print(f"(saved to {watch.rel(path)})")
         return 0
 
     if args.command == "snapshot":
@@ -50,11 +63,18 @@ def main(argv=None):
 
     if args.command == "freeze":
         from . import freeze
-        frozen = freeze.freeze([Path(p).resolve() for p in args.raw])
+        raws = [Path(p).resolve() for p in args.raw]
+        if args.set == "2":
+            set1 = {p["id"] for p in json.loads((freeze.EXPERIMENT / "postings.json").read_text(encoding="utf-8"))["postings"]}
+            frozen = freeze.freeze(raws, out=freeze.EXPERIMENT_2, selection=freeze.SET_2,
+                                   pick=lambda lists: freeze.select_set2(lists, exclude=set1))
+        else:
+            frozen = freeze.freeze(raws)
         for p in frozen["postings"]:
             print(f"{p['split']:9} {p['company']:10} {p['id']}  {p['title']}")
+        folder = "experiment-2" if args.set == "2" else "experiment"
         print(f"\nfroze {len(frozen['postings'])} postings at {frozen['frozen_at']}"
-              " -> experiment/postings.json, experiment/postings/, experiment/labels.csv")
+              f" -> {folder}/postings.json, {folder}/postings/, {folder}/labels.csv")
         return 0
 
     if args.command in ("sample", "experiment"):
@@ -65,9 +85,10 @@ def main(argv=None):
             text, path = experiments.sampling_table(rows, BASELINE_PROMPT.name), config.CLAUDE_DIR / "sampling" / "table.md"
         else:
             prompt = Path(args.prompt).resolve()
-            rows = experiments.run_prompt(persona, prompt, args.split)
+            folder = config.ROOT / ("experiment-2" if args.set == "2" else "experiment")
+            rows = experiments.run_prompt(persona, prompt, args.split, experiment=folder)
             text = experiments.results_table(rows, prompt.name, args.split)
-            path = config.CLAUDE_DIR / "experiment" / f"{prompt.stem}-{args.split}" / "results.md"
+            path = config.CLAUDE_DIR / folder.name / f"{prompt.stem}-{args.split}" / "results.md"
         path.write_text(text, encoding="utf-8")
         print(text)
         print(f"(saved to {watch.rel(path)})")

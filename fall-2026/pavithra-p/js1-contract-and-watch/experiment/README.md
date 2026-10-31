@@ -38,3 +38,7 @@ The label is Relevant only if all four are Y.
 While labelling, I decided that only plain Software Engineer roles count for Rohan. Roles that are senior-level or ML-related are Not Relevant, because they are not his background. In my words: "I would consider only the software engineer roles", and then "I would consider all the SE roles". My hand labels follow this, so they can differ from the written rule in `CONTRACT.md`, which the agent's rule judge still uses unchanged. Where they differ is part of the results.
 
 I decided the labels from the title and role type. Skills, years and location were mostly not checked by hand: `labels.csv` says "not checked" for each one I skipped. Result: 11 Relevant and 9 Not Relevant (dev 5 and 5, held-out 6 and 4).
+
+### Label audit on 2026-10-31, after the experiment
+
+A ChatGPT cross-check, then `python3 -m agent audit`, compared my 20 labels with the written rule in `CONTRACT.md`. They agree on 7 of 20 (3 dev, 4 held-out). Of the 13 that differ, 9 are Relevant by my label but fail the rule (all 9 ask for 3 or more years; 5551730004 also has too few skills), and 4 are Not Relevant by my label but pass it (8213988, 8026211, 7838591, 8026207). The note on 7838591 ("senior and ML related") does not describe its title, University Grad Software Engineer 2027. The labels and notes stay as committed in `7327ccd`. Full table: `label-audit.md`; what it means for the experiment: `PROMPT-EXPERIMENT.md`.

@@ -3,8 +3,9 @@ from pathlib import Path
 
 BOARD = "pinterest"
 ALLOWED_HOSTS = frozenset({"boards-api.greenhouse.io"})
-# The prompt experiment also draws postings from two more boards on the same host (experiment/README.md).
-EXPERIMENT_BOARDS = ("pinterest", "figma", "twilio")
+# The prompt experiments also draw postings from more boards on the same host
+# (experiment/README.md, experiment-2/README.md).
+EXPERIMENT_BOARDS = ("pinterest", "figma", "twilio", "affirm", "airbnb", "brex", "databricks", "reddit", "stripe")
 
 
 def board_url(board):
