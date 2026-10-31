@@ -339,3 +339,10 @@ Then I will run the sampling report and prompt experiment to compare Claude's ju
 - `experiment/LABELING-SHEET.md`
 
 
+### My Pass Definition (Written Before Testing)
+
+I will count a Claude judgment as a pass only if its JSON response passes my validator and its verdict matches my label for that posting.
+
+If the response is invalid, unavailable, or disagrees with my label, I will count it as a failure.
+
+I will use this same definition for both the sampling report and the prompt experiment.
