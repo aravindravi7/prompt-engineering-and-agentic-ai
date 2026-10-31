@@ -1,0 +1,32 @@
+{
+  "posting_id": 8736473002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8736473002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "skills.languages",
+      "skills.data_bi",
+      "skills.database_cloud",
+      "work_authorization.needs_sponsorship"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title 'Delivery Solutions Architect - Digital Native Business' contains none of the required keywords (AI, Machine Learning, ML, Software Engineer, Intern, New Grad, Early Career), so rule 1 fails. The US location, the skill overlap (Python, SQL, Databricks, Unity Catalog, AWS) and the absence of any no-sponsorship statement would otherwise pass."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8736473002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"skills.database_cloud\", \"work_authorization.needs_sponsorship\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title 'Delivery Solutions Architect - Digital Native Business' contains none of the required keywords (AI, Machine Learning, ML, Software Engineer, Intern, New Grad, Early Career), so rule 1 fails. The US location, the skill overlap (Python, SQL, Databricks, Unity Catalog, AWS) and the absence of any no-sponsorship statement would otherwise pass.\"}",
+  "asked_at": "2026-10-30T21:23:25+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "a5dcb559-9998-4b53-873c-b6d852348def",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "77732bc971f7038b082e6a72070408d0fd7ea859f528d178307aa23023c9fa04"
+}

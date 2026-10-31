@@ -1,0 +1,18 @@
+Way 2 — Claude Code (desktop app), October 30, 2026
+Prompt: read action_surface/posting_4696752005.json and data/persona_alex.json; verdict and justification; read only those two files, no writes, no commands, no internet.
+
+Verdict: not_relevant
+The posting matches Alex on title, location and skills. It misses on the one hard requirement Alex can’t meet: years of experience.
+What fits:
+
+* Title: The posting’s `title` is “Software Engineer, APIs & Context Platform”. That matches “Software Engineer” in Alex’s `target_titles`.
+* Location: The posting’s `location.name` and `offices[0].name` are “Mountain View, CA”. That city is in Alex’s `locations`. The `content` says the role is hybrid, 4 days a week in the office, which is fine since Alex lists the city itself.
+* Skills: The `content` asks for deep fluency in REST API design and names Java and Python as a plus. Alex’s `skills` include “REST APIs”, “Java” and “Python”. Their Northstar Systems `experience` entry says “Designed REST APIs”.
+* Education: The posting asks for a BA/BS in CS. Alex’s `education` shows a Bachelor of Science in Computer Science, `graduation_year` 2023.
+
+What disqualifies:
+
+* Seniority: The `content` requires “8+ years of industry software engineering experience” with time spent shipping public-facing APIs or developer platforms. Alex’s `experience` adds up to about 3.2 years at Northstar Systems (`start_date` 2023-06 to `end_date` 2026-08), plus a 3-month internship at Cedar Labs (2022-05 to 2022-08). That’s well under 8 years, and nothing in it shows public developer-platform work.
+* Secondary gaps: The posting prefers Golang, which isn’t in Alex’s `skills`. It also covers API gateway work (OAuth2, OIDC, rate limiting) and SDK design, which don’t appear in Alex’s `experience` highlights.
+
+This is a judgment call that depends on what “relevant” means in your project. If it only means matching title, location and skills, the verdict becomes relevant. If seniority counts, as I’ve assumed, the gap of 8+ years against about 3 makes it not_relevant. I only read the two files you named, so I didn’t check `CONTRACT.md` or the labels.

@@ -1,0 +1,19 @@
+{
+  "posting_id": 8824171002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "INVALID",
+  "parsed": null,
+  "errors": [
+    "resume_fields must be a non-empty list of strings"
+  ],
+  "raw_reply": "{\"posting_id\": 8824171002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\"], \"reason\": \"The title \\\"AI Sales Director\\\" contains the excluded terms \\\"Sales\\\" and \\\"Director\\\", which fails rule 2 regardless of the other criteria.\"}",
+  "asked_at": "2026-10-30T21:15:44+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "2094f35a-65c3-4cbd-8cc4-92d7d462d54e",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "57555c486fc75d692c7418355f6c0a53f999ea67547d31f0f6ab951c57f15daa"
+}

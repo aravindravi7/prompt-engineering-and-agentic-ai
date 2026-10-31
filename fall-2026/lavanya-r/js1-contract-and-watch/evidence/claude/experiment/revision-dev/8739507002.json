@@ -1,0 +1,32 @@
+{
+  "posting_id": 8739507002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8739507002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education",
+      "skills.languages",
+      "skills.data_bi"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title (contains 'AI'), US location, and skills overlap (Python, SQL, Databricks, Unity Catalog) all pass, but the posting requires 6+ years in solutions architecture or a senior technical role. The job seeker has about 8 months of co-op experience, so it fails the experience rule."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8739507002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\", \"skills.languages\", \"skills.data_bi\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title (contains 'AI'), US location, and skills overlap (Python, SQL, Databricks, Unity Catalog) all pass, but the posting requires 6+ years in solutions architecture or a senior technical role. The job seeker has about 8 months of co-op experience, so it fails the experience rule.\"}",
+  "asked_at": "2026-10-30T21:26:13+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "cc88fd47-24be-444f-9a76-fb2b03575556",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "c85121046ae27bb69908d3195c6d6893db0ea6f76081252071066304ac1d24ac"
+}

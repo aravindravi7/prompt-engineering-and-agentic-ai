@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:03+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "110533b9ff1cdbe4d214d693faddbae165ae1ff924c4f594a90be5c809568828",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires BigQuery expertise, dimensional modeling with slowly changing dimensions, dbt/Fivetran proficiency, and warehouse security controls, but the résumé shows SQL and Python with MSSQL/PostgreSQL/AWS application and DevOps work and lists no BigQuery, dbt, Fivetran, dimensional modeling, or HR-data experience.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires BigQuery expertise, dimensional modeling with slowly changing dimensions, dbt/Fivetran proficiency, and warehouse security controls, but the résumé shows SQL and Python with MSSQL/PostgreSQL/AWS application and DevOps work and lists no BigQuery, dbt, Fivetran, dimensional modeling, or HR-data experience.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "958ad1cb-9aac-4a57-9c7e-328eb3b2dbbf",
+  "total_cost_usd": 0.038008,
+  "job_id": 5424111008,
+  "split": "development",
+  "repeat": 1
+}

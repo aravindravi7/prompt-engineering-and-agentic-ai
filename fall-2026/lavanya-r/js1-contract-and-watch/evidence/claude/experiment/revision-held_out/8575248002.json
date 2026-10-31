@@ -1,0 +1,29 @@
+{
+  "posting_id": 8575248002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8575248002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education"
+    ],
+    "posting_fields": [
+      "title",
+      "content"
+    ],
+    "reason": "The title contains the excluded terms \"Sr.\" and \"Staff\", and the posting requires 12+ years of experience building large-scale distributed systems, far beyond the job seeker's single 2025 co-op and MS completed in 2025-12."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8575248002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The title contains the excluded terms \\\"Sr.\\\" and \\\"Staff\\\", and the posting requires 12+ years of experience building large-scale distributed systems, far beyond the job seeker's single 2025 co-op and MS completed in 2025-12.\"}",
+  "asked_at": "2026-10-30T21:27:09+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "4f963766-cb28-4fd5-a559-d21681a38fb3",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "30eb28f464a59bb83c57ba9d0d4e1ea3677a7c17391e80e6d449f377a43ee822"
+}

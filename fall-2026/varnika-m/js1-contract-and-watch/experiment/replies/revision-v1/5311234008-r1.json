@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:19+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "6b3c5ca1f99321d56e15a8ffd04267321b59a38d2e733e75659a459b4c85ac72",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The résumé shows software engineering work (TypeScript feature flags at Dassault Systemes, Java banking services at Infosys, Kubernetes tooling), but none of the posting's minimum qualifications such as trust and safety or child online safety experience, age assurance subject-matter expertise, or familiarity with regulatory frameworks like UK AADC, COPPA and the DSA.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The résumé shows software engineering work (TypeScript feature flags at Dassault Systemes, Java banking services at Infosys, Kubernetes tooling), but none of the posting's minimum qualifications such as trust and safety or child online safety experience, age assurance subject-matter expertise, or familiarity with regulatory frameworks like UK AADC, COPPA and the DSA.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "e09e1b87-581f-450e-a633-7a823ad55c4f",
+  "total_cost_usd": 0.040450999999999994,
+  "job_id": 5311234008,
+  "split": "held-out",
+  "repeat": 1
+}

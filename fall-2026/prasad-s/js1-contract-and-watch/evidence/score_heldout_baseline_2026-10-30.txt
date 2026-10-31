@@ -1,0 +1,12 @@
+split: held_out (10 of 20 replies in metadata.json)
+7774312.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7812856.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7832098.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7861422.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7913698.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7913702.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7954207.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7961101.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7975698.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+7980578.txt  accepted  judgment (Claude): not_relevant  hand: not_relevant  PASS
+replies: 10  accepted: 10  rejected: 0  PASS: 10  pass rate: 10/10 = 100%

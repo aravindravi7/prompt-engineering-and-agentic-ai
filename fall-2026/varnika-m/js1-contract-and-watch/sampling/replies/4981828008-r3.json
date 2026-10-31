@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:32+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "8451600b4194eed483906951c9d8b46086ec48d2d679b204e2597d4e5b01e505",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting asks for 5+ years of full-stack experience and proficiency with web technologies like React, but the résumé shows about 2.5 years total (Infosys 2021-06 to 2023-07 plus a five-month Dassault co-op), all backend and DevOps work (Java services, a TypeScript/MSSQL/Redis feature-flag platform, Kubernetes/Helm tooling), with no frontend or React experience.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting asks for 5+ years of full-stack experience and proficiency with web technologies like React, but the résumé shows about 2.5 years total (Infosys 2021-06 to 2023-07 plus a five-month Dassault co-op), all backend and DevOps work (Java services, a TypeScript/MSSQL/Redis feature-flag platform, Kubernetes/Helm tooling), with no frontend or React experience.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "80337ab7-d81c-43dc-9a53-fd5bb8dd131c",
+  "total_cost_usd": 0.041282,
+  "job_id": 4981828008,
+  "split": "development",
+  "repeat": 3
+}

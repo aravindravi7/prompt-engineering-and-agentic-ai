@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:15+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "c8ee8a7a65c53268ed35e11c53a029cbdf6ad288c087b6abf9fdd6e93811dc23",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The résumé shows about 2.5 years of general software engineering (Java services at Infosys, a feature-flag platform and AI log-triage workflow as a Dassault co-op) but nothing on physical-asset, hardware-inventory, chain-of-custody or security-control data, no stated CDC or reconciliation-focused data pipeline ownership, and no field or host-agent software, all of which this senior Security Data Engineer posting ($320K–$405K, end-to-end domain ownership) lists as minimum qualifications.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The résumé shows about 2.5 years of general software engineering (Java services at Infosys, a feature-flag platform and AI log-triage workflow as a Dassault co-op) but nothing on physical-asset, hardware-inventory, chain-of-custody or security-control data, no stated CDC or reconciliation-focused data pipeline ownership, and no field or host-agent software, all of which this senior Security Data Engineer posting ($320K–$405K, end-to-end domain ownership) lists as minimum qualifications.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "873f3c5d-1407-4c96-be6b-b5177ab27276",
+  "total_cost_usd": 0.042422,
+  "job_id": 5462966008,
+  "split": "held-out",
+  "repeat": 1
+}

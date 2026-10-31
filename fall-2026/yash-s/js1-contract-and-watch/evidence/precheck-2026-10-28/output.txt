@@ -1,0 +1,89 @@
+# Pre-build check, run 2026-10-28T20:27:39Z
+# board response: databricks-2026-10-28.json, fetched 2026-10-28T20:22:07Z from https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true
+# board response sha256: 887b53bf1e92dae891151aee8132980f9c55ca971df582b5d0fc8fd8815b5fe1
+# resume: Priya Nair (fictional), the-reallocation-engine search/examples/priya-nair/resume.example.json, sha256: a4fdbc960457ba911b9d3b8593400d17ea77f35a33ce2a508128c1694c4493c1
+# command: python3 check_rule2.py databricks-2026-10-28.json priya-nair.resume.example.json
+
+postings: 897 | meta total: 897
+unique ids: 897 | unique titles: 661
+
+skill -> postings containing it (whole word, any case):
+  Python          365
+  SQL             264
+  Databricks      897
+  Unity Catalog   897
+  Power BI          0
+  LangGraph         6
+  MLflow           57
+  Mem0              0
+  Delta Lake       78
+  AWS             371
+  Ray               4
+  Kubeflow          0
+
+rule 2 as written (all 12 skills): 897/897 = 100.0%
+
+rule 2 without Databricks products: 338/897 = 37.7%
+
+rule 2 without familiar_with_not_shipped: 897/897 = 100.0%
+
+rule 2 without both: 336/897 = 37.5%
+
+postings with an 'About Databricks' section: 897
+skills found inside that section: {'Databricks': 897, 'Unity Catalog': 856, 'MLflow': 4, 'Delta Lake': 4, 'AWS': 5}
+
+rule 1 (title word): 70/897 | rule 3 blocker found: 15/897 | all three (as written): 70/897
+titles passing all three:
+  - AI Automation Engineer
+  - AI Engineer - FDE (Forward Deployed Engineer)
+  - AI Engineer – Forward Deployed Engineering (AI FDE)
+  - AI Engineer – Forward Deployed Engineering (AI FDE), U.S. Public Sector (Federal Focus)
+  - AI Transformation Leader
+  - Applied AI Engineer
+  - Customer Enablement Architect (Capability Engineering & AI Adoption)
+  - Data+AI Workforce Transformation Practitioner — Customer Delivery
+  - Director, Marketing Strategy and AI Transformation
+  - Director, Product Marketing, AI 
+  - Finance Data and AI Lead
+  - Lead Solutions Architect - Generative AI (EMEA Emerging DNB)
+  - Lead Solutions Architect - Generative AI (EMEA Emerging DNB)
+  - Lead Solutions Architect - Generative AI (EMEA Emerging DNB)
+  - Lead Solutions Architect - Generative AI (EMEA Emerging DNB)
+  - Lead Solutions Architect - Generative AI (EMEA Emerging DNB)
+  - Manager, Engineering - AI/BI
+  - Manager/Sr. Manager, AI Forward Deployed Engineering
+  - Principal AI Research Scientist, Research Director - AI Scaling
+  - Principal Brand Content & AI Search Visibility
+  - Product Finance Director, AI Products & GPU Investment Strategy
+  - Senior AI Engineer - FDE (Forward Deployed Engineer)
+  - Senior Applied ML Engineer - ML4Sys 
+  - Senior Customer Enablement AI Programs Manager
+  - Senior EMEA AI Solutions Architect
+  - Senior Finance Specialist (Data & AI)
+  - Senior Manager, AI Forward Deployed Engineering - London
+  - Senior Manager - Technical Solutions (Big Data / AI)
+  - Senior ML & AI Technical Solutions Engineer 
+  - Senior Software Engineer, AI Native Web Platform
+  - Senior Software Engineer, AI Runtime
+  - Senior Software Engineer (Backend) - AI/ML Environments
+  - Senior Software Engineer - Data + AI Observability
+  - Senior Solutions Architect (Data & AI) - Leeds based
+  - Senior Specialist Solutions Architect (AI/ML)
+  - Senior Staff Applied AI Engineer - Context Retrieval
+  - Senior Staff Software Engineer, AI Runtime
+  - Specialist Solutions Architect - AI/ML
+  - Specialist Solutions Architect - AI/ML
+  - Specialist Solutions Architect - AI/ML
+
+titles with GenAI / 'Data Engineering' that rule 1 misses: 5
+  - PhD GenAI Research Scientist Intern
+  - Specialist Solutions Architect - Data Engineering
+  - Specialist Solutions Architect - Data Engineering & Warehousing (Financial Services) 
+  - Sr. Product Manager, Data Engineering
+  - Staff Software Engineer - GenAI inference
+
+'Ray' matches, first 5 contexts (4 postings):
+  ... ects like MLflow, PyTorch, or Ray   Built developer platforms o ...
+  ... ects like MLflow, PyTorch, or Ray   Built developer platforms o ...
+  ... ems (e.g., Kubernetes, Slurm, Ray, custom internal systems).    ...
+  ... rojects like MLflow, PyTorch, Ray, vLLM, SGLang   Built develop ...

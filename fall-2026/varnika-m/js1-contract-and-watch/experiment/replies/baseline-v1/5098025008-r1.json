@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:09+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "cc23a555896c42b79d62a321386a2de82a1fd9abae1055231da2094a583a02d2",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting is a Staff-level role requiring 10+ years of experience and a track record as a Staff/Principal engineer setting technical direction, while the résumé shows about 2 years at Infosys plus a 5-month co-op and a recently completed MS, so despite relevant TypeScript/Python skills and a multi-agent AI workflow, the candidate is far below the seniority bar.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting is a Staff-level role requiring 10+ years of experience and a track record as a Staff/Principal engineer setting technical direction, while the résumé shows about 2 years at Infosys plus a 5-month co-op and a recently completed MS, so despite relevant TypeScript/Python skills and a multi-agent AI workflow, the candidate is far below the seniority bar.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "0068083a-569d-4162-83fb-c504dde84d4a",
+  "total_cost_usd": 0.0381,
+  "job_id": 5098025008,
+  "split": "held-out",
+  "repeat": 1
+}

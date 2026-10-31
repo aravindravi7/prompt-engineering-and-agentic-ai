@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:40+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "61e6bb1bcef745cf6f3aa32fc4dd6ad4df42e951b9824be4b2a1c174ed53823a",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "This posting is from Anthropic, which makes me (Claude), but judging only on the stated criteria, the résumé shows about 2.5 years of production experience (Infosys 2021-06 to 2023-07 plus a 5-month Dassault co-op) against the posting's 6+ years, with no React and no record of shipping products independently, so this senior role is not a realistic next step.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"This posting is from Anthropic, which makes me (Claude), but judging only on the stated criteria, the résumé shows about 2.5 years of production experience (Infosys 2021-06 to 2023-07 plus a 5-month Dassault co-op) against the posting's 6+ years, with no React and no record of shipping products independently, so this senior role is not a realistic next step.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "d041326f-85a8-4880-b9bf-d7c3b5e90ff5",
+  "total_cost_usd": 0.0147566,
+  "job_id": 5400153008,
+  "split": "development",
+  "repeat": 2
+}

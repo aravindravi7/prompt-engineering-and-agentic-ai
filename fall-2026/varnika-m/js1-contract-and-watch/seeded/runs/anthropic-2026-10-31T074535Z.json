@@ -1,0 +1,1070 @@
+{
+  "contract": "CONTRACT.md of 2026-10-31, with its 2026-10-31 Changes addition",
+  "board": "anthropic",
+  "url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true",
+  "run_number": 2,
+  "run_kind": "watch",
+  "source": "seeded",
+  "fixture": "evidence/raw/anthropic-2026-10-31T074011Z.json.gz",
+  "note": "SEEDED run B. The fixture is run 1's saved live response (2026-10-31 07:40 UTC, evidence/raw/anthropic-2026-10-31T074011Z.json.gz), replayed after run A. The 9 postings reported new are real postings first published on 2026-10-30.",
+  "started_at": "2026-10-31T07:45:35+00:00",
+  "raw_file": "evidence/raw/anthropic-2026-10-31T074535Z.json.gz",
+  "raw_bytes": 9855369,
+  "raw_sha256": "1e5b62fec42a5b1d83e1c491da70215c5b8f77776097b2ef26e1fb4e7b0a7e88",
+  "counts": {
+    "in_response": 675,
+    "seen_before": 666,
+    "new": 9,
+    "missing_since_last_run": 0
+  },
+  "claude_asked": true,
+  "new_postings": [
+    {
+      "job_id": 5468266008,
+      "title": "Content Strategy Lead, Executive Programs",
+      "company_name": "Anthropic",
+      "location": "San Francisco, CA | New York City, NY",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5468266008",
+      "rule_verdict": {
+        "kind": "record",
+        "verdict": "NOT_MATCH",
+        "checks": [
+          {
+            "rule": "R1",
+            "name": "Job title",
+            "passed": false,
+            "posting_field": "title",
+            "posting_value": "Content Strategy Lead, Executive Programs",
+            "resume_field": "experience[].title",
+            "resume_value": [
+              "Software Engineer (Co-op)",
+              "Software Engineer"
+            ],
+            "explanation": "title contains none of: Software Engineer, Backend Engineer, Infrastructure Engineer, Platform Engineer, Site Reliability Engineer, DevOps Engineer, Data Engineer, Cloud Engineer"
+          },
+          {
+            "rule": "R2",
+            "name": "Seniority",
+            "passed": false,
+            "excluded_words_found": [
+              "Lead"
+            ],
+            "posting_field": "title",
+            "posting_value": "Content Strategy Lead, Executive Programs",
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "title contains excluded word(s): Lead"
+          },
+          {
+            "rule": "R3",
+            "name": "Location",
+            "passed": true,
+            "us_locations": [
+              "San Francisco, CA",
+              "New York City, NY"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "San Francisco, CA | New York City, NY",
+            "resume_field": "personal.location",
+            "resume_value": "Boston, MA",
+            "explanation": "US location(s): San Francisco, CA; New York City, NY"
+          },
+          {
+            "rule": "R4",
+            "name": "Experience",
+            "passed": false,
+            "years_found": [
+              {
+                "phrase": "12+ years",
+                "years": 12
+              }
+            ],
+            "posting_field": "content",
+            "posting_value": [
+              "12+ years"
+            ],
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "highest years phrase is 12 (limit 3)"
+          },
+          {
+            "rule": "R5",
+            "name": "Skills",
+            "passed": false,
+            "matches": [],
+            "posting_field": "title, content",
+            "posting_value": [],
+            "resume_field": "skills.languages, skills.backend_automation, skills.database_cloud, skills.devops_cicd",
+            "resume_value": [
+              "TypeScript",
+              "Python",
+              "Java",
+              "SQL",
+              "Node.js",
+              "Kafka",
+              "Redis",
+              "MSSQL",
+              "PostgreSQL",
+              "AWS",
+              "Kubernetes",
+              "Docker",
+              "Helm",
+              "Fluent Bit",
+              "Jenkins"
+            ],
+            "explanation": "0 skill(s) found, 2 needed"
+          }
+        ]
+      },
+      "claude_judgment": {
+        "label": "Claude judgment — opinion, not fact",
+        "asked_at": "2026-10-31T07:45:35+00:00",
+        "prompt_file": "baseline-v1.txt",
+        "prompt_sha256": "f4bde745479bec8ae9f70598dc0fc2c1ac016f28207eeaf844d8402f31844dfa",
+        "status": "accepted",
+        "verdict": "NOT_MATCH",
+        "reason": "The résumé shows about 2.5 years of software engineering (Java services at Infosys, a TypeScript feature-flag platform and AI triage workflow at Dassault Systemes) with no product marketing, executive content, speaker coaching or people-management experience, while the Content Strategy Lead posting requires building content for C-level audiences, managing a team, and prefers 12+ years in product marketing or executive programs.",
+        "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The résumé shows about 2.5 years of software engineering (Java services at Infosys, a TypeScript feature-flag platform and AI triage workflow at Dassault Systemes) with no product marketing, executive content, speaker coaching or people-management experience, while the Content Strategy Lead posting requires building content for C-level audiences, managing a team, and prefers 12+ years in product marketing or executive programs.\"}",
+        "rejected_because": null,
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-haiku-4-5-20251001",
+          "claude-opus-5-5"
+        ],
+        "session_id": "78f8ad6f-2820-4cac-bf87-d0dab734bdf7",
+        "total_cost_usd": 0.041453
+      }
+    },
+    {
+      "job_id": 5467233008,
+      "title": "Contracts Manager, GTM",
+      "company_name": "Anthropic",
+      "location": "San Francisco, CA",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5467233008",
+      "rule_verdict": {
+        "kind": "record",
+        "verdict": "NOT_MATCH",
+        "checks": [
+          {
+            "rule": "R1",
+            "name": "Job title",
+            "passed": false,
+            "posting_field": "title",
+            "posting_value": "Contracts Manager, GTM",
+            "resume_field": "experience[].title",
+            "resume_value": [
+              "Software Engineer (Co-op)",
+              "Software Engineer"
+            ],
+            "explanation": "title contains none of: Software Engineer, Backend Engineer, Infrastructure Engineer, Platform Engineer, Site Reliability Engineer, DevOps Engineer, Data Engineer, Cloud Engineer"
+          },
+          {
+            "rule": "R2",
+            "name": "Seniority",
+            "passed": false,
+            "excluded_words_found": [
+              "Manager"
+            ],
+            "posting_field": "title",
+            "posting_value": "Contracts Manager, GTM",
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "title contains excluded word(s): Manager"
+          },
+          {
+            "rule": "R3",
+            "name": "Location",
+            "passed": true,
+            "us_locations": [
+              "San Francisco, CA"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "San Francisco, CA",
+            "resume_field": "personal.location",
+            "resume_value": "Boston, MA",
+            "explanation": "US location(s): San Francisco, CA"
+          },
+          {
+            "rule": "R4",
+            "name": "Experience",
+            "passed": true,
+            "years_found": [
+              {
+                "phrase": "at least 3 years",
+                "years": 3
+              }
+            ],
+            "posting_field": "content",
+            "posting_value": [
+              "at least 3 years"
+            ],
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "highest years phrase is 3 (limit 3)"
+          },
+          {
+            "rule": "R5",
+            "name": "Skills",
+            "passed": false,
+            "matches": [],
+            "posting_field": "title, content",
+            "posting_value": [],
+            "resume_field": "skills.languages, skills.backend_automation, skills.database_cloud, skills.devops_cicd",
+            "resume_value": [
+              "TypeScript",
+              "Python",
+              "Java",
+              "SQL",
+              "Node.js",
+              "Kafka",
+              "Redis",
+              "MSSQL",
+              "PostgreSQL",
+              "AWS",
+              "Kubernetes",
+              "Docker",
+              "Helm",
+              "Fluent Bit",
+              "Jenkins"
+            ],
+            "explanation": "0 skill(s) found, 2 needed"
+          }
+        ]
+      },
+      "claude_judgment": {
+        "label": "Claude judgment — opinion, not fact",
+        "asked_at": "2026-10-31T07:45:39+00:00",
+        "prompt_file": "baseline-v1.txt",
+        "prompt_sha256": "175bfb318be433a095c30a76798944c275a85c8f0a44148e8955d99ae6352de1",
+        "status": "accepted",
+        "verdict": "NOT_MATCH",
+        "reason": "The résumé shows only software engineering work (TypeScript feature-flag platform at Dassault Systemes, Java banking services at Infosys) and an MS in Information Systems, with no experience drafting or negotiating commercial contracts, which the Contracts Manager, GTM posting lists as a minimum qualification alongside a preferred 4 years of contract management.",
+        "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The résumé shows only software engineering work (TypeScript feature-flag platform at Dassault Systemes, Java banking services at Infosys) and an MS in Information Systems, with no experience drafting or negotiating commercial contracts, which the Contracts Manager, GTM posting lists as a minimum qualification alongside a preferred 4 years of contract management.\"}",
+        "rejected_because": null,
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-haiku-4-5-20251001",
+          "claude-opus-5-5"
+        ],
+        "session_id": "59148627-9544-4160-be12-00de2beb018a",
+        "total_cost_usd": 0.036698
+      }
+    },
+    {
+      "job_id": 5462040008,
+      "title": "Customer Success Manager, Beneficial Deployments EMEA",
+      "company_name": "Anthropic",
+      "location": "London, UK",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5462040008",
+      "rule_verdict": {
+        "kind": "record",
+        "verdict": "NOT_MATCH",
+        "checks": [
+          {
+            "rule": "R1",
+            "name": "Job title",
+            "passed": false,
+            "posting_field": "title",
+            "posting_value": "Customer Success Manager, Beneficial Deployments EMEA",
+            "resume_field": "experience[].title",
+            "resume_value": [
+              "Software Engineer (Co-op)",
+              "Software Engineer"
+            ],
+            "explanation": "title contains none of: Software Engineer, Backend Engineer, Infrastructure Engineer, Platform Engineer, Site Reliability Engineer, DevOps Engineer, Data Engineer, Cloud Engineer"
+          },
+          {
+            "rule": "R2",
+            "name": "Seniority",
+            "passed": false,
+            "excluded_words_found": [
+              "Manager"
+            ],
+            "posting_field": "title",
+            "posting_value": "Customer Success Manager, Beneficial Deployments EMEA",
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "title contains excluded word(s): Manager"
+          },
+          {
+            "rule": "R3",
+            "name": "Location",
+            "passed": false,
+            "us_locations": [],
+            "posting_field": "location.name",
+            "posting_value": "London, UK",
+            "resume_field": "personal.location",
+            "resume_value": "Boston, MA",
+            "explanation": "no location in location.name has \"United States\" or a US state/DC code after a comma"
+          },
+          {
+            "rule": "R4",
+            "name": "Experience",
+            "passed": false,
+            "years_found": [
+              {
+                "phrase": "5+ years",
+                "years": 5
+              }
+            ],
+            "posting_field": "content",
+            "posting_value": [
+              "5+ years"
+            ],
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "highest years phrase is 5 (limit 3)"
+          },
+          {
+            "rule": "R5",
+            "name": "Skills",
+            "passed": false,
+            "matches": [],
+            "posting_field": "title, content",
+            "posting_value": [],
+            "resume_field": "skills.languages, skills.backend_automation, skills.database_cloud, skills.devops_cicd",
+            "resume_value": [
+              "TypeScript",
+              "Python",
+              "Java",
+              "SQL",
+              "Node.js",
+              "Kafka",
+              "Redis",
+              "MSSQL",
+              "PostgreSQL",
+              "AWS",
+              "Kubernetes",
+              "Docker",
+              "Helm",
+              "Fluent Bit",
+              "Jenkins"
+            ],
+            "explanation": "0 skill(s) found, 2 needed"
+          }
+        ]
+      },
+      "claude_judgment": {
+        "label": "Claude judgment — opinion, not fact",
+        "asked_at": "2026-10-31T07:45:42+00:00",
+        "prompt_file": "baseline-v1.txt",
+        "prompt_sha256": "b91406a7205708189089149a8b054fc22305c67e0fcacadff4309b69e7de1fee",
+        "status": "accepted",
+        "verdict": "NOT_MATCH",
+        "reason": "The posting requires 5+ years in customer-facing roles such as Customer Success or Consulting, account-team and change-management experience with nonprofits, and is based in London, while the résumé shows only about 2.5 years of backend/DevOps software engineering (Infosys Java services, Dassault Systemes co-op) with no customer success or account management experience and a Boston location.",
+        "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 5+ years in customer-facing roles such as Customer Success or Consulting, account-team and change-management experience with nonprofits, and is based in London, while the résumé shows only about 2.5 years of backend/DevOps software engineering (Infosys Java services, Dassault Systemes co-op) with no customer success or account management experience and a Boston location.\"}",
+        "rejected_because": null,
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-haiku-4-5-20251001",
+          "claude-opus-5-5"
+        ],
+        "session_id": "0cdaff8f-6f7f-4ab0-bb08-a5595ceb37f3",
+        "total_cost_usd": 0.040576
+      }
+    },
+    {
+      "job_id": 5468392008,
+      "title": "Data Center Electrical Engineer – Design",
+      "company_name": "Anthropic",
+      "location": "Remote-Friendly, United States",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5468392008",
+      "rule_verdict": {
+        "kind": "record",
+        "verdict": "NOT_MATCH",
+        "checks": [
+          {
+            "rule": "R1",
+            "name": "Job title",
+            "passed": false,
+            "posting_field": "title",
+            "posting_value": "Data Center Electrical Engineer – Design",
+            "resume_field": "experience[].title",
+            "resume_value": [
+              "Software Engineer (Co-op)",
+              "Software Engineer"
+            ],
+            "explanation": "title contains none of: Software Engineer, Backend Engineer, Infrastructure Engineer, Platform Engineer, Site Reliability Engineer, DevOps Engineer, Data Engineer, Cloud Engineer"
+          },
+          {
+            "rule": "R2",
+            "name": "Seniority",
+            "passed": true,
+            "excluded_words_found": [],
+            "posting_field": "title",
+            "posting_value": "Data Center Electrical Engineer – Design",
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "title contains none of the excluded seniority words"
+          },
+          {
+            "rule": "R3",
+            "name": "Location",
+            "passed": true,
+            "us_locations": [
+              "Remote-Friendly, United States"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "Remote-Friendly, United States",
+            "resume_field": "personal.location",
+            "resume_value": "Boston, MA",
+            "explanation": "US location(s): Remote-Friendly, United States"
+          },
+          {
+            "rule": "R4",
+            "name": "Experience",
+            "passed": false,
+            "years_found": [
+              {
+                "phrase": "10+ years",
+                "years": 10
+              }
+            ],
+            "posting_field": "content",
+            "posting_value": [
+              "10+ years"
+            ],
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "highest years phrase is 10 (limit 3)"
+          },
+          {
+            "rule": "R5",
+            "name": "Skills",
+            "passed": false,
+            "matches": [],
+            "posting_field": "title, content",
+            "posting_value": [],
+            "resume_field": "skills.languages, skills.backend_automation, skills.database_cloud, skills.devops_cicd",
+            "resume_value": [
+              "TypeScript",
+              "Python",
+              "Java",
+              "SQL",
+              "Node.js",
+              "Kafka",
+              "Redis",
+              "MSSQL",
+              "PostgreSQL",
+              "AWS",
+              "Kubernetes",
+              "Docker",
+              "Helm",
+              "Fluent Bit",
+              "Jenkins"
+            ],
+            "explanation": "0 skill(s) found, 2 needed"
+          }
+        ]
+      },
+      "claude_judgment": {
+        "label": "Claude judgment — opinion, not fact",
+        "asked_at": "2026-10-31T07:45:45+00:00",
+        "prompt_file": "baseline-v1.txt",
+        "prompt_sha256": "94472589de009eb560483f8dd109e78562ebe9c108a47a4e6fb4589862791339",
+        "status": "accepted",
+        "verdict": "NOT_MATCH",
+        "reason": "The posting asks for 10+ years of electrical engineering in mission-critical data centers, a bachelor's in Electrical Engineering, and NEC/IEEE power-systems study expertise (SKM/ETAP), while the résumé shows an MS in Information Systems and about 2.5 years of software engineering in TypeScript, Java and Kubernetes, with no electrical design experience.",
+        "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting asks for 10+ years of electrical engineering in mission-critical data centers, a bachelor's in Electrical Engineering, and NEC/IEEE power-systems study expertise (SKM/ETAP), while the résumé shows an MS in Information Systems and about 2.5 years of software engineering in TypeScript, Java and Kubernetes, with no electrical design experience.\"}",
+        "rejected_because": null,
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-haiku-4-5-20251001",
+          "claude-opus-5-5"
+        ],
+        "session_id": "25f81479-9e6d-42c3-be68-b236da6212ee",
+        "total_cost_usd": 0.051703
+      }
+    },
+    {
+      "job_id": 5468374008,
+      "title": "Data Center Power Generation and Microgrids Engineer",
+      "company_name": "Anthropic",
+      "location": "Remote-Friendly, United States",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5468374008",
+      "rule_verdict": {
+        "kind": "record",
+        "verdict": "NOT_MATCH",
+        "checks": [
+          {
+            "rule": "R1",
+            "name": "Job title",
+            "passed": false,
+            "posting_field": "title",
+            "posting_value": "Data Center Power Generation and Microgrids Engineer",
+            "resume_field": "experience[].title",
+            "resume_value": [
+              "Software Engineer (Co-op)",
+              "Software Engineer"
+            ],
+            "explanation": "title contains none of: Software Engineer, Backend Engineer, Infrastructure Engineer, Platform Engineer, Site Reliability Engineer, DevOps Engineer, Data Engineer, Cloud Engineer"
+          },
+          {
+            "rule": "R2",
+            "name": "Seniority",
+            "passed": true,
+            "excluded_words_found": [],
+            "posting_field": "title",
+            "posting_value": "Data Center Power Generation and Microgrids Engineer",
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "title contains none of the excluded seniority words"
+          },
+          {
+            "rule": "R3",
+            "name": "Location",
+            "passed": true,
+            "us_locations": [
+              "Remote-Friendly, United States"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "Remote-Friendly, United States",
+            "resume_field": "personal.location",
+            "resume_value": "Boston, MA",
+            "explanation": "US location(s): Remote-Friendly, United States"
+          },
+          {
+            "rule": "R4",
+            "name": "Experience",
+            "passed": false,
+            "years_found": [
+              {
+                "phrase": "10+ years",
+                "years": 10
+              }
+            ],
+            "posting_field": "content",
+            "posting_value": [
+              "10+ years"
+            ],
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "highest years phrase is 10 (limit 3)"
+          },
+          {
+            "rule": "R5",
+            "name": "Skills",
+            "passed": false,
+            "matches": [],
+            "posting_field": "title, content",
+            "posting_value": [],
+            "resume_field": "skills.languages, skills.backend_automation, skills.database_cloud, skills.devops_cicd",
+            "resume_value": [
+              "TypeScript",
+              "Python",
+              "Java",
+              "SQL",
+              "Node.js",
+              "Kafka",
+              "Redis",
+              "MSSQL",
+              "PostgreSQL",
+              "AWS",
+              "Kubernetes",
+              "Docker",
+              "Helm",
+              "Fluent Bit",
+              "Jenkins"
+            ],
+            "explanation": "0 skill(s) found, 2 needed"
+          }
+        ]
+      },
+      "claude_judgment": {
+        "label": "Claude judgment — opinion, not fact",
+        "asked_at": "2026-10-31T07:45:48+00:00",
+        "prompt_file": "baseline-v1.txt",
+        "prompt_sha256": "1450cbfe265956cb264b7505eb7c6790fc5f4921f66ba82a12035b40766f0579",
+        "status": "accepted",
+        "verdict": "NOT_MATCH",
+        "reason": "The posting requires 10+ years of power-generation, microgrid, BESS or utility-interconnection engineering and an electrical/power engineering background (IEEE 1547/2800, ETAP/PSCAD studies), while the résumé shows about 2.5 years of software engineering (TypeScript, Java, Kubernetes) and an MS in Information Systems with no electrical or power-systems experience.",
+        "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 10+ years of power-generation, microgrid, BESS or utility-interconnection engineering and an electrical/power engineering background (IEEE 1547/2800, ETAP/PSCAD studies), while the résumé shows about 2.5 years of software engineering (TypeScript, Java, Kubernetes) and an MS in Information Systems with no electrical or power-systems experience.\"}",
+        "rejected_because": null,
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-haiku-4-5-20251001",
+          "claude-opus-5-5"
+        ],
+        "session_id": "f0813f0a-6fb2-4bc8-acd5-9073a62f263b",
+        "total_cost_usd": 0.057821000000000004
+      }
+    },
+    {
+      "job_id": 5468380008,
+      "title": "Data Center Substation, Protection & Automation Engineer",
+      "company_name": "Anthropic",
+      "location": "Remote-Friendly, United States",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5468380008",
+      "rule_verdict": {
+        "kind": "record",
+        "verdict": "NOT_MATCH",
+        "checks": [
+          {
+            "rule": "R1",
+            "name": "Job title",
+            "passed": false,
+            "posting_field": "title",
+            "posting_value": "Data Center Substation, Protection & Automation Engineer",
+            "resume_field": "experience[].title",
+            "resume_value": [
+              "Software Engineer (Co-op)",
+              "Software Engineer"
+            ],
+            "explanation": "title contains none of: Software Engineer, Backend Engineer, Infrastructure Engineer, Platform Engineer, Site Reliability Engineer, DevOps Engineer, Data Engineer, Cloud Engineer"
+          },
+          {
+            "rule": "R2",
+            "name": "Seniority",
+            "passed": true,
+            "excluded_words_found": [],
+            "posting_field": "title",
+            "posting_value": "Data Center Substation, Protection & Automation Engineer",
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "title contains none of the excluded seniority words"
+          },
+          {
+            "rule": "R3",
+            "name": "Location",
+            "passed": true,
+            "us_locations": [
+              "Remote-Friendly, United States"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "Remote-Friendly, United States",
+            "resume_field": "personal.location",
+            "resume_value": "Boston, MA",
+            "explanation": "US location(s): Remote-Friendly, United States"
+          },
+          {
+            "rule": "R4",
+            "name": "Experience",
+            "passed": false,
+            "years_found": [
+              {
+                "phrase": "10+ years",
+                "years": 10
+              }
+            ],
+            "posting_field": "content",
+            "posting_value": [
+              "10+ years"
+            ],
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "highest years phrase is 10 (limit 3)"
+          },
+          {
+            "rule": "R5",
+            "name": "Skills",
+            "passed": false,
+            "matches": [],
+            "posting_field": "title, content",
+            "posting_value": [],
+            "resume_field": "skills.languages, skills.backend_automation, skills.database_cloud, skills.devops_cicd",
+            "resume_value": [
+              "TypeScript",
+              "Python",
+              "Java",
+              "SQL",
+              "Node.js",
+              "Kafka",
+              "Redis",
+              "MSSQL",
+              "PostgreSQL",
+              "AWS",
+              "Kubernetes",
+              "Docker",
+              "Helm",
+              "Fluent Bit",
+              "Jenkins"
+            ],
+            "explanation": "0 skill(s) found, 2 needed"
+          }
+        ]
+      },
+      "claude_judgment": {
+        "label": "Claude judgment — opinion, not fact",
+        "asked_at": "2026-10-31T07:45:52+00:00",
+        "prompt_file": "baseline-v1.txt",
+        "prompt_sha256": "b994f416a492efb5a49ffeb4ddffb1f16b7147918d5236fdabec88f9c2be2d58",
+        "status": "accepted",
+        "verdict": "NOT_MATCH",
+        "reason": "The posting requires 10+ years of power system protection engineering, an Electrical Engineering background, and hands-on expertise with protective relays (SEL, GE Multilin), arc-flash and coordination studies (SKM, ETAP), and IEC 61850/DNP3 substation automation, while the résumé shows about 2.5 years of software engineering (TypeScript, Java, Kubernetes, Redis) and an MS in Information Systems, with no electrical or substation experience.",
+        "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 10+ years of power system protection engineering, an Electrical Engineering background, and hands-on expertise with protective relays (SEL, GE Multilin), arc-flash and coordination studies (SKM, ETAP), and IEC 61850/DNP3 substation automation, while the résumé shows about 2.5 years of software engineering (TypeScript, Java, Kubernetes, Redis) and an MS in Information Systems, with no electrical or substation experience.\"}",
+        "rejected_because": null,
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-haiku-4-5-20251001",
+          "claude-opus-5-5"
+        ],
+        "session_id": "18c1c8ab-12c9-45aa-ac87-af95ee9c446c",
+        "total_cost_usd": 0.054597
+      }
+    },
+    {
+      "job_id": 5464234008,
+      "title": "Data Engineer",
+      "company_name": "Anthropic",
+      "location": "San Francisco, CA | New York City, NY; Seattle, WA",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5464234008",
+      "rule_verdict": {
+        "kind": "record",
+        "verdict": "NOT_MATCH",
+        "checks": [
+          {
+            "rule": "R1",
+            "name": "Job title",
+            "passed": true,
+            "posting_field": "title",
+            "posting_value": "Data Engineer",
+            "resume_field": "experience[].title",
+            "resume_value": [
+              "Software Engineer (Co-op)",
+              "Software Engineer"
+            ],
+            "explanation": "title contains \"Data Engineer\""
+          },
+          {
+            "rule": "R2",
+            "name": "Seniority",
+            "passed": true,
+            "excluded_words_found": [],
+            "posting_field": "title",
+            "posting_value": "Data Engineer",
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "title contains none of the excluded seniority words"
+          },
+          {
+            "rule": "R3",
+            "name": "Location",
+            "passed": true,
+            "us_locations": [
+              "San Francisco, CA",
+              "New York City, NY",
+              "Seattle, WA"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "San Francisco, CA | New York City, NY; Seattle, WA",
+            "resume_field": "personal.location",
+            "resume_value": "Boston, MA",
+            "explanation": "US location(s): San Francisco, CA; New York City, NY; Seattle, WA"
+          },
+          {
+            "rule": "R4",
+            "name": "Experience",
+            "passed": false,
+            "years_found": [
+              {
+                "phrase": "5+ years",
+                "years": 5
+              }
+            ],
+            "posting_field": "content",
+            "posting_value": [
+              "5+ years"
+            ],
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "highest years phrase is 5 (limit 3)"
+          },
+          {
+            "rule": "R5",
+            "name": "Skills",
+            "passed": true,
+            "matches": [
+              {
+                "skill": "Python",
+                "resume_field": "skills.languages",
+                "posting_fields": [
+                  "content"
+                ]
+              },
+              {
+                "skill": "SQL",
+                "resume_field": "skills.languages",
+                "posting_fields": [
+                  "content"
+                ]
+              }
+            ],
+            "posting_field": "title, content",
+            "posting_value": [
+              "Python",
+              "SQL"
+            ],
+            "resume_field": "skills.languages, skills.backend_automation, skills.database_cloud, skills.devops_cicd",
+            "resume_value": [
+              "TypeScript",
+              "Python",
+              "Java",
+              "SQL",
+              "Node.js",
+              "Kafka",
+              "Redis",
+              "MSSQL",
+              "PostgreSQL",
+              "AWS",
+              "Kubernetes",
+              "Docker",
+              "Helm",
+              "Fluent Bit",
+              "Jenkins"
+            ],
+            "explanation": "2 skill(s) found, 2 needed; Python (skills.languages, in content); SQL (skills.languages, in content)"
+          }
+        ]
+      },
+      "claude_judgment": {
+        "label": "Claude judgment — opinion, not fact",
+        "asked_at": "2026-10-31T07:45:55+00:00",
+        "prompt_file": "baseline-v1.txt",
+        "prompt_sha256": "c17395acd383d63f22496be853433c77e124c95d99109da34e65f557371f56bd",
+        "status": "accepted",
+        "verdict": "NOT_MATCH",
+        "reason": "The résumé shows software engineering work (TypeScript feature flags, Java banking services, Kubernetes tooling) but no data engineer or analytics engineer experience building production pipelines and data models, no cloud data warehouse or transformation/orchestration tooling, no entity resolution or deduplication work, and no GTM/CRM or Salesforce exposure, all of which the posting lists as minimum or core qualifications.",
+        "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The résumé shows software engineering work (TypeScript feature flags, Java banking services, Kubernetes tooling) but no data engineer or analytics engineer experience building production pipelines and data models, no cloud data warehouse or transformation/orchestration tooling, no entity resolution or deduplication work, and no GTM/CRM or Salesforce exposure, all of which the posting lists as minimum or core qualifications.\"}",
+        "rejected_because": null,
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-haiku-4-5-20251001",
+          "claude-opus-5-5"
+        ],
+        "session_id": "a2381b7b-8eef-4c2c-afac-fcc5dc0ca392",
+        "total_cost_usd": 0.03817
+      }
+    },
+    {
+      "job_id": 5394403008,
+      "title": "Engineering Manager, Integrity and Attestation",
+      "company_name": "Anthropic",
+      "location": "San Francisco, CA | Seattle, WA",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5394403008",
+      "rule_verdict": {
+        "kind": "record",
+        "verdict": "NOT_MATCH",
+        "checks": [
+          {
+            "rule": "R1",
+            "name": "Job title",
+            "passed": false,
+            "posting_field": "title",
+            "posting_value": "Engineering Manager, Integrity and Attestation",
+            "resume_field": "experience[].title",
+            "resume_value": [
+              "Software Engineer (Co-op)",
+              "Software Engineer"
+            ],
+            "explanation": "title contains none of: Software Engineer, Backend Engineer, Infrastructure Engineer, Platform Engineer, Site Reliability Engineer, DevOps Engineer, Data Engineer, Cloud Engineer"
+          },
+          {
+            "rule": "R2",
+            "name": "Seniority",
+            "passed": false,
+            "excluded_words_found": [
+              "Manager"
+            ],
+            "posting_field": "title",
+            "posting_value": "Engineering Manager, Integrity and Attestation",
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "title contains excluded word(s): Manager"
+          },
+          {
+            "rule": "R3",
+            "name": "Location",
+            "passed": true,
+            "us_locations": [
+              "San Francisco, CA",
+              "Seattle, WA"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "San Francisco, CA | Seattle, WA",
+            "resume_field": "personal.location",
+            "resume_value": "Boston, MA",
+            "explanation": "US location(s): San Francisco, CA; Seattle, WA"
+          },
+          {
+            "rule": "R4",
+            "name": "Experience",
+            "passed": false,
+            "years_found": [
+              {
+                "phrase": "5+ years",
+                "years": 5
+              },
+              {
+                "phrase": "8+ years",
+                "years": 8
+              }
+            ],
+            "posting_field": "content",
+            "posting_value": [
+              "5+ years",
+              "8+ years"
+            ],
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "highest years phrase is 8 (limit 3)"
+          },
+          {
+            "rule": "R5",
+            "name": "Skills",
+            "passed": false,
+            "matches": [],
+            "posting_field": "title, content",
+            "posting_value": [],
+            "resume_field": "skills.languages, skills.backend_automation, skills.database_cloud, skills.devops_cicd",
+            "resume_value": [
+              "TypeScript",
+              "Python",
+              "Java",
+              "SQL",
+              "Node.js",
+              "Kafka",
+              "Redis",
+              "MSSQL",
+              "PostgreSQL",
+              "AWS",
+              "Kubernetes",
+              "Docker",
+              "Helm",
+              "Fluent Bit",
+              "Jenkins"
+            ],
+            "explanation": "0 skill(s) found, 2 needed"
+          }
+        ]
+      },
+      "claude_judgment": {
+        "label": "Claude judgment — opinion, not fact",
+        "asked_at": "2026-10-31T07:45:58+00:00",
+        "prompt_file": "baseline-v1.txt",
+        "prompt_sha256": "d07c2022521739f3580442389fbef4a2a3edc71c665ec85adcd44409f4be2e63",
+        "status": "accepted",
+        "verdict": "NOT_MATCH",
+        "reason": "The posting is for an Engineering Manager who needs 5+ years managing teams, 8+ years in platform/security engineering, and hands-on work in secure boot, hardware roots of trust or attestation, but the résumé shows only about 2.5 years as an individual-contributor software engineer (Infosys 2021-2023 plus a Dassault co-op), with no people management or firmware/attestation security experience.",
+        "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting is for an Engineering Manager who needs 5+ years managing teams, 8+ years in platform/security engineering, and hands-on work in secure boot, hardware roots of trust or attestation, but the résumé shows only about 2.5 years as an individual-contributor software engineer (Infosys 2021-2023 plus a Dassault co-op), with no people management or firmware/attestation security experience.\"}",
+        "rejected_because": null,
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-haiku-4-5-20251001",
+          "claude-opus-5-5"
+        ],
+        "session_id": "e14be013-8a86-49ba-9e0f-3f01b5dd553f",
+        "total_cost_usd": 0.043395
+      }
+    },
+    {
+      "job_id": 5467690008,
+      "title": "Research Operations Lead, Biology",
+      "company_name": "Anthropic",
+      "location": "Boston, MA",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5467690008",
+      "rule_verdict": {
+        "kind": "record",
+        "verdict": "NOT_MATCH",
+        "checks": [
+          {
+            "rule": "R1",
+            "name": "Job title",
+            "passed": false,
+            "posting_field": "title",
+            "posting_value": "Research Operations Lead, Biology",
+            "resume_field": "experience[].title",
+            "resume_value": [
+              "Software Engineer (Co-op)",
+              "Software Engineer"
+            ],
+            "explanation": "title contains none of: Software Engineer, Backend Engineer, Infrastructure Engineer, Platform Engineer, Site Reliability Engineer, DevOps Engineer, Data Engineer, Cloud Engineer"
+          },
+          {
+            "rule": "R2",
+            "name": "Seniority",
+            "passed": false,
+            "excluded_words_found": [
+              "Lead"
+            ],
+            "posting_field": "title",
+            "posting_value": "Research Operations Lead, Biology",
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "title contains excluded word(s): Lead"
+          },
+          {
+            "rule": "R3",
+            "name": "Location",
+            "passed": true,
+            "us_locations": [
+              "Boston, MA"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "Boston, MA",
+            "resume_field": "personal.location",
+            "resume_value": "Boston, MA",
+            "explanation": "US location(s): Boston, MA"
+          },
+          {
+            "rule": "R4",
+            "name": "Experience",
+            "passed": true,
+            "years_found": [],
+            "posting_field": "content",
+            "posting_value": [],
+            "resume_field": "experience[].start_date, experience[].end_date",
+            "resume_value": "29 months",
+            "explanation": "no digit-based years phrase in the description"
+          },
+          {
+            "rule": "R5",
+            "name": "Skills",
+            "passed": false,
+            "matches": [],
+            "posting_field": "title, content",
+            "posting_value": [],
+            "resume_field": "skills.languages, skills.backend_automation, skills.database_cloud, skills.devops_cicd",
+            "resume_value": [
+              "TypeScript",
+              "Python",
+              "Java",
+              "SQL",
+              "Node.js",
+              "Kafka",
+              "Redis",
+              "MSSQL",
+              "PostgreSQL",
+              "AWS",
+              "Kubernetes",
+              "Docker",
+              "Helm",
+              "Fluent Bit",
+              "Jenkins"
+            ],
+            "explanation": "0 skill(s) found, 2 needed"
+          }
+        ]
+      },
+      "claude_judgment": {
+        "label": "Claude judgment — opinion, not fact",
+        "asked_at": "2026-10-31T07:46:01+00:00",
+        "prompt_file": "baseline-v1.txt",
+        "prompt_sha256": "46a2106ceb3f1103afa2b352fdc57002bff024b0019c41fa701d0f81ca594fc5",
+        "status": "accepted",
+        "verdict": "NOT_MATCH",
+        "reason": "The résumé shows software engineering work (TypeScript feature-flag platform, Java banking services, Kubernetes/Helm tooling) and an MS in Information Systems, but the posting's minimum qualifications require managing day-to-day operations of a life sciences lab, hands-on procurement and vendor management, and operating-budget ownership, none of which the candidate has.",
+        "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The résumé shows software engineering work (TypeScript feature-flag platform, Java banking services, Kubernetes/Helm tooling) and an MS in Information Systems, but the posting's minimum qualifications require managing day-to-day operations of a life sciences lab, hands-on procurement and vendor management, and operating-budget ownership, none of which the candidate has.\"}",
+        "rejected_because": null,
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-haiku-4-5-20251001",
+          "claude-opus-5-5"
+        ],
+        "session_id": "24f79cb9-7da6-442f-8126-cbd1f73c0d48",
+        "total_cost_usd": 0.039412
+      }
+    }
+  ],
+  "run_file": "runs/anthropic-2026-10-31T074535Z.json",
+  "report_file": "runs/anthropic-2026-10-31T074535Z.md"
+}

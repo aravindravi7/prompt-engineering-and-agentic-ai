@@ -1,0 +1,28 @@
+{
+  "posting_id": 8635225002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8635225002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education"
+    ],
+    "posting_fields": [
+      "content"
+    ],
+    "reason": "The posting requires 4+ years of software engineering experience shipping production web systems. The job seeker has only an 8-month AI Engineer co-op and a recently completed MS, so the role asks for more experience than they have (rule 6 fails), even though the title, location and skill mentions (Databricks, Unity Catalog) pass."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8635225002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\"], \"posting_fields\": [\"content\"], \"reason\": \"The posting requires 4+ years of software engineering experience shipping production web systems. The job seeker has only an 8-month AI Engineer co-op and a recently completed MS, so the role asks for more experience than they have (rule 6 fails), even though the title, location and skill mentions (Databricks, Unity Catalog) pass.\"}",
+  "asked_at": "2026-10-30T21:27:05+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "5930b2db-6041-4c5a-862d-9b01fceffeb4",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "274bb58061993b530362501f4451579cb5a2d106a0e312c06df54977aee57c64"
+}

@@ -1,0 +1,29 @@
+{
+  "posting_id": 6544443002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 6544443002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education"
+    ],
+    "posting_fields": [
+      "title",
+      "content"
+    ],
+    "reason": "The title contains the excluded word \"Staff\", and the role requires 10+ years of production experience in Java/Scala/C++, which far exceeds the job seeker's single 8-month co-op. Location (US) and skill overlap (SQL, AWS, MLflow, Unity Catalog) would otherwise pass."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 6544443002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The title contains the excluded word \\\"Staff\\\", and the role requires 10+ years of production experience in Java/Scala/C++, which far exceeds the job seeker's single 8-month co-op. Location (US) and skill overlap (SQL, AWS, MLflow, Unity Catalog) would otherwise pass.\"}",
+  "asked_at": "2026-10-30T21:26:04+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "b3ac71f4-4b4a-4919-9a34-f81873c2ec0b",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "45c145ec3734ff0d1cb2dc4b83b885118071b27ec9a933a5f639d70edc5ba2f7"
+}

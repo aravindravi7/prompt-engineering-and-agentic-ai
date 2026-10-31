@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:40+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "d4f0e5e9628c65a669a5a46b5a4faa725d158e9fcae353e30f4071abae3e965d",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting asks for 5+ years in customer- or partner-facing roles such as Solutions Architect or Sales Engineer and a track record working with GSIs and cloud partners, but the résumé shows about 2 years at Infosys plus a 5-month co-op, all in internal software engineering, with no pre-sales, partner or customer-facing experience, so a senior London pre-sales architect role is not a realistic next step for a Boston-based recent MS graduate.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting asks for 5+ years in customer- or partner-facing roles such as Solutions Architect or Sales Engineer and a track record working with GSIs and cloud partners, but the résumé shows about 2 years at Infosys plus a 5-month co-op, all in internal software engineering, with no pre-sales, partner or customer-facing experience, so a senior London pre-sales architect role is not a realistic next step for a Boston-based recent MS graduate.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "22f591cb-e8dc-4886-b9d0-b0d21464f9b7",
+  "total_cost_usd": 0.037108,
+  "job_id": 5432583008,
+  "split": "development",
+  "repeat": 1
+}

@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:22+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "ae3309d3fd60dc2220f2e3245d3c2586c3231c49302ac2a8f43b21f9ad56fd9d",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires 10 years of enterprise sales experience, 3+ years of sales leadership and business-level Japanese, but the résumé shows about 2.5 years of software engineering work (Infosys, Dassault Systemes co-op) with no sales, leadership or Japanese language experience.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 10 years of enterprise sales experience, 3+ years of sales leadership and business-level Japanese, but the résumé shows about 2.5 years of software engineering work (Infosys, Dassault Systemes co-op) with no sales, leadership or Japanese language experience.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "d758701a-0b9f-4e69-84d8-569723188919",
+  "total_cost_usd": 0.036331,
+  "job_id": 5391356008,
+  "split": "held-out",
+  "repeat": 1
+}

@@ -1,0 +1,28 @@
+{
+  "posting_id": 8886944002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8886944002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience"
+    ],
+    "posting_fields": [
+      "title",
+      "content"
+    ],
+    "reason": "The title 'Solutions Engineer' contains none of the required keywords (AI, Machine Learning, ML, Software Engineer, Intern, New Grad, Early Career). The posting also asks for 2+ years of customer-facing solutions engineering experience, and the résumé shows only an 8-month AI engineering co-op."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8886944002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The title 'Solutions Engineer' contains none of the required keywords (AI, Machine Learning, ML, Software Engineer, Intern, New Grad, Early Career). The posting also asks for 2+ years of customer-facing solutions engineering experience, and the résumé shows only an 8-month AI engineering co-op.\"}",
+  "asked_at": "2026-10-30T21:26:58+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "c5b94f83-80e1-49a1-a1c6-559598a7877a",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "22e7fe823c1193c99aaf67bb08bf2a2a0d1bc9c82158556e635d49e722fa095b"
+}

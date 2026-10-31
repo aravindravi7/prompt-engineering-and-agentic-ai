@@ -1,0 +1,8 @@
+{
+"posting_id": 8546367002,
+"verdict": "not relevant",
+"resume_fields": ["skills.data_bi", "skills.database_cloud", "experience"],
+"posting_fields": ["title", "content", "location"],
+"matched_terms": ["Databricks", "Unity Catalog", "AWS", "LLM", "evaluation"],
+"reason": "The location (United States, open to remote) qualifies, the title has no excluded seniority word, and several of Priya's skills match (Databricks, Unity Catalog, AWS, LLM evaluation). The posting is still too senior for her. It says the role is for experienced engineers with industry experience deploying production GenAI and LLM applications. It also asks for extensive years of hands-on industry data science experience and says it is not for new graduate or entry-level applicants. Priya's professional experience is one 8-month co-op (2025-01 to 2025-08), which is well under what this role requires and is within the 2-year limit for early-career roles."
+}

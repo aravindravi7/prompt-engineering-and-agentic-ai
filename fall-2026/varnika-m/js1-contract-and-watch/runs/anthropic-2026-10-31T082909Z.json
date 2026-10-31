@@ -1,0 +1,24 @@
+{
+  "contract": "CONTRACT.md of 2026-10-31, with its 2026-10-31 Changes addition",
+  "board": "anthropic",
+  "url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true",
+  "run_number": 2,
+  "run_kind": "watch",
+  "source": "live",
+  "fixture": null,
+  "note": null,
+  "started_at": "2026-10-31T08:29:09+00:00",
+  "raw_file": "evidence/raw/anthropic-2026-10-31T082909Z.json.gz",
+  "raw_bytes": 9855369,
+  "raw_sha256": "1e5b62fec42a5b1d83e1c491da70215c5b8f77776097b2ef26e1fb4e7b0a7e88",
+  "counts": {
+    "in_response": 675,
+    "seen_before": 675,
+    "new": 0,
+    "missing_since_last_run": 0
+  },
+  "claude_asked": true,
+  "new_postings": [],
+  "run_file": "runs/anthropic-2026-10-31T082909Z.json",
+  "report_file": "runs/anthropic-2026-10-31T082909Z.md"
+}

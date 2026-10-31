@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:32+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "d2b0a59fdc1c1e0a873ede88d51b2742f5a6083ea63b654ec37ef62bef7cff6f",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting asks for 7+ years of data science with deep experimental design and causal inference expertise in growth/marketing, but the résumé shows about 2.5 years of software engineering (Java services at Infosys, a TypeScript feature-flag platform co-op at Dassault) with no data science, causal inference, marketing measurement or shipped ML personalization experience.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting asks for 7+ years of data science with deep experimental design and causal inference expertise in growth/marketing, but the résumé shows about 2.5 years of software engineering (Java services at Infosys, a TypeScript feature-flag platform co-op at Dassault) with no data science, causal inference, marketing measurement or shipped ML personalization experience.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "7c4f8961-3a1a-4899-b34a-9664d58e42ae",
+  "total_cost_usd": 0.038833999999999994,
+  "job_id": 5161402008,
+  "split": "development",
+  "repeat": 1
+}

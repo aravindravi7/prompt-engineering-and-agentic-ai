@@ -1,0 +1,30 @@
+{
+  "posting_id": 8567993002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8567993002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title 'Solutions Architect - Lakebase' contains none of the required keywords, and the location is Sao Paulo, Brazil, not the US. The posting also requires 10+ years of OLTP expertise and 6+ years in pre-sales, which far exceeds the job seeker's experience: one co-op from 2025-01 to 2025-08."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8567993002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title 'Solutions Architect - Lakebase' contains none of the required keywords, and the location is Sao Paulo, Brazil, not the US. The posting also requires 10+ years of OLTP expertise and 6+ years in pre-sales, which far exceeds the job seeker's experience: one co-op from 2025-01 to 2025-08.\"}",
+  "asked_at": "2026-10-30T21:26:13+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "27b5c67b-f624-4148-9f00-0f412435ca59",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "5d8cc8c7cbf92d64a1e8a12cbc31d0828bb7c01d042431af57b4e140de2fe4fb"
+}

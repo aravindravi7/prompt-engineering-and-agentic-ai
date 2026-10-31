@@ -1,0 +1,19 @@
+{
+  "posting_id": 8860646002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "INVALID",
+  "parsed": null,
+  "errors": [
+    "resume_fields must be a non-empty list of strings"
+  ],
+  "raw_reply": "{\"posting_id\": 8860646002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\"], \"reason\": \"The title 'Analyst Relations Manager' contains none of the required keywords (AI, Machine Learning, ML, Software Engineer, Intern, New Grad, Early Career), and it contains the excluded word 'Manager'. It also requires 4–7 years of analyst relations experience, which is a marketing role rather than an engineering one.\"}",
+  "asked_at": "2026-10-30T21:15:48+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "d8ab234d-9eac-49b3-8032-040eb65fc6c3",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "7ef0568fc31b266b734a53e21eee7df8c8d743dc33e8cbedcaf6de5ec5690e4c"
+}

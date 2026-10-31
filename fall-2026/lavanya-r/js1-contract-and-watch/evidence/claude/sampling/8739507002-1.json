@@ -1,0 +1,32 @@
+{
+  "posting_id": 8739507002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "relevant",
+  "parsed": {
+    "posting_id": 8739507002,
+    "verdict": "relevant",
+    "resume_fields": [
+      "skills.languages",
+      "skills.data_bi",
+      "skills.database_cloud",
+      "work_authorization.needs_sponsorship"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title contains 'AI' and none of the excluded words, the location is the United States, the description mentions Python, SQL, Databricks, Unity Catalog and AWS, and it does not say the employer cannot sponsor visas (the export-control clause is about licenses, not visas). It passes the rule, but it asks for 6+ years of solutions-architecture or pre-sales experience, so it is a stretch for this candidate."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8739507002, \"verdict\": \"relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"skills.database_cloud\", \"work_authorization.needs_sponsorship\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title contains 'AI' and none of the excluded words, the location is the United States, the description mentions Python, SQL, Databricks, Unity Catalog and AWS, and it does not say the employer cannot sponsor visas (the export-control clause is about licenses, not visas). It passes the rule, but it asks for 6+ years of solutions-architecture or pre-sales experience, so it is a stretch for this candidate.\"}",
+  "asked_at": "2026-10-30T21:22:19+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "98414d36-fd83-4b9d-b380-4836026714a7",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "79a5c0d6e42d7fd9a075825d6ce56be9f9cc61b4b454f5cfb3eb39b8e875c301"
+}

@@ -1,0 +1,30 @@
+{
+  "posting_id": 8487768002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8487768002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "skills.languages",
+      "skills.data_bi",
+      "skills.database_cloud"
+    ],
+    "posting_fields": [
+      "title",
+      "content"
+    ],
+    "reason": "The title 'Solutions Architect - Communications, Media, Entertainment and Games' contains none of the required keywords, so rule 1 fails. The 'ai' inside 'Entertainment' is not the word AI. The description does mention Python, SQL, Databricks, Unity Catalog and AWS, and the location is in the US."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8487768002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"skills.database_cloud\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The title 'Solutions Architect - Communications, Media, Entertainment and Games' contains none of the required keywords, so rule 1 fails. The 'ai' inside 'Entertainment' is not the word AI. The description does mention Python, SQL, Databricks, Unity Catalog and AWS, and the location is in the US.\"}",
+  "asked_at": "2026-10-30T21:23:19+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "98110df2-966c-4ee5-9f78-cab142cab91f",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "33060f7588c2fb608e7295b012a34d4b543770cf5ae748bcfea012824fd8bcd7"
+}

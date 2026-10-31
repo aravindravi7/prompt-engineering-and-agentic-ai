@@ -1,0 +1,19 @@
+{
+  "posting_id": 8569528002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "INVALID",
+  "parsed": null,
+  "errors": [
+    "resume_fields must be a non-empty list of strings"
+  ],
+  "raw_reply": "{\"posting_id\": 8569528002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"location.name\"], \"reason\": \"The title contains no required keyword (e.g., AI, ML, Software Engineer) and does contain the excluded word 'Sales'; the location, Amsterdam, Netherlands, is also outside the United States.\"}",
+  "asked_at": "2026-10-30T21:15:34+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "075e2500-c300-45c2-ae49-d50977b8af15",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "978379cd35c8654188aaf758820f8a9e23de099f7d4740518b8dbb045090c2c9"
+}
