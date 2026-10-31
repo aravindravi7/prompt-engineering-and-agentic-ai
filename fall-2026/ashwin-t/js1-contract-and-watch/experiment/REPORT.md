@@ -5,6 +5,17 @@ better, on postings I did not tune it on?
 
 Drafted by Claude Code from the saved data (see SOURCES.md for who did what).
 
+## Bottom line: two results, read separately
+
+| | What it is | baseline-v1 | revision-v2 | Status |
+|---|---|---:|---:|---|
+| **Original 20** | The split made by seed 2608 before labeling, and labeled blind. This is the experiment the brief asks for | dev 10/10, held-out 10/10 | dev 10/10, held-out 10/10 | **No difference.** All 20 labels are NOT_RELEVANT, so this split cannot show whether the change helps |
+| **Supplement 4** | Added after seeing that the original labels were all one class | dev 1/2, held-out 1/2 | dev 2/2, held-out 2/2 | **Exploratory only.** The held-out gain is one posting, already familiar (the worked example, with a smoke call) |
+
+So this experiment does **not** fully meet the brief's "held-out set you did not look at until the end" in the
+way that matters: the only held-out case that could show a difference was not unseen. Clean evidence would need a
+new evaluation on fresh postings labeled before anyone looked. That was not done.
+
 ## Order of events (each step is a commit, so the order can be checked)
 
 | Step | Commit | Who |

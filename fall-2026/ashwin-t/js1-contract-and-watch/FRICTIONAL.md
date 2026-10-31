@@ -5,6 +5,7 @@ a factual session log Claude Code kept, so the earlier entries are **retrospecti
 and "Evidence" lines are facts organized by Claude Code. The reflection lines ("I tried / expected", "What I
 did", "I understand now", "What I learned", "Unresolved") were drafted by Codex from my review and forwarded
 by me. I confirmed the facts in them and made the decisions they describe; the wording is not mine.
+Lines marked **In my own words** are mine, written on 2026-10-31.
 
 ## 2026-10-29: choosing a board
 
@@ -35,6 +36,7 @@ by me. I confirmed the facts in them and made the decisions they describe; the w
     rule correctly does not count it (`93687a1`).
   - A development smoke call had Claude answer NOT_RELEVANT on my worked example ("2+ years"), while my rule says RELEVANT.
 - **I understand now / still do not:** The first run established the baseline and correctly reported nothing as new. That did not demonstrate Claude judging a newly discovered posting.
+- **In my own words, what I expected before run 1:** I expected it to check the jobs, but I wasn't fully clear at first that the baseline would save the IDs and report nothing as new.
 
 ## 2026-10-31: run 2
 
@@ -67,6 +69,7 @@ by me. I confirmed the facts in them and made the decisions they describe; the w
 - **Side issue:** Claude Code first said a `&amp;` I saw was a display bug in its tool. It checked, found the
   tool was fine (it was how the chat showed the output), and said so.
 - **Why I decided this way / what I am unsure about:** All 20 original labels were Not Relevant, so an always-no answer would score perfectly. I added all four unused non-senior candidates under a stated rule, while keeping the original results separate. The supplement was chosen after seeing the original labels, which limits the comparison.
+- **In my own words, why the supplement:** All 20 labels were Not Relevant, so saying no to everything would get a perfect score. I wanted some Relevant examples too so the comparison would be useful.
 
 ## 2026-10-31: sampling and the prompt experiment
 
@@ -97,6 +100,7 @@ by me. I confirmed the facts in them and made the decisions they describe; the w
   `action-surfaces/COMPARISON.md`, README and SOURCES (the commit after `c42f2c6`, "docs(js1): address the review findings").
 - **Done since:** the validator crash, the action-surface evidence claims and the default-prompt explanation
   were fixed in `c42f2c6` and `1ec6051`.
+- **In my own words, what I still cannot explain confidently:** I understand that the seed makes the split repeatable, but I still couldn't confidently explain how the shuffle works internally.
 - **Unresolved / next step:** finish my personal review, decide whether any additional demonstration is
   needed, then matching GitHub and Canvas delivery. The signature stays withheld until my review is done.
 - **Later, 2026-10-31:** I finished my review and signed the sign-off. Then I asked Claude Code to post the
