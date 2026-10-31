@@ -42,3 +42,9 @@ Fixes: Claude ran ways 1 and 2 for real with `claude -p` (`reports/action-surfac
 **2026-10-31, ~6:38 pm** — Honest note on labelling: my labeling rule says to read the whole posting, but in practice `label.py` showed me the title, location, link and up to 8 lines that mention years, skills or a degree, and I did not open every link. I listed this under "Not checked" in the sign-off.
 
 **What I accepted / changed / rejected from Claude:** accepted the code, tests, prompts and doc drafts; changed the label sampling (6 → 20 postings) and the labeller after it failed; rejected letting Claude write the hand labels — those are mine. Claude also drafted most of this log from what happened in our session; I read it before submitting.
+
+
+
+**2026-10-31, ~6:55 pm (my own words)** — I pasted way1-prompt.txt into a new claude.ai chat myself; the screenshot is reports/action-surfaces/way1-ANISHA-screenshot.png. Claude said "Mostly not relevant", a weak match: the skills overlap, but it's a senior compensation-operations role asking for 3–5 years. What surprised me: ____. Next time I would ____. What I still don't fully understand: ____.
+
+**2026-10-31, ~6:55 pm (my own words)** — I pasted way1-prompt.txt into a new claude.ai chat myself; the screenshot is reports/action-surfaces/way1-ANISHA-screenshot.png. Claude said "Mostly not relevant", a weak match: the skills overlap, but it is a senior compensation-operations role asking for 3–5 years. What surprised me: almost none of the postings were analyst jobs; they were all different kinds of roles. Next time I would pick a board with more analyst jobs, and write the contract myself before asking Claude for code. What I still do not fully understand: how the validator works, and why the baseline prompt failed.
