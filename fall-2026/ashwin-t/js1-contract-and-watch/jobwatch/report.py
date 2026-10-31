@@ -11,7 +11,8 @@ def _source_lines(run: dict) -> list:
              f"- **That response was actually collected:** {s['collected_at']}",
              f"- **SHA-256:** `{s['sha256']}`"]
     if run["mode"] == "SEEDED REPLAY":
-        lines.append("- **SEEDED REPLAY:** this file was modified on purpose; it is not a fresh live observation.")
+        lines.append("- **SEEDED REPLAY:** the replayed file or the starting state was modified on purpose; "
+                     "it is not a fresh live observation.")
     return lines
 
 
