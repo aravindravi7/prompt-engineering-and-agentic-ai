@@ -1,4 +1,4 @@
-# Sampling report (2026-10-31T180001) — revised prompt, 4 fresh `claude -p` conversations per posting
+# Sampling report (2026-10-31T181850) — revised prompt, 4 fresh `claude -p` conversations per posting
 
 | id | title | verdicts | agreement | my hand label | majority matches me? |
 |---|---|---|---|---|---|

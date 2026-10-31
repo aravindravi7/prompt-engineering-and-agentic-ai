@@ -37,9 +37,9 @@ One change only: `prompts/revised.txt` adds my three-part rule; nothing else dif
 | set | baseline | revised | written rule |
 |---|---|---|---|
 | dev (10) | 8/10 (2 INVALID) | 10/10 | 10/10 |
-| held-out (10, looked at last) | 5/10 (4 INVALID, 1 wrong) | 9/10 | 9/10 |
+| held-out (10, looked at last) | 6/10 (3 INVALID, 1 wrong); first run 5/10 (4 INVALID) | 9/10 | 9/10 |
 
-What it shows: most of the baseline's failures were **format**, not judgment — 4 replies cited `resume_fields` the contract doesn't allow, and 2 quoted the location line (`"San Francisco, CA"`), which my validator rejects because it only checks the posting's title and body (a strictness in my validator, not an invention by Claude). With the rule stated, every reply was valid. The single held-out miss is the same *Senior CS Compensation Analyst* posting, where the rule itself disagrees with me. What it can't show: 19 of my 20 labels are `not_relevant`, so "always say not_relevant" would score 19/20 — ten cases per split cannot separate a good judge from a lazy one, and one disagreement is one posting, not a rate.
+What it shows: most of the baseline's failures were **format**, not judgment — in the first run, 4 replies cited `resume_fields` the contract doesn't allow, and 2 quoted the location line (`"San Francisco, CA"`), which my validator rejects because it only checks the posting's title and body (a strictness in my validator, not an invention by Claude). With the rule stated, every reply was valid. The single held-out miss is the same *Senior CS Compensation Analyst* posting, where the rule itself disagrees with me. What it can't show: 19 of my 20 labels are `not_relevant`, so "always say not_relevant" would score 19/20 — ten cases per split cannot separate a good judge from a lazy one, and one disagreement is one posting, not a rate.
 
 ## Sign-off — Job-Search Agent 1
 - **Checked:** allow-list refusal, slug refusal, real-looking résumé refused at load time, baseline-then-new-by-id, rule verdicts on 4 contract examples, both wrong versions, validator rejections — by `tests/test_agent.py` (written from CONTRACT.md); runs 1 and 2 by reading `runs/*-report.json` myself.

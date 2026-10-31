@@ -31,4 +31,6 @@
 
 Fixes: Claude ran ways 1 and 2 for real with `claude -p` (`reports/action-surfaces/`). `load_resume` now refuses a non-fictional résumé, with a new test (10 tests pass). The driver's seat row now says what Claude did.
 
+**2026-10-31, ~6:17 pm** — Comparing my folder with classmates' folders, I saw they kept every raw Claude reply. My 6:00 pm experiment and sampling files kept only the verdicts. Claude changed `agent.py` to save each raw reply with its timestamp (`raw_reply`, `at`), and reran dev, held-out and sampling with `claude -p` in its workspace. The 6:00 pm verdict-only files are kept in `reports/first-run-1800-verdicts-only/`. The rerun matched the first run except for the baseline on held-out: 6/10 (3 INVALID) instead of 5/10 (4 INVALID). The same prompt gave a different format-failure count on a second try, which is more evidence that one run of ten cases is a weak measurement.
+
 **What I accepted / changed / rejected from Claude:** accepted the code, tests, prompts and doc drafts; changed the label sampling (6 → 20 postings) and the labeller after it failed; rejected letting Claude write the hand labels — those are mine.

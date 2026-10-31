@@ -1,14 +1,14 @@
-# Prompt experiment — heldout set (2026-10-31T180009)
+# Prompt experiment — heldout set (2026-10-31T181852)
 
 | prompt | n | valid | agrees with my hand label |
 |---|---|---|---|
-| baseline | 10 | 6 | 5/10 |
+| baseline | 10 | 7 | 6/10 |
 | revised | 10 | 10 | 9/10 |
 | written rule (no Claude) | 10 | — | 9/10 |
 
 | id | title | hand | baseline | revised | rule |
 |---|---|---|---|---|---|
-| 8014800003 | Lead Success Operations Analyst | not_relevant | INVALID | not_relevant | not_relevant |
+| 8014800003 | Lead Success Operations Analyst | not_relevant | not_relevant | not_relevant | not_relevant |
 | 8037132003 | Manager, IT SOX | not_relevant | not_relevant | not_relevant | not_relevant |
 | 7993120003 | Lead Success Operations Analyst | not_relevant | INVALID | not_relevant | not_relevant |
 | 7802701003 | Lead Engineer, Applied AI (Customer Agent) | not_relevant | not_relevant | not_relevant | not_relevant |

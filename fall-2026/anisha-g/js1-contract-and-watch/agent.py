@@ -161,7 +161,7 @@ def cmd_experiment(a):
         tpl = (ROOT / f"prompts/{name}.txt").read_text()
         for pid, label in read_labels(a.split):
             j = claude_judge(tpl, resume, ps[pid])
-            res.append({"prompt": name, "split": a.split, "id": pid, "title": ps[pid]["title"], "hand": label, "claude": j["verdict"],
+            res.append({"prompt": name, "split": a.split, "id": pid, "title": ps[pid]["title"], "hand": label, "claude": j["verdict"], "at": dt.datetime.now().isoformat(timespec="seconds"), "raw_reply": j.get("raw", ""),
                         "rule": rule_judge(resume, ps[pid])["verdict"], "error": j.get("error", "")})
             print(name, pid, label, j["verdict"], j.get("error", ""))
     (ROOT / f"reports/experiment-{a.split}.json").write_text(json.dumps(res, indent=1))
@@ -186,7 +186,7 @@ def cmd_sample(a):
     ids = ids[:5]; res = []
     for pid in ids:
         for k in range(a.n):
-            j = claude_judge(tpl, resume, ps[pid]); res.append({"id": pid, "try": k + 1, "verdict": j["verdict"], "error": j.get("error", "")})
+            j = claude_judge(tpl, resume, ps[pid]); res.append({"id": pid, "try": k + 1, "verdict": j["verdict"], "error": j.get("error", ""), "at": dt.datetime.now().isoformat(timespec="seconds"), "raw_reply": j.get("raw", "")})
             print(pid, k + 1, j["verdict"])
     (ROOT / "reports/sampling.json").write_text(json.dumps(res, indent=1))
     lines = [f"# Sampling report ({stamp()}) — revised prompt, {a.n} fresh `claude -p` conversations per posting", "",

@@ -1,4 +1,4 @@
-# Prompt experiment — dev set (2026-10-31T180006)
+# Prompt experiment — dev set (2026-10-31T181851)
 
 | prompt | n | valid | agrees with my hand label |
 |---|---|---|---|
