@@ -138,7 +138,7 @@ def validate_reply(text: str, posting: dict, resume: dict) -> tuple:
             errors.append(f"{where}.resume_field {item['resume_field']!r} is not a real résumé field (rule 6)")
             continue
         field = item["posting_field"]
-        if field not in POSTING_FIELDS:
+        if not isinstance(field, str) or field not in POSTING_FIELDS:
             errors.append(f"{where}.posting_field {field!r} is not allowed (rule 7)")
             continue
         quote = item["posting_quote"]

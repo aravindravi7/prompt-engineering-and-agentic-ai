@@ -66,6 +66,14 @@ class Validator(unittest.TestCase):
                    [{"resume_field": "skills[0]", "posting_field": "content", "posting_quote": ""}]):
             self.assertTrue(errors_for(reply(evidence=ev)), ev)
 
+    def test_wrong_json_types_are_rejected_not_crashed_on(self):
+        # Found by Ashwin's review on 2026-10-31: posting_field [] raised TypeError instead of failing validation.
+        for field, value in (("posting_field", []), ("posting_field", {}), ("posting_field", 7),
+                             ("resume_field", []), ("resume_field", None), ("posting_quote", 5), ("posting_quote", [])):
+            ev = [{"resume_field": "skills[0]", "posting_field": "content", "posting_quote": "Proficient in Python"}]
+            ev[0][field] = value
+            self.assertTrue(errors_for(reply(verdict="RELEVANT", evidence=ev)), (field, value))
+
 
 class JudgeAndRule(unittest.TestCase):
     def test_invalid_reply_keeps_the_rule_record_and_invents_nothing(self):
