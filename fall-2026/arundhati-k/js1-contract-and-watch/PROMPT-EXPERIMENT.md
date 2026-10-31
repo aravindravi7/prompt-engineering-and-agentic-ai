@@ -44,7 +44,10 @@ Per-posting table: [`experiments/RESULTS.md`](experiments/RESULTS.md) (regenerat
 
 ## Honest limits
 
-_My words — to write._ Questions to answer:
-- Did the revision improve anything? What would you need to see to believe a +1 on dev or −1 on held-out?
-- Ten cases, one call each, with a posting known to flip under the same prompt: how much can 7/10 vs 6/10 show?
-- Which misses come from Claude, and which from my labels? What would you change first — the prompt, the rule, or the labels?
+_Written by me, 2026-10-31, after the held-out scores._
+
+1. Rows 14, 15, and 16 – Location constraint missed: I labeled these RELEVANT based on their New Grad/Intern eligibility, but overlooked the rule that Rohan's target roles must be US-based. Bangalore, Singapore, and Toronto are outside the US, so all three should have been NOT RELEVANT under the original rule. Since this is held-out data, I should report the mistakes rather than retroactively change the labels.
+
+2. Rows 2 and 11 – Inconsistent model interpretation: Claude inconsistently interpreted the programming-language sentence. My revision did not address this ambiguity, so the +1/−1 difference cannot confidently be attributed to the revision. It may simply reflect model variability.
+
+Overall: The evaluation exposed two issues: I failed to apply the US-location constraint consistently, and the prompt revision did not resolve the programming-language ambiguity. I should document both rather than claim an improvement unsupported by the results.

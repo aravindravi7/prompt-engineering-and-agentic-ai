@@ -24,13 +24,12 @@ NOT RELEVANT. All four cited the same three skills — the calls agreed on the *
 meets "requires or prefers". The same sentence split the evidence again in the evidence lists for 8241260
 (call 2 cited no skills; calls 1, 3, 4 cited three) without changing that verdict.
 
-**Ten more calls on 8128744 outside this table** (prompt-experiment dev runs): baseline said NOT RELEVANT,
-revision said RELEVANT. Across all six calls on this posting in the logs: 4 RELEVANT, 2 NOT RELEVANT.
+**Two more calls on 8128744 outside this table** (prompt-experiment dev runs): baseline said NOT RELEVANT,
+revision said RELEVANT. Across all six logged `claude -p` calls on this posting: 4 RELEVANT, 2 NOT RELEVANT. The four
+action-surface runs on the same posting (ACTION-SURFACES.md) gave 1 RELEVANT, 3 NOT RELEVANT.
 
 ## What I can and cannot conclude
 
-_My words — to write._ Questions to answer:
-- Four identical NOT RELEVANT verdicts on 4 postings: does that show Claude is *right*, or only that it repeats?
-  What did comparing against my hand label add?
-- The one posting I labeled RELEVANT is the one that split. What does that say about trusting a single call?
-- Five postings, four calls each: what is too small here to claim anything about?
+_Written by me, 2026-10-31._
+
+The results showed me that the classification process is not always consistent. The plain-chat and Code tab runs gave different answers for the same posting, and the plain-chat response also had a formatting issue. I also realized that I missed the US-location requirement while labeling postings 14–16. Since I only tested a small sample, I can't say that one approach is more accurate than the other, but the results helped me identify what needs improvement.

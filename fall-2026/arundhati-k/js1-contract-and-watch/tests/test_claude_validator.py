@@ -2,6 +2,7 @@
 
 import json
 import unittest
+from pathlib import Path
 
 from jsagent.claude_judge import build_prompt, validate
 from tests import fixtures as F
@@ -53,7 +54,7 @@ class ValidatorTests(unittest.TestCase):
                 self.assertTrue(self.check(reply), name)
 
     def test_prompt_carries_no_personal_fields(self):
-        prompt = build_prompt(open("prompts/baseline.txt").read(), F.RELEVANT, self.resume)
+        prompt = build_prompt(Path("prompts/baseline.txt").read_text(), F.RELEVANT, self.resume)
         for private in ("Rohan", "555", "example.com", "linkedin"):
             self.assertNotIn(private, prompt)
         self.assertIn('"posting_id": "101"', prompt)

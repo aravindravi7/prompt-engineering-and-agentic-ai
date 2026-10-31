@@ -82,19 +82,27 @@ Last run: `Ran 45 tests … OK` (2026-10-31).
 
 ## Sign-off — Job-Search Agent 1
 
-_To be written by me after the runs. Placeholders only._
-
-- **Checked:**
-- **How:**
+- **Checked:** I ran all 45 tests myself on October 31, and they passed. I also reviewed my 20 labels against the labeling rules and checked the decisions for consistency.
+- **How:** Claude helped write the tests, but I ran them myself. I assigned the labels manually, and the pass rates were calculated using `experiments.py score`.
 - **Not checked:**
-  1.
-  2.
-  3.
-- **Not claiming:**
-- **Signed or withheld:** ____________ (name, date)
+  - I have not reviewed every available Stripe engineering posting.
+  - I have not independently verified every classification against a human-reviewed answer.
+  - I have not tested the workflow on a large dataset.
+  - I have not established that the classifier works consistently across different job platforms.
+- **Not claiming:** I am not claiming that the classifier is completely accurate or production-ready based on the limited testing completed so far.
+- **Signed or withheld:** Arundhati Kandelkar, October 31, 2026
 
 ### Driver's seat
 
-| part of the task | Claude should | I should | why it stays mine | evidence (commit / transcript line) |
-|---|---|---|---|---|
-| | | | | |
+| Claude handled | I handled |
+|---|---|
+| Generated classifications from the supplied job-posting text. | Defined the candidate profile and project requirements. |
+| Returned results across the different testing surfaces. | Created the labeling rules and assigned reference labels. |
+| Provided outputs for repeated sampling. | Reviewed results and identified inconsistencies. |
+| Provided suggestions and feedback on the project. | Decided which suggestions to accept, modify or reject. |
+| Helped identify issues in the classification process. | Made the final decisions and documented the results. |
+
+_Added by Claude for the record (from the git history and SOURCES.md):_ Claude Code wrote all of the code and tests
+(`jsagent/`, `run.py`, `seed.py`, `make_labeling_set.py`, `experiments.py`, `tests/`) in commit `0c55047`, after the
+contract was committed in `e6008c3`. The labeling rule (`41a33a4`) was committed before any label; held-out labels and
+scores are in `684dad2`.
