@@ -1,0 +1,12 @@
+VERDICT: not_relevant
+RESUME_FIELD: target_titles=Associate Product Manager
+RESUME_FIELD: target_titles=Product Manager
+RESUME_FIELD: target_titles=Product Analyst
+RESUME_FIELD: skills=Python
+RESUME_FIELD: skills=SQL
+RESUME_FIELD: skills=A/B testing
+RESUME_FIELD: skills=roadmapping
+RESUME_FIELD: skills=user research
+POSTING_FIELD: title=Marketing Strategy & Operations Business Partner
+POSTING_FIELD: content=SQL
+REASON: C1 fails because the title contains none of the target titles, and C3 fails because only one distinct skill (SQL) appears in the content, while C2 passes because the location contains New York and Remote.

@@ -1,0 +1,676 @@
+{
+  "run": {
+    "stamp": "2026-10-30T204649Z",
+    "board": "databricks",
+    "kind": "live",
+    "source": "https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true",
+    "raw_path": "evidence/raw/databricks-2026-10-30T204649Z.json.gz",
+    "raw_sha256": "22745f513620f3c26e73512d53ab0a7b64368e339ffc574357cdcfe727825299",
+    "posting_count": 903,
+    "baseline": false,
+    "new_ids": [
+      8459031002,
+      8569528002,
+      8569578002,
+      8824171002,
+      8860646002,
+      8917482002,
+      8922120002,
+      8922730002,
+      8924302002,
+      8924844002
+    ]
+  },
+  "new": [
+    {
+      "posting_id": 8459031002,
+      "title": "Sr. Counsel, Regulatory",
+      "location": "Bellevue, Washington; Seattle, Washington; Washington, D.C.",
+      "judge": "rule",
+      "kind": "record",
+      "verdict": "not_relevant",
+      "justification": [
+        {
+          "check": "good_title",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "no_bad_title_word",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": [
+            "Sr"
+          ]
+        },
+        {
+          "check": "us_location",
+          "passed": false,
+          "posting_fields": [
+            "location.name"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "at_least_2_skills",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "skills.data_bi"
+          ],
+          "matched": [
+            "Databricks",
+            "Unity Catalog"
+          ]
+        },
+        {
+          "check": "no_cant_sponsor",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "work_authorization.needs_sponsorship"
+          ],
+          "matched": []
+        }
+      ]
+    },
+    {
+      "posting_id": 8569528002,
+      "title": "Lakebase Sales Specialist, Benelux",
+      "location": "Amsterdam, Netherlands",
+      "judge": "rule",
+      "kind": "record",
+      "verdict": "not_relevant",
+      "justification": [
+        {
+          "check": "good_title",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "no_bad_title_word",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": [
+            "Sales"
+          ]
+        },
+        {
+          "check": "us_location",
+          "passed": false,
+          "posting_fields": [
+            "location.name"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "at_least_2_skills",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "skills.data_bi",
+            "skills.database_cloud"
+          ],
+          "matched": [
+            "Databricks",
+            "Unity Catalog",
+            "AWS"
+          ]
+        },
+        {
+          "check": "no_cant_sponsor",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "work_authorization.needs_sponsorship"
+          ],
+          "matched": []
+        }
+      ]
+    },
+    {
+      "posting_id": 8569578002,
+      "title": "Lakebase Sales Specialist (Greater China Region)",
+      "location": "Singapore",
+      "judge": "rule",
+      "kind": "record",
+      "verdict": "not_relevant",
+      "justification": [
+        {
+          "check": "good_title",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "no_bad_title_word",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": [
+            "Sales"
+          ]
+        },
+        {
+          "check": "us_location",
+          "passed": false,
+          "posting_fields": [
+            "location.name"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "at_least_2_skills",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "skills.data_bi",
+            "skills.database_cloud"
+          ],
+          "matched": [
+            "Databricks",
+            "Unity Catalog",
+            "AWS"
+          ]
+        },
+        {
+          "check": "no_cant_sponsor",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "work_authorization.needs_sponsorship"
+          ],
+          "matched": []
+        }
+      ]
+    },
+    {
+      "posting_id": 8824171002,
+      "title": "AI Sales Director",
+      "location": "San Francisco, California; United States; West Coast - United States",
+      "judge": "rule",
+      "kind": "record",
+      "verdict": "not_relevant",
+      "justification": [
+        {
+          "check": "good_title",
+          "passed": true,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": [
+            "AI"
+          ]
+        },
+        {
+          "check": "no_bad_title_word",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": [
+            "Director",
+            "Sales"
+          ]
+        },
+        {
+          "check": "us_location",
+          "passed": true,
+          "posting_fields": [
+            "location.name"
+          ],
+          "resume_fields": [],
+          "matched": [
+            "United States",
+            "West Coast - United States"
+          ]
+        },
+        {
+          "check": "at_least_2_skills",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "skills.data_bi"
+          ],
+          "matched": [
+            "Databricks",
+            "Unity Catalog"
+          ]
+        },
+        {
+          "check": "no_cant_sponsor",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "work_authorization.needs_sponsorship"
+          ],
+          "matched": []
+        }
+      ]
+    },
+    {
+      "posting_id": 8860646002,
+      "title": "Analyst Relations Manager",
+      "location": "United States",
+      "judge": "rule",
+      "kind": "record",
+      "verdict": "not_relevant",
+      "justification": [
+        {
+          "check": "good_title",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "no_bad_title_word",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": [
+            "Manager"
+          ]
+        },
+        {
+          "check": "us_location",
+          "passed": true,
+          "posting_fields": [
+            "location.name"
+          ],
+          "resume_fields": [],
+          "matched": [
+            "United States"
+          ]
+        },
+        {
+          "check": "at_least_2_skills",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "skills.data_bi"
+          ],
+          "matched": [
+            "Databricks",
+            "Unity Catalog"
+          ]
+        },
+        {
+          "check": "no_cant_sponsor",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "work_authorization.needs_sponsorship"
+          ],
+          "matched": []
+        }
+      ]
+    },
+    {
+      "posting_id": 8917482002,
+      "title": "Business Development Representative (UKI)",
+      "location": "London, United Kingdom",
+      "judge": "rule",
+      "kind": "record",
+      "verdict": "not_relevant",
+      "justification": [
+        {
+          "check": "good_title",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "no_bad_title_word",
+          "passed": true,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "us_location",
+          "passed": false,
+          "posting_fields": [
+            "location.name"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "at_least_2_skills",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "skills.data_bi"
+          ],
+          "matched": [
+            "Databricks",
+            "Unity Catalog"
+          ]
+        },
+        {
+          "check": "no_cant_sponsor",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "work_authorization.needs_sponsorship"
+          ],
+          "matched": []
+        }
+      ]
+    },
+    {
+      "posting_id": 8922120002,
+      "title": "Sr. Counsel, Employment",
+      "location": "Bellevue, Washington; Seattle, Washington; Washington, D.C.",
+      "judge": "rule",
+      "kind": "record",
+      "verdict": "not_relevant",
+      "justification": [
+        {
+          "check": "good_title",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "no_bad_title_word",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": [
+            "Sr"
+          ]
+        },
+        {
+          "check": "us_location",
+          "passed": false,
+          "posting_fields": [
+            "location.name"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "at_least_2_skills",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "skills.data_bi"
+          ],
+          "matched": [
+            "Databricks",
+            "Unity Catalog"
+          ]
+        },
+        {
+          "check": "no_cant_sponsor",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "work_authorization.needs_sponsorship"
+          ],
+          "matched": []
+        }
+      ]
+    },
+    {
+      "posting_id": 8922730002,
+      "title": "Sr. Collections Analyst",
+      "location": "Bengaluru, India",
+      "judge": "rule",
+      "kind": "record",
+      "verdict": "not_relevant",
+      "justification": [
+        {
+          "check": "good_title",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "no_bad_title_word",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": [
+            "Sr"
+          ]
+        },
+        {
+          "check": "us_location",
+          "passed": false,
+          "posting_fields": [
+            "location.name"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "at_least_2_skills",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "skills.data_bi"
+          ],
+          "matched": [
+            "Databricks",
+            "Unity Catalog"
+          ]
+        },
+        {
+          "check": "no_cant_sponsor",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "work_authorization.needs_sponsorship"
+          ],
+          "matched": []
+        }
+      ]
+    },
+    {
+      "posting_id": 8924302002,
+      "title": "Business Development Representative (German-speaking, DACH)",
+      "location": "Munich, Germany",
+      "judge": "rule",
+      "kind": "record",
+      "verdict": "not_relevant",
+      "justification": [
+        {
+          "check": "good_title",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "no_bad_title_word",
+          "passed": true,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "us_location",
+          "passed": false,
+          "posting_fields": [
+            "location.name"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "at_least_2_skills",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "skills.data_bi"
+          ],
+          "matched": [
+            "Databricks",
+            "Unity Catalog"
+          ]
+        },
+        {
+          "check": "no_cant_sponsor",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "work_authorization.needs_sponsorship"
+          ],
+          "matched": []
+        }
+      ]
+    },
+    {
+      "posting_id": 8924844002,
+      "title": "Lakebase Sales Specialist (Greater China Region)",
+      "location": "China",
+      "judge": "rule",
+      "kind": "record",
+      "verdict": "not_relevant",
+      "justification": [
+        {
+          "check": "good_title",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "no_bad_title_word",
+          "passed": false,
+          "posting_fields": [
+            "title"
+          ],
+          "resume_fields": [],
+          "matched": [
+            "Sales"
+          ]
+        },
+        {
+          "check": "us_location",
+          "passed": false,
+          "posting_fields": [
+            "location.name"
+          ],
+          "resume_fields": [],
+          "matched": []
+        },
+        {
+          "check": "at_least_2_skills",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "skills.data_bi",
+            "skills.database_cloud"
+          ],
+          "matched": [
+            "Databricks",
+            "Unity Catalog",
+            "AWS"
+          ]
+        },
+        {
+          "check": "no_cant_sponsor",
+          "passed": true,
+          "posting_fields": [
+            "content"
+          ],
+          "resume_fields": [
+            "work_authorization.needs_sponsorship"
+          ],
+          "matched": []
+        }
+      ]
+    }
+  ]
+}

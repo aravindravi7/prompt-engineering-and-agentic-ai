@@ -1,0 +1,12 @@
+VERDICT: not_relevant
+RESUME_FIELD: target_titles=Product Manager
+RESUME_FIELD: locations=New York
+RESUME_FIELD: locations=Remote
+RESUME_FIELD: skills=Python
+RESUME_FIELD: skills=SQL
+RESUME_FIELD: skills=A/B testing
+RESUME_FIELD: skills=roadmapping
+RESUME_FIELD: skills=user research
+POSTING_FIELD: title=Staff Product Manager, ML Foundations and GenAI
+POSTING_FIELD: location.name=Seattle, San Francisco, New York, US - Remote
+REASON: C1 and C2 pass, but C3 fails because none of the candidate's skills appear in the content ("roadmap" appears but does not count as "roadmapping").

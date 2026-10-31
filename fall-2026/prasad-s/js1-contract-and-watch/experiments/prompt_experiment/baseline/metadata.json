@@ -1,0 +1,182 @@
+{
+  "6348471": {
+    "file": "6348471.txt",
+    "collected": "2026-10-29T21:36:18-04:00 (UTC 2026-10-30T01:36:18Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "dev",
+    "split": "development"
+  },
+  "7202630": {
+    "file": "7202630.txt",
+    "collected": "2026-10-29T21:43:33-04:00 (UTC 2026-10-30T01:43:33Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "dev",
+    "split": "development"
+  },
+  "7369543": {
+    "file": "7369543.txt",
+    "collected": "2026-10-29T21:44:24-04:00 (UTC 2026-10-30T01:44:24Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "dev",
+    "split": "development"
+  },
+  "7392697": {
+    "file": "7392697.txt",
+    "collected": "2026-10-29T21:45:52-04:00 (UTC 2026-10-30T01:45:52Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "dev",
+    "split": "development"
+  },
+  "7456716": {
+    "file": "7456716.txt",
+    "collected": "2026-10-29T21:46:56-04:00 (UTC 2026-10-30T01:46:56Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "dev",
+    "split": "development"
+  },
+  "7517535": {
+    "file": "7517535.txt",
+    "collected": "2026-10-29T21:47:46-04:00 (UTC 2026-10-30T01:47:46Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "dev",
+    "split": "development"
+  },
+  "7586413": {
+    "file": "7586413.txt",
+    "collected": "2026-10-29T21:48:41-04:00 (UTC 2026-10-30T01:48:41Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "dev",
+    "split": "development"
+  },
+  "7663023": {
+    "file": "7663023.txt",
+    "collected": "2026-10-29T21:49:27-04:00 (UTC 2026-10-30T01:49:27Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "dev",
+    "split": "development"
+  },
+  "7737124": {
+    "file": "7737124.txt",
+    "collected": "2026-10-29T21:50:20-04:00 (UTC 2026-10-30T01:50:20Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "dev",
+    "split": "development"
+  },
+  "7773461": {
+    "file": "7773461.txt",
+    "collected": "2026-10-29T21:51:13-04:00 (UTC 2026-10-30T01:51:13Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "dev",
+    "split": "development"
+  },
+  "7774312": {
+    "file": "7774312.txt",
+    "collected": "2026-10-30T22:28:03-04:00 (UTC 2026-10-31T02:28:03Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "heldout",
+    "split": "held_out"
+  },
+  "7812856": {
+    "file": "7812856.txt",
+    "collected": "2026-10-30T22:29:02-04:00 (UTC 2026-10-31T02:29:02Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "heldout",
+    "split": "held_out"
+  },
+  "7832098": {
+    "file": "7832098.txt",
+    "collected": "2026-10-30T22:29:54-04:00 (UTC 2026-10-31T02:29:54Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "heldout",
+    "split": "held_out"
+  },
+  "7861422": {
+    "file": "7861422.txt",
+    "collected": "2026-10-30T22:30:30-04:00 (UTC 2026-10-31T02:30:30Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "heldout",
+    "split": "held_out"
+  },
+  "7913698": {
+    "file": "7913698.txt",
+    "collected": "2026-10-30T22:31:28-04:00 (UTC 2026-10-31T02:31:28Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "heldout",
+    "split": "held_out"
+  },
+  "7913702": {
+    "file": "7913702.txt",
+    "collected": "2026-10-30T22:32:04-04:00 (UTC 2026-10-31T02:32:04Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "heldout",
+    "split": "held_out"
+  },
+  "7954207": {
+    "file": "7954207.txt",
+    "collected": "2026-10-30T22:32:43-04:00 (UTC 2026-10-31T02:32:43Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "heldout",
+    "split": "held_out"
+  },
+  "7961101": {
+    "file": "7961101.txt",
+    "collected": "2026-10-30T22:33:29-04:00 (UTC 2026-10-31T02:33:29Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "heldout",
+    "split": "held_out"
+  },
+  "7975698": {
+    "file": "7975698.txt",
+    "collected": "2026-10-30T22:34:08-04:00 (UTC 2026-10-31T02:34:08Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "heldout",
+    "split": "held_out"
+  },
+  "7980578": {
+    "file": "7980578.txt",
+    "collected": "2026-10-30T22:34:51-04:00 (UTC 2026-10-31T02:34:51Z)",
+    "model": "Opus 5.5",
+    "prompt_version": "baseline-v1",
+    "conversation": "fresh Incognito chat",
+    "set": "heldout",
+    "split": "held_out"
+  }
+}

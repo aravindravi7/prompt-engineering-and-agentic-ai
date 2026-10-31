@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXPL4G1ejJjCiC9nGoJc",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS2gcKEAgTGAI4AUIIdGhpbmtpbmcSDMARjXXFFSKgg2L+2xoMGBFN/KHbh1Qtx2jTIjC+jZO13sCK1pgdFoeoax/tVhVTNdRkCXTumWW+H6alhmNQy5UkiiavhYVizzGiFmcq9wbUmHYWv2BMccbDAEZzTUfdCUxcPt8MobrbV+aAufBinSlYiDwu+cHdYl9jaVdjwui5hLY/Sx0ATnzzlzn526YhDE/7rR2ra4xxMK3Im93cFq+V8UBDICSzBRTKpC39cM4s6uMYVHtmdSC6vx8S7I2kIdImRZ8uDhfvczQAfZ6DEw++N3hxO/MHn3lQViwVsNzE33hJCuYIw5SJoKTlKe5rbkJ4RMFEKafyhmjRfkEeOiJe21Pm+QhKA+iOms55ZLTmsjphKIKci4kYm8bYhj9WTxla45oF0+8bjs23LBbrTld+2HcrcvkUlymAbuHCZeS+lbO5RVJgUIUJHEpKEEjHAElVGbXZJhkZER34SCyANLe+YWi931HCEvRqe9AEXQ+BwrNWVNawi7R3xbBIX+OOJloWe553X2gk8dMdUq4JGGED7pXOobriNnWC8qNnIfhy4YQ48Pt5ZQwREhIvyzMYvwlE5ITzHyb+CuL85YzK3dsmCOYYM0VGD83vB1zCsEIuhyp4GlnqgapFae1cW96IgbDut2nXP1E4J+8t+K77C1QsQw63caik6sRLyCIGeOVgMzT/jv6goMQJlV30fnr2jiCTr/tyaNYduoCAJbY8NlcoznkK/wFC0Jd0q4sfwfm6WWgdlXLnZu4jLyqESJ/WhLspMVOMQSpEJkl993YaRZ/7x+q+h6Xp9eZh2Sj+QYlJNYUy42ptGeAjDwZoi6KUw9xQAL5L+RpJFvHPaPTsZCc3vD2N1eLxntxOm6YpE5/ezYQao43bj11h3DDnTuft9am8PVa5gCziBzl912VojaSGkroJdWsmwm6V4sVab2SgQ2yRDjcExdJnQHHTnu+6FXof4Ut1eUNtqDdgkcPcNnyExv8GnlkcB6r5l1aadaZMoYLKsRALUCs5YUwOUqfJoj4eOBrC8eRvHosBNeXP68JawIp0vO+JHfbD5O8L3y9RMQYJr0Sxb3v84VM/z6Dj7RATgRB98t2BoEXXwYzXZslkP0BO4m5itKEQ4ehenmzLhD96O4By0ZI+i7MN3QtrLF9qgHSRmdZfVnG5in4s5lOo+ZhMwy3FTKVl6ZnA7kaDCXW7X//i4mc0rUetyb1QPdVknHPrE8RVa8gfb0cu8vLXQGqnCDqoHXNbBcoS//lzEA1XyHJCB5Si1DlZKN4Bf5ulyLg/bRgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"7982720\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Client Platform Security Engineer\\\" contains none of Software Engineer, AI Engineer, or Backend Engineer, so R1 fails.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"first_published\",\"evidence\":\"first_published is 2026-06-05, far more than 21 days before the run date 2026-10-27, so R2 fails.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"\\\"New York, New York\\\" shows a US location, so R3 passes.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"\\\"4+ years of relevant experience securing iOS and/or macOS platforms\\\" and \\\"4+ years of software engineering experience\\\" give a largest minimum of 4, which is more than 3, so R4 fails.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"\\\"Experience working with AWS cloud services\\\" matches the skill AWS, so R6 passes.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3287,
+    "output_tokens": 563,
+    "output_tokens_details": {
+      "thinking_tokens": 168
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

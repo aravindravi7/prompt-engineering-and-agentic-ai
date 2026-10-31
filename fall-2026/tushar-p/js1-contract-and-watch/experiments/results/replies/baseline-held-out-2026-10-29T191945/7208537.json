@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXPHtCiD1EHUxHfQBUit",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQSlQkKEAgTGAI4AUIIdGhpbmtpbmcSDGJ4+ixoIpK2mkuLjhoMoEPMBCkRZfCEcnixIjBfb+iKVBYL6SuxdpQliIYUIEmmbn0G8gAMAJui5/xXkfWr7bvBnyC6Lq6EQPYeiDUqsgifCM7v9hs0TLx8YUQs/awuobwrqfvfdlOL1Edz5uNnwtwXywjRSlhkG11xe3CRRbijmdwAuY/UR/M/tREe24EHPvPZDyqJ58BI6PolZrSdAFWrvKdLSWIBdWjFGcoKxjYrF5/fmhOqyvELzVVi+4GMwzxTcona/Z+z/BQ6c63ImmfFZuF86FcNY8Pp3KR8+TVOZt3rel9Q9ViFCgSYDKEETBUKTlkmqIe0FeS5dcBWZ3bSx+4lL90mgfwVJKbj3fY04rK1LSNjT2yNUZRMXhjbCXywGgY/N9OQKIetxmdCyI00uT+2vnQLs0zSkQrtpAbTW4wOrMv/lqyUEx1/eIvCpCpeTS12iuLfH2XcYyNCrOH2VuvKq9ZJIMeoBxa8LXnMzB5MW6iecEUoXYPfdjvwtY1ujQkNgtnqW+o2f/Oy3jysj5GnJqFpQdhNbEfTwjkAQK0JNMUsr5WVtCC1lpQYf9aifkcSczhQHv9QBlp4jHa2XCAVAh8eamo3MWFitpm+nlKJAKp1oJfua1hudGoU18+EMnAwV3gQKpYx/zNw7DjyZHSAdNrKgsBRIq58yBUoRkgHQkbfTlmFn3sj5XbEU9UNsgTHhAa6V9GiwmAC1zcqpfqkO5U6a9BHkn3i2q3/xVfJQnqMJzFEgo1DDDUputIGvWAm5ntds7nBjCHGoEmd8sEOlqoU1fJR3SxXZ0iPpIdlHz9ZAdH9gwjW2iBKPmZFyVDgz0QstRx4ScnS7XuIPO2y221xLpm7RmY6QkXsHH+JxU0kJ49xZ3FEB5TLbW8tx+7Wa1v3EA2XLOd727N/h+xyosa+HrpQDobHO1J5QEBwVWZfDv1DBVew8M5dacnUbDzxC5gI+5S9MuJ99zTTYH10N4IdTp9EQ9vxZokg8j+sYR9wFjqoCaXR8uye0zUWtxkl3QsbpCtygZWzV8eSciYZn6KOHI/MbxKDk2kyonyMmhI4lYY+o8nBYsegfJsOqTwTx0CEpYAtfP8OpSsivbKdbwwv2sHNGbdYVAt4kYIa2ZaTrTbK2MVA3owEhGRBf7EyZnuQKeyo/KnqZoWIoJ1A09yoxotee5byR3ZK2r2s/kgtfbWdwBrmXy49+5FWpLUcA4FiMxHoEajWrbco8jJy2/6WNo5Qtj+U/EhLg44vJsL7Nu0QtqPLFPzi+/dMM66zWHAmajXIpox3h2hiWqNjFQ+jIeVw6kq9pYss50uJ8ZwY94D8yYY0u+yNws1/jQVcRqCBDEvXmWswx1qQfCoh0NBQjj+DjQMCjiVuDaK7HZ3vDgnF0D53HaVV1X0l7BWm+VMV1zuEl2cWKKtf8wdNKNXEolH3sDNeMc6CxH3rlihtIpqfY4q+TUgGt0L3wW8mRVx/MnMJEGjG3IRrgkXR9BGR1P6oNHuvdWNUuiF9jyNqhX9F9x0JRErdYwgYAQ==",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"7208537\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Software Engineer, Money Movement\\\" contains the target title \\\"Software Engineer\\\" and none of the excluded words (R1 pass).\"},{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"first_published\",\"evidence\":\"first_published is 2025-10-22, about a year before the run date 2026-10-27, so it is more than 21 days old (R2 fail). updated_at is not used because first_published is present.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location is \\\"London\\\", which is not a US location (R3 fail).\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"Content says \\\"2-12+ years of industry software engineering experience\\\"; the largest minimum is 12, which is more than 3 (R4 fail).\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"Content contains none of the no-sponsorship phrases (R5 pass).\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, or AWS appears as a whole word in the content (R6 fail).\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3061,
+    "output_tokens": 730,
+    "output_tokens_details": {
+      "thinking_tokens": 249
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

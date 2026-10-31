@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXPJFyti3L4pDgb24VmY",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQSgQkKEAgTGAI4AUIIdGhpbmtpbmcSDGR/nYo+d/VHOguC0RoMwpZxlSKuinJk5AKTIjCg92B2cZX9uHhLeTI0HXYZBTTmu73LFAAXEwUgXTzS3ZLyxJJdhJyQZtfQbYzdGQgqngh3S3MQU3/NQ1AyYF9i13HntvyVQcJ0PEstx2CiT4yVYtugogPiDwacNPVEQP9qhsoz8ZD/5+AlNTntyodoyRu04TehaETNXA8gWZa3AELAAAQ12zsDani/t7aDDcoeiJj2i5aMcpYoEhjYLRLSQLEws7HBypf4DGjxrDDUsGXqEtvuWg+uwf3VLA+LNbDrg7bDY+4WefrbYffT4ljZPjTLaV9x25geGSD7wnBppJoyaF1SKg5E6QGRhZIU4mCD4xhirzQ4q6K0a5C8kj7s35bMeYvOfgMUMFZOEBlbLgbrRnw4St5uKAcccRSfDsHDZkj2WqV7Tm4dj6opjioCTHZQT2sFK9UTQOgiVxQOS70eYZpw5XIJodeklCV42hTfFHms4AXTwyBOWxIdejB8oSpzV/icfTiIBqOa6TZ3T8WvYToQ0nqM0rs7Kk5KWqRAD9P3et0sR5+GYOt+HWhGlkUZHxWq64n5oaViXWvCcL+EGQpOs+CTqo7TIX7UefMCyDqin9DHWS5tolSMsp62fnZpjuLZhxy35ZZMQFregEDuI5MLoSQIRu94YdQ8F3+W+CbH/tjXQwhJlR/X8O8RRIkdlVEHK+IS5mvk1SppE7WBWJr4+0MFMa28fTqvE/xr6PzZHmzjHHVUgQcytPBDvn2ivvBdWQ14T3YJEUtECQ8SZIiyxtOezb6uA7uwcJHF+Y4NZlZUTiSTfOMZVV+j3yCvicJAHy0ryVOQF1JdrRAFeWoWJCeiHw679YR5Xi7Q8UJGmpEbgrolU23bZ5S5lUKXbFzuw3j+qGVBl/URlxpZzOhbcUX3rJViAInotGAt7zo2NNSUb/FD/4cRP1uFOEMQZizUWeG0wJK1gyIS+XsVxpSv4WDlFhdcTC63tHazs0y0t6Az43DXA8hee9xrDh09pmqCVMDG/T7fVkzfnNb51BNRGv3CuueFFzYoDrg8gA/jjPPBaQXLnDkkL/VqJeiIZQpxWPuojSys4tOlqTR8SsRZCTAnhm4I6HJHwSTLmidEw/HjnCHCQmrRE/35UVOiHTice/Ofvm0yI52YynpOakoC6aNJOQrbYHD95JfKrR+mXx1Urd8P4joGBrxjvZYM1hCE1iW6pZtzuqpg80XGW36IZ2ZgeMf3TkPjhutqvHjZUuoVjzYxiMVTro0ivf2t8nWCMMj6LH9/qckUVuwA+3Zm4OBMgwcKm+Oz+ehSpXHhFxDlE/uPDatQxJ2hiMAjxRFMzdzLcQADY7zu6cLsDNSQ80wYg4VUfsM+jJN2i3esMp/5LQw8Q9c/0ihgoqmVRbixTBfzajlPIfnTzfNk6CKoSofcLKlqns7qgOI3ZKbLyh/jeEH2ajK20tmvXH+HeUMHVjIn8XMRfbfJEjZmcUAfEjm9x//b++LEs/GQGAE=",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"7819426\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title is \\\"Integration Engineer (Chicago)\\\", which contains none of Software Engineer, AI Engineer, or Backend Engineer.\"},{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"first_published\",\"evidence\":\"first_published is 2026-04-29, about 181 days before the run date of 2026-10-27, which is more than 21 days (updated_at is not used because first_published is present).\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"\\\"Chicago, US-Remote\\\" shows the US (Chicago and US-Remote), so the location check passes.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, or AWS appears as a whole word in the content.\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"The content contains none of the phrases that would rule out sponsorship, so the sponsorship check passes.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2786,
+    "output_tokens": 646,
+    "output_tokens_details": {
+      "thinking_tokens": 234
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

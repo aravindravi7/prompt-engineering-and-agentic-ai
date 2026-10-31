@@ -1,0 +1,12 @@
+VERDICT: not_relevant
+RESUME_FIELD: target_titles=Associate Product Manager
+RESUME_FIELD: target_titles=Product Manager
+RESUME_FIELD: target_titles=Product Analyst
+RESUME_FIELD: locations=New York
+RESUME_FIELD: skills=Python
+RESUME_FIELD: skills=SQL
+POSTING_FIELD: title=Technical Solutions Consultant, Crypto
+POSTING_FIELD: location.name=New York, San Francisco
+POSTING_FIELD: content=Python
+POSTING_FIELD: content=SQL
+REASON: C1 fails because the title "Technical Solutions Consultant, Crypto" contains none of the target titles, while C2 (New York) and C3 (Python, SQL) pass.

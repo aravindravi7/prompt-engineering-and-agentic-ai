@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXPK13VnF3eHjMuUffQy",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS0wgKEAgTGAI4AUIIdGhpbmtpbmcSDK4mjrGKCD2JPNzKuhoM7ebOj3uhby/mIwIDIjB2mna9CIZ9p1qQzZpVOBg56zK8lhdHmdX+uq07P3SGs22poPLLYfkKAWm85Ie54+sq8AcB9lNAdJ7EzxjwPDHYPYdpBjW/FXTjvJ3x9k7eRV5N4SJbssKfI2XEIOFgFRx8TSM5NuxxfcQL2fyzq338jWsLfoDXlpLYyhdzJ3GEpcXHD+Ku5PHb4hfwJrnM2xfwUKgxbPm8B8QdbgCGLcQqBj2SChvrNYrXgSLdX5p6EqinomjL/Q8E90t6xxtlRt3DVZJuTABAySMb/K9A9LvesWTnzXZo8MNwiD3Fsv78qxi1ni4iBcz08+Q4Ys57mUXD/5wX9wmPx3z3Jk3LGRvqG4TbH9cVvkLhg1OEIzH0Jre/0YKDNO0dVmbgNcQsKQD4enQVAai/N8gCu2lpPIcmNCt6D/n5Xottkg9Exbi+0Ia1CxnZBX1s4qhbMeciYTj25xHmjpBGlY8gpZAOiK8m7nSPhfUzJYizH/0XmhMBIRDYIj+fbR6ZbNUOrRn7hYe9k/bzDJ9OsCxcGrOl4TSL+8BiGHVqvohGvEfmRI+AemHMRtLbNvcRQvihQJ547NCbj0U4ktIP7ad/tcGW2mub4zp2YKZr4POH/8tDQM9UN5nzv2VZhc3MBYnpRQ6GVPX6eZkB65pj2gJCKg2I9aluzJgC44cK7VUmmotKPznvep5GZ6S1o2tcybXXN/tHvIhcBPDxbKUpUnKh3L+Toedeem3pHRjX8UhbosYDbIH4PUuOhuzo7P35zwcCmcH88Fe6J6sYoQxv6w+bX8gzdos+sfgihzc410soMTLCWKn7jtt/ft/DDUIPHOtEP32UuRQzqKd2jyoXvyZ0b47XR3gOcTkCuuO5ffrjSXpKQZ7N7i7LROghks1N4MiK67VVGdqaum0u7FW4K7MaAH+As58f9bb8QQTm1+ckQcOvTB5QXJ1NFvu6QJVSi7imVhSjFH85y6UZ79cVEgOuYnknXCYtd3BrfX7BUdlQ+eUgWU+G8XJXgBvYEWOF2y41UhLE1kFYALoDpKEhnkPfh5G5eHbPct39/lYOrmuZkMa1/u+yRBZe/VA6cLDeeEuJFXn1PPxQwmVQPdYr0+DWnOWHqmn6K7X1z3buKzHQOKAAYVz78xO1jsI195wd54fHlzwzwlXRr9Y6Nc7KNOB3umL1s9Fp16EoRthdRxdag+7LkHGnchHvHHYaBC+l69z5FkvHIrXIctpQttir0UeU65MPkWNRWB2QwXxrt3A1nJaHaNOlOMguGG9IYv4/I0t/yHJ5qGpeVXpZcp2JhGej/Yhwh9HZ9cxtaIeBt4fyLpSXYCWnn+FTRosBoQYHcdHU62fGhgo/RaU8CIoguFayMJiD55yU7Ku02nDsOcSRi2zBAr7YOWNfnfTefXiUB2rKrihT+Wqq3TUYAQ==",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8203975\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title is \\\"Integration Engineer\\\", which contains none of Software Engineer, AI Engineer, or Backend Engineer.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location is \\\"Toronto, Canada\\\", which shows no US match.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"The content mentions none of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, or AWS.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"The content says \\\"4 years + experience\\\", which is not in the \\\"N+ years\\\" form, so the check is unknown. The other failures already decide the verdict.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2776,
+    "output_tokens": 536,
+    "output_tokens_details": {
+      "thinking_tokens": 225
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

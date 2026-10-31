@@ -1,0 +1,91 @@
+mode: live
+total_fetched: 721
+new_count: 29
+29 new postings
+- 8154295  Account Executive, Product Sales, Metronome  [US-NYC]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8280266  Account Executive, Startups (Grower)  [San Francisco]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8284978  Account Executive - Travel, Ticketing & Hospitality (Hunter)   [London]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8301253  Backend / API Engineer, Radar  [San Francisco, Seattle, New York]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 7913700  Backend Engineer, Data  [Canada]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 7584016  Campaign Strategy & Operations Manager  [San Francisco, Seattle, New York, Chicago, Remote in the US]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8293770  Customer Success Enablement Business Partner  [San Francisco; Seattle; Remote]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8275558  Customer Support Specialist, Clerky  [Canada]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8314318  Federal Government Relations Director   [Washington DC metro area]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8287914  Finance & Strategy Specialist  [United States]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8168550  Fraud Operations Analyst (CDMX)  [Mexico City]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8267847  Head of AMER Startups (AI Sales)  [San Francisco]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 7337544  Manager, Sales Development  [Dublin ]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8175637  Manager, Solutions Architecture Transformation  [USA]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8287486  Managing Editor, Stripe Press  [NYC]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8329719  Marketing Strategy & Operations Business Partner  [San Francisco, New York, Seattle, Chicago, Atlanta, Remote in the US ]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 7964568  Partner Solutions Architect, Consulting Partners  [United States]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8331124  Product Marketing Manager, Subscriptions  [New York, San Francisco, Seattle, Remote]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8311067  Program Manager, Go-to-Market Experience and Productivity  [Dublin ]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8315962  Risk Operations Associate, UPO  [Mexico City]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8332718  Software Engineer, Fraud System Interventions  [South San Francisco, CA]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8332676  Software Engineer - Full stack  [Seattle, WA]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8130876  Software Engineer, New Grad  [Bangalore]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8331852  Staff Product Manager, Risk  [Toronto, Canada]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8329718  Staff Software Engineer, Dashboard Product  [Seattle]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8304788  Staff Software Engineer, Link - Consumer Identity  [San Francisco, Seattle, New York]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 7746721  Staff Software Engineer, Stripe Dashboard  [Seattle]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8164666  Technical Curriculum Developer, Technical Enablement  [San Francisco; Seattle; Remote]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected
+- 8329116  Technical Solutions Consultant, Crypto  [New York, San Francisco]
+    rule verdict (record): not_relevant
+    judgment (Claude): rejected

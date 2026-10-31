@@ -1,0 +1,33 @@
+{
+  "posting_id": 8635225002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8635225002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "skills.languages",
+      "skills.data_bi",
+      "skills.backend_automation",
+      "skills.database_cloud",
+      "work_authorization.needs_sponsorship"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title, US location and sponsorship checks pass, but the only résumé skills in the text are 'Databricks' (the employer's name) and 'Unity Catalog' (in the boilerplate product list), not skills the role asks for. The real requirements are web stack, CMS (Drupal/Contentful) and frontend work, so I judge rule 4 unmet, though a purely literal string match would pass it."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8635225002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"skills.backend_automation\", \"skills.database_cloud\", \"work_authorization.needs_sponsorship\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title, US location and sponsorship checks pass, but the only résumé skills in the text are 'Databricks' (the employer's name) and 'Unity Catalog' (in the boilerplate product list), not skills the role asks for. The real requirements are web stack, CMS (Drupal/Contentful) and frontend work, so I judge rule 4 unmet, though a purely literal string match would pass it.\"}",
+  "asked_at": "2026-10-30T21:26:47+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "956ab082-2498-41e1-9bd3-05148d024d42",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "20b3c443a036c2a79a51e8f6d42f687a2d8edf62ec369e91ebf15b65382349ec"
+}

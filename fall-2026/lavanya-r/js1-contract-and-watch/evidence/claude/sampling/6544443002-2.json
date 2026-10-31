@@ -1,0 +1,19 @@
+{
+  "posting_id": 6544443002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "INVALID",
+  "parsed": null,
+  "errors": [
+    "resume_fields must be a non-empty list of strings"
+  ],
+  "raw_reply": "{\"posting_id\": 6544443002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\"], \"reason\": \"The title contains \\\"Staff\\\", which is an excluded seniority term (rule 2), so the posting fails regardless of the other criteria. It would otherwise meet rules 1, 3, and 4 (Software Engineer, Mountain View CA, and mentions SQL, AWS, MLflow, Unity Catalog, Databricks).\"}",
+  "asked_at": "2026-10-30T21:22:01+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "2f430a79-f1a8-4635-a9d0-7939168f4350",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "abecdb18b5b3234c2709bb1345e10d736342abebbe6be7bf5580f505399f9bb0"
+}

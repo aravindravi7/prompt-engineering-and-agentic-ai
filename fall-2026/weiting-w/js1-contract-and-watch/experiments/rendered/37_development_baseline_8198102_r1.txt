@@ -1,0 +1,114 @@
+You are judging ONE job posting against ONE resume for a job-search agent.
+The resume belongs to a fictional persona, not a real person.
+
+THE RULE (R-v2). There are four gates. A posting is "relevant" only if all
+four pass.
+
+G1_title_block - fails if the posting title contains, as a whole word, any
+  token in title_block. Whole word means bounded by a non-letter or by the
+  start or end of the string, so "sr" does not match "sre" and "lead" does
+  not match "leadership".
+G2_discipline - fails if the posting title contains none of the phrases in
+  target_title_phrases as a substring.
+G3_job_family - let F be the value of the posting's metadata entry whose
+  name is "Job Family". Fails if F is missing, empty, or contains none of the
+  phrases in target_job_families as a substring.
+G4_location - fails if the posting's location name contains none of the
+  phrases in locations_ok as a substring, and it is not the case that
+  remote_ok is true and the location name contains "remote".
+
+All comparisons are case-insensitive. You may use only the posting fields
+printed below; there is no job description available to you.
+
+RESUME FIELDS (already lower-case):
+title_block = ["senior", "sr", "staff", "principal", "lead", "director", "head", "vp", "manager", "architect", "intern", "internship", "co-op", "contract", "contractor", "fellow", "president", "chief"]
+target_title_phrases = ["software engineer", "software developer", "backend engineer", "frontend engineer", "full stack engineer", "platform engineer", "graphics engineer", "gameplay engineer", "tools engineer", "machine learning engineer"]
+target_job_families = ["software engineering", "machine learning", "data science"]
+locations_ok = ["new york", "nyc", "boston", "massachusetts", "san francisco", "seattle", "chicago", "los angeles", "united states"]
+remote_ok = true
+
+POSTING:
+{
+ "id": 8198102,
+ "location": {
+  "name": "Remote - United States"
+ },
+ "metadata": [
+  {
+   "name": "Position ID",
+   "value": "3525788"
+  },
+  {
+   "name": "Recruiting Start Date",
+   "value": "2026-08-21"
+  },
+  {
+   "name": "Target Hire Date",
+   "value": ""
+  },
+  {
+   "name": "Target Hire End Date",
+   "value": ""
+  },
+  {
+   "name": "Job Profile",
+   "value": "Software Development Engineer 3"
+  },
+  {
+   "name": "Management Level",
+   "value": "IC3"
+  },
+  {
+   "name": "Job Family",
+   "value": "Software Engineering"
+  },
+  {
+   "name": "Worker Sub-Type",
+   "value": "Regular"
+  },
+  {
+   "name": "Time Type",
+   "value": "Full time"
+  },
+  {
+   "name": "Pay Rate Type",
+   "value": "Salary"
+  },
+  {
+   "name": "Scheduled Weekly Hours",
+   "value": "40.0"
+  },
+  {
+   "name": "Company",
+   "value": "Reddit, Inc."
+  },
+  {
+   "name": "Cost Center",
+   "value": null
+  },
+  {
+   "name": "Worker Type",
+   "value": "Employee"
+  }
+ ],
+ "title": "Front End Software Engineer, Media Player"
+}
+
+OUTPUT FORMAT. Reply with a single JSON object and nothing else - no prose
+before or after it, no code fence:
+
+{"posting_id": <int>, "verdict": "relevant" | "not_relevant", "gate_failed": <gate id or null>, "justification": [{"resume_field": "<path>", "posting_field": "<path>", "evidence": "<string>"}], "confidence": "high" | "medium" | "low"}
+
+Field requirements:
+- posting_id must be exactly the id printed above.
+- gate_failed must be null when verdict is "relevant", and otherwise exactly
+  one of G1_title_block, G2_discipline, G3_job_family, G4_location.
+- justification must contain at least one item.
+- resume_field must be a path into the resume fields above, for example
+  "title_block[0]", "target_title_phrases[2]", "target_job_families[0]",
+  "locations_ok[3]", "remote_ok".
+- posting_field must be a path into the posting above, for example "title",
+  "location.name", "metadata[4].value", "metadata[4].name".
+- evidence must be a string that literally occurs, case-insensitively, inside
+  the posting field you named.
+- confidence is your own, about this verdict.

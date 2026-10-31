@@ -1,0 +1,135 @@
+{
+  "jobs": [
+    {
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=1001",
+      "id": 1001,
+      "internal_job_id": 6001,
+      "location": {
+        "name": "San Francisco, CA"
+      },
+      "metadata": null,
+      "updated_at": "2026-10-26T09:00:00-04:00",
+      "requisition_id": "See Opening ID",
+      "title": "Software Engineer, New Grad",
+      "company_name": "Stripe",
+      "first_published": "2026-10-20T10:00:00-04:00",
+      "language": "en",
+      "content": "&lt;p&gt;Build APIs in &lt;strong&gt;Python&lt;/strong&gt; and Go.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;1+ years of experience&lt;/li&gt;&lt;/ul&gt;"
+    },
+    {
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=1002",
+      "id": 1002,
+      "internal_job_id": 6002,
+      "location": {
+        "name": "Seattle, WA"
+      },
+      "metadata": null,
+      "updated_at": "2026-10-26T09:00:00-04:00",
+      "requisition_id": "See Opening ID",
+      "title": "Senior Software Engineer",
+      "company_name": "Stripe",
+      "first_published": "2026-10-21T10:00:00-04:00",
+      "language": "en",
+      "content": "&lt;p&gt;Java services. 2+ years of experience.&lt;/p&gt;"
+    },
+    {
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=1003",
+      "id": 1003,
+      "internal_job_id": 6003,
+      "location": {
+        "name": "Dublin"
+      },
+      "metadata": null,
+      "updated_at": "2026-10-26T09:00:00-04:00",
+      "requisition_id": "See Opening ID",
+      "title": "Backend Engineer",
+      "company_name": "Stripe",
+      "first_published": "2026-10-22T10:00:00-04:00",
+      "language": "en",
+      "content": "&lt;p&gt;Python and SQL. 2+ years of experience.&lt;/p&gt;"
+    },
+    {
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=1004",
+      "id": 1004,
+      "internal_job_id": 6004,
+      "location": {
+        "name": "Remote"
+      },
+      "metadata": null,
+      "updated_at": "2026-10-26T09:00:00-04:00",
+      "requisition_id": "See Opening ID",
+      "title": "Software Engineer",
+      "company_name": "Stripe",
+      "first_published": "2026-10-23T10:00:00-04:00",
+      "language": "en",
+      "content": "&lt;p&gt;We write TypeScript and React.&lt;/p&gt;"
+    },
+    {
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=1005",
+      "id": 1005,
+      "internal_job_id": 6005,
+      "location": {
+        "name": "New York, NY"
+      },
+      "metadata": null,
+      "updated_at": "2026-10-26T09:00:00-04:00",
+      "requisition_id": "See Opening ID",
+      "title": "AI Engineer",
+      "company_name": "Stripe",
+      "first_published": "2026-09-01T10:00:00-04:00",
+      "language": "en",
+      "content": "&lt;p&gt;Python. 1+ years of experience.&lt;/p&gt;"
+    },
+    {
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=1006",
+      "id": 1006,
+      "internal_job_id": 6006,
+      "location": {
+        "name": "US-Remote"
+      },
+      "metadata": null,
+      "updated_at": "2026-10-26T09:00:00-04:00",
+      "requisition_id": "See Opening ID",
+      "title": "Software Engineer, Payments",
+      "company_name": "Stripe",
+      "first_published": "2026-10-24T10:00:00-04:00",
+      "language": "en",
+      "content": "&lt;p&gt;Java and AWS. 5+ years of experience.&lt;/p&gt;"
+    },
+    {
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=1007",
+      "id": 1007,
+      "internal_job_id": 6007,
+      "location": {
+        "name": "Chicago"
+      },
+      "metadata": null,
+      "updated_at": "2026-10-26T09:00:00-04:00",
+      "requisition_id": "See Opening ID",
+      "title": "Software Engineer, Risk",
+      "company_name": "Stripe",
+      "first_published": "2026-10-25T10:00:00-04:00",
+      "language": "en",
+      "content": "&lt;p&gt;Python. 2+ years of experience.&lt;/p&gt;&lt;p&gt;We are unable to sponsor visas for this role.&lt;/p&gt;"
+    },
+    {
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=1008",
+      "id": 1008,
+      "internal_job_id": 6008,
+      "location": {
+        "name": "Atlanta"
+      },
+      "metadata": null,
+      "updated_at": "2026-10-26T09:00:00-04:00",
+      "requisition_id": "See Opening ID",
+      "title": "Software Engineer, Infrastructure",
+      "company_name": "Stripe",
+      "first_published": null,
+      "language": "en",
+      "content": "&lt;p&gt;Rust and Kubernetes. 2+ years of experience.&lt;/p&gt;"
+    }
+  ],
+  "meta": {
+    "total": 8
+  }
+}

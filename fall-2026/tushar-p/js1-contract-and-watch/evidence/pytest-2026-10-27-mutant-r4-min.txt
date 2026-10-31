@@ -1,0 +1,40 @@
+........................................................................ [ 30%]
+.................................................................F...... [ 61%]
+........................................................................ [ 91%]
+....................                                                     [100%]
+=================================== FAILURES ===================================
+____________ test_r4_experience[5+ years backend, 2+ years Go-fail] ____________
+
+text = '5+ years backend, 2+ years Go', expected = 'fail'
+
+    @pytest.mark.parametrize("text, expected", [
+        ("3+ years of experience", "pass"),
+        ("4+ years of experience", "fail"),
+        ("0+ years", "pass"),
+        ("10+ years", "fail"),
+        ("2–5 years", "pass"),
+        ("2-5 years", "pass"),
+        ("2 to 5 years", "pass"),
+        ("4–6 years", "fail"),
+        ("3-5+ years", "pass"),
+        ("5 + years", "fail"),
+        ("5+ years backend, 2+ years Go", "fail"),   # largest minimum wins (user-required case)
+        ("2+ years backend, 1+ years Go", "pass"),
+        ("3 years of experience", "unknown"),        # plain "N years" does not count
+        ("three+ years", "unknown"),                 # spelled-out numbers are not parsed
+        ("no experience requirement stated", "unknown"),
+        ("2.5+ years", "unknown"),                   # not a whole number N; known gap
+    ])
+    def test_r4_experience(text, expected):
+        entry = rules.check_r4_experience(text)
+>       assert entry["result"] == expected, entry["value_found"]
+E       AssertionError: minimum years found: [5, 2]; largest 2
+E       assert 'pass' == 'fail'
+E         
+E         - fail
+E         + pass
+
+tests/test_rules.py:190: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_rules.py::test_r4_experience[5+ years backend, 2+ years Go-fail]
+1 failed, 235 passed in 0.17s

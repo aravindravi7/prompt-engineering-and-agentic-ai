@@ -1,0 +1,35 @@
+{
+  "id": "msg_011CgXNCyir5BpNyb7tUemCM",
+  "container": null,
+  "content": [
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"7543868\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Software Engineer, Financial Business Insights\\\" contains target title \\\"Software Engineer\\\" and none of the excluded words, so R1 passes.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location \\\"Bengaluru, India\\\" does not show a US location, so R3 fails.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"Content says \\\"8+ years of experience\\\", so the largest minimum is 8, which is more than 3, so R4 fails for a new grad.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"Content mentions \\\"Docker\\\" and \\\"AWS\\\", so R6 passes.\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"No phrase such as \\\"unable to sponsor\\\" or \\\"no sponsorship\\\" appears in the content, so R5 passes.\"},{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"updated_at\",\"evidence\":\"first_published is 2026-01-27, which is more than 21 days before the run date of 2026-10-27, so R2 fails.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3855,
+    "output_tokens": 450,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

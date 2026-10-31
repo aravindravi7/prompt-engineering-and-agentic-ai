@@ -1,0 +1,29 @@
+{
+  "source": "evidence/stripe_jobs_content_true_2026-10-27T223947Z.json",
+  "rule": "title contains 'product' (case-insensitive), sorted by id numerically ascending; first 10 development, next 10 held-out",
+  "matching_count": 115,
+  "development": [
+    "6348471",
+    "7202630",
+    "7369543",
+    "7392697",
+    "7456716",
+    "7517535",
+    "7586413",
+    "7663023",
+    "7737124",
+    "7773461"
+  ],
+  "held_out": [
+    "7774312",
+    "7812856",
+    "7832098",
+    "7861422",
+    "7913698",
+    "7913702",
+    "7954207",
+    "7961101",
+    "7975698",
+    "7980578"
+  ]
+}

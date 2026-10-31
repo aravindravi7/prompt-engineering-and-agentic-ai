@@ -1,0 +1,14 @@
+VERDICT: not_relevant
+RESUME_FIELD: target_titles=Associate Product Manager
+RESUME_FIELD: target_titles=Product Manager
+RESUME_FIELD: target_titles=Product Analyst
+RESUME_FIELD: locations=New York
+RESUME_FIELD: locations=NYC
+RESUME_FIELD: locations=Remote
+RESUME_FIELD: skills=Python
+RESUME_FIELD: skills=SQL
+POSTING_FIELD: title=Backend Engineer, Data
+POSTING_FIELD: location.name=Canada
+POSTING_FIELD: content=Python
+POSTING_FIELD: content=SQL
+REASON: C1 fails because the title "Backend Engineer, Data" contains none of the target titles and C2 fails because the location "Canada" contains none of the candidate locations, although C3 passes with Python and SQL in the content.

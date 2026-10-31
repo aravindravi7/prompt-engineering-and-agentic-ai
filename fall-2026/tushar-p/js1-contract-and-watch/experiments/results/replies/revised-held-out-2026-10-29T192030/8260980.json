@@ -1,0 +1,35 @@
+{
+  "id": "msg_011CgXPLkoZFgB7HesyFpn8g",
+  "container": null,
+  "content": [
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8260980\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Staff Software Engineer, Payments Intelligence\\\" contains \\\"Staff\\\", which overrides the target title \\\"Software Engineer\\\"; R1 fails.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"Content requires \\\"10+ years of software engineering experience\\\" and \\\"5+ years\\\"; the largest minimum is 10, which is more than 3, so R4 fails.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location \\\"New York, Toronto\\\" includes New York, which counts as US; R3 passes.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"Content lists \\\"Java, Ruby, Python, TypeScript\\\" in its stack; skills match, so R6 passes.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3060,
+    "output_tokens": 330,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

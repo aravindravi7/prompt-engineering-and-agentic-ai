@@ -1,0 +1,118 @@
+[
+  {
+    "posting_id": 4746354005,
+    "title": "Office Manager",
+    "source": "record",
+    "verdict": "not_relevant",
+    "checks": {
+      "title": {
+        "passed": false,
+        "matched": null,
+        "posting_value": "Office Manager",
+        "reason": "title contains excluded word 'Manager'"
+      },
+      "skills": {
+        "passed": false,
+        "matched": [],
+        "count": 0
+      },
+      "location": {
+        "passed": true,
+        "matched": "Mountain View, CA",
+        "posting_value": "Mountain View, CA",
+        "reason": "location contains 'Mountain View, CA'"
+      }
+    },
+    "resume_fields": [
+      "target_titles",
+      "skills",
+      "locations"
+    ],
+    "posting_fields": [
+      "title",
+      "content",
+      "location.name"
+    ],
+    "justification": "target_titles vs title: fail (title contains excluded word 'Manager'); skills vs content: fail (matched 0 of the required 3 skills (none)); locations vs location.name: pass (location contains 'Mountain View, CA')"
+  },
+  {
+    "posting_id": 4746910005,
+    "title": "Software Engineer",
+    "source": "record",
+    "verdict": "relevant",
+    "checks": {
+      "title": {
+        "passed": true,
+        "matched": "Software Engineer",
+        "posting_value": "Software Engineer",
+        "reason": "title contains 'Software Engineer'"
+      },
+      "skills": {
+        "passed": true,
+        "matched": [
+          "Java",
+          "Python",
+          "AWS"
+        ],
+        "count": 3
+      },
+      "location": {
+        "passed": true,
+        "matched": "Mountain View, CA",
+        "posting_value": "Mountain View, CA",
+        "reason": "location contains 'Mountain View, CA'"
+      }
+    },
+    "resume_fields": [
+      "target_titles",
+      "skills",
+      "locations"
+    ],
+    "posting_fields": [
+      "title",
+      "content",
+      "location.name"
+    ],
+    "justification": "target_titles vs title: pass (title contains 'Software Engineer'); skills vs content: pass (matched 3 skills: Java, Python, AWS); locations vs location.name: pass (location contains 'Mountain View, CA')"
+  },
+  {
+    "posting_id": 4696752005,
+    "title": "Software Engineer, APIs & Context Platform",
+    "source": "record",
+    "verdict": "relevant",
+    "checks": {
+      "title": {
+        "passed": true,
+        "matched": "Software Engineer",
+        "posting_value": "Software Engineer, APIs & Context Platform",
+        "reason": "title contains 'Software Engineer'"
+      },
+      "skills": {
+        "passed": true,
+        "matched": [
+          "Java",
+          "Python",
+          "REST APIs"
+        ],
+        "count": 3
+      },
+      "location": {
+        "passed": true,
+        "matched": "Mountain View, CA",
+        "posting_value": "Mountain View, CA",
+        "reason": "location contains 'Mountain View, CA'"
+      }
+    },
+    "resume_fields": [
+      "target_titles",
+      "skills",
+      "locations"
+    ],
+    "posting_fields": [
+      "title",
+      "content",
+      "location.name"
+    ],
+    "justification": "target_titles vs title: pass (title contains 'Software Engineer'); skills vs content: pass (matched 3 skills: Java, Python, REST APIs); locations vs location.name: pass (location contains 'Mountain View, CA')"
+  }
+]

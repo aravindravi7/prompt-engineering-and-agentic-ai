@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgV9e8sSZ1BKfBWKUsY11",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQStgcKEAgTGAI4AUIIdGhpbmtpbmcSDFSPQcNXdXtHTFH14BoMxw261ffAu96QOODKIjDV8Va3E6rr33ZWaNAsk7bTGhst0uROH+XJlzGs/iLuxUpaDk9ngFoeMUDMv50y8Swq0waCUhWleHG1n4ver7bCcAYp2kcWoXZA3CgEpqiyeMpbqbdliWT3SzOct4xvgzFXeIbHNzJoiGdNzDL2IfHx/Eaj4ARsFHFSxHNEy1Y6mtA05v6cWVOt7SSZChb657UoXwARrm1WRdlMCsmj1vy+HD2FfMa4ZBTDBQuPn95bxELXMK+BS41on3V8zQSwxmRwrYCZxwVYZhAPuNOucKDnRRGvNIRVetpPqn73h/nbfQLWpRMi3138X9PgI5eku9vEj2cImu/pKDAdfj8+62rXIeKusrZRiNyOj/YcDrbyxShm5koz3ecARDdry0DeB687BUr+WvxHHdpKKvnDM/aUKN8wCjqBAlykyI79g56E5yldYq4phQ09pAAJg6gGQfqkZFWeLtLJSHq4EfpoXlLEUsX6E7b7KnaWDPVqve+btIt/c1zSrtZCbWV0dSjE83CyVTeDGrz4m7+AarwVTJpvE4864I9+aDNzCXR5gKMZSe22caWDDTdc1+TU4VdM/XOzaSLXVorXWNpCCv+eCyhgN0dgOEbt/BZscOOY9ZPPsDKnB/ryCcFjWS7tREyZtRDJcVuvU983HoCM5mVkLzza2NwgDvybIzkeq0r/oEJoi8+ItSubtNLn0ppotowVt2fu8qtqv7V+L1Se37rerhwlugWyXNznEbMRWADqTfGTGEBq7tOOP5ca2ZLFJokOfgkbUHy4EGeQt0pq2kXuQWxOHMWOzilC6sD9sK3+ZQBfck03I0xKm7XiIKZdZ5FV9HNLO7KWn+SC5O/9CDWPqQ+HjHFkYa5WTYnK07KQH9XtyjVo+gryC0V2MVo+ZfvV+7JR3xg4SkMRDSZrzW/Soj022Zk4CKB7JScJ+BPCPIcwFkPc/ofskXQ45Lr71n0hMX+6I+iWwl3byMFEFE3l/ZMVtlIsseeijFDLtgNek82X2jMNyLdivCYDZLWp1fyKHHSAWihIf9N0ijzZVNskqYkRsk8WmOrGb4V+kQqBod0/mmGcHtlrMiqihT/sJ9CLGUeTknDr52ehM6E3c8tTpfMqvgqNZcZCnr7yC8ipL7zhDjMQXbJPEbAT/mIj4n8bBxH+OCHZ3HMYe/wvZU2zfK68+NEJqh4F2osZOo15RrySdNr+ebla3xgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8329719\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title 'Marketing Strategy & Operations Business Partner' contains none of Software Engineer, AI Engineer, or Backend Engineer, so R1 fails.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location 'San Francisco, New York, Seattle, Chicago, Atlanta, Remote in the US' shows US cities, so R3 passes.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"Content mentions 'SQL' in the preferred qualifications, so R6 passes.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3290,
+    "output_tokens": 395,
+    "output_tokens_details": {
+      "thinking_tokens": 143
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

@@ -1,0 +1,12 @@
+VERDICT: not_relevant
+RESUME_FIELD: target_titles=Associate Product Manager
+RESUME_FIELD: target_titles=Product Manager
+RESUME_FIELD: target_titles=Product Analyst
+RESUME_FIELD: locations=New York
+RESUME_FIELD: locations=NYC
+RESUME_FIELD: locations=Remote
+RESUME_FIELD: skills=SQL
+POSTING_FIELD: title=Account Executive, Startups (Grower)
+POSTING_FIELD: location.name=San Francisco
+POSTING_FIELD: content=SQL
+REASON: C1 fails because the title contains no target title, C2 fails because San Francisco contains no candidate location, and C3 fails because only one distinct skill (SQL) appears in the content.

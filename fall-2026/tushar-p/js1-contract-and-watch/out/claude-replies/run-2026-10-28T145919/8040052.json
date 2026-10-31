@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgV9fiYX585t7XzD2QkLu",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQSyggKEAgTGAI4AUIIdGhpbmtpbmcSDOh4YOhpjcl56WBFSBoMOK8leysqIYKHF+lXIjCTyXNwNTuiYiUW3ksoJlvy9CZhKQdhbGKzBjLf68IcqKf4ujBfTnuXV6YhoHbLSxAq5wdhglXw+XxBDpNPiE6d/c7dawXYEmKPoQmeojXA4UWT6UMBpDDXdjEpOld2AT1gX0J0uBbrs7LqDu2KbM5yYrj2yyu5sQGXHuHBZp6WNnygZupQ2thpkg5+Sdj00yWW0r8FVAkybb/GSuCCJYCzqJDjmZCn5VEaYeC02RM0K71VDJ+2zhutCkGcdGB4Q2J9z6VgOD5O5Q1IW3k0TJCPuGlgY2E5tMkHOkmDYaAXwlzYzhkNGBP900zcLAsuOQLAvhA2CgPJkzhe5guJLpNzhlLCkqTzBGZQ+2Js5nhEoon8cnVnGg/cRZ6v5SD1/wbvzU4G5IpIhUcG6l0wqi++oBgUl/aOggk34LpO5+fvjtdIGdFkVU6qmoEqRcwjvg/7DrCQuJVysUDVnB3M/PtYUNLzSuFTM4tOQ0ZnLKPSVjriH7OwsGhhweYrhgmjsenXJJVQOkZDmEI3dIrCe+Uv0i/qCLceuxWJuTIRUrDwcA01PaexweSgCzb9dNYR+/LPUe8OghdvmhXd3SMHJrzTGplrriyeC3boQozF8KwgOoYwWI79ZqlCGYvReSkpI0F5PatqNInwIHlVGysTlrZAyigZJ/DFnUIW5uFQwoOUbTuJbFT614+UaziUX/35nSDw1EWDZmgBTQImCEesffZcDUngIJnHFZ7IjqJgz33AvqZSK9deoopUfO31aKEqZ3JAHeFPGqpVAivA/ThRvwFjkOFiUsvImSBeziaLSjwkRvRa0+JY+Lf5gnqbjXFNGEYlo083hUCb1AEw+/YlQReKMtqCu8Q8uMmnwgQsVcXdVAmcKAAXkjRWFN8TxxupajeXFxahwVDyyVolbrkjHdGDA232L8KMfU6kYSCIkzsf1nK+pyV8tbIiPVWmCM6mL7w5esrH3Ev8LWF+YXeaJaMEEzMK6BaRGt0+5G5/nphIe2VwdDCgSaTcR2s7LHuPBpBV+GjZQ5X+75D55eui+nEbb46VUL4cdFW+VxeIUHDx4B8R536ObC6uAQsmPF57QgqQnaFmQSrJBpTMdOQqKAVCJQCnd0ybIZE5wOCaygcqdPzwuOcu3O5pJAfcVytzIGio2sV9rpbEAJlzl7gS833GmtvvJ7BdNjHqdic+1kmtSC9GgID0icJdjDHXBfm25QflsyaO3rNOffYtsmsyPsUKQNHqPf94iy7A+Nu2MI72j1JrGQtaROz2i9/FVIVQSJBXFzIyUQp8SSF9W1KmmDOXyCaL5PGSCTVTS+5xZudVZVVDQdzVQ91LNEsU7xaJuOvkKTGwjx/lhmoo8s0hPqOWBgrIMp0HShToZFuYiS6Fa00FuWOXbifnLkEYAQ==",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8040052\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Staff Product Manager, Risk\\\" contains none of the target titles and includes the excluded words \\\"Staff\\\" and \\\"Manager\\\".\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location is \\\"Toronto, Canada\\\", which shows no US location.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker or AWS appears as a whole word in the content.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"first_published\",\"evidence\":\"first_published is 2026-07-02, which is more than 21 days before the run date of 2026-10-28, so the freshness check fails.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3810,
+    "output_tokens": 540,
+    "output_tokens_details": {
+      "thinking_tokens": 221
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

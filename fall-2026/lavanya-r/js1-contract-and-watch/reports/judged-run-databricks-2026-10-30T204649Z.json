@@ -1,0 +1,947 @@
+{
+  "run": {
+    "stamp": "2026-10-30T204649Z",
+    "board": "databricks",
+    "kind": "live",
+    "source": "https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true",
+    "raw_path": "evidence/raw/databricks-2026-10-30T204649Z.json.gz",
+    "raw_sha256": "22745f513620f3c26e73512d53ab0a7b64368e339ffc574357cdcfe727825299",
+    "posting_count": 903,
+    "baseline": false,
+    "new_ids": [
+      8459031002,
+      8569528002,
+      8569578002,
+      8824171002,
+      8860646002,
+      8917482002,
+      8922120002,
+      8922730002,
+      8924302002,
+      8924844002
+    ]
+  },
+  "rule_version": "v2 (2026-10-30)",
+  "prompt": "baseline.md",
+  "rows": [
+    {
+      "posting_id": 8459031002,
+      "title": "Sr. Counsel, Regulatory",
+      "location": "Bellevue, Washington; Seattle, Washington; Washington, D.C.",
+      "rule": {
+        "posting_id": 8459031002,
+        "title": "Sr. Counsel, Regulatory",
+        "location": "Bellevue, Washington; Seattle, Washington; Washington, D.C.",
+        "judge": "rule",
+        "kind": "record",
+        "verdict": "not_relevant",
+        "justification": [
+          {
+            "check": "good_title",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "no_bad_title_word",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": [
+              "Sr"
+            ]
+          },
+          {
+            "check": "us_location",
+            "passed": true,
+            "posting_fields": [
+              "location.name"
+            ],
+            "resume_fields": [],
+            "matched": [
+              "Bellevue, Washington",
+              "Seattle, Washington",
+              "Washington, D.C."
+            ]
+          },
+          {
+            "check": "at_least_2_skills",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "skills.data_bi"
+            ],
+            "matched": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          {
+            "check": "no_cant_sponsor",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "work_authorization.needs_sponsorship"
+            ],
+            "matched": []
+          }
+        ]
+      },
+      "claude": {
+        "posting_id": 8459031002,
+        "judge": "claude",
+        "kind": "judgment",
+        "verdict": "INVALID",
+        "parsed": null,
+        "errors": [
+          "resume_fields must be a non-empty list of strings"
+        ],
+        "raw_reply": "{\"posting_id\": 8459031002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\"], \"reason\": \"The title \\\"Sr. Counsel, Regulatory\\\" contains none of the required keywords (AI, Machine Learning, ML, Software Engineer, Intern, New Grad, Early Career) and does contain the excluded term \\\"Sr\\\". It is also a senior legal role requiring a J.D. and 8+ years of experience, not an engineering role.\"}",
+        "asked_at": "2026-10-30T21:15:28+00:00",
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-opus-5-5"
+        ],
+        "session_id": "0039a73e-d908-4105-9456-0450f4d9d4f2",
+        "prompt_file": "baseline.md",
+        "prompt_sha256": "0b275df34dddfd84687599c44e008a8d2a3e13b69570f55a655808507a708591"
+      }
+    },
+    {
+      "posting_id": 8569528002,
+      "title": "Lakebase Sales Specialist, Benelux",
+      "location": "Amsterdam, Netherlands",
+      "rule": {
+        "posting_id": 8569528002,
+        "title": "Lakebase Sales Specialist, Benelux",
+        "location": "Amsterdam, Netherlands",
+        "judge": "rule",
+        "kind": "record",
+        "verdict": "not_relevant",
+        "justification": [
+          {
+            "check": "good_title",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "no_bad_title_word",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": [
+              "Sales"
+            ]
+          },
+          {
+            "check": "us_location",
+            "passed": false,
+            "posting_fields": [
+              "location.name"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "at_least_2_skills",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "skills.data_bi",
+              "skills.database_cloud"
+            ],
+            "matched": [
+              "Databricks",
+              "Unity Catalog",
+              "AWS"
+            ]
+          },
+          {
+            "check": "no_cant_sponsor",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "work_authorization.needs_sponsorship"
+            ],
+            "matched": []
+          }
+        ]
+      },
+      "claude": {
+        "posting_id": 8569528002,
+        "judge": "claude",
+        "kind": "judgment",
+        "verdict": "INVALID",
+        "parsed": null,
+        "errors": [
+          "resume_fields must be a non-empty list of strings"
+        ],
+        "raw_reply": "{\"posting_id\": 8569528002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"location.name\"], \"reason\": \"The title contains no required keyword (e.g., AI, ML, Software Engineer) and does contain the excluded word 'Sales'; the location, Amsterdam, Netherlands, is also outside the United States.\"}",
+        "asked_at": "2026-10-30T21:15:34+00:00",
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-opus-5-5"
+        ],
+        "session_id": "075e2500-c300-45c2-ae49-d50977b8af15",
+        "prompt_file": "baseline.md",
+        "prompt_sha256": "978379cd35c8654188aaf758820f8a9e23de099f7d4740518b8dbb045090c2c9"
+      }
+    },
+    {
+      "posting_id": 8569578002,
+      "title": "Lakebase Sales Specialist (Greater China Region)",
+      "location": "Singapore",
+      "rule": {
+        "posting_id": 8569578002,
+        "title": "Lakebase Sales Specialist (Greater China Region)",
+        "location": "Singapore",
+        "judge": "rule",
+        "kind": "record",
+        "verdict": "not_relevant",
+        "justification": [
+          {
+            "check": "good_title",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "no_bad_title_word",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": [
+              "Sales"
+            ]
+          },
+          {
+            "check": "us_location",
+            "passed": false,
+            "posting_fields": [
+              "location.name"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "at_least_2_skills",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "skills.data_bi",
+              "skills.database_cloud"
+            ],
+            "matched": [
+              "Databricks",
+              "Unity Catalog",
+              "AWS"
+            ]
+          },
+          {
+            "check": "no_cant_sponsor",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "work_authorization.needs_sponsorship"
+            ],
+            "matched": []
+          }
+        ]
+      },
+      "claude": {
+        "posting_id": 8569578002,
+        "judge": "claude",
+        "kind": "judgment",
+        "verdict": "not_relevant",
+        "parsed": {
+          "posting_id": 8569578002,
+          "verdict": "not_relevant",
+          "resume_fields": [
+            "skills.data_bi",
+            "skills.database_cloud"
+          ],
+          "posting_fields": [
+            "title",
+            "location.name"
+          ],
+          "reason": "The title 'Lakebase Sales Specialist (Greater China Region)' contains none of the required keywords and contains the excluded word 'Sales'. The location is Singapore, not the United States."
+        },
+        "errors": [],
+        "raw_reply": "{\"posting_id\": 8569578002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"skills.data_bi\", \"skills.database_cloud\"], \"posting_fields\": [\"title\", \"location.name\"], \"reason\": \"The title 'Lakebase Sales Specialist (Greater China Region)' contains none of the required keywords and contains the excluded word 'Sales'. The location is Singapore, not the United States.\"}",
+        "asked_at": "2026-10-30T21:15:38+00:00",
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-opus-5-5"
+        ],
+        "session_id": "6fd1661b-4941-451e-9c8d-6852367374c2",
+        "prompt_file": "baseline.md",
+        "prompt_sha256": "2597da75ed035ab0339616f71c594b597e1ec62b38e77afa266d2107a6a6baf4"
+      }
+    },
+    {
+      "posting_id": 8824171002,
+      "title": "AI Sales Director",
+      "location": "San Francisco, California; United States; West Coast - United States",
+      "rule": {
+        "posting_id": 8824171002,
+        "title": "AI Sales Director",
+        "location": "San Francisco, California; United States; West Coast - United States",
+        "judge": "rule",
+        "kind": "record",
+        "verdict": "not_relevant",
+        "justification": [
+          {
+            "check": "good_title",
+            "passed": true,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": [
+              "AI"
+            ]
+          },
+          {
+            "check": "no_bad_title_word",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": [
+              "Director",
+              "Sales"
+            ]
+          },
+          {
+            "check": "us_location",
+            "passed": true,
+            "posting_fields": [
+              "location.name"
+            ],
+            "resume_fields": [],
+            "matched": [
+              "San Francisco, California",
+              "United States",
+              "West Coast - United States"
+            ]
+          },
+          {
+            "check": "at_least_2_skills",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "skills.data_bi"
+            ],
+            "matched": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          {
+            "check": "no_cant_sponsor",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "work_authorization.needs_sponsorship"
+            ],
+            "matched": []
+          }
+        ]
+      },
+      "claude": {
+        "posting_id": 8824171002,
+        "judge": "claude",
+        "kind": "judgment",
+        "verdict": "INVALID",
+        "parsed": null,
+        "errors": [
+          "resume_fields must be a non-empty list of strings"
+        ],
+        "raw_reply": "{\"posting_id\": 8824171002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\"], \"reason\": \"The title \\\"AI Sales Director\\\" contains the excluded terms \\\"Sales\\\" and \\\"Director\\\", which fails rule 2 regardless of the other criteria.\"}",
+        "asked_at": "2026-10-30T21:15:44+00:00",
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-opus-5-5"
+        ],
+        "session_id": "2094f35a-65c3-4cbd-8cc4-92d7d462d54e",
+        "prompt_file": "baseline.md",
+        "prompt_sha256": "57555c486fc75d692c7418355f6c0a53f999ea67547d31f0f6ab951c57f15daa"
+      }
+    },
+    {
+      "posting_id": 8860646002,
+      "title": "Analyst Relations Manager",
+      "location": "United States",
+      "rule": {
+        "posting_id": 8860646002,
+        "title": "Analyst Relations Manager",
+        "location": "United States",
+        "judge": "rule",
+        "kind": "record",
+        "verdict": "not_relevant",
+        "justification": [
+          {
+            "check": "good_title",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "no_bad_title_word",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": [
+              "Manager"
+            ]
+          },
+          {
+            "check": "us_location",
+            "passed": true,
+            "posting_fields": [
+              "location.name"
+            ],
+            "resume_fields": [],
+            "matched": [
+              "United States"
+            ]
+          },
+          {
+            "check": "at_least_2_skills",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "skills.data_bi"
+            ],
+            "matched": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          {
+            "check": "no_cant_sponsor",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "work_authorization.needs_sponsorship"
+            ],
+            "matched": []
+          }
+        ]
+      },
+      "claude": {
+        "posting_id": 8860646002,
+        "judge": "claude",
+        "kind": "judgment",
+        "verdict": "INVALID",
+        "parsed": null,
+        "errors": [
+          "resume_fields must be a non-empty list of strings"
+        ],
+        "raw_reply": "{\"posting_id\": 8860646002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\"], \"reason\": \"The title 'Analyst Relations Manager' contains none of the required keywords (AI, Machine Learning, ML, Software Engineer, Intern, New Grad, Early Career), and it contains the excluded word 'Manager'. It also requires 4–7 years of analyst relations experience, which is a marketing role rather than an engineering one.\"}",
+        "asked_at": "2026-10-30T21:15:48+00:00",
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-opus-5-5"
+        ],
+        "session_id": "d8ab234d-9eac-49b3-8032-040eb65fc6c3",
+        "prompt_file": "baseline.md",
+        "prompt_sha256": "7ef0568fc31b266b734a53e21eee7df8c8d743dc33e8cbedcaf6de5ec5690e4c"
+      }
+    },
+    {
+      "posting_id": 8917482002,
+      "title": "Business Development Representative (UKI)",
+      "location": "London, United Kingdom",
+      "rule": {
+        "posting_id": 8917482002,
+        "title": "Business Development Representative (UKI)",
+        "location": "London, United Kingdom",
+        "judge": "rule",
+        "kind": "record",
+        "verdict": "not_relevant",
+        "justification": [
+          {
+            "check": "good_title",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "no_bad_title_word",
+            "passed": true,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "us_location",
+            "passed": false,
+            "posting_fields": [
+              "location.name"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "at_least_2_skills",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "skills.data_bi"
+            ],
+            "matched": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          {
+            "check": "no_cant_sponsor",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "work_authorization.needs_sponsorship"
+            ],
+            "matched": []
+          }
+        ]
+      },
+      "claude": {
+        "posting_id": 8917482002,
+        "judge": "claude",
+        "kind": "judgment",
+        "verdict": "INVALID",
+        "parsed": null,
+        "errors": [
+          "resume_fields must be a non-empty list of strings"
+        ],
+        "raw_reply": "{\"posting_id\": 8917482002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"location.name\"], \"reason\": \"The title \\\"Business Development Representative (UKI)\\\" contains none of the required keywords (AI, ML, Software Engineer, Intern, New Grad, Early Career), and the location is London, United Kingdom, not the United States.\"}",
+        "asked_at": "2026-10-30T21:15:54+00:00",
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-opus-5-5"
+        ],
+        "session_id": "954b6156-de56-4d07-aa31-82378c4eb0fb",
+        "prompt_file": "baseline.md",
+        "prompt_sha256": "24ee791414700c196c21cbd00a2f8d5d0c3934a6a9856d29a47a736c0f1b9a16"
+      }
+    },
+    {
+      "posting_id": 8922120002,
+      "title": "Sr. Counsel, Employment",
+      "location": "Bellevue, Washington; Seattle, Washington; Washington, D.C.",
+      "rule": {
+        "posting_id": 8922120002,
+        "title": "Sr. Counsel, Employment",
+        "location": "Bellevue, Washington; Seattle, Washington; Washington, D.C.",
+        "judge": "rule",
+        "kind": "record",
+        "verdict": "not_relevant",
+        "justification": [
+          {
+            "check": "good_title",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "no_bad_title_word",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": [
+              "Sr"
+            ]
+          },
+          {
+            "check": "us_location",
+            "passed": true,
+            "posting_fields": [
+              "location.name"
+            ],
+            "resume_fields": [],
+            "matched": [
+              "Bellevue, Washington",
+              "Seattle, Washington",
+              "Washington, D.C."
+            ]
+          },
+          {
+            "check": "at_least_2_skills",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "skills.data_bi"
+            ],
+            "matched": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          {
+            "check": "no_cant_sponsor",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "work_authorization.needs_sponsorship"
+            ],
+            "matched": []
+          }
+        ]
+      },
+      "claude": {
+        "posting_id": 8922120002,
+        "judge": "claude",
+        "kind": "judgment",
+        "verdict": "INVALID",
+        "parsed": null,
+        "errors": [
+          "resume_fields must be a non-empty list of strings"
+        ],
+        "raw_reply": "{\"posting_id\": 8922120002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\"], \"reason\": \"The title \\\"Sr. Counsel, Employment\\\" contains none of the required keywords (AI, ML, Software Engineer, Intern, etc.) and does contain the excluded term \\\"Sr\\\", so it fails rules 1 and 2 regardless of location or skills.\"}",
+        "asked_at": "2026-10-30T21:16:00+00:00",
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-opus-5-5"
+        ],
+        "session_id": "8bf28b6d-d2a3-4396-9343-0106acf9c41a",
+        "prompt_file": "baseline.md",
+        "prompt_sha256": "8b1cd1a90f210dfe2d9f8344889cb9e42a9e7b8e81aa226e66dd9d4cbfe4df8f"
+      }
+    },
+    {
+      "posting_id": 8922730002,
+      "title": "Sr. Collections Analyst",
+      "location": "Bengaluru, India",
+      "rule": {
+        "posting_id": 8922730002,
+        "title": "Sr. Collections Analyst",
+        "location": "Bengaluru, India",
+        "judge": "rule",
+        "kind": "record",
+        "verdict": "not_relevant",
+        "justification": [
+          {
+            "check": "good_title",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "no_bad_title_word",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": [
+              "Sr"
+            ]
+          },
+          {
+            "check": "us_location",
+            "passed": false,
+            "posting_fields": [
+              "location.name"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "at_least_2_skills",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "skills.data_bi"
+            ],
+            "matched": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          {
+            "check": "no_cant_sponsor",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "work_authorization.needs_sponsorship"
+            ],
+            "matched": []
+          }
+        ]
+      },
+      "claude": {
+        "posting_id": 8922730002,
+        "judge": "claude",
+        "kind": "judgment",
+        "verdict": "INVALID",
+        "parsed": null,
+        "errors": [
+          "resume_fields must be a non-empty list of strings"
+        ],
+        "raw_reply": "{\"posting_id\": 8922730002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"location.name\"], \"reason\": \"The title 'Sr. Collections Analyst' contains none of the required keywords and includes the excluded term 'Sr'. The location, Bengaluru, India, is also outside the United States.\"}",
+        "asked_at": "2026-10-30T21:16:05+00:00",
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-opus-5-5"
+        ],
+        "session_id": "d73a8984-7ffd-47e5-8d03-43664b69930a",
+        "prompt_file": "baseline.md",
+        "prompt_sha256": "b386bb2d70b196eb5b88a833990f87e468b659f1b2ea7a12b26fca581d098b06"
+      }
+    },
+    {
+      "posting_id": 8924302002,
+      "title": "Business Development Representative (German-speaking, DACH)",
+      "location": "Munich, Germany",
+      "rule": {
+        "posting_id": 8924302002,
+        "title": "Business Development Representative (German-speaking, DACH)",
+        "location": "Munich, Germany",
+        "judge": "rule",
+        "kind": "record",
+        "verdict": "not_relevant",
+        "justification": [
+          {
+            "check": "good_title",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "no_bad_title_word",
+            "passed": true,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "us_location",
+            "passed": false,
+            "posting_fields": [
+              "location.name"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "at_least_2_skills",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "skills.data_bi"
+            ],
+            "matched": [
+              "Databricks",
+              "Unity Catalog"
+            ]
+          },
+          {
+            "check": "no_cant_sponsor",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "work_authorization.needs_sponsorship"
+            ],
+            "matched": []
+          }
+        ]
+      },
+      "claude": {
+        "posting_id": 8924302002,
+        "judge": "claude",
+        "kind": "judgment",
+        "verdict": "not_relevant",
+        "parsed": {
+          "posting_id": 8924302002,
+          "verdict": "not_relevant",
+          "resume_fields": [
+            "skills.data_bi"
+          ],
+          "posting_fields": [
+            "title",
+            "location.name",
+            "content"
+          ],
+          "reason": "The title (Business Development Representative) has none of the required keywords, and the location is Munich, Germany, not the United States. The content mentions only Databricks and Unity Catalog from the résumé, which is incidental for a sales role."
+        },
+        "errors": [],
+        "raw_reply": "{\"posting_id\": 8924302002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"skills.data_bi\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title (Business Development Representative) has none of the required keywords, and the location is Munich, Germany, not the United States. The content mentions only Databricks and Unity Catalog from the résumé, which is incidental for a sales role.\"}",
+        "asked_at": "2026-10-30T21:16:10+00:00",
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-opus-5-5"
+        ],
+        "session_id": "3cf23dd2-4da3-4df7-bc13-806af39aac6b",
+        "prompt_file": "baseline.md",
+        "prompt_sha256": "4a5300baeb362d037c7b67c02d72833e70929b4e0ae73ecaa82c50c92b031b9b"
+      }
+    },
+    {
+      "posting_id": 8924844002,
+      "title": "Lakebase Sales Specialist (Greater China Region)",
+      "location": "China",
+      "rule": {
+        "posting_id": 8924844002,
+        "title": "Lakebase Sales Specialist (Greater China Region)",
+        "location": "China",
+        "judge": "rule",
+        "kind": "record",
+        "verdict": "not_relevant",
+        "justification": [
+          {
+            "check": "good_title",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "no_bad_title_word",
+            "passed": false,
+            "posting_fields": [
+              "title"
+            ],
+            "resume_fields": [],
+            "matched": [
+              "Sales"
+            ]
+          },
+          {
+            "check": "us_location",
+            "passed": false,
+            "posting_fields": [
+              "location.name"
+            ],
+            "resume_fields": [],
+            "matched": []
+          },
+          {
+            "check": "at_least_2_skills",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "skills.data_bi",
+              "skills.database_cloud"
+            ],
+            "matched": [
+              "Databricks",
+              "Unity Catalog",
+              "AWS"
+            ]
+          },
+          {
+            "check": "no_cant_sponsor",
+            "passed": true,
+            "posting_fields": [
+              "content"
+            ],
+            "resume_fields": [
+              "work_authorization.needs_sponsorship"
+            ],
+            "matched": []
+          }
+        ]
+      },
+      "claude": {
+        "posting_id": 8924844002,
+        "judge": "claude",
+        "kind": "judgment",
+        "verdict": "INVALID",
+        "parsed": null,
+        "errors": [
+          "resume_fields must be a non-empty list of strings"
+        ],
+        "raw_reply": "{\"posting_id\": 8924844002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\", \"location.name\"], \"reason\": \"The title has none of the required keywords and contains the excluded word \\\"Sales\\\". The location is China, not the United States.\"}",
+        "asked_at": "2026-10-30T21:16:16+00:00",
+        "model_requested": "claude-opus-5-5",
+        "models_used": [
+          "claude-opus-5-5"
+        ],
+        "session_id": "711031e2-a102-4c54-ab4b-89286d75c676",
+        "prompt_file": "baseline.md",
+        "prompt_sha256": "eb02a3f8585a15e83e4dc1a801efe500689211d77a5e310791dcf7d3e0794663"
+      }
+    }
+  ]
+}

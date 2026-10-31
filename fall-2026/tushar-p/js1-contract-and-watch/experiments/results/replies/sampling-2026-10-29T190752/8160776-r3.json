@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXNQGmpNjGgbSQvLW2Ff",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQSzwgKEAgTGAI4AUIIdGhpbmtpbmcSDEGfCBkrCsJm/LCVYBoMQFdsC/1TBIgGEmP2IjDpSqvh1EcWCaKrgy1hSeiQNjZIFZXk9S0RlN4V2vqrDQAuUZi3lhEiqTRwDvx7520q7Ae99Nww4xdQIQf5zf6oq8jVpt8pLSQ00c+hoYJLHfh1erLkwWplgcBvN0Ax+IbHwcsfT16BZh4dsC0WibzEn7ArRlG6Z1mIYpxwkh2bGy0U5s1WyFH42lqGap8Fq8tyglu6/Drf335IlWAjstK1KZT53ilVpr7fqRgKF3rdtrbEunk9WpdhogrAFpAxr+FoBRBtLjxg8hvVybbwfdSiYVwHa5UBqK3mDIMXjDZtm4YQYAfL31a/t+hccCbXCsqT9cBg4nG74m+uellF4W5Ye5RFoMzdcfDXG5BGIDLUXFUC1zQrGTAxchXHoCJJsSUkzol7tJZzZztqVOdf0rhQSIf6kJ7luVlGf2hdgVMAI78cPSqGu0PjqrDrMj1Bl2MMVcC6NNPBmKb5iexQMF2PjFGGRvjM639bR2xlHn2p80sTRt8XCUvEi17I2A+DdtgkUL4d64G07ng6p7HXNAVDrAwgfTW5/MZs397HSIa7mvrjxb3u77qpYoQ33CCK8RIZOv4dCxvgsiL9Sq05TipxWDlPi5dx0P0uLvqR3lNbWr/fgOWrBGoB6YlJrvs/cJ/w+flFTSddc+zpM0fX5h0wanY/XKQeBMJcdjr547X1zp340O+VJEYnDLFi0V3/T37F94XqzWoGW1rDhM/Ez0hhI6hf8t6lZDt+/KOJIre444pkZa+hQ5/82VQwy8QUEZZh3Ezh/0TiLfH+jzPwLQD/VlAYtW7lVQDG8f7znp+QAzm9SSqlc1eevA57416pq/nZFKz9BKbqIePuOQ/JF2Kx5bQDAn+G6it8HtfkpbYHErN9pwYjFt97rd0wcLiAL38fd29H8VnZSE2/SgosQpZmWHAngZw9/b9wWW4h1pczlOEyBbOyLKZt52FpQJdVSXS/F9S9i83snUvcpb9cZ5xi5E3iURlOE04M9DE+AwKi/dnpjfbo0N5qVAN09XwgoslCdLpMOmrkShB+SJ3T5pq9VnUopRLZOZ8mB0kfCB4VC7TIJFMHkAkrZfz39Obp6jA06wIk6xaDTSnPxS/d4A+QvSxSuW0AS+TASwmR78gZGcVCxM7tUjlgxjd88FQoIj6gHGPaubpZP+NXrvSybvj/XSxyAelZjp0MJ/wTyb1B3hxY1nRbmfAqT0JoQp0y18YOGyYO7ltolx6I8mCoQCVmsw7+7FSxj6ucInCWmmEPIE+QQ6Ww6fV0G9CmHkTVIClOExeJwh/a7lvOKad1sVMLN52xSg9ULN7gNRoN31rfn4ngwyckLVlzawq5UMjprsW0T8pJVCZSF6AYZLpO3vDGbey2ZolxX/r6ximRl1prpsSUl0reQnrO6HvfHptWxxgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8160776\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Software Engineer, New Grad\\\" contains target title \\\"Software Engineer\\\" and none of the excluded words (R1 pass).\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"first_published\",\"evidence\":\"first_published 2026-09-02 (America/New_York) is 55 days before run date 2026-10-27, more than 21 days (R2 fail).\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location is \\\"Singapore\\\", which does not match any US indicator (R3 fail).\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"No \\\"N+ years\\\" or \\\"N-M years\\\" pattern found; only \\\"18 months\\\" is mentioned (R4 unknown).\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"No phrases like \\\"unable to sponsor\\\" or \\\"no sponsorship\\\" appear (R5 pass).\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"Content says \\\"We work mostly in Java, Ruby, JavaScript, Scala, and Go\\\", so skill \\\"Java\\\" matches as a whole word (R6 pass).\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3418,
+    "output_tokens": 696,
+    "output_tokens_details": {
+      "thinking_tokens": 216
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

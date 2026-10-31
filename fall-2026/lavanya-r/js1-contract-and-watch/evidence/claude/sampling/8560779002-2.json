@@ -1,0 +1,30 @@
+{
+  "posting_id": 8560779002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "relevant",
+  "parsed": {
+    "posting_id": 8560779002,
+    "verdict": "relevant",
+    "resume_fields": [
+      "skills.data_bi",
+      "work_authorization.needs_sponsorship"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title contains 'Software Engineer' with no excluded terms, the job is in Mountain View, CA, and the description names two résumé skills (Databricks and Unity Catalog), though only in the company boilerplate. It does not say the employer cannot sponsor visas, so the rule is met, but the actual fit is weak: the role wants 4+ years of web/CMS frontend experience the résumé does not show."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8560779002, \"verdict\": \"relevant\", \"resume_fields\": [\"skills.data_bi\", \"work_authorization.needs_sponsorship\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title contains 'Software Engineer' with no excluded terms, the job is in Mountain View, CA, and the description names two résumé skills (Databricks and Unity Catalog), though only in the company boilerplate. It does not say the employer cannot sponsor visas, so the rule is met, but the actual fit is weak: the role wants 4+ years of web/CMS frontend experience the résumé does not show.\"}",
+  "asked_at": "2026-10-30T21:22:12+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "a821af27-fd49-45fb-ab7b-9f878cf755c7",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "90e4924adbd3265f164acb3de252d57ba71746ac55a44326ee82ac19fa60523d"
+}

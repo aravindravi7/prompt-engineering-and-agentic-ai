@@ -1,0 +1,29 @@
+{
+  "posting_id": 8569506002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8569506002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education"
+    ],
+    "posting_fields": [
+      "title",
+      "content"
+    ],
+    "reason": "The title contains none of the required keywords and includes the excluded term 'Director'. It is an enterprise sales role requiring 7+ years of SaaS sales experience, far beyond the job seeker's single AI engineering co-op."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8569506002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The title contains none of the required keywords and includes the excluded term 'Director'. It is an enterprise sales role requiring 7+ years of SaaS sales experience, far beyond the job seeker's single AI engineering co-op.\"}",
+  "asked_at": "2026-10-30T21:26:04+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "bd66cdf6-b22d-424a-b933-85242376c51a",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "436a1a5804bbbd6b52853d279ac4378f1dde75d52e4787845918c306c27dfa29"
+}

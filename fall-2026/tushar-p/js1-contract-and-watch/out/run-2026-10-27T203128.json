@@ -1,0 +1,16 @@
+{
+  "run_id": "run-2026-10-27T203128",
+  "run_date": "2026-10-27",
+  "mode": "live",
+  "baseline": true,
+  "postings_fetched": 715,
+  "new_count": 0,
+  "raw_path": "raw/greenhouse-stripe-2026-10-27T203128.json",
+  "state_path": "state/seen_ids.json",
+  "claude": "off (--no-claude)",
+  "labels": {
+    "rule_verdict": "record",
+    "claude_verdict": "model judgment"
+  },
+  "records": []
+}

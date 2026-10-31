@@ -1,0 +1,29 @@
+{
+  "posting_id": 8569578002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8569578002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "skills.data_bi",
+      "skills.database_cloud"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name"
+    ],
+    "reason": "The title 'Lakebase Sales Specialist (Greater China Region)' contains none of the required keywords and contains the excluded word 'Sales'. The location is Singapore, not the United States."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8569578002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"skills.data_bi\", \"skills.database_cloud\"], \"posting_fields\": [\"title\", \"location.name\"], \"reason\": \"The title 'Lakebase Sales Specialist (Greater China Region)' contains none of the required keywords and contains the excluded word 'Sales'. The location is Singapore, not the United States.\"}",
+  "asked_at": "2026-10-30T21:15:38+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "6fd1661b-4941-451e-9c8d-6852367374c2",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "2597da75ed035ab0339616f71c594b597e1ec62b38e77afa266d2107a6a6baf4"
+}

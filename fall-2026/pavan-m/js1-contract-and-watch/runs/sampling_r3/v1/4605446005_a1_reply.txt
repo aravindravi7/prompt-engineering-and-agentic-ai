@@ -1,0 +1,10 @@
+python3 - << 'EOF'
+import csv
+p = "runs/sampling_r3/results.csv"
+rows = list(csv.DictReader(open(p)))
+keep = [r for r in rows if not (r["posting_id"] == "4605446005" and r["version"] == "v1" and r["attempt"] == "1")]
+print("removed", len(rows) - len(keep), "row")
+w = csv.DictWriter(open(p, "w", newline=""), fieldnames=rows[0].keys())
+w.writeheader(); w.writerows(keep)
+EOF
+chs r3 4605446005

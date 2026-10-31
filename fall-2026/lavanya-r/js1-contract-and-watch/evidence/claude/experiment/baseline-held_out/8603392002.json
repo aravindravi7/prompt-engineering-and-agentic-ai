@@ -1,0 +1,19 @@
+{
+  "posting_id": 8603392002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "INVALID",
+  "parsed": null,
+  "errors": [
+    "resume_fields must be a non-empty list of strings"
+  ],
+  "raw_reply": "{\"posting_id\": 8603392002, \"verdict\": \"not_relevant\", \"resume_fields\": [], \"posting_fields\": [\"title\"], \"reason\": \"The title contains \\\"Manager\\\", which is excluded, and none of the required keywords (AI, Machine Learning, ML, Software Engineer, Intern, New Grad, Early Career); it is an events and workplace role, not engineering.\"}",
+  "asked_at": "2026-10-30T21:26:39+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "5ad72f4c-eaf3-468f-84f0-041c6df9c471",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "8804260c80237009d5e6e479eaeee845f5306855fb1a4aa1d5d614b2f68b49d2"
+}

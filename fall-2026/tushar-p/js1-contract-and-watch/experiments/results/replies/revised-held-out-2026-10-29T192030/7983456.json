@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXPNWsD2LxjuhCdVsULi",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS4AgKEAgTGAI4AUIIdGhpbmtpbmcSDMruzfjyjEKNrMwxcBoMDh8Xo+L6mlpVPGApIjDeNGt+gD91JKx6EYgn6OuM5fWtUMgknE+L+73Fq6BD4mTND5qPLcK24rM8tGkKtQIq/Qc5a5b0IkHFtZ+EFT7d78zdCovV8JP3/ybXnsgp4iiwrMZfnxYAIh2r5GyhSvh/8g1l+Iccski0S666Vcst/bPN5HCdjlnNz+AjFo8ToalfNJFrOrNokbIIEjhR60nrF6AfE/Es91+h14a1C+D/nQ6e11QxnaMiu1G3K24MV7f0pyX+mTy0nQkpDomwvHVZpJq4L4yXcrl59jc9hzVT5U46ngM3nKWyUMUGPnf8UBilnfejd3A/ivIyM2LRjLV7pDDcW9VvLfySEp01NOJBdbTHvZAP5eDbT5xuMD+q2IGlhV4AG/B8tJ9YkETxnprCSMuNzf9AXlbrEuAerRK29Pt5rd5pWiAPP1qhM3XIKXkSwrSKfXyTwfXUmJuFy7qvsMn7PH8NTC8lmdJIX4O964a+GpF401PLxjlZzH0GzbJ03iwl9fkJUEsbGsB6JHMCu1Lf9OTTb43s7TPmgjV1m6NjjyfJ45PTgp94jNoMpfv6/QKYpfJdlAKrVDx0L1xvznXWoM6D070lt8TOA+QT4OQW7oQNZwcTgwG7F7ZMtkmzbJ5HHiqzh69I7PNxL7YxGss0qUwKbgD1n27j9Kpse4XhjnZ9BwNqeQFLzklNj8GLF9ONc9NQDGDnqibrc2DMpomQ0xcuq4R3Rw1pJSywaSbtucdwAhshvMEXvmrUqETEYjLiAnCnH9fpNB54eUYg5GwOSk2TxclnXm/GE99J7sLgOoqNfWeO64fvG1MucWcr6qC8lj8Sy7WYwFpZhzYFWvV9f8k1cumQ5IB1ioYqk34brh3BFJhVkgcT3eF6j0dA9T/PVIFUWsXSwxHevIC4Xrq90id+Gup+QHJJHj9JfG/NMm8VEF6JmjAYh0iNC+/aNDTyqar+RZ956KaD8wCfMJbz4L5qedrzSH/JvAYjCKPTumlfeEuRnNKaqM0ilNqm9uxJK+W9iQdsgQrFCp33NfjsMENE1bHoepEbuU6G+3CVSSyM4SGXX1Cd2YdIjAsJ9CVTV+H6G2Ydohr086Oix81o/FryEOUziabBi0zUgte4QQzhsImxz4vkRF4jqiPrlOVVm62T49OkDnYL8sE/xJVPqfc6wZArlnMLYsYQfB7g20oL1Di8V6UzMfu1S5YxfZe+bIImrKM70KFOBYzKogYzDzFFWw6Pao0NXQazvtMQ6QoLUHoJIQZCCVQXcbQ1rs4gT+o7OGnK1H/EnZf5Zp9JMVe7ImphUV/1wfX7b5mQZpbDE/sb3g4tM++smseLgVraSckTfZvfxcisLZfEfvDLK5+yMTm9r/NBdyJNnOVoBwr3nAfzHBIaI1UFmUwdLthvtdNowaDaSTnGQhIZL3A3Vj4OgUQmNUJIv++eGAE=",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"7983456\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Machine Learning Engineer, Radar\\\" contains none of Software Engineer, AI Engineer, or Backend Engineer.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"first_published\",\"evidence\":\"first_published 2026-06-23 is more than 21 days before the run date 2026-10-27, so freshness fails. updated_at is not used because first_published is present.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"Minimum requirements say \\\"5+ years of experience developing, evaluating, and deploying machine learning models\\\", and 5 is more than 3.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"\\\"Seattle, South San Francisco\\\" lists US cities, so the location check passes.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, or AWS appears as a whole word in the content.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3717,
+    "output_tokens": 640,
+    "output_tokens_details": {
+      "thinking_tokens": 231
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

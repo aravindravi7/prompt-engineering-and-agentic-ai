@@ -1,0 +1,1025 @@
+{
+  "run_id": "run-2026-10-28T141616",
+  "run_date": "2026-10-28",
+  "mode": "live",
+  "baseline": false,
+  "postings_fetched": 719,
+  "new_count": 16,
+  "raw_path": "raw/greenhouse-stripe-2026-10-28T141616.json",
+  "state_path": "state/seen_ids.json",
+  "claude": "on, model claude-sonnet-5-5",
+  "labels": {
+    "rule_verdict": "record",
+    "claude_verdict": "model judgment"
+  },
+  "records": [
+    {
+      "posting_id": 8280266,
+      "title": "Account Executive, Startups (Grower)",
+      "url": "https://stripe.com/jobs/search?gh_jid=8280266",
+      "location": "San Francisco",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T01:39:30-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Account Executive, Startups (Grower)'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T01:39:30-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'San Francisco'; US match: San Francisco",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [8]; largest 8",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "skills found: SQL",
+          "result": "pass"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/8280266.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8284978,
+      "title": "Account Executive - Travel, Ticketing & Hospitality (Hunter) ",
+      "url": "https://stripe.com/jobs/search?gh_jid=8284978",
+      "location": "London",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T12:45:25-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Account Executive - Travel, Ticketing & Hospitality (Hunter)'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T12:45:25-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'London'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [8]; largest 8",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/8284978.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8275558,
+      "title": "Customer Support Specialist, Clerky",
+      "url": "https://stripe.com/jobs/search?gh_jid=8275558",
+      "location": "Canada",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T10:28:34-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Customer Support Specialist, Clerky'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T10:28:34-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Canada'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "no 'N+ years' or 'N–M years' found",
+          "result": "unknown"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/8275558.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8314318,
+      "title": "Federal Government Relations Director ",
+      "url": "https://stripe.com/jobs/search?gh_jid=8314318",
+      "location": "Washington DC metro area",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T09:06:11-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Federal Government Relations Director'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T09:06:11-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Washington DC metro area'; US match: DC, Washington",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [12]; largest 12",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/8314318.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8168550,
+      "title": "Fraud Operations Analyst (CDMX)",
+      "url": "https://stripe.com/jobs/search?gh_jid=8168550",
+      "location": "Mexico City",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-27T22:30:21-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Fraud Operations Analyst (CDMX)'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-27T22:30:21-04:00 → 2026-10-27 (New York); 1 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Mexico City'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "no 'N+ years' or 'N–M years' found",
+          "result": "unknown"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/8168550.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8267847,
+      "title": "Head of AMER Startups (AI Sales)",
+      "url": "https://stripe.com/jobs/search?gh_jid=8267847",
+      "location": "San Francisco",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T01:41:29-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Head of AMER Startups (AI Sales)'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T01:41:29-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'San Francisco'; US match: San Francisco",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [10, 3]; largest 10",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/8267847.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 7337544,
+      "title": "Manager, Sales Development",
+      "url": "https://stripe.com/jobs/search?gh_jid=7337544",
+      "location": "Dublin ",
+      "date_used": {
+        "field": "first_published",
+        "value": "2025-10-28T04:53:42-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Manager, Sales Development'; excluded word(s): Manager",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2025-10-28T04:53:42-04:00 → 2025-10-28 (New York); 365 day(s) before run date 2026-10-28",
+          "result": "fail"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Dublin'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [2]; largest 2",
+          "result": "pass"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/7337544.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8175637,
+      "title": "Manager, Solutions Architecture Transformation",
+      "url": "https://stripe.com/jobs/search?gh_jid=8175637",
+      "location": "USA",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-27T22:33:02-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Manager, Solutions Architecture Transformation'; excluded word(s): Manager",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-27T22:33:02-04:00 → 2026-10-27 (New York); 1 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'USA'; US match: USA",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [10, 3]; largest 10",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/8175637.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8329719,
+      "title": "Marketing Strategy & Operations Business Partner",
+      "url": "https://stripe.com/jobs/search?gh_jid=8329719",
+      "location": "San Francisco, New York, Seattle, Chicago, Atlanta, Remote in the US ",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T09:00:35-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Marketing Strategy & Operations Business Partner'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T09:00:35-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'San Francisco, New York, Seattle, Chicago, Atlanta, Remote in the US'; US match: US, San Francisco, New York, Seattle, Chicago, Atlanta, New York",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "no 'N+ years' or 'N–M years' found",
+          "result": "unknown"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "skills found: SQL",
+          "result": "pass"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/8329719.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8331124,
+      "title": "Product Marketing Manager, Subscriptions",
+      "url": "https://stripe.com/jobs/search?gh_jid=8331124",
+      "location": "New York, San Francisco, Seattle, Remote",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T11:28:30-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Product Marketing Manager, Subscriptions'; excluded word(s): Manager",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T11:28:30-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'New York, San Francisco, Seattle, Remote'; US match: San Francisco, New York, Seattle, New York",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [7]; largest 7",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/8331124.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8311067,
+      "title": "Program Manager, Go-to-Market Experience and Productivity",
+      "url": "https://stripe.com/jobs/search?gh_jid=8311067",
+      "location": "Dublin ",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T13:53:45-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Program Manager, Go-to-Market Experience and Productivity'; excluded word(s): Manager",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T13:53:45-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Dublin'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [3, 2]; largest 3",
+          "result": "pass"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "skills found: SQL",
+          "result": "pass"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/8311067.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8048266,
+      "title": "Sales Development Associate  ",
+      "url": "https://stripe.com/jobs/search?gh_jid=8048266",
+      "location": "Dublin",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-07-08T05:08:02-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Sales Development Associate'; no target title",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-07-08T05:08:02-04:00 → 2026-07-08 (New York); 112 day(s) before run date 2026-10-28",
+          "result": "fail"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Dublin'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "no 'N+ years' or 'N–M years' found",
+          "result": "unknown"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/8048266.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8130876,
+      "title": "Software Engineer, New Grad",
+      "url": "https://stripe.com/jobs/search?gh_jid=8130876",
+      "location": "Bangalore",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-28T05:19:59-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Software Engineer, New Grad'; target title(s): Software Engineer",
+          "result": "pass"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-28T05:19:59-04:00 → 2026-10-28 (New York); 0 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Bangalore'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "no 'N+ years' or 'N–M years' found",
+          "result": "unknown"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "skills found: Java",
+          "result": "pass"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/8130876.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8040052,
+      "title": "Staff Product Manager, Risk",
+      "url": "https://stripe.com/jobs/search?gh_jid=8040052",
+      "location": "Toronto, Canada",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-07-02T12:08:46-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Staff Product Manager, Risk'; excluded word(s): Staff, Manager",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-07-02T12:08:46-04:00 → 2026-07-02 (New York); 118 day(s) before run date 2026-10-28",
+          "result": "fail"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Toronto, Canada'; no US match",
+          "result": "fail"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "no 'N+ years' or 'N–M years' found",
+          "result": "unknown"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "no listed skill found",
+          "result": "fail"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/8040052.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 8329718,
+      "title": "Staff Software Engineer, Dashboard Product",
+      "url": "https://stripe.com/jobs/search?gh_jid=8329718",
+      "location": "Seattle",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-10-27T21:21:27-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Staff Software Engineer, Dashboard Product'; excluded word(s): Staff",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-10-27T21:21:27-04:00 → 2026-10-27 (New York); 1 day(s) before run date 2026-10-28",
+          "result": "pass"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Seattle'; US match: Seattle",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [10]; largest 10",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "skills found: React",
+          "result": "pass"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/8329718.json",
+      "claude_label": "model judgment"
+    },
+    {
+      "posting_id": 7746721,
+      "title": "Staff Software Engineer, Stripe Dashboard",
+      "url": "https://stripe.com/jobs/search?gh_jid=7746721",
+      "location": "Seattle",
+      "date_used": {
+        "field": "first_published",
+        "value": "2026-03-24T18:48:01-04:00"
+      },
+      "rule_verdict": "not_relevant",
+      "rule_justification": [
+        {
+          "check": "R1",
+          "resume_field": "job_search.target_titles",
+          "posting_field": "title",
+          "value_found": "title 'Staff Software Engineer, Stripe Dashboard'; excluded word(s): Staff",
+          "result": "fail"
+        },
+        {
+          "check": "R2",
+          "resume_field": "none (R2 compares the posting date with the run date)",
+          "posting_field": "first_published",
+          "value_found": "first_published = 2026-03-24T18:48:01-04:00 → 2026-03-24 (New York); 218 day(s) before run date 2026-10-28",
+          "result": "fail"
+        },
+        {
+          "check": "R3",
+          "resume_field": "job_search.work_country",
+          "posting_field": "location.name",
+          "value_found": "location.name 'Seattle'; US match: Seattle",
+          "result": "pass"
+        },
+        {
+          "check": "R4",
+          "resume_field": "job_search.years_experience",
+          "posting_field": "content",
+          "value_found": "minimum years found: [10]; largest 10",
+          "result": "fail"
+        },
+        {
+          "check": "R5",
+          "resume_field": "job_search.needs_sponsorship",
+          "posting_field": "content",
+          "value_found": "no listed refusal phrase",
+          "result": "pass"
+        },
+        {
+          "check": "R6",
+          "resume_field": "skills",
+          "posting_field": "content",
+          "value_found": "skills found: React",
+          "result": "pass"
+        }
+      ],
+      "rule_label": "record",
+      "claude_verdict": null,
+      "claude_justification": null,
+      "claude_valid": false,
+      "claude_model": null,
+      "claude_invalid_reason": "API call failed: AuthenticationError (HTTP 401)",
+      "claude_reply_path": "out/claude-replies/run-2026-10-28T141616/7746721.json",
+      "claude_label": "model judgment"
+    }
+  ]
+}

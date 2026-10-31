@@ -1,0 +1,35 @@
+{
+  "id": "msg_011CgXPHfGqDvTpG5aLNSyj1",
+  "container": null,
+  "content": [
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8161567\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title 'Engineering Manager, Checkout Optimization' contains 'Manager' (excluded word) and none of the target titles\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"'5+ years of engineering management experience' and '10+ years of full-time software development experience'; largest minimum is 10, which is more than 3\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location is 'N/A', a placeholder, so location is unknown\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"No listed skill (Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, AWS) appears as a whole word in the content\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"No phrases such as 'unable to sponsor' or 'no sponsorship' found, so sponsorship passes\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3195,
+    "output_tokens": 390,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

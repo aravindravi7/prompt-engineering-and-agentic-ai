@@ -1,0 +1,32 @@
+{
+  "posting_id": 8567993002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8567993002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "skills.languages",
+      "skills.data_bi",
+      "skills.database_cloud",
+      "work_authorization.needs_sponsorship"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title 'Solutions Architect - Lakebase' contains none of the required keywords (AI, ML, Software Engineer, Intern, New Grad, Early Career), and the location is São Paulo, Brazil, not the United States. The description does mention SQL, Python, AWS, Databricks and Unity Catalog, and it says nothing against sponsorship, but rules 1 and 3 fail."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8567993002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"skills.database_cloud\", \"work_authorization.needs_sponsorship\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title 'Solutions Architect - Lakebase' contains none of the required keywords (AI, ML, Software Engineer, Intern, New Grad, Early Career), and the location is São Paulo, Brazil, not the United States. The description does mention SQL, Python, AWS, Databricks and Unity Catalog, and it says nothing against sponsorship, but rules 1 and 3 fail.\"}",
+  "asked_at": "2026-10-30T21:23:16+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "c4935ef5-8a77-4a21-9c53-d7148c8b8d07",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "ebd035c95f823c6889ff408c40baf606fa4e6053ec17198635116da0ebdb1bc7"
+}

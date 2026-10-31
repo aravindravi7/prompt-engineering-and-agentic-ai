@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXP8tqubEdd2WeZnthMb",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS4QcKEAgTGAI4AUIIdGhpbmtpbmcSDKR8IAjiopfGaB84CxoMNvEHpu2A2bBwTT4BIjCtKwKa7CY/xwZGh/YD/vs/ES98YB7Y4sVE68cI+ELEuBTTS7EMr+6VhNlZ1G0SXb4q/gbiLRdVOg8Cnk3425WfnXswm5q39QFPwe7y5FAPcrQpljP/i3HlYHt4OM7Z0ebI8xtvWIP1jUpw9CBehU/8WUvhRBdtlaC6SOv2IDL7u5ft4peFjgmR+jUORBOXWT02wq5MeV5KhF1SfHqli43Oi6oDhW/U0Rd0nUE5w2dUfEHorORsjoHCCkYHcNLu32cYvVRyqqV+dTKepj9Gd4AE2Q18uybhtI4X1Csr7ny9E+LdeUTKyvRdU3J8e+j5WW8RwEYfz5qvp49VNre1+eYdW3wDayRa/PO6aBg0LKzdk1AoUKfMjaH/TtCZlgsPZiYHTTXP/rMioWjVa8DMX3bQ8WA23BmQR3rudVTxKStNKWmOQsSR46LcdypbaH9X3E04skXRNHaltHY8mJA6tVk0VMf/ykNkaLQ1bggpGYMoFxcd01JGCCmQTjsaqwk0AoxF1lmLN13iHm2E18aGKxS4rebj8dbesmVF09keLWpmydX3FwwWWaVBFqqjgWP54hqwht4ck+nm8kGJNckyn0ZXwSQ3UkULso8rv6JApN54rfuNzZWWQnyttNW28rgDgY3njVQmyLM1G0+wJHxh5T6teVL9XADmqzFCaEtekTF20ehN+CNt+ZOMB5bbWl4DIgTfQqqgqR1k+C/qFHI88PqFm2JmqyMfBUBNN0lSBwPHe4/AvS/AiXkgqg8NZo7jbInQG011910z7qKs0d8W5/Yb8+J4SgomTp4wMoJXqOFprnnoCll6jMJBZCfaS5saG/hkgGXQgBcbiBhDYUKjIHIAefM8sIzcMzjeJWN3k8851B9Ygm1HrRGTLL9hLuyULvUelwn26vwAX3504rkcKES8eq6ISPdGFEtDkny3Gfv9wDF5DAGJN20YlWQEZ5w6inZ+RRztxIvV7eR646u3TiOmqxduhnI8/diCjvfkbizO6ZzWljSr75LP4NDe0uaPJx2y4hXIkeD2yqiBWg5HLhBljwTmnCV0yexVIOVKWA3UoRxg9PqCwJVC3gdv5sFLpIDog3Udyu1Z6WFqbGo9qGHJXcv3/dqnEROQJsSlpuJRH/6fm1ms5WKKaFtCnikgl2rL5mccysDMBnB1WM1ogEQVFCtNw+uTw6HMMw3/aVLXsqFB5kZd8tAQRqkTC6gOhXYBH8Q1NQof1bw6x4Yl5T7VaLn8QmbUHu3jQKipFGo6cNgYAQ==",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8198323\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Solutions Engineer, AI Build Team\\\" contains none of \\\"Software Engineer\\\", \\\"AI Engineer\\\", or \\\"Backend Engineer\\\" (R1 fail).\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"Minimum requirements state \\\"7+ years of relevant experience\\\"; 7 is more than 3 for a new grad (R4 fail).\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"\\\"US-SF, US-NYC, US-Remote\\\" shows US locations (R3 pass).\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"Content lists \\\"Python\\\" and \\\"Java\\\", which are in the skills list (R6 pass).\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3713,
+    "output_tokens": 512,
+    "output_tokens_details": {
+      "thinking_tokens": 187
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

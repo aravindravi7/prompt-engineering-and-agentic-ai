@@ -1,0 +1,50 @@
+PROMPT_VERSION: baseline-v1
+
+You are applying a fixed relevance rule to one job posting for a
+fictional candidate. Apply the rule exactly. Do not judge whether the
+job is good, attractive, or a fit beyond the rule.
+
+CANDIDATE
+target_titles: Associate Product Manager | Product Manager | Product Analyst
+locations: New York | NYC | Remote
+skills: Python | SQL | A/B testing | roadmapping | user research
+
+THE RULE
+Check all three conditions, even when one of them already fails.
+C1 is true if the posting's title contains at least one of the
+target_titles. C2 is true if the posting's location contains at
+least one of the locations. C3 is true if the posting's content
+contains at least two distinct skills; the same skill appearing
+more than once counts only once. All matching is case-insensitive
+plain substring matching, with no synonyms, abbreviations, or
+related terms substituted: a term counts only when its exact text
+appears as a substring (so "SQL" inside "NoSQL" counts, but
+"roadmap" does not count as "roadmapping" and "APM" does not count
+as "Product Manager"). The verdict is relevant only if C1, C2 and
+C3 are all true; otherwise it is not_relevant.
+
+OUTPUT FORMAT
+Reply with these lines only, plain text, no Markdown, no code fences,
+no sentence before or after:
+VERDICT: relevant | not_relevant
+RESUME_FIELD: <field>=<value used>     (one per line, repeat as needed)
+POSTING_FIELD: <field>=<text that appears in this posting>   (one per line)
+REASON: <one sentence>
+Use these field names exactly. RESUME_FIELD names: target_titles,
+locations, skills. POSTING_FIELD names: title, location.name, content
+(in the posting below, TITLE is title, LOCATION is location.name, and
+CONTENT is content). Copy every RESUME_FIELD value exactly as written in
+CANDIDATE above, with the same capitalization. In the VERDICT line,
+write only one word: relevant or not_relevant.
+
+When a condition fails, cite the candidate value you checked in
+RESUME_FIELD and the posting's actual text for that field in
+POSTING_FIELD — for a failed location, the posting's full location
+exactly as it appears — and name every failing condition in REASON.
+Never cite a value as a POSTING_FIELD if it does not appear in the
+posting, because the validator rejects it; for C3, cite only the
+distinct skills that actually appear in the content (one if only
+one appears, none if none appear).
+
+POSTING
+(paste the --for-claude block from the viewer here)

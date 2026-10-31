@@ -1,0 +1,21 @@
+ID	Posting title	my_label	reason	sampling
+4742953005	Software Engineer, Agentic Runtime	relevant	Distributed runtime services, Java, Kafka, Kubernetes, and cloud; 3+ years accepted	
+4744818005	Machine Learning Engineer, Enterprise Brain	not_relevant	Primarily ML engineering; requires 6+ years and specialized model experience	
+4746908005	AI Engineer - Data and Evals	not_relevant	Requires 5+ years plus specialized LLM evaluation and benchmark experience	
+4006733005	Software Engineer, Frontend	not_relevant	Primarily React and TypeScript frontend development	
+4428090005	Software Engineer, Product Backend	relevant	Scalable backend systems, REST APIs, Java, Go, and distributed data stores	
+4501783005	Software Engineer, AI/ML Infrastructure	relevant	AI infrastructure, serving pipelines, cloud systems, and Java/Python; 2–6 years accepted	
+4711484005	Machine Learning Engineer, Assistant Quality	not_relevant	Primarily applied ML, retrieval, and assistant quality rather than backend engineering	
+4488628005	Customer Advocacy Manager	not_relevant	Customer marketing, storytelling, and event coordination	
+4745578005	Director, Digital Marketing	not_relevant	Digital marketing leadership; requires 10+ years of experience	
+4607608005	Recruiting Coordinator (Contract)	not_relevant	Recruiting operations and interview coordination	
+4696752005	Software Engineer, APIs & Context Platform	not_relevant	Strong API and platform fit, but requires 8+ years of experience	
+4746685005	Software Engineer, Native Mobile	not_relevant	Specialized native iOS/Android development; requires 6+ years and mobile expertise	
+4614706005	Software Engineer, Developer Productivity	relevant	Build systems, CI/CD, developer tooling, and cloud infrastructure; 2+ years accepted	
+4605446005	Software Engineer, AI & Security	not_relevant	Requires 5+ years and specialized enterprise AI security product experience	
+4746915005	AI Engineer - Quality and Post-Training	not_relevant	Specialized LLM post-training and evaluation; requires 5+ years of AI/ML experience	
+4006734005	Software Engineer, Fullstack	relevant	Full-stack product engineering with substantial backend development	
+4746910005	Software Engineer	relevant	Distributed systems, enterprise search, data ingestion pipelines, and Java/Python/Go; 2+ years accepted	
+4746354005	Office Manager	not_relevant	Office operations, facilities, and vendor coordination	
+4720549005	VP, Growth Marketing	not_relevant	Executive marketing leadership; requires 12+ years of experience	
+4739201005	Accountant	not_relevant	Accounting and financial reporting; based in Bangalore, India

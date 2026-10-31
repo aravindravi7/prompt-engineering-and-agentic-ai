@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXPKHq4Aj1neMxcRxAWh",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS2AgKEAgTGAI4AUIIdGhpbmtpbmcSDEj1XKHV9GInqJtshxoMa4JTc0/4Q8VY6JgFIjBAs7n+zGENEB94cljW+BG+pu0LaJ8tCXiaKQpmQZdYuP/X8jogrPgBPlBwVFyhEPkq9QeFU9K8AMAoW9qio0DzcBP5gZYyN1WU1MJUYCT1Q0vpP3/1W9vtptZuS12w1TwexbcDB4knVYqMXWi7xi7SxNO9ZEuaOQWhm4Y47XZKkuDGLEfwhjWOUhYK2950tm6Z5yq5SoVvC9WlpNOLHiNAiT5DP3REHAnUUuEseGPP2U/OReaI0v8AsfoU2SmYlPbsWLsWx2opph6luQdeeaSActjAp6rhbJ6kKPyG1uAC+fY3q4M2v4HDjSB+Z39c68/mecwPGRYwaYxY37d+UMQLwGJdaYb4T/XbcMmpajLtjckC5danRDu9ITGf8vx5cBNXwmOQS5g1I0v+aF8TYrY55IsPkW7N5Cs66bN3GDgGWDcKZWqejAG6rxutPWMT+H+xrKNX4tZRFBkIz5/qy5vdY6JGRIH+IdYICrocSSTgLdKoZrVqeOEKnJ0OfaEeJwRXcNQIZdYHqFyYy9CwNSNcu+0nRwS1IHjhcmKQiIg6gDP83shXxvqvtVbyFciPkJ1CKHX8qdmPiwTZULj0mZPeZeGKDilV++ZQRz3AI9Jr+mSjLgJFpq8vY5ae8+cUaN6jUO48YsWIfeOL0ntBxWaycNHxSF5TQNAN4JiR0MlMWOr43PH4ubE80C8go3ryJjgNrIv9q8mft/RM5UP4XgRYOJzS2Da7aK2gA0aU3mrF7WvmVwZK4SzG8Vw5LXj18XimzXZldTIAI4hHCN9a/EFt05ijhWxJSR8beJ+SNujUdgTxW2ycbTpZIh25XzicPdXHRjt4+BCTQD4bXHmNhug559eES7lCJ+F/HBZn+zevWqR9InU52zGdayh+KmFsrRNRW4DfBYDNOHJSztZL54zwXt4GWH3vhEUh+Od7DKjN71tZFNgodYY+UtVOtH8ogjg88Ij6oa9JLW1tcas4vYArPREG/wp8KiJzIlAXVMjiI6+CqS6NLQJbfSd8u8uRZoV/o6Q1ieuZLCWMh9Vk6H/3WtGsaPw+ui9aHNJtbnnvdRaH7s6fg7VwfIJpIWkNcZ5xCynIW8rQys9LOHpybtnaSODB4ZlVxDcxxBBz0nPq2YBQ1CWLA773/y6256gQBhjOmeP3UFkxBspShfLX8qyG7aKQYt9NVagXbljS7L/LiZ87dbpC4fEdww9buRX6olc5YfSQA0/CBrwV5W3J+HYYrB62D1R7yIeROjwzd++RjGOF3P7148+YOF/SZYwvuJcNY4RdEjABCFEMAVbDrrxf+RvGpo62qnRpJcUqq+EW5HviDIOv9VKd+rFRm10E0+Srter31xpw57ffjZS5dLQWBmtUxlJvyv6E8liOmWhf3TtBRywl1YV7NDBDTYrOklPdjicgFyzY9RgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"7983456\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Machine Learning Engineer, Radar\\\" contains none of Software Engineer, AI Engineer, Backend Engineer (R1 fail).\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"first_published\",\"evidence\":\"first_published 2026-06-23 is well over 21 days before the run date 2026-10-27; updated_at is only used when first_published is missing (R2 fail).\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"\\\"Seattle, South San Francisco\\\" matches US cities (R3 pass).\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"\\\"5+ years of experience developing, evaluating, and deploying machine learning models\\\" gives minimum 5, which is more than 3 (R4 fail).\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"No phrases such as \\\"unable to sponsor\\\" or \\\"no sponsorship\\\" appear in the content (R5 pass).\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, AWS appear as whole words in the content (R6 fail).\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3681,
+    "output_tokens": 733,
+    "output_tokens_details": {
+      "thinking_tokens": 231
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

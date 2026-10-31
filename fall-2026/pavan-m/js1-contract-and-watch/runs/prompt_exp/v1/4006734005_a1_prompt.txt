@@ -1,0 +1,86 @@
+You are evaluating whether a single job posting is relevant to a candidate.
+Judge the posting based on the candidate's résumé and the job requirements.
+Consider the candidate's skills, experience, education, preferred roles, and locations.
+Consider the responsibilities, qualifications, and location described in the posting.
+Use your own judgment to determine whether the role is a reasonable fit.
+Provide a concise justification based on evidence from both the résumé and posting.
+Cite the résumé fields and posting fields that support your decision.
+Your reply must be only a valid JSON object with exactly these four keys:
+verdict, justification, resume_fields, posting_fields
+verdict must be exactly "relevant" or "not_relevant".
+resume_fields may contain only target_titles, skills, locations, experience, education.
+posting_fields may contain only title, content, location.name.
+Do not wrap the JSON in markdown code fences, and do not add any text before or after it.
+
+Candidate résumé:
+{
+  "target_titles": [
+    "Software Engineer",
+    "Backend Engineer",
+    "Backend Software Developer"
+  ],
+  "skills": [
+    "Java",
+    "Python",
+    "Spring Boot",
+    "REST APIs",
+    "PostgreSQL",
+    "Redis",
+    "Apache Kafka",
+    "Docker",
+    "Kubernetes",
+    "AWS",
+    "Git",
+    "CI/CD"
+  ],
+  "locations": [
+    "Mountain View, CA",
+    "San Francisco, CA",
+    "Remote"
+  ],
+  "experience": [
+    {
+      "company": "Northstar Systems",
+      "title": "Backend Software Engineer",
+      "location": "San Francisco, CA",
+      "start_date": "2023-06",
+      "end_date": "2026-08",
+      "highlights": [
+        "Developed Java and Spring Boot microservices for transaction processing.",
+        "Designed REST APIs and optimized PostgreSQL queries.",
+        "Implemented Kafka-based asynchronous workflows.",
+        "Deployed containerized services using Docker and Kubernetes.",
+        "Automated testing and deployments through CI/CD pipelines."
+      ]
+    },
+    {
+      "company": "Cedar Labs",
+      "title": "Software Engineering Intern",
+      "location": "Remote",
+      "start_date": "2022-05",
+      "end_date": "2022-08",
+      "highlights": [
+        "Built Python API endpoints for internal applications.",
+        "Added automated unit tests and improved error handling."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Westbridge University",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "graduation_year": 2023
+    }
+  ]
+}
+
+Job posting:
+{
+  "id": 4006734005,
+  "title": "Software Engineer, Fullstack",
+  "location": {
+    "name": "Mountain View, CA"
+  },
+  "content": "About Glean: &nbsp; Glean is the Work AI platform that helps everyone work smarter with AI. What began as the industry’s most advanced enterprise search has evolved into a full-scale Work AI ecosystem, powering intelligent Search, an AI Assistant, and scalable AI agents on one secure, open platform. With over 100 enterprise SaaS connectors, flexible LLM choice, and robust APIs, Glean gives organizations the infrastructure to govern, scale, and customize AI across their entire business - without vendor lock-in or costly implementation cycles. &nbsp; At its core, Glean is redefining how enterprises find, use, and act on knowledge. Its Enterprise Graph and Personal Knowledge Graph map the relationships between people, content, and activity, delivering deeply personalized, context-aware responses for every employee. This foundation powers Glean’s agentic capabilities - AI agents that automate real work across teams by accessing the industry’s broadest range of data: enterprise and world, structured and unstructured, historical and real-time. The result: measurable business impact through faster onboarding, hours of productivity gained each week, and smarter, safer decisions at every level. &nbsp; Recognized by Fast Company as one of the World’s Most Innovative Companies (Top 10, 2025), by CNBC’s Disruptor 50, Bloomberg’s AI Startups to Watch (2026), Forbes AI 50, and Gartner’s Tech Innovators in Agentic AI, Glean continues to accelerate its global impact. With customers across 50+ industries and 1,000+ employees in more than 25 countries, we’re helping the world’s largest organizations make every employee AI-fluent, and turning the superintelligent enterprise from concept into reality. &nbsp; If you’re excited to shape how the world works, you’ll help build systems used daily across Microsoft Teams, Zoom, ServiceNow, Zendesk, GitHub, and many more. You'll be deeply embedded where people get things done. You'll ship agentic capabilities on an open, extensible stack, with the craft and care required for enterprise trust, as we bring Work AI to every employee, in every company. &nbsp; About the Role: Glean is looking for creative engineers to own and launch delightful user facing features. In a rapidly growing startup, this entails developing ideas with product managers and designers to best balance engineering constraints with requirements, delivering intuitive experiences that run in modern mobile and desktop browsers. You will:&nbsp; Oversee the entirety of your greenfield features from inception to implementation, experimentation, launch and beyond Work with designers, product managers, data scientists, and other engineers to understand our problem space and create elegant solutions Architect REST APIs that are backed by stable, scalable server side implementations and maximize web client flexibility for rapidly meeting evolving product requirements Write robust code that’s efficient, easy to read, maintain and test Mentor more junior engineers or learn from battle tested ones About you:&nbsp; BA/BS in computer science, or related degree Experience of building and shipping scalable features across frontend and backend Thrive in a customer-focused, tight-knit and cross-functional environment A proactive and positive attitude to lead, learn, troubleshoot and take ownership of both small tasks and large features A user-centric and empathetic mentality for building products Experience on a consumer grade web app frontend, preferably React based Love authoring easy-to-hold and future-proof REST APIs, OpenAPI is a plus Experience building distributed CRUD level functionality, ideally both SQL and NoSQL Comfortable in or desire to master Golang, Java and TypeScript Location: &nbsp; This role is hybrid (3 days a week in either our San Francisco or Palo Alto office) Compensation &amp; Benefits: The standard base salary range for this position is $140,000 - $265,000 annually. Compensation offered will be determined by factors such as location, level, job-related knowledge, skills, and experience. Certain roles may be eligible for variable compensation, equity, and benefits. We offer a comprehensive benefits package including competitive compensation, Medical, Vision, and Dental coverage, generous time-off policy, and the opportunity to contribute to your 401k plan to support your long-term goals. When you join, you'll receive a home office improvement stipend, as well as an annual education and wellness stipends to support your growth and wellbeing. We foster a vibrant company culture through regular events, and provide healthy lunches daily to keep you fueled and focused. We are a diverse bunch of people and we want to continue to attract and retain a diverse range of people into our organization. We're committed to an inclusive and diverse company. We do not discriminate based on gender, ethnicity, sexual orientation, religion, civil or family status, age, disability, or race. #LI-HYBRID &nbsp; AI-First Mindset at Glean: &nbsp; At Glean, AI fluency is core to how we work and we're committed to ensuring every new hire feels confident integrating AI into their everyday work. As part of the interview process, you'll complete a brief AI-focused exercise or discussion so we can understand how you think about, design, and use AI to drive impact in your role. Feel free to reference any tools, platforms, or workflows you use today — prior Glean experience isn't required. &nbsp; Global Data Privacy Notice for Job Candidates and Applicants: &nbsp; Depending on your location, the General Data Protection Regulation (GDPR), California Consumer Privacy Act (CCPA), or other privacy laws may regulate the way we manage the data of job applicants. Our full notice outlining how data will be processed as part of the application procedure for applicable locations is available in our Privacy Policy . By submitting your application, you are agreeing to our use and processing of your data as required. US applicants and their applications are subject to arbitration of disputes as outlined in our Applicant Arbitration Agreement . By clicking “Submit Application,” I confirm that I have read the Global Data Privacy Notice and the Applicant Arbitration Agreement , and I agree to the terms.&nbsp;&nbsp;"
+}

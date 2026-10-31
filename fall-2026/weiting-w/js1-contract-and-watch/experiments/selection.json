@@ -1,0 +1,242 @@
+{
+  "source": "20261026-reddit-browser-save.json",
+  "rule_version": "R-v2",
+  "class_sizes": {
+    "relevant": 11,
+    "G1_title_block": 143,
+    "G2_discipline": 6,
+    "G3_job_family": 1,
+    "G4_location": 0
+  },
+  "sampling_set": [
+    {
+      "id": 8299781,
+      "title": "Machine Learning Engineer, Answers Relevance",
+      "job_family": null,
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8299781",
+      "first_published": "2026-10-18T19:58:34-04:00",
+      "rule_class": "G3_job_family"
+    },
+    {
+      "id": 6469397,
+      "title": "Software Engineer, Ads",
+      "job_family": "Software Engineering",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/6469397",
+      "first_published": "2025-01-06T18:59:24-05:00",
+      "rule_class": "relevant"
+    },
+    {
+      "id": 6512458,
+      "title": "Software Engineer, Ads",
+      "job_family": "Software Engineering",
+      "location": "Remote - Ontario, Canada",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/6512458",
+      "first_published": "2025-01-06T19:00:56-05:00",
+      "rule_class": "relevant"
+    },
+    {
+      "id": 8153017,
+      "title": "Account Executive, Mid-Market (DACH)",
+      "job_family": "Account Executive",
+      "location": "Amsterdam, Netherlands",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8153017",
+      "first_published": "2026-10-07T05:26:26-04:00",
+      "rule_class": "G2_discipline"
+    },
+    {
+      "id": 6909091,
+      "title": "Senior Software Engineer, Ads",
+      "job_family": "Software Engineering",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/6909091",
+      "first_published": "2025-08-13T16:34:44-04:00",
+      "rule_class": "G1_title_block"
+    }
+  ],
+  "development_set": [
+    {
+      "id": 6909093,
+      "title": "Senior Software Engineer, Ads",
+      "job_family": "Software Engineering",
+      "location": "Remote - Ontario, Canada",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/6909093",
+      "first_published": "2025-10-21T16:46:52-04:00",
+      "rule_class": "G1_title_block"
+    },
+    {
+      "id": 6960833,
+      "title": "Senior Machine Learning Engineer",
+      "job_family": "Machine Learning",
+      "location": "Remote - Ontario, Canada",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/6960833",
+      "first_published": "2025-08-14T15:50:35-04:00",
+      "rule_class": "G1_title_block"
+    },
+    {
+      "id": 7131932,
+      "title": "Machine Learning Engineer",
+      "job_family": "Machine Learning",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/7131932",
+      "first_published": "2025-08-14T14:51:26-04:00",
+      "rule_class": "relevant"
+    },
+    {
+      "id": 7445240,
+      "title": "Staff Data Scientist, Marketing",
+      "job_family": "Data Science",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/7445240",
+      "first_published": "2026-05-05T14:32:22-04:00",
+      "rule_class": "G1_title_block"
+    },
+    {
+      "id": 7701558,
+      "title": "Staff Product Designer, Growth",
+      "job_family": "Specialized UX Design",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/7701558",
+      "first_published": "2026-03-10T17:57:04-04:00",
+      "rule_class": "G1_title_block"
+    },
+    {
+      "id": 8139781,
+      "title": "Software Engineer, Content Platform",
+      "job_family": "Software Engineering",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8139781",
+      "first_published": "2026-08-18T15:43:32-04:00",
+      "rule_class": "relevant"
+    },
+    {
+      "id": 8172457,
+      "title": "Software Engineer, Consumer Engineering",
+      "job_family": "Software Engineering",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8172457",
+      "first_published": "2026-09-09T19:48:17-04:00",
+      "rule_class": "relevant"
+    },
+    {
+      "id": 8191664,
+      "title": "Creative Strategist (M&E/Retail)",
+      "job_family": "Creative Strategy",
+      "location": "Los Angeles, CA",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8191664",
+      "first_published": "2026-10-22T11:39:10-04:00",
+      "rule_class": "G2_discipline"
+    },
+    {
+      "id": 8198102,
+      "title": "Front End Software Engineer, Media Player",
+      "job_family": "Software Engineering",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8198102",
+      "first_published": "2026-09-11T18:27:39-04:00",
+      "rule_class": "relevant"
+    },
+    {
+      "id": 8234154,
+      "title": "International Payroll Analyst",
+      "job_family": "Payroll",
+      "location": "Remote - United Kingdom",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8234154",
+      "first_published": "2026-09-25T16:27:39-04:00",
+      "rule_class": "G2_discipline"
+    }
+  ],
+  "heldout_set": [
+    {
+      "id": 6960831,
+      "title": "Senior Machine Learning Engineer",
+      "job_family": "Machine Learning",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/6960831",
+      "first_published": "2025-08-14T15:50:35-04:00",
+      "rule_class": "G1_title_block"
+    },
+    {
+      "id": 7131934,
+      "title": "Machine Learning Engineer",
+      "job_family": "Machine Learning",
+      "location": "Remote - Ontario, Canada",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/7131934",
+      "first_published": "2025-08-14T14:51:26-04:00",
+      "rule_class": "relevant"
+    },
+    {
+      "id": 7330347,
+      "title": "Principal Data Scientist, Ads",
+      "job_family": "Data Science",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/7330347",
+      "first_published": "2025-10-14T16:40:47-04:00",
+      "rule_class": "G1_title_block"
+    },
+    {
+      "id": 7511679,
+      "title": "Senior Software Engineer, Storage",
+      "job_family": "Software Engineering",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/7511679",
+      "first_published": "2026-01-06T12:21:15-05:00",
+      "rule_class": "G1_title_block"
+    },
+    {
+      "id": 7721787,
+      "title": "Staff Data Scientist, Ads",
+      "job_family": "Data Science",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/7721787",
+      "first_published": "2026-03-16T11:22:46-04:00",
+      "rule_class": "G1_title_block"
+    },
+    {
+      "id": 8147559,
+      "title": "Front End Software Engineer, Consumer Engineering",
+      "job_family": "Software Engineering",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8147559",
+      "first_published": "2026-09-17T13:07:34-04:00",
+      "rule_class": "relevant"
+    },
+    {
+      "id": 8192369,
+      "title": "International Payroll Analyst",
+      "job_family": "Payroll",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8192369",
+      "first_published": "2026-09-14T08:05:09-04:00",
+      "rule_class": "G2_discipline"
+    },
+    {
+      "id": 8194576,
+      "title": "Frontend Engineer, Ads",
+      "job_family": "Software Engineering",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8194576",
+      "first_published": "2026-09-11T00:36:55-04:00",
+      "rule_class": "relevant"
+    },
+    {
+      "id": 8214910,
+      "title": "Software Engineer, Ingestion Platform",
+      "job_family": "Software Engineering",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8214910",
+      "first_published": "2026-09-18T19:35:09-04:00",
+      "rule_class": "relevant"
+    },
+    {
+      "id": 8282760,
+      "title": "Analytics Engineer",
+      "job_family": "Data Science",
+      "location": "Remote - United States",
+      "absolute_url": "https://job-boards.greenhouse.io/reddit/jobs/8282760",
+      "first_published": "2026-10-14T18:03:16-04:00",
+      "rule_class": "G2_discipline"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+VERDICT: not_relevant
+RESUME_FIELD: target_titles=Product Manager
+RESUME_FIELD: locations=Remote
+RESUME_FIELD: skills=Python
+RESUME_FIELD: skills=SQL
+RESUME_FIELD: skills=A/B testing
+RESUME_FIELD: skills=roadmapping
+RESUME_FIELD: skills=user research
+POSTING_FIELD: title=Product Manager
+POSTING_FIELD: location.name=SF, SEA, NY, Remote-US
+POSTING_FIELD: content=SQL
+REASON: C1 and C2 pass, but C3 fails because the content contains only one distinct candidate skill (SQL) and the rule requires at least two.

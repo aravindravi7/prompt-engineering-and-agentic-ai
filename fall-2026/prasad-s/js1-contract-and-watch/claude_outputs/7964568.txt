@@ -1,0 +1,15 @@
+VERDICT: not_relevant
+RESUME_FIELD: target_titles=Associate Product Manager
+RESUME_FIELD: target_titles=Product Manager
+RESUME_FIELD: target_titles=Product Analyst
+RESUME_FIELD: locations=New York
+RESUME_FIELD: locations=NYC
+RESUME_FIELD: locations=Remote
+RESUME_FIELD: skills=Python
+RESUME_FIELD: skills=SQL
+RESUME_FIELD: skills=A/B testing
+RESUME_FIELD: skills=roadmapping
+RESUME_FIELD: skills=user research
+POSTING_FIELD: title=Partner Solutions Architect, Consulting Partners
+POSTING_FIELD: location.name=United States
+REASON: C1 fails because the title contains no target title, C2 fails because the location "United States" contains no candidate location, and C3 fails because none of the candidate skills appear in the content.

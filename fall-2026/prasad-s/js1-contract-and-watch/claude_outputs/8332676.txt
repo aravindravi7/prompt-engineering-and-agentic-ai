@@ -1,0 +1,8 @@
+VERDICT: not_relevant
+RESUME_FIELD: target_titles=Associate Product Manager | Product Manager | Product Analyst
+RESUME_FIELD: locations=New York | NYC | Remote
+RESUME_FIELD: skills=Python | SQL | A/B testing | roadmapping | user research
+POSTING_FIELD: title=Software Engineer - Full stack
+POSTING_FIELD: location.name=Seattle, WA
+POSTING_FIELD: content=SQL
+REASON: C1 fails because the title contains none of the target titles, C2 fails because the location contains none of the candidate locations, and C3 fails because the content contains only one distinct skill (SQL).

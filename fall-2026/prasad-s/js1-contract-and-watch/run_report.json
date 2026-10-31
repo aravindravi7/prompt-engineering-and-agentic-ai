@@ -1,20 +1,3466 @@
 {
   "contract_version": "v0.3",
   "summary": {
-    "run_at": "2026-10-27T22:39:47+00:00",
+    "run_at": "2026-10-29T01:11:33+00:00",
     "mode": "live",
-    "baseline": true,
-    "total_fetched": 711,
-    "new_count": 0,
-    "new_ids": [],
-    "message": "baseline run: 711 ids saved, 0 postings reported as new",
+    "baseline": false,
+    "total_fetched": 721,
+    "new_count": 29,
+    "new_ids": [
+      "8154295",
+      "8280266",
+      "8284978",
+      "8301253",
+      "7913700",
+      "7584016",
+      "8293770",
+      "8275558",
+      "8314318",
+      "8287914",
+      "8168550",
+      "8267847",
+      "7337544",
+      "8175637",
+      "8287486",
+      "8329719",
+      "7964568",
+      "8331124",
+      "8311067",
+      "8315962",
+      "8332718",
+      "8332676",
+      "8130876",
+      "8331852",
+      "8329718",
+      "8304788",
+      "7746721",
+      "8164666",
+      "8329116"
+    ],
+    "message": "29 new postings",
     "source": {
       "url": "https://boards-api.greenhouse.io/v1/boards/stripe/jobs?content=true",
-      "fetched_at": "2026-10-27T22:39:47+00:00",
-      "file": "stripe_jobs_content_true_2026-10-27T223947Z.json",
-      "bytes": 5526436,
-      "sha256": "106e1df5f4f5ef026e538a578cc32c0f31b0f7fb20771610d90b59d2e95d565b"
+      "fetched_at": "2026-10-29T01:11:32+00:00",
+      "file": "stripe_jobs_content_true_2026-10-29T011132Z.json",
+      "bytes": 5607841,
+      "sha256": "8e198f7fe1972b0c3358cc01e19a1a338305418ffe5be405dc885348ba6d8a08"
     }
   },
-  "new_postings": []
+  "new_postings": [
+    {
+      "posting_id": "8154295",
+      "title": "Account Executive, Product Sales, Metronome",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8154295",
+      "location.name": "US-NYC",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "location.name",
+            "matched": "NYC"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Account Executive, Product Sales, Metronome"
+          },
+          "C2": {
+            "result": true,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [
+              "NYC"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "US-NYC"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8280266",
+      "title": "Account Executive, Startups (Grower)",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8280266",
+      "location.name": "San Francisco",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "content",
+            "matched": "SQL"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Account Executive, Startups (Grower)"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "San Francisco"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [
+              "SQL"
+            ],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 1,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8284978",
+      "title": "Account Executive - Travel, Ticketing & Hospitality (Hunter) ",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8284978",
+      "location.name": "London",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Account Executive - Travel, Ticketing & Hospitality (Hunter)"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "London"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8301253",
+      "title": "Backend / API Engineer, Radar",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8301253",
+      "location.name": "San Francisco, Seattle, New York",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "location.name",
+            "matched": "New York"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Backend / API Engineer, Radar"
+          },
+          "C2": {
+            "result": true,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [
+              "New York"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "San Francisco, Seattle, New York"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "7913700",
+      "title": "Backend Engineer, Data",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=7913700",
+      "location.name": "Canada",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "content",
+            "matched": "Python"
+          },
+          {
+            "field": "content",
+            "matched": "SQL"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Backend Engineer, Data"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "Canada"
+          },
+          "C3": {
+            "result": true,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [
+              "Python",
+              "SQL"
+            ],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 2,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "7584016",
+      "title": "Campaign Strategy & Operations Manager",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=7584016",
+      "location.name": "San Francisco, Seattle, New York, Chicago, Remote in the US",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "location.name",
+            "matched": "New York"
+          },
+          {
+            "field": "location.name",
+            "matched": "Remote"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Campaign Strategy & Operations Manager"
+          },
+          "C2": {
+            "result": true,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [
+              "New York",
+              "Remote"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "San Francisco, Seattle, New York, Chicago, Remote in the US"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8293770",
+      "title": "Customer Success Enablement Business Partner",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8293770",
+      "location.name": "San Francisco; Seattle; Remote",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "location.name",
+            "matched": "Remote"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Customer Success Enablement Business Partner"
+          },
+          "C2": {
+            "result": true,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [
+              "Remote"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "San Francisco; Seattle; Remote"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8275558",
+      "title": "Customer Support Specialist, Clerky",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8275558",
+      "location.name": "Canada",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Customer Support Specialist, Clerky"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "Canada"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8314318",
+      "title": "Federal Government Relations Director ",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8314318",
+      "location.name": "Washington DC metro area",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Federal Government Relations Director"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "Washington DC metro area"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8287914",
+      "title": "Finance & Strategy Specialist",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8287914",
+      "location.name": "United States",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "content",
+            "matched": "SQL"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Finance & Strategy Specialist"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "United States"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [
+              "SQL"
+            ],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 1,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8168550",
+      "title": "Fraud Operations Analyst (CDMX)",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8168550",
+      "location.name": "Mexico City",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Fraud Operations Analyst (CDMX)"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "Mexico City"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8267847",
+      "title": "Head of AMER Startups (AI Sales)",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8267847",
+      "location.name": "San Francisco",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Head of AMER Startups (AI Sales)"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "San Francisco"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "7337544",
+      "title": "Manager, Sales Development",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=7337544",
+      "location.name": "Dublin ",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Manager, Sales Development"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "Dublin"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8175637",
+      "title": "Manager, Solutions Architecture Transformation",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8175637",
+      "location.name": "USA",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Manager, Solutions Architecture Transformation"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "USA"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8287486",
+      "title": "Managing Editor, Stripe Press",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8287486",
+      "location.name": "NYC",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "location.name",
+            "matched": "NYC"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Managing Editor, Stripe Press"
+          },
+          "C2": {
+            "result": true,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [
+              "NYC"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "NYC"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8329719",
+      "title": "Marketing Strategy & Operations Business Partner",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8329719",
+      "location.name": "San Francisco, New York, Seattle, Chicago, Atlanta, Remote in the US ",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "location.name",
+            "matched": "New York"
+          },
+          {
+            "field": "location.name",
+            "matched": "Remote"
+          },
+          {
+            "field": "content",
+            "matched": "SQL"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Marketing Strategy & Operations Business Partner"
+          },
+          "C2": {
+            "result": true,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [
+              "New York",
+              "Remote"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "San Francisco, New York, Seattle, Chicago, Atlanta, Remote in the US"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [
+              "SQL"
+            ],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 1,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "7964568",
+      "title": "Partner Solutions Architect, Consulting Partners",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=7964568",
+      "location.name": "United States",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Partner Solutions Architect, Consulting Partners"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "United States"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8331124",
+      "title": "Product Marketing Manager, Subscriptions",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8331124",
+      "location.name": "New York, San Francisco, Seattle, Remote",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "location.name",
+            "matched": "New York"
+          },
+          {
+            "field": "location.name",
+            "matched": "Remote"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Product Marketing Manager, Subscriptions"
+          },
+          "C2": {
+            "result": true,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [
+              "New York",
+              "Remote"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "New York, San Francisco, Seattle, Remote"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8311067",
+      "title": "Program Manager, Go-to-Market Experience and Productivity",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8311067",
+      "location.name": "Dublin ",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "content",
+            "matched": "SQL"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Program Manager, Go-to-Market Experience and Productivity"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "Dublin"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [
+              "SQL"
+            ],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 1,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8315962",
+      "title": "Risk Operations Associate, UPO",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8315962",
+      "location.name": "Mexico City",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Risk Operations Associate, UPO"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "Mexico City"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8332718",
+      "title": "Software Engineer, Fraud System Interventions",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8332718",
+      "location.name": "South San Francisco, CA",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "content",
+            "matched": "Python"
+          },
+          {
+            "field": "content",
+            "matched": "SQL"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Software Engineer, Fraud System Interventions"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "South San Francisco, CA"
+          },
+          "C3": {
+            "result": true,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [
+              "Python",
+              "SQL"
+            ],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 2,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8332676",
+      "title": "Software Engineer - Full stack",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8332676",
+      "location.name": "Seattle, WA",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "content",
+            "matched": "SQL"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Software Engineer - Full stack"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "Seattle, WA"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [
+              "SQL"
+            ],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 1,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8130876",
+      "title": "Software Engineer, New Grad",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8130876",
+      "location.name": "Bangalore",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Software Engineer, New Grad"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "Bangalore"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8331852",
+      "title": "Staff Product Manager, Risk",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8331852",
+      "location.name": "Toronto, Canada",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "title",
+            "matched": "Product Manager"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": true,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [
+              "Product Manager"
+            ],
+            "posting_field": "title",
+            "posting_value": "Staff Product Manager, Risk"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "Toronto, Canada"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8329718",
+      "title": "Staff Software Engineer, Dashboard Product",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8329718",
+      "location.name": "Seattle",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "content",
+            "matched": "A/B testing"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Staff Software Engineer, Dashboard Product"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "Seattle"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [
+              "A/B testing"
+            ],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 1,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8304788",
+      "title": "Staff Software Engineer, Link - Consumer Identity",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8304788",
+      "location.name": "San Francisco, Seattle, New York",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "location.name",
+            "matched": "New York"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Staff Software Engineer, Link - Consumer Identity"
+          },
+          "C2": {
+            "result": true,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [
+              "New York"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "San Francisco, Seattle, New York"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 0,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "7746721",
+      "title": "Staff Software Engineer, Stripe Dashboard",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=7746721",
+      "location.name": "Seattle",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "content",
+            "matched": "A/B testing"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Staff Software Engineer, Stripe Dashboard"
+          },
+          "C2": {
+            "result": false,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "location.name",
+            "posting_value": "Seattle"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [
+              "A/B testing"
+            ],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 1,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8164666",
+      "title": "Technical Curriculum Developer, Technical Enablement",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8164666",
+      "location.name": "San Francisco; Seattle; Remote",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "location.name",
+            "matched": "Remote"
+          },
+          {
+            "field": "content",
+            "matched": "Python"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Technical Curriculum Developer, Technical Enablement"
+          },
+          "C2": {
+            "result": true,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [
+              "Remote"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "San Francisco; Seattle; Remote"
+          },
+          "C3": {
+            "result": false,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [
+              "Python"
+            ],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 1,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1",
+          "C3"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    },
+    {
+      "posting_id": "8329116",
+      "title": "Technical Solutions Consultant, Crypto",
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=8329116",
+      "location.name": "New York, San Francisco",
+      "rule_verdict": "not_relevant",
+      "rule_justification": {
+        "resume_fields": [
+          {
+            "field": "target_titles",
+            "value": "Associate Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Manager"
+          },
+          {
+            "field": "target_titles",
+            "value": "Product Analyst"
+          },
+          {
+            "field": "locations",
+            "value": "New York"
+          },
+          {
+            "field": "locations",
+            "value": "NYC"
+          },
+          {
+            "field": "locations",
+            "value": "Remote"
+          },
+          {
+            "field": "skills",
+            "value": "Python"
+          },
+          {
+            "field": "skills",
+            "value": "SQL"
+          },
+          {
+            "field": "skills",
+            "value": "A/B testing"
+          },
+          {
+            "field": "skills",
+            "value": "roadmapping"
+          },
+          {
+            "field": "skills",
+            "value": "user research"
+          }
+        ],
+        "posting_fields": [
+          {
+            "field": "location.name",
+            "matched": "New York"
+          },
+          {
+            "field": "content",
+            "matched": "Python"
+          },
+          {
+            "field": "content",
+            "matched": "SQL"
+          }
+        ],
+        "conditions": {
+          "C1": {
+            "result": false,
+            "resume_field": "target_titles",
+            "resume_values": [
+              "Associate Product Manager",
+              "Product Manager",
+              "Product Analyst"
+            ],
+            "matched_resume_values": [],
+            "posting_field": "title",
+            "posting_value": "Technical Solutions Consultant, Crypto"
+          },
+          "C2": {
+            "result": true,
+            "resume_field": "locations",
+            "resume_values": [
+              "New York",
+              "NYC",
+              "Remote"
+            ],
+            "matched_resume_values": [
+              "New York"
+            ],
+            "posting_field": "location.name",
+            "posting_value": "New York, San Francisco"
+          },
+          "C3": {
+            "result": true,
+            "resume_field": "skills",
+            "resume_values": [
+              "Python",
+              "SQL",
+              "A/B testing",
+              "roadmapping",
+              "user research"
+            ],
+            "matched_resume_values": [
+              "Python",
+              "SQL"
+            ],
+            "posting_field": "content",
+            "content_present": true,
+            "distinct_skills_found": 2,
+            "distinct_skills_needed": 2
+          }
+        },
+        "failing_conditions": [
+          "C1"
+        ]
+      },
+      "claude_verdict_label": "judgment (Claude)",
+      "claude_verdict": "rejected",
+      "claude_justification": {
+        "reply": null,
+        "reasons": [
+          "claude_outputs/metadata.json does not exist"
+        ],
+        "note": "no saved reply was read"
+      }
+    }
+  ]
 }

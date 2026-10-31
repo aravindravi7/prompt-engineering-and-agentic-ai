@@ -1,0 +1,30 @@
+{
+  "posting_id": 8560779002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "relevant",
+  "parsed": {
+    "posting_id": 8560779002,
+    "verdict": "relevant",
+    "resume_fields": [
+      "skills.data_bi",
+      "work_authorization.needs_sponsorship"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title contains 'Software Engineer' and no excluded word, the location is Mountain View, CA, the content names two résumé skills (Databricks, Unity Catalog), and it does not refuse visa sponsorship. This passes only on a literal reading: both skills appear in company boilerplate rather than the role requirements, and the role asks for 4+ years of web/frontend experience, so the actual fit is weak."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8560779002, \"verdict\": \"relevant\", \"resume_fields\": [\"skills.data_bi\", \"work_authorization.needs_sponsorship\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title contains 'Software Engineer' and no excluded word, the location is Mountain View, CA, the content names two résumé skills (Databricks, Unity Catalog), and it does not refuse visa sponsorship. This passes only on a literal reading: both skills appear in company boilerplate rather than the role requirements, and the role asks for 4+ years of web/frontend experience, so the actual fit is weak.\"}",
+  "asked_at": "2026-10-30T21:22:12+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "774b79d3-8211-49c0-bf04-7b3619e1531b",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "90e4924adbd3265f164acb3de252d57ba71746ac55a44326ee82ac19fa60523d"
+}

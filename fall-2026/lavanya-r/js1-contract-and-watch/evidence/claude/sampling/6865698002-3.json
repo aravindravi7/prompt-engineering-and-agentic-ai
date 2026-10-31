@@ -1,0 +1,31 @@
+{
+  "posting_id": 6865698002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "relevant",
+  "parsed": {
+    "posting_id": 6865698002,
+    "verdict": "relevant",
+    "resume_fields": [
+      "skills.languages",
+      "skills.data_bi",
+      "work_authorization.needs_sponsorship"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title includes 'Software Engineer' and 'New Grad' with no excluded terms, three of the listed locations are in the US, and the content mentions Python, Databricks, and Unity Catalog, with no statement that the employer cannot sponsor visas (the export-control clause is not a sponsorship refusal). Outside the rule, the posting targets fall 2026 or spring 2027 graduates while the résumé shows graduation in 2025-12, which may limit eligibility."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 6865698002, \"verdict\": \"relevant\", \"resume_fields\": [\"skills.languages\", \"skills.data_bi\", \"work_authorization.needs_sponsorship\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title includes 'Software Engineer' and 'New Grad' with no excluded terms, three of the listed locations are in the US, and the content mentions Python, Databricks, and Unity Catalog, with no statement that the employer cannot sponsor visas (the export-control clause is not a sponsorship refusal). Outside the rule, the posting targets fall 2026 or spring 2027 graduates while the résumé shows graduation in 2025-12, which may limit eligibility.\"}",
+  "asked_at": "2026-10-30T21:22:29+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "7c1bd859-4623-442b-b23d-5e1417f0fae4",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "b6b4a8aa3b9dcf6573c6536785ce7d5aad63d4c1c4b4c49c18b210cbaeaebe19"
+}

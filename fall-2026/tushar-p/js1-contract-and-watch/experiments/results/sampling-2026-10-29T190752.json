@@ -1,0 +1,260 @@
+{
+  "prompt_file": "prompts/baseline.txt",
+  "prompt_sha256": "f5d787a9b88c5ec036b6ba98e1fc254a309e696120f3521e05b9208d0dc92496",
+  "repeats": 4,
+  "run_date": "2026-10-27",
+  "timestamp": "2026-10-29T19:07:52-04:00",
+  "model_requested": "claude-sonnet-5-5",
+  "models_in_responses": [
+    "claude-sonnet-5-5"
+  ],
+  "temperature": "not set in the request (API default)",
+  "raw_source": "raw/greenhouse-stripe-2026-10-27T203128.json",
+  "labels_source": "experiments/labels.csv",
+  "all_agree_means": "every reply valid and the same verdict",
+  "claude_label": "model judgment",
+  "postings": [
+    {
+      "posting_id": 8314283,
+      "my_label": "relevant",
+      "counts": {
+        "relevant": 0,
+        "not_relevant": 0,
+        "cannot_tell": 4,
+        "invalid": 0
+      },
+      "all_agree": "yes",
+      "matches_label": 0
+    },
+    {
+      "posting_id": 8160776,
+      "my_label": "not_relevant",
+      "counts": {
+        "relevant": 0,
+        "not_relevant": 4,
+        "cannot_tell": 0,
+        "invalid": 0
+      },
+      "all_agree": "yes",
+      "matches_label": 4
+    },
+    {
+      "posting_id": 8257892,
+      "my_label": "not_relevant",
+      "counts": {
+        "relevant": 0,
+        "not_relevant": 4,
+        "cannot_tell": 0,
+        "invalid": 0
+      },
+      "all_agree": "yes",
+      "matches_label": 4
+    },
+    {
+      "posting_id": 8128745,
+      "my_label": "not_relevant",
+      "counts": {
+        "relevant": 0,
+        "not_relevant": 4,
+        "cannot_tell": 0,
+        "invalid": 0
+      },
+      "all_agree": "yes",
+      "matches_label": 4
+    },
+    {
+      "posting_id": 7947546,
+      "my_label": "not_relevant",
+      "counts": {
+        "relevant": 0,
+        "not_relevant": 4,
+        "cannot_tell": 0,
+        "invalid": 0
+      },
+      "all_agree": "yes",
+      "matches_label": 4
+    }
+  ],
+  "calls": [
+    {
+      "posting_id": 8314283,
+      "repeat": 1,
+      "claude_verdict": "cannot_tell",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8314283-r1.json"
+    },
+    {
+      "posting_id": 8314283,
+      "repeat": 2,
+      "claude_verdict": "cannot_tell",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8314283-r2.json"
+    },
+    {
+      "posting_id": 8314283,
+      "repeat": 3,
+      "claude_verdict": "cannot_tell",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8314283-r3.json"
+    },
+    {
+      "posting_id": 8314283,
+      "repeat": 4,
+      "claude_verdict": "cannot_tell",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8314283-r4.json"
+    },
+    {
+      "posting_id": 8160776,
+      "repeat": 1,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8160776-r1.json"
+    },
+    {
+      "posting_id": 8160776,
+      "repeat": 2,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8160776-r2.json"
+    },
+    {
+      "posting_id": 8160776,
+      "repeat": 3,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8160776-r3.json"
+    },
+    {
+      "posting_id": 8160776,
+      "repeat": 4,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8160776-r4.json"
+    },
+    {
+      "posting_id": 8257892,
+      "repeat": 1,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8257892-r1.json"
+    },
+    {
+      "posting_id": 8257892,
+      "repeat": 2,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8257892-r2.json"
+    },
+    {
+      "posting_id": 8257892,
+      "repeat": 3,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8257892-r3.json"
+    },
+    {
+      "posting_id": 8257892,
+      "repeat": 4,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8257892-r4.json"
+    },
+    {
+      "posting_id": 8128745,
+      "repeat": 1,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8128745-r1.json"
+    },
+    {
+      "posting_id": 8128745,
+      "repeat": 2,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8128745-r2.json"
+    },
+    {
+      "posting_id": 8128745,
+      "repeat": 3,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8128745-r3.json"
+    },
+    {
+      "posting_id": 8128745,
+      "repeat": 4,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/8128745-r4.json"
+    },
+    {
+      "posting_id": 7947546,
+      "repeat": 1,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/7947546-r1.json"
+    },
+    {
+      "posting_id": 7947546,
+      "repeat": 2,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/7947546-r2.json"
+    },
+    {
+      "posting_id": 7947546,
+      "repeat": 3,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/7947546-r3.json"
+    },
+    {
+      "posting_id": 7947546,
+      "repeat": 4,
+      "claude_verdict": "not_relevant",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/sampling-2026-10-29T190752/7947546-r4.json"
+    }
+  ]
+}

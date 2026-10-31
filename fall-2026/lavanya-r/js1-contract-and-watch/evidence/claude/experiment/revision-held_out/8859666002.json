@@ -1,0 +1,31 @@
+{
+  "posting_id": 8859666002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8859666002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education",
+      "skills.data_bi"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title contains 'AI', the location is the US, and the description names Databricks and Unity Catalog, but the posting requires 8 or more years of leading workforce transformation. The job seeker has about 8 months of co-op experience and a 2025 MS, so they fail the experience requirement."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8859666002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\", \"skills.data_bi\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title contains 'AI', the location is the US, and the description names Databricks and Unity Catalog, but the posting requires 8 or more years of leading workforce transformation. The job seeker has about 8 months of co-op experience and a 2025 MS, so they fail the experience requirement.\"}",
+  "asked_at": "2026-10-30T21:26:58+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "b8a8df53-399d-4ce2-84e0-193ba77cb638",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "b0f2f3f5321c436d35b84f3dc52b6890f26de3bdb23f1dcb3ec08104ad1addcf"
+}

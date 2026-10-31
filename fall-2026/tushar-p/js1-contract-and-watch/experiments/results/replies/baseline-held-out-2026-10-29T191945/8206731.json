@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXPJb8pfGEEsQTycBbWG",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS9QcKEAgTGAI4AUIIdGhpbmtpbmcSDKPeXF6yQbrVQ//3RRoM4vnbLJLcY596ToKiIjDHPpnEuEJoitCpgZZ6TCRm3FQlDwT8jHQwqw1mOa4kuwlGLlE2ixeCWC1V2Sa4mDgqkgecYDMYSlqCWzGQlKn+4sNQOfwIL6zngZSKJLLlFnI2QjUsQgw0/K5hbtoD/WaOE3anBLSiZtM4Ik/mLAOngN7Me5F6Noz+8BJ+68g8XDj71xs92U2WU2Im3joxFHbW5lSPFpd0R2I3vFzC6uSBTcRpnFzVdpZtUhaLj4dZK2Ln8dnzSPJzgq9zVj6FkeuKDPK2BspOq7xAJUXdstP56a05rwlj7zjQ81p0TneHnMN9wKSsGxHEVCw9W6fkycZ3xNznoEZsAWJNgCfy2SYkOZBzSw+8y1zUGqj5bUT5G8ZD5ikoNhUbPUZOA/sUG3HZbsR0FUqcjFmCQuXmSwkw9DBRdLJZq/wdaxHFwlwR8X0fkwS+ZswOfAhSr8WAzlTnqgL9ummo7oYYrk21aH9vHTG+2Hb3q24EbFt0OQM544mkPqAZxSmvCodNuKnI1MU91tOdzwY8ANq07BPiZbuDpXmLgdLzeo4UgIdHRpjHaqtBLoeNSxkta93RGN2GD2DWYgc0mD406cC/xusRyPQt1wMw0iaWZNvW1Z4d6kNrclIsmAz4omyg69GsQQExrEGai0WGBsE5za5r5m8e8dFSX6g/5K1FbU+5ThW0trzqfgGj35vykELc753Wzk2SZ2YYi7z5aY88BfEOF5sdKAbffzpO5pD5dI+pfXEwtge6yFcRAj4LtHS0i0g1vmvVq/rbq/BYhs6XQ40X3DATfoIC4zolk9u05FOv9ustX6UBE9svidbW/z2Z2mAsQI3Fuc3dI+M9LAuqg67hB5/DIR1t221Fj0jXuCAw0B/GryhBzwHGV/Y/HywTbzhP4DZnmdgK6mNY1Rj96ZrDmPPVjhj7OKpx7lvf65Sl/SJWBgWd5hKl0qpbIKxhIqVA72bENKWw2bdX8g9ZTgJ8sueb3s/o+1ST4vYhpaGAKNnQjF7lV9VvMLe8C8R/bIZ2JgFTCaPlxo0/ONdEFlpQv7lO8zxuedQBcqKZK4NwApcX9WTFEGYheUi4yANN2Lq0gA8HyQhKMNJVFREJFA3wnnT6AYWDkiNwC3Q+y/BjLFCxRXgyBkSsmmmaERtwnOzsMCgVDD6VDD+266yMuLGG6GN6DjuqrAeDw70ieCnVOs/SAGaojIzGbg9XZg1DUH59J41UQc2eOHU2wuPuJtz9nE2svUAeI/pSdWjxEzj6pTADq/AwgD/ATatI/5sTEeLuHa5KJchXFxvorxgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8206731\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title is \\\"Full Stack Engineer, Builder Experience\\\", which contains none of Software Engineer, AI Engineer, or Backend Engineer (R1 fail).\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"first_published\",\"evidence\":\"first_published 2026-10-05 (America/New_York) is 22 days before the run date 2026-10-27, so it is stale (R2 fail).\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location \\\"San Francisco\\\" is a listed US city (R3 pass).\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"Content says \\\"5+ years of backend and/or full-stack software development experience\\\", so the minimum is 5, above the new-grad limit of 3 (R4 fail).\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"No phrases such as \\\"unable to sponsor\\\" or \\\"no sponsorship\\\" appear in the content (R5 pass).\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"Content mentions \\\"Java, Ruby, and/or TypeScript\\\", matching the skills Java and TypeScript (R6 pass).\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3534,
+    "output_tokens": 687,
+    "output_tokens_details": {
+      "thinking_tokens": 197
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}
