@@ -28,8 +28,8 @@
 - The seed 2608, the decision to add the supplement, and the one change for `revision-v2`.
 - The decision paragraph in `action-surfaces/COMPARISON.md`.
 - The claude.ai chat run (`action-surfaces/1-chat-paste/reply.txt` is the reply I pasted back).
-- The decisions in the sign-off: what is listed as not checked and not claimed, and withholding my signature
-  until my review is finished.
+- The decisions in the sign-off: what is listed as not checked and not claimed, and signing it after my
+  review (2026-10-31).
 - Confirmation of the facts in the reflection lines, sign-off wording and driver's-seat reasons below. I did not
   write those words myself (see "What Codex contributed").
 
@@ -57,8 +57,8 @@ Claude Code wrote, at my direction:
 - **Running things:** the sampling and experiment Claude calls, the file-read surface, the seeded watch replay, the final test runs,
   and the board probes before the contract.
 - **First drafts** of `README.md`, `sampling/REPORT.md`, `experiment/REPORT.md`, the `COMPARISON.md` table
-  and the factual lines of `FRICTIONAL.md`, written from the saved data and commit history. My review is
-  not finished, which is why the sign-off is withheld.
+  and the factual lines of `FRICTIONAL.md`, written from the saved data and commit history. I reviewed them
+  before signing on 2026-10-31, after the two Codex reviews and the fixes that followed.
 - **The fix for the validator crash** Codex found (`c42f2c6`), the seeded-report wording fix in `jobwatch/report.py`,
   and the corrections to the comparison, README, SOURCES and FRICTIONAL that followed both Codex reviews.
 - **Checks it reported to me:** the Datadog rule returning 0 relevant; the labels being all one class; the

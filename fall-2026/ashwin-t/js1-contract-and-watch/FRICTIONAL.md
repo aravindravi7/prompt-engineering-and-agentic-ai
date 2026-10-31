@@ -99,6 +99,8 @@ by me. I confirmed the facts in them and made the decisions they describe; the w
   were fixed in `c42f2c6` and `1ec6051`.
 - **Unresolved / next step:** finish my personal review, decide whether any additional demonstration is
   needed, then matching GitHub and Canvas delivery. The signature stays withheld until my review is done.
+- **Later, 2026-10-31:** I finished my review and signed the sign-off. Then I asked Claude Code to post the
+  folder to GitHub and build the Canvas zip.
 
 ## 2026-10-31: second Codex review, and a seeded watch replay
 

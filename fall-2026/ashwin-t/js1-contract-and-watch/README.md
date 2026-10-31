@@ -140,8 +140,7 @@ Not checked:  1. No new posting appeared during the live runs, so the full new-p
               4. The matching GitHub and Canvas submission has not been verified.
 Not claiming: I am not claiming the agent identifies every suitable job, establishes hiring
               eligibility, or runs daily without someone starting it.
-Signed or withheld: Withheld until I finish reviewing the drafts and the identified issues are
-              addressed. (Ashwin Thankachan, 2026-10-31)
+Signed or withheld: Signed: Ashwin Thankachan, 2026-10-31
 ```
 
 ## Driver's seat
@@ -153,4 +152,4 @@ Signed or withheld: Withheld until I finish reviewing the drafts and the identif
 | What counts as "relevant" for Supriya | Nothing | Wrote the labeling protocol and all 24 hand labels | The labels represent my interpretation of the fictional candidate's fit. | `20b01fb`, `6773f06`, `f9bd958` |
 | The experiment design | Found that the labels were all one class and proposed the supplement | Chose the seed, chose to add the supplement, chose the one change | I own the choices about the split, supplement, and what the results support. | `9ed2e88`, `04bcea5`, `d932e3b` |
 | The autonomy choice | Ran the file-read surface and drafted the comparison table | Ran the chat paste and wrote the decision | I decide which actions the workflow needs and what access to give it. | `a13d3ca` |
-| The sign-off | Claude Code drafted the "Checked" list from the tests. Codex drafted the "How", "Not checked" and "Not claiming" wording and these driver's-seat reasons | Confirmed the facts in them, decided what is listed as not checked, and withheld the signature | Only I can confirm what I personally checked and what remains unverified. | this README |
+| The sign-off | Claude Code drafted the "Checked" list from the tests. Codex drafted the "How", "Not checked" and "Not claiming" wording and these driver's-seat reasons | Confirmed the facts in them, decided what is listed as not checked, and signed after my review | Only I can confirm what I personally checked and what remains unverified. | this README |
