@@ -389,18 +389,50 @@ These are copied from [CONTRACT.md](CONTRACT.md) and the two reports.
 
 | What Claude did | What I did | Why that part stays mine | Evidence (commit or file) |
 |---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
-| | | | |
+| Reviewed the contract; listed the 16 issues | Made each decision: board, persona, rule, quirks | The rule decides what counts as relevant for the persona | contract changelog; b27b1a8 → 5cd4c28 |
+| Typed the corrected rule table | Wrote all the cases and answers; checked the 4 corrections myself | Expected answers must come before the code | 5969e44, the note in rule_cases.json |
+| Claude Code wrote the agent and tools | Ran every test myself; the test-can-fail check; the offline replay | "Run your tests yourself" | cf8708c, evidence/test_can_fail_2026-10-27.txt |
+| Explained the labeling method; did not check answers — though one method reminder led me to re-check and change my first label's C1 | All 20 hand labels | They're the ground truth everything is compared against | 6126445 (development), 0e3a2f5 (held-out), the two hand-vs-rule files in evidence/ |
+| Found the pattern (whole-list rejections on failed conditions) and listed options A, B, C | Chose C, with a reason and a prediction written before any revision chat | The experiment's one change is my judgment | 323d2b6, experiments/revision_decision.md |
+| Claude Code built "reuse" against my plan; Claude.ai spotted the mismatch | Decided to stick to my committed plan and had it reverted | My plan is the spec, not Claude's guess | 1bf0301 ("no reuse, per chat_plan.md") |
+
 
 ## Sign-off — Job-Search Agent 1
 
-```text
-Sign-off — Job-Search Agent 1
-Checked:      ____
-How:          ____
-Not checked:  ____
-Not claiming: ____
-Signed or withheld: ____
+**Checked:**
+- The rule (C1–C3) on 14 constructed cases, including all the pinned quirks — tests/expected/rule_cases.json, written before any code.
+- "New since last run" by id, including the number-vs-text trap — watch_cases.json, S01–S07.
+- The allow-list and the persona refusals — refusal_cases.json, including the two URL tricks.
+- The validator — validator_cases.json, including V12, where a wrong verdict still passes validation.
+- Both wrong versions, W1 and W2, are caught — tests/test_wrong_versions.py.
+- That the tests can fail — evidence/test_can_fail_2026-10-27.txt.
+- The rule agrees with my hand labels on 20 of 20 real postings, on every condition — the two evidence/*labels_vs_rule* files.
+- Run 2's 29 new ids, recounted by my own script — evidence/run2_recount_by_me_2026-10-28.txt.
+- Both runs replay offline, with byte-identical state files — README replay commands, run by me on 2026-10-30.
+- Runs from a clean copy of the committed folder (git archive of HEAD on 2026-10-31): 45/45 tests pass, and the offline replay of run 1 gives byte-identical state.
+
+**How:**
+- By hand: the labels.
+- By a test written before reading Claude's code: the four tables.
+- By recomputation: the recount, the fingerprints, the replay, and the labels-vs-rule comparison.
+- With Claude's help: Claude Code wrote the code, the W1/W2 versions, and the scoring tools; Claude.ai reviewed the contract and suggested wording.
+
+**Not checked:**
+- No real posting was ever relevant — C3 was true for none of them, so the rule's "all three pass" path is tested only on constructed cases.
+- Whether a leftover &nbsp; in the cleaned text can hide a skill — never tested.
+- Real network failures: timeouts, 404s, and real redirects were never triggered. Only the refusal logic is unit-tested.
+- Python 3.11 and 3.12: the tests ran only on 3.13, and the files were only compiled under 3.11.
+- Claude's REASON text: never checked. The validator checks the format and the citations only, as V12 shows.
+- Any other model, or a normal (non-Incognito) chat.
+- I did not read every line of the agent code myself.
+
+**Not claiming:**
+- That any posting is worth applying to.
+- That Claude's judgment is right in general.
+- That the revision caused the improvement — the results are consistent with it, and 0 failures in 20 replies had about a 16% chance of happening anyway.
+- That this works for other boards or personas.
+- That "new" means "newly created" — 7337544 and others had older ids but were new to the agent; why they were missing from run 1 was not checked.
+
+**Signed:** Prasad Shinde, 2026-10-31
+
 ```
