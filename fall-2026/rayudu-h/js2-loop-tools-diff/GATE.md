@@ -83,7 +83,7 @@ No failure is ever turned into a value. A failed or unverified board never produ
 
 ## Amendments
 
-> Added by Claude Code on Oct 31, 2026, at about 7:20 PM ET, while building. Each one awaits Hemanth's acceptance; until then the original text above stands as the decision of record.
+> Added by Claude Code on Oct 31, 2026, at about 7:20 PM ET, while building. Each needed Hemanth's acceptance before it replaced the original text.
 
-- **A1. Failure (b) moves from Perplexity to OpenAI (Ashby).** As written, failure (b) used the same URL as the real Perplexity board. The repeat rule refuses a second identical GET in one run, so the timeout would never be attempted. OpenAI's Ashby board (810 postings on Oct 31) is on an allowed host, and its URL is used nowhere else in the run. Status: [awaiting Hemanth]
-- **A2. A retry under the error policy is not a "repeat".** The repeat rule refuses a second identical request, but the error policy allows one retry of the same GET after a timeout or 5xx. Reading: the repeat rule applies across board entries; the single retry inside one board's error policy is exempt, is logged as `retry`, and **does** count toward the request budget. Status: [awaiting Hemanth]
+- **A1. Failure (b) moves from Perplexity to OpenAI (Ashby).** As written, failure (b) used the same URL as the real Perplexity board. The repeat rule refuses a second identical GET in one run, so the timeout would never be attempted. OpenAI's Ashby board (810 postings on Oct 31) is on an allowed host, and its URL is used nowhere else in the run. Status: **accepted by Hemanth** ("yes to A1 and A2"), Oct 31, 2026, 7:17 PM EDT.
+- **A2. A retry under the error policy is not a "repeat".** The repeat rule refuses a second identical request, but the error policy allows one retry of the same GET after a timeout or 5xx. Reading: the repeat rule applies across board entries; the single retry inside one board's error policy is exempt, is logged as `retry`, and **does** count toward the request budget. Status: **accepted by Hemanth** ("yes to A1 and A2"), Oct 31, 2026, 7:17 PM EDT.
