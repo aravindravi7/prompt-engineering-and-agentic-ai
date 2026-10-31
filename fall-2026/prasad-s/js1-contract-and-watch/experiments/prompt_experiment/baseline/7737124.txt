@@ -1,0 +1,11 @@
+VERDICT: not_relevant
+RESUME_FIELD: target_titles=Product Manager
+RESUME_FIELD: locations=New York
+RESUME_FIELD: skills=Python
+RESUME_FIELD: skills=SQL
+RESUME_FIELD: skills=A/B testing
+RESUME_FIELD: skills=roadmapping
+RESUME_FIELD: skills=user research
+POSTING_FIELD: title=Product Manager: New Grad Accelerator
+POSTING_FIELD: location.name=San Francisco, New York City, Seattle
+REASON: C1 and C2 pass, but C3 fails because the content contains none of the candidate's skills, and at least two are required.

@@ -1,0 +1,122 @@
+{
+  "prompt_file": "prompts/baseline.txt",
+  "prompt_sha256": "f5d787a9b88c5ec036b6ba98e1fc254a309e696120f3521e05b9208d0dc92496",
+  "split": "dev",
+  "final": false,
+  "run_date": "2026-10-27",
+  "timestamp": "2026-10-29T19:05:34-04:00",
+  "model_requested": "claude-sonnet-5-5",
+  "models_in_responses": [
+    "claude-sonnet-5-5"
+  ],
+  "temperature": "not set in the request (API default)",
+  "raw_source": "raw/greenhouse-stripe-2026-10-27T203128.json",
+  "labels_source": "experiments/labels.csv",
+  "scoring": "pass = Claude's verdict exactly equals my label; an invalid reply is a miss",
+  "claude_label": "model judgment",
+  "passes": 9,
+  "total": 10,
+  "invalid_count": 0,
+  "rows": [
+    {
+      "posting_id": 8257892,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/baseline-dev-2026-10-29T190534/8257892.json"
+    },
+    {
+      "posting_id": 8209307,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/baseline-dev-2026-10-29T190534/8209307.json"
+    },
+    {
+      "posting_id": 7947546,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/baseline-dev-2026-10-29T190534/7947546.json"
+    },
+    {
+      "posting_id": 8198323,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/baseline-dev-2026-10-29T190534/8198323.json"
+    },
+    {
+      "posting_id": 7543868,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/baseline-dev-2026-10-29T190534/7543868.json"
+    },
+    {
+      "posting_id": 8128745,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/baseline-dev-2026-10-29T190534/8128745.json"
+    },
+    {
+      "posting_id": 8160776,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/baseline-dev-2026-10-29T190534/8160776.json"
+    },
+    {
+      "posting_id": 8170920,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/baseline-dev-2026-10-29T190534/8170920.json"
+    },
+    {
+      "posting_id": 8314283,
+      "my_label": "relevant",
+      "claude_verdict": "cannot_tell",
+      "match": "no",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/baseline-dev-2026-10-29T190534/8314283.json"
+    },
+    {
+      "posting_id": 8162185,
+      "my_label": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "match": "yes",
+      "valid": "yes",
+      "claude_model": "claude-sonnet-5-5",
+      "claude_invalid_reason": null,
+      "reply_path": "experiments/results/replies/baseline-dev-2026-10-29T190534/8162185.json"
+    }
+  ]
+}

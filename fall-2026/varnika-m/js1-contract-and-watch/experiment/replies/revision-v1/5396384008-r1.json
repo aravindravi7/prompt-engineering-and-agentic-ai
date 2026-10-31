@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:22+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "7c1e176f16466af16afe772509353ab68ec6071b88b04c3dbb433d199cc320d0",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires 8+ years managing corporate device fleets at thousands-of-devices scale, deep iOS/Android MDM experience (Apple Business Manager, ADE, APNs) and shipped Terraform, but the résumé shows about 2.5 years of software engineering at Infosys and Dassault Systemes with no mobile device management experience and lists Terraform only as familiar, not shipped.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 8+ years managing corporate device fleets at thousands-of-devices scale, deep iOS/Android MDM experience (Apple Business Manager, ADE, APNs) and shipped Terraform, but the résumé shows about 2.5 years of software engineering at Infosys and Dassault Systemes with no mobile device management experience and lists Terraform only as familiar, not shipped.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "4048fd7f-81ba-42a3-b816-03b18e6592dc",
+  "total_cost_usd": 0.040881,
+  "job_id": 5396384008,
+  "split": "held-out",
+  "repeat": 1
+}

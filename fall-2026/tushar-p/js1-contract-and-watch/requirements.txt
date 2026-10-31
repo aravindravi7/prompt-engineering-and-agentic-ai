@@ -1,0 +1,4 @@
+# Claude judge (official SDK). Imported only when the Claude judge runs.
+anthropic == 2.3.0
+# Offline tests.
+pytest == 9.2.0

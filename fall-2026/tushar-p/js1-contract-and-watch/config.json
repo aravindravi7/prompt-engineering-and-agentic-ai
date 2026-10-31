@@ -1,0 +1,10 @@
+{
+  "model": "claude-sonnet-5-5",
+  "max_tokens": 16000,
+  "board_url": "https://boards-api.greenhouse.io/v1/boards/stripe/jobs?content=true",
+  "claude_base_url": "https://api.anthropic.com",
+  "persona_path": "persona/cole-palmer.example.json",
+  "state_path": "state/seen_ids.json",
+  "raw_dir": "raw",
+  "out_dir": "out"
+}

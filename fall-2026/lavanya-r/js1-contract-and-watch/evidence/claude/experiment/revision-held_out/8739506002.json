@@ -1,0 +1,29 @@
+{
+  "posting_id": 8739506002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8739506002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "experience",
+      "education"
+    ],
+    "posting_fields": [
+      "title",
+      "content"
+    ],
+    "reason": "The title contains \"AI\" and no excluded words, but the posting requires 6+ years in solutions architecture, technical pre-sales, or a senior hands-on technical role. The job seeker has only about 8 months of co-op experience, so rule 6 fails."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8739506002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"experience\", \"education\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The title contains \\\"AI\\\" and no excluded words, but the posting requires 6+ years in solutions architecture, technical pre-sales, or a senior hands-on technical role. The job seeker has only about 8 months of co-op experience, so rule 6 fails.\"}",
+  "asked_at": "2026-10-30T21:27:04+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "d1fdb28f-b4d2-4f58-aca6-0ce25116d177",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "016986a82b265400a8227c778106fe3a4bca07b91d61a13f35e1283c4b2e43fe"
+}

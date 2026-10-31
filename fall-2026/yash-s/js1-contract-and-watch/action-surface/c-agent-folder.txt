@@ -1,0 +1,5 @@
+total 16
+drwx------@   4 saket  staff    128 Oct 31 03:26 .
+drwx------@ 618 saket  staff  19776 Oct 31 03:26 ..
+-rw-r--r--@   1 saket  staff   1324 Oct 31 03:26 resume.json
+-rw-r--r--@   1 saket  staff   1405 Oct 31 03:26 state.json

@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXNCjFwe5L5hUPjqVxiJ",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQSuwcKEAgTGAI4AUIIdGhpbmtpbmcSDIKBC9IiVjfDIee+txoMrQjJgIa8kcLh1hYdIjAg0+tq1aUdETv1ZrHafth0/nhBzs9uMzr+t2h4JDxJ7xE2LUEZ5k9QjUCIkMEEDMsq2Aa4skRxgUTP0ND0/WZD6mW2u8tBjiYA5hJvE/RPRGVmytO7Liij4nV/DpZcSkqZBQ+ccRUCqdim1e5nlYzT4EbHFRbyQ67AadujrLtL5e7Nh3ds8btN5Yos/s1RgZO7xu2Z2N6/tZIU3iHgv4xKtK6+urtWDXPXa0Xj+n5W1x8wDgoeGEkO7YKNY8cG5N7YTfR5y+b5eCUZTt4Fmbxmi9r7fSKmKGA2U84QwWBhpKETiBChyGIqgXv9WazthaPQ3hwvQel+4EW/Qt09OEPSI192slNcM/PmEd0b8AGsTPxuEaKqb6Y4VK3CjzcL7uLvhCJ9yTbVmMIcZl6HGlvO3m3349cEf6Ypi4YOsbeaQvL1pWRwRIWux3WsGZqupJJtvWqSP1KlhuZF0KeMpUZg+u1FBm2vNDUIPsGfiZETpQTIKkZzPXyR+Ou4GVh7WreF7P4zOshek9mSMzDaBqxugHtgd5i/I1dt4fYo7EKaPj/cb1LhYywTlK2Jh8kFWvuJVdA31Lzo6cfuiBBjsgiIPgEPWkXTGUGBo8jy39MqQCq+llkHAH60PpXahfJMFjZe54OYOW2y9ewObd6zeEVdSCZfR9H51w+5HtFMi+efBk/PpobOHKiIKQYw465U9oREhimopTUDLsYg8vrCtmaMRjdVbqEgQUr/ccj0n5wBUy5VoIQYHooenQUk5QHY7HFi6hdBMB5/nXWlXYqTb503lMf4Cp6Q6xr0sID2ealKpxjpquF7zQ2Gbe/gzWqy4911CXGAD9RsZLpKfq6FSGKBElAYE2y56ELz5mqo9X4QZMVRo8lMoMM+i4Ku64cy1eDuOcBC9MwoM8z3We9gxMmIi3HFiDF1Iv0egf6iXZnT4v82/FXkdB/VyiwfFD+URUn36XIzRrUR8dNNa7IKvXWjnee5s7dnY/CTCctXfRNDv7w8YA6/d98o4W/UdgBdmaHVcixQtDSAkQ/GHSl49KH4p1KsBfdO5Vu4hmjTqWSR48b83p1PigKzPRBUSSUR9bc77Sh4hUCO3LfxhlNjAgaXC5ddpuhMrqBACFFh7wYq5bF0abS37OTO1f+jEqC4J+op9yZkT8d1HnTrz4ZP27R9haurt6Gp+hyrNpCd+FAnBZCBixBlfTW4fasOGAE=",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8198323\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Solutions Engineer, AI Build Team\\\" contains none of Software Engineer, AI Engineer, Backend Engineer, so R1 fails.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"\\\"7+ years of relevant experience\\\" gives a minimum of 7, which is more than 3, so R4 fails for a new grad.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"\\\"US-SF, US-NYC, US-Remote\\\" shows the US, so R3 passes.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"Content lists \\\"Python\\\" and \\\"Java\\\" as relevant languages, so R6 passes.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3677,
+    "output_tokens": 476,
+    "output_tokens_details": {
+      "thinking_tokens": 166
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

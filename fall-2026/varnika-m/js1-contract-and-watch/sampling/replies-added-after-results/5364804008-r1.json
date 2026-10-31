@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:22:09+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "9151c90ed63d129e63f0e127a0298526aa5f6db2ce8cc78de1dae825305bca31",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The résumé shows about two years of Java service maintenance at Infosys, a five-month TypeScript co-op, and a Helm/Kubernetes CLI project, but no described Python production work, no large-scale data or ML training/inference pipelines, and no research tooling, while the posting requires Python proficiency and production data-intensive or distributed systems experience, and its $350K–$500K range points to a senior ML infrastructure role.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The résumé shows about two years of Java service maintenance at Infosys, a five-month TypeScript co-op, and a Helm/Kubernetes CLI project, but no described Python production work, no large-scale data or ML training/inference pipelines, and no research tooling, while the posting requires Python proficiency and production data-intensive or distributed systems experience, and its $350K–$500K range points to a senior ML infrastructure role.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "d804d09b-3802-48af-afee-0f263ee68f86",
+  "total_cost_usd": 0.0176826,
+  "job_id": 5364804008,
+  "split": "development",
+  "repeat": 1
+}

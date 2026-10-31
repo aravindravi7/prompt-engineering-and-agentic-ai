@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:28:59+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "3c2bb73f1aeda2f4fa738be8e028dc4413b9d85dfa8049844e366620a04d15b6",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting is a Staff+ role whose must-haves include deep experience with build systems and CI/CD in a large monorepo environment and owning technical strategy, but the résumé shows about two years at Infosys plus a co-op, with Jenkins/Kubernetes/Helm skills and a Helm linter project and no stated monorepo build-system work, so it is not a realistic next job at this level.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting is a Staff+ role whose must-haves include deep experience with build systems and CI/CD in a large monorepo environment and owning technical strategy, but the résumé shows about two years at Infosys plus a co-op, with Jenkins/Kubernetes/Helm skills and a Helm linter project and no stated monorepo build-system work, so it is not a realistic next job at this level.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "608f5ba0-de08-4037-b527-aeae79a2131f",
+  "total_cost_usd": 0.037840000000000006,
+  "job_id": 5110511008,
+  "split": "development",
+  "repeat": 1
+}

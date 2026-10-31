@@ -1,0 +1,191 @@
+{
+  "source": "evidence/raw/anthropic-2026-10-31T074011Z.json.gz",
+  "seed": 7375,
+  "pool": 665,
+  "stratum_sizes": {
+    "A": 19,
+    "B": 646
+  },
+  "postings": [
+    {
+      "job_id": 4981828008,
+      "stratum": "A",
+      "split": "development",
+      "sampling": true,
+      "title": "Software Engineer, Research Tools",
+      "location": "San Francisco, CA | New York City, NY; San Francisco, CA | New York City, NY | Seattle, WA",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/4981828008"
+    },
+    {
+      "job_id": 5110511008,
+      "stratum": "B",
+      "split": "development",
+      "sampling": true,
+      "title": "Staff+ Software Engineer, Developer Productivity",
+      "location": "San Francisco, CA | New York City, NY | Seattle, WA",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5110511008"
+    },
+    {
+      "job_id": 5161402008,
+      "stratum": "B",
+      "split": "development",
+      "sampling": false,
+      "title": "Data Scientist, Growth",
+      "location": "New York City, NY | Seattle, WA; San Francisco, CA",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5161402008"
+    },
+    {
+      "job_id": 5364804008,
+      "stratum": "A",
+      "split": "development",
+      "sampling": false,
+      "title": "Machine Learning Infrastructure Engineer, Safeguards Research",
+      "location": "San Francisco, CA | New York City, NY",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5364804008"
+    },
+    {
+      "job_id": 5400153008,
+      "stratum": "A",
+      "split": "development",
+      "sampling": true,
+      "title": "Software Engineer, Business Technology",
+      "location": "New York City, NY | Seattle, WA; San Francisco, CA | New York City, NY",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5400153008"
+    },
+    {
+      "job_id": 5418610008,
+      "stratum": "A",
+      "split": "development",
+      "sampling": true,
+      "title": "Data Engineer, GTM",
+      "location": "San Francisco, CA | New York City, NY",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5418610008"
+    },
+    {
+      "job_id": 5424111008,
+      "stratum": "A",
+      "split": "development",
+      "sampling": false,
+      "title": "Recruiting Analytics Data Engineer ",
+      "location": "San Francisco, CA | New York City, NY | Seattle, WA",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5424111008"
+    },
+    {
+      "job_id": 5432583008,
+      "stratum": "B",
+      "split": "development",
+      "sampling": false,
+      "title": "[London] Applied AI Architect, Partnerships",
+      "location": "London, UK",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5432583008"
+    },
+    {
+      "job_id": 5441867008,
+      "stratum": "B",
+      "split": "development",
+      "sampling": true,
+      "title": "Director, Infrastructure Lease Accounting",
+      "location": "San Francisco, CA",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5441867008"
+    },
+    {
+      "job_id": 5464894008,
+      "stratum": "B",
+      "split": "development",
+      "sampling": false,
+      "title": "Manager, Enterprise Sales - Asset & Wealth Management",
+      "location": "New York City, NY",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5464894008"
+    },
+    {
+      "job_id": 5098025008,
+      "stratum": "A",
+      "split": "held-out",
+      "sampling": false,
+      "title": "Model Performance Software Engineer, Claude Code",
+      "location": "San Francisco, CA | New York City, NY",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5098025008"
+    },
+    {
+      "job_id": 5311234008,
+      "stratum": "B",
+      "split": "held-out",
+      "sampling": false,
+      "title": "Safeguards Enforcement Analyst, Age-Appropriate Design",
+      "location": "San Francisco, CA | New York City, NY | Washington, DC",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5311234008"
+    },
+    {
+      "job_id": 5383710008,
+      "stratum": "B",
+      "split": "held-out",
+      "sampling": false,
+      "title": "AV Operations Specialist",
+      "location": "New York City, NY",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5383710008"
+    },
+    {
+      "job_id": 5386182008,
+      "stratum": "B",
+      "split": "held-out",
+      "sampling": false,
+      "title": "Product Manager, New Markets and Monetization",
+      "location": "San Francisco, CA",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5386182008"
+    },
+    {
+      "job_id": 5391356008,
+      "stratum": "B",
+      "split": "held-out",
+      "sampling": false,
+      "title": "Manager, Account Executive",
+      "location": "Tokyo, Japan",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5391356008"
+    },
+    {
+      "job_id": 5396384008,
+      "stratum": "A",
+      "split": "held-out",
+      "sampling": false,
+      "title": "IT Systems Engineer, Mobile Client Platform Engineer ",
+      "location": "Boston, MA; Remote-Friendly (Travel-Required) | San Francisco, CA | Seattle, WA | New York City, NY; Washington, DC",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5396384008"
+    },
+    {
+      "job_id": 5421263008,
+      "stratum": "A",
+      "split": "held-out",
+      "sampling": false,
+      "title": "Software Engineer, Tokens and Prompt Structures",
+      "location": "San Francisco, CA | New York City, NY",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5421263008"
+    },
+    {
+      "job_id": 5439830008,
+      "stratum": "B",
+      "split": "held-out",
+      "sampling": false,
+      "title": "Applied AI Architect, International Policy",
+      "location": "San Francisco, CA | New York City, NY | Washington, DC",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5439830008"
+    },
+    {
+      "job_id": 5445625008,
+      "stratum": "A",
+      "split": "held-out",
+      "sampling": false,
+      "title": "IT Systems Engineer, Client Platform Engineer, macOS",
+      "location": "Boston, MA; Remote-Friendly (Travel-Required) | San Francisco, CA | Seattle, WA | New York City, NY; Washington, DC",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5445625008"
+    },
+    {
+      "job_id": 5462966008,
+      "stratum": "A",
+      "split": "held-out",
+      "sampling": false,
+      "title": "Security Data Engineer",
+      "location": "Remote-Friendly (Travel Required) | San Francisco, CA",
+      "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5462966008"
+    }
+  ]
+}

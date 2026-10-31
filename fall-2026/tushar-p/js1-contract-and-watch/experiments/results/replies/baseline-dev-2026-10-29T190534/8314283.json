@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXNE6H25kZxDXAqSchzZ",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQStwcKEAgTGAI4AUIIdGhpbmtpbmcSDFYN0QG512f8gjejGxoM6qUrn+n0BAVNoUfUIjDsKSmG5UDLWTzTxNmySuqOWS1LhPRT9PgifpjcAlJcIySfGCziBPYJ9sXmpqETwl0q1AYplIRdja+WR+qY6fhZUBOWw5tOWCMzNVH06RUGbgQygs5o1KAk105EQy9Nk8dyyj1wBmRouv2t92BxS7EW8WT4nHopG6roFqEx2tKm8N1CT1xmNj8L5qyNK93Oov+rkDkUMlaP1JlDQkM3/Orb6QxWpMAtbsRrvlJW/zQeKZ7jMaUiyqqaD1DRIZw9EBkH6S+SugUCjHsb0BrCLWdvZC3aoXEM8chlNSIzeYCLd5G8zgk2wi2SCRQMuLZKn7GjGSp7EaDCs3r2tw77vRMf1a6bNW7tLXkc5tnpQvgTGHF7+mqRcPNYCdhVlSi+7ECxxp11fM1bkWOvsiBi47m214ESue/RUnMC7g7Y781FohNwB1P3Du0mxXcO3xNAXh4F1AvIolGIO5l5l7MXQM1y/5aEKKs7JEZin0QoepqcacnQ/OmCtQfyrjuenVflmuJ9ZfJl3R57nwLrR+230POjHbeTMlsAdlaxA02+cLcT5ips3rGIKj0fj0Uk+QrOHyE+XeBbWGa3e1fsSxChGCvWkGa07ducXJhxsTY2RrqbWI+svTNIlxaH8fTyPmzwGuh3EVZXSletTwnXY/qw0Yf4HtOQ+usNMjI+BEkls+aQHCEZJBCMt6pvZaKjApffEdw7u1ShK7AlQpHRit++VAvfWHKZul0bhVlPFmPX4p8o073EilJ3TJ/IZDZIrnSOUJeiu+xxmVyw4XmDiJWkC5L+kKpMXh42EpOU51o+10SJcLI2PopIcSrZ+b/fI5Tyy1CZbqhiaTupRY5ZSra0pXIaeGmIg1uhpN1xa4RGct7FG+iBcrV41AqI++d1AHVKIynb8ePAP0zxAr5yUH5cXdMJ+SMsGauCS3yGuTtCOEHfvEk2/EjrqgBFJr7VsOGOwB9K8bU+tpOaoGYz0G69jqMnv3G4/97qINpV7bDgWB2EkHReIMCRZ1Wt6mepYAVbh+hR/x8Hfn/yDB4vZAHCqvgiN/F4CbnF5adVIE1BdV9Y5G6fPhCI0/RML/SVccQhIOtLCYEL8d8IeCKhweLsPOms34tB+mlFeYUAjHNNq9GGDOlfGrTrwO1Q1TG5N7wBrjOc2s8dmDiV6hDx4jh0tKD6WS0MxkAgeMKiBa2j22fvMeJGBpLV+KgYAQ==",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8314283\",\"verdict\":\"cannot_tell\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title is \\\"Software Engineer\\\", which matches a target title and has no excluded words. R1 passes.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"first_published\",\"evidence\":\"Published 2026-10-22, 5 days before the run date of 2026-10-27. R2 passes.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"\\\"South San Francisco, CA\\\" names a listed US city. R3 passes, and the \\\"CA\\\" abbreviation is not needed.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"The content has no \\\"N+ years\\\" or \\\"N-M years\\\" pattern. \\\"two (2) years\\\" is spelled out and is not a counted form. R4 is unknown.\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"None of the listed no-sponsorship phrases appear. R5 passes.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"The content mentions \\\"AWS, Azure, or GCP\\\", and AWS is in the skills list. R6 passes.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2838,
+    "output_tokens": 622,
+    "output_tokens_details": {
+      "thinking_tokens": 176
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

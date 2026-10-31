@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXPMDqFGeAvengnSu88a",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS9QkKEAgTGAI4AUIIdGhpbmtpbmcSDC4uzgnj129wL7wV9RoMsuysSXx+YnOBEjByIjBUb/9MFoh8h21Vyx1I/4yuJwq5wKZ9wrInhYEr41rTirA5lpVWuFUcV+AE6RQ2FfUqkgm2yNs77f+JqnT6gCZaggbtF8i36coNKacyb83zK8lT1WHiXS8lpU4nul6wQlwYcbHugGZAZh8Tx7veQcwAS1oBRJsnvI05QzUYECMBIGK+QQ/S6c8JMs3fnQ/iAGBnW1XT0aYiXmusN9ymR2NAA1XP2sHu/Tt189uV1l5qx32iEZVTvOgXj/l1xdeZwxYJFnXO0w6N3eYmHi+gKLuOeOxgLaSIe1hbf6aoBcLB0jucaY7Akk19S8dNdjPocrcgKK64h1JPQ2Jj4fd1B4GvbeXSB2BKbaQpjUn1NDfF5Q1DU9cMp4hqdMGgCEUxBNy5aUdNZzLxTYatvfW7zGdWDY4fhHmBOUf9d1e1I6d8Tv7VioiW2VHy/gol1q77+p5v7Go1JmnIwbcBJilS7nnL6tJXdcI0iss9Tpbf1Gi0eLmxXbctUY00zPwpD+Bm/+QUrBavm59qo3P6ZRpbNL+LVVtt7iyf6RI7yQ+uGnm2iFlkHRnC5BW51V8KJrVBDt1rmKUHtOOZg8UTPnn4SOqBaKFXjNlmurZukTPWtVqfRcLwMUYS12Jdm1+dXXz4h0tVhluNV5p5A8XC80YSS2FLdiS8MfZlflBZJOn0OBvfDxnKDHRRV32gZgUNYNBNrEahYvOdjD+AaaioivjAjjIw+4ldGUP8gYIVLzQNWFa6oR3v7jHGJgMgdw0GTcqqk+XVcMOGIsoJV3olczw2Fl8o45/0coJ+WpflzHeQ7fqDyYmoqHPuoDe3Q1DXM+bZajGi8Z0+owtPqIxrxEsBINXJFbKfJ/nZdYSbbXuHSjBPPriDHESg4OWDq4ZrM4toy3E4Wi5cie+cSxYiZpbotevggA7AJU0CNVyCCi5o5lGRZoM+37ShGlyDLd9QdAdF4L4MH5zCh8aJ6/HDoKHeSYWfKIWSAchcsBnbfHekWVj2pG9h4GeUVweUps0miwKnZbvuLpnhh4kmupmADYBg/i/4MzsXXiOg8Q+A/XIZ9PZnWLnkTe9mfgRWgEv+SppT6gj9YmkygA8RRmOqsoZyL9cuSRyG4Q+zIemd7sWErJRgfHuCANkYXS53SdnyD4LPF8iSshRJE+zC/VRdrV5H5qDa3/KlyQGsSkEQiDJu4JQsyOrblc5EkkVDABOl2B0q2QAGxutnz5m1AhuFMRQgfP4D8QU0GkGkuNLIuQc05lyB9fYhGjsY7kTsVpLqR9+P/8QmUNilF+fwiYg+vsKBEuXbhF7JyyNvTYZzZn1gpB9XC3l15zKrAR0YDzI+0KqGuDbBknTgke4IL2/SasiaA8gO0mR8xDev10ahGcZDPAQ+sZW8iYO0EbB0Av+gQntpi2Z6jHmE5Tzb+3X1c/bjKlHkfwdf9W1/KGcSdDTLRYjo2SA5Hwy3eIN85yH7uGdlmERVqemFBBrWqXVaVS5+RkVBhVUvJoEqR6qbVtGAUloLH73HBhtRfRcER/DFPuIGdSbL4ZIjxiKTsG+akugs4gkPB3vLvWHJD+vejK0MATHuB2ly7iO2ilZQb749jwmP+WNgNnPZkYLnTijHibAVrfpFha0GqVAYAQ==",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"7208537\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Software Engineer, Money Movement\\\" contains \\\"Software Engineer\\\" and none of the excluded words, so R1 passes.\"},{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"first_published\",\"evidence\":\"first_published is 2025-10-22, about a year before the run date 2026-10-27, so R2 fails. updated_at is only a fallback when first_published is missing.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location is \\\"London\\\", which is not a US location, so R3 fails.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"Content says \\\"2-12+ years of industry software engineering experience\\\". The \\\"12+ years\\\" minimum is above 3, so R4 fails for a new grad.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker or AWS appears as a whole word in the content, so R6 fails.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3097,
+    "output_tokens": 720,
+    "output_tokens_details": {
+      "thinking_tokens": 306
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

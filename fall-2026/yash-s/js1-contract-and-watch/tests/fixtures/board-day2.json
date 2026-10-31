@@ -1,0 +1,80 @@
+{
+  "_comment": "CONSTRUCTED test fixture for watch.py and judge.py, shaped like a Greenhouse jobs response. Not real Databricks data.",
+  "jobs": [
+    {
+      "id": 1001,
+      "title": "Staff Machine Learning Engineer",
+      "absolute_url": "https://example.com/jobs/1001",
+      "location": {
+        "name": "Remote (fixture)"
+      },
+      "first_published": "2026-10-01T00:00:00-04:00",
+      "updated_at": "2026-10-01T00:00:00-04:00",
+      "requisition_id": "FX-1001",
+      "content": "&lt;p&gt;Build machine learning systems in Python and SQL.&lt;/p&gt;"
+    },
+    {
+      "id": 1003,
+      "title": "Data Engineer",
+      "absolute_url": "https://example.com/jobs/1003",
+      "location": {
+        "name": "Remote (fixture)"
+      },
+      "first_published": "2026-10-01T00:00:00-04:00",
+      "updated_at": "2026-10-01T00:00:00-04:00",
+      "requisition_id": "FX-1003",
+      "content": "&lt;p&gt;Build data pipelines with SQL and Delta Lake on AWS.&lt;/p&gt;"
+    },
+    {
+      "id": 1004,
+      "title": "Senior Software Engineer - AI Runtime",
+      "absolute_url": "https://example.com/jobs/1004",
+      "location": {
+        "name": "Remote (fixture)"
+      },
+      "first_published": "2026-10-01T00:00:00-04:00",
+      "updated_at": "2026-10-01T00:00:00-04:00",
+      "requisition_id": "FX-1004",
+      "content": "&lt;p&gt;Use Go and Kubernetes for model serving.&lt;/p&gt;"
+    },
+    {
+      "id": 1004,
+      "title": "Senior Software Engineer - AI Runtime",
+      "absolute_url": "https://example.com/jobs/1004",
+      "location": {
+        "name": "Remote (fixture)"
+      },
+      "first_published": "2026-10-01T00:00:00-04:00",
+      "updated_at": "2026-10-01T00:00:00-04:00",
+      "requisition_id": "FX-1004",
+      "content": "&lt;p&gt;Use Go and Kubernetes for model serving.&lt;/p&gt;"
+    },
+    {
+      "id": 1005,
+      "title": "Account Executive",
+      "absolute_url": "https://example.com/jobs/1005",
+      "location": {
+        "name": "Remote (fixture)"
+      },
+      "first_published": "2026-10-01T00:00:00-04:00",
+      "updated_at": "2026-10-01T00:00:00-04:00",
+      "requisition_id": "FX-1005",
+      "content": "&lt;p&gt;Sell the Databricks platform. Python is helpful but not required.&lt;/p&gt;"
+    },
+    {
+      "id": 1006,
+      "title": "Staff Machine Learning Engineer",
+      "absolute_url": "https://example.com/jobs/1006",
+      "location": {
+        "name": "Remote (fixture)"
+      },
+      "first_published": "2026-10-01T00:00:00-04:00",
+      "updated_at": "2026-10-01T00:00:00-04:00",
+      "requisition_id": "FX-1006",
+      "content": "&lt;p&gt;Train models with Python, SQL and MLflow.&lt;/p&gt;"
+    }
+  ],
+  "meta": {
+    "total": 6
+  }
+}

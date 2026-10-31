@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:15+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "66f44ee53ae31eb34fe348fcb61936d2d0bbf30a17ee417b98606391015ce2b2",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting asks for 8+ years building secure IT systems, hands-on management of thousands of macOS devices through an MDM, and deep macOS internals (launchd, TCC, configuration profiles), but the résumé shows about 2.5 years of software engineering plus a co-op with no macOS, MDM or endpoint-management experience, though its Kubernetes/Helm config-as-code work and Python only partly overlap.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting asks for 8+ years building secure IT systems, hands-on management of thousands of macOS devices through an MDM, and deep macOS internals (launchd, TCC, configuration profiles), but the résumé shows about 2.5 years of software engineering plus a co-op with no macOS, MDM or endpoint-management experience, though its Kubernetes/Helm config-as-code work and Python only partly overlap.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "03fce35b-09df-4a6a-805c-89b2781718e5",
+  "total_cost_usd": 0.038783000000000005,
+  "job_id": 5445625008,
+  "split": "held-out",
+  "repeat": 1
+}

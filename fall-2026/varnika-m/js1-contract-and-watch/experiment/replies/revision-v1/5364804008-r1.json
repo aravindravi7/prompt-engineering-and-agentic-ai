@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:28:59+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "b84c842c750b48354b72e3f98ce073d138ed98364a1eae92c4ba017107d04eed",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The résumé shows about 2.5 years of experience (Java services and a payment API at Infosys, plus a 5-month TypeScript feature-flag co-op at Dassault), but no shipped Python work and no research-to-deployment ML pipeline experience, which the posting's minimum qualifications require for a senior role paying $350K–$500K.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The résumé shows about 2.5 years of experience (Java services and a payment API at Infosys, plus a 5-month TypeScript feature-flag co-op at Dassault), but no shipped Python work and no research-to-deployment ML pipeline experience, which the posting's minimum qualifications require for a senior role paying $350K–$500K.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "6938e2ff-f69e-45b3-bbc1-76280446e7e7",
+  "total_cost_usd": 0.04161,
+  "job_id": 5364804008,
+  "split": "development",
+  "repeat": 1
+}

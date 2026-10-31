@@ -1,0 +1,25 @@
+{
+  "surface": "1-paste",
+  "command": [
+    "claude",
+    "--output-format",
+    "json",
+    "--no-session-persistence",
+    "--model",
+    "claude-opus-5-5",
+    "--tools",
+    ""
+  ],
+  "files_before": [],
+  "files_after": {},
+  "num_turns": 1,
+  "permission_denials": [],
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "raw_reply": "{\"posting_id\": 6865698002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"education.0.end_date\", \"education.0.status\"], \"posting_fields\": [\"content\"], \"reason\": \"The posting requires graduating in fall 2026 or spring 2027, but the job seeker completed her MS in December 2025, so she fails rule 6. The title, US locations, skills overlap (Python, Databricks, Unity Catalog) and lack of a sponsorship restriction would otherwise qualify.\"}",
+  "verdict": "INVALID",
+  "errors": [
+    "resume_fields names fields that do not exist: ['education.0.end_date', 'education.0.status']"
+  ]
+}

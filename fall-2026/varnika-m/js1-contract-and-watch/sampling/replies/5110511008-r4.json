@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:37+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "bf71722042cfbdcdfbd41c1b8bf9738fd8462923a49f16ffc0d06e40d016a772",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting is a Staff+ role that lists 15+ years of non-co-op engineering experience and 3+ years as a tech lead as strong-candidate traits, while the résumé shows about two years at Infosys plus a five-month co-op and no tech-lead work, so despite relevant Python, Jenkins, Kubernetes, Docker and CLI-tool (helm-chart-linter) experience the seniority gap makes it an unrealistic next job.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting is a Staff+ role that lists 15+ years of non-co-op engineering experience and 3+ years as a tech lead as strong-candidate traits, while the résumé shows about two years at Infosys plus a five-month co-op and no tech-lead work, so despite relevant Python, Jenkins, Kubernetes, Docker and CLI-tool (helm-chart-linter) experience the seniority gap makes it an unrealistic next job.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "e01cb3cb-80bd-4d22-ab26-976e0de47fa3",
+  "total_cost_usd": 0.010676999999999999,
+  "job_id": 5110511008,
+  "split": "development",
+  "repeat": 4
+}

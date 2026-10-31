@@ -1,0 +1,86 @@
+You are evaluating whether a single job posting is relevant to a candidate.
+Judge the posting based on the candidate's résumé and the job requirements.
+Consider the candidate's skills, experience, education, preferred roles, and locations.
+Consider the responsibilities, qualifications, and location described in the posting.
+Use your own judgment to determine whether the role is a reasonable fit.
+Provide a concise justification based on evidence from both the résumé and posting.
+Cite the résumé fields and posting fields that support your decision.
+Your reply must be only a valid JSON object with exactly these four keys:
+verdict, justification, resume_fields, posting_fields
+verdict must be exactly "relevant" or "not_relevant".
+resume_fields may contain only target_titles, skills, locations, experience, education.
+posting_fields may contain only title, content, location.name.
+Do not wrap the JSON in markdown code fences, and do not add any text before or after it.
+
+Candidate résumé:
+{
+  "target_titles": [
+    "Software Engineer",
+    "Backend Engineer",
+    "Backend Software Developer"
+  ],
+  "skills": [
+    "Java",
+    "Python",
+    "Spring Boot",
+    "REST APIs",
+    "PostgreSQL",
+    "Redis",
+    "Apache Kafka",
+    "Docker",
+    "Kubernetes",
+    "AWS",
+    "Git",
+    "CI/CD"
+  ],
+  "locations": [
+    "Mountain View, CA",
+    "San Francisco, CA",
+    "Remote"
+  ],
+  "experience": [
+    {
+      "company": "Northstar Systems",
+      "title": "Backend Software Engineer",
+      "location": "San Francisco, CA",
+      "start_date": "2023-06",
+      "end_date": "2026-08",
+      "highlights": [
+        "Developed Java and Spring Boot microservices for transaction processing.",
+        "Designed REST APIs and optimized PostgreSQL queries.",
+        "Implemented Kafka-based asynchronous workflows.",
+        "Deployed containerized services using Docker and Kubernetes.",
+        "Automated testing and deployments through CI/CD pipelines."
+      ]
+    },
+    {
+      "company": "Cedar Labs",
+      "title": "Software Engineering Intern",
+      "location": "Remote",
+      "start_date": "2022-05",
+      "end_date": "2022-08",
+      "highlights": [
+        "Built Python API endpoints for internal applications.",
+        "Added automated unit tests and improved error handling."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Westbridge University",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "graduation_year": 2023
+    }
+  ]
+}
+
+Job posting:
+{
+  "id": 4720549005,
+  "title": "VP, Growth Marketing",
+  "location": {
+    "name": "Mountain View, CA"
+  },
+  "content": "About Glean: &nbsp; Glean is the Work AI platform that helps everyone work smarter with AI. What began as the industry’s most advanced enterprise search has evolved into a full-scale Work AI ecosystem, powering intelligent Search, an AI Assistant, and scalable AI agents on one secure, open platform. With over 100 enterprise SaaS connectors, flexible LLM choice, and robust APIs, Glean gives organizations the infrastructure to govern, scale, and customize AI across their entire business - without vendor lock-in or costly implementation cycles. &nbsp; At its core, Glean is redefining how enterprises find, use, and act on knowledge. Its Enterprise Graph and Personal Knowledge Graph map the relationships between people, content, and activity, delivering deeply personalized, context-aware responses for every employee. This foundation powers Glean’s agentic capabilities - AI agents that automate real work across teams by accessing the industry’s broadest range of data: enterprise and world, structured and unstructured, historical and real-time. The result: measurable business impact through faster onboarding, hours of productivity gained each week, and smarter, safer decisions at every level. &nbsp; Recognized by Fast Company as one of the World’s Most Innovative Companies (Top 10, 2025), by CNBC’s Disruptor 50, Bloomberg’s AI Startups to Watch (2026), Forbes AI 50, and Gartner’s Tech Innovators in Agentic AI, Glean continues to accelerate its global impact. With customers across 50+ industries and 1,000+ employees in more than 25 countries, we’re helping the world’s largest organizations make every employee AI-fluent, and turning the superintelligent enterprise from concept into reality. &nbsp; If you’re excited to shape how the world works, you’ll help build systems used daily across Microsoft Teams, Zoom, ServiceNow, Zendesk, GitHub, and many more. You'll be deeply embedded where people get things done. You'll ship agentic capabilities on an open, extensible stack, with the craft and care required for enterprise trust, as we bring Work AI to every employee, in every company. &nbsp; About the Role: &nbsp; Glean is seeking a strategic, data-driven, and execution-oriented VP of Growth Marketing to lead our global growth engine across Demand Generation, Digital, Field Marketing, and Partner Marketing—and to shape the future of demand generation for an AI-native company navigating an ever-evolving market. You will own how Marketing turns spend, programs, and team execution into measurable pipeline and revenue outcomes for Glean’s Enterprise AI platform, partnering closely with Sales, SDRs, Product Marketing, Corp Marketing, Customer Marketing, RevOps, and Executive leadership to set growth priorities, allocate investment, improve conversion, and scale what works. &nbsp; This is a highly visible leadership role for a leader who can operate strategically while remaining close to execution—setting the annual growth plan, designing the operating model for pipeline creation and conversion, rigorously evaluating performance, coaching a high-performing team, and stepping in directly when a launch, funnel challenge, or major growth initiative requires hands-on leadership. &nbsp; You will sit at the center of Glean’s go-to-market motion, helping establish Glean as the category-defining AI platform by building a predictable, AI-first demand engine that fuels new-logo growth and expansion across our customer base. &nbsp; You will: Own Glean's growth marketing strategy and execution, leading demand generation, digital, ABM, field marketing, partner marketing, and integrated campaigns with accountability for pipeline, revenue, and ARR growth. Serve as a core member of the executive go-to-market leadership team, partnering closely with Sales, SDR, Product, Partnerships, Customer Success, Finance, and RevOps to shape GTM strategy and accelerate company growth. Build and scale a world-class growth engine that consistently delivers predictable, efficient pipeline across Enterprise, Commercial, and Global markets. Translate company growth objectives into marketing strategy, investment priorities, operating plans, and measurable business outcomes across segments, regions, and channels. Lead, coach, and inspire a high-performing team across demand generation, digital marketing, ABM, field marketing, partner marketing, and campaign strategy, fostering a culture of ownership, experimentation, and operational excellence. Architect integrated go-to-market programs that connect product launches, thought leadership, digital, events, field marketing, partner ecosystems, and ABM into a scalable growth engine. Champion an AI-first marketing organization by embedding AI into campaign planning, content creation, experimentation, personalization, reporting, and operational workflows—making Glean the showcase for modern AI-powered marketing. Build the operating cadence that aligns executive leadership around pipeline health, forecast accuracy, investment decisions, campaign performance, and continuous optimization. About you: 12+ years of B2B SaaS or enterprise technology marketing experience, with leadership responsibility for growth, demand generation, or revenue marketing supporting enterprise sales. Proven track record of building and scaling growth engines that deliver predictable pipeline, revenue, and ROI through integrated digital, ABM, field, partner, and lifecycle marketing. Strong business and analytical acumen, with expertise in forecasting, attribution, funnel optimization, investment planning, and marketing performance measurement. Experienced people leader who has built and developed high-performing teams and leaders, creating a culture of accountability, experimentation, and operational excellence. Executive-level communicator with the ability to influence cross-functional stakeholders, translate data into strategic decisions, and align teams around shared business goals. Thrives in fast-paced, high-growth environments, bringing structure to ambiguity while balancing speed, rigor, and continuous experimentation. AI-first mindset, with hands-on experience leveraging AI to improve marketing execution, personalization, analytics, and team productivity. Location: This role is hybrid (4 days a week in our Mountain View office) Compensation &amp; Benefits: &nbsp; The standard base salary range for this position is $311,000 - $355,000 annually. Compensation offered will be determined by factors such as location, level, job-related knowledge, skills, and experience. Certain roles may be eligible for variable compensation, equity, and benefits. &nbsp; We offer a comprehensive benefits package including competitive compensation, Medical, Vision, and Dental coverage, generous time-off policy, and the opportunity to contribute to your 401k plan to support your long-term goals. When you join, you'll receive a home office improvement stipend, as well as an annual education and wellness stipends to support your growth and wellbeing. We foster a vibrant company culture through regular events, and provide healthy lunches daily to keep you fueled and focused. &nbsp; We’re committed to building and sustaining a diverse, inclusive workplace. We strive to attract and retain people with a wide range of backgrounds, experiences, and perspectives, and we do not discriminate on the basis of gender, ethnicity, sexual orientation, religion, civil or family status, age, disability, or race. &nbsp; #LI-HYBRID &nbsp; AI-First Mindset at Glean: &nbsp; At Glean, AI fluency is core to how we work and we're committed to ensuring every new hire feels confident integrating AI into their everyday work. As part of the interview process, you'll complete a brief AI-focused exercise or discussion so we can understand how you think about, design, and use AI to drive impact in your role. Feel free to reference any tools, platforms, or workflows you use today — prior Glean experience isn't required. &nbsp; Global Data Privacy Notice for Job Candidates and Applicants: &nbsp; Depending on your location, the General Data Protection Regulation (GDPR), California Consumer Privacy Act (CCPA), or other privacy laws may regulate the way we manage the data of job applicants. Our full notice outlining how data will be processed as part of the application procedure for applicable locations is available in our Privacy Policy . By submitting your application, you are agreeing to our use and processing of your data as required. US applicants and their applications are subject to arbitration of disputes as outlined in our Applicant Arbitration Agreement . By clicking “Submit Application,” I confirm that I have read the Global Data Privacy Notice and the Applicant Arbitration Agreement , and I agree to the terms.&nbsp;&nbsp;"
+}

@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:05+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "b86d061890c2ce073e7ce07bd253c6087cf8b3b1e9779103a7b68b9009f18227",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires 5+ years in customer- or partner-facing roles such as Solutions Architect or Sales Engineer and a track record with GSIs/cloud providers, but the résumé shows only internal software engineering roles (Infosys 2021-2023, a Dassault Systemes co-op in 2026) with no pre-sales, partner-facing or GSI experience.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 5+ years in customer- or partner-facing roles such as Solutions Architect or Sales Engineer and a track record with GSIs/cloud providers, but the résumé shows only internal software engineering roles (Infosys 2021-2023, a Dassault Systemes co-op in 2026) with no pre-sales, partner-facing or GSI experience.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "3ccf7bea-6b28-4a79-8e81-6c30a6fb4896",
+  "total_cost_usd": 0.037377,
+  "job_id": 5432583008,
+  "split": "development",
+  "repeat": 1
+}

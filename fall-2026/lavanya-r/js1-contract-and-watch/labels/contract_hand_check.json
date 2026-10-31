@@ -1,0 +1,89 @@
+{
+  "checker": "Lavanya R",
+  "checked_on": "2026-10-30",
+  "what": "CONTRACT.md's five checks applied by hand to run 2's 10 new postings, to test the failure sentence. Answered on multiple-choice cards showing title and location only; every posting failed on title or location, so checks 4-5 were not needed.",
+  "rows": [
+    {
+      "posting_id": 8459031002,
+      "title": "Sr. Counsel, Regulatory",
+      "location": "Bellevue, Washington; Seattle, Washington; Washington, D.C.",
+      "hand": "not_relevant",
+      "rule_v1": "not_relevant",
+      "rule_v2": "not_relevant"
+    },
+    {
+      "posting_id": 8569528002,
+      "title": "Lakebase Sales Specialist, Benelux",
+      "location": "Amsterdam, Netherlands",
+      "hand": "not_relevant",
+      "rule_v1": "not_relevant",
+      "rule_v2": "not_relevant"
+    },
+    {
+      "posting_id": 8569578002,
+      "title": "Lakebase Sales Specialist (Greater China Region)",
+      "location": "Singapore",
+      "hand": "not_relevant",
+      "rule_v1": "not_relevant",
+      "rule_v2": "not_relevant"
+    },
+    {
+      "posting_id": 8824171002,
+      "title": "AI Sales Director",
+      "location": "San Francisco, California; United States; West Coast - United States",
+      "hand": "not_relevant",
+      "rule_v1": "not_relevant",
+      "rule_v2": "not_relevant"
+    },
+    {
+      "posting_id": 8860646002,
+      "title": "Analyst Relations Manager",
+      "location": "United States",
+      "hand": "not_relevant",
+      "rule_v1": "not_relevant",
+      "rule_v2": "not_relevant"
+    },
+    {
+      "posting_id": 8917482002,
+      "title": "Business Development Representative (UKI)",
+      "location": "London, United Kingdom",
+      "hand": "not_relevant",
+      "rule_v1": "not_relevant",
+      "rule_v2": "not_relevant"
+    },
+    {
+      "posting_id": 8922120002,
+      "title": "Sr. Counsel, Employment",
+      "location": "Bellevue, Washington; Seattle, Washington; Washington, D.C.",
+      "hand": "not_relevant",
+      "rule_v1": "not_relevant",
+      "rule_v2": "not_relevant"
+    },
+    {
+      "posting_id": 8922730002,
+      "title": "Sr. Collections Analyst",
+      "location": "Bengaluru, India",
+      "hand": "not_relevant",
+      "rule_v1": "not_relevant",
+      "rule_v2": "not_relevant"
+    },
+    {
+      "posting_id": 8924302002,
+      "title": "Business Development Representative (German-speaking, DACH)",
+      "location": "Munich, Germany",
+      "hand": "not_relevant",
+      "rule_v1": "not_relevant",
+      "rule_v2": "not_relevant"
+    },
+    {
+      "posting_id": 8924844002,
+      "title": "Lakebase Sales Specialist (Greater China Region)",
+      "location": "China",
+      "hand": "not_relevant",
+      "rule_v1": "not_relevant",
+      "rule_v2": "not_relevant"
+    }
+  ],
+  "disagreements_v1": 0,
+  "disagreements_v2": 0
+}

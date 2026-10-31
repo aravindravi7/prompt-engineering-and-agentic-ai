@@ -1,0 +1,8 @@
+VERDICT: not_relevant
+RESUME_FIELD: target_titles=Associate Product Manager
+RESUME_FIELD: target_titles=Product Manager
+RESUME_FIELD: target_titles=Product Analyst
+RESUME_FIELD: locations=NYC
+POSTING_FIELD: title=Account Executive, Product Sales, Metronome
+POSTING_FIELD: location.name=NYC
+REASON: C1 fails because the title contains none of the target titles, C2 passes because location.name contains NYC, and C3 fails because the cleaned content contains none of the five skills (0 of the 2 needed).

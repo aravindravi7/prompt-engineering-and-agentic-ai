@@ -1,0 +1,14 @@
+{
+  "run": {
+    "stamp": "2026-10-29T213155Z",
+    "board": "databricks",
+    "kind": "live",
+    "source": "https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true",
+    "raw_path": "evidence/raw/databricks-2026-10-29T213155Z.json.gz",
+    "raw_sha256": "08939d07675a8bb74dc0d0ee192de5087575d7d2c05f1fc6e2fcd76707b4baf4",
+    "posting_count": 906,
+    "baseline": true,
+    "new_ids": []
+  },
+  "new": []
+}

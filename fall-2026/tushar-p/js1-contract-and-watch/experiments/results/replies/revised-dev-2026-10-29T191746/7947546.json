@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXP8ZovkJYZrMBTWFxK2",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQSgQkKEAgTGAI4AUIIdGhpbmtpbmcSDJc80lYA6StQMTcudxoMbTiGSQ75j42bHA7YIjCljZp9+gzmrN02IFQ3uUX7sWj9N4xH9M1jbIgogmhEFsv70y9KrF0VuF0H+Ak6tLYqnggCvXJIo1D8R826GwGlY7duF9N09c/MjwM4bBMV1oeoWv4kIlbVphEBJoh152xbT4QjjS0DTcFuWpuGV7MTxryEO3qV763IG8rjbMDJ/kjtnlOUJCVcZ8a0qKX1bwMkGIJ3c7y3QPwuXn/OafSS2k5rGES8NbczOSyAV8xKTVMLS6hL+y4vPeqKah+X8tuPVemGynmldobM4YqdyDE1u+ezgmKghb/mCkC5dI0nQJW2lCYP7GXndatoGddL5hDYA2pEPEe6bJz9S7heHb4jXlNfdlbK9qs63Ibjbd5+gO+al7ZwCLqFeVF2HyAEo/7STVsL1dR5BRteQVuciNJxIAz9sm6tMVYmk7z2meAi8WK/o/fqyTkib7H7ZWShpvJtVX1YowpDzO8hwoMDjL4MeObkuSr9W6VCej2KueNLEqJZj74GhvR90nUpmtAQiV6jVUfs9DdpbIECMLSDpWBhQdxk10xJdRJWs301Azc3foILmBys+tANoskr4VATgS3fXFfpRwmjbLiuZKegyNaoptpQvUAeihms7wN/F1Gf34C5oTsK9Betix6J9ieyx60FCpb8QKsuFzDovpM1QPTP+cJ8b7O+RTGXbFNAMFvTG2BJdxxIhwkRA9zh62HN14FVTxU5KGMhO+8RoUxIk8s7bK/Ui+Bsu87Nbc9JNiY+7L1cgcSVAzYZseH0LrZtzPf1ZrkjIy33yRxmgR0XPdb6T63vcqYzYn35QBXrRkXEinxjwag9CqH7AZyvqAHwlfzZma/muHTSzu2Gkjf1cTF+9Vre0vySqxY7c3cFVPRen9RwS22lD592c6UGD9xNOEaANC+2HPGBp/GrmnnmtKcjDyEWzQ/EnL4zLPCCHx5Y+RwO5gUCu8RamHYqGlXOeI0BShldZDpeCkC6VfDXEzmg5oIYEZaytBZnO47jQUvyfvh7zwTpghvvMR/P6R9Y+ZVK8s77MjEJXRym176x73svwXI8NNvOiA/fnnxCFiIq0gjiHSrJy1Za7KTNuw/SdIIUAeXw78HOMGyrjwoY0vKvrzLkWSfYdSZViDzca484cS9FEVFANcwWbqUP2YHrH8e6tR1/Be7wpPA2YwVpb+8rO+IIQKQEqv2qNUYXDMRuemKZrKHiamuEiAICUA6fAuvWc+cyxG6LQt4sxMHL250lzqCb6Jtu/azU1V58JKyjxKiSbNw30VjfRAHlkT8CbQrqAxaro82IG277S5freRX5Y5+eCkLRixl2fFm8vSNGlzuw93hIh83wnMFVW9a6B8Xo25THENXCLwp8n1cMZk6unRY+VMxg28X3zIxDp6IDAFv1zcADfNm9XjkeulZUiQSgoGpVBUXc3r6uuKU2ozp/9JREZQx0YOz6QSll0I2oZtQbAsoi4boaBjD8aihAXPtNGAE=",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"7947546\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Engineering Manager, Forward Deployed (Privy)\\\" contains \\\"Manager\\\", which fails R1 and overrides any target title. It also contains none of Software Engineer, AI Engineer, or Backend Engineer.\"},{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"first_published\",\"evidence\":\"first_published is 2026-05-20, which is more than 21 days before the run date 2026-10-27, so R2 fails. updated_at is not used because first_published is present.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"\\\"NYC-Privy\\\" contains the whole word NYC, so the location check passes.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"Content mentions \\\"React\\\" and \\\"AWS\\\", so the skills check passes.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3052,
+    "output_tokens": 589,
+    "output_tokens_details": {
+      "thinking_tokens": 252
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

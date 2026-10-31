@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXPKfotZhsjdAftM6zwq",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQSwAgKEAgTGAI4AUIIdGhpbmtpbmcSDDTgHgonVZgXccxtjhoMOi1UszfFvAhi8bY1IjB9nzQJJXTZgt9vEhn3VUOw6y8xaDZc0JMNaGNatQWYGYG2hF9hz/5iipplThD7dkYq3Qfn2BR6BQUZyb9RYq1xB4SSovqjUrDG+CLPNf+q9B/dn/4OPNHEZWZQwIcgwYnLn0UG3bseNNg8pC4H8Tmcki9aHa3JPMwI8x2uYyH7qatXCO2fSYyoKGcWWNUFfl70w6bZdmbO9YlcRGFa7YV3iJY2mKRwvzVOn+z13y388BMz750TtUOuhEIwOgJoQh2iC8VzQW5rNwSvzJZR+tdPGT0Mfn60I6ZUjWIuur6xCjDKKpRmATkjzKOHmHSY3cxBWfgqoS5FfjJ7Ov3ys9ETOANPj58wAHCjAKcEoxgfjd312vk0SBufQv/lUVYopBP+NmMnsyvGC2fTGVjM+NTYHgA9gA8JX5djARpjJsYkvZANuHiTWbSFHP3LCTsUK1f9d+DBLsrn31bSAGPvgOEl994wy6QTxnPIXswdpGhTJGs1QaBDHf5t7XLe721dQ1IyxaUL9vKAGLCcV27xZ2KIJ3lo1toZMF3m1AMhRPxs/ArcO4EwR8Zlmbv58Qn8BKj25kD25eYmwRHCiqe9s0u2S7lohiTG28QcTNe3k+eoafP13pJjnF+qrryQie203yCq4pt8n/wIfFbXDGQ6lw4SABuDflZM1xu9vNG5UhqFQgh/86b/q3dx1efXtXAzvNhD0ByuseNguZCUvvBsbNRlBHQtA9uoipBz6c43rnTF0j4Xt1/03PGiCqeVsRQgAJdSDaysdhGbmTHVYnLHxIkvT6JckWaOW1xzoN4jlLyph/gEgTZXgGHzIQjfAFQYjJ8MBtT0A5+oLNbRc9SC0SMaULUlPI2rbY7nKCBMEJTzx1gCuGhjxXjxO7J5MSnXjcC8Fs2fg1+RNBSWXVeA9s7GYNFGYCRwSvAPrcaTFoEDEZg5Tlcw1mA7CE30U9/VCHZEYmaiYbXPoIcaKvecNlxvFKKzOXmoFToLjZxxUwx0Lc8hQJXj9gMWizjmDNWzHw3kKB30IEoNhvMFUPFX7XnUvOSTr+gwkkF+s7GWgwAEhBTZpRZCB3D+YBDSkA69HInnO8sxNXu2T/BJl81ncGE4FcrV8DfhtsIo9LiiKDroRK2ozMbuEAAPwwfMr8DgDGzL5ipVXLaRy04H8J8xmXo8P1ohdmgtxourAD9w7u2bRqOZh1kk/qVC8gdMnSaBrAhmaJDHNSrweq/bX5FCWMWrriTmlSHPnxh0o5szQqVtw4M/KJdgD0jKIczzbu3TcdOLoe2LpmnmpDXts+etSAB7/7fbqRfIHCzlEn+ySXnGjI20w0vjsO7VPfWhBFhXzSqxRLqdJmqi+xOcbsp/eb/zAjLW+rIwCqwhSNzxuu59hhgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8197891\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Software Engineer, Online Database Infrastructure\\\" contains target title \\\"Software Engineer\\\" and none of the excluded words (R1 pass).\"},{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"first_published\",\"evidence\":\"first_published is 2026-09-11, which is 46 days before the run date 2026-10-27, more than 21 days (R2 fail). updated_at is ignored because first_published is present.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"\\\"Seattle, WA\\\" shows the US (R3 pass).\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"Only plain \\\"5 years\\\" appears, with no \\\"N+ years\\\" or ranges, so R4 is unknown.\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"No phrases such as \\\"unable to sponsor\\\" or \\\"no sponsorship\\\" appear (R5 pass).\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"Content mentions \\\"Python\\\", \\\"Java\\\", and \\\"AWS\\\" (R6 pass).\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2732,
+    "output_tokens": 683,
+    "output_tokens_details": {
+      "thinking_tokens": 222
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

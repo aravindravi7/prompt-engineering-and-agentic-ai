@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:42+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "61e6bb1bcef745cf6f3aa32fc4dd6ad4df42e951b9824be4b2a1c174ed53823a",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting asks for 6+ years of full-stack production experience, React, and a record of shipping products independently, but the résumé shows about 2.5 years (Infosys 2021-06 to 2023-07 plus a 5-month Dassault co-op), no React or frontend work, and mostly backend and DevOps skills.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting asks for 6+ years of full-stack production experience, React, and a record of shipping products independently, but the résumé shows about 2.5 years (Infosys 2021-06 to 2023-07 plus a 5-month Dassault co-op), no React or frontend work, and mostly backend and DevOps skills.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "6f03479b-9cf6-4e72-8bc8-2a8d82fc2096",
+  "total_cost_usd": 0.0113446,
+  "job_id": 5400153008,
+  "split": "development",
+  "repeat": 4
+}

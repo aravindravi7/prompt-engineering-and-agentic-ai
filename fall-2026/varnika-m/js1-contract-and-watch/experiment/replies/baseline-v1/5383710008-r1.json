@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:09+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "6401b9d910cbc89e285e396a2b22a8c8e29665a3d4e2a6cf52f2bee2e0762324",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires 8+ years of hands-on AV operations or technical event support with fluency in audio consoles, video switchers, Q-SYS, and room systems, but the résumé shows about 2.5 years of software engineering (TypeScript, Java, Kubernetes) and no AV experience.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 8+ years of hands-on AV operations or technical event support with fluency in audio consoles, video switchers, Q-SYS, and room systems, but the résumé shows about 2.5 years of software engineering (TypeScript, Java, Kubernetes) and no AV experience.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "17d8fc5d-4044-4eb6-82af-bf5e60e97c8e",
+  "total_cost_usd": 0.043182,
+  "job_id": 5383710008,
+  "split": "held-out",
+  "repeat": 1
+}

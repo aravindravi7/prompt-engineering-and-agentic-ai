@@ -1,0 +1,11 @@
+VERDICT: not_relevant
+RESUME_FIELD: target_titles=Associate Product Manager
+RESUME_FIELD: target_titles=Product Manager
+RESUME_FIELD: target_titles=Product Analyst
+RESUME_FIELD: skills=Python
+RESUME_FIELD: skills=SQL
+RESUME_FIELD: skills=A/B testing
+RESUME_FIELD: skills=roadmapping
+RESUME_FIELD: skills=user research
+POSTING_FIELD: title=Product Marketing Manager
+REASON: C1 fails because the title "Product Marketing Manager" contains none of the target titles, and C3 fails because the content contains none of the skills ("roadmap" does not count as "roadmapping"), while C2 is satisfied by "New York" and "Remote".

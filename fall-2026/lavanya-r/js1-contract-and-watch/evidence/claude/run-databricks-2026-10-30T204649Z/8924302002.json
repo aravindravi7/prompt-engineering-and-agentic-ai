@@ -1,0 +1,29 @@
+{
+  "posting_id": 8924302002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8924302002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "skills.data_bi"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title (Business Development Representative) has none of the required keywords, and the location is Munich, Germany, not the United States. The content mentions only Databricks and Unity Catalog from the résumé, which is incidental for a sales role."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8924302002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"skills.data_bi\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title (Business Development Representative) has none of the required keywords, and the location is Munich, Germany, not the United States. The content mentions only Databricks and Unity Catalog from the résumé, which is incidental for a sales role.\"}",
+  "asked_at": "2026-10-30T21:16:10+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "3cf23dd2-4da3-4df7-bc13-806af39aac6b",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "4a5300baeb362d037c7b67c02d72833e70929b4e0ae73ecaa82c50c92b031b9b"
+}

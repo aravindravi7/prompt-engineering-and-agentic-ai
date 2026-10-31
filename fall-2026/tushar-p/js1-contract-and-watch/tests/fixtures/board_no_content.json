@@ -1,0 +1,37 @@
+{
+  "jobs": [
+    {
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=1001",
+      "id": 1001,
+      "internal_job_id": 6001,
+      "location": {
+        "name": "San Francisco, CA"
+      },
+      "metadata": null,
+      "updated_at": "2026-10-26T09:00:00-04:00",
+      "requisition_id": "See Opening ID",
+      "title": "Software Engineer, New Grad",
+      "company_name": "Stripe",
+      "first_published": "2026-10-20T10:00:00-04:00",
+      "language": "en"
+    },
+    {
+      "absolute_url": "https://stripe.com/jobs/search?gh_jid=1002",
+      "id": 1002,
+      "internal_job_id": 6002,
+      "location": {
+        "name": "Seattle, WA"
+      },
+      "metadata": null,
+      "updated_at": "2026-10-26T09:00:00-04:00",
+      "requisition_id": "See Opening ID",
+      "title": "Senior Software Engineer",
+      "company_name": "Stripe",
+      "first_published": "2026-10-21T10:00:00-04:00",
+      "language": "en"
+    }
+  ],
+  "meta": {
+    "total": 2
+  }
+}

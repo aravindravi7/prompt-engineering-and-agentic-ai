@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXN8w2zrpnx4Ng9UtYc5",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQSgAgKEAgTGAI4AUIIdGhpbmtpbmcSDAsXXsKCUzkCPojNoxoMwqjwT1Mv7QoyHCC9IjCmb2CnZtLyZBczBlmV8jXXdEdiKj7fzngOIZFl4iNilUQSRR1pk0fZWs/CxjDIMzIqnQfuLdEHHQoj0dYzuELBf2rua14mi/8OGPuhBz+G3af9nRC+5X4Mk33esTHVQxif72hMks/NYsAaUknl9Ln5bG9OeU49hG+J5tzMVAsJgzlJr8uDdTNMbRJi4BX3Wge4l4lP8jx9e+V1wAYEFHkSSqTYiL0sU9lqeavgJPCr1WLe1OwntqUn+5CPH/9rtojveKcbUJvAzMc8g1YsxCMAAN4ham0N8j4wPbEk7o7mcYlCvm4kGdRcAcYkwJYxI7FIxkDKGPqwWteE39ph4RArkTYu+tLRDaxFHuFg0yZ8Ta/rBXX5EJPIan78qew0iOVj4XW0ehH93C9JID/2whe5gV627JQZO3ar3vBUXXH/eJ0cVHnoerfI3uistNnsKgZhp/VVVnCXw+jw8WA7cztSqbhv4Qk8Q0m9/VQgROylOlucbN/jnAJJMZgXdwTyeEcN9o9y4dWiCSm7DT7psnYh0mbjP4znS84i2WzZ2KhNvstVwN6sf3Ff8jqyjiXXyKvm+ZAIFDEkxknfR41DF7lLx8n6uUkmKwfUqowAkn036tkvJXGQ9KptGT/qy4xxj0gZrcw2Dj+xAejAoRXchObnqnevGZAeH23WsDRy4ytgh+4tGzmhDh6PsA6SgFmalC+8bx+joFuIXlJWgKH/U0xaib9P4//JfUKCYEWJmkhV7H+FvqAKfFM5gEb8V5doMjOup0xiY4DporxejADIw9XKLwiG50PCnl6hc3kdpZcLf5Lhhd5/x5rICOoDWtQnFn0pD1me2nIpbXBNXuHF8x0DF2zhRKi4mghkma2uc2npkg+75SHVTsT3Qu4qcmkZh7vGMZsE8LkoaeYwpbOtCLYUV1h/F1W1q+h3DGkXzdTA2ziWHubcV3+5kaUl+IkJASJJ1891j4rG7lF+/qdHmSca8YIhSlaQaIWqQV9dPymlutepPaZ1XtIspiR+RMgpzYcti9X5teOs+ZqdDclTWxi6ix3XgrymW9VF9AYxJ6gh1pru7Do/f151yMHdAnlBI9o1Q6ZxHf/RqJQ+NdyhPYp/aQ9NA1T4/JGR3i8KWAedTibqHec7W8/MfFNTM5fg0CE1mvfLFhdkm2M+/dlQjZSGszgSm+iEAuNjKQygZe3kwXuQhgoSzBs4n7yxeqeQrMacqnAzmXSen7IICPenBuNMb7x24+j66prZMqhXei6zyLT9jRBRMc+XtafB7KqdS+e/Ch8f3Ko1Pt7Maldo6qcKGAE=",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8314283\",\"verdict\":\"cannot_tell\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title is \\\"Software Engineer\\\", which matches a target title and has no excluded words.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"\\\"South San Francisco, CA\\\" names the US city South San Francisco, so R3 passes.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"The content has no \\\"N+ years\\\" or \\\"N-M years\\\" pattern. It only says \\\"two (2) years\\\", which does not count, so R4 is unknown.\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"None of the blocking sponsorship phrases appear in the content, so R5 passes.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"The content says \\\"specifically using AWS, Azure, or GCP\\\", which matches the skill AWS.\"},{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"first_published\",\"evidence\":\"Published 2026-10-22, 5 days before the run date of 2026-10-27, so the freshness check passes.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2838,
+    "output_tokens": 619,
+    "output_tokens_details": {
+      "thinking_tokens": 195
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

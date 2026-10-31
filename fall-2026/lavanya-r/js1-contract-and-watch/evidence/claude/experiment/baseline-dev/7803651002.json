@@ -1,0 +1,29 @@
+{
+  "posting_id": 7803651002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 7803651002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "skills.data_bi"
+    ],
+    "posting_fields": [
+      "title",
+      "location.name",
+      "content"
+    ],
+    "reason": "The title contains 'AI', but 'Leader' contains the excluded term 'Lead', and the role is a senior C-suite advisory position requiring 15+ years of experience, so it fails rule 2. The other rules pass: the location is the US, the content mentions Databricks and Unity Catalog, and there is no statement denying visa sponsorship."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 7803651002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"skills.data_bi\"], \"posting_fields\": [\"title\", \"location.name\", \"content\"], \"reason\": \"The title contains 'AI', but 'Leader' contains the excluded term 'Lead', and the role is a senior C-suite advisory position requiring 15+ years of experience, so it fails rule 2. The other rules pass: the location is the US, the content mentions Databricks and Unity Catalog, and there is no statement denying visa sponsorship.\"}",
+  "asked_at": "2026-10-30T21:23:22+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "ba2a4290-7f2c-40fe-a5d9-698fca64275d",
+  "prompt_file": "baseline.md",
+  "prompt_sha256": "7191b208d9e760f67b263f8402185cf1b68a19f49885718687e4978b24933129"
+}

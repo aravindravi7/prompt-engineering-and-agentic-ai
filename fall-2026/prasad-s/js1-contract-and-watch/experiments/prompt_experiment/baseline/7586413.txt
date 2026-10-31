@@ -1,0 +1,7 @@
+VERDICT: not_relevant
+RESUME_FIELD: target_titles=Product Manager
+RESUME_FIELD: locations=New York | NYC | Remote
+RESUME_FIELD: skills=Python | SQL | A/B testing | roadmapping | user research
+POSTING_FIELD: title=Product Manager, Hardware
+POSTING_FIELD: location.name=San Francisco, Seattle
+REASON: C1 passes because the title contains "Product Manager", but C2 fails because the location "San Francisco, Seattle" contains none of New York, NYC, or Remote, and C3 fails because the content contains none of the candidate's skills ("roadmap" does not count as "roadmapping").

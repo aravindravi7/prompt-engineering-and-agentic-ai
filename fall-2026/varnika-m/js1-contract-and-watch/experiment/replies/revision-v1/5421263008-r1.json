@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:29:22+00:00",
+  "prompt_file": "revision-v1.txt",
+  "prompt_sha256": "282ef9bb805ed37902209ed248d17fe724b47382eac7f9420a96aeb399797eb9",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting requires 5+ years of software engineering with meaningful time maintaining libraries, SDKs, or developer-facing APIs, but the résumé shows only about 2.5 years (Infosys 2021-06 to 2023-07 plus the Dassault Systemes co-op 2026-01 to 2026-05) and no stated library or SDK maintenance work.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting requires 5+ years of software engineering with meaningful time maintaining libraries, SDKs, or developer-facing APIs, but the résumé shows only about 2.5 years (Infosys 2021-06 to 2023-07 plus the Dassault Systemes co-op 2026-01 to 2026-05) and no stated library or SDK maintenance work.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "192ee3d7-2e8c-45a2-be3e-9a904c4ebce8",
+  "total_cost_usd": 0.038500000000000006,
+  "job_id": 5421263008,
+  "split": "held-out",
+  "repeat": 1
+}

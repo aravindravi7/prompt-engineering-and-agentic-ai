@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXN7XEWQ4MFeLEpEC9ie",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS+QcKEAgTGAI4AUIIdGhpbmtpbmcSDPHNLwQgDRYJICAP5RoMRlGGy4c5YDbrQgcJIjC6idCjgLi5XHYulJwYizoRbrFKsTLc3goN65Xrj3FXAzbHJDWxM7Dpb68+iCXuUfcqlgckoUar4tshXBpX66aSartFAFbPW5Tr2J3/T0eeEViOkj0yOU40hTcWRMsDxoaIblephj9IFsUw8B/RboqPIcD4HOEjQ0ZT9EZ2bclQNxAmf4CMsrvIPaEmJtdQfm2YM7ZDOyeKMUcqIAHkyUbxKPET3Zj2DLQM1CnMmI7PyPTRopT8lJUdhfIZifIc2vnC5TveEEGe8wUgUWzbs7LKtinw5ffSknCinMnI3YjF69ml1zAD+v9uGpSx/G5iiqjQ0slHMgjpC1wB/Ix9OrcDPnxOmj8tYmhWtswCjuVJtS/m6M3g2CPdLMsZgNenlkj7U082C5spZmXn9wpz1YboAJy02fHvC4Cn3+31TJX+67lOKQFwngAAhKoS9ABtuxO7u8mGK6kQ/PPxUAKAyIBaB1+/P2h2IiHUW5+1oSsvHWkRv5fn3pDDRm5rtWw5dkQAFUvCfPm0Z1MV68liBuP8cBGjfzXraSqm5R9BAShHHFAOdKNwSyKNdHTdqACpxhSb/zWTw6c3eaK2aFB5b/eFptiZ8TVCoVnOpyRAdr8NHqZ/sJrpxVZ1ZrMOBqxFKC6qG7Lw1XoSrMmzMPusEM00Uxs/FC0lDVYPQ/RbFsa8Lw7En1DvCAp57GZ9c6qjQyAKh6PwWhuPCE4fIbLCr0dLN78na5HkOtiJvkpYszX3W/eHlWzhsjMJspqzbHp2YqHchhVFAyCTO8Sythqi/7qT6XbvCPisMP6+jzGB+z4AFaEMCejHbNLJnIgC0oXJRpRr471/lwWl/sdvmxIXKHjFqupEVZ1CeXJBiTIpzgM3PtN45iRqB5of8YV8ATCIyndG2KNcHlQsMw2NJGSY8maO6d9/dpLetTACOZailbNudeWHQynrhQQ80hrcM0H3xK8Mvm/6tB6cuDcz6U83UAgJXhWJlXMQKAnqCc7JeZTV63jq5lsg4uvoDb4BLV41NOmUZQJZf20D05CBRaQIMdSpZfAfG87mNEbqJ6X9apYJbtV6p5obWbXIeRpXTrYKDO6xYqjnznexTl6wM2Hcr4KK2BFX6dBuiZX7qHwqfBIIDB4cgNkkAc+DaK055/rCKPV1O8JlKhaKPiQPtnR3x2yb/gFN6Ieon4B13Iy9UN5yfRM0UJm/xUNcG9/XwW7npAIMyWbyeKjg33npQnkR/w7G5XYncdITQzyx22gu1AeBrbM4oLnyJQiWEr3/2iEoCCPTWztoYRqhPKAYAQ==",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"8198323\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Solutions Engineer, AI Build Team\\\" contains none of Software Engineer, AI Engineer, or Backend Engineer, so R1 fails.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"\\\"7+ years of relevant experience\\\" gives a minimum of 7, which is more than 3, so R4 fails.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"\\\"US-SF, US-NYC, US-Remote\\\" shows the US, so R3 passes.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"Content mentions \\\"Python\\\" as a whole word, so R6 passes.\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"No phrases such as \\\"unable to sponsor\\\" or \\\"no sponsorship\\\" appear, so R5 passes.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3677,
+    "output_tokens": 571,
+    "output_tokens_details": {
+      "thinking_tokens": 199
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

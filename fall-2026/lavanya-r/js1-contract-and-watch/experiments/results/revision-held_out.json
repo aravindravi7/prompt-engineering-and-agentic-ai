@@ -1,0 +1,149 @@
+{
+  "prompt": "prompts/revision.md",
+  "split": "held_out",
+  "n": 10,
+  "passed": 10,
+  "invalid": 0,
+  "rows": [
+    {
+      "n": 2,
+      "posting_id": 8886944002,
+      "title": "Solutions Engineer",
+      "hand_label": "not_fit",
+      "rule_verdict": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:26:58+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 4,
+      "posting_id": 8611108002,
+      "title": "Forward Deployed Engineer (FDE) - Public Sector",
+      "hand_label": "not_fit",
+      "rule_verdict": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:26:58+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 7,
+      "posting_id": 8603392002,
+      "title": "Global Workplace Services Manager, Events & Experiences",
+      "hand_label": "not_fit",
+      "rule_verdict": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:26:58+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 8,
+      "posting_id": 8859666002,
+      "title": "Data+AI Workforce Transformation Practitioner — Customer Delivery",
+      "hand_label": "not_fit",
+      "rule_verdict": "relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:26:58+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 11,
+      "posting_id": 8546367002,
+      "title": "AI Engineer – Forward Deployed Engineering (AI FDE)",
+      "hand_label": "not_fit",
+      "rule_verdict": "relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:27:03+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 13,
+      "posting_id": 8739506002,
+      "title": "Specialist Solutions Architect - AWS Infrastructure & AI Platform",
+      "hand_label": "not_fit",
+      "rule_verdict": "relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:27:04+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 16,
+      "posting_id": 6936994002,
+      "title": "Senior Software Engineer - Distributed Data Systems",
+      "hand_label": "not_fit",
+      "rule_verdict": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:27:04+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 17,
+      "posting_id": 8635225002,
+      "title": "Software Engineer, Web Products",
+      "hand_label": "not_fit",
+      "rule_verdict": "relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:27:05+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 18,
+      "posting_id": 8491126002,
+      "title": "Manager, Field Engineering France",
+      "hand_label": "not_fit",
+      "rule_verdict": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:27:09+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "n": 20,
+      "posting_id": 8575248002,
+      "title": "Sr. Staff Software Engineer — Observability, Insights & Governance",
+      "hand_label": "not_fit",
+      "rule_verdict": "not_relevant",
+      "claude_verdict": "not_relevant",
+      "pass": true,
+      "errors": [],
+      "asked_at": "2026-10-30T21:27:09+00:00",
+      "models_used": [
+        "claude-opus-5-5"
+      ]
+    }
+  ]
+}

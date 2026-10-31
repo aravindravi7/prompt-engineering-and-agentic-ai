@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgV9dZp6cB1Ac7cD1qCCX",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS0wgKEAgTGAI4AUIIdGhpbmtpbmcSDJRgQ5TIu9XoBXHfTRoMgyewWQJC3hNj+Rl/IjDkc2CBJuOw3Ny09nQkBCefaobxkyEW1rCVzFHPMeB5RM7AFnSyIEsVidUSItDcaUMq8AfK4j0TFKW+6bPrRUi3Z62OSomexshoWPE0f1hLhtWpncIu362zCQqBKmQ5qcKqj8OpzNFgHn3jqXCgAvTHLXAv04C8pZPTAX5PG5WPJV+gfPQETzuStyr6DRaOnF7UZBE4EYIyUy0ht/rCqd3qk29vQDJ7iiIm17WBr1znC55k32P8YnD0CvST1QEYj0L5IlWqC7ZDoGRZ8CU9jHLzz7gkGyr3MuwEX1FhumZszO5RQUiErII6GOmUe7E9naMt1FWkjhZcBuvbME8J26OsKxi54nrit60xuB/2AoCOoEBZEqbbih8lDG9/bID8psxXCV9wrvX3HS0XV1MKK0JtSap5D0IcHMjIEcT+u9/cNHjILSiTDVFHMiVDajt+c3ot+/eiV/DDhGHVsU3aopXlSh0Iz6B/NCP6nt4CKp1cJrG04FI/juKEITGdmkFiCPirWt5omYW2sqRcAa4PtNTQ4OIPlqTLu27P0ePLsozHye1A+qGL3aKFLF2P/rLXzFBTH03UWSeX5UcQlbm8TJ6MBoVJrA9uBftkQ2QxMxBj/pbGWvtUnBWgu/LlJ4259ZQOnY5xb7JdlyVchhUz9oUptcLaAwHZEFIhyZxht1QuVmEW68RxbeHG82pDFYzYCpqT02wguViNN1CjMprCLuM8KCOIoBjhyox7CHjHjHpl11g32/RbG1zCAGIScwwL5Sp8MT4qTQlw1EEN97xf0aE4ghj05+janz+emzvGBtXD3ysiH2xcQ74jFlj7Oz2Zsq2bsChZJp5oqu9Atcem34wj+SXab4sDE3uLISvlXppimxl/p149WjvMZzLe9Q3IpG/2hTczeXhs27pcF403LAUEDGIv1DUvhm2/X37NeDDhwtAe4DwWzRz3Nd1UkLb4goqRasC8VAdEvk/xiG19hfliE2ZhFv5D1mGU7Jb1ELjj+nJEN3sMMCDuE7QPs7QOiwkNg+j6QYWdd21MHJ2GPr1H+FT3WBKyNqGoAdsyKaownaThy5WENmS2Y/+VcBE8MHkHfWvmLBu2IRT0GbwkhvI5dcyNfZFIvQy5NykRFnbznnlOmH9jBn4hmEOiqiJpTgTibf6Wv38TQgtNwjZdE87cSE4Zc4idVQvUiHvh97IMbV5x0MUjjFrR5J/GS8plil9eLHwh4gl/SNAruVXdookp4t54IkQBS5DGDni7TvsEx+DaDajzuuah3np9hyXyz6NLm2gTDBd17tv+zNzV0GUXy0NIwUMYmKhhXoKNk1XyYK4LElcDsEI6SByKp6KANfJlnZ/zT4Ug3iIgCLJAopVtZXuZC4Hanbak4+Wb1XrQ6EnaKS/GymleXHSQF68zejDevJ8YAQ==",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"7337544\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Manager, Sales Development\\\" contains \\\"Manager\\\", which forces a fail, and contains none of Software Engineer, AI Engineer, or Backend Engineer.\"},{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"first_published\",\"evidence\":\"first_published 2025-10-28 (America/New_York) is 365 days before the run date 2026-10-28, which is more than 21 days.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location \\\"Dublin\\\" does not show a US location.\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, or AWS appears as a whole word in the content.\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"\\\"2+ years of people management experience\\\" gives a maximum minimum of 2, which is 3 or less, so this passes.\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"No phrases such as \\\"unable to sponsor\\\" or \\\"no sponsorship\\\" appear in the content, so this passes.\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3286,
+    "output_tokens": 709,
+    "output_tokens_details": {
+      "thinking_tokens": 239
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "posting_id": 8603392002,
+  "judge": "claude",
+  "kind": "judgment",
+  "verdict": "not_relevant",
+  "parsed": {
+    "posting_id": 8603392002,
+    "verdict": "not_relevant",
+    "resume_fields": [
+      "skills.data_bi",
+      "experience"
+    ],
+    "posting_fields": [
+      "title",
+      "content"
+    ],
+    "reason": "The title has none of the required keywords and contains the excluded word \"Manager\". The posting also requires 8–12+ years of workplace or events experience, which far exceeds the job seeker's single AI engineering co-op."
+  },
+  "errors": [],
+  "raw_reply": "{\"posting_id\": 8603392002, \"verdict\": \"not_relevant\", \"resume_fields\": [\"skills.data_bi\", \"experience\"], \"posting_fields\": [\"title\", \"content\"], \"reason\": \"The title has none of the required keywords and contains the excluded word \\\"Manager\\\". The posting also requires 8–12+ years of workplace or events experience, which far exceeds the job seeker's single AI engineering co-op.\"}",
+  "asked_at": "2026-10-30T21:26:58+00:00",
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "52023523-6972-40e6-9123-3cafdfb35ed8",
+  "prompt_file": "revision.md",
+  "prompt_sha256": "ded9006585e523a1a6cb20a7c51145e2560af830ed98ba8b1fcaad04f0c478e2"
+}

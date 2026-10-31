@@ -1,0 +1,40 @@
+{
+  "id": "msg_011CgXPH8DJef6SyxdfBiJPG",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS+QgKEAgTGAI4AUIIdGhpbmtpbmcSDGWtu9S7FgX5hMeyNBoMisDLmH6RzAEuAbKOIjB6gcH6Ip5PsnYzW5mnXVEegZGCKCvBBt3Ruz/t2Ik4bvI3iZFYVyKvVR5qsvZvsh8qlgjVXaBnXxqV78FNnuiPUGhQLflUnt7ZsapKhgbrHHKDEOA53deyotMS+7ilxkzYmv2Tb+ME5bXnJbnttpkXsuY6d2/KLU/gkkfOmVS7h+JrMHkLFx/R8IX758lBnlPBaPlj/HmDEUBd3xSOIwHF7AdxDrCs8/k21CsLpJwpNlEGma8+i47pk0NzhFKpYoVeZyi3rfm04banuuvt8bPIb4cUqFlJCxZlwyi5LiWrU4vPvqn+Pdhccm6VLX4y8xJL5Oj/tXJZvdVTqdkZ9jev0hLyhFNVlL/9ffh0zjacSahKK4UD1I8VHi9T9gR6oAWtjrrGqi8Ba6hX/KwZY8zG2arGS/gXB/hwkV+Yl9RmOsN1fF/039l/fObz8dLZMuDs3+N+7upqleFLwhxaSNvjOhWRswMFY/+2teExQM1FXP227HZGw59pnA5YD13SHlLD6R/9IEVQv48wjNon17AYDiebcOfi+PPQWPbyRZO3wRHFU37cQwh6gZfwhPraIrKSw75THX+i0z9aYpHljqPmOeR3V0giPva9b6mXS4193gnsVaqwIOpO8ghbyhrnJgrpsxe1B4te2FNL6wj5g1LhEQ6Kbe47YIjZYeUU56MEY0YRvSx2cLrJWN25fSabw+KVplvu50yxkPoqjbF7ejsgqMX9e3tDShVNTlvhMAnDr4Lz97ik+52TAk/wqMJcTkbZzFLX1EkIbyZjdvevZbLEf1CU7h+vcbgkf9VEXqokLKUW60x3tLdSFpRXnnGK5dMnIBzt6xpCa2MNWe4qqEbOJqW0jOVVbtpO5HxTeQqw0XklO1bCThix5nfiqhN0jRaVvXX37YPg3c5MCnMeftFIZFAIBSwgcVC9Sdni/ytuNGwKNOYoChT9g5sED4VKQ6Db5KIH7nWF2ESsKOsG8Kyi3/Lmdea5sL//lW9SLaisE55MNqUuslDoDSuDDxAIvhNcylI8h2LAeQ0tkChGMK3naJnJEOvbpdlHR/RyKW3kmxbyj8Z2VjepVfOBOTaJfe/zJDxWcGOrhUMAL8pvXPr/+lslqc8zZ7vXF2jBgKNlDx4fBEIFKVyRwRLfVDRJ2pBRoN7Pm6UghkllIidHjdM/BNUyqb+03jB3ovcLLbhTC46OgDmellsSvpPNZgyeutAfWuwMcObtt0TXAIP+QIQRmhnzmBwvaZGPr1Yaxzl4vl/gzSeOJ/YQut0Mmlj2fAxyLhVIZ842NoGK6yLIMJPk6XAWpkx3Ojn6NlFRcn5lFdL3E7/fX97Pe3IFyWzUgsMCtiPPv4Yl1dWo9unAEglg+DYTu0NgmV/SmEmUsajwcnrZYNWvFbAj+rGysRdEyEy6DKJPoxk4VrnSCF7aWeD6Tsc9JQx9N0j6pbo5axDYKdDqJAZ+lSbF4xgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"posting_id\":\"6717520\",\"verdict\":\"not_relevant\",\"justification\":[{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"title\",\"evidence\":\"Title \\\"Software Engineer, Payments and Risk\\\" contains the target title \\\"Software Engineer\\\" (R1 pass).\"},{\"resume_field\":\"job_search.target_titles\",\"posting_field\":\"first_published\",\"evidence\":\"first_published is 2025-04-24, which is far more than 21 days before the run date 2026-10-27 (R2 fail). updated_at is only used when first_published is missing.\"},{\"resume_field\":\"job_search.work_country\",\"posting_field\":\"location.name\",\"evidence\":\"Location \\\"Dublin, Ireland\\\" shows no US indicator (R3 fail).\"},{\"resume_field\":\"job_search.years_experience\",\"posting_field\":\"content\",\"evidence\":\"Content says \\\"2–12+ years of industry software engineering experience\\\"; the largest minimum is 12, which is above 3 (R4 fail).\"},{\"resume_field\":\"job_search.needs_sponsorship\",\"posting_field\":\"content\",\"evidence\":\"The content has none of the no-sponsorship phrases (R5 pass).\"},{\"resume_field\":\"skills\",\"posting_field\":\"content\",\"evidence\":\"None of Python, Java, TypeScript, SQL, PostgreSQL, Spring Boot, React, Docker, or AWS appears as a whole word in the content (R6 fail).\"}]}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-sonnet-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3169,
+    "output_tokens": 719,
+    "output_tokens_details": {
+      "thinking_tokens": 241
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  }
+}
