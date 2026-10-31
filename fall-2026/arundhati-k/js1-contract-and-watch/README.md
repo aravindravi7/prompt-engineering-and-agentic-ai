@@ -20,7 +20,8 @@ python3 seed.py --published-before 2026-10-29     # live fetch + build the SEEDE
 python3 run.py --from-file evidence/seeded/earlier-response-before-2026-10-29.json.gz   # run 1: baseline (seeded)
 python3 run.py                                    # run 2: live fetch, reports postings new since run 1
 python3 run.py --claude                           # same, plus a labeled Claude judgment per new posting
-python3 experiments.py sample                     # sampling report calls (needs claude login)
+python3 experiments.py sample                     # sampling calls (needs `claude` logged in)
+python3 experiments.py run --prompt prompts/revision.txt --set dev   # prompt experiment (see PROMPT-EXPERIMENT.md)
 python3 experiments.py score                      # rebuild experiments/RESULTS.md from logs + labels
 ```
 
@@ -33,8 +34,13 @@ To re-run the watch from scratch, delete `state/seen_ids.json` first (the state 
 | seed source | 06:16:29 | live fetch → `evidence/raw/20261031T061629Z-live-seed-source.json.gz` | 746 | — | — |
 | 1 — baseline, **SEEDED** | 06:16:32 | `evidence/seeded/earlier-response-before-2026-10-29.json.gz` (live response minus the 32 postings first published on/after 2026-10-29) | 714 | 0 (baseline) | — |
 | 2 — live | 06:16:36 | live fetch → `evidence/raw/20261031T061636Z-live.json.gz` | 746 | 32 | 0 of 32 |
+| 1′ — baseline, **SEEDED** (separate state file) | 06:36:07 | same seeded file | 714 | 0 (baseline) | — |
+| 2′ — live **with `--claude`** | 06:36:08 | live fetch → `evidence/raw/20261031T063608Z-live.json.gz` | 746 | 32 | rule 0/32 · Claude 0/32 · agree 32/32 |
 
-Reports: [`reports/`](reports/) · state file: [`state/seen_ids.json`](state/seen_ids.json).
+Reports: [`reports/`](reports/) · state files: [`state/seen_ids.json`](state/seen_ids.json) (runs 1–2),
+[`state/seen_ids-with-claude.json`](state/seen_ids-with-claude.json) (runs 1′–2′, repeated with the Claude judge after I
+logged in; same seeded baseline, a second live fetch). Claude's 32 replies: `reports/20261031T063608Z-claude-calls.jsonl`
+— all passed the validator; none was rejected, so the validator's rejection path is tested only on constructed replies.
 **Run 1 is seeded, not a second calendar day.** The 32 "new" postings are new relative to a constructed earlier
 board, not relative to a board I observed earlier. Postings that closed before today are missing from the seeded
 file too, so it only approximates the board as it was before 2026-10-29.
@@ -67,9 +73,12 @@ Last run: `Ran 45 tests … OK` (2026-10-31).
 
 ## Sampling report · Prompt experiment · Action surfaces
 
-- Sampling (Chapter 1): `experiments.py sample` → [`experiments/RESULTS.md`](experiments/RESULTS.md) — TODO (needs Claude login + my hand labels)
-- Prompt experiment (Chapter 2): labeling set in [`labeling/`](labeling/), rule in `labeling/LABELING-RULE.md` — TODO
-- Action-surface comparison (Chapter 3): [`ACTION-SURFACES.md`](ACTION-SURFACES.md) — TODO
+- Sampling (Chapter 1): [SAMPLING-REPORT.md](SAMPLING-REPORT.md) — 20 calls; 4 of 5 postings 4/4 stable, the one
+  US new-grad posting split 3 RELEVANT / 1 NOT.
+- Prompt experiment (Chapter 2): [PROMPT-EXPERIMENT.md](PROMPT-EXPERIMENT.md) — baseline 9/10 dev, 7/10 held-out;
+  revision 10/10 dev, 6/10 held-out.
+- Action-surface comparison (Chapter 3): [ACTION-SURFACES.md](ACTION-SURFACES.md)
+- [SOURCES.md](SOURCES.md) · [FRICTIONAL.md](FRICTIONAL.md)
 
 ## Sign-off — Job-Search Agent 1
 
