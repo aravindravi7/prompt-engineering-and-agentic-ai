@@ -1,0 +1,24 @@
+{
+  "contract": "CONTRACT.md of 2026-10-31, with its 2026-10-31 Changes addition",
+  "board": "anthropic",
+  "url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true",
+  "run_number": 1,
+  "run_kind": "baseline",
+  "source": "seeded",
+  "fixture": "seeded/fixtures/anthropic-CONSTRUCTED-before-2026-10-30.json.gz",
+  "note": "SEEDED run A. The fixture is CONSTRUCTED: run 1's saved live response (2026-10-31 07:40 UTC) with the 9 postings first published on or after 2026-10-30 removed (tools/make_seeded_fixture.py). It approximates the board before those postings appeared; nobody received this response.",
+  "started_at": "2026-10-31T07:45:34+00:00",
+  "raw_file": "evidence/raw/anthropic-2026-10-31T074534Z.json.gz",
+  "raw_bytes": 8376276,
+  "raw_sha256": "652994fa569ee68a76df93e788e987192c2cd81ac9fdffc4cf38f573ab0dc3fe",
+  "counts": {
+    "in_response": 666,
+    "seen_before": 0,
+    "new": 0,
+    "missing_since_last_run": 0
+  },
+  "claude_asked": false,
+  "new_postings": [],
+  "run_file": "runs/anthropic-2026-10-31T074534Z.json",
+  "report_file": "runs/anthropic-2026-10-31T074534Z.md"
+}

@@ -108,6 +108,14 @@ class Evidence(WatchTest):
         self.assertEqual(record["source"], "seeded")
         self.assertIn("seeded", (self.dir / "out" / record["report_file"]).read_text().lower())
 
+    def test_gzip_fixture_from_evidence_is_read_byte_for_byte(self):
+        # Added after the implementation, for seeded runs from evidence/raw/ files.
+        first = self.watch(self.fixture("a.json", A, B))
+        record = self.watch(self.dir / "out" / first["raw_file"], note="replay of run 1")
+        self.assertEqual(record["raw_sha256"], first["raw_sha256"])
+        self.assertEqual(record["note"], "replay of run 1")
+        self.assertIn("replay of run 1", (self.dir / "out" / record["report_file"]).read_text())
+
     def test_fetched_run_is_labeled_live(self):
         record = self.watch(fetcher=lambda url: board_bytes(A, B))
         self.assertEqual(record["source"], "live")

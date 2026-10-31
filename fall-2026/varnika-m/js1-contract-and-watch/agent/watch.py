@@ -51,7 +51,14 @@ def free_name(out_dir, board, stamp):
     return base
 
 
-def run(board, resume_path, state_path, out_dir, fixture=None, fetcher=None, ask_claude=None, now=None):
+def read_fixture(path):
+    """A saved response, plain or gzip-compressed (as saved in evidence/raw/)."""
+    data = Path(path).read_bytes()
+    return gzip.decompress(data) if str(path).endswith(".gz") else data
+
+
+def run(board, resume_path, state_path, out_dir, fixture=None, fetcher=None, ask_claude=None, now=None,
+        note=None):
     resume = load_resume(resume_path)  # refuses a non-fictional résumé before any fetch
     state_path, out_dir = Path(state_path), Path(out_dir)
     state = read_state(state_path)
@@ -59,7 +66,7 @@ def run(board, resume_path, state_path, out_dir, fixture=None, fetcher=None, ask
     url = BOARD_URL % board
 
     if fixture:
-        raw, source = Path(fixture).read_bytes(), "seeded"
+        raw, source = read_fixture(fixture), "seeded"
     else:
         raw, source = (fetcher or fetch)(url), "live"  # a failed fetch raises here; nothing is written
 
@@ -89,7 +96,7 @@ def run(board, resume_path, state_path, out_dir, fixture=None, fetcher=None, ask
     record = {
         "contract": CONTRACT, "board": board, "url": url, "run_number": len(runs) + 1,
         "run_kind": "watch" if state else "baseline", "source": source,
-        "fixture": str(fixture) if fixture else None,
+        "fixture": str(fixture) if fixture else None, "note": note,
         "started_at": now.isoformat(timespec="seconds"),
         "raw_file": raw_path.relative_to(out_dir).as_posix(), "raw_bytes": len(raw),
         "raw_sha256": hashlib.sha256(raw).hexdigest(),
@@ -124,6 +131,8 @@ def report(record):
         "- **Contract:** %s" % record["contract"],
         "",
     ]
+    if record.get("note"):
+        lines += ["**Note:** %s" % record["note"], ""]
     if record["run_kind"] == "baseline":
         lines += ["Baseline run: every posting id is recorded as seen, and none is reported as new.", ""]
     elif not record["new_postings"]:
@@ -158,10 +167,11 @@ def main(argv=None):
     parser.add_argument("--out", default=here, type=Path, help="folder for evidence/raw/ and runs/")
     parser.add_argument("--fixture", type=Path, help="saved response to use instead of fetching (a seeded run)")
     parser.add_argument("--claude", action="store_true", help="ask Claude (Claude Code CLI) about each new posting")
+    parser.add_argument("--note", help="a note recorded in the run record and report, e.g. how a fixture was made")
     args = parser.parse_args(argv)
 
     record = run(args.board, args.resume, args.state, args.out, fixture=args.fixture,
-                 ask_claude=claude_judge.ask_claude_cli if args.claude else None)
+                 ask_claude=claude_judge.ask_claude_cli if args.claude else None, note=args.note)
     counts = record["counts"]
     print("Run %d (%s, %s): %d postings, %d new, %d gone since last run."
           % (record["run_number"], record["run_kind"], record["source"], counts["in_response"],
