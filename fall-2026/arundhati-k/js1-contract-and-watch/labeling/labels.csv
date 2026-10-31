@@ -1,14 +1,14 @@
 n,set,posting_id,title,location,my_label,my_note
-1,dev,8241260,"High School Internship, Software Engineering (Summer 2027)","Seattle, San Francisco",,
-2,dev,8128744,"Software Engineer, New Grad","San Francisco, Seattle, New York",,
-3,dev,8333074,"Master's Machine Learning Engineer, Intern","San Francisco, New York City, Seattle",,
-4,dev,8160776,"Software Engineer, New Grad",Singapore,,
-5,dev,8097801,"Software Engineer, Intern (Summer or Winter)",Dublin,,
-6,dev,8130927,"Software Engineer, New Grad - Frontend",Barcelona,,
-7,dev,8055701,"Staff Software Engineer, API Platform","San Francisco, Seattle",,
-8,dev,8257935,"Staff Software Engineer, Alloy Integrations",Seattle,,
-9,dev,8260982,"Software Engineer, Payments",N/A,,
-10,dev,8232358,"Software Engineer, Stripe Tax",Barcelona,,
+1,dev,8241260,"High School Internship, Software Engineering (Summer 2027)","Seattle, San Francisco",NOT RELEVANT,High school internship; Rohan is a master's student.
+2,dev,8128744,"Software Engineer, New Grad","San Francisco, Seattle, New York",RELEVANT,RELEVANT | 3 matches | Java, JavaScript, Go
+3,dev,8333074,"Master's Machine Learning Engineer, Intern","San Francisco, New York City, Seattle",NOT RELEVANT,"ML-focused role, not general SWE; only Python of the 10 skills. My decision after reading the JD; I read ChatGPT's analysis of it first."
+4,dev,8160776,"Software Engineer, New Grad",Singapore,NOT RELEVANT,Singapore location; outside the US.
+5,dev,8097801,"Software Engineer, Intern (Summer or Winter)",Dublin,NOT RELEVANT,Dublin location; outside the US.
+6,dev,8130927,"Software Engineer, New Grad - Frontend",Barcelona,NOT RELEVANT,Barcelona location; outside the US.
+7,dev,8055701,"Staff Software Engineer, API Platform","San Francisco, Seattle",NOT RELEVANT,Staff-level position; not a new-grad role.
+8,dev,8257935,"Staff Software Engineer, Alloy Integrations",Seattle,NOT RELEVANT,Staff-level position; not a new-grad role.
+9,dev,8260982,"Software Engineer, Payments",N/A,NOT RELEVANT,Location is listed as N/A; US eligibility is not established.
+10,dev,8232358,"Software Engineer, Stripe Tax",Barcelona,NOT RELEVANT,Barcelona location; outside the US.
 11,heldout,8212508,"Software Engineer, Early Career — Immediate Start","San Francisco, Seattle, New York",,
 12,heldout,8128745,"Software Engineer, Intern (Summer or Winter)","San Francisco, Seattle, New York City",,
 13,heldout,8328662,"PhD Machine Learning Engineer, Intern","San Francisco, New York City, Seattle",,
