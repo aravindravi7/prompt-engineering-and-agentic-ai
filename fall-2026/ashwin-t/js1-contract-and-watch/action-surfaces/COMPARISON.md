@@ -10,6 +10,10 @@ Ashwin's.
 | Where it ran | claude.ai chat, new conversation | `claude -p`, run by `action-surfaces/file_read.py` | `python3 -m jobwatch --judge claude` (runs 1 and 2); judging path exercised in the experiment |
 | Who ran it | Ashwin, by hand, 2026-10-31 | Claude Code, 2026-10-31T18:05:00Z | Ashwin ran both live runs; Claude Code ran the experiment calls |
 | What Claude could touch | Only the pasted text | The Read tool only, inside a temp folder holding `resume.json` and `posting.json` | Nothing: each Claude call is `--tools ""` from an empty folder. The Python program holds the tools |
+| Can read | What Ashwin pastes | Files in its working folder (here, only the two inputs) | Claude: only the prompt. Program: one allow-listed URL, the persona file, its own state |
+| Can write | Nothing outside the chat | Nothing (no Write or Bash tool) | Claude: nothing. Program: `runs/<timestamp>/` and `state/seen_ids.json`, state last |
+| Can send | Nothing; the chat is its only output | Nothing; no network tool | Claude: nothing. Program: one GET to the allow-listed URL; redirects refused. It never applies, emails or logs in |
+| Authority it needs | A claude.ai account; Ashwin's hands | Claude Code on this machine, permission to read one folder | Claude Code on this machine, plus network access for one public endpoint and write access to two folders, given to the Python program, not to Claude |
 | Who fetches the posting | Ashwin copies it | Someone must save it to a file first | The program, from one allow-listed URL |
 | Who remembers what was already seen | Ashwin | Nobody | `state/seen_ids.json`, updated only after a complete run |
 | Can it notice a new posting tomorrow? | No, unless Ashwin checks the board | No | Yes, new-since-last by id (run 2: 156 ids, 0 new) |
