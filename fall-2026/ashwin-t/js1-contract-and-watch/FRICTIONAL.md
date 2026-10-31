@@ -6,7 +6,7 @@ and "Evidence" lines are facts organized by Claude Code; the rest is mine.
 
 ## 2026-10-29: choosing a board
 
-- **I tried / expected:** [Ashwin]
+- **I tried / expected:** I wanted a public board with structured data so the results would be reproducible. I initially picked Cloudflare, but the later rule checks showed it did not give useful matching examples.
 - **What happened:** Claude Code probed six public Greenhouse boards (Datadog, Cloudflare, Stripe, Airbnb,
   Databricks, Robinhood) for job counts and SWE/backend titles. I picked Cloudflare, and we saved a raw
   snapshot before writing the contract so its date would be in git first.
@@ -21,7 +21,7 @@ and "Evidence" lines are facts organized by Claude Code; the rest is mine.
     contract for Klaviyo. The Cloudflare snapshot stayed in the repo, unused.
   - In draft 2, Claude Code flagged that I wrote "nine fields" (the JSON has 8), "Claude API request" (we use
     `claude -p`), and that validation rule 8 allowed an empty quote. I renamed the persona to Supriya Sharma.
-- **What I did:** [Ashwin: what you accepted, changed or rejected]
+- **What I did:** I accepted the corrections from nine fields to eight, the CLI wording, and the requirement for nonempty evidence quotes. I also changed the fictional persona's name to Supriya Sharma.
 - **Evidence:** `470fae3` (contract, before any code); edits listed in SOURCES.md.
 
 ## 2026-10-30: implementation, my test run, run 1
@@ -32,7 +32,7 @@ and "Evidence" lines are facts organized by Claude Code; the rest is mine.
   - Checking the worked example against the real posting showed it says "Postgres", not "PostgreSQL", so my
     rule correctly does not count it (`93687a1`).
   - A development smoke call had Claude answer NOT_RELEVANT on my worked example ("2+ years"), while my rule says RELEVANT.
-- **I understand now / still do not:** [Ashwin]
+- **I understand now / still do not:** The first run established the baseline and correctly reported nothing as new. That did not demonstrate Claude judging a newly discovered posting.
 
 ## 2026-10-31: run 2
 
@@ -46,7 +46,7 @@ and "Evidence" lines are facts organized by Claude Code; the rest is mine.
   - I typed `--seed YOUR_NUMBER` literally from the instructions, then tried `label`, `sample` and
     `experiment` before a selection existed. Each one stopped with "selection.json does not exist yet".
   - After asking what a seed is, I chose 2608 (`9ed2e88`).
-- **What I did / learned:** [Ashwin]
+- **What I did / learned:** I initially typed the placeholder literally and tried later steps before creating the selection. I learned that the seed makes the shuffle reproducible and the selection must exist before labeling and experiments.
 
 ## 2026-10-31: writing the labeling rule
 
@@ -64,7 +64,7 @@ and "Evidence" lines are facts organized by Claude Code; the rest is mine.
   - I labeled 2 Relevant and 2 Not Relevant.
 - **Side issue:** Claude Code first said a `&amp;` I saw was a display bug in its tool. It checked, found the
   tool was fine (it was how the chat showed the output), and said so.
-- **Why I decided this way / what I am unsure about:** [Ashwin]
+- **Why I decided this way / what I am unsure about:** All 20 original labels were Not Relevant, so an always-no answer would score perfectly. I added all four unused non-senior candidates under a stated rule, while keeping the original results separate. The supplement was chosen after seeing the original labels, which limits the comparison.
 
 ## 2026-10-31: sampling and the prompt experiment
 
@@ -74,13 +74,24 @@ and "Evidence" lines are facts organized by Claude Code; the rest is mine.
   - I chose the one change: a sentence stating my experience threshold. Dev 11/12 → 12/12; held-out 11/12 → 12/12.
   - The held-out gain is one posting, and it was my worked example.
 - **Evidence:** `76bd1ce`, `d932e3b`, `d10abd6`, `914d40d`; `sampling/REPORT.md`, `experiment/REPORT.md`.
-- **What I learned:** [Ashwin]
+- **What I learned:** Claude gave the same wrong answer four times on the Engineer II posting, so consistency did not establish correctness. Stating my experience threshold fixed that case, but the held-out gain was only one posting and it was already familiar.
 
 ## 2026-10-31: action surfaces
 
 - **What happened:** I pasted the filled prompt into claude.ai and pasted back its reply. Claude Code ran the
   file-read version. Both said RELEVANT and both passed the validator. I chose the watch (`7cde01c`, `a13d3ca`).
 
-## Unresolved / next
+## 2026-10-31: reviewing the drafts with Codex
 
-- [Ashwin: e.g. no live new posting appeared, so the live judge path on a new posting is untested on real data; one labeler; …]
+- **What happened:** I used Codex to review Claude Code's drafts. It reran the tests on Python 3.9.6 and
+  3.12.15, checked the saved response hashes, and confirmed 0 new ids and 8 changed timestamps. Its findings:
+  1. `posting_field: []` made the validator crash with `TypeError` instead of recording a validation failure;
+  2. the comparison used an experiment verdict as the watch's result, but the live runs judged no new posting;
+  3. the full file-read envelope and tool trace were not saved, so those claims had to be narrowed;
+  4. the watch defaults to `baseline-v1` while the comparison used `revision-v2`;
+  5. placeholders and premature claims that I had signed or confirmed my review.
+- **What I did:** I asked Claude Code to address all five before the final version, and not to push yet.
+- **Evidence:** the validator fix with a test that fails without it (`c42f2c6`); the corrected
+  `action-surfaces/COMPARISON.md`, README and SOURCES (the commit after `c42f2c6`, "docs(js1): address the review findings").
+- **Unresolved / next step:** Finish my review, address the validator crash, correct the action-surface
+  evidence claims, and make clear which prompt the watch uses. Then prepare matching GitHub and Canvas versions.
