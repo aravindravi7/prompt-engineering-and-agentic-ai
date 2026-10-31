@@ -8,8 +8,7 @@ Same task three ways: judge posting 8154295 for Alex under CONTRACT.md §4.
 | What it can write | nothing (I save the reply) | nothing (I save the reply) | files on my disk |
 | What it can send | nothing | nothing | network requests |
 | Authority it needs | none beyond the chat | file upload | network, shell, file read/write |
-| What happened | VERDICT: not_relevant, accepted (claude_outputs/8154295.txt) | VERDICT: | What happened | VERDICT: not_relevant, accepted (claude_outputs/8154295.txt) | VERDICT: not_relevant (way2_reply_8154295.txt) | not_relevant; read files outside its folder; one failed command (actions_log.md) |
- one failed command (actions_log.md) |
+| What happened | VERDICT: not_relevant, accepted (claude_outputs/8154295.txt) | VERDICT: not_relevant (way2_reply_8154295.txt) | not_relevant; read files outside its folder; one failed command (actions_log.md) |
 | What could go wrong | the paste is the evidence: I can paste the wrong posting, a stale copy, or a silently truncated one, and nothing checks the pasted text against the saved raw response; I also save the reply by hand, so a reply can end up saved against the wrong posting id | I can attach the wrong file or an old snapshot and Claude judges that instead, with no way to tell from the reply; and I still save the reply myself, so the verdict-to-posting pairing is mine to get right | it already left its lane once - read files outside its folder, one command failed; with network, shell and write access it could fetch a URL that is not allow-listed, overwrite state, or pair a verdict with the wrong id, and the damage is on disk before I see it |
 
 ## The least autonomy that suffices, and why
