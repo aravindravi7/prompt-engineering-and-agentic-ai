@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:32+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "8451600b4194eed483906951c9d8b46086ec48d2d679b204e2597d4e5b01e505",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting asks for 5+ years of full-stack experience, React proficiency, mentoring and a track record of user-facing applications, but the résumé shows about 2.5 years (Infosys 2021-2023 plus a 2026 co-op) of backend and DevOps work in Java, TypeScript, Redis and Kubernetes with no React or frontend experience.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting asks for 5+ years of full-stack experience, React proficiency, mentoring and a track record of user-facing applications, but the résumé shows about 2.5 years (Infosys 2021-2023 plus a 2026 co-op) of backend and DevOps work in Java, TypeScript, Redis and Kubernetes with no React or frontend experience.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "b063cab3-0ffe-4f3b-ba76-224b66c22241",
+  "total_cost_usd": 0.041403,
+  "job_id": 4981828008,
+  "split": "development",
+  "repeat": 2
+}

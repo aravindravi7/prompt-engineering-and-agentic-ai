@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:36+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "bf71722042cfbdcdfbd41c1b8bf9738fd8462923a49f16ffc0d06e40d016a772",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting is a Staff+ role whose strong candidates have 15+ years of non-co-op engineering experience and 3+ years as a tech lead on large monorepo build and CI infrastructure, while the résumé shows about two years at Infosys plus a five-month co-op, no tech-lead or build-system experience, and Rust listed only as familiar, so despite relevant Jenkins, Kubernetes, Docker and Python skills it is not a realistic next job.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting is a Staff+ role whose strong candidates have 15+ years of non-co-op engineering experience and 3+ years as a tech lead on large monorepo build and CI infrastructure, while the résumé shows about two years at Infosys plus a five-month co-op, no tech-lead or build-system experience, and Rust listed only as familiar, so despite relevant Jenkins, Kubernetes, Docker and Python skills it is not a realistic next job.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "7c171d36-ddae-4190-ab26-b1d0161d2904",
+  "total_cost_usd": 0.010728000000000001,
+  "job_id": 5110511008,
+  "split": "development",
+  "repeat": 2
+}

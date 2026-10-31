@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:32+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "bf71722042cfbdcdfbd41c1b8bf9738fd8462923a49f16ffc0d06e40d016a772",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting is a Staff+ role citing 15+ years of software engineering and 3+ years as a tech lead on large-scale developer infrastructure, while the résumé shows about two years at Infosys plus a five-month co-op, no tech-lead experience, and Rust only as 'familiar with, not shipped', so despite relevant Jenkins, Kubernetes, Helm and CLI-tool experience it is not a realistic next job.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting is a Staff+ role citing 15+ years of software engineering and 3+ years as a tech lead on large-scale developer infrastructure, while the résumé shows about two years at Infosys plus a five-month co-op, no tech-lead experience, and Rust only as 'familiar with, not shipped', so despite relevant Jenkins, Kubernetes, Helm and CLI-tool experience it is not a realistic next job.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "f338c4cc-2187-4ad7-91a1-9a1fefe16227",
+  "total_cost_usd": 0.037402000000000005,
+  "job_id": 5110511008,
+  "split": "development",
+  "repeat": 1
+}

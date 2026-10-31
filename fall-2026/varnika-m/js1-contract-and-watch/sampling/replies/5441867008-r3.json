@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:20:49+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "669eedf9eea3c2ee906121f9ff7ebdd28f55ea212dfaa7f09c6736f9b4a63a69",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting is a Director-level technical accounting role that requires 12+ years of accounting experience, a Bachelor's in Accounting or Finance, a CPA, and ASC 842/810/815 expertise, while the résumé shows about 2.5 years of software engineering at Infosys and Dassault Systemes and an MS in Information Systems, with no accounting experience or credentials.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting is a Director-level technical accounting role that requires 12+ years of accounting experience, a Bachelor's in Accounting or Finance, a CPA, and ASC 842/810/815 expertise, while the résumé shows about 2.5 years of software engineering at Infosys and Dassault Systemes and an MS in Information Systems, with no accounting experience or credentials.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "97c95785-b563-4ef1-9140-b56f0b51e1e4",
+  "total_cost_usd": 0.0104568,
+  "job_id": 5441867008,
+  "split": "development",
+  "repeat": 3
+}

@@ -26,6 +26,7 @@ def main():
     parser.add_argument("--out", required=True, type=Path)
     parser.add_argument("--split", choices=["development", "held-out"])
     parser.add_argument("--sampling", action="store_true", help="only the 5 sampling postings")
+    parser.add_argument("--job", type=int, nargs="+", help="only these posting ids")
     parser.add_argument("--repeat", type=int, default=1)
     parser.add_argument("--workers", type=int, default=4)
     args = parser.parse_args()
@@ -34,7 +35,8 @@ def main():
     jobs = {j["id"]: j for j in json.loads(gzip.decompress((HERE / chosen["source"]).read_bytes()))["jobs"]}
     resume = load_resume(HERE / "persona" / "aarav-patel.resume.example.json")
     targets = [p for p in chosen["postings"]
-               if (not args.split or p["split"] == args.split) and (not args.sampling or p["sampling"])]
+               if (not args.split or p["split"] == args.split) and (not args.sampling or p["sampling"])
+               and (not args.job or p["job_id"] in args.job)]
     args.out.mkdir(parents=True, exist_ok=True)
     tasks = [(p, k) for p in targets for k in range(1, args.repeat + 1)
              if not (args.out / ("%s-r%d.json" % (p["job_id"], k))).exists()]

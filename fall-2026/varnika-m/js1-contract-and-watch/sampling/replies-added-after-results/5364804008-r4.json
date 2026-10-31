@@ -1,0 +1,21 @@
+{
+  "label": "Claude judgment — opinion, not fact",
+  "asked_at": "2026-10-31T08:22:09+00:00",
+  "prompt_file": "baseline-v1.txt",
+  "prompt_sha256": "9151c90ed63d129e63f0e127a0298526aa5f6db2ce8cc78de1dae825305bca31",
+  "status": "accepted",
+  "verdict": "NOT_MATCH",
+  "reason": "The posting is a senior ML infrastructure role ($350K–$500K) that asks for a track record of large-scale systems and data problems, production distributed systems and Python proficiency, but the résumé shows about two years of Java maintenance at Infosys plus a five-month TypeScript co-op, with Python only listed as a skill and no ML training, inference or research-tooling experience beyond one multi-agent log-triage project.",
+  "raw_reply": "{\"label\":\"CLAUDE_JUDGMENT\",\"verdict\":\"NOT_MATCH\",\"reason\":\"The posting is a senior ML infrastructure role ($350K–$500K) that asks for a track record of large-scale systems and data problems, production distributed systems and Python proficiency, but the résumé shows about two years of Java maintenance at Infosys plus a five-month TypeScript co-op, with Python only listed as a skill and no ML training, inference or research-tooling experience beyond one multi-agent log-triage project.\"}",
+  "rejected_because": null,
+  "model_requested": "claude-opus-5-5",
+  "models_used": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5-5"
+  ],
+  "session_id": "f4268572-516f-4eb7-97e1-5fd4d335d953",
+  "total_cost_usd": 0.0157426,
+  "job_id": 5364804008,
+  "split": "development",
+  "repeat": 4
+}
