@@ -61,7 +61,7 @@ From how each one is set up. "Anthropic" means the text goes to Claude's servers
 
 | | (a) paste into a chat | (b) Claude reads a file | (c) agent fetches and writes | the agent as built (`watch.py` + `judge.py`) |
 |---|---|---|---|---|
-| **Can read** | Only what I paste, plus whatever the chat app adds (its own instructions, and memory or past chats if they are on) | Files in its working folder (here, the two inputs). Reading elsewhere needs permission it cannot get. | Its working folder, and any page on `boards-api.greenhouse.io` it decides to fetch | Code reads one board (one host, HTTPS, no redirects) and the persona file. Claude reads only the message it is given: no tools at all. |
+| **Can read** | Only what I paste, plus whatever the chat app adds (its own instructions, and memory or past chats if they are on) | Files in its working folder (here, the two inputs). Reading files outside the working folder is not pre-approved, so a non-interactive run should refuse it. I did not test this restriction directly. | Its working folder, and any page on `boards-api.greenhouse.io` it decides to fetch | Code reads one board (one host, HTTPS, no redirects) and the persona file. Claude reads only the message it is given: no tools at all. |
 | **Can write** | Nothing on my machine. The chat is saved in my Claude account. | Nothing (no write tool) | Any file in its working folder, chosen and filled by the model | Code writes `runs/` and `state/`. Claude writes nothing. |
 | **Sends** | The pasted text, to Anthropic | The prompt and the file contents it reads, to Anthropic | The prompt, the files it reads and the pages it fetches, to Anthropic. Its fetch requests go to Greenhouse. | The prompt, one posting and six résumé fields, to Anthropic. Code's one request goes to Greenhouse. |
 | **Authority it needs** | My logged-in Claude account, and me copying text in and out | Claude Code login, plus read access to one folder | Claude Code login, network access to one host, and write access to one folder. The model decides which actions to take. | Claude Code login. Code holds the network access and the files. |
@@ -69,24 +69,24 @@ From how each one is set up. "Anthropic" means the text goes to Claude's servers
 
 ## What happened
 
-All three ran on 2026-10-31. These results come from [`CHECK.md`](CHECK.md) and the saved outputs. Claude wrote this section from those files after Yash ran the steps.
+All three ran on 2026-10-31. These results come from [`CHECK.md`](CHECK.md) and the saved outputs. Claude drafted this section from the saved results after I ran the tests. I reviewed the findings and rewrote the last two paragraphs.
 
 | | (a) paste into a chat | (b) Claude reads a file | (c) agent fetches and writes |
 |---|---|---|---|
 | Saved output | [`a-chat-reply.txt`](a-chat-reply.txt) (copied by hand) | [`b-file-read.json`](b-file-read.json), written 07:23:59 UTC | [`c-agent.json`](c-agent.json), written 07:26:54 UTC; [`c-agent-state.json`](c-agent-state.json); [`c-agent-folder.txt`](c-agent-folder.txt) |
 | Answer under the validator | `not relevant`: **pass** | `not relevant`: **pass** | **invalid: fail.** `posting_id` came back as the string `"8546367002"`, not the number. Its verdict, `not relevant`, would have matched my label. |
 | Turns, time, permission denials | by hand | 3 turns, 5.0 s, none | 5 turns, 23.4 s, none |
-| Models Claude Code reported | Claude.ai, Sonnet 5.5, web search off, memory off. The response appeared as plain JSON text without code fences. | Sonnet 5.5: 6 input + 2,506 cache-read + 5,166 cache-creation tokens, 537 output. Haiku 4.5: 469 input, 14 output. | Sonnet 5.5: 8 input + 9,903 cache-read + 7,119 cache-creation tokens, 1,921 output. **Haiku 4.5: 35,378 input, 1,059 output.** |
+| Where it ran and models reported | Claude.ai, Sonnet 5.5, about 3:20 AM ET on October 31, 2026, web search off, memory off. The response appeared as plain JSON text without code fences. | Sonnet 5.5: 6 input + 2,506 cache-read + 5,166 cache-creation tokens, 537 output. Haiku 4.5: 469 input, 14 output. | Sonnet 5.5: 8 input + 9,903 cache-read + 7,119 cache-creation tokens, 1,921 output. **Haiku 4.5: 35,378 input, 1,059 output.** |
 | Reported cost | n/a | $0.029 | $0.099 |
 | `matched_terms` | `Databricks`, `Unity Catalog`, `AWS`, `LLM`, `evaluation` | none (the reason names Python, Databricks, MLflow, LangGraph and AWS) | none |
 | What it saw | Exactly the judge's view (pasted) | Exactly the judge's view (two files) | Whatever its fetches returned. It cited "Remote - California", which is in the posting's `offices` field, a field the judge does not send. |
 | State it kept | none | none | `state.json`, a JSON list of **117** ids |
 
-**The agent's state file.** All 117 ids are real: each appears in the watcher's saved response from 06:18:34 UTC, and none was invented. But that response has **901** ids, so **784 are missing**. The board can change in the hour between the two fetches, but not by 784 postings. A watcher using this state file would report about 784 postings it had already seen as "new" on its next run. Nothing in the agent checked the file it wrote.
+**The agent's state file.** All 117 ids are real: each appears in the watcher's saved response from 06:18:34 UTC, and none was invented. But that response has **901** ids, so **784 are missing**. The two responses were fetched at different times, so some differences may be due to changes on the job board. However, the agent's state file contained 784 fewer IDs than my watcher's saved response, showing a large difference that I could not fully explain from the saved records. A watcher using this state file would report about 784 postings it had already seen as "new" on its next run. Nothing in the agent checked the file it wrote.
 
 **What the records do not show.** Why the agent wrote only 117 ids: Claude Code's run record does not include the pages it fetched. Haiku's 35,378 input tokens appear only in the run that fetched pages, which is consistent with the fetched pages passing through Haiku before the agent saw them. This record does not confirm that.
 
-**Same verdict, different reliability.** All three reached `not relevant`, matching my label. The two surfaces that had no way to act (a and b) followed the format. The most autonomous one broke the format, and it kept a state file that silently lost most of the board.
+**Same verdict, different reliability.** All three returned `not relevant`, which matched my label. The manual chat and file-reading approaches passed my validator. The agent approach failed validation and produced a state file with far fewer IDs than the watcher's earlier response. This showed me that giving Claude more autonomy did not improve the result in this test.
 
 ## Least autonomy that suffices
 
