@@ -69,7 +69,11 @@ Regenerate this table with `python3 -m jobwatch.lab summary`.
 - **The held-out posting was not new to me.** 7855798003 is the contract's worked example. My protocol's
   "2+ years" sentence was written after Claude Code asked how I would treat that posting, before the
   split placed it in held-out. Claude also saw it once in a development smoke test on 2026-10-30. The
-  prompt was not tuned on it, but my label for it was not blind.
+  prompt was not tuned on it, but my label for it was not blind. Saying so does not make it unseen: the one
+  held-out case that improved is a familiar posting, so this result is **not clean evidence that the revision
+  generalizes**. A fair test needs new held-out postings labeled before anyone looks at them.
+- **This experiment is kept as it ran.** Nothing was rerun or replaced afterwards. The later seeded watch replay
+  (`action-surfaces/3-watch-seeded/`) used a dev posting and is not part of this experiment.
 - **The revision tells Claude my rule.** It works because it states protocol point 3. That shows the baseline
   was missing a criterion, not that Claude got better at judging.
 - **One labeler, one board, one model, one run per prompt per set.** The sampling report showed verdicts

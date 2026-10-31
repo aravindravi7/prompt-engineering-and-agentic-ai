@@ -2,7 +2,9 @@
 
 Entries are dated by when the work happened. I wrote this log on 2026-10-31 from my notes, the commits and
 a factual session log Claude Code kept, so the earlier entries are **retrospective**. The "What happened"
-and "Evidence" lines are facts organized by Claude Code; the rest is mine.
+and "Evidence" lines are facts organized by Claude Code. The reflection lines ("I tried / expected", "What I
+did", "I understand now", "What I learned", "Unresolved") were drafted by Codex from my review and forwarded
+by me. I confirmed the facts in them and made the decisions they describe; the wording is not mine.
 
 ## 2026-10-29: choosing a board
 
@@ -93,5 +95,24 @@ and "Evidence" lines are facts organized by Claude Code; the rest is mine.
 - **What I did:** I asked Claude Code to address all five before the final version, and not to push yet.
 - **Evidence:** the validator fix with a test that fails without it (`c42f2c6`); the corrected
   `action-surfaces/COMPARISON.md`, README and SOURCES (the commit after `c42f2c6`, "docs(js1): address the review findings").
-- **Unresolved / next step:** Finish my review, address the validator crash, correct the action-surface
-  evidence claims, and make clear which prompt the watch uses. Then prepare matching GitHub and Canvas versions.
+- **Done since:** the validator crash, the action-surface evidence claims and the default-prompt explanation
+  were fixed in `c42f2c6` and `1ec6051`.
+- **Unresolved / next step:** finish my personal review, decide whether any additional demonstration is
+  needed, then matching GitHub and Canvas delivery. The signature stays withheld until my review is done.
+
+## 2026-10-31: second Codex review, and a seeded watch replay
+
+- **What happened:**
+  - Codex's rubric review found more: a stale test count; authorship credit for the reflection and sign-off wording
+    it had drafted; stale "next steps"; surface 3 never actually judging the posting; held-out wording that
+    needed to stay explicit; and `scripts/validate_course.py` failing because of files elsewhere in the
+    course repository (none in this folder).
+  - At my request, Claude Code ran one seeded replay of 7855793003 through the real watch with `revision-v2`:
+    run 2's unmodified response and a scratch state with that id removed. Result: one real Claude call, valid;
+    rule and Claude both RELEVANT. The committed state and live runs were not changed.
+  - The saved seeded report says "this file was modified on purpose", which is wrong for this run (the state was
+    seeded, not the file). The template was corrected afterwards, and the saved report was left as written.
+  - Claude Code had earlier told me in chat that the course validator passed; it had read only the last line of the
+    output. It does not pass.
+- **Evidence:** `action-surfaces/3-watch-seeded/NOTES.md`; the commit "docs(js1): seeded watch replay, Codex credit,
+  held-out and validator wording".

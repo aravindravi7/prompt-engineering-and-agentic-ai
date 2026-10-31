@@ -80,15 +80,18 @@ would make new Claude calls and new result folders. `select` and `supplement` re
 | 2026-10-30 23:25:13 | **Run 1**, live baseline: `python3 -m jobwatch` (no Claude) | Ashwin | 156 postings, 0 reported new (baseline) | `runs/2026-10-30T23-25-13Z/` |
 | 2026-10-31 16:09:43 | **Run 2**, live, second calendar day: `python3 -m jobwatch --judge claude` (default prompt `baseline-v1`) | Ashwin | 156 postings, same ids, **0 new**, so no Claude call. 8 postings changed `updated_at` and were correctly not treated as new | `runs/2026-10-31T16-09-43Z/` |
 | 2026-10-31 17:56 | Sampling: 5 postings × 4 fresh calls | Claude Code | 20/20 valid, all unanimous, 16/20 agree with my labels | `sampling/REPORT.md` |
-| 2026-10-31 17:57–18:00 | Prompt experiment: baseline and one revision, dev then held-out | Claude Code | dev 11/12 → 12/12, held-out 11/12 → 12/12 | `experiment/REPORT.md` |
+| 2026-10-31 17:57–18:00 | Prompt experiment: baseline and one revision, dev then held-out | Claude Code | dev 11/12 → 12/12, held-out 11/12 → 12/12. The held-out gain is one posting, already familiar (the worked example, which also had a smoke call), so this is not clean evidence of generalization | `experiment/REPORT.md` |
 | 2026-10-31 | Action surfaces: chat paste and file read, `revision-v2` rules | Ashwin (chat), Claude Code (file read) | Both RELEVANT and valid. The watch made no Claude call (0 new) | `action-surfaces/COMPARISON.md` |
 | 2026-10-31 | Review of the drafts; reran 64 tests on 3.9.6 and 3.12.15, checked the saved hashes, 0 new ids and 8 changed timestamps | Codex, used by Ashwin | Found a validator crash and four documentation problems | FRICTIONAL.md; fix in `c42f2c6` |
-| 2026-10-31 | Test suite after the fix | Claude Code | 65/65 OK on 3.12.15 and 3.9.6 | — |
+| 2026-10-31 18:44:21 | **Seeded replay** through the real watch: run 2's unmodified response, scratch state with 7855793003 removed, `--prompt prompts/revision-v2.md` | Claude Code | 1 new; RULE RECORD RELEVANT, AI JUDGMENT RELEVANT (one real call, valid); scratch state 155 → 156 ids; committed state and live runs unchanged | `action-surfaces/3-watch-seeded/NOTES.md` |
+| 2026-10-31 | Test suite after the fixes | Claude Code | 65/65 OK on 3.12.15 and 3.9.6 | — |
+| 2026-10-31 | `python3 scripts/validate_course.py` from the repository root | Codex, then Claude Code | **Exits with failure** (exit code 1). Every listed failure is outside this folder: other students' `.ts`/`.tsx` files and broken links elsewhere in the shared course repository. None names `js1-contract-and-watch` | — |
 
 **No new posting appeared between runs 1 and 2,** so the live runs show the baseline, the new-by-id
-check and the state update, but no live Claude verdict on a new posting. New-posting reporting is
-shown by `tests/test_watch.py` on constructed fixtures. Claude's verdicts on real postings are in
-`sampling/` and `experiment/`.
+check and the state update, but no live Claude verdict on a new posting. The full path, from new posting
+to rule, Claude, validator, report and state, is shown by `tests/test_watch.py` on constructed fixtures and
+by the **seeded** replay on real posting text (`action-surfaces/3-watch-seeded/`). That is not the same as
+a posting appearing live. Claude's other verdicts on real postings are in `sampling/` and `experiment/`.
 
 ## Contents
 
@@ -97,7 +100,7 @@ shown by `tests/test_watch.py` on constructed fixtures. Claude's verdicts on rea
 | `CONTRACT.md` | In, Out, Refuses, the rule, the worked example, two wrong versions, the failure sentence. Committed (`470fae3`) before any code |
 | `jobwatch/` | The watch: `board` (allow-list, fetch), `persona`, `rule`, `state`, `judge` (prompt, `claude -p`, validator), `report`, `watch` (CLI) and `lab` (sampling and experiment tools) |
 | `wrong_versions/` | The contract's two wrong versions, kept so the tests can prove they catch them |
-| `tests/` | 64 unittest tests; `fixtures/klaviyo-7855798003.json` is one real posting copied from run 1 |
+| `tests/` | 65 unittest tests; `fixtures/klaviyo-7855798003.json` is one real posting copied from run 1 |
 | `prompts/` | `baseline-v1.md` and `revision-v2.md`, which adds one sentence |
 | `data/supriya-sharma.resume.json` | The fictional persona. It is validated before every run |
 | `runs/`, `state/seen_ids.json` | The two live runs (raw response, SHA-256, report) and the state after run 2 |
@@ -150,4 +153,4 @@ Signed or withheld: Withheld until I finish reviewing the drafts and the identif
 | What counts as "relevant" for Supriya | Nothing | Wrote the labeling protocol and all 24 hand labels | The labels represent my interpretation of the fictional candidate's fit. | `20b01fb`, `6773f06`, `f9bd958` |
 | The experiment design | Found that the labels were all one class and proposed the supplement | Chose the seed, chose to add the supplement, chose the one change | I own the choices about the split, supplement, and what the results support. | `9ed2e88`, `04bcea5`, `d932e3b` |
 | The autonomy choice | Ran the file-read surface and drafted the comparison table | Ran the chat paste and wrote the decision | I decide which actions the workflow needs and what access to give it. | `a13d3ca` |
-| The sign-off | Drafted the "Checked" list from the tests | Wrote "How", "Not checked" and "Not claiming"; withheld the signature | Only I can confirm what I personally checked and what remains unverified. | this README |
+| The sign-off | Claude Code drafted the "Checked" list from the tests. Codex drafted the "How", "Not checked" and "Not claiming" wording and these driver's-seat reasons | Confirmed the facts in them, decided what is listed as not checked, and withheld the signature | Only I can confirm what I personally checked and what remains unverified. | this README |

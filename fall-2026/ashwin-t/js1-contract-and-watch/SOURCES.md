@@ -28,7 +28,18 @@
 - The seed 2608, the decision to add the supplement, and the one change for `revision-v2`.
 - The decision paragraph in `action-surfaces/COMPARISON.md`.
 - The claude.ai chat run (`action-surfaces/1-chat-paste/reply.txt` is the reply I pasted back).
-- The experience lines in `FRICTIONAL.md`, and the README's sign-off (How, Not checked, Not claiming; signature withheld) and driver's-seat reasons.
+- The decisions in the sign-off: what is listed as not checked and not claimed, and withholding my signature
+  until my review is finished.
+- Confirmation of the facts in the reflection lines, sign-off wording and driver's-seat reasons below. I did not
+  write those words myself (see "What Codex contributed").
+
+## What Codex contributed
+
+On 2026-10-31 Codex drafted the reflection answers in `FRICTIONAL.md` (the "I tried", "What I did",
+"I understand now", "What I learned" and "Unresolved" lines), the README sign-off's "How", "Not checked" and
+"Not claiming" wording, and the driver's-seat "why" column. I forwarded them to Claude Code, which inserted
+them unchanged. Commit `1ec6051` describes them as "Ashwin's words"; that is corrected here. Codex also
+reviewed the drafts (see Review, above).
 
 ## What Claude Code contributed
 
@@ -39,16 +50,17 @@ Claude Code wrote, at my direction:
   2. "nine fields" → "eight fields", which matches the JSON;
   3. "Claude API request" → wording for the Claude Code CLI (`claude -p`);
   4. validation rule 8 now requires each `posting_quote` to be nonempty.
-- **All code and tests:** `jobwatch/`, `wrong_versions/`, `tests/` and `action-surfaces/file_read.py`,
+- **All code and tests:** `jobwatch/`, `wrong_versions/`, `tests/`, `action-surfaces/file_read.py` and `action-surfaces/seeded_watch.py`,
   written against my contract (commits marked "written by Claude Code").
 - **`prompts/baseline-v1.md`** (a draft, unchanged since). In `revision-v2.md`, Claude Code wrote the wording of the one sentence whose content I chose.
 - **`data/supriya-sharma.resume.json`**, copied from the persona in my contract.
-- **Running things:** the sampling and experiment Claude calls, the file-read surface, the final test runs,
+- **Running things:** the sampling and experiment Claude calls, the file-read surface, the seeded watch replay, the final test runs,
   and the board probes before the contract.
 - **First drafts** of `README.md`, `sampling/REPORT.md`, `experiment/REPORT.md`, the `COMPARISON.md` table
   and the factual lines of `FRICTIONAL.md`, written from the saved data and commit history. My review is
   not finished, which is why the sign-off is withheld.
-- **The fix for the validator crash** Codex found (`c42f2c6`), and the corrections to the comparison and README.
+- **The fix for the validator crash** Codex found (`c42f2c6`), the seeded-report wording fix in `jobwatch/report.py`,
+  and the corrections to the comparison, README, SOURCES and FRICTIONAL that followed both Codex reviews.
 - **Checks it reported to me:** the Datadog rule returning 0 relevant; the labels being all one class; the
   ambiguity of "up to 2 years" in my protocol, which I resolved myself.
 
