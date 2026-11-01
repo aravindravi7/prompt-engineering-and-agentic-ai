@@ -1,0 +1,186 @@
+{
+  "_note": "Hand labels by Aravind R. under labels/LABELING-RULE.md. label: relevant | not_relevant. first_failed_gate: 1-6 or null. gut: optional note where PM judgment disagrees.",
+  "labeled_at": null,
+  "rows": [
+    {
+      "set": "dev",
+      "n": 1,
+      "id": 8124304,
+      "title": "Staff Product Manager, Stripe Tax",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "dev",
+      "n": 2,
+      "id": 8143563,
+      "title": "Product Manager, Support Platform ",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "dev",
+      "n": 3,
+      "id": 8158082,
+      "title": "Program Manager, Risk Operations ",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "dev",
+      "n": 4,
+      "id": 8043083,
+      "title": "Staff Product Manager, Issuing",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "dev",
+      "n": 5,
+      "id": 8053517,
+      "title": "Privacy Operations Program Manager",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "dev",
+      "n": 6,
+      "id": 8231234,
+      "title": "Product Manager, Foreign Exchange",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "dev",
+      "n": 7,
+      "id": 8237244,
+      "title": "Security GRC Analyst/Program Manager, Bridge",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "dev",
+      "n": 8,
+      "id": 8209996,
+      "title": "Staff Product Manager, Payments Intelligence",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "dev",
+      "n": 9,
+      "id": 8195440,
+      "title": "Product Manager, Connect Growth & Monetization",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "dev",
+      "n": 10,
+      "id": 8301646,
+      "title": "Product Manager, Radar",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "heldout",
+      "n": 1,
+      "id": 8147961,
+      "title": "Program Manager, GTM Planning",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "heldout",
+      "n": 2,
+      "id": 8176254,
+      "title": "Product Manager,  Startup Products",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "heldout",
+      "n": 3,
+      "id": 8221776,
+      "title": "AI Solutions Program Manager, Finance",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "heldout",
+      "n": 4,
+      "id": 7913702,
+      "title": "Staff Product Manager, Dashboard",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "heldout",
+      "n": 5,
+      "id": 8327254,
+      "title": "Product Manager, Terminal Payments",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "heldout",
+      "n": 6,
+      "id": 8226893,
+      "title": "Staff Product Manager, Agentic Commerce",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "heldout",
+      "n": 7,
+      "id": 7984866,
+      "title": "Product Manager, Ecosystem Risk",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "heldout",
+      "n": 8,
+      "id": 7983725,
+      "title": "Staff Product Manager, Billing ",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "heldout",
+      "n": 9,
+      "id": 8306158,
+      "title": "Product Manager, Radar - Fraud and Abuse Prevention",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    },
+    {
+      "set": "heldout",
+      "n": 10,
+      "id": 7913698,
+      "title": "Staff Product Manager, Sail Core",
+      "label": null,
+      "first_failed_gate": null,
+      "gut": null
+    }
+  ]
+}
