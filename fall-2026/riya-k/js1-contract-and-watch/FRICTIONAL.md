@@ -7,13 +7,16 @@ Claude Code drafted the wording, except the section marked [Riya, own words]. I 
 
 | Commit | What |
 |---|---|
-| ab522f3 | CONTRACT.md only, before any code |
-| cc238dd | Watcher, judges, validator, tests; live baseline and seeded two-day run |
-| d61f9b4 | My 20 hand labels and contract amendment 1, before any Claude call on those postings |
-| 7396b0b | Sampling, prompt experiment, action-surface runs |
-| c03afe1 | Reports, live run 2 |
-| ae7bfc1 | Audit fixes: Out fields, amendment 2, seeded re-run |
-| (last) | Classmate-comparison fixes and sign-off. Its hash is in Canvas, since a commit can't contain its own hash |
+| ac26e69 | CONTRACT.md only, before any code |
+| 3f09459 | Watcher, judges, validator, tests; live baseline and seeded two-day run |
+| c665200 | My 20 hand labels and contract amendment 1, before any Claude call on those postings |
+| 105f2ba | Sampling, prompt experiment, action-surface runs |
+| 416b6b3 | Reports, live run 2 |
+| 2f8f6d0 | Audit fixes: Out fields, amendment 2, seeded re-run |
+| 6b8de55 | My own test run recorded in the sign-off |
+| 60e69a8 | Classmate-comparison fixes (mutation check, action-surface re-run, provenance) |
+| df9032f | Hand check, my own words, keep-v1 decision, signed sign-off |
+| (last) | Commit hashes updated after rebasing onto classmates' pushes. Its hash is in Canvas, since a commit can't contain its own hash |
 
 ---
 
@@ -25,7 +28,7 @@ Claude Code drafted the wording, except the section marked [Riya, own words]. I 
   stated target is "LLM-platform and ML-infrastructure roles", so leaving ML out would miss her best-fit jobs. I added it.
   Claude also flagged that "Databricks" appears in every Databricks posting, so I chose not to count it as a skill.
 - **What Claude contributed:** questions and options; it formatted my answers into CONTRACT.md.
-- **Evidence:** commit ab522f3 contains only CONTRACT.md.
+- **Evidence:** commit ac26e69 contains only CONTRACT.md.
 
 ### 2026-10-31 — The Unity Catalog trap (my rule had a free match I didn't see)
 
@@ -36,7 +39,7 @@ Claude Code drafted the wording, except the section marked [Riya, own words]. I 
 - **What I did:** added a dated amendment instead of editing the original text: Unity Catalog is not counted. Claude checked that
   none of the 24 already-reported verdicts changed. The whole-board count went from 6 relevant to 4.
 - **What I understand now:** a rule written before looking at the data can be "correct" and still meaningless on that data.
-- **Evidence:** CONTRACT.md "Amendments"; commit d61f9b4; test `test_databricks_is_not_a_free_skill`.
+- **Evidence:** CONTRACT.md "Amendments"; commit c665200; test `test_databricks_is_not_a_free_skill`.
 
 ### 2026-10-31 — Labeling, and redrawing the sample
 
@@ -45,7 +48,7 @@ Claude Code drafted the wording, except the section marked [Riya, own words]. I 
   judged anything, and replaced by a stratified draw (seed 7375), documented in `experiments/select_postings.py`.
 - **What I did:** I labeled all 20. Most of my "no" answers were about location, so I set one rule: any job outside the US is not relevant.
   I judged the 9 US postings one by one. I said yes to two: #3 Solutions Engineer (NYC) and #4 Software Engineer, New Grad.
-- **Evidence:** `labels/hand_labels.csv`, `labels/README.md`, commit d61f9b4.
+- **Evidence:** `labels/hand_labels.csv`, `labels/README.md`, commit c665200.
 
 ### 2026-10-31 — My #4 label was wrong, and Claude was consistently right
 

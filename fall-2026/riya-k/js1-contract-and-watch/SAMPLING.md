@@ -36,7 +36,7 @@ the raw text, is in `experiments/results/sampling_v1.jsonl`. The table is recomp
   and **disagreed with my label every time**. When I checked, Claude was right and my label was wrong. The posting is for people who
   "will graduate in Fall 2026 or Spring 2027", and Arya's résumé says `education.end_date: 2025-12`. It also asks
   for Java or C++, and Arya lists Python and SQL. I labeled from a summary that showed "new grad, Java or C++" but not
-  the graduation window. My label stays `relevant` in `labels/hand_labels.csv` because it was committed (d61f9b4)
+  the graduation window. My label stays `relevant` in `labels/hand_labels.csv` because it was committed (c665200)
   before any Claude call, and changing it after seeing Claude's answer would contaminate the experiment.
 - **Consistency on easy cases means little.** #1, #2 and #5 are obvious no's (a manager role in Paris, a senior role in
   Amsterdam, and a non-technical role). Any judge gets them right, so 4/4 there shows the format holds, not that the

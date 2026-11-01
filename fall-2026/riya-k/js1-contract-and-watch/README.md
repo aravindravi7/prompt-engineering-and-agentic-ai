@@ -14,7 +14,7 @@ with a validator. It never applies, emails, messages or logs in anywhere.
 
 | Path | What it is |
 |---|---|
-| `CONTRACT.md` | The contract, committed **before any code** (commit ab522f3), plus dated amendments |
+| `CONTRACT.md` | The contract, committed **before any code** (commit ac26e69), plus dated amendments |
 | `persona/arya-sahni.json` | Fictional résumé (`@example.com`, 555 phone), adapted from the Reallocation Engine's `priya-nair` example |
 | `jsagent/` | `watch.py` (allow-listed fetch, raw save, state, report), `rules.py` (the rule), `claude_judge.py` (Claude judge), `contract.py` (validators) |
 | `tests/test_agent.py` | 17 offline tests, including both wrong versions from the contract |
@@ -81,7 +81,7 @@ Raw-file provenance (sha256):
 - `snapshots/databricks-2026-10-29T005656Z-from-yash-s.json`: `43b17b07604aaa83fb5ad64c826eeee80fbe112e2a2d07f9bafb70da54bea74e`, byte-identical copy of yash-s's committed file
 - `snapshots/databricks-2026-10-31T233230Z-live.json`: `8ce05794c6fbc6e432c5b31e01aa6c6bc8f64d66e2042c644133ed45c37af68d`, the same bytes as `runs/raw/databricks-20261031T233230Z-live.json`
 
-Fresh clone (2026-11-01 00:31 UTC): a `git clone` of the repo at bfb969a ran commands 1, 2 and 4 above. Results: 17 tests OK; seeded run 2: 24 new;
+Fresh clone (2026-11-01 00:31 UTC): a `git clone` of the repo at 6b8de55 ran commands 1, 2 and 4 above. Results: 17 tests OK; seeded run 2: 24 new;
 `summarize` output identical to `experiments/results/summary.md`.
 
 The live second run found no change, so the **real change** between two calendar days comes from the seeded pair. Its
@@ -92,7 +92,7 @@ Tests: `python3 -m unittest discover -s tests` → **17 tests, OK** (last run 20
 
 The seeded pair was first run at 10-31 23:33 UTC and **re-run at 11-01 00:12 UTC** after a pre-submission audit found the verdicts
 were missing the `location` and `url` fields CONTRACT.md promises. The re-run gave the same counts: 24 new, rule 24/24 not_relevant,
-Claude 24/24 not_relevant, 0 rejected. The first run's files are in git history (commit cc238dd).
+Claude 24/24 not_relevant, 0 rejected. The first run's files are in git history (commit 3f09459).
 
 ## Results in one place
 
@@ -156,8 +156,8 @@ Claude 24/24 not_relevant, 0 rejected. The first run's files are in git history 
 
 | Part of the task | Claude did | I did | Why it stays mine | Evidence |
 |---|---|---|---|---|
-| The rule and contract | formatted my answers into CONTRACT.md; pointed out the "Databricks" and "Unity Catalog" free matches | chose title words, the 2-skill minimum, seniority words, US-only, wrong versions, and the failure sentence; added ML titles after Claude flagged it; chose amendment 1 | The rule decides what is "worth a day of your life"; Claude can't know what I want | Commit ab522f3 (contract before code) and cc238dd (code), amendment section in CONTRACT.md; my chat line (2026-10-31): *"okay so do one thing ask me questions and i will answer and you fill it in"* |
-| Hand labels | picked 20 postings by seed; showed me title, location, years and skills | labeled all 20, including a blanket rule that non-US = no | They are the answer key; if Claude wrote them, the experiment would grade Claude against itself | Commit d61f9b4 (labels) **before** 7396b0b (first Claude results on them); `labels/README.md`; my chat line while labeling (2026-10-31): *"see mostly my answer will be no for the location i want the location in US"* |
+| The rule and contract | formatted my answers into CONTRACT.md; pointed out the "Databricks" and "Unity Catalog" free matches | chose title words, the 2-skill minimum, seniority words, US-only, wrong versions, and the failure sentence; added ML titles after Claude flagged it; chose amendment 1 | The rule decides what is "worth a day of your life"; Claude can't know what I want | Commit ac26e69 (contract before code) and 3f09459 (code), amendment section in CONTRACT.md; my chat line (2026-10-31): *"okay so do one thing ask me questions and i will answer and you fill it in"* |
+| Hand labels | picked 20 postings by seed; showed me title, location, years and skills | labeled all 20, including a blanket rule that non-US = no | They are the answer key; if Claude wrote them, the experiment would grade Claude against itself | Commit c665200 (labels) **before** 105f2ba (first Claude results on them); `labels/README.md`; my chat line while labeling (2026-10-31): *"see mostly my answer will be no for the location i want the location in US"* |
 | Hand check | told me the code's verdict only after I answered | worked through my rule by hand on posting 6866538002 and judged it not relevant (internship) | Only I know Arya wants full-time work; the rule didn't encode it | `labels/handcheck/README.md`; my chat line (2026-10-31): *"no it contains intern which is of the lower position and i cant apply to intern positions because im looking for full time"* |
 | Label #4 | answered "not relevant" 4/4 times | kept my wrong label rather than editing it after seeing Claude's answer | Changing the answer key after seeing the model would hide the error | SAMPLING.md, `labels/hand_labels.csv` row 4; my chat line (2026-10-31): *"wait she needs job in spring 2026 right if she graduated in dec 2025"* |
 | The prompt change | ran v1 and v2 | chose which one change v2 makes | The experiment tests my hypothesis, not Claude's | `experiments/prompts/v2_criteria.md` |

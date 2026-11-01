@@ -9,7 +9,7 @@
 - **Labeling rule (written first, in CONTRACT.md):** relevant if Arya could apply honestly today: the role matches her
   AI/ML/data target, it is not senior, and she has at least 2 of the core skills the posting asks for. While labeling
   I added one blanket rule in the chat: any posting outside the US is not relevant.
-- **Labels:** `labels/hand_labels.csv`, committed in d61f9b4 **before** any Claude call on these postings.
+- **Labels:** `labels/hand_labels.csv`, committed in c665200 **before** any Claude call on these postings.
   Dev: 2 relevant and 8 not. Held-out: **0 relevant** and 10 not.
 - **Pass:** Claude's verdict equals my hand label. A reply the validator rejects counts as a fail.
 - **Calls:** one fresh `claude -p` call per posting per prompt, model `claude-sonnet-5-5`, 2026-10-31 ~23:50 UTC.
@@ -36,7 +36,7 @@ From `called_at` and `prompt_sha256_12` in the results files (all 2026-10-31 UTC
 | v2 held-out | 23:55:58 – 23:56:04 | 5e31e6e8294d |
 
 Each prompt's hash is the same on dev and held-out, so neither prompt was edited between the two runs. The held-out calls came
-after both dev runs. The dev and held-out results share one commit (7396b0b), so this ordering rests on the recorded timestamps,
+after both dev runs. The dev and held-out results share one commit (105f2ba), so this ordering rests on the recorded timestamps,
 not on commit order. I did not freeze the prompt hashes in a separate commit before the held-out run.
 
 ## Results (recomputed by `python3 -m experiments.summarize`)
