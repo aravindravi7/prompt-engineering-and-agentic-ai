@@ -1,0 +1,23 @@
+{
+  "run": "20261101T020324Z-seeded-baseline",
+  "started_at": "2026-11-01T02:03:24.995Z",
+  "finished_at": "2026-11-01T02:03:25.013Z",
+  "board": "stripe",
+  "source": {
+    "kind": "SEEDED: saved response read from disk, no network",
+    "file": "runs/20261101T020324Z-seeded-earlier/raw-response.json"
+  },
+  "network_requests": [],
+  "state_file": "state/seeded-seen-ids.json",
+  "baseline": true,
+  "jobs_in_response": 737,
+  "previously_seen": 0,
+  "new_postings": 0,
+  "persona_validation": {
+    "ok": true,
+    "emails": 1,
+    "phones": 1
+  },
+  "judge": "none",
+  "prompt": "prompts/judge.v1.md"
+}

@@ -159,3 +159,14 @@ test('Claude validator: rejects anything but the fixed format; an invalid reply 
   assert.equal(r.claude_label, 'JUDGMENT');
   assert.equal(calls, 1, 'no silent retry');
 });
+
+test('Gate 2 revision 2026-10-31: junior title terms match whole words only', () => {
+  const base = { content: '', location: { name: 'Remote' }, departments: [] };
+  const g2 = title => judgePosting({ ...base, id: 1, title }, prefs).rule_justification.gates[1];
+  assert.equal(g2('Product Manager, International Payments').pass, true, '"International" is not "Intern"');
+  assert.equal(g2('Product Manager, Internal Tools').pass, true);
+  assert.equal(g2('Product Manager Intern').pass, false);
+  assert.equal(g2('Associate Product Manager').pass, false);
+  assert.equal(g2('APM, Payments').pass, false);
+  assert.equal(g2('Product Manager: New Grad Accelerator').pass, false);
+});

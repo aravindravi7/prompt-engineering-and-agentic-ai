@@ -34,7 +34,8 @@ export function judgePosting(posting, prefs) {
     posting_field: 'title', posting_value: title, extracted: prefix,
     compared_with: contractRef('title list', TITLE_LIST) });
 
-  const juniorTerm = JUNIOR_TITLE_TERMS.find(t => title.includes(t)) ?? null;
+  // Revision 2026-10-31 (CONTRACT.md, Gate 2): title terms match whole words only.
+  const juniorTerm = JUNIOR_TITLE_TERMS.find(t => new RegExp(`(?<![A-Za-z0-9])${t}(?![A-Za-z0-9])`).test(title)) ?? null;
   const lowRange = [...text.matchAll(RANGE)].find(m => Number(m[2]) <= 2)?.[0] ?? null;
   gates.push({ gate: 2, name: 'Not junior', pass: !juniorTerm && !lowRange,
     posting_field: 'title; content', posting_value: { title, junior_term: juniorTerm, range_upper_le_2: lowRange },

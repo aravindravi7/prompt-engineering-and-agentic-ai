@@ -9,14 +9,11 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { plainText } from '../src/text.mjs';
+import { mulberry32 } from './rand.mjs';
 
 const { values: a } = parseArgs({ options: { raw: { type: 'string' }, seed: { type: 'string' }, out: { type: 'string', default: 'labels' } } });
 const seed = Number(a.seed);
 if (!a.raw || !Number.isInteger(seed)) { console.error('--raw and an integer --seed are required'); process.exit(2); }
-
-export function mulberry32(s) {
-  return () => { s |= 0; s = s + 0x6D2B79F5 | 0; let t = Math.imul(s ^ s >>> 15, 1 | s); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
-}
 
 const jobs = JSON.parse(readFileSync(a.raw, 'utf8')).jobs;
 const team = j => (j.departments ?? []).map(d => d.name).join(' / ') || '(none)';
