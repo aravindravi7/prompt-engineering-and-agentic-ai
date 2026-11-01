@@ -112,6 +112,7 @@ Claude 24/24 not_relevant, 0 rejected. The first run's files are in git history 
 - The contract decisions (rule, exclusions, wrong versions, failure sentence) are mine, given as answers in the chat before any code existed.
 - The 20 hand labels are mine.
 - The tests were written by Claude against my contract. I did not write tests before reading Claude's code.
+- I ran the full test suite myself on my own machine on 2026-10-31 (`python3 -m unittest discover -s tests -v` → 17 tests, OK), after the audit fixes.
 - The rule and experiment numbers are recomputed by `experiments/summarize.py`.
 - With Claude's help: all code, the tests, and the drafts of these reports.
 
