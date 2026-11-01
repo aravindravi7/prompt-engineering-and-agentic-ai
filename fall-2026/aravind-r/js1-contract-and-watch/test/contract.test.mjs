@@ -11,7 +11,7 @@ import { judgePosting, validateRuleResult, titlePrefix } from '../src/rule.mjs';
 import { diffNew, loadState, saveState } from '../src/state.mjs';
 import { guardedFetch, boardUrl, Refused } from '../src/fetch.mjs';
 import { validatePersona, validatePrefs } from '../src/persona.mjs';
-import { validateClaudeOutput, claudeJudge } from '../src/claude-judge.mjs';
+import { validateClaudeOutput, claudeJudge, quoteFidelity } from '../src/claude-judge.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const board = JSON.parse(readFileSync(join(ROOT, 'test/fixtures/constructed-board.json'), 'utf8'));
@@ -169,4 +169,18 @@ test('Gate 2 revision 2026-10-31: junior title terms match whole words only', ()
   assert.equal(g2('Associate Product Manager').pass, false);
   assert.equal(g2('APM, Payments').pass, false);
   assert.equal(g2('Product Manager: New Grad Accelerator').pass, false);
+});
+
+test('v2 schema: evidence object required and well-formed; quote fidelity recorded, not enforced', () => {
+  const base = { verdict: 'relevant', cited_posting_fields: ['content'], cited_persona_fields: ['years_pm'], justification: 'x' };
+  const ev = { gate2: 'not found', gate3: '3+ years of product management experience', gate5: 'not found', gate6: 'not found' };
+  assert.equal(validateClaudeOutput(JSON.stringify({ ...base, evidence: ev }), { schema: 'v2' }).ok, true);
+  assert.equal(validateClaudeOutput(JSON.stringify(base), { schema: 'v2' }).ok, false, 'missing evidence');
+  assert.equal(validateClaudeOutput(JSON.stringify({ ...base, evidence: { ...ev, gate4: 'x' } }), { schema: 'v2' }).ok, false, 'extra evidence key');
+  assert.equal(validateClaudeOutput(JSON.stringify({ ...base, evidence: { ...ev, gate3: '' } }), { schema: 'v2' }).ok, false, 'empty quote');
+  assert.equal(validateClaudeOutput(JSON.stringify({ ...base, evidence: [] }), { schema: 'v2' }).ok, false, 'evidence not an object');
+  assert.equal(validateClaudeOutput(JSON.stringify({ ...base, evidence: ev })).ok, false, 'v1 schema rejects the extra key');
+  const p101 = board.jobs.find(j => j.id === 101);
+  assert.deepEqual(quoteFidelity(ev, p101), { ok: true, per_gate: { gate2: 'not found', gate3: 'exact', gate5: 'not found', gate6: 'not found' } });
+  assert.equal(quoteFidelity({ ...ev, gate3: '3+ years of PM experience' }, p101).ok, false);
 });

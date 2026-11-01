@@ -13,6 +13,8 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 export const POSTING_FIELDS = ['title', 'location.name', 'departments', 'content'];
 export const PERSONA_FIELDS = ['years_pm', 'locations', 'needs_sponsorship', 'domains', 'experience', 'education', 'skills', 'projects'];
 const KEYS = ['verdict', 'cited_posting_fields', 'cited_persona_fields', 'justification'];
+// v2 prompt (prompts/judge.v2.md) adds one required key: evidence quotes for gates 2, 3, 5, 6.
+export const EVIDENCE_KEYS = ['gate2', 'gate3', 'gate5', 'gate6'];
 
 export function ruleSection(contractPath = join(HERE, '..', 'CONTRACT.md')) {
   const md = readFileSync(contractPath, 'utf8');
@@ -36,13 +38,22 @@ export function buildPrompt(template, { rule, persona, posting }) {
   return template.replace('{{RULE}}', rule).replace('{{PERSONA}}', persona).replace('{{POSTING}}', posting);
 }
 
-export function validateClaudeOutput(text) {
+export function validateClaudeOutput(text, { schema = 'v1' } = {}) {
+  const keysWanted = schema === 'v2' ? [...KEYS, 'evidence'] : KEYS;
   const errors = [];
   let obj;
   try { obj = JSON.parse(String(text).trim()); } catch { return { ok: false, errors: ['not a bare JSON object'], value: null }; }
   if (!obj || typeof obj !== 'object' || Array.isArray(obj)) return { ok: false, errors: ['not a JSON object'], value: null };
   const keys = Object.keys(obj).sort();
-  if (keys.join() !== [...KEYS].sort().join()) errors.push(`keys must be exactly ${KEYS.join(', ')}; got ${keys.join(', ')}`);
+  if (keys.join() !== [...keysWanted].sort().join()) errors.push(`keys must be exactly ${keysWanted.join(', ')}; got ${keys.join(', ')}`);
+  if (schema === 'v2') {
+    const ev = obj.evidence;
+    if (!ev || typeof ev !== 'object' || Array.isArray(ev)) errors.push('evidence must be an object');
+    else {
+      if (Object.keys(ev).sort().join() !== [...EVIDENCE_KEYS].sort().join()) errors.push(`evidence keys must be exactly ${EVIDENCE_KEYS.join(', ')}`);
+      for (const k of EVIDENCE_KEYS) if (typeof ev[k] !== 'string' || !ev[k].trim()) errors.push(`evidence.${k} must be a non-empty string`);
+    }
+  }
   if (!['relevant', 'not_relevant'].includes(obj.verdict)) errors.push('verdict not in enum');
   for (const [k, allowed] of [['cited_posting_fields', POSTING_FIELDS], ['cited_persona_fields', PERSONA_FIELDS]]) {
     const v = obj[k];
@@ -84,4 +95,17 @@ export function claudeJudge(posting, { resume, prefs, template, model, runner })
     claude_raw: call.text,
     claude_call: { at: call.at, exit_code: call.exit_code, models: call.models, session_id: call.session_id, error: call.error },
   };
+}
+
+// Recorded, never used to reject or change a verdict: is every quote (other than
+// "not found") an exact substring of the posting text Claude was given (HTML decoded,
+// tags stripped, case lowered, exactly as postingView sends it)?
+export function quoteFidelity(evidence, posting) {
+  const text = contentText(posting.content);
+  const per = {};
+  for (const k of EVIDENCE_KEYS) {
+    const q = evidence?.[k];
+    per[k] = q === 'not found' ? 'not found' : (typeof q === 'string' && text.includes(q) ? 'exact' : 'not a substring');
+  }
+  return { ok: Object.values(per).every(v => v !== 'not a substring'), per_gate: per };
 }
