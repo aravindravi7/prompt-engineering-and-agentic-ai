@@ -1,0 +1,31 @@
+{
+  "run": "20261101T015849Z-live-baseline",
+  "started_at": "2026-11-01T01:58:49.257Z",
+  "finished_at": "2026-11-01T01:58:49.670Z",
+  "board": "stripe",
+  "source": {
+    "kind": "live fetch",
+    "url": "https://boards-api.greenhouse.io/v1/boards/stripe/jobs?content=true"
+  },
+  "network_requests": [
+    {
+      "at": "2026-11-01T01:58:49.258Z",
+      "url": "https://boards-api.greenhouse.io/v1/boards/stripe/jobs?content=true",
+      "host": "boards-api.greenhouse.io",
+      "status": 200,
+      "result": "ok"
+    }
+  ],
+  "state_file": "state/seen-ids.json",
+  "baseline": true,
+  "jobs_in_response": 745,
+  "previously_seen": 0,
+  "new_postings": 0,
+  "persona_validation": {
+    "ok": true,
+    "emails": 1,
+    "phones": 1
+  },
+  "judge": "claude",
+  "prompt": "prompts/judge.v1.md"
+}

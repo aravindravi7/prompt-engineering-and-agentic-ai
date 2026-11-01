@@ -1,0 +1,170 @@
+{
+  "drawn_at": "2026-11-01T01:59:17.939Z",
+  "raw": "runs/20261101T015849Z-live-baseline/raw-response.json",
+  "seed": 20261031,
+  "pm_family_filter": "/product manag|program manag/i on title",
+  "pm_family_postings": 67,
+  "after_dedupe_title_team": 65,
+  "rows": [
+    {
+      "set": "dev",
+      "n": 1,
+      "id": 8124304,
+      "title": "Staff Product Manager, Stripe Tax",
+      "team": "8415 RevSuite Central",
+      "location": "Dublin, Ireland"
+    },
+    {
+      "set": "dev",
+      "n": 2,
+      "id": 8143563,
+      "title": "Product Manager, Support Platform ",
+      "team": "4900 Support Eng & PM",
+      "location": "Dublin, Ireland "
+    },
+    {
+      "set": "dev",
+      "n": 3,
+      "id": 8158082,
+      "title": "Program Manager, Risk Operations ",
+      "team": "4892 Risk Operations Enablement",
+      "location": "United States"
+    },
+    {
+      "set": "dev",
+      "n": 4,
+      "id": 8043083,
+      "title": "Staff Product Manager, Issuing",
+      "team": "8256 Issuing - PM",
+      "location": "London"
+    },
+    {
+      "set": "dev",
+      "n": 5,
+      "id": 8053517,
+      "title": "Privacy Operations Program Manager",
+      "team": "6311 Data Protection & Privacy",
+      "location": "US Remote"
+    },
+    {
+      "set": "dev",
+      "n": 6,
+      "id": 8231234,
+      "title": "Product Manager, Foreign Exchange",
+      "team": "8538 MMS APIs & Experiences - PM",
+      "location": "London"
+    },
+    {
+      "set": "dev",
+      "n": 7,
+      "id": 8237244,
+      "title": "Security GRC Analyst/Program Manager, Bridge",
+      "team": "8504 Bridge - R&D",
+      "location": "New York "
+    },
+    {
+      "set": "dev",
+      "n": 8,
+      "id": 8209996,
+      "title": "Staff Product Manager, Payments Intelligence",
+      "team": "8552 PayIntel - PM",
+      "location": "NYC, SF, Seattle, US - Remote"
+    },
+    {
+      "set": "dev",
+      "n": 9,
+      "id": 8195440,
+      "title": "Product Manager, Connect Growth & Monetization",
+      "team": "8250 Connect - PM",
+      "location": "Seattle, New-York, San Francisco"
+    },
+    {
+      "set": "dev",
+      "n": 10,
+      "id": 8301646,
+      "title": "Product Manager, Radar",
+      "team": "8553 Radar - PM",
+      "location": "San Francisco, Seattle New York, US - Remote"
+    },
+    {
+      "set": "heldout",
+      "n": 1,
+      "id": 8147961,
+      "title": "Program Manager, GTM Planning",
+      "team": "1520 Sales Operations (SS&O)",
+      "location": "Chicago, Remote"
+    },
+    {
+      "set": "heldout",
+      "n": 2,
+      "id": 8176254,
+      "title": "Product Manager,  Startup Products",
+      "team": "3710 Startup Product",
+      "location": "NYC, Chicago, Seattle, San Francisco"
+    },
+    {
+      "set": "heldout",
+      "n": 3,
+      "id": 8221776,
+      "title": "AI Solutions Program Manager, Finance",
+      "team": "6425 Finance Operations",
+      "location": "SEA, SF, NYC, CHI"
+    },
+    {
+      "set": "heldout",
+      "n": 4,
+      "id": 7913702,
+      "title": "Staff Product Manager, Dashboard",
+      "team": "8569 MerchantXP - PM",
+      "location": "San Francisco, Seattle, NYC, Chicago, Atlanta, US Remote"
+    },
+    {
+      "set": "heldout",
+      "n": 5,
+      "id": 8327254,
+      "title": "Product Manager, Terminal Payments",
+      "team": "8258 Terminal - PM",
+      "location": "Toronto, Canada"
+    },
+    {
+      "set": "heldout",
+      "n": 6,
+      "id": 8226893,
+      "title": "Staff Product Manager, Agentic Commerce",
+      "team": "8510 Agentic Commerce",
+      "location": "Seattle, San Francisco, New York"
+    },
+    {
+      "set": "heldout",
+      "n": 7,
+      "id": 7984866,
+      "title": "Product Manager, Ecosystem Risk",
+      "team": "8260 Risk and Compliance Platform PM",
+      "location": "Toronto"
+    },
+    {
+      "set": "heldout",
+      "n": 8,
+      "id": 7983725,
+      "title": "Staff Product Manager, Billing ",
+      "team": "8412 Subscriptions",
+      "location": "SF, NY, SEA, Remote-US"
+    },
+    {
+      "set": "heldout",
+      "n": 9,
+      "id": 8306158,
+      "title": "Product Manager, Radar - Fraud and Abuse Prevention",
+      "team": "8553 Radar - PM",
+      "location": "San Francisco, Seattle, New York, US-Remote"
+    },
+    {
+      "set": "heldout",
+      "n": 10,
+      "id": 7913698,
+      "title": "Staff Product Manager, Sail Core",
+      "team": "8569 MerchantXP - PM",
+      "location": "New York, US - Remote (East Coast), Toronto"
+    }
+  ]
+}
