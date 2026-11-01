@@ -113,4 +113,9 @@ See `ACTION-SURFACE.md`.
 
 ## Driver's seat
 
-[Aravind to write: what Claude did, what I did, why that part stays mine, with the commit or edit that shows the split]
+| Part | Claude should | I should | Why it stays mine | Evidence |
+|---|---|---|---|---|
+| Code, tests, harness | Write it (Claude Code wrote all of it) | Run the tests and read the records myself | Building is cheap; checking is the job | my test run 13/13; dev 2 record check (FRICTIONAL §8) |
+| Contract | Draft prose from my decisions (Claude (chat)) | Set every value and gate; decide the Gate 2 amendment | Relevance is a judgment about a career | 5656bfb committed before any code; f090693 |
+| Labels | Read Gates 3–6 on 8 rows from grep output I ran (disclosed) | 12 Gate 1 labels, all gut notes, final review of all 20 | Ground truth can't come from the system under test | 3249974; held-out 1 gut note (rule says no, I say yes) |
+| Verifying claims | Report results | Recompute anything I sign | Claude Code misreported dev 2's first failed gate; my hand label caught it | FRICTIONAL §8; score.mjs --rule 20/20 |
