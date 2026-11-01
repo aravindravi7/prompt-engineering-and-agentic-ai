@@ -20,7 +20,7 @@ What this submission used, what I (Aravind) wrote or decided, and what Claude co
 - Amending the contract for Gate 2.
 - The seeded selection choice.
 - Choosing the v2 change.
-- All 20 hand labels.
+- All 20 labels: the 12 Gate 1 labels by hand; the Gates 3–6 readings on 8 rows from Claude (chat), reviewed and set by me.
 - The conclusions in SAMPLING.md and EXPERIMENT.md.
 - The action-surface choice.
 - The sign-off and driver's seat.
@@ -44,4 +44,5 @@ What this submission used, what I (Aravind) wrote or decided, and what Claude co
 - Suggested a persona shaped like me; I rejected it and kept Maya.
 - Gate 2 whole-word revision wording; labeling rule = gates by hand + gut note.
 - Seeded-run selection approach; v2 evidence-quote change, which I chose.
+- Gates 3–6 readings on 8 labeling rows, from grep output I ran.
 - Drafted FRICTIONAL.md structure and wording from my answers; Claude Code corrected attributions.

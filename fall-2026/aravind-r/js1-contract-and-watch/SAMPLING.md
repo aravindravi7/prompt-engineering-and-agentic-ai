@@ -26,4 +26,4 @@ All 20 verdicts were `not_relevant`. Each posting got the same verdict all 4 tim
 
 ## What I can and cannot conclude
 
-[Aravind to write]
+All 20 verdicts (dev 1–5 × 4 fresh calls) were identical and matched my hand labels. That shows repeatability, not correctness: the same answer four times only means the model is consistent on these inputs. Four of the five postings failed on title alone (Gate 1); dev 2 was the only text-gate case (Gate 3, “7+ years”). So this says nothing about Gates 5–6, and Gate 4 only as a later failure on dev 2, or about any relevant posting. Four samples per posting also can’t detect rare flips: a verdict that flips 1 time in 10 would show no flip in four calls about 66% of the time.

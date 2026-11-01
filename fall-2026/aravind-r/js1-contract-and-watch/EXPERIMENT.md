@@ -6,7 +6,7 @@ A baseline prompt contract and one revision that changes one thing, scored again
 
 ## Setup
 
-- **Labels:** 20 Stripe PM-family postings, deduplicated by title + team, drawn with seed 20261031 and split 10 dev / 10 held-out by the same seed (`labels/draw.json`). The labeling rule (`labels/LABELING-RULE.md`, committed f090693) was written before labeling. I labeled all 20 by hand (`labels/hand-labels.json`, committed 3249974).
+- **Labels:** 20 Stripe PM-family postings, deduplicated by title + team, drawn with seed 20261031 and split 10 dev / 10 held-out by the same seed (`labels/draw.json`). The labeling rule (`labels/LABELING-RULE.md`, committed f090693) was written before labeling. I labeled the 12 Gate 1 rows by hand; for the other 8, Claude (chat) read Gates 3–6 from grep output I ran, and I reviewed and set each label (`labels/hand-labels.json`, committed 3249974).
 - **Baseline, v1** (`prompts/judge.v1.md`): the contract's rule, the persona, the posting, and a fixed four-key JSON output.
 - **Revision, v2** (`prompts/judge.v2.md`): one change. A required `evidence` object quotes the sentence behind gates 2, 3, 5 and 6, or says "not found". The validator rejects a missing or malformed evidence object. Quote fidelity (every quote is an exact substring of the posting text Claude was given) is recorded but never rejects a reply or changes a verdict.
 - **Pass:** Claude's verdict equals my hand label. An invalid reply counts as a fail.
@@ -26,4 +26,4 @@ The one failure: held-out 7 (7984866) under v1. The reply was a valid JSON objec
 
 ## Limits and conclusions
 
-[Aravind to write]
+Both prompts scored 10/10 on dev, so dev could not distinguish them. On held-out, v1 scored 9/10 and v2 10/10; the only difference is one format failure (held-out 7, v1: valid JSON followed by prose, rejected by the validator), not a wrong verdict. One event in ten cases is not evidence that the v2 change caused it. The base rate limits everything: held-out has 0 relevant postings and dev has 1, so a judge that always said “not relevant” would score 10/10 and 9/10. These pass rates mainly show the absence of false positives, not the ability to find relevant roles. v2’s quote fidelity was 10/10 on both sets, so in these 20 calls Claude never cited text absent from the posting. The most informative case was held-out 7: my literal rule passed “7+ years in Product Management” (no “experience” in the sentence) and failed it on location. v1’s reply (the invalid one) read the posting’s meaning and failed it on Gate 3; v2, under the same rule, applied it literally, noted the “7+ years” line and passed Gate 3 as “not stated”, agreeing with my rule. On held-out 1, Claude agreed with my rule (title fails), not with my gut that GTM Planning is PM-relevant.

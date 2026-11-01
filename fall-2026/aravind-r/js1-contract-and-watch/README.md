@@ -94,7 +94,22 @@ See `ACTION-SURFACE.md`.
 
 ## Sign-off — Job-Search Agent 1
 
-[Aravind to write: Checked / How / Not checked (at least three) / Not claiming / Signed or withheld]
+**Checked:** all four wrong versions, allow-list/http/redirect refusals, persona validation, and the end-to-end baseline→seeded run, by Claude Code’s 13 tests, written against my contract, which I ran myself (13/13 pass, 2026-10-31). Rule verdicts and first failed gates against my 20 hand labels, by recomputation against my labels (8 rows assisted by Claude (chat)) (`score.mjs --rule`, 20/20). The seeded second run reported exactly the 8 expected ids (asserted).
+
+**How:** tests written by Claude Code after my contract and run by me; labels by hand (12 Gate 1 labels mine; Gates 3–6 readings on 8 rows by Claude (chat) from grep output I ran, reviewed by me).
+
+**Not checked:**
+
+* Gate 3 misses stated requirements: “7+ years in Product Management” (no “experience”) and “more than three years” (means 4+). Found twice; untested beyond the 20.
+* “Remote” substring may admit non-US remote roles; not checked across the 745 postings.
+* No real second calendar day; the second run is seeded.
+* Only one relevant posting in the 20, so the judges’ ability to find relevant roles is essentially untested.
+* Prompt injection via posting text: untested.
+* Tool-disable verified after the runs with identical flags, not logged during them.
+
+**Not claiming:** that any verdict means a job is worth applying to; that Claude’s verdicts are correct beyond these 20; that the rule generalizes beyond Stripe or beyond Maya Sehgal.
+
+**Signed:** Aravind R., 2026-10-31
 
 ## Driver's seat
 
