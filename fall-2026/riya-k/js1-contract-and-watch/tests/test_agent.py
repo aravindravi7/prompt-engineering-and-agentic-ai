@@ -57,6 +57,13 @@ class TestRule(unittest.TestCase):
         self.assertFalse(rules.is_us_location("London, United Kingdom"))
         self.assertFalse(rules.is_us_location("Remote - Germany"))
         self.assertFalse(rules.is_us_location("Bengaluru, India"))
+        # Amendment 2: state codes are capitals only, so "Montréal" is not Alabama.
+        self.assertFalse(rules.is_us_location("Montréal, Canada"))
+        self.assertTrue(rules.is_us_location("Austin, TX"))
+
+    def test_out_fields_present(self):
+        v = rules.judge({**GOOD, "absolute_url": "https://example.com/1"}, RESUME)
+        self.assertEqual((v["location"], v["url"]), ("Boston, Massachusetts", "https://example.com/1"))
 
     def test_extra_substring_skill_match_is_caught(self):
         # Extra check: 'SQL' inside 'NoSQL' and 'AI' inside 'maintain' must not count.

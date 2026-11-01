@@ -85,6 +85,21 @@ Claude Code drafted the wording. I chose which events to record and what I took 
 - **Rejected:** Claude's first wording for SOURCES ("Claude transcribed the answers…"). I asked for different wording, and it now says the decisions are
   mine and Claude formatted them.
 
+### 2026-10-31 — Pre-submission audit against the brief and classmates' folders
+
+- **I tried / expected:** before signing, I asked Claude to check everything against the brief again and against my classmates'
+  submissions, because I didn't want to lose marks.
+- **What happened:** the audit found three gaps between what my contract says and what the code did:
+  - "Out" promises each posting's `location` and `url`, but the verdicts didn't include them.
+  - The contract says "all matching is case-insensitive", but the code matches "US" and state codes in capitals only. Claude
+    checked that case-insensitive matching would wrongly put "Montréal, Canada" in Alabama ("al"), so the code was right and the contract was incomplete.
+  - The driver's seat pointed only to commits, not to transcript lines.
+- **What I did:** added amendment 2 to CONTRACT.md (case-sensitive state codes) instead of editing the original text. Claude added the two
+  fields with a test and re-ran the seeded watch (same counts), added quoted chat lines to the driver's seat, added `requirements.txt`
+  and a sources line to the README.
+- **What I'm doing myself:** running the tests on my own machine (the brief says "Run your tests on what it returns, yourself").
+- **Evidence:** CONTRACT.md amendment 2; `test_out_fields_present`; `test_location`; the final commit.
+
 ### Still unresolved
 
 - **The held-out set has no "relevant" labels**, so 10/10 there means nothing. "Always no" scores the same. Next time: stratify the split by label.

@@ -1,6 +1,9 @@
 # Job-Search Agent 1: The Contract and the Watch
 
-Riya Kapadnis · INFO 7375 · Fall 2026 · 2026-10-31
+Riya Kapadnis · INFO 7375 · Fall 2026 · Assignment: Job-Search Agent 1 (JS1) · 2026-10-31
+
+**Sources and assistance:** code, tests and report drafts by Claude Code (Claude Opus 5.5); judge calls to `claude-sonnet-5-5`;
+persona adapted from the Reallocation Engine's `priya-nair` example; earlier Databricks snapshot from classmate yash-s. Details in SOURCES.md.
 
 An agent that watches **one** public job board (Databricks on Greenhouse), remembers which postings it has seen,
 reports only new ones, and gives each new posting two labeled verdicts for a **fictional** persona (Arya Sahni):
@@ -11,10 +14,11 @@ with a validator. It never applies, emails, messages or logs in anywhere.
 
 | Path | What it is |
 |---|---|
-| `CONTRACT.md` | The contract, committed **before any code** (commit ab522f3), plus one dated amendment |
+| `CONTRACT.md` | The contract, committed **before any code** (commit ab522f3), plus dated amendments |
 | `persona/arya-sahni.json` | Fictional résumé (`@example.com`, 555 phone), adapted from the Reallocation Engine's `priya-nair` example |
 | `jsagent/` | `watch.py` (allow-listed fetch, raw save, state, report), `rules.py` (the rule), `claude_judge.py` (Claude judge), `contract.py` (validators) |
-| `tests/test_agent.py` | 16 offline tests, including both wrong versions from the contract |
+| `tests/test_agent.py` | 17 offline tests, including both wrong versions from the contract |
+| `requirements.txt` | Nothing required; `certifi` is optional, for the macOS live-fetch certificate fix |
 | `runs/` | **Live** watch: baseline and second run, raw responses in `runs/raw/`, state file `runs/databricks.state.json` |
 | `runs/seeded/` | **Seeded** two-day watch: 2026-10-29 snapshot → 2026-10-31 snapshot (labeled seeded) |
 | `snapshots/` | The two board responses the seeded run reads |
@@ -66,14 +70,18 @@ python3 -m experiments.run_claude --prompt v1_baseline.md --set dev --out /tmp/j
 |---|---|---|---:|---:|---|
 | Live run 1 (baseline) | 10-31 23:32 | live fetch | 901 | none reported | baseline |
 | Live run 2 | 11-01 00:05 | live fetch | 901 | 0 | nothing posted in 33 min; raw response byte-identical to run 1 |
-| **Seeded** run 1 (baseline) | 10-31 23:33 | snapshot fetched **2026-10-29 00:56 UTC by classmate yash-s** | 901 | none reported | baseline |
-| **Seeded** run 2 | 10-31 23:33 | my live snapshot from 10-31 23:32 | 901 | **24** | rule: 24 not_relevant; Claude: 24 not_relevant (all 24 passed the validator) |
+| **Seeded** run 1 (baseline) | 11-01 00:12 | snapshot fetched **2026-10-29 00:56 UTC by classmate yash-s** | 901 | none reported | baseline |
+| **Seeded** run 2 | 11-01 00:12 | my live snapshot from 10-31 23:32 | 901 | **24** | rule: 24 not_relevant; Claude: 24 not_relevant (all 24 passed the validator) |
 
 The live second run found no change, so the **real change** between two calendar days comes from the seeded pair. Its
 "earlier response" is a real Greenhouse response another student saved two days earlier (credited in SOURCES.md), and the
 24 new postings are real postings that appeared between Oct 29 and Oct 31 (sales, legal, and senior or non-US Solutions Architect roles).
 
-Tests: `python3 -m unittest discover -s tests` → **16 tests, OK** (last run 2026-10-31, after amendment 1).
+Tests: `python3 -m unittest discover -s tests` → **17 tests, OK** (last run 2026-10-31, after amendment 2).
+
+The seeded pair was first run at 10-31 23:33 UTC and **re-run at 11-01 00:12 UTC** after a pre-submission audit found the verdicts
+were missing the `location` and `url` fields CONTRACT.md promises. The re-run gave the same counts: 24 new, rule 24/24 not_relevant,
+Claude 24/24 not_relevant, 0 rejected. The first run's files are in git history (commit cc238dd).
 
 ## Results in one place
 
@@ -126,8 +134,8 @@ Tests: `python3 -m unittest discover -s tests` → **16 tests, OK** (last run 20
 
 | Part of the task | Claude did | I did | Why it stays mine | Evidence |
 |---|---|---|---|---|
-| The rule and contract | formatted my answers into CONTRACT.md; pointed out the "Databricks" and "Unity Catalog" free matches | chose title words, the 2-skill minimum, seniority words, US-only, wrong versions, and the failure sentence; added ML titles after Claude flagged it; chose amendment 1 | The rule decides what is "worth a day of your life"; Claude can't know what I want | Commit ab522f3 (contract before code) and cc238dd (code), amendment section in CONTRACT.md |
-| Hand labels | picked 20 postings by seed; showed me title, location, years and skills | labeled all 20, including a blanket rule that non-US = no | They are the answer key; if Claude wrote them, the experiment would grade Claude against itself | Commit d61f9b4 (labels) **before** 7396b0b (first Claude results on them); `labels/README.md` |
-| Label #4 | answered "not relevant" 4/4 times | kept my wrong label rather than editing it after seeing Claude's answer | Changing the answer key after seeing the model would hide the error | SAMPLING.md, `labels/hand_labels.csv` row 4 |
+| The rule and contract | formatted my answers into CONTRACT.md; pointed out the "Databricks" and "Unity Catalog" free matches | chose title words, the 2-skill minimum, seniority words, US-only, wrong versions, and the failure sentence; added ML titles after Claude flagged it; chose amendment 1 | The rule decides what is "worth a day of your life"; Claude can't know what I want | Commit ab522f3 (contract before code) and cc238dd (code), amendment section in CONTRACT.md; my chat line (2026-10-31): *"okay so do one thing ask me questions and i will answer and you fill it in"* |
+| Hand labels | picked 20 postings by seed; showed me title, location, years and skills | labeled all 20, including a blanket rule that non-US = no | They are the answer key; if Claude wrote them, the experiment would grade Claude against itself | Commit d61f9b4 (labels) **before** 7396b0b (first Claude results on them); `labels/README.md`; my chat line while labeling (2026-10-31): *"see mostly my answer will be no for the location i want the location in US"* |
+| Label #4 | answered "not relevant" 4/4 times | kept my wrong label rather than editing it after seeing Claude's answer | Changing the answer key after seeing the model would hide the error | SAMPLING.md, `labels/hand_labels.csv` row 4; my chat line (2026-10-31): *"wait she needs job in spring 2026 right if she graduated in dec 2025"* |
 | The prompt change | ran v1 and v2 | chose which one change v2 makes | The experiment tests my hypothesis, not Claude's | `experiments/prompts/v2_criteria.md` |
 | Code, tests, reports | wrote them | ran the outputs past my own judgment; decided the persona name; reviewed the sign-off | I'm answerable for what's submitted | SOURCES.md |

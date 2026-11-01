@@ -86,6 +86,9 @@ def run(board, resume_path, state_path, out_dir, fixture=None, label="live", use
         from . import claude_judge
         for p in fresh:
             v, reply, err = claude_judge.judge(p, resume)
+            if v:
+                v.update(title=p.get("title", ""), location=(p.get("location") or {}).get("name", ""),
+                         url=p.get("absolute_url", ""))
             claude_verdicts.append(v or {"id": p["id"], "judge": "claude", "kind": "judgment",
                                          "rejected": err, "raw_reply": reply})
 

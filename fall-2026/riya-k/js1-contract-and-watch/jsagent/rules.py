@@ -83,6 +83,8 @@ def judge(posting, resume):
     return {
         "id": posting["id"],
         "title": title,
+        "location": location,
+        "url": posting.get("absolute_url", ""),
         "judge": "rule",
         "kind": "record",
         "verdict": "relevant" if relevant else "not_relevant",

@@ -75,3 +75,10 @@ posting relevant without naming the résumé and posting fields behind it.
   "About Databricks" paragraph names it, so it was a free match on every posting, the same trap as
   "Databricks". Decided by Riya in the chat. Runs before this amendment (the live baseline and the seeded
   two-day run) used the original rule; none of their 24 new postings changes verdict under the amendment.
+- **2026-10-31, amendment 2 (rule 3, location; clarification found by Claude in a pre-submission audit):** "US" and the two-letter
+  state codes are matched **case-sensitively, in capitals** (all other matching stays case-insensitive). Reason: matched
+  case-insensitively, "Montréal, Canada" contains "al" as a whole word (the "é" breaks the word) and would count as
+  Alabama. The code already behaved this way; this records it so a TA computing by hand gets the same answer. Checked on
+  all 191 location strings in both snapshots: only the two Montréal strings differ, and case-sensitive classifies them correctly as non-US.
+- **2026-10-31, Out fields:** the original code omitted `location` and `url` from each verdict although "Out" lists them;
+  fixed, and the seeded two-day run was re-run so its report includes them.
