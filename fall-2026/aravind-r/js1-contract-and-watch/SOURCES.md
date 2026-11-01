@@ -13,7 +13,17 @@ What this submission used, what I (Aravind) wrote or decided, and what Claude co
 
 ## Written or decided by me
 
-[Aravind to confirm/edit] The contract's decisions (CONTRACT.md: inputs, refusals, the six gates and their thresholds, wrong versions, the failure sentence, the Gate 2 revision); the persona preferences (years_pm, locations, needs_sponsorship, domains); the board choice; the labeling rule and all 20 hand labels; the seeded-run design (which ids to remove, the seed, excluding labeling postings); the one change for prompt v2 and the quote-fidelity rule; the decision to keep held-out locked; the autonomy choice, sign-off and driver's seat; FRICTIONAL.md.
+- Choice of Maya Sehgal as the persona.
+- Every persona-prefs.json value.
+- The six gates and the +1 tolerance.
+- The failure sentence wording.
+- Amending the contract for Gate 2.
+- The seeded selection choice.
+- Choosing the v2 change.
+- All 20 hand labels.
+- The conclusions in SAMPLING.md and EXPERIMENT.md.
+- The action-surface choice.
+- The sign-off and driver's seat.
 
 ## Contributed by Claude (Claude Code build session, 2026-10-31)
 
