@@ -22,3 +22,16 @@ What this submission used, what I (Aravind) wrote or decided, and what Claude co
 - Prompt v1 text (`prompts/judge.v1.md`), and the v2 text implementing the change I specified.
 - Drafts of README.md (toolchain, commands, what ran, layout), this file's factual sections, and the factual columns of ACTION-SURFACE.md.
 - One scouting call per board to eight Greenhouse boards on 2026-10-31 to count PM titles before I chose Stripe (not evidence, not saved).
+
+## Contributed by Claude (chat), separate claude.ai conversation, 2026-10-31
+
+- Workload estimate and the plan; linked JS1 to my A2/A4 Reallocation Engine work.
+- Repo/fork/branch convention, from earlier assignments.
+- Candidate gates list; recommended the six-gate structure with domains as citation only.
+- Drafted CONTRACT.md prose from my decisions (I set every value; Claude Code wrote it into the file).
+- Recommended years_pm 2, needs_sponsorship true, locations, domain terms; I set the final values.
+- Six example failure sentences; I kept one and reworded it.
+- Suggested a persona shaped like me; I rejected it and kept Maya.
+- Gate 2 whole-word revision wording; labeling rule = gates by hand + gut note.
+- Seeded-run selection approach; v2 evidence-quote change, which I chose.
+- Drafted FRICTIONAL.md structure and wording from my answers; Claude Code corrected attributions.
