@@ -1,0 +1,45 @@
+{
+  "label": "SEEDED / CONSTRUCTED: not a response any server sent. It is the real saved response below with postings removed, so that a second run against the real response has a known change.",
+  "built_at": "2026-11-01T02:04:52.080Z",
+  "from_raw": "runs/20261101T015849Z-live-baseline/raw-response.json",
+  "seed": 20261031,
+  "excluded_from_draws": "20 labeling ids from labels/draw.json",
+  "removed": {
+    "fixed_rule_relevant": [
+      8195440,
+      8165137,
+      8223723
+    ],
+    "pm_family_rule_not_relevant": [
+      8041655,
+      8283786,
+      8234243
+    ],
+    "non_pm": [
+      7950828,
+      8175633
+    ]
+  },
+  "expected_new_ids": [
+    7950828,
+    8041655,
+    8165137,
+    8175633,
+    8195440,
+    8223723,
+    8234243,
+    8283786
+  ],
+  "removed_titles": {
+    "7950828": "Head of Finance Operations",
+    "8041655": "Product Manager, E-Invoicing",
+    "8165137": "Product Manager, Identity & Access Management",
+    "8175633": "Manager, Solutions Architecture - Enterprise (West)",
+    "8195440": "Product Manager, Connect Growth & Monetization",
+    "8223723": "Product Manager - Issuance, Bridge",
+    "8234243": "Staff Product Manager, Accounting Products ",
+    "8283786": "Marketing Operations Program Manager"
+  },
+  "jobs_in_real_response": 745,
+  "jobs_in_constructed_response": 737
+}

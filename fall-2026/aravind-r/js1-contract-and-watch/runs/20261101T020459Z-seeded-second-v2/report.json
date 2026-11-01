@@ -1,0 +1,1249 @@
+[
+  {
+    "id": 7950828,
+    "title": "Head of Finance Operations",
+    "absolute_url": "https://stripe.com/jobs/search?gh_jid=7950828",
+    "rule_verdict": "not_relevant",
+    "rule_label": "RECORD",
+    "rule_justification": {
+      "gates": [
+        {
+          "gate": 1,
+          "name": "Title",
+          "pass": false,
+          "posting_field": "title",
+          "posting_value": "Head of Finance Operations",
+          "extracted": "Head of Finance Operations",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "title list",
+            "value": [
+              "Product Manager",
+              "Senior Product Manager",
+              "Sr. Product Manager",
+              "AI Product Manager",
+              "Technical Product Manager",
+              "Web3 Product Manager",
+              "Technical Program Manager",
+              "Senior Technical Program Manager"
+            ]
+          }
+        },
+        {
+          "gate": 2,
+          "name": "Not junior",
+          "pass": true,
+          "posting_field": "title; content",
+          "posting_value": {
+            "title": "Head of Finance Operations",
+            "junior_term": null,
+            "range_upper_le_2": null
+          },
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "junior title terms; range upper bound <= 2",
+            "value": [
+              "Associate",
+              "APM",
+              "Intern",
+              "New Grad"
+            ]
+          }
+        },
+        {
+          "gate": 3,
+          "name": "Experience ceiling",
+          "pass": false,
+          "posting_field": "content",
+          "posting_value": {
+            "phrase": "18+ years",
+            "lower_bound": 18
+          },
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "years_pm",
+            "value": 2
+          },
+          "threshold": "N <= years_pm + 1 = 3"
+        },
+        {
+          "gate": 4,
+          "name": "Location",
+          "pass": false,
+          "posting_field": "location.name",
+          "posting_value": "Bengaluru",
+          "matched": null,
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "locations",
+            "value": [
+              "San Francisco",
+              "Los Angeles",
+              "San Jose",
+              "Remote"
+            ]
+          }
+        },
+        {
+          "gate": 5,
+          "name": "Sponsorship",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no no-sponsorship phrase found",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "needs_sponsorship",
+            "value": true
+          }
+        },
+        {
+          "gate": 6,
+          "name": "Citizenship / clearance",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no citizenship/clearance phrase found",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "citizenship/clearance phrases",
+            "value": [
+              "security clearance",
+              "u.s. citizen",
+              "us citizenship",
+              "citizenship is required"
+            ]
+          }
+        }
+      ],
+      "first_failed": 1,
+      "domain_citation": [
+        {
+          "term": "payments",
+          "where": "content"
+        },
+        {
+          "term": "fintech",
+          "where": "content"
+        },
+        {
+          "term": "data",
+          "where": "content"
+        }
+      ]
+    },
+    "claude_label": "JUDGMENT",
+    "claude_verdict": "not_relevant",
+    "claude_justification": {
+      "verdict": "not_relevant",
+      "cited_posting_fields": [
+        "title",
+        "location.name",
+        "departments",
+        "content"
+      ],
+      "cited_persona_fields": [
+        "years_pm",
+        "locations",
+        "needs_sponsorship",
+        "domains"
+      ],
+      "justification": "Gate 1 FAILED (first failure): title 'Head of Finance Operations' is not an allowed title. Gate 2 pass (no junior terms or ≤2 range). Gate 3 FAIL: '18+ years' > years_pm 2+1. Gate 4 FAIL: 'Bengaluru' matches none of San Francisco/Los Angeles/San Jose/Remote. Gate 5 pass (sponsorship needed, no blocking phrase). Gate 6 pass. Domains: payments (content), data (content), fintech (content); departments none."
+    },
+    "claude_validation_errors": [],
+    "claude_raw": "{\"verdict\": \"not_relevant\", \"cited_posting_fields\": [\"title\", \"location.name\", \"departments\", \"content\"], \"cited_persona_fields\": [\"years_pm\", \"locations\", \"needs_sponsorship\", \"domains\"], \"justification\": \"Gate 1 FAILED (first failure): title 'Head of Finance Operations' is not an allowed title. Gate 2 pass (no junior terms or ≤2 range). Gate 3 FAIL: '18+ years' > years_pm 2+1. Gate 4 FAIL: 'Bengaluru' matches none of San Francisco/Los Angeles/San Jose/Remote. Gate 5 pass (sponsorship needed, no blocking phrase). Gate 6 pass. Domains: payments (content), data (content), fintech (content); departments none.\"}",
+    "claude_call": {
+      "at": "2026-11-01T02:04:59.136Z",
+      "exit_code": 0,
+      "models": [
+        "claude-sonnet-5-5"
+      ],
+      "session_id": "732d7750-e965-4ead-9942-22238abb560c",
+      "error": null
+    }
+  },
+  {
+    "id": 8175633,
+    "title": "Manager, Solutions Architecture - Enterprise (West)",
+    "absolute_url": "https://stripe.com/jobs/search?gh_jid=8175633",
+    "rule_verdict": "not_relevant",
+    "rule_label": "RECORD",
+    "rule_justification": {
+      "gates": [
+        {
+          "gate": 1,
+          "name": "Title",
+          "pass": false,
+          "posting_field": "title",
+          "posting_value": "Manager, Solutions Architecture - Enterprise (West)",
+          "extracted": "Manager",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "title list",
+            "value": [
+              "Product Manager",
+              "Senior Product Manager",
+              "Sr. Product Manager",
+              "AI Product Manager",
+              "Technical Product Manager",
+              "Web3 Product Manager",
+              "Technical Program Manager",
+              "Senior Technical Program Manager"
+            ]
+          }
+        },
+        {
+          "gate": 2,
+          "name": "Not junior",
+          "pass": true,
+          "posting_field": "title; content",
+          "posting_value": {
+            "title": "Manager, Solutions Architecture - Enterprise (West)",
+            "junior_term": null,
+            "range_upper_le_2": null
+          },
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "junior title terms; range upper bound <= 2",
+            "value": [
+              "Associate",
+              "APM",
+              "Intern",
+              "New Grad"
+            ]
+          }
+        },
+        {
+          "gate": 3,
+          "name": "Experience ceiling",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": {
+            "phrase": "3+ years",
+            "lower_bound": 3
+          },
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "years_pm",
+            "value": 2
+          },
+          "threshold": "N <= years_pm + 1 = 3"
+        },
+        {
+          "gate": 4,
+          "name": "Location",
+          "pass": true,
+          "posting_field": "location.name",
+          "posting_value": "San Francisco, CA ",
+          "matched": "San Francisco",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "locations",
+            "value": [
+              "San Francisco",
+              "Los Angeles",
+              "San Jose",
+              "Remote"
+            ]
+          }
+        },
+        {
+          "gate": 5,
+          "name": "Sponsorship",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no no-sponsorship phrase found",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "needs_sponsorship",
+            "value": true
+          }
+        },
+        {
+          "gate": 6,
+          "name": "Citizenship / clearance",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no citizenship/clearance phrase found",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "citizenship/clearance phrases",
+            "value": [
+              "security clearance",
+              "u.s. citizen",
+              "us citizenship",
+              "citizenship is required"
+            ]
+          }
+        }
+      ],
+      "first_failed": 1,
+      "domain_citation": [
+        {
+          "term": "payments",
+          "where": "content"
+        }
+      ]
+    },
+    "claude_label": "JUDGMENT",
+    "claude_verdict": "not_relevant",
+    "claude_justification": {
+      "verdict": "not_relevant",
+      "cited_posting_fields": [
+        "title",
+        "location.name",
+        "content",
+        "departments"
+      ],
+      "cited_persona_fields": [
+        "years_pm",
+        "locations",
+        "needs_sponsorship",
+        "domains"
+      ],
+      "justification": "Gate 1 FAILED (first failure): title cut at the first comma is \"Manager\", which is not an allowed title. Gate 2 pass (no junior terms or range ≤2). Gate 3 pass (first phrase \"3+ years\", 3 ≤ years_pm 2 + 1). Gate 4 pass (\"San Francisco\" in \"San Francisco, CA\"). Gate 5 pass (needs sponsorship; no refusal phrase). Gate 6 pass. Domains: payments (content); the others none."
+    },
+    "claude_validation_errors": [],
+    "claude_raw": "{\"verdict\": \"not_relevant\", \"cited_posting_fields\": [\"title\", \"location.name\", \"content\", \"departments\"], \"cited_persona_fields\": [\"years_pm\", \"locations\", \"needs_sponsorship\", \"domains\"], \"justification\": \"Gate 1 FAILED (first failure): title cut at the first comma is \\\"Manager\\\", which is not an allowed title. Gate 2 pass (no junior terms or range ≤2). Gate 3 pass (first phrase \\\"3+ years\\\", 3 ≤ years_pm 2 + 1). Gate 4 pass (\\\"San Francisco\\\" in \\\"San Francisco, CA\\\"). Gate 5 pass (needs sponsorship; no refusal phrase). Gate 6 pass. Domains: payments (content); the others none.\"}",
+    "claude_call": {
+      "at": "2026-11-01T02:05:06.254Z",
+      "exit_code": 0,
+      "models": [
+        "claude-sonnet-5-5"
+      ],
+      "session_id": "49e67aab-8549-49d4-9224-cee671f025d9",
+      "error": null
+    }
+  },
+  {
+    "id": 8283786,
+    "title": "Marketing Operations Program Manager",
+    "absolute_url": "https://stripe.com/jobs/search?gh_jid=8283786",
+    "rule_verdict": "not_relevant",
+    "rule_label": "RECORD",
+    "rule_justification": {
+      "gates": [
+        {
+          "gate": 1,
+          "name": "Title",
+          "pass": false,
+          "posting_field": "title",
+          "posting_value": "Marketing Operations Program Manager",
+          "extracted": "Marketing Operations Program Manager",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "title list",
+            "value": [
+              "Product Manager",
+              "Senior Product Manager",
+              "Sr. Product Manager",
+              "AI Product Manager",
+              "Technical Product Manager",
+              "Web3 Product Manager",
+              "Technical Program Manager",
+              "Senior Technical Program Manager"
+            ]
+          }
+        },
+        {
+          "gate": 2,
+          "name": "Not junior",
+          "pass": true,
+          "posting_field": "title; content",
+          "posting_value": {
+            "title": "Marketing Operations Program Manager",
+            "junior_term": null,
+            "range_upper_le_2": null
+          },
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "junior title terms; range upper bound <= 2",
+            "value": [
+              "Associate",
+              "APM",
+              "Intern",
+              "New Grad"
+            ]
+          }
+        },
+        {
+          "gate": 3,
+          "name": "Experience ceiling",
+          "pass": false,
+          "posting_field": "content",
+          "posting_value": {
+            "phrase": "6+ years",
+            "lower_bound": 6
+          },
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "years_pm",
+            "value": 2
+          },
+          "threshold": "N <= years_pm + 1 = 3"
+        },
+        {
+          "gate": 4,
+          "name": "Location",
+          "pass": true,
+          "posting_field": "location.name",
+          "posting_value": "US Remote",
+          "matched": "Remote",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "locations",
+            "value": [
+              "San Francisco",
+              "Los Angeles",
+              "San Jose",
+              "Remote"
+            ]
+          }
+        },
+        {
+          "gate": 5,
+          "name": "Sponsorship",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no no-sponsorship phrase found",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "needs_sponsorship",
+            "value": true
+          }
+        },
+        {
+          "gate": 6,
+          "name": "Citizenship / clearance",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no citizenship/clearance phrase found",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "citizenship/clearance phrases",
+            "value": [
+              "security clearance",
+              "u.s. citizen",
+              "us citizenship",
+              "citizenship is required"
+            ]
+          }
+        }
+      ],
+      "first_failed": 1,
+      "domain_citation": [
+        {
+          "term": "payments",
+          "where": "content"
+        },
+        {
+          "term": "data",
+          "where": "content"
+        }
+      ]
+    },
+    "claude_label": "JUDGMENT",
+    "claude_verdict": "not_relevant",
+    "claude_justification": {
+      "verdict": "not_relevant",
+      "cited_posting_fields": [
+        "title",
+        "content",
+        "location.name",
+        "departments"
+      ],
+      "cited_persona_fields": [
+        "years_pm",
+        "locations",
+        "needs_sponsorship",
+        "domains"
+      ],
+      "justification": "G1 FAIL (first failure): title 'Marketing Operations Program Manager' is not an allowed title (Program Manager without 'Technical'). G2 pass (no junior terms or range). G3 FAIL: '6+ years of experience' exceeds years_pm 2 + 1 = 3. G4 pass: 'US Remote' matches 'Remote'. G5 pass: no no-sponsorship phrases (needs_sponsorship true). G6 pass. Domains: data (content), payments (content); departments none."
+    },
+    "claude_validation_errors": [],
+    "claude_raw": "{\"verdict\": \"not_relevant\", \"cited_posting_fields\": [\"title\", \"content\", \"location.name\", \"departments\"], \"cited_persona_fields\": [\"years_pm\", \"locations\", \"needs_sponsorship\", \"domains\"], \"justification\": \"G1 FAIL (first failure): title 'Marketing Operations Program Manager' is not an allowed title (Program Manager without 'Technical'). G2 pass (no junior terms or range). G3 FAIL: '6+ years of experience' exceeds years_pm 2 + 1 = 3. G4 pass: 'US Remote' matches 'Remote'. G5 pass: no no-sponsorship phrases (needs_sponsorship true). G6 pass. Domains: data (content), payments (content); departments none.\"}",
+    "claude_call": {
+      "at": "2026-11-01T02:05:15.007Z",
+      "exit_code": 0,
+      "models": [
+        "claude-sonnet-5-5"
+      ],
+      "session_id": "594ed6d9-257d-4e3e-a547-86cfd6505698",
+      "error": null
+    }
+  },
+  {
+    "id": 8195440,
+    "title": "Product Manager, Connect Growth & Monetization",
+    "absolute_url": "https://stripe.com/jobs/search?gh_jid=8195440",
+    "rule_verdict": "relevant",
+    "rule_label": "RECORD",
+    "rule_justification": {
+      "gates": [
+        {
+          "gate": 1,
+          "name": "Title",
+          "pass": true,
+          "posting_field": "title",
+          "posting_value": "Product Manager, Connect Growth & Monetization",
+          "extracted": "Product Manager",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "title list",
+            "value": [
+              "Product Manager",
+              "Senior Product Manager",
+              "Sr. Product Manager",
+              "AI Product Manager",
+              "Technical Product Manager",
+              "Web3 Product Manager",
+              "Technical Program Manager",
+              "Senior Technical Program Manager"
+            ]
+          }
+        },
+        {
+          "gate": 2,
+          "name": "Not junior",
+          "pass": true,
+          "posting_field": "title; content",
+          "posting_value": {
+            "title": "Product Manager, Connect Growth & Monetization",
+            "junior_term": null,
+            "range_upper_le_2": null
+          },
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "junior title terms; range upper bound <= 2",
+            "value": [
+              "Associate",
+              "APM",
+              "Intern",
+              "New Grad"
+            ]
+          }
+        },
+        {
+          "gate": 3,
+          "name": "Experience ceiling",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "not stated",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "years_pm",
+            "value": 2
+          },
+          "threshold": "N <= years_pm + 1 = 3"
+        },
+        {
+          "gate": 4,
+          "name": "Location",
+          "pass": true,
+          "posting_field": "location.name",
+          "posting_value": "Seattle, New-York, San Francisco",
+          "matched": "San Francisco",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "locations",
+            "value": [
+              "San Francisco",
+              "Los Angeles",
+              "San Jose",
+              "Remote"
+            ]
+          }
+        },
+        {
+          "gate": 5,
+          "name": "Sponsorship",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no no-sponsorship phrase found",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "needs_sponsorship",
+            "value": true
+          }
+        },
+        {
+          "gate": 6,
+          "name": "Citizenship / clearance",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no citizenship/clearance phrase found",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "citizenship/clearance phrases",
+            "value": [
+              "security clearance",
+              "u.s. citizen",
+              "us citizenship",
+              "citizenship is required"
+            ]
+          }
+        }
+      ],
+      "first_failed": null,
+      "domain_citation": [
+        {
+          "term": "payments",
+          "where": "content"
+        }
+      ]
+    },
+    "claude_label": "JUDGMENT",
+    "claude_verdict": "relevant",
+    "claude_justification": {
+      "verdict": "relevant",
+      "cited_posting_fields": [
+        "title",
+        "location.name",
+        "content",
+        "departments"
+      ],
+      "cited_persona_fields": [
+        "years_pm",
+        "locations",
+        "needs_sponsorship",
+        "domains"
+      ],
+      "justification": "All six gates pass. G1: title 'Product Manager' matches exactly. G2: not junior, no junior title terms or range with upper bound ≤2. G3: experience not stated (\"more than three years\" is not an N+ or N-M digit phrase). G4: 'San Francisco' is in the location. G5: needs_sponsorship is true and no no-sponsorship phrase appears. G6: no clearance or citizenship terms. Domains: payments matched in content; fintech, data, e-commerce, mobile none; departments matched none."
+    },
+    "claude_validation_errors": [],
+    "claude_raw": "{\"verdict\": \"relevant\", \"cited_posting_fields\": [\"title\", \"location.name\", \"content\", \"departments\"], \"cited_persona_fields\": [\"years_pm\", \"locations\", \"needs_sponsorship\", \"domains\"], \"justification\": \"All six gates pass. G1: title 'Product Manager' matches exactly. G2: not junior, no junior title terms or range with upper bound ≤2. G3: experience not stated (\\\"more than three years\\\" is not an N+ or N-M digit phrase). G4: 'San Francisco' is in the location. G5: needs_sponsorship is true and no no-sponsorship phrase appears. G6: no clearance or citizenship terms. Domains: payments matched in content; fintech, data, e-commerce, mobile none; departments matched none.\"}",
+    "claude_call": {
+      "at": "2026-11-01T02:05:24.077Z",
+      "exit_code": 0,
+      "models": [
+        "claude-sonnet-5-5"
+      ],
+      "session_id": "ca03f412-8fd3-4e0c-8f28-e35bf2435a46",
+      "error": null
+    }
+  },
+  {
+    "id": 8041655,
+    "title": "Product Manager, E-Invoicing",
+    "absolute_url": "https://stripe.com/jobs/search?gh_jid=8041655",
+    "rule_verdict": "not_relevant",
+    "rule_label": "RECORD",
+    "rule_justification": {
+      "gates": [
+        {
+          "gate": 1,
+          "name": "Title",
+          "pass": true,
+          "posting_field": "title",
+          "posting_value": "Product Manager, E-Invoicing",
+          "extracted": "Product Manager",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "title list",
+            "value": [
+              "Product Manager",
+              "Senior Product Manager",
+              "Sr. Product Manager",
+              "AI Product Manager",
+              "Technical Product Manager",
+              "Web3 Product Manager",
+              "Technical Program Manager",
+              "Senior Technical Program Manager"
+            ]
+          }
+        },
+        {
+          "gate": 2,
+          "name": "Not junior",
+          "pass": true,
+          "posting_field": "title; content",
+          "posting_value": {
+            "title": "Product Manager, E-Invoicing",
+            "junior_term": null,
+            "range_upper_le_2": null
+          },
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "junior title terms; range upper bound <= 2",
+            "value": [
+              "Associate",
+              "APM",
+              "Intern",
+              "New Grad"
+            ]
+          }
+        },
+        {
+          "gate": 3,
+          "name": "Experience ceiling",
+          "pass": false,
+          "posting_field": "content",
+          "posting_value": {
+            "phrase": "5+ years",
+            "lower_bound": 5
+          },
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "years_pm",
+            "value": 2
+          },
+          "threshold": "N <= years_pm + 1 = 3"
+        },
+        {
+          "gate": 4,
+          "name": "Location",
+          "pass": false,
+          "posting_field": "location.name",
+          "posting_value": "Dublin, Ireland",
+          "matched": null,
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "locations",
+            "value": [
+              "San Francisco",
+              "Los Angeles",
+              "San Jose",
+              "Remote"
+            ]
+          }
+        },
+        {
+          "gate": 5,
+          "name": "Sponsorship",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no no-sponsorship phrase found",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "needs_sponsorship",
+            "value": true
+          }
+        },
+        {
+          "gate": 6,
+          "name": "Citizenship / clearance",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no citizenship/clearance phrase found",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "citizenship/clearance phrases",
+            "value": [
+              "security clearance",
+              "u.s. citizen",
+              "us citizenship",
+              "citizenship is required"
+            ]
+          }
+        }
+      ],
+      "first_failed": 3,
+      "domain_citation": [
+        {
+          "term": "payments",
+          "where": "content"
+        },
+        {
+          "term": "fintech",
+          "where": "content"
+        },
+        {
+          "term": "data",
+          "where": "content"
+        }
+      ]
+    },
+    "claude_label": "JUDGMENT",
+    "claude_verdict": "not_relevant",
+    "claude_justification": {
+      "verdict": "not_relevant",
+      "cited_posting_fields": [
+        "title",
+        "location.name",
+        "content",
+        "departments"
+      ],
+      "cited_persona_fields": [
+        "years_pm",
+        "locations",
+        "needs_sponsorship",
+        "domains"
+      ],
+      "justification": "G1 pass (Product Manager). G2 pass. G3 FAIL (first failure): '5+ years of product management experience' needs 5 > years_pm 2 + 1 = 3. G4 FAIL: 'Dublin, Ireland' matches none of San Francisco/Los Angeles/San Jose/Remote. G5 pass (sponsorship needed, no refusal language). G6 pass. Domains: payments, fintech, data matched in content; departments none; e-commerce, mobile none."
+    },
+    "claude_validation_errors": [],
+    "claude_raw": "{\"verdict\": \"not_relevant\", \"cited_posting_fields\": [\"title\", \"location.name\", \"content\", \"departments\"], \"cited_persona_fields\": [\"years_pm\", \"locations\", \"needs_sponsorship\", \"domains\"], \"justification\": \"G1 pass (Product Manager). G2 pass. G3 FAIL (first failure): '5+ years of product management experience' needs 5 > years_pm 2 + 1 = 3. G4 FAIL: 'Dublin, Ireland' matches none of San Francisco/Los Angeles/San Jose/Remote. G5 pass (sponsorship needed, no refusal language). G6 pass. Domains: payments, fintech, data matched in content; departments none; e-commerce, mobile none.\"}",
+    "claude_call": {
+      "at": "2026-11-01T02:05:32.547Z",
+      "exit_code": 0,
+      "models": [
+        "claude-sonnet-5-5"
+      ],
+      "session_id": "d3817fda-d982-4f20-8b43-de5186ea6758",
+      "error": null
+    }
+  },
+  {
+    "id": 8165137,
+    "title": "Product Manager, Identity & Access Management",
+    "absolute_url": "https://stripe.com/jobs/search?gh_jid=8165137",
+    "rule_verdict": "relevant",
+    "rule_label": "RECORD",
+    "rule_justification": {
+      "gates": [
+        {
+          "gate": 1,
+          "name": "Title",
+          "pass": true,
+          "posting_field": "title",
+          "posting_value": "Product Manager, Identity & Access Management",
+          "extracted": "Product Manager",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "title list",
+            "value": [
+              "Product Manager",
+              "Senior Product Manager",
+              "Sr. Product Manager",
+              "AI Product Manager",
+              "Technical Product Manager",
+              "Web3 Product Manager",
+              "Technical Program Manager",
+              "Senior Technical Program Manager"
+            ]
+          }
+        },
+        {
+          "gate": 2,
+          "name": "Not junior",
+          "pass": true,
+          "posting_field": "title; content",
+          "posting_value": {
+            "title": "Product Manager, Identity & Access Management",
+            "junior_term": null,
+            "range_upper_le_2": null
+          },
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "junior title terms; range upper bound <= 2",
+            "value": [
+              "Associate",
+              "APM",
+              "Intern",
+              "New Grad"
+            ]
+          }
+        },
+        {
+          "gate": 3,
+          "name": "Experience ceiling",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "not stated",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "years_pm",
+            "value": 2
+          },
+          "threshold": "N <= years_pm + 1 = 3"
+        },
+        {
+          "gate": 4,
+          "name": "Location",
+          "pass": true,
+          "posting_field": "location.name",
+          "posting_value": "US-Remote, US-Chicago",
+          "matched": "Remote",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "locations",
+            "value": [
+              "San Francisco",
+              "Los Angeles",
+              "San Jose",
+              "Remote"
+            ]
+          }
+        },
+        {
+          "gate": 5,
+          "name": "Sponsorship",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no no-sponsorship phrase found",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "needs_sponsorship",
+            "value": true
+          }
+        },
+        {
+          "gate": 6,
+          "name": "Citizenship / clearance",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no citizenship/clearance phrase found",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "citizenship/clearance phrases",
+            "value": [
+              "security clearance",
+              "u.s. citizen",
+              "us citizenship",
+              "citizenship is required"
+            ]
+          }
+        }
+      ],
+      "first_failed": null,
+      "domain_citation": [
+        {
+          "term": "payments",
+          "where": "content"
+        }
+      ]
+    },
+    "claude_label": "JUDGMENT",
+    "claude_verdict": "relevant",
+    "claude_justification": {
+      "verdict": "relevant",
+      "cited_posting_fields": [
+        "title",
+        "location.name",
+        "content",
+        "departments"
+      ],
+      "cited_persona_fields": [
+        "years_pm",
+        "locations",
+        "needs_sponsorship",
+        "domains"
+      ],
+      "justification": "G1 pass: title 'Product Manager' exact. G2 pass: no junior terms or range. G3 pass: '5+ years' is not in a sentence containing 'experience', so not stated (years_pm 2). G4 pass: 'Remote' in 'US-Remote, US-Chicago'. G5 pass: needs_sponsorship true, no refusal phrases. G6 pass: no clearance/citizenship terms. No gate failed. Domains: payments (content); departments and other terms none."
+    },
+    "claude_validation_errors": [],
+    "claude_raw": "{\"verdict\": \"relevant\", \"cited_posting_fields\": [\"title\", \"location.name\", \"content\", \"departments\"], \"cited_persona_fields\": [\"years_pm\", \"locations\", \"needs_sponsorship\", \"domains\"], \"justification\": \"G1 pass: title 'Product Manager' exact. G2 pass: no junior terms or range. G3 pass: '5+ years' is not in a sentence containing 'experience', so not stated (years_pm 2). G4 pass: 'Remote' in 'US-Remote, US-Chicago'. G5 pass: needs_sponsorship true, no refusal phrases. G6 pass: no clearance/citizenship terms. No gate failed. Domains: payments (content); departments and other terms none.\"}",
+    "claude_call": {
+      "at": "2026-11-01T02:05:40.128Z",
+      "exit_code": 0,
+      "models": [
+        "claude-sonnet-5-5"
+      ],
+      "session_id": "f1e0f898-cdb1-4948-ac23-9e8609354297",
+      "error": null
+    }
+  },
+  {
+    "id": 8223723,
+    "title": "Product Manager - Issuance, Bridge",
+    "absolute_url": "https://stripe.com/jobs/search?gh_jid=8223723",
+    "rule_verdict": "relevant",
+    "rule_label": "RECORD",
+    "rule_justification": {
+      "gates": [
+        {
+          "gate": 1,
+          "name": "Title",
+          "pass": true,
+          "posting_field": "title",
+          "posting_value": "Product Manager - Issuance, Bridge",
+          "extracted": "Product Manager",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "title list",
+            "value": [
+              "Product Manager",
+              "Senior Product Manager",
+              "Sr. Product Manager",
+              "AI Product Manager",
+              "Technical Product Manager",
+              "Web3 Product Manager",
+              "Technical Program Manager",
+              "Senior Technical Program Manager"
+            ]
+          }
+        },
+        {
+          "gate": 2,
+          "name": "Not junior",
+          "pass": true,
+          "posting_field": "title; content",
+          "posting_value": {
+            "title": "Product Manager - Issuance, Bridge",
+            "junior_term": null,
+            "range_upper_le_2": null
+          },
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "junior title terms; range upper bound <= 2",
+            "value": [
+              "Associate",
+              "APM",
+              "Intern",
+              "New Grad"
+            ]
+          }
+        },
+        {
+          "gate": 3,
+          "name": "Experience ceiling",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "not stated",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "years_pm",
+            "value": 2
+          },
+          "threshold": "N <= years_pm + 1 = 3"
+        },
+        {
+          "gate": 4,
+          "name": "Location",
+          "pass": true,
+          "posting_field": "location.name",
+          "posting_value": "San Francisco Or New York",
+          "matched": "San Francisco",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "locations",
+            "value": [
+              "San Francisco",
+              "Los Angeles",
+              "San Jose",
+              "Remote"
+            ]
+          }
+        },
+        {
+          "gate": 5,
+          "name": "Sponsorship",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no no-sponsorship phrase found",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "needs_sponsorship",
+            "value": true
+          }
+        },
+        {
+          "gate": 6,
+          "name": "Citizenship / clearance",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no citizenship/clearance phrase found",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "citizenship/clearance phrases",
+            "value": [
+              "security clearance",
+              "u.s. citizen",
+              "us citizenship",
+              "citizenship is required"
+            ]
+          }
+        }
+      ],
+      "first_failed": null,
+      "domain_citation": [
+        {
+          "term": "payments",
+          "where": "content"
+        },
+        {
+          "term": "fintech",
+          "where": "content"
+        },
+        {
+          "term": "data",
+          "where": "content"
+        }
+      ]
+    },
+    "claude_label": "JUDGMENT",
+    "claude_verdict": "relevant",
+    "claude_justification": {
+      "verdict": "relevant",
+      "cited_posting_fields": [
+        "title",
+        "location.name",
+        "departments",
+        "content"
+      ],
+      "cited_persona_fields": [
+        "years_pm",
+        "locations",
+        "needs_sponsorship",
+        "domains"
+      ],
+      "justification": "All six gates pass. G1: 'Product Manager' matches. G2: no junior terms or ranges. G3: experience not stated (the '5+ years' sentence lacks 'experience'). G4: 'San Francisco' is in 'San Francisco Or New York'. G5: sponsorship needed, no refusal phrases. G6: no clearance or citizenship terms. Domains: payments (content), fintech (content), data (content), e-commerce none, mobile none."
+    },
+    "claude_validation_errors": [],
+    "claude_raw": "{\"verdict\": \"relevant\", \"cited_posting_fields\": [\"title\", \"location.name\", \"departments\", \"content\"], \"cited_persona_fields\": [\"years_pm\", \"locations\", \"needs_sponsorship\", \"domains\"], \"justification\": \"All six gates pass. G1: 'Product Manager' matches. G2: no junior terms or ranges. G3: experience not stated (the '5+ years' sentence lacks 'experience'). G4: 'San Francisco' is in 'San Francisco Or New York'. G5: sponsorship needed, no refusal phrases. G6: no clearance or citizenship terms. Domains: payments (content), fintech (content), data (content), e-commerce none, mobile none.\"}",
+    "claude_call": {
+      "at": "2026-11-01T02:05:51.777Z",
+      "exit_code": 0,
+      "models": [
+        "claude-sonnet-5-5"
+      ],
+      "session_id": "e12138c5-b6b4-4b08-b60e-6e466d2525bf",
+      "error": null
+    }
+  },
+  {
+    "id": 8234243,
+    "title": "Staff Product Manager, Accounting Products ",
+    "absolute_url": "https://stripe.com/jobs/search?gh_jid=8234243",
+    "rule_verdict": "not_relevant",
+    "rule_label": "RECORD",
+    "rule_justification": {
+      "gates": [
+        {
+          "gate": 1,
+          "name": "Title",
+          "pass": false,
+          "posting_field": "title",
+          "posting_value": "Staff Product Manager, Accounting Products ",
+          "extracted": "Staff Product Manager",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "title list",
+            "value": [
+              "Product Manager",
+              "Senior Product Manager",
+              "Sr. Product Manager",
+              "AI Product Manager",
+              "Technical Product Manager",
+              "Web3 Product Manager",
+              "Technical Program Manager",
+              "Senior Technical Program Manager"
+            ]
+          }
+        },
+        {
+          "gate": 2,
+          "name": "Not junior",
+          "pass": true,
+          "posting_field": "title; content",
+          "posting_value": {
+            "title": "Staff Product Manager, Accounting Products ",
+            "junior_term": null,
+            "range_upper_le_2": null
+          },
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "junior title terms; range upper bound <= 2",
+            "value": [
+              "Associate",
+              "APM",
+              "Intern",
+              "New Grad"
+            ]
+          }
+        },
+        {
+          "gate": 3,
+          "name": "Experience ceiling",
+          "pass": false,
+          "posting_field": "content",
+          "posting_value": {
+            "phrase": "10+ years",
+            "lower_bound": 10
+          },
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "years_pm",
+            "value": 2
+          },
+          "threshold": "N <= years_pm + 1 = 3"
+        },
+        {
+          "gate": 4,
+          "name": "Location",
+          "pass": false,
+          "posting_field": "location.name",
+          "posting_value": "SF, SEA, NYC",
+          "matched": null,
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "locations",
+            "value": [
+              "San Francisco",
+              "Los Angeles",
+              "San Jose",
+              "Remote"
+            ]
+          }
+        },
+        {
+          "gate": 5,
+          "name": "Sponsorship",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no no-sponsorship phrase found",
+          "compared_with": {
+            "source": "persona-prefs.json",
+            "field": "needs_sponsorship",
+            "value": true
+          }
+        },
+        {
+          "gate": 6,
+          "name": "Citizenship / clearance",
+          "pass": true,
+          "posting_field": "content",
+          "posting_value": "no citizenship/clearance phrase found",
+          "compared_with": {
+            "source": "CONTRACT.md",
+            "field": "citizenship/clearance phrases",
+            "value": [
+              "security clearance",
+              "u.s. citizen",
+              "us citizenship",
+              "citizenship is required"
+            ]
+          }
+        }
+      ],
+      "first_failed": 1,
+      "domain_citation": [
+        {
+          "term": "payments",
+          "where": "content"
+        },
+        {
+          "term": "data",
+          "where": "content"
+        }
+      ]
+    },
+    "claude_label": "JUDGMENT",
+    "claude_verdict": "not_relevant",
+    "claude_justification": {
+      "verdict": "not_relevant",
+      "cited_posting_fields": [
+        "title",
+        "location.name",
+        "departments",
+        "content"
+      ],
+      "cited_persona_fields": [
+        "years_pm",
+        "locations",
+        "needs_sponsorship",
+        "domains"
+      ],
+      "justification": "Gate 1 FAILED first: title 'Staff Product Manager' is not an allowed title. Gate 2 passes (no junior terms, no range ≤2). Gate 3 FAILS: '10+ years' > years_pm+1=3. Gate 4 FAILS: 'SF, SEA, NYC' contains none of San Francisco/Los Angeles/San Jose/Remote. Gates 5 and 6 pass (sponsorship needed, no blocking phrases; no clearance/citizenship text). Domains: payments (content), data (content), others none."
+    },
+    "claude_validation_errors": [],
+    "claude_raw": "{\"verdict\": \"not_relevant\", \"cited_posting_fields\": [\"title\", \"location.name\", \"departments\", \"content\"], \"cited_persona_fields\": [\"years_pm\", \"locations\", \"needs_sponsorship\", \"domains\"], \"justification\": \"Gate 1 FAILED first: title 'Staff Product Manager' is not an allowed title. Gate 2 passes (no junior terms, no range ≤2). Gate 3 FAILS: '10+ years' > years_pm+1=3. Gate 4 FAILS: 'SF, SEA, NYC' contains none of San Francisco/Los Angeles/San Jose/Remote. Gates 5 and 6 pass (sponsorship needed, no blocking phrases; no clearance/citizenship text). Domains: payments (content), data (content), others none.\"}",
+    "claude_call": {
+      "at": "2026-11-01T02:06:00.830Z",
+      "exit_code": 0,
+      "models": [
+        "claude-sonnet-5-5"
+      ],
+      "session_id": "ab843776-54c4-477b-9ba9-7c8f6c01dc03",
+      "error": null
+    }
+  }
+]

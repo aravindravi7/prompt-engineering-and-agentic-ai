@@ -1,0 +1,23 @@
+{
+  "run": "20261101T020459Z-seeded-second-v2",
+  "started_at": "2026-11-01T02:04:59.106Z",
+  "finished_at": "2026-11-01T02:06:06.208Z",
+  "board": "stripe",
+  "source": {
+    "kind": "SEEDED: saved response read from disk, no network",
+    "file": "runs/20261101T015849Z-live-baseline/raw-response.json"
+  },
+  "network_requests": [],
+  "state_file": "state/seeded-v2-seen-ids.json",
+  "baseline": false,
+  "jobs_in_response": 745,
+  "previously_seen": 737,
+  "new_postings": 8,
+  "persona_validation": {
+    "ok": true,
+    "emails": 1,
+    "phones": 1
+  },
+  "judge": "claude",
+  "prompt": "prompts/judge.v1.md"
+}
