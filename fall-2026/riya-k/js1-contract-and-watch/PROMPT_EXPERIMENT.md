@@ -56,6 +56,12 @@ Per-call results: `experiments/results/v{1,2}_{dev,heldout}.jsonl`.
 - **Held-out:** both prompts scored 10/10, and so did the rule and "always say no". **All 10 held-out labels are
   not_relevant**, so this set cannot tell any of these judges apart.
 
+## My decision
+
+I made **no prediction** before running v2, and I had no keep/reject rule written down in advance. After seeing the results I decided
+(2026-10-31): **keep v1.** v2 did not improve dev (8/10 vs 9/10), its only extra miss was a format error, and the held-out set can't tell
+the two apart. A v2 win on a held-out set that has positive labels would have changed this.
+
 ## Honest limits
 
 - **Ten cases show almost nothing.** The whole difference between v1 and v2 is one malformed reply. I can't say

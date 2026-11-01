@@ -23,13 +23,16 @@
 - **Keeping my #4 label** after learning Claude was right.
 - **The persona name** (Arya Sahni).
 - **The FRICTIONAL entries:** I chose which real events to record, from options Claude listed, and Claude wrote them up.
+- **The hand check** of posting 6866538002 (`labels/handcheck/`), and my verdict on it.
+- **The "[Riya, own words]" paragraph** in FRICTIONAL.md (Claude suggested spelling fixes and one phrase change, which I accepted).
+- **Keeping v1** after the prompt experiment.
 - **The sign-off** and its signature.
 
 ## What Claude contributed
 
 Claude Code (Claude Opus 5.5) in one session on 2026-10-31:
 
-- **All code:** `jsagent/` (watcher, rule implementation, Claude judge, validators), `tests/test_agent.py`, `experiments/*.py`.
+- **All code:** `jsagent/` (watcher, rule implementation, Claude judge, validators), `tests/test_agent.py`, `experiments/*.py`, `tools/check_wrong_versions.py`.
 - **Running everything:** the live and seeded watches, tests, sampling, prompt experiment, and action-surface runs.
 - **Prompt drafts** `v1_baseline.md` and `v2_criteria.md`. v2's added paragraph is my labeling rule.
 - **Drafts of README.md, SAMPLING.md, PROMPT_EXPERIMENT.md, ACTION_SURFACE.md, this file and FRICTIONAL.md**, written from

@@ -125,6 +125,9 @@ Claude 24/24 not_relevant, 0 rejected. The first run's files are in git history 
 - The contract decisions (rule, exclusions, wrong versions, failure sentence) are mine, given as answers in the chat before any code existed.
 - The 20 hand labels are mine.
 - The tests were written by Claude against my contract. I did not write tests before reading Claude's code.
+- **By hand:** I worked through my rule on one real posting (Data Science Intern, 6866538002) before seeing the code's answer
+  (`labels/handcheck/README.md`). Title, location and seniority matched the code. My skill count missed a line the code caught. My verdict
+  (not relevant: it's an internship and Arya wants full-time) **disagreed with my own rule**, which has no Intern exclusion.
 - I ran the full test suite myself on my own machine on 2026-10-31 (`python3 -m unittest discover -s tests -v` → 17 tests, OK), after the audit fixes.
 - The rule and experiment numbers are recomputed by `experiments/summarize.py`.
 - With Claude's help: all code, the tests, and the drafts of these reports.
@@ -144,9 +147,10 @@ Claude 24/24 not_relevant, 0 rejected. The first run's files are in git history 
 **Not claiming:**
 - That Claude's verdicts are facts. Every one is labeled `judge: claude, kind: judgment`.
 - That v2 is better or worse than v1. Ten cases can't show it.
-- That the rule is a good filter. On my 20 labeled postings it behaved exactly like "always say no".
+- That the rule is a good filter. On my 20 labeled postings it behaved exactly like "always say no", and my hand check showed it lets
+  internships through (no Intern exclusion).
 
-**Signed or withheld:** ____________ (name, date)
+**Signed or withheld:** Signed, Riya Kapadnis, 2026-10-31
 
 ## Driver's seat
 
@@ -154,6 +158,7 @@ Claude 24/24 not_relevant, 0 rejected. The first run's files are in git history 
 |---|---|---|---|---|
 | The rule and contract | formatted my answers into CONTRACT.md; pointed out the "Databricks" and "Unity Catalog" free matches | chose title words, the 2-skill minimum, seniority words, US-only, wrong versions, and the failure sentence; added ML titles after Claude flagged it; chose amendment 1 | The rule decides what is "worth a day of your life"; Claude can't know what I want | Commit ab522f3 (contract before code) and cc238dd (code), amendment section in CONTRACT.md; my chat line (2026-10-31): *"okay so do one thing ask me questions and i will answer and you fill it in"* |
 | Hand labels | picked 20 postings by seed; showed me title, location, years and skills | labeled all 20, including a blanket rule that non-US = no | They are the answer key; if Claude wrote them, the experiment would grade Claude against itself | Commit d61f9b4 (labels) **before** 7396b0b (first Claude results on them); `labels/README.md`; my chat line while labeling (2026-10-31): *"see mostly my answer will be no for the location i want the location in US"* |
+| Hand check | told me the code's verdict only after I answered | worked through my rule by hand on posting 6866538002 and judged it not relevant (internship) | Only I know Arya wants full-time work; the rule didn't encode it | `labels/handcheck/README.md`; my chat line (2026-10-31): *"no it contains intern which is of the lower position and i cant apply to intern positions because im looking for full time"* |
 | Label #4 | answered "not relevant" 4/4 times | kept my wrong label rather than editing it after seeing Claude's answer | Changing the answer key after seeing the model would hide the error | SAMPLING.md, `labels/hand_labels.csv` row 4; my chat line (2026-10-31): *"wait she needs job in spring 2026 right if she graduated in dec 2025"* |
 | The prompt change | ran v1 and v2 | chose which one change v2 makes | The experiment tests my hypothesis, not Claude's | `experiments/prompts/v2_criteria.md` |
 | Code, tests, reports | wrote them | ran the outputs past my own judgment; decided the persona name; reviewed the sign-off | I'm answerable for what's submitted | SOURCES.md |

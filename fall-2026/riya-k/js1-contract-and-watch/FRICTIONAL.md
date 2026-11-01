@@ -1,7 +1,7 @@
 # FRICTIONAL — Job-Search Agent 1
 
 Riya Kapadnis. All entries are from one working session on 2026-10-31 (the due date), written the same evening.
-Claude Code drafted the wording. I chose which events to record and what I took from them.
+Claude Code drafted the wording, except the section marked [Riya, own words]. I chose which events to record and what I took from them.
 
 ## Commits
 
@@ -113,6 +113,25 @@ Claude Code drafted the wording. I chose which events to record and what I took 
   and added the validator limit and prompt injection to "Not checked".
 - **What I didn't copy:** classmates' 80-test suites and multi-draft contracts. I can't honestly recreate a drafting history I don't have.
 
+### 2026-10-31 — Hand check of one rule verdict
+
+- **I tried:** working through my own rule by hand on posting 6866538002 (Data Science Intern, 2027 Start), before Claude told me the code's answer.
+  The first link Claude gave me opened in Google search, not the posting, so Claude saved the exact text the agent read to a file.
+- **What happened:** title, location and seniority matched the code. I found none of Arya's skills, but the code found Python and SQL, both
+  in one line I missed ("Proven ability to work with data in SQL and Python"). My verdict was not relevant, because it is an internship and
+  Arya wants full-time. The rule says relevant, because it has no Intern exclusion.
+- **What I did:** recorded it in `labels/handcheck/README.md`. I didn't change the rule tonight; adding Intern/Internship is the next step.
+
+### In my own words [Riya, own words]
+
+When Claude was right about #4 I realised that human error is something major and we need such AI to help us find the errors which can be
+used to avoid future errors. When I noticed the internship gap I felt that I should have given proper instructions in the first place to avoid
+such issues. If I did this again I would make sure to be thorough in my requirements and check all the things myself so that I can catch the
+mistakes the AI and I have made.
+
+*(Written by me in the chat. Claude suggested two edits, which I accepted: spelling fixes, and "the mistakes the AI has made" →
+"the mistakes the AI and I have made".)*
+
 ### Still unresolved
 
 - **The held-out set has no "relevant" labels**, so 10/10 there means nothing. "Always no" scores the same. Next time: stratify the split by label.
@@ -121,3 +140,4 @@ Claude Code drafted the wording. I chose which events to record and what I took 
 - **The real two-day change uses a classmate's 10-29 snapshot (seeded).** My own live run 2 was 33 minutes after run 1 and found 0 new.
   Next step: run the watch again on a later day.
 - **The validator's 600-character limit isn't in the prompt.**
+- **The rule has no Intern/Internship exclusion** (found by my hand check).
