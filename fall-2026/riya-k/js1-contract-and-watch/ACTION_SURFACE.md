@@ -6,8 +6,9 @@ model `claude-sonnet-5-5`. Records: `experiments/action_surface/{1-chat-paste,2-
 (prompt, exact command, every tool call, files after the run, and the final reply). Full stream transcripts were kept on
 my machine and not committed.
 
-Caveat: these three prompts used a shorter output-format line than `v1_baseline.md`, without the list of allowed
-field names. That is why all three replies fail the validator (see below). The comparison is between surfaces, not prompts.
+Caveat on the first run: these three prompts used a shorter output-format line than `v1_baseline.md`, without the list of
+allowed field names, and all three replies failed the validator. So I **re-ran all three on 2026-11-01 00:32 UTC with v1's
+full output-format block** (records `*-v1format.json`). See "Re-run" below. The first run is kept as it happened.
 
 ## What ran and what came back
 
@@ -21,6 +22,20 @@ field names. That is why all three replies fail the validator (see below). The c
 
 The same posting got **two different verdicts across three surfaces** within one minute. Posting #3 is the borderline
 case that also flipped in SAMPLING.md, so this mostly shows that #3 is close to the line, not that one surface judges better.
+
+## Re-run with the v1 output format (2026-11-01, 00:32:14–00:32:27 UTC)
+
+| | 1. Chat paste | 2. File read | 3. Agent fetch + write |
+|---|---|---|---|
+| Verdict | relevant | relevant | not_relevant |
+| Passes my validator? | **yes** | **yes** | **yes** |
+| Tool calls | none | Read ×2 | WebFetch, Read ×2, Write ×2 |
+| Files after | none | none | `state.json` = `{"seen_ids": [8886384002]}`, `verdict.json` |
+
+- With the full format, all three surfaces passed, so the first run's failures came from the prompt, not the surface.
+- Surface 3 said not_relevant in both runs, while 1 and 2 split. One possible reason, which I did **not** test: surface 3
+  judges from WebFetch's summary of the page, not the full posting text the other two see. With one posting and two runs,
+  this could also just be the #3 variation from SAMPLING.md.
 
 ## Read, write, send, authority, and what could go wrong
 
@@ -41,8 +56,8 @@ Surface 2 adds nothing the task needs: Claude never has to open a file if my cod
   byte for byte, and owns the state file. These are deterministic jobs that need recomputable evidence, and Surface 3 gave up exactly that evidence.
 - **Claude only judges.** It gets the posting and the persona as text, with **no tools at all** (`--tools ""` in
   `jsagent/claude_judge.py`), so it's Surface 1 driven by my code instead of my copy-paste, which also removes the risk of pasting the wrong thing by hand.
-- **The validator** (`jsagent/contract.py`) is what makes any surface usable. Without it, all three surfaces invented
-  their own field names.
+- **The validator** (`jsagent/contract.py`) is what makes any surface usable. With a loose format line, all three surfaces invented
+  their own field names. With the exact format, all three passed.
 
 Surface 3 isn't needed: the agent doesn't do anything there that my own Python can't do more checkably. It would add
 network and write authority and remove the raw evidence the contract requires.

@@ -24,6 +24,21 @@
 `diff experiments/prompts/v1_baseline.md experiments/prompts/v2_criteria.md` shows exactly that paragraph and a blank line.
 I chose this change after seeing v1 on dev (9/10, with #4 the only miss). The question was: does giving Claude **my** criteria bring it closer to **my** labels?
 
+## Run order (evidence that held-out ran last and the prompts didn't change)
+
+From `called_at` and `prompt_sha256_12` in the results files (all 2026-10-31 UTC):
+
+| run | calls between | prompt sha256 (first 12) |
+|---|---|---|
+| v1 dev | 23:50:44 – 23:50:51 | 5905a4d83c50 |
+| v2 dev | 23:55:29 – 23:55:37 | 5e31e6e8294d |
+| v1 held-out | 23:55:46 – 23:55:54 | 5905a4d83c50 |
+| v2 held-out | 23:55:58 – 23:56:04 | 5e31e6e8294d |
+
+Each prompt's hash is the same on dev and held-out, so neither prompt was edited between the two runs. The held-out calls came
+after both dev runs. The dev and held-out results share one commit (7396b0b), so this ordering rests on the recorded timestamps,
+not on commit order. I did not freeze the prompt hashes in a separate commit before the held-out run.
+
 ## Results (recomputed by `python3 -m experiments.summarize`)
 
 | judge | dev (10) | held-out (10) | rejected by validator |

@@ -11,7 +11,9 @@ Claude Code drafted the wording. I chose which events to record and what I took 
 | cc238dd | Watcher, judges, validator, tests; live baseline and seeded two-day run |
 | d61f9b4 | My 20 hand labels and contract amendment 1, before any Claude call on those postings |
 | 7396b0b | Sampling, prompt experiment, action-surface runs |
-| (final) | Reports, live run 2, sign-off |
+| c03afe1 | Reports, live run 2 |
+| ae7bfc1 | Audit fixes: Out fields, amendment 2, seeded re-run |
+| (last) | Classmate-comparison fixes and sign-off. Its hash is in Canvas, since a commit can't contain its own hash |
 
 ---
 
@@ -97,8 +99,19 @@ Claude Code drafted the wording. I chose which events to record and what I took 
 - **What I did:** added amendment 2 to CONTRACT.md (case-sensitive state codes) instead of editing the original text. Claude added the two
   fields with a test and re-ran the seeded watch (same counts), added quoted chat lines to the driver's seat, added `requirements.txt`
   and a sources line to the README.
-- **What I'm doing myself:** running the tests on my own machine (the brief says "Run your tests on what it returns, yourself").
+- **What I did myself:** ran the full test suite on my own machine (`python3 -m unittest discover -s tests -v` → 17 tests, OK).
 - **Evidence:** CONTRACT.md amendment 2; `test_out_fields_present`; `test_location`; the final commit.
+
+### 2026-10-31 — Comparing my work with four classmates' submissions
+
+- **What happened:** Claude read aditya-r, sreevarshan-s, revan-c and pavan-m in depth next to mine. My strengths: the #4 case, a real
+  two-day change with 24 real new postings, the dated amendments, and quoted chat lines in the driver's seat. My gaps: no proof the tests
+  catch the wrong versions in the real code, an undisclosed validator limit, an arithmetic slip in SAMPLING.md (I wrote "18 of 20" valid
+  where the file shows 19), and an action-surface comparison confounded by a shorter prompt.
+- **What I did:** added `tools/check_wrong_versions.py` (all 4 mutations caught), re-ran the 3 surfaces with the full format (all 3 now
+  pass the validator), corrected the count, cited the `called_at` order for the experiment, added sha256 provenance, ran a fresh clone,
+  and added the validator limit and prompt injection to "Not checked".
+- **What I didn't copy:** classmates' 80-test suites and multi-draft contracts. I can't honestly recreate a drafting history I don't have.
 
 ### Still unresolved
 
