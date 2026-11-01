@@ -76,8 +76,7 @@ cp evidence/seeded/state-before-wrong-answer-demo.json state/try-demo.json
 
 ```text
 Sign-off — Job-Search Agent 2
-Checked:      [proposed — Hemanth to accept or edit]
-              (1) the empty-board defect, by a test written before the patch
+Checked:      (1) the empty-board defect, by a test written before the patch
                   (tests/test_review_empty_board.py, commit 998e487), which I ran myself:
                   2 failed before the patch, all 52 passed after
               (2) the 20 boundary cases against predictions committed before the policy code
@@ -94,7 +93,9 @@ Not checked:  a partial board (148 -> 3 postings) is still trusted;
               the reset-state approval being written to a trace (it is only printed)
 Not claiming: that the boards' contents are complete or current between runs;
               that the rule picks good jobs (unchanged from JS1)
-Signed or withheld: ____________ (name, date)
+Signed or withheld: Hemanth Rayudu, Oct 31, 2026
+              (list accepted by Hemanth; name typed by Claude Code at Hemanth's explicit
+              instruction: "accept the sign-off, you sign it for me")
 ```
 
 ## Driver's seat

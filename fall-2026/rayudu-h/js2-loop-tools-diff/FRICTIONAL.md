@@ -36,5 +36,5 @@
 
 ## Still open
 
-- **[Hemanth]** Accept or edit the proposed sign-off, and sign it or withhold it.
+- Sign-off: Hemanth accepted Claude's drafted list and asked Claude to type the signature (Oct 31, 2026).
 - No JS2 run has had a new posting yet. A live run on a later day would be the first.
