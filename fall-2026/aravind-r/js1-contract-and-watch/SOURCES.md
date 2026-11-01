@@ -18,7 +18,7 @@ What this submission used, what I (Aravind) wrote or decided, and what Claude co
 ## Contributed by Claude (Claude Code build session, 2026-10-31)
 
 - CONTRACT.md wording, drafted from my decisions and edited by me (as the contract's first line says).
-- All code in `src/` and `tools/`, and the tests in `test/` (including the constructed fixture and the mutant versions of each wrong version), written against my contract. I ran the tests myself: [Aravind to confirm].
+- All code in `src/` and `tools/`, and the tests in `test/` (including the constructed fixture and the mutant versions of each wrong version), written against my contract. I ran the tests myself.
 - Prompt v1 text (`prompts/judge.v1.md`), and the v2 text implementing the change I specified.
 - Drafts of README.md (toolchain, commands, what ran, layout), this file's factual sections, and the factual columns of ACTION-SURFACE.md.
 - One scouting call per board to eight Greenhouse boards on 2026-10-31 to count PM titles before I chose Stripe (not evidence, not saved).

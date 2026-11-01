@@ -44,10 +44,10 @@ Accepted:
 - years_pm = 2: Claude Code computed ~2.2 years across Maya's two PM roles, Claude (chat) recommended
   2, and I set it.
 - A seeded second run instead of waiting for a live change (Claude Code, given the deadline).
-
-Written by me:
-- The single v2 prompt change: a required evidence object quoting the sentence behind gates 2, 3, 5
-  and 6, with quote fidelity recorded separately and never changing a verdict.
+- The single v2 prompt change: Claude (chat) suggested the evidence-quote change; I chose it and
+  specified the validator and the quote-fidelity rule (a required evidence object quoting the
+  sentence behind gates 2, 3, 5 and 6, with quote fidelity recorded separately and never changing a
+  verdict).
 
 Modified:
 - Failure sentence: Claude (chat) gave six example sentences; I took inspiration from one and wrote
