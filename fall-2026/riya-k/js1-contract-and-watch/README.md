@@ -1,0 +1,133 @@
+# Job-Search Agent 1: The Contract and the Watch
+
+Riya Kapadnis · INFO 7375 · Fall 2026 · 2026-10-31
+
+An agent that watches **one** public job board (Databricks on Greenhouse), remembers which postings it has seen,
+reports only new ones, and gives each new posting two labeled verdicts for a **fictional** persona (Arya Sahni):
+a **record** from my written rule that anyone can recompute, and a **judgment** from Claude under a prompt contract
+with a validator. It never applies, emails, messages or logs in anywhere.
+
+## What is in this folder
+
+| Path | What it is |
+|---|---|
+| `CONTRACT.md` | The contract, committed **before any code** (commit ab522f3), plus one dated amendment |
+| `persona/arya-sahni.json` | Fictional résumé (`@example.com`, 555 phone), adapted from the Reallocation Engine's `priya-nair` example |
+| `jsagent/` | `watch.py` (allow-listed fetch, raw save, state, report), `rules.py` (the rule), `claude_judge.py` (Claude judge), `contract.py` (validators) |
+| `tests/test_agent.py` | 16 offline tests, including both wrong versions from the contract |
+| `runs/` | **Live** watch: baseline and second run, raw responses in `runs/raw/`, state file `runs/databricks.state.json` |
+| `runs/seeded/` | **Seeded** two-day watch: 2026-10-29 snapshot → 2026-10-31 snapshot (labeled seeded) |
+| `snapshots/` | The two board responses the seeded run reads |
+| `labels/` | 20 postings picked by seed, my hand labels, labeling notes |
+| `experiments/` | Prompts, runner, summarizer, all saved Claude replies, action-surface records |
+| `SAMPLING.md`, `PROMPT_EXPERIMENT.md`, `ACTION_SURFACE.md` | The three Chapter artifacts |
+| `SOURCES.md`, `FRICTIONAL.md` | What I used and who did what; process log |
+
+## Language and toolchain
+
+- **Python 3.13.7**, standard library only (urllib, json, re, html, unittest, argparse, concurrent.futures).
+- **Claude Code CLI 2.1.316** (`claude -p`) for the Claude judge and experiments, model `claude-sonnet-5-5`. Needs a
+  logged-in Claude Code account (NEU access). The tests and the rule judge **do not** need it.
+- macOS only: python.org Python had no CA certificates for the live fetch (`CERTIFICATE_VERIFY_FAILED`). I fixed it with
+  `export SSL_CERT_FILE=$(python3 -m certifi)` (needs `pip install certifi`). The fixture runs and tests don't use the network.
+
+## Exact commands (from this folder, in a fresh clone)
+
+```bash
+cd fall-2026/riya-k/js1-contract-and-watch
+
+# 1. tests (offline, no Claude, about 0.05 s)
+python3 -m unittest discover -s tests -v
+
+# 2. reproduce the seeded two-day watch from the saved responses (offline; rule judge only)
+rm -rf /tmp/js1 && mkdir /tmp/js1
+python3 -m jsagent.watch --board databricks --resume persona/arya-sahni.json --state /tmp/js1/state.json \
+  --out /tmp/js1 --fixture snapshots/databricks-2026-10-29T005656Z-from-yash-s.json --label seeded-run1
+python3 -m jsagent.watch --board databricks --resume persona/arya-sahni.json --state /tmp/js1/state.json \
+  --out /tmp/js1 --fixture snapshots/databricks-2026-10-31T233230Z-live.json --label seeded-run2
+#    expected: run 1 "baseline (none reported as new)", run 2 "24 new", all 24 not_relevant
+
+# 3. live watch (network: boards-api.greenhouse.io only); add --claude for Claude's judgments
+python3 -m jsagent.watch --board databricks --resume persona/arya-sahni.json \
+  --state runs/databricks.state.json --out runs/ --claude
+
+# 4. recompute every number in SAMPLING.md and PROMPT_EXPERIMENT.md from saved results (offline)
+python3 -m experiments.summarize
+
+# 5. re-run the Claude experiments (live calls; results will differ run to run)
+python3 -m experiments.select_postings          # same 20 postings (seed 7375)
+python3 -m experiments.run_claude --prompt v1_baseline.md --set sampling --repeats 4 --out /tmp/js1/sampling.jsonl
+python3 -m experiments.run_claude --prompt v1_baseline.md --set dev --out /tmp/js1/v1_dev.jsonl
+```
+
+## What ran (all 2026-10-31 ET; times UTC)
+
+| Run | When | Source | On board | New | Result |
+|---|---|---|---:|---:|---|
+| Live run 1 (baseline) | 10-31 23:32 | live fetch | 901 | none reported | baseline |
+| Live run 2 | 11-01 00:05 | live fetch | 901 | 0 | nothing posted in 33 min; raw response byte-identical to run 1 |
+| **Seeded** run 1 (baseline) | 10-31 23:33 | snapshot fetched **2026-10-29 00:56 UTC by classmate yash-s** | 901 | none reported | baseline |
+| **Seeded** run 2 | 10-31 23:33 | my live snapshot from 10-31 23:32 | 901 | **24** | rule: 24 not_relevant; Claude: 24 not_relevant (all 24 passed the validator) |
+
+The live second run found no change, so the **real change** between two calendar days comes from the seeded pair. Its
+"earlier response" is a real Greenhouse response another student saved two days earlier (credited in SOURCES.md), and the
+24 new postings are real postings that appeared between Oct 29 and Oct 31 (sales, legal, and senior or non-US Solutions Architect roles).
+
+Tests: `python3 -m unittest discover -s tests` → **16 tests, OK** (last run 2026-10-31, after amendment 1).
+
+## Results in one place
+
+- **The rule over the whole board (live, 901 postings):** 4 relevant: Data Science Intern (2027 Start), Specialist Solutions
+  Architect - AI/ML, … - AWS Infrastructure & AI Platform, … - Azure Infrastructure & AI Platform. (6 before amendment 1.)
+- **Sampling** (SAMPLING.md): 4 of 5 postings were identical across 4 fresh calls. #3 flipped. #4 was 4/4 consistent and 4/4
+  against my label, and Claude was right.
+- **Prompt experiment** (PROMPT_EXPERIMENT.md): v1 got 9/10 on dev and 10/10 on held-out; v2 got 8/10 and 10/10. Held-out has no positive labels, so it can't
+  separate any judge from "always no".
+- **Action surfaces** (ACTION_SURFACE.md): 3 surfaces gave 2 different verdicts, and none passed the validator. Chosen: no-tools
+  Claude driven by my own fetch and state code.
+
+---
+
+## Sign-off — Job-Search Agent 1
+
+**Checked:**
+- New-since-last-run is keyed by posting id, the baseline reports none, an already-seen posting is never re-reported, and a raw response is saved every
+  run: `test_baseline_then_only_new_and_never_repeat`, plus the seeded run (24 new = ids in the 10-31 snapshot not in the 10-29 one, recomputed with a set difference).
+- Wrong version 1 (labels on the wrong posting) is caught: `test_wrong_version_1_labels_on_wrong_posting_is_caught`,
+  `test_wrong_version_1_claude_reply_for_another_posting_is_rejected`.
+- Wrong version 2 (justification cites nothing) is caught: `test_wrong_version_2_justification_citing_nothing_is_rejected`.
+- Off-allow-list hosts and plain http are refused: `test_refuses_hosts_off_allow_list`. A non-`@example.com` résumé is refused: `test_refuses_non_fictional_resume`.
+- The rule matches my hand computation on constructed cases (`TestRule`), and the location rule on all 188 real Databricks location strings (classified by `rules.is_us_location` and read through by Claude; I did not read all 188 myself).
+- Claude's output format: `TestClaudeValidator`, and live: 2 rejections in 60 experiment calls (sampling, dev and held-out, both prompts), each one inspected, and 0 in the 24 seeded-run calls.
+
+**How:**
+- The contract decisions (rule, exclusions, wrong versions, failure sentence) are mine, given as answers in the chat before any code existed.
+- The 20 hand labels are mine.
+- The tests were written by Claude against my contract. I did not write tests before reading Claude's code.
+- The rule and experiment numbers are recomputed by `experiments/summarize.py`.
+- With Claude's help: all code, the tests, and the drafts of these reports.
+
+**Not checked:**
+- Whether the agent's verdicts are good for a real job seeker. Arya is fictional, and my own labels had at least one error (#4).
+- Any board other than Databricks, or any Greenhouse response shape other than this one. Lever, Ashby and SmartRecruiters are not supported.
+- Claude's variation beyond 4 calls per posting, any model other than `claude-sonnet-5-5`, and any date other than 2026-10-31.
+- A real two-calendar-day live watch from my own fetches. My live run 2 was 33 minutes after run 1.
+- Location strings Databricks doesn't use today. A bare "USCA" counts as non-US, and Remote counts as US unless it names one of 36 listed non-US places.
+- Whether Greenhouse's terms of use limit automated reads. I made 2 live board requests, plus one single-posting request made by the Surface 3 agent.
+
+**Not claiming:**
+- That Claude's verdicts are facts. Every one is labeled `judge: claude, kind: judgment`.
+- That v2 is better or worse than v1. Ten cases can't show it.
+- That the rule is a good filter. On my 20 labeled postings it behaved exactly like "always say no".
+
+**Signed or withheld:** ____________ (name, date)
+
+## Driver's seat
+
+| Part of the task | Claude did | I did | Why it stays mine | Evidence |
+|---|---|---|---|---|
+| The rule and contract | formatted my answers into CONTRACT.md; pointed out the "Databricks" and "Unity Catalog" free matches | chose title words, the 2-skill minimum, seniority words, US-only, wrong versions, and the failure sentence; added ML titles after Claude flagged it; chose amendment 1 | The rule decides what is "worth a day of your life"; Claude can't know what I want | Commit ab522f3 (contract before code) and cc238dd (code), amendment section in CONTRACT.md |
+| Hand labels | picked 20 postings by seed; showed me title, location, years and skills | labeled all 20, including a blanket rule that non-US = no | They are the answer key; if Claude wrote them, the experiment would grade Claude against itself | Commit d61f9b4 (labels) **before** 7396b0b (first Claude results on them); `labels/README.md` |
+| Label #4 | answered "not relevant" 4/4 times | kept my wrong label rather than editing it after seeing Claude's answer | Changing the answer key after seeing the model would hide the error | SAMPLING.md, `labels/hand_labels.csv` row 4 |
+| The prompt change | ran v1 and v2 | chose which one change v2 makes | The experiment tests my hypothesis, not Claude's | `experiments/prompts/v2_criteria.md` |
+| Code, tests, reports | wrote them | ran the outputs past my own judgment; decided the persona name; reviewed the sign-off | I'm answerable for what's submitted | SOURCES.md |
